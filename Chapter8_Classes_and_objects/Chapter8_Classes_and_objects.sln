@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vehicle", "Vehicle\Vehicle.vcxproj", "{F97FFAD9-4F2E-4DFD-9453-F9F1FF77E741}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Adding_member_functions_to_a_Class", "Adding_member_functions_to_a_Class\Adding_member_functions_to_a_Class.vcxproj", "{C7F3FCD6-FC52-40DC-994A-9D9548B33523}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{F97FFAD9-4F2E-4DFD-9453-F9F1FF77E741}.Release|x64.Build.0 = Release|x64
 		{F97FFAD9-4F2E-4DFD-9453-F9F1FF77E741}.Release|x86.ActiveCfg = Release|Win32
 		{F97FFAD9-4F2E-4DFD-9453-F9F1FF77E741}.Release|x86.Build.0 = Release|Win32
+		{C7F3FCD6-FC52-40DC-994A-9D9548B33523}.Debug|x64.ActiveCfg = Debug|x64
+		{C7F3FCD6-FC52-40DC-994A-9D9548B33523}.Debug|x64.Build.0 = Debug|x64
+		{C7F3FCD6-FC52-40DC-994A-9D9548B33523}.Debug|x86.ActiveCfg = Debug|Win32
+		{C7F3FCD6-FC52-40DC-994A-9D9548B33523}.Debug|x86.Build.0 = Debug|Win32
+		{C7F3FCD6-FC52-40DC-994A-9D9548B33523}.Release|x64.ActiveCfg = Release|x64
+		{C7F3FCD6-FC52-40DC-994A-9D9548B33523}.Release|x64.Build.0 = Release|x64
+		{C7F3FCD6-FC52-40DC-994A-9D9548B33523}.Release|x86.ActiveCfg = Release|Win32
+		{C7F3FCD6-FC52-40DC-994A-9D9548B33523}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
