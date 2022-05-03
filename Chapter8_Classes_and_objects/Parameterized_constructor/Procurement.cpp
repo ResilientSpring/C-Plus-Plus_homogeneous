@@ -29,6 +29,6 @@ int main() {
 
 	cout << t1.x << " " << t2.x << "\n";
 
-	cout << t3.x;
+	cout << t3.x << "\n";
 
 }
