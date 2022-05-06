@@ -25,7 +25,7 @@ int main() {
 
 int running_avg(int i) {
 
-	static int sum = 0, count = 0;
+	int sum = 0, count = 0;
 
 	sum = sum - i;
 
