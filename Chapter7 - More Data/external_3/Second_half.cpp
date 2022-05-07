@@ -4,8 +4,13 @@
 #include <iomanip>
 using namespace std;
 
-extern 
+extern int x, y;
+extern char ch;
 
-int main() {
+void func22() {
+	x = y / 10;
+}
 
+void func23() {
+	y = 10;
 }

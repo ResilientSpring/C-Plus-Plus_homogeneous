@@ -8,9 +8,12 @@ int x, y;
 char ch;
 
 void func1();
+extern void func22();
 
 int main() {
+	cout << x;
 
+	return 0;
 }
 
 void func1() {
