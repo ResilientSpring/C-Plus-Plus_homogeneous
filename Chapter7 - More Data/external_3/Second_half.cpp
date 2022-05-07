@@ -1,14 +1,11 @@
 #include <iostream>
-#include <iomanip>
 #include <stdlib.h>
 #include <stdio.h>
+#include <iomanip>
 using namespace std;
 
-extern int x, y;
-extern char ch;
+extern 
 
 int main() {
-	cout << x << " " << y;
 
-	return 0;
 }
