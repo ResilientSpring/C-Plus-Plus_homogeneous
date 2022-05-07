@@ -10,7 +10,7 @@ extern int multiply();
 
 int main() {
 
-	multiply();
+	cout << "The multiplication result of your entered two numbers is " << 	multiply();
 
 	return 0;
 }
