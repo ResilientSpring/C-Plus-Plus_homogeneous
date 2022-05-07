@@ -4,6 +4,9 @@
 #include <stdio.h>
 using namespace std;
 
+extern int x, y;
+extern char ch;
+
 int main() {
 
 }
