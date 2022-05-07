@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="keyword.cpp">
+    <ClCompile Include="File_One.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="File_Two.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
