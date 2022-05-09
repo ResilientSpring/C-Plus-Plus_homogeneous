@@ -7,7 +7,12 @@ using namespace std;
 int running_average(int i);
 
 int main() {
+	int num;
 
+	do
+	{
+
+	} while (num > -1);
 }
 
 int running_average(int i) {
