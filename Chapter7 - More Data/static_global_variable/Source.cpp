@@ -15,7 +15,7 @@ int main() {
 		cout << "Enter numbers (-1 to quit, -2 to reset): ";
 		cin >> num;
 
-		if (num == 2)
+		if (num == -2)
 		{
 			reset();
 			continue;
