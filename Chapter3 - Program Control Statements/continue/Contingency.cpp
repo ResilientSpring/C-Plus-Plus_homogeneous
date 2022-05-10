@@ -6,9 +6,13 @@ int main() {
 	
 	for (x = 0; x <= 100; x++)
 	{
-		if (x % 2)
+		if (x % 2)               // Continue the loop early when x is odd.
 		{
 			continue;
 		}
+
+		cout << x << " ";
 	}
+
+	return 0;
 }
