@@ -28,7 +28,7 @@ int main() {
 
 		cout << '\n';
 
-	} while (num != 1);
+	} while (num != -1);
 
 	return 0;
 }
