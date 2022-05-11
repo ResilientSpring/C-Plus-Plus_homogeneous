@@ -26,7 +26,7 @@ int main() {
 			cout << "Running average is: " << running_average(num);
 		}
 
-		cout << '\n';
+		//		cout << '\n';
 
 	} while (num != -1);
 
