@@ -4,6 +4,7 @@
 #include <iomanip>
 using namespace std;
 
+// extern int x, y;
 
 int multiply() {
 	cout << "Enter the number on the left of the multiplication sign: " << "\n";
