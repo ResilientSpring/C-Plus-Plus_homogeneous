@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "external_6", "external_6\ex
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "static_local_variable_2", "local_static_variable_2\local_static_variable_2.vcxproj", "{C4BBB60B-3CD9-4050-960B-E095CCB04376}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "static_global_variable_3", "static_global_variable_3\static_global_variable_3.vcxproj", "{CE7C8C60-E20F-4629-BC12-39E296C22FAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{C4BBB60B-3CD9-4050-960B-E095CCB04376}.Release|x64.Build.0 = Release|x64
 		{C4BBB60B-3CD9-4050-960B-E095CCB04376}.Release|x86.ActiveCfg = Release|Win32
 		{C4BBB60B-3CD9-4050-960B-E095CCB04376}.Release|x86.Build.0 = Release|Win32
+		{CE7C8C60-E20F-4629-BC12-39E296C22FAF}.Debug|x64.ActiveCfg = Debug|x64
+		{CE7C8C60-E20F-4629-BC12-39E296C22FAF}.Debug|x64.Build.0 = Debug|x64
+		{CE7C8C60-E20F-4629-BC12-39E296C22FAF}.Debug|x86.ActiveCfg = Debug|Win32
+		{CE7C8C60-E20F-4629-BC12-39E296C22FAF}.Debug|x86.Build.0 = Debug|Win32
+		{CE7C8C60-E20F-4629-BC12-39E296C22FAF}.Release|x64.ActiveCfg = Release|x64
+		{CE7C8C60-E20F-4629-BC12-39E296C22FAF}.Release|x64.Build.0 = Release|x64
+		{CE7C8C60-E20F-4629-BC12-39E296C22FAF}.Release|x86.ActiveCfg = Release|Win32
+		{CE7C8C60-E20F-4629-BC12-39E296C22FAF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
