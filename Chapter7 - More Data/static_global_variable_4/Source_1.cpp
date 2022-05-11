@@ -6,6 +6,10 @@ using namespace std;
 
 extern int running_average(int i);
 extern void reset();
+// extern static int sum;
+// extern int sum, count;
+extern int sum;
+extern int count;
 
 int main() {
 	int num;
@@ -24,6 +28,8 @@ int main() {
 		if (num != -1)
 		{
 			cout << "Running average is: " << running_average(num);
+			// cout << ", where the sum is " << sum << " and count is " << count;
+			cout << ", where the sum is " << sum ;
 		}
 
 		cout << '\n';
