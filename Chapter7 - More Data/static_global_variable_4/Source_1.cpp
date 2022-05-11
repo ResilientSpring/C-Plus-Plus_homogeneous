@@ -9,7 +9,7 @@ extern void reset();
 // extern static int sum;
 // extern int sum, count;
 extern int sum;
-extern int count;
+extern int count;           //  Trying to access static global variable in the source_2.cpp
 
 int main() {
 	int num;
