@@ -9,7 +9,7 @@ int main() {
 	double t = 10.0;
 	cout << "Reciprocal of 10.0 is " << reciprocal(t) << "\n";
 
-	cout << "Value of t is still: " << t;
+	cout << "Value of t is still: " << t << "\n";
 
 	return 0;
 }
