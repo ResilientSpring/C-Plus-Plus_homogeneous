@@ -13,7 +13,7 @@ using namespace std;
 int main() {
 	char string1[30], string2[30];
 
-	strcpy(string1, "underprivilege");
+	strcpy(string1, "underprivileged");
 
 	cout << "string1: " << string1 << "\n";
 
