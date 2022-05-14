@@ -21,6 +21,12 @@ int main() {
 
 	cout << "string2: " << string2 << "\n";
 
+	cout << "\n After strcpy(string1, string2); \n";
+
+	strcpy(string1, string2);
+
+	cout << "string1: " << string1;
+
 	return 0;
 
 }
