@@ -25,7 +25,7 @@ int main() {
 
 	strcpy(string1, string2);
 
-	cout << "string1: " << string1;
+	cout << "string1: " << string1 << "\n";
 
 	return 0;
 
