@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "static Variables", "static 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Utility_of_the_static_modifier", "Utility_of_the_static_modifier\Utility_of_the_static_modifier.vcxproj", "{BBAFEB7F-10F6-48C9-8D88-4B77F9EDAB47}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Using_pointer_to_call_by_reference", "Using_pointer_to_call_by_reference\Using_pointer_to_call_by_reference.vcxproj", "{10415C15-A185-4666-A267-0EEF313B3CFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{BBAFEB7F-10F6-48C9-8D88-4B77F9EDAB47}.Release|x64.Build.0 = Release|x64
 		{BBAFEB7F-10F6-48C9-8D88-4B77F9EDAB47}.Release|x86.ActiveCfg = Release|Win32
 		{BBAFEB7F-10F6-48C9-8D88-4B77F9EDAB47}.Release|x86.Build.0 = Release|Win32
+		{10415C15-A185-4666-A267-0EEF313B3CFF}.Debug|x64.ActiveCfg = Debug|x64
+		{10415C15-A185-4666-A267-0EEF313B3CFF}.Debug|x64.Build.0 = Debug|x64
+		{10415C15-A185-4666-A267-0EEF313B3CFF}.Debug|x86.ActiveCfg = Debug|Win32
+		{10415C15-A185-4666-A267-0EEF313B3CFF}.Debug|x86.Build.0 = Debug|Win32
+		{10415C15-A185-4666-A267-0EEF313B3CFF}.Release|x64.ActiveCfg = Release|x64
+		{10415C15-A185-4666-A267-0EEF313B3CFF}.Release|x64.Build.0 = Release|x64
+		{10415C15-A185-4666-A267-0EEF313B3CFF}.Release|x86.ActiveCfg = Release|Win32
+		{10415C15-A185-4666-A267-0EEF313B3CFF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
