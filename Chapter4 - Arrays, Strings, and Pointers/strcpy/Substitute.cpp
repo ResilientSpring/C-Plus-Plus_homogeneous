@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
@@ -7,7 +8,7 @@
 #include <iomanip>
 using namespace std;
 
-#define _CRT_SECURE_NO_WARNINGS
+// #define _CRT_SECURE_NO_WARNINGS   #define must be put at the start of a file.
 
 int main() {
 	char string1[30], string2[30];
