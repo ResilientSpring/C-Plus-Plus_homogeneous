@@ -1,4 +1,5 @@
-// Demonstrate the string functions. 
+// Demonstrate the string functions.
+#define _CRT_SECURE_NO_WARNINGS  // [1]
 #include <iostream>
 #include <cstdio>
 #include <cstring>
@@ -34,3 +35,6 @@ int main() {
 	return 0;
 
 }
+
+// Reference: 
+// 1. https://stackoverflow.com/a/55677474
