@@ -41,5 +41,18 @@ public:
 
 int main() {
 	// Pass value to Vehicle constructor.
+	Vehicle minivan = Vehicle(7, 16, 21);
+	Vehicle sportscar(2, 14, 12);
 
+	int range1, range2;
+
+	// Compute the ranges assuming a full tank of gas.
+	range1 = minivan.range();
+	range2 = sportscar.range();
+
+	printf("Minivan can carry %d with a range of %d", minivan.get_passenger(), range1);
+
+	cout << "Sportscar can carry " << sportscar.get_passenger() << " with a range of " << range2;
+
+	return 0;
 }
