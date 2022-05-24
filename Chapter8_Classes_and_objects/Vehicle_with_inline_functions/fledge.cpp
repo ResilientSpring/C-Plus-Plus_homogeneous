@@ -52,7 +52,7 @@ int main() {
 
 	printf("Minivan can carry %d with a range of %d", minivan.get_passenger(), range1);
 
-	cout << "Sportscar can carry " << sportscar.get_passenger() << " with a range of " << range2;
+	cout << "\nSportscar can carry " << sportscar.get_passenger() << " with a range of " << range2;
 
 	return 0;
 }
