@@ -28,10 +28,12 @@ public:
 		return passengers;
 	}
 
+	// Define functions inline.
 	int get_fuelcap() {
 		return fuelcap;
 	}
 
+	// Access private variables through public accessor functions.
 	int get_mpg() {
 		return mpg;
 	}
