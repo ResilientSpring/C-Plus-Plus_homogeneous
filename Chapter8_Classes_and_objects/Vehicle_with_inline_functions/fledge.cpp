@@ -40,5 +40,6 @@ public:
 };
 
 int main() {
+	// Pass value to Vehicle constructor.
 
 }
