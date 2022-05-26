@@ -13,7 +13,16 @@ class Queue {
 public:
 	// Construct a queue of a specific length.
 	Queue(int length) {
+		if (length > maxQsize)
+		{
+			length = maxQsize;
+		}
+		else if (length <= 0)
+		{
+			length = 1;
+		}
 
+		size = length;
 	}
 };
 
