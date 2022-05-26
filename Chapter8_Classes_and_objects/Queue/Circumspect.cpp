@@ -69,5 +69,10 @@ int main() {
 	}
 
 	// Retrieve and display elements from bigQ
+	printf("Contents of bigQ: ");
 
+	for (i = 0; i < 26; i++)
+	{
+		ch = bigQ.get();
+	}
 }
