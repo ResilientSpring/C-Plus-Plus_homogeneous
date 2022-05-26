@@ -41,14 +41,14 @@ public:
 
 	// Get a character from the queue.
 	char get() {
-		
+
 		if (getloc == putloc)
 		{
 			printf(" -- Queue is empty.");
 			return 0;
 		}
 
-		getloc++;
+		++getloc;
 		return q[getloc];
 	}
 };
@@ -88,7 +88,7 @@ int main() {
 	// Now, use smallQ to generate some errors.
 	for (i = 0; i < 5; i++)
 	{
-		cout << "Attempting to store " <<  (char) ('Z' - i);
+		cout << "Attempting to store " << (char)('Z' - i);
 
 		smallQ.put('Z' - i);
 
