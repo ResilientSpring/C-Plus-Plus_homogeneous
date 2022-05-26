@@ -94,4 +94,20 @@ int main() {
 
 		printf("\n");
 	}
+
+	cout << "\n";
+
+	// more errors on smallQ
+	printf("Contents of smallQ: ");
+
+	for (i = 0; i < 5; i++)
+	{
+		ch = smallQ.get();
+
+		if (ch != 0)
+		{
+			printf("%c", ch);
+		}
+	}
+	printf("\n");
 }
