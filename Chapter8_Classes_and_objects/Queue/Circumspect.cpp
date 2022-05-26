@@ -7,8 +7,14 @@ const int maxQsize = 100;  // Define the size of the largest queue that can be c
 
 class Queue {
 	char q[maxQsize];    // This array holds the queue.
-	int size;            // maximum number of elements the queue can hold.
+	int size;    // maximum number of elements the queue can hold. (The actual size of the queue.)
 	int putloc, getloc;  // The put and get indices.
+
+public:
+	// Construct a queue of a specific length.
+	Queue(int length) {
+
+	}
 };
 
 int main() {
