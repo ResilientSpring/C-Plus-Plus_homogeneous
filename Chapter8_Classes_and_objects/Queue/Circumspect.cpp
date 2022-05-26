@@ -54,5 +54,17 @@ public:
 };
 
 int main() {
+	Queue bigQ(100);
+	Queue smallQ = Queue(4);
 
+	char ch;
+	int i;
+
+	printf("Using bigQ to store the alphabet.\n");
+
+	// put some numbers into bigQ.
+	for (i = 0; i < 26; i++)
+	{
+		bigQ.put('A' + i);
+	}
 }
