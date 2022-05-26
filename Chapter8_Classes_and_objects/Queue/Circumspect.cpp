@@ -67,4 +67,7 @@ int main() {
 	{
 		bigQ.put('A' + i);
 	}
+
+	// Retrieve and display elements from bigQ
+
 }
