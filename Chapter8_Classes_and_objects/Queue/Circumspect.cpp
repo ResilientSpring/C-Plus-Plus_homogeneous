@@ -74,5 +74,17 @@ int main() {
 	for (i = 0; i < 26; i++)
 	{
 		ch = bigQ.get();
+
+		if (ch != 0)
+		{
+			printf("%c", ch);
+		}
 	}
+
+	printf("\n\n");
+
+	printf("Using smallQ to generate errors. \n");
+
+	// Now, use smallQ to generate some errors.
+
 }
