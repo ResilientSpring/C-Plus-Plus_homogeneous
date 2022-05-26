@@ -38,6 +38,19 @@ public:
 		putloc++;
 		q[putloc] = ch;  // The new element is stored at the putloc-th element of the array q.
 	}
+
+	// Get a character from the queue.
+	char get() {
+		
+		if (getloc == putloc)
+		{
+			printf(" -- Queue is empty.");
+			return 0;
+		}
+
+		getloc++;
+		return q[getloc];
+	}
 };
 
 int main() {
