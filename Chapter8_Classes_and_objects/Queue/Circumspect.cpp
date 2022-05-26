@@ -88,7 +88,7 @@ int main() {
 	// Now, use smallQ to generate some errors.
 	for (i = 0; i < 5; i++)
 	{
-		printf("Attempting to store ", (char) ('Z' - i));
+		cout << "Attempting to store " <<  (char) ('Z' - i);
 
 		smallQ.put('Z' - i);
 
