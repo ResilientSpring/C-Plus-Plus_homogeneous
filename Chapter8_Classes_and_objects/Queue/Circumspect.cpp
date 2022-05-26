@@ -86,5 +86,12 @@ int main() {
 	printf("Using smallQ to generate errors. \n");
 
 	// Now, use smallQ to generate some errors.
+	for (i = 0; i < 5; i++)
+	{
+		printf("Attempting to store ", (char) ('Z' - i));
 
+		smallQ.put('Z' - i);
+
+		printf("\n");
+	}
 }
