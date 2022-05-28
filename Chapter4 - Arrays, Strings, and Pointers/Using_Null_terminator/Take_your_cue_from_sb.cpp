@@ -1,4 +1,5 @@
 // Convert a string to uppercase.
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
@@ -9,5 +10,16 @@
 using namespace std;
 
 int main() {
+	char str[80];
 
+	strcpy(str, "this is a test");
+
+	for (int i = 0; str[i] ; i++)
+	{
+		str[i] = toupper(str[i]);
+	}
+
+	printf(str);
+
+	return 0;
 }
