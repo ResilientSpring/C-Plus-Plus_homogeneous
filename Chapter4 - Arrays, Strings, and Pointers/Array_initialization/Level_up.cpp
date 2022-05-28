@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
@@ -19,5 +20,16 @@ int main() {
 	};
 
 	printf("Enter a number between 1 and 10: ");
-	scanf()
+	scanf("%d", &i);
+
+	// look up i
+
+	for ( j = 0; j < 10; j++)
+	{
+		if (sqrs[j][0] == i)
+			break;
+	}
+
+	printf("The square of %d is %d", i, sqrs[j][1]);
+
 }
