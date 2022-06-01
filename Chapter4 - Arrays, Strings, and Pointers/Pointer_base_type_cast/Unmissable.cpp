@@ -10,6 +10,8 @@ int main() {
 	double x, y;
 	int* p;       // This pointer is an object that can contain a memory address of an integer. 
 
+	// ----- End of declaration statements.    Operation starts
+
 	x = 123.23;
 	p = (int*)&x;   // Use cast to assign double * to int *.
 
