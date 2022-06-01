@@ -22,11 +22,12 @@ int main() {
 			// and program control resumes at the next statement following the loop.
 			break;
 		}
+
 	}
 
-	if (i == 10)
+	if (i > 8)
 	{
-		printf("Not found. \n");
+		printf("Not found.");
 
 	}
 
