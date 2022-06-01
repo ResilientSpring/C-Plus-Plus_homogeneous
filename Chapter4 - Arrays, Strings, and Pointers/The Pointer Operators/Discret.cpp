@@ -8,4 +8,11 @@ int main() {
 
 	int total;
 	int* ptr;
+	int val;
+
+	total = 3200;
+	ptr = &total;
+	val = *ptr;
+
+	printf("Total is %d .\n", val);
 }
