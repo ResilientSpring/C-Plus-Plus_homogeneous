@@ -11,10 +11,10 @@ int main() {
 
 	// ----- End of declaration statements.    Operation starts
 
-	total = 3200; // Assign 3200 to total.
-	ptr = &total; // get address of total.  & is an operator standing for the memory address of its operand.
+	total = 3200; 
+	ptr = &total; // & returns the memory address of its operand.
 
-	val = *ptr;  // * is an operator representing the value at the memory address of its operand. 
+	val = *ptr;  // * returns the value at the memory address of its operand.
 
 	cout << "Total is: " << val << '\n';
 
