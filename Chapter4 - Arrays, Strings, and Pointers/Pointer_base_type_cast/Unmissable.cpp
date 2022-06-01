@@ -17,4 +17,6 @@ int main() {
 	y = *p;  // What will this do? 
 	cout << y;  // What will this print?
 
+	return 0;
+
 }
