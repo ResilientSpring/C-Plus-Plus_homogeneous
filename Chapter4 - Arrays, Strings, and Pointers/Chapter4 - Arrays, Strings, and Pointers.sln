@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointer_base_type_cast", "P
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assign value via Pointer", "Assign value via Pointer\Assign value via Pointer.vcxproj", "{69E1EAC1-1505-4109-88CA-49FF6B85CEB0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointer Value Assignment", "Pointer Value Assignment\Pointer Value Assignment.vcxproj", "{9993C959-B6AC-4364-A637-10CB8E5C0432}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -151,6 +153,14 @@ Global
 		{69E1EAC1-1505-4109-88CA-49FF6B85CEB0}.Release|x64.Build.0 = Release|x64
 		{69E1EAC1-1505-4109-88CA-49FF6B85CEB0}.Release|x86.ActiveCfg = Release|Win32
 		{69E1EAC1-1505-4109-88CA-49FF6B85CEB0}.Release|x86.Build.0 = Release|Win32
+		{9993C959-B6AC-4364-A637-10CB8E5C0432}.Debug|x64.ActiveCfg = Debug|x64
+		{9993C959-B6AC-4364-A637-10CB8E5C0432}.Debug|x64.Build.0 = Debug|x64
+		{9993C959-B6AC-4364-A637-10CB8E5C0432}.Debug|x86.ActiveCfg = Debug|Win32
+		{9993C959-B6AC-4364-A637-10CB8E5C0432}.Debug|x86.Build.0 = Debug|Win32
+		{9993C959-B6AC-4364-A637-10CB8E5C0432}.Release|x64.ActiveCfg = Release|x64
+		{9993C959-B6AC-4364-A637-10CB8E5C0432}.Release|x64.Build.0 = Release|x64
+		{9993C959-B6AC-4364-A637-10CB8E5C0432}.Release|x86.ActiveCfg = Release|Win32
+		{9993C959-B6AC-4364-A637-10CB8E5C0432}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
