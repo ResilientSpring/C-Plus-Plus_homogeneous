@@ -15,5 +15,14 @@ int main() {
 
 	*p = 100;   // * is an operator representing the value at the memory address of its operand.
 
+	cout << num << ' ';
+
+	(*p)++;
+
+	cout << num << ' ';
+
+	(*p)--;
+
+	cout << num << '\n';
 
 }
