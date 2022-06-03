@@ -12,7 +12,7 @@ int main() {
 
 	printf("Original string: %s \n", str);
 
-	// In C++, using the name of an array without an index generates a pointer to the first element of the array.
+	// In C++, using the name of an array without an index generates a pointer to the first element in the array.
 	p = str;
 	// In other words, in C++, using the name of an array without an index represents the memory address of
 	// the first element of the array.
