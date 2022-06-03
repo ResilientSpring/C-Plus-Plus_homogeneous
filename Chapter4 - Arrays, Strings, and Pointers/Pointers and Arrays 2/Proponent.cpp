@@ -7,5 +7,7 @@
 using namespace std;
 
 int main() {
+	char* p;
+	char str[80] = "This Is A Test";
 
 }
