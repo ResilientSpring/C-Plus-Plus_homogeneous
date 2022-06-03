@@ -27,5 +27,5 @@ int main() {
 		p++;
 	}
 
-
+	printf("Inverted-case string: %s \n", str);
 }
