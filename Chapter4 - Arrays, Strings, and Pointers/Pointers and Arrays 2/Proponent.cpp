@@ -17,5 +17,15 @@ int main() {
 	// In other words, in C++, using the name of an array without an index represents the memory address of
 	// the first element of the array.
 
+	while (*p)
+	{
+		if (isupper(*p))
+			*p = tolower(*p);
+		else if (islower(*p))
+			*p = toupper(*p);
+
+		p++;
+	}
+
 
 }
