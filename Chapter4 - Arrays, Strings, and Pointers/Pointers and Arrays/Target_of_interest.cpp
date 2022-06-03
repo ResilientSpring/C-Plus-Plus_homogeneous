@@ -19,4 +19,6 @@ int main() {
 		else if (islower(str[i]))
 			str[i] = toupper(str[i]);
 	}
+
+	printf("Inverted-case string: %s \n", str);
 }
