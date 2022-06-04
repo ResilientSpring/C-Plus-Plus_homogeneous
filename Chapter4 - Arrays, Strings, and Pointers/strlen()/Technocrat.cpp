@@ -9,4 +9,7 @@ using namespace std;
 int main() {
 	char str[] = "cliche";
 	printf("The length of the string str is %d .\n", strlen(str));
+
+	char str[11] = "hi there";
+	printf("The length of the string str is %d . \n", strlen(str));
 }
