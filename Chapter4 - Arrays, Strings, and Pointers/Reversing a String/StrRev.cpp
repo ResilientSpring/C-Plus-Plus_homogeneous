@@ -9,4 +9,25 @@ using namespace std;
 
 int main() {
 	char str[] = "this is a test";
+	char *start, *end;
+	int len;
+	char t;
+
+	printf("Original: %s \n", str);
+	len = strlen(str);
+	start = str;
+	end = &str[len - 1];
+
+	while (start < end)
+	{
+		t = *start;
+		*start = *end;
+		*end = t;
+
+		start++;
+		end--;
+	}
+
+	printf("Reversed: %s \n", str);
+
 }
