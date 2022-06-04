@@ -49,6 +49,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointers and arrays 4", "Po
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "String Constants", "String Constants\String Constants.vcxproj", "{F9F40AF2-8C0C-4C12-8CE7-DAE7D5E5169D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reversing a String", "Reversing a String\Reversing a String.vcxproj", "{F27E6D23-2F5B-4EF2-BD42-4ED0E534AA86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -241,6 +243,14 @@ Global
 		{F9F40AF2-8C0C-4C12-8CE7-DAE7D5E5169D}.Release|x64.Build.0 = Release|x64
 		{F9F40AF2-8C0C-4C12-8CE7-DAE7D5E5169D}.Release|x86.ActiveCfg = Release|Win32
 		{F9F40AF2-8C0C-4C12-8CE7-DAE7D5E5169D}.Release|x86.Build.0 = Release|Win32
+		{F27E6D23-2F5B-4EF2-BD42-4ED0E534AA86}.Debug|x64.ActiveCfg = Debug|x64
+		{F27E6D23-2F5B-4EF2-BD42-4ED0E534AA86}.Debug|x64.Build.0 = Debug|x64
+		{F27E6D23-2F5B-4EF2-BD42-4ED0E534AA86}.Debug|x86.ActiveCfg = Debug|Win32
+		{F27E6D23-2F5B-4EF2-BD42-4ED0E534AA86}.Debug|x86.Build.0 = Debug|Win32
+		{F27E6D23-2F5B-4EF2-BD42-4ED0E534AA86}.Release|x64.ActiveCfg = Release|x64
+		{F27E6D23-2F5B-4EF2-BD42-4ED0E534AA86}.Release|x64.Build.0 = Release|x64
+		{F27E6D23-2F5B-4EF2-BD42-4ED0E534AA86}.Release|x86.ActiveCfg = Release|Win32
+		{F27E6D23-2F5B-4EF2-BD42-4ED0E534AA86}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
