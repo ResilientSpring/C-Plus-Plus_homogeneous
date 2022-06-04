@@ -15,5 +15,6 @@ int main() {
 
 	printf("Original: %s \n", str);
 	len = strlen(str);
+	start = str;
 
 }
