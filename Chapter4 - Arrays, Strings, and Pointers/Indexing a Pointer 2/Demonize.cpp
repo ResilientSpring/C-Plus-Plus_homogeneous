@@ -13,7 +13,7 @@ int main() {
 	char str[80] = "This Is A Test";
 	printf("Original string: %s \n", str);
 
-	p = str;   // p now holds the memory address of the first element in the character array.
+	p = str;   // p now holds the memory address of the first character in the character array.
 
 	// now, index p
 	for (i = 0; i < (p + i); i++)
