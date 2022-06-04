@@ -8,7 +8,7 @@ using namespace std;
 int main() {
 	char *ptr;
 
-	ptr = "Pointers add power to C++";
+	ptr = 'P';
 
 	printf(ptr);
 }
