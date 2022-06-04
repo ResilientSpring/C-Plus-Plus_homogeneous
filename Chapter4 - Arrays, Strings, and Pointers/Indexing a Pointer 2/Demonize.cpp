@@ -18,10 +18,10 @@ int main() {
 	// now, index p
 	for (i = 0; i < *(p + i); i++)
 	{
-		if (isupper(p[i]))
-			p[i] = tolower(p[i]);
-		else if (islower(p[i]))       // Access p as if it were an array.
-			p[i] = toupper(p[i]);
+		if (isupper(*(p + i)))
+			*(p + i) = tolower(*(p + i));
+		else if (islower(*(p + i)))       // Access p as if it were an array.
+			*(p + i) = toupper(*(p + i));
 	}
 
 	printf("Inverted-case string: %s \n", str);
