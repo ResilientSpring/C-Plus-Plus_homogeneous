@@ -12,4 +12,6 @@ int main() {
 
 	char tightrope[11] = "hi there";
 	printf("The length of the string str is %d . \n", strlen(tightrope));
+
+	char cave[11] = "hello there";
 }
