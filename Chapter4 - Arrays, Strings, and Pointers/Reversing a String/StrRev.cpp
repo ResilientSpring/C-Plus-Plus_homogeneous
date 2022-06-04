@@ -28,4 +28,6 @@ int main() {
 		end--;
 	}
 
+	printf("Reversed: %s \n", str);
+
 }
