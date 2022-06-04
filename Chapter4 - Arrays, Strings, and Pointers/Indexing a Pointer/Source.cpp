@@ -20,8 +20,10 @@ int main() {
 	{
 		if (isupper(p[i]))
 			p[i] = tolower(p[i]);
-		else if (islower(p[i]))
+		else if (islower(p[i]))       // Access p as if it were an array.
 			p[i] = toupper(p[i]);
 	}
+
+	printf("Inverted-case string: %s \n", str);
 	
 }
