@@ -16,7 +16,7 @@ int main() {
 	p = str;   // p now holds the memory address of the first character in the character array.
 
 	// now, index p
-	for (i = 0; i < (p + i); i++)
+	for (i = 0; i < *(p + i); i++)
 	{
 		if (isupper(p[i]))
 			p[i] = tolower(p[i]);
