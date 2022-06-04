@@ -23,6 +23,9 @@ int main() {
 		t = *start;
 		*start = *end;
 		*end = t;
+
+		start++;
+		end--;
 	}
 
 }
