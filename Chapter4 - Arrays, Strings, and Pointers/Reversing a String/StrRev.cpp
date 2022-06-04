@@ -18,4 +18,11 @@ int main() {
 	start = str;
 	end = &str[len - 1];
 
+	while (start < end)
+	{
+		t = *start;
+		*start = *end;
+		*end = t;
+	}
+
 }
