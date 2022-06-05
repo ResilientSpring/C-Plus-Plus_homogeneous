@@ -25,5 +25,7 @@ int main() {
 
 	printf("Enter word: ");
 
-	scanf("%s", word);
+	// In C++, using the name of an array without an index represents the memory address of 
+	// the first element of the array.
+	scanf("%s", word);   // Need not precede word with * in scanf()
 }
