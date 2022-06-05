@@ -20,5 +20,7 @@ int main() {
 
 	printf("Enter word: ");
 
-	scanf("%s", word);
+	// In C++, using an array's name without indexing brackets [] attached represents the memory address of 
+	// the array's first element.
+	scanf("%s", word);           // Need not to precede the word with * because it's already an memory address.
 }
