@@ -9,3 +9,5 @@ int main() {
 
 	}
 }
+
+// Source: <Modern C for Absolute Beginners> Chapter 12.7 Array of Pointers
