@@ -14,7 +14,7 @@ public:
 	}
 
 	void show_num() {
-		printf("%d", num);
+		printf("%d \n", num);
 	}
 };
 
