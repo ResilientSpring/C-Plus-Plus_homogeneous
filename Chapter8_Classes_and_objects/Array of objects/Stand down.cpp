@@ -19,5 +19,12 @@ public:
 };
 
 int main() {
-	MyClass ob[4];   // Create an array of objects.
+	MyClass objects[4];   // Create an array of objects.
+
+	int i;
+
+	for ( i = 0; i < 4; i++)
+	{
+
+	}
 }
