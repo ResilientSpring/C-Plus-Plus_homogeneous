@@ -23,8 +23,10 @@ int main() {
 
 	int i;
 
-	for ( i = 0; i < 4; i++)
-	{
+	for ( i = 0; i < 4; i++)	
+		objects[i].set_x(i);
 
-	}
+	for (i = 0; i < 4; i++)
+		printf("Objects[%d].get_x(): %d \n", i, objects[i].get_x());
+	
 }
