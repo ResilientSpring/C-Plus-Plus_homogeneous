@@ -23,4 +23,8 @@ int main() {
 
 	object.set_num(1);
 	object.show_num();
+
+	pointer = &object;
+	pointer->set_num(20);
+	pointer->show_num();
 }
