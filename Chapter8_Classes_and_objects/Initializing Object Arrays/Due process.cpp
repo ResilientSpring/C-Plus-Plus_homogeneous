@@ -8,9 +8,15 @@
 class MyClass {
 	int x;
 public:
+	MyClass(int i) {
+		x = i;
+	}
 
+	int get_x() {
+		return x;
+	}
 };
 
 int main() {
-
+	MyClass objects[4];
 }

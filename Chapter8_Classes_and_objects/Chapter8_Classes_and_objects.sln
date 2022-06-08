@@ -53,6 +53,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Array of objects4", "Array 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Initializing Object Arrays", "Initializing Object Arrays\Initializing Object Arrays.vcxproj", "{183AA7D3-44FE-4777-8736-24788436816D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Initializing Object Arrays2", "Initializing Object Arrays2\Initializing Object Arrays2.vcxproj", "{CA839011-3D8A-47C5-8A66-71F4926631AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -261,6 +263,14 @@ Global
 		{183AA7D3-44FE-4777-8736-24788436816D}.Release|x64.Build.0 = Release|x64
 		{183AA7D3-44FE-4777-8736-24788436816D}.Release|x86.ActiveCfg = Release|Win32
 		{183AA7D3-44FE-4777-8736-24788436816D}.Release|x86.Build.0 = Release|Win32
+		{CA839011-3D8A-47C5-8A66-71F4926631AA}.Debug|x64.ActiveCfg = Debug|x64
+		{CA839011-3D8A-47C5-8A66-71F4926631AA}.Debug|x64.Build.0 = Debug|x64
+		{CA839011-3D8A-47C5-8A66-71F4926631AA}.Debug|x86.ActiveCfg = Debug|Win32
+		{CA839011-3D8A-47C5-8A66-71F4926631AA}.Debug|x86.Build.0 = Debug|Win32
+		{CA839011-3D8A-47C5-8A66-71F4926631AA}.Release|x64.ActiveCfg = Release|x64
+		{CA839011-3D8A-47C5-8A66-71F4926631AA}.Release|x64.Build.0 = Release|x64
+		{CA839011-3D8A-47C5-8A66-71F4926631AA}.Release|x86.ActiveCfg = Release|Win32
+		{CA839011-3D8A-47C5-8A66-71F4926631AA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
