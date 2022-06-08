@@ -29,8 +29,9 @@ int main() {
 
 	for (int i = 0; i < 4; i++)
 	{
-		printf("%d  ", objects[i][0].get_x());
-		printf("%d  ", objects[i][0].get_y());
-
+		printf("%d    ", objects[i][0].get_x());
+		printf("%d  \n", objects[i][0].get_y());
+		printf("%d    ", objects[i][1].get_x());
+		printf("%d  \n", objects[i][1].get_y());
 	}
 }
