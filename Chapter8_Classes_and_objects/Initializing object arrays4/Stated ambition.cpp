@@ -24,5 +24,5 @@ public:
 };
 
 int main() {
-
+	MyClass objects[4][2] = MyClass[4][2];
 }
