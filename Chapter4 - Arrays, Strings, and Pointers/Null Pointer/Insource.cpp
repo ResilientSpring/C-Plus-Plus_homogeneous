@@ -7,7 +7,8 @@
 
 int main() {
 	float *p = 0;
-	printf("%p, %d \n", p, *p);
+//	printf("%p, %d \n", p, *p);  p is a null pointer.
+	printf("%p \n", p);
 
 	float *p2;
 	p2 = 0;
