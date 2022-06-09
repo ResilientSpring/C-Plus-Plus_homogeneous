@@ -20,5 +20,5 @@ public:
 };
 
 int main() {
-	P_example
+	P_example objectives[2], *p;
 }
