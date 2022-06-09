@@ -16,4 +16,11 @@ int main() {
 	printf("%p \n", p2);
 
 	float* q = NULL;
+
+	printf("%p \n", q);
+
+	float *r;
+	r = NULL;
+
+	printf("%p \n", r);
 }
