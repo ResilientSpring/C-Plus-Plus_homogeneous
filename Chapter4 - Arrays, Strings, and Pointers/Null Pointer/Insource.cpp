@@ -23,4 +23,6 @@ int main() {
 	r = NULL;
 
 	printf("%p \n", r);
+
+//	printf("%d \n", *r);       r doesn't have an address, let alone a value in an address.
 }
