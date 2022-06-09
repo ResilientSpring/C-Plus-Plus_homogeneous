@@ -7,5 +7,12 @@
 
 int main() {
 	float *p = 0;
-	float *q = NULL;
+	printf("%p \n", p);
+
+	float *p2;
+	p2 = 0;
+
+	printf("%p", p2);
+
+	float* q = NULL;
 }
