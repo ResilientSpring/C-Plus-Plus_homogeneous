@@ -19,5 +19,5 @@ int main() {
 
 	q = &p;  // Assign p's memory address to q. (p, of course, has its own memory address.)
 
-	printf("%p", *q);   // %p because the value that sits on p's memory address is x's memory address.
+	printf("%p", *q);   // %p because the value that sits on p's own memory address is x's memory address.
 }
