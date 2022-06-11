@@ -22,7 +22,9 @@ int main() {
 
 	p = &x;
 
-	printf("%p  \n", p);
+	printf("%p  \n", p);   // x's address on memory remains the same before and after value assignment.
+
+
 
 
 }
