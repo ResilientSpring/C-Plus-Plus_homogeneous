@@ -18,5 +18,11 @@ int main() {
 
 	printf("%p  \n", p);
 
+	x = 10;      // Now, the value that sits on the variable's address on memory is 10.
+
+	p = &x;
+
+	printf("%p  \n", p);
+
 
 }
