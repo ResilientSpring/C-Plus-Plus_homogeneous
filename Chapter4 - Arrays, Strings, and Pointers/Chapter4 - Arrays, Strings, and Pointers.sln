@@ -85,6 +85,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Multiple Indirection8", "Mu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Multiple Indirection9", "Multiple Indirection9\Multiple Indirection9.vcxproj", "{4D1FC01C-BAC5-47DA-8D65-1243FAC2A052}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "String Constants2", "String Constants22\String Constants22.vcxproj", "{1D246029-2003-41D7-8FC0-40B7FC1A3A2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -421,6 +423,14 @@ Global
 		{4D1FC01C-BAC5-47DA-8D65-1243FAC2A052}.Release|x64.Build.0 = Release|x64
 		{4D1FC01C-BAC5-47DA-8D65-1243FAC2A052}.Release|x86.ActiveCfg = Release|Win32
 		{4D1FC01C-BAC5-47DA-8D65-1243FAC2A052}.Release|x86.Build.0 = Release|Win32
+		{1D246029-2003-41D7-8FC0-40B7FC1A3A2D}.Debug|x64.ActiveCfg = Debug|x64
+		{1D246029-2003-41D7-8FC0-40B7FC1A3A2D}.Debug|x64.Build.0 = Debug|x64
+		{1D246029-2003-41D7-8FC0-40B7FC1A3A2D}.Debug|x86.ActiveCfg = Debug|Win32
+		{1D246029-2003-41D7-8FC0-40B7FC1A3A2D}.Debug|x86.Build.0 = Debug|Win32
+		{1D246029-2003-41D7-8FC0-40B7FC1A3A2D}.Release|x64.ActiveCfg = Release|x64
+		{1D246029-2003-41D7-8FC0-40B7FC1A3A2D}.Release|x64.Build.0 = Release|x64
+		{1D246029-2003-41D7-8FC0-40B7FC1A3A2D}.Release|x86.ActiveCfg = Release|Win32
+		{1D246029-2003-41D7-8FC0-40B7FC1A3A2D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
