@@ -77,6 +77,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Null Pointer2", "Null Point
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Multiple Indirection5", "Multiple Indirection5\Multiple Indirection5.vcxproj", "{C8F895B8-0E18-4F1B-9635-6C5AB2B866F4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Multiple Indirection6", "Multiple Indirection6\Multiple Indirection6.vcxproj", "{EC5D7A76-269B-499B-8246-86DC1E24D9A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -381,6 +383,14 @@ Global
 		{C8F895B8-0E18-4F1B-9635-6C5AB2B866F4}.Release|x64.Build.0 = Release|x64
 		{C8F895B8-0E18-4F1B-9635-6C5AB2B866F4}.Release|x86.ActiveCfg = Release|Win32
 		{C8F895B8-0E18-4F1B-9635-6C5AB2B866F4}.Release|x86.Build.0 = Release|Win32
+		{EC5D7A76-269B-499B-8246-86DC1E24D9A1}.Debug|x64.ActiveCfg = Debug|x64
+		{EC5D7A76-269B-499B-8246-86DC1E24D9A1}.Debug|x64.Build.0 = Debug|x64
+		{EC5D7A76-269B-499B-8246-86DC1E24D9A1}.Debug|x86.ActiveCfg = Debug|Win32
+		{EC5D7A76-269B-499B-8246-86DC1E24D9A1}.Debug|x86.Build.0 = Debug|Win32
+		{EC5D7A76-269B-499B-8246-86DC1E24D9A1}.Release|x64.ActiveCfg = Release|x64
+		{EC5D7A76-269B-499B-8246-86DC1E24D9A1}.Release|x64.Build.0 = Release|x64
+		{EC5D7A76-269B-499B-8246-86DC1E24D9A1}.Release|x86.ActiveCfg = Release|Win32
+		{EC5D7A76-269B-499B-8246-86DC1E24D9A1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
