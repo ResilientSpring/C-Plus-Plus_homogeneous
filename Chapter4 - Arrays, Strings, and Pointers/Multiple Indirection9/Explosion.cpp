@@ -26,4 +26,5 @@ int main() {
 	printf("%p  \n", *q);  // The value that sits on p's memory address is x's memory address.
 
 
+	printf("%d  \n", *(*q));  // The value that sits on x's memory address is 10.
 }
