@@ -11,5 +11,7 @@ int main() {
 
 	ptr = dispassionate;
 
-	printf("%p", ptr);  // Print the memory address of the first element of the character array dispassionate.
+	printf("%p  \n", ptr);  // Print the memory address of the first element of the character array dispassionate.
+
+	printf("%s  \n", *ptr);
 }
