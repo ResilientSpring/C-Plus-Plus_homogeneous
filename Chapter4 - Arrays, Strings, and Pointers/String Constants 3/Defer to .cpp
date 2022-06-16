@@ -13,5 +13,5 @@ int main() {
 
 	printf("%p  \n", ptr);  // Print the memory address of the first element of the character array dispassionate.
 
-	printf("%s  \n", *ptr);
+	printf("%c  \n", *ptr);
 }
