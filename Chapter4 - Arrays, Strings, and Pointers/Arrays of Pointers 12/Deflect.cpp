@@ -26,6 +26,8 @@ int main() {
 
 //	printf("You entered %s  \n", *word);
 	printf("You entered %c  \n", *word);
+//	printf("You entered %s  \n", *word);
+
 
 	for (int i = 0; dictionary[i][0][0]; i++)
 	{
