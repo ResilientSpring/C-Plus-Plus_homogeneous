@@ -8,6 +8,7 @@ int main() {
 	char str3[][100] = { {"This is a string."} };
 	char str4[][100] = { {"This is a string"}, {"Nursing a grievance against sb"}, {"grudge"} };
     char str5[][10][15] = { {{"string"}, {"grief"}}, {{"out of blue"}, {"carcinoma"}}, {{"ovation"}, {"kk"}} };
+    char str6[][10][15] = { {"string", "grief"},  {"out of blue", "carcinoma"}, {"ovation", "kk"}};
 	
     char DirectionPosition[][5][3] = {
     {"00", "10", "", "01", ""},
