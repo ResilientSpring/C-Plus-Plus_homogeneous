@@ -26,4 +26,7 @@ int main() {
 	objectives[1].set_num(20);   
 
 	p = &objectives[0];   // obtain pointer to the first element.
+	p->show_num();        // Show value at objetives[0] using pointer.
+	p++;                  // Advance to next object.
+
 }
