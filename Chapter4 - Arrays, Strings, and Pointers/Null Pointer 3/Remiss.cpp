@@ -11,5 +11,9 @@ int main() {
 
 	p = NULL;
 
+	if (p)
+		printf("p is not null. \n");
+	else if (!p)
+		printf("p is null. \n");
 
 }
