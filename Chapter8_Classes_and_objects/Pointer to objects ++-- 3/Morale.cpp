@@ -32,6 +32,6 @@ int main() {
 
 	p = &array_of_P_example[0];
 
-
+	p->show_num();
 	
 }
