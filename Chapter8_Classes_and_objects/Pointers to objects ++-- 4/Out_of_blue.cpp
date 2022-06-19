@@ -23,4 +23,7 @@ int main() {
 
 	P_example objectives[] = {P_example(), P_example()};
 
+	objectives[0].set_num(10);
+	objectives[0].show_num();
+
 }
