@@ -26,5 +26,10 @@ int main() {
 	objectives[0].set_num(10);
 
 	p = &objectives[0];
+	p->show_num();
 
+	objectives[1] = P_example();
+	objectives[1].set_num(20);
+
+	p++;
 }
