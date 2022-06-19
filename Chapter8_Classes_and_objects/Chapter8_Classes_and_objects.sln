@@ -71,6 +71,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointers to objects ++-- 4"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointers to objects ++-- 5", "Pointers to objects ++-- 5\Pointers to objects ++-- 5.vcxproj", "{AA7CBC6B-F2E7-4171-B390-DB02020B3D71}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointers to objects ++-- 6", "Pointer to objects ++-- 5\Pointer to objects ++-- 5.vcxproj", "{B6CB0300-4930-4EB8-A498-A12EE27703AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -351,6 +353,14 @@ Global
 		{AA7CBC6B-F2E7-4171-B390-DB02020B3D71}.Release|x64.Build.0 = Release|x64
 		{AA7CBC6B-F2E7-4171-B390-DB02020B3D71}.Release|x86.ActiveCfg = Release|Win32
 		{AA7CBC6B-F2E7-4171-B390-DB02020B3D71}.Release|x86.Build.0 = Release|Win32
+		{B6CB0300-4930-4EB8-A498-A12EE27703AB}.Debug|x64.ActiveCfg = Debug|x64
+		{B6CB0300-4930-4EB8-A498-A12EE27703AB}.Debug|x64.Build.0 = Debug|x64
+		{B6CB0300-4930-4EB8-A498-A12EE27703AB}.Debug|x86.ActiveCfg = Debug|Win32
+		{B6CB0300-4930-4EB8-A498-A12EE27703AB}.Debug|x86.Build.0 = Debug|Win32
+		{B6CB0300-4930-4EB8-A498-A12EE27703AB}.Release|x64.ActiveCfg = Release|x64
+		{B6CB0300-4930-4EB8-A498-A12EE27703AB}.Release|x64.Build.0 = Release|x64
+		{B6CB0300-4930-4EB8-A498-A12EE27703AB}.Release|x86.ActiveCfg = Release|Win32
+		{B6CB0300-4930-4EB8-A498-A12EE27703AB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
