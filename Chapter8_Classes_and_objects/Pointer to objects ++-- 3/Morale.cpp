@@ -1,7 +1,7 @@
 // Incrementing and decrementing an object pointer.
 #include <iostream>
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 #include <iomanip>
 
@@ -14,24 +14,24 @@ public:
 	}
 
 	void show_num() {
-		printf("%d \n", num);
+		printf("%d  \n", num);
 	}
 };
 
 int main() {
-	P_example objectives[2];
+	int array_of_integer[5];
+
+	P_example array_of_P_example[2];
+	
+	array_of_P_example[0] = P_example();
+
+	array_of_P_example[0].set_num(10);
+	array_of_P_example[0].show_num();
+
 	P_example *p;
 
-	objectives[0] = P_example();
-	objectives[0].set_num(10);
-
-	p = &objectives[0];
-	p->show_num();
-
-	objectives[1] = P_example();
-	objectives[1].set_num(20);
-
-	p++;
+	p = &array_of_P_example[0];
 
 	p->show_num();
+	
 }
