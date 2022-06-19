@@ -19,5 +19,10 @@ public:
 };
 
 int main() {
+	int array_of_integer[5];
+
+	P_example array_of_P_example[2];
+	
+	array_of_P_example[0] = P_example();
 	
 }
