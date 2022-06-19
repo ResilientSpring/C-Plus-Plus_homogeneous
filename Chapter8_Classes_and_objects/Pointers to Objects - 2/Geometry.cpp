@@ -32,4 +32,6 @@ int main() {
 	objectives[1].set_num(20);
 
 	p++;
+
+	p->show_num();
 }
