@@ -19,5 +19,8 @@ public:
 };
 
 int main() {
-	
+	P_example objectives[2];
+	P_example *p;
+
+	objectives[0] = P_example();
 }
