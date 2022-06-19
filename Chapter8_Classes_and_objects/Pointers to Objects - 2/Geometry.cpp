@@ -23,4 +23,8 @@ int main() {
 	P_example *p;
 
 	objectives[0] = P_example();
+	objectives[0].set_num(10);
+
+	p = &objectives[0];
+
 }
