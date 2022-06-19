@@ -5,6 +5,19 @@
 #include <string.h>
 #include <iomanip>
 
-int main() {
+class P_example {
+	int num;
 
+public:
+	void set_num(int val) {
+		num = val;
+	}
+
+	void show_num() {
+		printf("%d  \n", num);
+	}
+};
+
+int main() {
+	
 }
