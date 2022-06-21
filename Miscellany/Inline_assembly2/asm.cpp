@@ -14,6 +14,7 @@ int main() {
 	_asm {
 		.stack 100h
 		.data
+
 		num1 sdword ? ;  first number
 		num2 sdword ? ;  second number
 
