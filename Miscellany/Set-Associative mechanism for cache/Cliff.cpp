@@ -195,7 +195,7 @@ int main() {
 	blocks set_of_interest[] = { block_1, block_2};
 
 	cout << "Hint 5: \n" << "set[20] = {block_1, block_2};\n";
-	cout << "block_#:   valid  |  Tag \n";
+	cout << "block_#:  valid  |  Tag \n";
 	cout << "block_1:   " << block_1.valid << "  |  " << block_1.tag << "\n";
 	cout << "block_2:   " << block_2.valid << "  |  " << block_2.tag << "\n";
 
@@ -206,6 +206,11 @@ int main() {
 		miss_count++;
 		block_1.tag = floor( location[0] / num_of_set);
 	}
+
+	cout << "\n After the 1st round. \n\n";
+	cout << "block_#:  valid  |  Tag \n";
+	cout << "block_1:   " << block_1.valid << "  |  " << block_1.tag << "\n";
+	cout << "block_2:   " << block_2.valid << "  |  " << block_2.tag << "\n";
 
 	// Hint 5
 	if (location[0] / num_of_set == location[1] / num_of_set)
