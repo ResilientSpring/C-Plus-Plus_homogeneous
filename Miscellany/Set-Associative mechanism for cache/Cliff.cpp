@@ -68,7 +68,7 @@ int main() {
 	out.close();
 
 	// Hint 2
-	cout << "What is the block size of cache? (Byte)" << "\n";
+	cout << "What is each block's size in the cache? (Byte)" << "\n";
 
 	cin >> block_size;
 
