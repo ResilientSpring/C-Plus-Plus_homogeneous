@@ -189,52 +189,7 @@ int main() {
 	out.close();
 
 	// Hint 4
-	num_of_cache_block_in_a_set = num_of_cache_block / num_of_set;
-
-	auto inside_cache = new int[num_of_cache_block_in_a_set][4]();
-
-	// Initialize cache contents to zero. (Hint 4)
-	for (int i = 0; i < num_of_cache_block_in_a_set; i++)
-	{
-		for (int j = 0; j < 4; j++)
-		{
-			inside_cache[i][j] = 0;
-		}
-
-	}
-
-	// Reaffirm if the cache contents are zero. (Hint 4)
-	for (int i = 0; i < num_of_cache_block_in_a_set; i++)
-	{
-		for (int j = 0; j < 4; j++)
-		{
-			cout << inside_cache[i][j] << "\n";
-		}
-
-	}
-
-	// Hint 4
-	if (inside_cache[0][0] && inside_cache[1][0] == 0)
-	{
-		inside_cache[0][0] = 1;
-		miss_count++;
-	}
-
-	// Show the number of miss by far.
-	cout << "The number of miss by far: " << miss_count << "\n";
-
-	// Hint 5
-	for (int i = 0; i < 5004; i++)
-	{
-		if (location[i + 1] == location[i])
-		{
-			hit_count++;
-		}
-
-	}
-
-	// Show the number of hit by far.
-	cout << "The number of hit by far: " << hit_count << "\n";
+	blocks set_of_interest[location[i] % num_of_set]
 
 
 	return 0;
