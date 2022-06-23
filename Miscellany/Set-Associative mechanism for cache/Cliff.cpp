@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-	int d[5004];
+	int memory_address[5004];
 	int block_size;
 	int location[5004];
 	int cache_size_kilobyte;
@@ -33,7 +33,7 @@ int main() {
 	// Read trace.txt (Hint 1)
 	for (int i = 0; i < 5004; i++)
 	{
-		in >> hex >> d[i];
+		in >> hex >> memory_address[i];
 	}
 
 	in.close();
@@ -41,7 +41,7 @@ int main() {
 	// Show what the program read. (Hint 1)
 	for (int i = 0; i < 5004; i++)
 	{
-		cout << d[i] << "\n";
+		cout << memory_address[i] << "\n";
 	}
 
 	// Save what the program read.
@@ -57,7 +57,7 @@ int main() {
 	// Output to the file.
 	for (int i = 0; i < 5004; i++)
 	{
-		out << d[i] << "\n";
+		out << memory_address[i] << "\n";
 	}
 
 	// Close Hex_to_dec.txt
@@ -73,7 +73,7 @@ int main() {
 	case 8:
 		for (int i = 0; i < 5004; i++)
 		{
-			location[i] = d[i] / 8;
+			location[i] = memory_address[i] / 8;
 		}
 
 		break;
@@ -82,7 +82,7 @@ int main() {
 
 		for (int i = 0; i < 5004; i++)
 		{
-			location[i] = d[i] / 16;
+			location[i] = memory_address[i] / 16;
 		}
 
 		break;
@@ -91,7 +91,7 @@ int main() {
 
 		for (int i = 0; i < 5004; i++)
 		{
-			location[i] = d[i] / 32;
+			location[i] = memory_address[i] / 32;
 
 		}
 
@@ -101,7 +101,7 @@ int main() {
 
 		for (int i = 0; i < 5004; i++)
 		{
-			location[i] = d[i] / 64;
+			location[i] = memory_address[i] / 64;
 		}
 
 		break;
