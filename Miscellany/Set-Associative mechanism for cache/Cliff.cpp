@@ -18,7 +18,7 @@ int main() {
 
 	ofstream out;
 
-	ifstream in("trace.txt");  // Open a file for text input.
+	ifstream in("augmented_trace.txt");  // Open a file for text input.
 
 	if (!in) {
 		cout << "Cannot open file.\n";
@@ -147,7 +147,7 @@ int main() {
 	num_of_cache_block = cache_size_byte / block_size;
 
 	// Hint 3
-	cout << "Specify the n of n-set associative:" << "\n";
+	cout << "Specify the n of n-way set associative cache:" << "\n";
 	cin >> set;
 
 	num_of_set = num_of_cache_block / set;
