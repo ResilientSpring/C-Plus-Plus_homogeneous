@@ -3,7 +3,15 @@
 #include <iomanip>
 #include <stdio.h>
 #include <new>
+#include <math.h>
 using namespace std;
+
+class blocks {
+public:
+	bool valid = true;
+	int tag = 0;
+	int count = 0;
+};
 
 int main() {
 	int memory_address[5004];
