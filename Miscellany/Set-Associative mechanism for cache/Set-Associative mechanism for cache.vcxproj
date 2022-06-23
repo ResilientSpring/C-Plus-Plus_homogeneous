@@ -143,6 +143,9 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="augmented_trace.txt" />
+    <Text Include="Hex_to_dec.txt" />
+    <Text Include="Which_block_is_the_memory_address_in.txt" />
+    <Text Include="Which_set_does_memory_block_belong_to.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

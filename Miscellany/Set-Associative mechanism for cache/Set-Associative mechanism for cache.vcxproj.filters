@@ -23,5 +23,14 @@
     <Text Include="augmented_trace.txt">
       <Filter>Source Files</Filter>
     </Text>
+    <Text Include="Hex_to_dec.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="Which_set_does_memory_block_belong_to.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="Which_block_is_the_memory_address_in.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
