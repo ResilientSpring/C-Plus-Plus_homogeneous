@@ -9,7 +9,8 @@ using namespace std;
 class blocks {
 public:
 	bool valid = false;  // false = No
-	int tag = 0;
+//	int tag = 0;
+	double tag = 0;
 	int count = 0;
 };
 
