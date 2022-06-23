@@ -205,8 +205,10 @@ int main() {
 		block_1.valid = true;
 		block_1.count++;
 		miss_count++;
-//		block_1.tag = floor( location[0] / num_of_set);
-		block_1.tag = location[0] / num_of_set;
+		block_1.tag = floor( location[0] / num_of_set);
+//		block_1.tag = location[0] / num_of_set;
+//		block_1.tag = location[0] / 32;
+//		block_1.tag = location[0] / 64;
 	}
 
 	cout << "\n After the 1st round. \n\n";
