@@ -223,7 +223,12 @@ int main() {
 	if (location[0] / num_of_set == location[1] / num_of_set)
 		hit_count++;
 
-
+	cout << "\n After the 2nd round. \n\n";
+	cout << "block_#:  valid  |  Tag \n";
+	cout << "block_1:   " << block_1.valid << "  |  " << block_1.tag << "\n";
+	cout << "block_2:   " << block_2.valid << "  |  " << block_2.tag << "\n";
+	cout << "Hit count: " << hit_count << "\n";
+	cout << "Miss count: " << miss_count << "\n\n";
 
 	return 0;
 }
