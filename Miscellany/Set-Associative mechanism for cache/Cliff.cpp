@@ -3,10 +3,19 @@
 #include <iomanip>
 #include <stdio.h>
 #include <new>
+#include <math.h>
 using namespace std;
 
+class blocks {
+public:
+	bool valid = false;  // false = No
+//	int tag = 0;
+	double tag = 0;
+	int count = 0;
+};
+
 int main() {
-	int d[5004];
+	int memory_address[5004];
 	int block_size;
 	int location[5004];
 	int cache_size_kilobyte;
@@ -33,7 +42,7 @@ int main() {
 	// Read trace.txt (Hint 1)
 	for (int i = 0; i < 5004; i++)
 	{
-		in >> hex >> d[i];
+		in >> hex >> memory_address[i];
 	}
 
 	in.close();
@@ -41,7 +50,7 @@ int main() {
 	// Show what the program read. (Hint 1)
 	for (int i = 0; i < 5004; i++)
 	{
-		cout << d[i] << "\n";
+		cout << memory_address[i] << "\n";
 	}
 
 	// Save what the program read.
@@ -57,7 +66,7 @@ int main() {
 	// Output to the file.
 	for (int i = 0; i < 5004; i++)
 	{
-		out << d[i] << "\n";
+		out << memory_address[i] << "\n";
 	}
 
 	// Close Hex_to_dec.txt
@@ -73,7 +82,7 @@ int main() {
 	case 8:
 		for (int i = 0; i < 5004; i++)
 		{
-			location[i] = d[i] / 8;
+			location[i] = memory_address[i] / 8;
 		}
 
 		break;
@@ -82,7 +91,7 @@ int main() {
 
 		for (int i = 0; i < 5004; i++)
 		{
-			location[i] = d[i] / 16;
+			location[i] = memory_address[i] / 16;
 		}
 
 		break;
@@ -91,7 +100,7 @@ int main() {
 
 		for (int i = 0; i < 5004; i++)
 		{
-			location[i] = d[i] / 32;
+			location[i] = memory_address[i] / 32;
 
 		}
 
@@ -101,7 +110,7 @@ int main() {
 
 		for (int i = 0; i < 5004; i++)
 		{
-			location[i] = d[i] / 64;
+			location[i] = memory_address[i] / 64;
 		}
 
 		break;
@@ -181,53 +190,45 @@ int main() {
 	out.close();
 
 	// Hint 4
-	num_of_cache_block_in_a_set = num_of_cache_block / num_of_set;
+	blocks block_1 = blocks();
+	blocks block_2 = blocks();
 
-	auto inside_cache = new int[num_of_cache_block_in_a_set][4]();
+	blocks set_of_interest[] = { block_1, block_2};
 
-	// Initialize cache contents to zero. (Hint 4)
-	for (int i = 0; i < num_of_cache_block_in_a_set; i++)
-	{
-		for (int j = 0; j < 4; j++)
-		{
-			inside_cache[i][j] = 0;
-		}
+	cout << "Hint 5: \n" << "set[20] = {block_1, block_2};\n";
+	cout << "block_#:  valid  |  Tag \n";
+	cout << "block_1:   " << block_1.valid << "  |  " << block_1.tag << "\n";
+	cout << "block_2:   " << block_2.valid << "  |  " << block_2.tag << "\n";
+	cout << "Hit count: " << hit_count  << "\n";
+	cout << "Miss count: " << miss_count  << "\n\n";
 
-	}
-
-	// Reaffirm if the cache contents are zero. (Hint 4)
-	for (int i = 0; i < num_of_cache_block_in_a_set; i++)
-	{
-		for (int j = 0; j < 4; j++)
-		{
-			cout << inside_cache[i][j] << "\n";
-		}
-
-	}
-
-	// Hint 4
-	if (inside_cache[0][0] && inside_cache[1][0] == 0)
-	{
-		inside_cache[0][0] = 1;
+	if (block_1.valid == false) {
+		block_1.valid = true;
+		block_1.count++;
 		miss_count++;
+		block_1.tag = floor( location[0] / num_of_set);
+//		block_1.tag = location[0] / num_of_set;
+//		block_1.tag = location[0] / 32;
+//		block_1.tag = location[0] / 64;
 	}
 
-	// Show the number of miss by far.
-	cout << "The number of miss by far: " << miss_count << "\n";
+	cout << "\n After the 1st round. \n\n";
+	cout << "block_#:  valid  |  Tag \n";
+	cout << "block_1:   " << block_1.valid << "  |  " << block_1.tag << "\n";
+	cout << "block_2:   " << block_2.valid << "  |  " << block_2.tag << "\n";
+	cout << "Hit count: " << hit_count << "\n";
+	cout << "Miss count: " << miss_count << "\n\n";
 
 	// Hint 5
-	for (int i = 0; i < 5004; i++)
-	{
-		if (location[i + 1] == location[i])
-		{
-			hit_count++;
-		}
+	if (location[0] / num_of_set == location[1] / num_of_set)
+		hit_count++;
 
-	}
-
-	// Show the number of hit by far.
-	cout << "The number of hit by far: " << hit_count << "\n";
-
+	cout << "\n After the 2nd round. \n\n";
+	cout << "block_#:  valid  |  Tag \n";
+	cout << "block_1:   " << block_1.valid << "  |  " << block_1.tag << "\n";
+	cout << "block_2:   " << block_2.valid << "  |  " << block_2.tag << "\n";
+	cout << "Hit count: " << hit_count << "\n";
+	cout << "Miss count: " << miss_count << "\n\n";
 
 	return 0;
 }
