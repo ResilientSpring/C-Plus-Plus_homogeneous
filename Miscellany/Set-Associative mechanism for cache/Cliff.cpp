@@ -189,7 +189,9 @@ int main() {
 	out.close();
 
 	// Hint 4
-	blocks set_of_interest[location[i] % num_of_set]
+	blocks block_1(), block_2();
+
+	blocks set_of_interest[] = { block_1(), block_2() };
 
 
 	return 0;
