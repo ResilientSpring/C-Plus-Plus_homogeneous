@@ -8,7 +8,7 @@ using namespace std;
 
 class blocks {
 public:
-	bool valid = true;
+	bool valid = false;  // false = No
 	int tag = 0;
 	int count = 0;
 };
@@ -189,9 +189,22 @@ int main() {
 	out.close();
 
 	// Hint 4
-	blocks block_1(), block_2();
+	blocks block_1 = blocks();
+	blocks block_2 = blocks();
 
-	blocks set_of_interest[] = { block_1(), block_2() };
+	blocks set_of_interest[] = { block_1, block_2};
+
+	if (block_1.valid == false) {
+		block_1.valid = true;
+		block_1.count++;
+		miss_count++;
+		block_1.tag = floor( location[0] / num_of_set);
+	}
+
+	// Hint 5
+	if (location[0] / num_of_set == location[1] / num_of_set)
+		hit_count++;
+
 
 
 	return 0;
