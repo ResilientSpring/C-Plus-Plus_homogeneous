@@ -33,6 +33,30 @@ class adder {
 		bool qj = NULL;
 		bool qk = NULL;
 		int result = 0;
+		int inst_index = -1;
+		int vj_broadcasted_cycle = -1;
+		int vk_broadcasted_cycle = -1;
+		int last_time_write = -1;
+
+	}
+};
+
+class multiplier {
+	multiplier(int i) {
+		int index = i;
+		string name = "Mult_" + to_string(i);
+		int time = -1;
+		bool busy = false;
+		bool op = NULL;
+		bool vj = NULL;
+		bool vk = NULL;
+		bool qj = NULL;
+		bool qk = NULL;
+		int result = 0;
+		int instance_index = -1;
+		int vj_broadcasted_cycle = -1;
+		int vk_broadcasted_cycle = -1;
+		int last_time_write = -1;
 	}
 };
 
