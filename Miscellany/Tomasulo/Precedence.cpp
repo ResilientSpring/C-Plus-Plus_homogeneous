@@ -215,9 +215,19 @@ public:
 };
 
 class float_register {
+	string name;
+	int value;
+	bool qi;
+
 public:
 	float_register(int i) {
+		name = "F" + to_string(i * 2);
+		value = 1;
+		qi = NULL;
+	}
 
+	void print() {
+		cout << "Register " << name << " Value: " << value;
 	}
 };
 
