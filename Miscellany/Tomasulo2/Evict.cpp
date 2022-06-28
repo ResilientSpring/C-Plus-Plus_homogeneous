@@ -19,7 +19,7 @@ string DIVD = "DIV.D";
 class Tomasulo {
 public:
 
-	Tomasulo(string insts, int adder_num, int multiplier_num, int load_buffer_num, int store_buffer_num, 
+	Tomasulo(string insts, int adder_num, int multiplier_num, int load_buffer_num, int store_buffer_num,
 		int float_reg_num, int int_reg_num, int mem_size) {
 
 	}
@@ -210,7 +210,7 @@ public:
 class register_result_status {
 public:
 	register_result_status(int float_register_number, int int_register_num) {
-		
+
 	}
 };
 
@@ -250,7 +250,8 @@ public:
 };
 
 class instruction_status {
-
+	string LD = "LD";
+	string SD = "SD";
 	string name;
 	int index, issue, complete, write, rs, rt, rd, offset;
 
@@ -261,7 +262,7 @@ public:
 		index = i;
 	}
 
-	if(name == LD || name == SD)     //  The problem is that trying to use an if statement at namespace scope (global namespace) where only a declaration is valid.[1]
+	if (name == LD || name == SD)     //  The problem is that trying to use an if statement at namespace scope (global namespace) where only a declaration is valid.[1]
 		offset = (int)inst[-1];
 
 };
