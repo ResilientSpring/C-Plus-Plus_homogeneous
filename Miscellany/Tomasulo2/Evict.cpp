@@ -250,7 +250,8 @@ public:
 };
 
 class instruction_status {
-
+	string LD = "LD";
+	string SD = "SD";
 	string name;
 	int index, issue, complete, write, rs, rt, rd, offset;
 
