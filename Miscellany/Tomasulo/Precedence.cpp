@@ -22,7 +22,18 @@ public:
 };
 
 class adder {
-
+	adder(int i) {
+		int index = i;
+		string name = "Add_" + to_string(i);
+		int time = -1;
+		bool busy = false;
+		bool op = NULL;
+		bool vj = NULL;
+		bool vk = NULL;
+		bool qj = NULL;
+		bool qk = NULL;
+		int result = 0;
+	}
 };
 
 int main() {
