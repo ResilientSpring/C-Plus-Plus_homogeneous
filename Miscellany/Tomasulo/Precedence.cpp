@@ -69,7 +69,16 @@ public:
 
 	void reset() {
 		time = 1;
-		
+		busy = false;
+		op = NULL;
+		vj = NULL;
+		vk = NULL;
+		qj = NULL;
+		qk = NULL;
+		// result = 0;
+		// inst_index = -1;
+		vj_broadcasted_cycle = -1;
+		vk_broadcasted_cycle = -1;
 	}
 };
 
