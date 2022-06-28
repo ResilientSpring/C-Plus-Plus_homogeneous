@@ -45,20 +45,21 @@ public:
 
 class multiplier {
 
-	int index, result, instance_index, vj_broadcasted_cycle, vk_broadcasted_cycle, last_time_write;
+	int index, time, result, instance_index, vj_broadcasted_cycle, vk_broadcasted_cycle, last_time_write;
+	bool busy, op, vj, vk, qj, qk;
 
 public:
 
 	multiplier(int i) {
 		index = i;
 		string name = "Mult_" + to_string(i);
-		int time = -1;
-		bool busy = false;
-		bool op = NULL;
-		bool vj = NULL;
-		bool vk = NULL;
-		bool qj = NULL;
-		bool qk = NULL;
+		time = -1;
+		busy = false;
+		op = NULL;
+		vj = NULL;
+		vk = NULL;
+		qj = NULL;
+		qk = NULL;
 		result = 0;
 		instance_index = -1;
 		vj_broadcasted_cycle = -1;
@@ -67,7 +68,8 @@ public:
 	}
 
 	void reset() {
-
+		time = 1;
+		
 	}
 };
 
