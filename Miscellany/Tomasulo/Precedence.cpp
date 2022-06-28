@@ -200,6 +200,13 @@ public:
 	}
 };
 
+class register_result_status {
+public:
+	register_result_status(int float_register_number, int int_register_num) {
+
+	}
+};
+
 int main() {
 	string LD = "LD";
 	string SD = "SD";
