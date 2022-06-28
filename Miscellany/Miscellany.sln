@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Inline_Assembly3", "Inline 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Set-Associative mechanism for cache", "Set-Associative mechanism for cache\Set-Associative mechanism for cache.vcxproj", "{E39099B2-A5A4-49EE-AD32-0E32E711FEC0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tomasulo", "Tomasulo\Tomasulo.vcxproj", "{70F199B3-8AAD-45FB-A667-5580F31E46C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{E39099B2-A5A4-49EE-AD32-0E32E711FEC0}.Release|x64.Build.0 = Release|x64
 		{E39099B2-A5A4-49EE-AD32-0E32E711FEC0}.Release|x86.ActiveCfg = Release|Win32
 		{E39099B2-A5A4-49EE-AD32-0E32E711FEC0}.Release|x86.Build.0 = Release|Win32
+		{70F199B3-8AAD-45FB-A667-5580F31E46C6}.Debug|x64.ActiveCfg = Debug|x64
+		{70F199B3-8AAD-45FB-A667-5580F31E46C6}.Debug|x64.Build.0 = Debug|x64
+		{70F199B3-8AAD-45FB-A667-5580F31E46C6}.Debug|x86.ActiveCfg = Debug|Win32
+		{70F199B3-8AAD-45FB-A667-5580F31E46C6}.Debug|x86.Build.0 = Debug|Win32
+		{70F199B3-8AAD-45FB-A667-5580F31E46C6}.Release|x64.ActiveCfg = Release|x64
+		{70F199B3-8AAD-45FB-A667-5580F31E46C6}.Release|x64.Build.0 = Release|x64
+		{70F199B3-8AAD-45FB-A667-5580F31E46C6}.Release|x86.ActiveCfg = Release|Win32
+		{70F199B3-8AAD-45FB-A667-5580F31E46C6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
