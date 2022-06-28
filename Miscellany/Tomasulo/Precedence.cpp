@@ -183,6 +183,16 @@ public:
 	}
 };
 
+class memory {
+
+
+public:
+
+	memory(int i) {
+		string name = "Memory_" + to_string(i);
+	}
+};
+
 int main() {
 	string LD = "LD";
 	string SD = "SD";
