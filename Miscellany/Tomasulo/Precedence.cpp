@@ -2,6 +2,11 @@
 #include <queue>
 #include <string>
 #include <cstring>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <iomanip>
+#include <string.h>
 using namespace std;
 
 class Tomasulo {
@@ -113,8 +118,25 @@ public:
 	}
 
 	void print() {
+		if (busy == false)
+			busy = false;
+		else
+			busy = true;
 
+		if (qj == NULL)
+			qj = NULL;
+		else
+			qj = true;
+
+		cout << "\t\t" << name << " \t " << busy << " \t " << address << " \t\t " << qj;
 	}
+};
+
+class store_buffer {
+	int index, time, address, result, inst_index, vk_broadcasted_cycle, last_time_write;
+
+public:
+
 };
 
 int main() {
