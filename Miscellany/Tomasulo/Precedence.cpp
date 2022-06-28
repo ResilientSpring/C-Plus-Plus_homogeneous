@@ -82,6 +82,16 @@ public:
 	}
 };
 
+class load_buffer {
+	int index, time, address, result, inst_index, vj_broadcasted_cycle, last_time_write;
+	string name;
+	bool busy, vk, qj;
+public:
+	load_buffer(int i) {
+
+	}
+};
+
 int main() {
 	string LD = "LD";
 	string SD = "SD";
