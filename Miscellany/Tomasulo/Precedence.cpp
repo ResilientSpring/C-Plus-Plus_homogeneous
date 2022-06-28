@@ -203,7 +203,32 @@ public:
 class register_result_status {
 public:
 	register_result_status(int float_register_number, int int_register_num) {
+		
+	}
+};
 
+class float_register {
+public:
+	float_register(int i) {
+
+	}
+};
+
+class integer_register {
+
+	string name;
+	int value;
+	bool qi;
+
+public:
+	integer_register(int i) {
+		name = "Integer Register " + to_string(i);
+		value = 0;
+		qi = NULL;
+	}
+
+	void print() {
+		cout << "Register: " << name << ", value: " << value;
 	}
 };
 
