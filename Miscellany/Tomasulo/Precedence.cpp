@@ -22,6 +22,8 @@ public:
 };
 
 class adder {
+public:
+
 	adder(int i) {
 		int index = i;
 		string name = "Add_" + to_string(i);
@@ -42,6 +44,8 @@ class adder {
 };
 
 class multiplier {
+public:
+
 	multiplier(int i) {
 		int index = i;
 		string name = "Mult_" + to_string(i);
@@ -57,6 +61,10 @@ class multiplier {
 		int vj_broadcasted_cycle = -1;
 		int vk_broadcasted_cycle = -1;
 		int last_time_write = -1;
+	}
+
+	void reset() {
+
 	}
 };
 
