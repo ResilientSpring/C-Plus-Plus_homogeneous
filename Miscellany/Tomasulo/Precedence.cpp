@@ -9,6 +9,13 @@
 #include <string.h>
 using namespace std;
 
+string LD = "LD";
+string SD = "SD";
+string ADDD = "ADD.D";
+string SUBD = "SUB.D";
+string MULD = "MUL.D";
+string DIVD = "DIV.D";
+
 class Tomasulo {
 public:
 
@@ -235,19 +242,21 @@ public:
 class instruction_status {
 
 	string name;
+	int index, issue, complete, write, rs, rt, rd, offset;
 
 public:
 	instruction_status(string inst, int i) {
 		name = inst[0];
+		issue = complete = write = rs = rt = rd = offset = -1;
+		index = i;
 	}
+
+	if(name == LD || name == SD)
+		offset = (int)inst[-1];
+
 };
 
 
 int main() {
-	string LD = "LD";
-	string SD = "SD";
-	string ADDD = "ADD.D";
-	string SUBD = "SUB.D";
-	string MULD = "MUL.D";
-	string DIVD = "DIV.D";
+
 }
