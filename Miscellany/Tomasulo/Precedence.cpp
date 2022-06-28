@@ -5,10 +5,24 @@
 using namespace std;
 
 class Tomasulo {
+public:
+
 	Tomasulo(string insts, int adder_num, int multiplier_num, int load_buffer_num, int store_buffer_num, 
 		int float_reg_num, int int_reg_num, int mem_size) {
 
 	}
+};
+
+class reservation_station {
+public:
+
+	reservation_station(int address_num, int multiplier_num) {
+
+	}
+};
+
+class adder {
+
 };
 
 int main() {
