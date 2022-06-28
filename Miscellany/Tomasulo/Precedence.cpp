@@ -134,9 +134,39 @@ public:
 
 class store_buffer {
 	int index, time, address, result, inst_index, vk_broadcasted_cycle, last_time_write;
+	string name;
+	bool busy, vj, vk, qj, qk;
 
 public:
+	store_buffer(int i) {
+		index = i;
+		name = "Store_" + to_string(i);
+		time = -1;
+		busy = false;
+		vj = NULL;
+		vk = NULL;
+		qj = NULL;
+		qk = NULL;
+		address = 0;
+		result = 0;
+		inst_index = -1;
+		vk_broadcasted_cycle = -1;
+		last_time_write = -1;
+	}
 
+	void reset() {
+		time = -1;
+		busy = false;
+		vj = NULL;
+		vk = NULL;
+		qj = NULL;
+		qk = NULL;
+		address = 0;
+		// result = 0;
+		// inst_index = 0'
+
+
+	}
 };
 
 int main() {
