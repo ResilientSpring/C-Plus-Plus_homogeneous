@@ -251,7 +251,7 @@ public:
 		index = i;
 	}
 
-	if(name == LD || name == SD)
+	if(name == LD || name == SD)     //  The problem is that trying to use an if statement at namespace scope (global namespace) where only a declaration is valid.[1]
 		offset = (int)inst[-1];
 
 };
@@ -260,3 +260,6 @@ public:
 int main() {
 
 }
+
+// References:
+// 1. https://stackoverflow.com/questions/15104067/error-expected-a-declaration
