@@ -232,6 +232,17 @@ public:
 	}
 };
 
+class instruction_status {
+
+	string name;
+
+public:
+	instruction_status(string inst, int i) {
+		name = inst[0];
+	}
+};
+
+
 int main() {
 	string LD = "LD";
 	string SD = "SD";
