@@ -2,7 +2,19 @@
 #include <queue>
 #include <string>
 #include <cstring>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <iomanip>
+#include <string.h>
 using namespace std;
+
+string LD = "LD";
+string SD = "SD";
+string ADDD = "ADD.D";
+string SUBD = "SUB.D";
+string MULD = "MUL.D";
+string DIVD = "DIV.D";
 
 class Tomasulo {
 public:
@@ -113,15 +125,141 @@ public:
 	}
 
 	void print() {
+		if (busy == false)
+			busy = false;
+		else
+			busy = true;
+
+		if (qj == NULL)
+			qj = NULL;
+		else
+			qj = true;
+
+		cout << "\t\t" << name << " \t " << busy << " \t " << address << " \t\t " << qj;
+	}
+};
+
+class store_buffer {
+	int index, time, address, result, inst_index, vk_broadcasted_cycle, last_time_write;
+	string name;
+	bool busy, vj, vk, qj, qk;
+
+public:
+	store_buffer(int i) {
+		index = i;
+		name = "Store_" + to_string(i);
+		time = -1;
+		busy = false;
+		vj = NULL;
+		vk = NULL;
+		qj = NULL;
+		qk = NULL;
+		address = 0;
+		result = 0;
+		inst_index = -1;
+		vk_broadcasted_cycle = -1;
+		last_time_write = -1;
+	}
+
+	void reset() {
+		time = -1;
+		busy = false;
+		vj = NULL;
+		vk = NULL;
+		qj = NULL;
+		qk = NULL;
+		address = 0;
+		// result = 0;
+		// inst_index = 0'
+
+		vk_broadcasted_cycle = -1;
+	}
+
+	void print() {
+		if (busy == false)
+			busy = false;
+		else
+			busy = true;
+
+		if (qk == NULL)
+			qk == NULL;
+		else
+			qk = true;
+
+		cout << "\t\t" << name << " \t " << busy << " \t " << address << " \t " << qk;
+	}
+};
+
+class memory {
+
+
+public:
+
+	memory(int i) {
+		int value;
+
+		string name = "Memory_" + to_string(i);
+
+		if (i % 8 == 0)
+			value = 1;
+		else
+			value = 0;
+	}
+};
+
+class register_result_status {
+public:
+	register_result_status(int float_register_number, int int_register_num) {
+		
+	}
+};
+
+class float_register {
+public:
+	float_register(int i) {
 
 	}
 };
 
+class integer_register {
+
+	string name;
+	int value;
+	bool qi;
+
+public:
+	integer_register(int i) {
+		name = "Integer Register " + to_string(i);
+		value = 0;
+		qi = NULL;
+	}
+
+	void print() {
+		cout << "Register: " << name << ", value: " << value;
+	}
+};
+
+class instruction_status {
+
+	string name;
+	int index, issue, complete, write, rs, rt, rd, offset;
+
+public:
+	instruction_status(string inst, int i) {
+		name = inst[0];
+		issue = complete = write = rs = rt = rd = offset = -1;
+		index = i;
+	}
+
+	if(name == LD || name == SD)     //  The problem is that trying to use an if statement at namespace scope (global namespace) where only a declaration is valid.[1]
+		offset = (int)inst[-1];
+
+};
+
+
 int main() {
-	string LD = "LD";
-	string SD = "SD";
-	string ADDD = "ADD.D";
-	string SUBD = "SUB.D";
-	string MULD = "MUL.D";
-	string DIVD = "DIV.D";
+
 }
+
+// References:
+// 1. https://stackoverflow.com/questions/15104067/error-expected-a-declaration
