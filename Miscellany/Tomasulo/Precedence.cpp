@@ -165,7 +165,21 @@ public:
 		// result = 0;
 		// inst_index = 0'
 
+		vk_broadcasted_cycle = -1;
+	}
 
+	void print() {
+		if (busy == false)
+			busy = false;
+		else
+			busy = true;
+
+		if (qk == NULL)
+			qk == NULL;
+		else
+			qk = true;
+
+		cout << "\t\t" << name << " \t " << busy << " \t " << address << " \t " << qk;
 	}
 };
 
