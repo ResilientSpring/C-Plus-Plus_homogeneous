@@ -189,7 +189,14 @@ class memory {
 public:
 
 	memory(int i) {
+		int value;
+
 		string name = "Memory_" + to_string(i);
+
+		if (i % 8 == 0)
+			value = 1;
+		else
+			value = 0;
 	}
 };
 
