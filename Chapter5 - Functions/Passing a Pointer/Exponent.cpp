@@ -12,5 +12,5 @@ int main() {
 }
 
 void f(int* j) {
-
+	*j = 100;
 }
