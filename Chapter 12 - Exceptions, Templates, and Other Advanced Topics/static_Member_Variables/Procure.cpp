@@ -25,6 +25,9 @@ int main() {
 	a.shownum();
 	b.shownum();
 
+	a.setnum(10);    // Set static num to 10.
 
+	a.shownum();
+	b.shownum();
 }
 
