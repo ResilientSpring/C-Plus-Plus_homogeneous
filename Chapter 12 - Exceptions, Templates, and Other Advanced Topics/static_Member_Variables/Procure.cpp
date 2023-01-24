@@ -21,5 +21,10 @@ int ShareVar::num;
 
 int main() {
 	ShareVar a, b;
+
+	a.shownum();
+	b.shownum();
+
+
 }
 
