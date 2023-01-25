@@ -13,6 +13,13 @@ int main() {
 	}
 	catch (std::bad_alloc xa)
 	{
-
+		std::cout << "Allocation failure \n";
 	}
+
+
+	*p = 100;
+
+	std::cout << "At " << p << " " << "is the value " << *p << "\n";
+
+
 }
