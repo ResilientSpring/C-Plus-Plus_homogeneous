@@ -15,4 +15,12 @@ public:
 		count++;
 		std::cout << "Constructing object " << std::endl;
 	}
+
+	~Test() {
+		std::cout << "Destroying object " << count << std::endl;
+
+		count--;
+	}
+
+
 };
