@@ -21,5 +21,7 @@ int main() {
 
 	std::cout << "At " << p << " " << "is the value " << *p << "\n";
 
+	delete p;
+
 
 }
