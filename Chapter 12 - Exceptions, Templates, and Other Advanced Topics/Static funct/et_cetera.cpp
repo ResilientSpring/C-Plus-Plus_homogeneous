@@ -13,6 +13,6 @@ public:
 
 	Test() {
 		count++;
-		cout << "Constructing object " << endl;
+		std::cout << "Constructing object " << std::endl;
 	}
 };
