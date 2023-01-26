@@ -5,9 +5,10 @@
 using namespace std;
 
 class ShareVar {
-	static int num;  // Declare a static data member. It will be shared by all instances of ShareVar.
 
 public:
+	static int num;  // Declare a static data member. It will be shared by all instances of ShareVar.
+
 	void setnum(int i) {
 		num = i;
 	}
