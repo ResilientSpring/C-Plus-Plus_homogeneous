@@ -32,3 +32,5 @@ int main() {
 
 }
 
+// C17 & C++17 support in Visual Studio
+// https://learn.microsoft.com/en-us/cpp/overview/install-c17-support?view=msvc-170
