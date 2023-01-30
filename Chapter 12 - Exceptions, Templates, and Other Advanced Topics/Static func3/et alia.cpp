@@ -1,10 +1,6 @@
 // Demonstrate a static member function.
 
 #include <iostream>
-#include <stdio.h>
-#include <cstdio>
-#include <cstdlib>
-#include <stdio.h>
 
 class Test {
 	static int count;
@@ -22,10 +18,13 @@ public:
 		count--;
 	}
 
+	// A static memeber function.
 	static int numObjects() {
 		return count;
 	}
 };
+
+int Test::count;
 
 int main() {
 	Test a, b, c;

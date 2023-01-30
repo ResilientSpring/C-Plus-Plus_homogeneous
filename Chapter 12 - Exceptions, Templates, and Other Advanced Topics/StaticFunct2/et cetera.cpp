@@ -27,6 +27,8 @@ public:
 	}
 };
 
+int Test::count;
+
 int main() {
 	Test a, b, c;
 
