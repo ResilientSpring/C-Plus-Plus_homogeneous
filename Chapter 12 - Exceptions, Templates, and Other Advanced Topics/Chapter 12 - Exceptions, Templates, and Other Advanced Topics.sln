@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StaticMembV2", "StaticMembV
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StatiMemVar3", "StatiMemVar3\StatiMemVar3.vcxproj", "{714E66C2-6694-4EF8-AFE1-F2E2AB1713A6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StaticMeVar4", "StaticMeVar4\StaticMeVar4.vcxproj", "{079F75F9-F4D3-4ADF-8B34-4D19FC288679}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{714E66C2-6694-4EF8-AFE1-F2E2AB1713A6}.Release|x64.Build.0 = Release|x64
 		{714E66C2-6694-4EF8-AFE1-F2E2AB1713A6}.Release|x86.ActiveCfg = Release|Win32
 		{714E66C2-6694-4EF8-AFE1-F2E2AB1713A6}.Release|x86.Build.0 = Release|Win32
+		{079F75F9-F4D3-4ADF-8B34-4D19FC288679}.Debug|x64.ActiveCfg = Debug|x64
+		{079F75F9-F4D3-4ADF-8B34-4D19FC288679}.Debug|x64.Build.0 = Debug|x64
+		{079F75F9-F4D3-4ADF-8B34-4D19FC288679}.Debug|x86.ActiveCfg = Debug|Win32
+		{079F75F9-F4D3-4ADF-8B34-4D19FC288679}.Debug|x86.Build.0 = Debug|Win32
+		{079F75F9-F4D3-4ADF-8B34-4D19FC288679}.Release|x64.ActiveCfg = Release|x64
+		{079F75F9-F4D3-4ADF-8B34-4D19FC288679}.Release|x64.Build.0 = Release|x64
+		{079F75F9-F4D3-4ADF-8B34-4D19FC288679}.Release|x86.ActiveCfg = Release|Win32
+		{079F75F9-F4D3-4ADF-8B34-4D19FC288679}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
