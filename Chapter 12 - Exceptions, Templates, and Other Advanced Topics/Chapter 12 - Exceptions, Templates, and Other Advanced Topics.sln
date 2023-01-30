@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StaticMeVar4", "StaticMeVar
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Static funct2", "StaticFunct2\StaticFunct2.vcxproj", "{BD3FB8AB-51A6-482B-AFE8-ACB626DDE0ED}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Static func3", "Static func3\Static func3.vcxproj", "{B747BB81-EF6B-455A-B037-B411EE1B4ACB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{BD3FB8AB-51A6-482B-AFE8-ACB626DDE0ED}.Release|x64.Build.0 = Release|x64
 		{BD3FB8AB-51A6-482B-AFE8-ACB626DDE0ED}.Release|x86.ActiveCfg = Release|Win32
 		{BD3FB8AB-51A6-482B-AFE8-ACB626DDE0ED}.Release|x86.Build.0 = Release|Win32
+		{B747BB81-EF6B-455A-B037-B411EE1B4ACB}.Debug|x64.ActiveCfg = Debug|x64
+		{B747BB81-EF6B-455A-B037-B411EE1B4ACB}.Debug|x64.Build.0 = Debug|x64
+		{B747BB81-EF6B-455A-B037-B411EE1B4ACB}.Debug|x86.ActiveCfg = Debug|Win32
+		{B747BB81-EF6B-455A-B037-B411EE1B4ACB}.Debug|x86.Build.0 = Debug|Win32
+		{B747BB81-EF6B-455A-B037-B411EE1B4ACB}.Release|x64.ActiveCfg = Release|x64
+		{B747BB81-EF6B-455A-B037-B411EE1B4ACB}.Release|x64.Build.0 = Release|x64
+		{B747BB81-EF6B-455A-B037-B411EE1B4ACB}.Release|x86.ActiveCfg = Release|Win32
+		{B747BB81-EF6B-455A-B037-B411EE1B4ACB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
