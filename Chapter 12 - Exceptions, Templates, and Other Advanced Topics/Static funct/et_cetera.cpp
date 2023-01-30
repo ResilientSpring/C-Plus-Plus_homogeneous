@@ -34,5 +34,8 @@ int main() {
 
 	Test* p = new Test();
 
-	std::cout << "After allocating a Test object, there are now " << Test::numObjects << " in existence.";
+	std::cout << "After allocating a Test object, there are now " << Test::numObjects << " in existence.\n\n";
+
+
+	delete p;
 }
