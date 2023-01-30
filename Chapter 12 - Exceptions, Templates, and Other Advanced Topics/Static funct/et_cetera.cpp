@@ -33,4 +33,6 @@ int main() {
 	std::cout << "There are now " << Test::numObjects << " in existence. \n\n";
 
 	Test* p = new Test();
+
+	std::cout << "After allocating a Test object, there are now " << Test::numObjects << " in existence.";
 }
