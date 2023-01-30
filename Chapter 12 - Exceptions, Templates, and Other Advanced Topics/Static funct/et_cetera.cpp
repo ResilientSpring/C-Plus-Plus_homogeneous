@@ -38,4 +38,6 @@ int main() {
 
 
 	delete p;
+
+	std::cout << "After deleting an object, there are now " << a.numObjects() << " in existence. \n\n";
 }
