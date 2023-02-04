@@ -45,3 +45,12 @@ int main() {
 	cout << "The pair of values you entered are " << c << " and " << d << ".\n";
 
 }
+
+/*
+ References:
+
+ 1. https://github.com/romulus0914/fpga_technology_mapping/blob/master/greedy_mapping.cpp
+ 
+ 2. https://cplusplus.com/doc/tutorial/basic_io/
+
+ */
