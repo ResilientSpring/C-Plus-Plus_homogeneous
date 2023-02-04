@@ -20,4 +20,17 @@ int main() {
 	cout << i * 2;
 
 	cout << "\n";
+
+	////////////////////////
+
+	int a, b;
+
+	cout << "Please enter another integer value: ";
+
+	cin >> a >> b;
+
+	cout << "The value you entered is " << a << "\n";
+
+	cout << "Variable b now holds " << b;
+
 }
