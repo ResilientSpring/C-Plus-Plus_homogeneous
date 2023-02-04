@@ -11,5 +11,13 @@ int main() {
 
 	cout << "The value you entered is " << i << ". \n";
 
+	cout << " and ";
 
+	cout << i;
+
+	cout << " 's double is ";
+
+	cout << i * 2;
+
+	cout << "\n";
 }
