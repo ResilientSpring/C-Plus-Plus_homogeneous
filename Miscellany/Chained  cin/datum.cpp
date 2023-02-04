@@ -44,6 +44,19 @@ int main() {
 
 	cout << "The pair of values you entered are " << c << " and " << d << ".\n";
 
+
+	//////////////////////////
+
+	int e, f;
+
+	cout << "Please enter a pair of integer values: ";
+
+	cin >> e;
+
+	cin >> f;
+
+	cout << "The pair of values you entered are " << e << " and " << f << ".\n";
+
 }
 
 /*
@@ -51,6 +64,6 @@ int main() {
 
  1. https://github.com/romulus0914/fpga_technology_mapping/blob/master/greedy_mapping.cpp
  
- 2. https://cplusplus.com/doc/tutorial/basic_io/
+ 2. https://web.archive.org/web/20230127183611/https://cplusplus.com/doc/tutorial/basic_io/
 
  */
