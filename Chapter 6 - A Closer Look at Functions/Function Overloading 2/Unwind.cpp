@@ -28,8 +28,8 @@ void f(int i) {
 }
 
 void f(int i, int j) {
-	cout << "In f(int, int), j is " << j;
-	cout << ", i is " << j << "\n";
+	cout << "In f(int, int), i is " << i;
+	cout << ", j is " << j << "\n";
 }
 
 
