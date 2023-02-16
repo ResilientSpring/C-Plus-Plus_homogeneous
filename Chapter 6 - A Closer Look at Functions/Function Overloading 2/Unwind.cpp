@@ -17,6 +17,8 @@ int main() {
 
 	f(12.23);             // call f(double)
 
+	f(1, 'o', 2.3);       // call f(int, char, double)
+
 }
 
 // To overload a function, type or the number of parameters of each overloaded function must differ. 
