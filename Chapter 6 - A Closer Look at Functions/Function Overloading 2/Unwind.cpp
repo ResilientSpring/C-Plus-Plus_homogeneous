@@ -38,5 +38,5 @@ void f(double k) {
 }
 
 void f(int l, char m, double n) {
-	cout << "In f(int l, char m, double n), l, m, and n are " << l << ", " << m << ", and " << n << endl;
+	cout << "In f(int, char, double), l, m, and n are " << l << ", " << m << ", and " << n << endl;
 }
