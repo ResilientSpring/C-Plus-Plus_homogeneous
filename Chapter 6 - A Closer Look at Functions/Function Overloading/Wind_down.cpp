@@ -18,6 +18,7 @@ int main() {
 
 }
 
+// To overload a function, the type and/or number of parameters of each overloaded function must differ. 
 
 void f(int i) {
 	cout << "In f(int), i is " << i << "\n";
