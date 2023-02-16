@@ -33,3 +33,7 @@ void f(int i, int j) {
 void f(double k) {
 	cout << "In f(double), k is " << k << '\n';
 }
+
+void f(int l, char m, double n) {
+
+}
