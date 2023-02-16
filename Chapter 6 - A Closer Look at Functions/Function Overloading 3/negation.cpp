@@ -9,7 +9,9 @@ long neg(long n);
 
 
 int main() {
-	
+	cout << "neg(-10): " << neg(-10) << endl;
+	cout << "neg(9L): " << neg(9L) << endl;
+	cout << "neg(11.23): " << neg(11.23) << endl;
 }
 
 // neg() for int.
