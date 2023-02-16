@@ -10,6 +10,12 @@ void f(double k);             // One double parameter
 
 int main() {
 
+	f(10);                // call f(int)
+
+	f(10, 20);            // call f(int, int)
+
+	f(12.23);             // call f(double)
+
 }
 
 
