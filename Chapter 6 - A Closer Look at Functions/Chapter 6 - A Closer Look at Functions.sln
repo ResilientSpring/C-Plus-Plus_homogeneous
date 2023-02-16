@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Function Overloading", "Fun
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Function Overloading 2", "Function Overloading 2\Function Overloading 2.vcxproj", "{D7C210F2-E6BB-42AA-AD66-26073B6C09F6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Function Overloading 3", "Function Overloading 3\Function Overloading 3.vcxproj", "{78CB657B-102C-4CD2-BD36-1458F292D4C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{D7C210F2-E6BB-42AA-AD66-26073B6C09F6}.Release|x64.Build.0 = Release|x64
 		{D7C210F2-E6BB-42AA-AD66-26073B6C09F6}.Release|x86.ActiveCfg = Release|Win32
 		{D7C210F2-E6BB-42AA-AD66-26073B6C09F6}.Release|x86.Build.0 = Release|Win32
+		{78CB657B-102C-4CD2-BD36-1458F292D4C3}.Debug|x64.ActiveCfg = Debug|x64
+		{78CB657B-102C-4CD2-BD36-1458F292D4C3}.Debug|x64.Build.0 = Debug|x64
+		{78CB657B-102C-4CD2-BD36-1458F292D4C3}.Debug|x86.ActiveCfg = Debug|Win32
+		{78CB657B-102C-4CD2-BD36-1458F292D4C3}.Debug|x86.Build.0 = Debug|Win32
+		{78CB657B-102C-4CD2-BD36-1458F292D4C3}.Release|x64.ActiveCfg = Release|x64
+		{78CB657B-102C-4CD2-BD36-1458F292D4C3}.Release|x64.Build.0 = Release|x64
+		{78CB657B-102C-4CD2-BD36-1458F292D4C3}.Release|x86.ActiveCfg = Release|Win32
+		{78CB657B-102C-4CD2-BD36-1458F292D4C3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
