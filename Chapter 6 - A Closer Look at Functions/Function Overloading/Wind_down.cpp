@@ -3,9 +3,9 @@
 #include <iostream>
 using namespace std;
 
-void f(int i);
-void f(int i, int j);
-void f(double k);
+void f(int i);                // One integer parameter
+void f(int i, int j);         // Two integer parameters
+void f(double k);             // One double parameter
 
 
 int main() {
