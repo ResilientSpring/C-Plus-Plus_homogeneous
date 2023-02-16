@@ -6,6 +6,7 @@ using namespace std;
 void f(int i);                // One integer parameter
 void f(int i, int j);         // Two integer parameters
 void f(double k);             // One double parameter
+void f(int l, char m, double n);
 
 
 int main() {
@@ -35,5 +36,5 @@ void f(double k) {
 }
 
 void f(int l, char m, double n) {
-
+	cout << "In f(int l, char m, double n), l, m, and n are " << l << ", " << m << ", and " << n << endl;
 }
