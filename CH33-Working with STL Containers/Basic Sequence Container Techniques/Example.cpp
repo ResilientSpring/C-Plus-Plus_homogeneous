@@ -18,5 +18,7 @@ int main() {
 	itr = v.begin();
 
 	// Insert characters into v. An iterator to the inserted object is returned.
-
+	itr = v.insert(itr, 'A');
+	itr = v.insert(itr, 'B');
+	v.insert(itr, 'C');
 }
