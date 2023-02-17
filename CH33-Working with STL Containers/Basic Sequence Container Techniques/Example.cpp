@@ -8,4 +8,6 @@ using namespace std;
 
 int main() {
 
+	// Declare an empty vector that can hold char objects.
+
 }
