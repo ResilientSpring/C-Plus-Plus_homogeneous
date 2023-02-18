@@ -3,14 +3,18 @@
 #include <cstdio>
 #include <cstdlib>
 
-void f(int* j);
+// f() takes an int * pointer as a parameter.
+void f(int* j);    // f() declares a pointer parameter.
 
 int main() {
 	int i;
 	int* p;
 
+	p = &i;
+
 }
 
+// f() receives a pointer to an int
 void f(int* j) {
-	*j = 100;
+	*j = 100;       // variable pointed to by j is assigned 100.
 }
