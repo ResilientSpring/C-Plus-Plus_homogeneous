@@ -9,11 +9,8 @@ void f(int* j);    // f() declares a pointer parameter.
 
 int main() {
 	int i;
-	int* p;
 
-	p = &i;    // p now points to i
-
-	f(p);      // pass a pointer.
+	f(&i);      // pass a pointer.
 
 	cout << i;
 
