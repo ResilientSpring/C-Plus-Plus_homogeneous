@@ -17,6 +17,14 @@ void display(int num[10]) {
 
 void display(int num[]) {      // Parameter declared as an unsized array.
 	int i;
+	
 	for (i = 0; i < sizeof(num)/sizeof(num[0]); i++)
 		cout << num[i] << ' ';
+}
+
+void display(int* num) {
+	int i;
+
+	for (i = 0; i < 10; i++)
+		cout << num[i] << " ";
 }
