@@ -2,6 +2,9 @@
 using namespace std;
 
 void display(int num[10]);
+void display(int num[]);
+void display(int* num);
+
 
 int main() {
 
@@ -22,7 +25,7 @@ void display(int num[]) {      // Parameter declared as an unsized array.
 		cout << num[i] << ' ';
 }
 
-void display(int* num) {
+void display(int* num) {       // Parameter declared as a pointer.
 	int i;
 
 	for (i = 0; i < 10; i++)
