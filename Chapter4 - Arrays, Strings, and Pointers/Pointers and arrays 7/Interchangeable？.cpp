@@ -6,6 +6,8 @@ int main() {
 	for (int i = 0; i < 10; i++) {
 
 		*nums = i;     // This is ok.
+
+		nums++;        // Error -- cannot modify nums.
 	}
 
 }
