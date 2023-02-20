@@ -5,7 +5,7 @@ using namespace std;
 void displays(int num[]);  // Recall that C++ performs no bounds checking on arrays. 
 						   // Thus, display(int num[10]) is the same as display(int num[]).
 void display(int num[10]);
-void display(int* num);
+void displaying(int* num);
 
 
 int main() {
@@ -30,7 +30,7 @@ void displays(int num[]) {      // Parameter declared as an unsized array.
 		cout << num[i] << ' ';
 }
 
-void display(int* num) {       // Parameter declared as a pointer.
+void displaying(int* num) {       // Parameter declared as a pointer.
 
 	for (int i = 0; i < 10; i++)
 		cout << num[i] << " ";
