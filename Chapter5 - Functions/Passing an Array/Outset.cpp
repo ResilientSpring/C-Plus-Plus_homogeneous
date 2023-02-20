@@ -7,7 +7,12 @@ void display(int* num);
 
 
 int main() {
+	int t[10], i;
 
+	for (int i = 0; i < 10; ++i)
+		t[i] = i;
+
+	display(t);  // Pass array t to a function.
 }
 
 // Print some numbers.
