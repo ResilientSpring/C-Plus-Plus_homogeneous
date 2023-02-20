@@ -17,22 +17,19 @@ int main() {
 
 // Print some numbers.
 void display(int num[10]) {
-	int i;
 
-	for (i = 0; i < 10; i++)
+	for (int i = 0; i < 10; i++)
 		cout << num[i] << ' ';
 }
 
 void display(int num[]) {      // Parameter declared as an unsized array.
-	int i;
-	
-	for (i = 0; i < sizeof(num)/sizeof(num[0]); i++)
+
+	for (int i = 0; i < sizeof(num) / sizeof(num[0]); i++)
 		cout << num[i] << ' ';
 }
 
 void display(int* num) {       // Parameter declared as a pointer.
-	int i;
 
-	for (i = 0; i < 10; i++)
+	for (int i = 0; i < 10; i++)
 		cout << num[i] << " ";
 }
