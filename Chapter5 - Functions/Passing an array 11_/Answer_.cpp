@@ -9,7 +9,7 @@ void display(int num[10]);
 void displaying(int* num);  // void display(int num[]);    ==     void displaying(int* num);
 
 /*
-The following three functions' parameters are the same, so they can't share the same function name.
+The following three functions' parameters are the same in C, so they can't share the same function name.
 
 void display(int num[]);
 void display(int num[10]);
