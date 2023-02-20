@@ -12,5 +12,11 @@ int main() {
 	cout << endl << "{";
 
 	for (int i = 0; i < sizeof(num) / sizeof(num[0]); i++)
-		cout << "Value: " << *(num + i) << " ";
+		cout  << *(num + i) << " ";
+
+	cout << "}" << endl;
+
+	// Without parentheses surrounding *num + i, the compiler would first find the value pointed to by num (the
+	// first location in the array) and then add i to it, because the * operation has a higher priority than 
+	// the + operation.
 }
