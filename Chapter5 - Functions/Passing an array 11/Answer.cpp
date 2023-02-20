@@ -27,11 +27,9 @@ void display(int* num);         // Using the array name without index attached.
 
 /*
 
-void display(int num[]);        // Using the array name without index attached.
+void display(int num[]);        // Recall that C++ performs no bounds checking on arrays.
 
-void display(int[] num);        // Using the array name without index attached.
-
-void display(int* num);         // Using the array name without index attached.
+void display(int num[10]);      // Thus, display(int num[10]) is the same as display(int num[]).
 
 */
 
