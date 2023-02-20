@@ -7,7 +7,7 @@ void display(int* num);
 
 
 int main() {
-	int t[10], i;
+	int t[10];
 
 	for (int i = 0; i < 10; ++i)
 		t[i] = i;
