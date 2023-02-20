@@ -19,7 +19,12 @@ int main() {
 
 	cout << "\n";
 
-	
+	cube(nums, 10);
+
+	cout << "Altered contents: " << endl;
+
+	for (i = 0; i < 10; i++)
+		cout << nums[i] << " ";
 }
 
 void cube(int *n, int num) {
