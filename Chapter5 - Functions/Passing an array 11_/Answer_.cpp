@@ -29,7 +29,7 @@ void display(int* num);         // Using the array name without index attached.
 
 void display(int num[]);        // Using the array name without index attached.
 
-void display(int[] num);        // Using the array name without index attached.
+void display(int[] num);        // Using the array name without index attached. Not a valid syntax unlike Java!
 
 void display(int* num);         // Using the array name without index attached.
 
