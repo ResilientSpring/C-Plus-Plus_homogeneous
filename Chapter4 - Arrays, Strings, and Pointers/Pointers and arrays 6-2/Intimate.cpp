@@ -9,6 +9,6 @@ int main() {
 	cout << "Original string: " << num << endl;
 
 	// To access the value stored in the memory address
-	for(int i; i < sizeof(num)/sizeof(num[0]) ; i++)
-		cout << "Value: " << 
+	for (int i = 0; i < sizeof(num) / sizeof(num[0]); i++)
+		cout << "Value: " << *(num + i) << " ";
 }
