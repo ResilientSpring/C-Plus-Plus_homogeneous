@@ -13,15 +13,25 @@ The following three functions' parameters are the same, so they can't share the 
 
 void display(int num[]);
 void display(int num[10]);
-void displaying(int* num);
+void display(int* num);
 
 */
 
 /*
 
-void display(int num[]);        // Using an array name without index attached.
+void display(int num[]);        // Using the array name without index attached.
 
-void displaying(int* num);      // Using an array name without index attached.
+void display(int* num);         // Using the array name without index attached.
+
+*/
+
+/*
+
+void display(int num[]);        // Using the array name without index attached.
+
+void display(int[] num);        // Using the array name without index attached.
+
+void display(int* num);         // Using the array name without index attached.
 
 */
 
