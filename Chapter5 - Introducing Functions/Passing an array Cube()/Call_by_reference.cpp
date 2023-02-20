@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std;
 
+void cube(int* n, int num);
+
 int main() {
 	int i;
 	int nums[10];
@@ -10,6 +12,14 @@ int main() {
 		nums[i] = i + 1;
 
 
+	cout << "Original contents: ";
+
+	for (i = 0; i < 10; i++)
+		cout << nums[i] << " ";
+
+	cout << "\n";
+
+	
 }
 
 void cube(int *n, int num) {
