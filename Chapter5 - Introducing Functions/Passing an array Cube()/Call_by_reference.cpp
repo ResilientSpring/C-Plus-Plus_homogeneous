@@ -21,7 +21,7 @@ int main() {
 
 	cube(nums, 10);
 
-	cout << "Altered contents: " << endl;
+	cout << "Altered contents: ";
 
 	for (i = 0; i < 10; i++)
 		cout << nums[i] << " ";
