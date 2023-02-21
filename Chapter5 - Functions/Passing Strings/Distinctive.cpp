@@ -8,3 +8,13 @@ using namespace std;
 int main() {
 
 }
+
+void strIvertCase(char* str) {
+	
+	while (*str) {
+		
+		// invert case
+		if (isupper(*str))
+			*str = tolower(*str);
+	}
+}
