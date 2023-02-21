@@ -9,6 +9,12 @@ void strIvertCase(char* str);
 
 int main() {
 
+	char str[80];
+
+	strcpy(str, "This Is A Test");
+
+	strIvertCase(str);
+
 }
 
 void strIvertCase(char* str) {
