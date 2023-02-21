@@ -15,6 +15,8 @@ int main() {
 
 	strIvertCase(str);
 
+	cout << str;
+
 }
 
 void strIvertCase(char* str) {
