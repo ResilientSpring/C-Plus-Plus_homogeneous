@@ -5,6 +5,8 @@
 #include <cctype>
 using namespace std;
 
+void strIvertCase(char* str);
+
 int main() {
 
 }
