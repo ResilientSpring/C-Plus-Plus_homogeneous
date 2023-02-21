@@ -16,5 +16,7 @@ void strIvertCase(char* str) {
 		// invert case
 		if (isupper(*str))
 			*str = tolower(*str);
+		else if (islower(*str))
+			*str = toupper(*str);
 	}
 }
