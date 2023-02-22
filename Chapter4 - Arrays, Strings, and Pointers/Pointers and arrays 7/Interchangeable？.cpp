@@ -13,7 +13,7 @@ int main() {
 }
 
 /*
- nums++ refers to nums = nums +1;
+ nums++ refers to nums = nums + 1;
 
  While an array name without an index does generate a pointer to the beginning of an array, it cannot be changed.
 
