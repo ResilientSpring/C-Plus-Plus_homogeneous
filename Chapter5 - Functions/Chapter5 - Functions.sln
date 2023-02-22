@@ -39,6 +39,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Passing an array 11_", "Pas
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Passing Strings", "Passing Strings\Passing Strings.vcxproj", "{2DC28B4B-4D95-4FFE-8A7A-4BB4E7667A0F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Passing strings 2", "Passing strings 2\Passing strings 2.vcxproj", "{0453EDBE-905B-46DF-86D0-6CBE8976EC3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -191,6 +193,14 @@ Global
 		{2DC28B4B-4D95-4FFE-8A7A-4BB4E7667A0F}.Release|x64.Build.0 = Release|x64
 		{2DC28B4B-4D95-4FFE-8A7A-4BB4E7667A0F}.Release|x86.ActiveCfg = Release|Win32
 		{2DC28B4B-4D95-4FFE-8A7A-4BB4E7667A0F}.Release|x86.Build.0 = Release|Win32
+		{0453EDBE-905B-46DF-86D0-6CBE8976EC3C}.Debug|x64.ActiveCfg = Debug|x64
+		{0453EDBE-905B-46DF-86D0-6CBE8976EC3C}.Debug|x64.Build.0 = Debug|x64
+		{0453EDBE-905B-46DF-86D0-6CBE8976EC3C}.Debug|x86.ActiveCfg = Debug|Win32
+		{0453EDBE-905B-46DF-86D0-6CBE8976EC3C}.Debug|x86.Build.0 = Debug|Win32
+		{0453EDBE-905B-46DF-86D0-6CBE8976EC3C}.Release|x64.ActiveCfg = Release|x64
+		{0453EDBE-905B-46DF-86D0-6CBE8976EC3C}.Release|x64.Build.0 = Release|x64
+		{0453EDBE-905B-46DF-86D0-6CBE8976EC3C}.Release|x86.ActiveCfg = Release|Win32
+		{0453EDBE-905B-46DF-86D0-6CBE8976EC3C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
