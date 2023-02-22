@@ -30,5 +30,7 @@ void strIvertCase(char* str) {
 			*str = tolower(*str);
 		else if (islower(*str))
 			*str = toupper(*str);
+
+		str++;
 	}
 }
