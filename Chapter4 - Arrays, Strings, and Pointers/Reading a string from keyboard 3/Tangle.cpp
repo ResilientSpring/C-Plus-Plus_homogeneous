@@ -12,4 +12,6 @@ int main() {
 	cout << "Here is your string: ";
 
 	cout << str;
+
+	cout << "\n";
 }
