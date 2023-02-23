@@ -9,5 +9,7 @@ int main() {
 	// Created a double pointer. 
 	double *f;
 
+	int j[10];
 
+	double g[10];
 }
