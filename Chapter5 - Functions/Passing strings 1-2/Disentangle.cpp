@@ -8,7 +8,7 @@ int main() {
 
 		*nums = i;
 
-
+		nums++;
 	}
 
 
