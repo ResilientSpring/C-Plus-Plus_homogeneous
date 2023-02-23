@@ -17,4 +17,8 @@ int main() {
 	i = j;
 	f = g;
 
+
+	// Add values 0 through 9 to these pointers and display the results.
+	for (int x = 0; x < 10; x++)
+		cout << i + x << " " << f + x << endl;
 }
