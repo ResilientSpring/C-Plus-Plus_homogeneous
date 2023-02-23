@@ -1,4 +1,3 @@
-#define CRT
 #include <iostream>
 using namespace std;
 
