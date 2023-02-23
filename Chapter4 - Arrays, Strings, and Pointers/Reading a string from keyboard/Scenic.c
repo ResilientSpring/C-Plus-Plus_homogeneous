@@ -5,5 +5,5 @@ int main() {
 
 	char str[80];
 
-
+	std::cout << "Enter a string";
 }
