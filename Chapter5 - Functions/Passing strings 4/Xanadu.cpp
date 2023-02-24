@@ -13,5 +13,5 @@ int main() {
 	
 	
 	
-	cout << str;
+	cout << str << endl;
 }
