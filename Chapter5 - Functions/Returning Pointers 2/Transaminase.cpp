@@ -16,7 +16,7 @@ char* get_substring(char *sub, char *str) {  // get_substring() returns a char p
 
 	for (t = 0; str[t]; t++) {
 		
-		p = &str[t];
+		p = &str[t];  // Reset pointers
 
 	}
 
