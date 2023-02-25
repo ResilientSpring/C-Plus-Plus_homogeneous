@@ -18,6 +18,8 @@ char* get_substring(char *sub, char *str) {  // get_substring() returns a char p
 		
 		p = &str[t];  // Reset pointers
 
+		start = p;
+
 	}
 
 }
