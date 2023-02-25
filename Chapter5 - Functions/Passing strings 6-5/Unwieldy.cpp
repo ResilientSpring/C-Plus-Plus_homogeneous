@@ -19,3 +19,9 @@ int main() {
 
 	cout << str << endl;
 }
+
+/*
+To declare two variables of different types in a for loop:
+
+https://stackoverflow.com/a/2687408/
+*/
