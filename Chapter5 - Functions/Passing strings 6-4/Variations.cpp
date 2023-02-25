@@ -4,9 +4,11 @@ using namespace std;
 int main() {
 	char str[10];
 
+	char letter = 65;
+
 	for (int i = 0; i < 10; i++) {
 
-		for (char letter = 'A', letter < 'J'; letter++) {
+		for (; letter <= 74; letter++) {
 
 			*(str + i) = letter;
 
