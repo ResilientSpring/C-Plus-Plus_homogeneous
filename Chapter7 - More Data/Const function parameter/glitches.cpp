@@ -8,7 +8,7 @@ int main() {
 	int result;
 	int v = 10;
 
-	
+	result = negate(&v);
 }
 
 
