@@ -20,6 +20,12 @@ char* get_substring(char *sub, char *str) {  // get_substring() returns a char p
 
 		start = p;
 
+		p2 = sub;
+
+		while (*p2 && *p2 == *p) {  // Check for substring
+			p++;
+			p2++;
+		}
 	}
 
 }
