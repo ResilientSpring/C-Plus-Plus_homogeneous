@@ -6,7 +6,7 @@ using namespace std;
 char* get_substring(char* sub, char* str);
 
 int main() {
-	char *substring;
+	char* substring;
 
 	substring = get_substring("three", "one two three four");
 
@@ -16,12 +16,12 @@ int main() {
 
 // Succeeding a function's return type with asterisk * causes the function to return 
 // a pointer of that return type.
-char* get_substring(char *sub, char *str) {  // get_substring() returns a char pointer.
+char* get_substring(const char* sub, const char* str) {  // get_substring() returns a char pointer.
 	int t;
-	char *p, *p2, *start;
+	char* p, * p2, * start;
 
 	for (t = 0; str[t]; t++) {
-		
+
 		p = &str[t];  // Reset pointers
 
 		start = p;

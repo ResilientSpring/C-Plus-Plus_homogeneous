@@ -1,14 +1,24 @@
 // Return a Pointer.
 
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 char* get_substring(char* sub, char* str);
 
 int main() {
-	char *substring;
+	char* substring;
 
-	substring = get_substring("three", "one two three four");
+	char search[80];
+	char search_for[80];
+
+	// Copy string constant to null-terminated string.
+	strcpy(search, "one two three four");
+	strcpy(search_for, "three");
+
+	// Null-terminated string (char) differs from string constant (const char).
+	substring = get_substring(search_for, search);  
 
 	cout << "substring found: " << substring;
 }
@@ -16,12 +26,12 @@ int main() {
 
 // Succeeding a function's return type with asterisk * causes the function to return 
 // a pointer of that return type.
-char* get_substring(char *sub, char *str) {  // get_substring() returns a char pointer.
+char* get_substring(char* sub, char* str) {  // get_substring() returns a char pointer.
 	int t;
-	char *p, *p2, *start;
+	char* p, * p2, * start;
 
 	for (t = 0; str[t]; t++) {
-		
+
 		p = &str[t];  // Reset pointers
 
 		start = p;
