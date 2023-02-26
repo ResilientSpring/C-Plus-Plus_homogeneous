@@ -9,6 +9,8 @@ int main() {
 	int v = 10;
 
 	result = negate(&v);
+
+	cout << v << " negated is " << result << endl;
 }
 
 
