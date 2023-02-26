@@ -18,7 +18,7 @@ int main() {
 	
 	cout << "\n";
 
-
+	cube(nums, 10);
 
 }
 
