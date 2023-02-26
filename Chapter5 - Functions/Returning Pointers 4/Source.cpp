@@ -1,5 +1,6 @@
 // Return a Pointer.
 
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <cstring>
 using namespace std;
@@ -15,7 +16,8 @@ int main() {
 	strcpy(search, "one two three four");
 	strcpy(search_for, "three");
 
-	substring = get_substring(search_for, search);
+	// Null-terminated string (char) differs from string constant (const char).
+	substring = get_substring(search_for, search);  
 
 	cout << "substring found: " << substring;
 }
