@@ -13,6 +13,7 @@ int main() {
 	char search[80];
 	char search_for[80];
 
+	// Copy string constant to null-terminated string.
 	strcpy(search, "one two three four");
 	strcpy(search_for, "three");
 
