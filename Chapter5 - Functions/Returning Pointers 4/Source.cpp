@@ -12,7 +12,10 @@ int main() {
 	char search[80];
 	char search_for[80];
 
-	substring = get_substring("three", "one two three four");
+	strcpy(search, "one two three four");
+	strcpy(search_for, "three");
+
+	substring = get_substring(search_for, search);
 
 	cout << "substring found: " << substring;
 }
