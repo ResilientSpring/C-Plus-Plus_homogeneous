@@ -2,12 +2,17 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int negate(const int* val);
 
+int main() {
+	int result;
+	int v = 10;
+
+	
 }
 
 
-int negate(const int* val) {
-
+int negate(const int *val) {
+	return - *val;
 }
 
