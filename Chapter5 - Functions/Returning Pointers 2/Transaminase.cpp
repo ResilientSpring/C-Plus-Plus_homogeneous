@@ -8,7 +8,9 @@ char* get_substring(char* sub, char* str);
 int main() {
 	char *substring;
 
+	substring = get_substring("three", "one two three four");
 
+	cout << "substring found: " << substring;
 }
 
 
