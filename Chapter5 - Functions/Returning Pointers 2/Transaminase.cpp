@@ -3,7 +3,11 @@
 #include <iostream>
 using namespace std;
 
+char* get_substring(char* sub, char* str);
+
 int main() {
+	char *substring;
+
 
 }
 
