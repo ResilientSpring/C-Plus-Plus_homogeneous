@@ -26,7 +26,12 @@ char* get_substring(char *sub, char *str) {  // get_substring() returns a char p
 			p++;
 			p2++;
 		}
+
+		// if at end of p2 (i.e., substring), then a match has been found.
+		if (!*p2)
+			return start;    // return pointer to the beginning of substring.
 	}
 
+	return 0; // no match found.
 }
 
