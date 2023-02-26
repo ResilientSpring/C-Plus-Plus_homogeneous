@@ -22,7 +22,7 @@ int main() {
 
 }
 
-void cube(int* n, int num) {
+void cube(const int* n, int num) {
 	while (num) {
 		*n = *n * *n * *n;
 		num--;
