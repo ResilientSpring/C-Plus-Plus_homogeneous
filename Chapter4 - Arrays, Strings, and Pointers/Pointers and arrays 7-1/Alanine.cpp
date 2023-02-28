@@ -16,3 +16,13 @@ int main() {
 	}
 
 }
+
+/*
+
+Array name without index attached = the memory address where this array begins.
+
+Array name itself is not a pointer.
+
+A pointer is a variable that can hold (the copy of other's) memory address.
+
+*/
