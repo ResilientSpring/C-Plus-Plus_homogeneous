@@ -10,9 +10,9 @@ int main() {
 
 	for (int i = 0; i < 10; i++) {
 
-		*integer_pointer = i;     // This is ok.
+		*integer_pointer = i;
 
-		integer_pointer++;        // Error -- cannot modify nums. 
+		integer_pointer++; 
 	}
 
 }
