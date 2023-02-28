@@ -145,6 +145,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Array of Pointer 2", "Array
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Array of constant char", "Array of constant char\Array of constant char.vcxproj", "{6EA5F752-0BC0-4A4C-82F6-D828B85058C0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointers and arrays 7-1", "Pointers and arrays 7-1\Pointers and arrays 7-1.vcxproj", "{4A99AAD0-97AB-440C-8323-7AF44D134895}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -721,6 +723,14 @@ Global
 		{6EA5F752-0BC0-4A4C-82F6-D828B85058C0}.Release|x64.Build.0 = Release|x64
 		{6EA5F752-0BC0-4A4C-82F6-D828B85058C0}.Release|x86.ActiveCfg = Release|Win32
 		{6EA5F752-0BC0-4A4C-82F6-D828B85058C0}.Release|x86.Build.0 = Release|Win32
+		{4A99AAD0-97AB-440C-8323-7AF44D134895}.Debug|x64.ActiveCfg = Debug|x64
+		{4A99AAD0-97AB-440C-8323-7AF44D134895}.Debug|x64.Build.0 = Debug|x64
+		{4A99AAD0-97AB-440C-8323-7AF44D134895}.Debug|x86.ActiveCfg = Debug|Win32
+		{4A99AAD0-97AB-440C-8323-7AF44D134895}.Debug|x86.Build.0 = Debug|Win32
+		{4A99AAD0-97AB-440C-8323-7AF44D134895}.Release|x64.ActiveCfg = Release|x64
+		{4A99AAD0-97AB-440C-8323-7AF44D134895}.Release|x64.Build.0 = Release|x64
+		{4A99AAD0-97AB-440C-8323-7AF44D134895}.Release|x86.ActiveCfg = Release|Win32
+		{4A99AAD0-97AB-440C-8323-7AF44D134895}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
