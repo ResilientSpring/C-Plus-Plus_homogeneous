@@ -2,5 +2,5 @@
 using namespace std;
 
 int main() {
-	const char* dictionary[][2] = { "P" };
+	const char* dictionary[][2] = { "Pencil" };
 }
