@@ -9,4 +9,14 @@ int main() {
 
 
 	cout << integer_pointers;
+
+
+
+	cout << endl << endl;
+
+
+	for (int i = 0; i < sizeof(integer_pointers) / sizeof(integer_pointers[1]); i++)
+
+		cout << integer_pointers[i] << " ";
+
 }
