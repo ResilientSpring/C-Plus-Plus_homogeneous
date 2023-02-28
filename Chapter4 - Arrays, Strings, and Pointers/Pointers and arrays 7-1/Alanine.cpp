@@ -5,11 +5,14 @@ int main() {
 
 	int *integer_pointer;
 
+
+	integer_pointer = nums;
+
 	for (int i = 0; i < 10; i++) {
 
-		*nums = i;     // This is ok.
+		*integer_pointer = i;     // This is ok.
 
-		nums++;        // Error -- cannot modify nums. 
+		integer_pointer++;        // Error -- cannot modify nums. 
 	}
 
 }
