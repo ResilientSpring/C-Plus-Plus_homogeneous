@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 int main() {
@@ -12,6 +13,14 @@ int main() {
 
 	for (int i = 0; *dictionary[i][0]; i++) {
 
+		if (!strcmp(dictionary[i][0], word)) {
+			cout << dictionary[i] << endl;
+
+			break;
+		} else
+			cout << "Not found. " << endl;
 	}
+
+
 
 }
