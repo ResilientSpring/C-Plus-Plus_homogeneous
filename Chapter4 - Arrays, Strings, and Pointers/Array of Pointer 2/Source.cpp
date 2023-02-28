@@ -20,7 +20,7 @@ int main() {
 		cout << integer_pointers[i] << " ";
 
 
-	// To find the value of the address.
+	// Access the value of the address.
 	cout << "\n" << endl << *integer_pointers[0];
 
 }
