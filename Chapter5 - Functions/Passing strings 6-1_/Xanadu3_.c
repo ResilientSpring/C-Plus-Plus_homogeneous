@@ -16,5 +16,5 @@ int main() {
 
 
 
-	prinf(str);
+	prinf("%s", str);
 }
