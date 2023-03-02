@@ -64,5 +64,5 @@ int factr_(int n) {
 	if (n == 1)
 		return 1;
 	else
-		return answer = factr(n - 1) * n;
+		return answer = factr_(n - 1) * n;
 }
