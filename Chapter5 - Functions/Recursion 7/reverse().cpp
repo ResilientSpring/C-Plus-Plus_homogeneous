@@ -14,4 +14,6 @@ void reverse(char *s) {
 	
 	if (*s)
 		reverse(s + 1);
+	else
+		return;
 }
