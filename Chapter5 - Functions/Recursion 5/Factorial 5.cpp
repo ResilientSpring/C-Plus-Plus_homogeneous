@@ -43,7 +43,7 @@ int fact_(int n) {
 
 	answer = 1;
 
-	for (int t = 2; t = n; t++)
+	for (int t = 2; t = n; t++)  // should be t == n;
 
 		answer = answer * t;
 
