@@ -1,4 +1,4 @@
-// If this promgram works. then it would mean that void reverse() is not part of std library.
+// If this promgram works, then it would mean that void reverse() is not part of std library.
 
 #include <iostream>
 
