@@ -13,7 +13,7 @@ int main() {
 }
 
 // Print string backwards.
-void reverse(char* s) {
+void reverse(char *s) {
 
 	if (*s)
 		reverse(s + 1);
