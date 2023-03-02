@@ -6,10 +6,16 @@ using namespace std;
 int fact(int n);
 int fact_(int n);
 int factr(int n);
+int factr_(int n);
 
 
 int main() {
 
+	// use recursive version
+	cout << "4 factorial is " << factr(4) << "        "  <<  factr_(4) << endl;
+
+	// use iterative version
+	cout << "4 factorial is " << fact(4) << "        " << fact_(4) << endl;
 }
 
 
