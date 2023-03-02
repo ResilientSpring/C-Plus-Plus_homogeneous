@@ -1,4 +1,4 @@
-// Print a string backwards using recursion.
+// If this promgram works. then it would mean that void reverse() is not part of std library.
 
 #include <iostream>
 
@@ -13,7 +13,7 @@ int main() {
 }
 
 // Print string backwards.
-void reverse(char* s) {
+void reverse(char *s) {
 
 	if (*s)
 		reverse(s + 1);
