@@ -7,6 +7,10 @@ void reverse(char* s);
 
 int main() {
 
+	char str[] = "this is a test";
+
+	reverse(str);
+
 }
 
 // Print string backwards.
@@ -16,4 +20,7 @@ void reverse(char *s) {
 		reverse(s + 1);
 	else
 		return;
+
+
+	cout << *s;
 }
