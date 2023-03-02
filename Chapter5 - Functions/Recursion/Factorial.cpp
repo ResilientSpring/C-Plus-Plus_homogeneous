@@ -5,6 +5,7 @@ using namespace std;
 
 int fact(int n);
 int fact_(int n);
+int factr(int n);
 
 
 int main() {
@@ -41,4 +42,16 @@ int fact_(int n) {
 }
 
 
-// 
+// Recursive version
+int factr(int n) {
+
+	int answer;
+
+	if (n == 1)
+		return 1;
+
+	answer = factr(n - 1) * n;
+
+	return answer;
+}
+
