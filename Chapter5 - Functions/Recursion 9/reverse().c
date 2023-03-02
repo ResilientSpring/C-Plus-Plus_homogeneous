@@ -1,4 +1,4 @@
-// Print a string backwards using recursion.
+// Will the same code work in c?
 
 #include <stdio.h>
 
