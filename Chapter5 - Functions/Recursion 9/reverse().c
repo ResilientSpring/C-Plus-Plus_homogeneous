@@ -1,6 +1,6 @@
 // Print a string backwards using recursion.
 
-#include <iostream>
+#include <stdio.h>
 
 void reverse(char* s);
 
