@@ -21,5 +21,5 @@ void reverse(char* s) {
 		return;
 
 
-	cout << *s;
+	std::cout << *s;
 }
