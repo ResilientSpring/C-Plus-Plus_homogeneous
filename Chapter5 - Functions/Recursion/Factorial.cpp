@@ -3,6 +3,10 @@
 #include <iostream>
 using namespace std;
 
+int fact(int n);
+int fact_(int n);
+
+
 int main() {
 
 }
@@ -15,9 +19,26 @@ int fact(int n) {
 
 	answer = 1;
 
-	for (int t = 1; t <= n; t++)
+	for (int t = 2; t <= n; t++)
 
 		answer = answer * t;
 
 	return answer;
 }
+
+// Iterative version
+int fact_(int n) {
+
+	int answer;
+
+	answer = 1;
+
+	for (int t = 2; t = n; t++)
+
+		answer = answer * t;
+
+	return answer;
+}
+
+
+// 
