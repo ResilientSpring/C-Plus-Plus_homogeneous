@@ -25,6 +25,4 @@ Array name itself is not a pointer.
 
 A pointer is a variable that can hold (the copy of other's) memory address.
 
-So, pointer arithmetic is not applicable to array name.
-
 */
