@@ -18,5 +18,8 @@
     <ClCompile Include="reverse()_3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="reverse().c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
