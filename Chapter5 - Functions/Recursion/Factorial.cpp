@@ -55,3 +55,14 @@ int factr(int n) {
 	return answer;
 }
 
+
+// Recursive version
+int factr_(int n) {
+
+	int answer;
+
+	if (n == 1)
+		return 1;
+	else
+		return answer = factr(n - 1) * n;
+}
