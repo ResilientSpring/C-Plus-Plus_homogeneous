@@ -11,7 +11,7 @@ int main() {
 
 	cout << "Initial values of i and j: " << i << " " << j << endl;
 
-	swap(i, j);  
+	swap(&i, &j);  
 
 	cout << "Swapped values of i and j: " << i << " " << j << endl;
 }
