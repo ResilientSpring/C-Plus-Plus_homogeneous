@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void swap(int &x, int &y);
+void swap(int *x, int *y);
 
 int main() {
 	int i, j;
@@ -17,11 +17,11 @@ int main() {
 }
 
 
-void swap(int &x, int &y) {
+void swap(int *x, int *y) {
 
 	int temp;
 
-	temp = x;
-	x = y;    
-	y = temp;
+	temp = *x;
+	*x = *y;    
+	*y = temp;
 }
