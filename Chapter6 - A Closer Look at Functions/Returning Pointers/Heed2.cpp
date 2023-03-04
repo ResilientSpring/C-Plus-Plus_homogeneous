@@ -14,7 +14,9 @@ int main() {
 
 	strcpy(aString, "one two three four");
 
-	substring = get_substring();
+	substring = get_substring(anotherString, aString);
+
+	cout << "substring found: " << substring;
 }
 
 // In declaration, succeeding a function's return type with asterisk * causes the function to  
