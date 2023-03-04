@@ -20,6 +20,12 @@ char* get_substring(char *substring, char *string) {
 
 	for (t = 0; string[t]; t++) {
 		p = &string[t];           // Reset pointers.
+		start = p;
+		p2 = substring;
+
+		while (*p2 && *p2 == *p) {
+
+		}
 	}
 }
 
