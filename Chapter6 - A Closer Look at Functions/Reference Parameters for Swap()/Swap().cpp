@@ -14,6 +14,8 @@ int main() {
 	cout << "Initial values of i and j: " << i << " " << j << endl;
 
 	swap(i, j);   // Here, the addresses of i and j are automatically passed to swap().
+
+	cout << "Swapped values of i and j: " << i << " " << j << endl;
 }
 
 
