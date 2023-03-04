@@ -16,6 +16,8 @@ char* get_substring(char *substring, char *string) {
 	int t;
 	char *p,  *p2,  *start;
 
+	for (t = 0; string[t]; t++) {
 
+	}
 }
 
