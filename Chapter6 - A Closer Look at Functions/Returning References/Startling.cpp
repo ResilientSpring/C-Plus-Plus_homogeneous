@@ -12,6 +12,14 @@ int main() {
 	double x;
 
 	cout << f() << endl;  // display val's value.
+
+	x = f();  // assign value of val to x
+
+	cout << x << endl;   // display x's value.
+
+	f() = 99.1;  // Change val's value.
+
+
 }
 
 // This function returns a reference to a double.
