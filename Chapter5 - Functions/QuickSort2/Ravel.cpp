@@ -28,5 +28,9 @@ void qs(char* items, int left, int right) {
 		while ((comparand < items[right]) && (right > left))
 			right--;
 
+		if (left <= right) {
+
+		}
+
 	} while ();
 }
