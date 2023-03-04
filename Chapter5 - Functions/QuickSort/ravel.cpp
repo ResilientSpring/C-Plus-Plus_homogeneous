@@ -15,5 +15,12 @@ void quicksort(char *items, int len) {
 
 // A recursive version of Quicksort for sorting characters.
 void qs(char *items, int left, int right) {
+	
+	int i, j;
+	char x, y;
+
+	i = left; j = right;
+	x = items[(left + right) / 2];
+
 
 }
