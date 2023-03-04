@@ -7,7 +7,9 @@ char* get_substring(char *substring, char *string);
 
 int main() {
 
-	char *substring;
+	char aString[18];
+	char anotherString[] = "three";
+	char *substring = "I like C++";
 
 
 }
