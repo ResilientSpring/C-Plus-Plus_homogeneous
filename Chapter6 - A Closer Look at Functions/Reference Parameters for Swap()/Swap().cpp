@@ -6,7 +6,12 @@ using namespace std;
 void swap(int& x, int& y);
 
 int main() {
+	int i, j;
+	
+	i = 10;
+	j = 20;
 
+	cout << "Initial values of i and j: " << i << " " << j << endl;
 }
 
 
