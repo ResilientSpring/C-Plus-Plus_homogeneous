@@ -11,6 +11,8 @@ int main() {
 	cout << "Old value for val: " << val << "\n";
 
 	f(val);  // Pass address of val to f()
+
+	cout << "New value for val: " << val << "\n";
 }
 
 
