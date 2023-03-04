@@ -4,7 +4,7 @@
 using namespace std;
 
 // Declare swap() using pointers.
-void swap(int* x, int* y);
+void swap(int *x, int *y);
 
 int main() {
 
@@ -22,7 +22,7 @@ int main() {
 }
 
 
-void swap(int* x, int* y) {
+void swap(int *x, int *y) {
 
 	int temp;
 
