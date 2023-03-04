@@ -13,6 +13,8 @@ char* get_substring(char *substring, char *string) {
 
 	// Return pointer to substring or null if not found.
 
+	int t;
+	char *p,  *p2,  *start;
 
 
 }
