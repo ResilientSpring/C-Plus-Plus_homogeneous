@@ -19,7 +19,7 @@ char* get_substring(char *substring, char *string) {
 	char *p,  *p2,  *start;
 
 	for (t = 0; string[t]; t++) {
-
+		p = &string[t];           // Reset pointers.
 	}
 }
 
