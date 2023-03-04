@@ -25,7 +25,8 @@ void qs(char* items, int left, int right) {
 		while ((items[left] < comparand) && (left < right))
 			left++;
 
-		while ()
+		while ((comparand < items[right]) && (right > left))
+			right--;
 
 	} while ();
 }
