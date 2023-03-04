@@ -8,11 +8,11 @@ char* get_substring(char* substring, char* string);
 
 int main() {
 
-	char aString[18];
+	char aString[19];
 	char anotherString[] = "three";
 	char *substring;
 
-	strcpy(aString, "Like");
+	strcpy(aString, "one two three four");
 
 	substring = get_substring();
 }
