@@ -19,7 +19,7 @@ int main() {
 
 	f() = 99.1;  // Change val's value.
 
-
+	cout << f() << "\n";     // Display val's new value.
 }
 
 // This function returns a reference to a double.
