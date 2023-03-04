@@ -1,6 +1,7 @@
 // Return a pointer.
 
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 char* get_substring(char *substring, char *string);
@@ -11,7 +12,7 @@ int main() {
 	char anotherString[] = "three";
 	char *substring = "I like C++";
 
-
+	strcpy(aString, "Like");
 }
 
 // In declaration, succeeding a function's return type with asterisk * causes the function to  
