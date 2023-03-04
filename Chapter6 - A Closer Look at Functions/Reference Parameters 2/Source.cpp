@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void f(int* i);
+void f(int *i);
 
 int main() {
 	int val = 1;
