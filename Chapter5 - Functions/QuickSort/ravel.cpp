@@ -22,5 +22,12 @@ void qs(char *items, int left, int right) {
 	i = left; j = right;
 	x = items[(left + right) / 2];
 
+	do {
 
+		while ((items[i] < x) && (i < right))
+			i++;
+
+		while()
+
+	} while ();
 }
