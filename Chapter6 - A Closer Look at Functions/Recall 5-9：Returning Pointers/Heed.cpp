@@ -7,6 +7,9 @@ char* get_substring(char *substring, char *string);
 
 int main() {
 
+	char *substring;
+
+
 }
 
 // In declaration, succeeding a function's return type with asterisk * causes the function to  
