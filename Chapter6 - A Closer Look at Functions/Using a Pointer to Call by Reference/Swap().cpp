@@ -1,3 +1,7 @@
+// Demonstrate the pointer version of swap().
+
+#include <iostream>
+using namespace std;
 
 void swap(int *x, int *y);
 
