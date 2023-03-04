@@ -1,4 +1,4 @@
- // Experiment to see whether integer and double are a constant by default.
+ // Experiment to see whether double is a constant by default?
 
 #include <iostream>
 using namespace std;
