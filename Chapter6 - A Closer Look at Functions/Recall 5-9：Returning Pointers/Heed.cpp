@@ -27,6 +27,8 @@ char* get_substring(char *substring, char *string) {
 			p++;
 			p2++;
 		}
+
+		// If at end of p2 (i.e., substring)
 	}
 }
 
