@@ -41,4 +41,6 @@ void qs(char* items, int left, int right) {
 	if (left < right)
 		qs(items, left, right);
 
+	if(left )
+
 }
