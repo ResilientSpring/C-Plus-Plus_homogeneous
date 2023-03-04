@@ -29,7 +29,8 @@ void qs(char* items, int left, int right) {
 			right--;
 
 		if (left <= right) {
-
+			y = items[left];
+			items[left] = items[right];
 		}
 
 	} while ();
