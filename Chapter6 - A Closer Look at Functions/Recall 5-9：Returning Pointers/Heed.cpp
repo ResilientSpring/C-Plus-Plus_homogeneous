@@ -23,8 +23,9 @@ char* get_substring(char *substring, char *string) {
 		start = p;
 		p2 = substring;
 
-		while (*p2 && *p2 == *p) {
-
+		while (*p2 && *p2 == *p) {      // Check for substring.
+			p++;
+			p2++;
 		}
 	}
 }
