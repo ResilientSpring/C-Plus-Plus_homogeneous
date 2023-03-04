@@ -9,6 +9,8 @@ int main() {
 	int val = 1;
 
 	cout << "Old value for val: " << val << "\n";
+
+	f(val);  // Pass address of val to f()
 }
 
 
