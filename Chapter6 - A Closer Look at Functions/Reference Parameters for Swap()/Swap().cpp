@@ -19,6 +19,6 @@ void swap(int &x, int &y) {
 
 	// Use references to exchange the values of the arguments.
 	temp = x;
-	x = y;
+	x = y;     // Now, the exchange takes place automatically through the references.
 	y = temp;
 }
