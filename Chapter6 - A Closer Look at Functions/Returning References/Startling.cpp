@@ -3,10 +3,15 @@
 #include <iostream>
 using namespace std;
 
-double& f();
+double& f();  // Return a reference.  Here, f() returns a reference to a double.
+
+double val = 100.0;
 
 int main() {
+	
+	double x;
 
+	cout << f() << endl;  // display val's value.
 }
 
 // This function returns a reference to a double.
