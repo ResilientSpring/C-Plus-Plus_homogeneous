@@ -4,6 +4,7 @@
 #include <iostream>
 using namespace std;
 
+// A template function that has two generic type.
 template <class Type1, class Type2>
 void myfunc(Type1 x, Type2 y)
 {
