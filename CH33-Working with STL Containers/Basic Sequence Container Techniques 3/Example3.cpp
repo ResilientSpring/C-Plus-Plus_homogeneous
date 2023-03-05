@@ -6,6 +6,8 @@
 #include <vector>
 using namespace std;
 
+void show(const char *msg, vector<char> vect);
+
 int main() {
 
 	// Declare an empty vector that can hold char objects.
@@ -17,8 +19,17 @@ int main() {
 	// Obtain an iterator to the start of v.
 	itr = v.begin();
 
-	// Insert characters into v. An iterator to the inserted object is returned.
+	// Insert character 'A' into v at the point specified by the iterator and then return the iterator at 'A'.
 	itr = v.insert(itr, 'A');
 	itr = v.insert(itr, 'B');
 	v.insert(itr, 'C');
+
+
+}
+
+
+// Display the contents of a vector<char> by using an iterator.
+void show(const char *msg, vector<char> vect) {
+
+	vector<char>::iterator itr;
 }
