@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Generic Func", "Generic Fun
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2 generi typ", "2 generi typ\2 generi typ.vcxproj", "{B43B490C-6E9E-4795-8344-3E968CFFED69}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Generi func2", "Generi func2\Generi func2.vcxproj", "{C3194AEC-7C13-4D96-B9D3-E9DD9BE80A72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -161,6 +163,14 @@ Global
 		{B43B490C-6E9E-4795-8344-3E968CFFED69}.Release|x64.Build.0 = Release|x64
 		{B43B490C-6E9E-4795-8344-3E968CFFED69}.Release|x86.ActiveCfg = Release|Win32
 		{B43B490C-6E9E-4795-8344-3E968CFFED69}.Release|x86.Build.0 = Release|Win32
+		{C3194AEC-7C13-4D96-B9D3-E9DD9BE80A72}.Debug|x64.ActiveCfg = Debug|x64
+		{C3194AEC-7C13-4D96-B9D3-E9DD9BE80A72}.Debug|x64.Build.0 = Debug|x64
+		{C3194AEC-7C13-4D96-B9D3-E9DD9BE80A72}.Debug|x86.ActiveCfg = Debug|Win32
+		{C3194AEC-7C13-4D96-B9D3-E9DD9BE80A72}.Debug|x86.Build.0 = Debug|Win32
+		{C3194AEC-7C13-4D96-B9D3-E9DD9BE80A72}.Release|x64.ActiveCfg = Release|x64
+		{C3194AEC-7C13-4D96-B9D3-E9DD9BE80A72}.Release|x64.Build.0 = Release|x64
+		{C3194AEC-7C13-4D96-B9D3-E9DD9BE80A72}.Release|x86.ActiveCfg = Release|Win32
+		{C3194AEC-7C13-4D96-B9D3-E9DD9BE80A72}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
