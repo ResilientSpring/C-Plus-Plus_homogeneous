@@ -13,7 +13,7 @@ int main() {
 	// Declare an empty vector that can hold char objects.
 	vector<char> v;
 
-	// iterator is a class inherited from vector. Declare an object of iterator class.
+	// Declare an object of iterator class.
 	vector<char>::iterator itr;
 
 	// Obtain an iterator to the start of v.
