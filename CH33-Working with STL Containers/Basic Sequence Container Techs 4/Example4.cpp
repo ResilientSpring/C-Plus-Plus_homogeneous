@@ -33,6 +33,12 @@ int main() {
 
 	// Declare a reverse iterator.
 	vector<char>::reverse_iterator ritr;
+
+	// Use a reverse iterator to show the contents of v in reverse.
+	cout << "Here is v in reverse: ";
+	for (ritr = v.rbegin(); ritr != v.rend(); ++ritr)
+		cout << *ritr << " ";
+	cout << "\n\n";
 }
 
 
