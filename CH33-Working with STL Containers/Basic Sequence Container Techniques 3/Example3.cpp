@@ -32,4 +32,10 @@ int main() {
 void show(const char *msg, vector<char> vect) {
 
 	vector<char>::iterator itr;
+
+	cout << msg;
+
+	for (itr = vect.begin(); itr != vect.end(); ++itr)
+		cout << *itr << " ";
+	cout << "\n";
 }
