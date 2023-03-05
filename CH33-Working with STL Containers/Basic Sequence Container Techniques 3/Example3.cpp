@@ -21,4 +21,13 @@ int main() {
 	itr = v.insert(itr, 'A');
 	itr = v.insert(itr, 'B');
 	v.insert(itr, 'C');
+
+
+}
+
+
+// Display the contents of a vector<char> by using an iterator.
+void show(const char* msg, vector<char> vect) {
+
+	vector<char>::iterator itr;
 }
