@@ -6,7 +6,7 @@
 #include <vector>
 using namespace std;
 
-void show(const char *msg, vector<char> vect);
+void show(const char* msg, vector<char> vect);
 
 int main() {
 
@@ -30,11 +30,20 @@ int main() {
 
 	// Display the contents of v.
 	show("The contents of v: ", v);
+
+	// Declare a reverse iterator.
+	vector<char>::reverse_iterator ritr;
+
+	// Use a reverse iterator to show the contents of v in reverse.
+	cout << "Here is v in reverse: ";
+	for (ritr = v.rbegin(); ritr != v.rend(); ++ritr)
+		cout << *ritr << " ";
+	cout << "\n\n";
 }
 
 
 // Display the contents of a vector<char> by using an iterator.
-void show(const char *msg, vector<char> vect) {
+void show(const char* msg, vector<char> vect) {
 
 	vector<char>::iterator itr;
 
