@@ -21,7 +21,11 @@ int main() {
 
 	// Insert character 'A' into v at the point specified by the iterator and then return the iterator at 'A'.
 	itr = v.insert(itr, 'A');
+
+	// Insert character 'B' immediately before the element specified by the iterator, and then return the iterator at 'B'.
 	itr = v.insert(itr, 'B');
+
+	// Insert character 'C' immediately before the element specified by the iterator, and then return the iterator at 'C'.
 	v.insert(itr, 'C');
 
 	// Display the contents of v.
