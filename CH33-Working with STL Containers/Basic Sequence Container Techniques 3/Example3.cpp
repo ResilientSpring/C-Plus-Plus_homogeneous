@@ -24,7 +24,8 @@ int main() {
 	itr = v.insert(itr, 'B');
 	v.insert(itr, 'C');
 
-
+	// Display the contents of v.
+	show("The contents of v: ", v);
 }
 
 
