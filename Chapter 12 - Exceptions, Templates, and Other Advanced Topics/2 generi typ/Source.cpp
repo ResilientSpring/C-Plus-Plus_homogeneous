@@ -1,3 +1,6 @@
+// You can define more than one generic data type in the template statement 
+// by using a comma-separated list.
+
 #include <iostream>
 using namespace std;
 
