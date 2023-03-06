@@ -22,4 +22,6 @@ public:
 
 int main() {
 
+	// Create a version of MyClass for doubles.
+	MyClass<double> d_ob(10.0, 3.0);
 }
