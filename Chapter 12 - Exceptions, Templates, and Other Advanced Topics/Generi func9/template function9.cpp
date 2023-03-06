@@ -11,5 +11,7 @@ void swapargs(X a, X b) {
 }
 
 int main() {
+	int i = 10, j = 20;
 
+	swapargs(i, j);
 }
