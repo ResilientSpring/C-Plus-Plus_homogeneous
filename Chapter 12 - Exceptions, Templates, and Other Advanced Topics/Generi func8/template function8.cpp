@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+void swapargs(X a, X b);
+
 int main() {
 
 }
