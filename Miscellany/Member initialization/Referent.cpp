@@ -8,4 +8,10 @@ using namespace std;
 class Club {
 	string name;
 	vector<string> members;
+	vector<string> officers;
+	
+public:
+	Club(const string &n) {
+
+	}
 };
