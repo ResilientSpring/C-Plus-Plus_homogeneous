@@ -5,7 +5,7 @@ using namespace std;
 
 template <class T>
 
-class MyClasss {
+class MyClass {
 	T x, y;
 
 public:
@@ -23,6 +23,5 @@ public:
 
 int main() {
 
-
-	MyClass<double> myClass = 
+	MyClass myClass = MyClass
 }
