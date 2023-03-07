@@ -42,8 +42,15 @@ class Triangle : public TwoDShape {
 public:
 
 	// Constructor for Triangle.
-	Triangle(char* str, double w, double h) {
+	Triangle(char *str, double w, double h) {
+		
+		// Initialize the base class portion.
+		setWidth(w);
+		setHeight(h);
 
+		// Initialize the derived class portion.
+		strcpy(style, str);
+		
 	}
 
 };
