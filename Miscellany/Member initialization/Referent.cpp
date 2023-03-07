@@ -7,5 +7,5 @@ using namespace std;
 // Consider a class that might be used to hold information.
 class Club {
 	string name;
-
+	vector<string> members;
 };
