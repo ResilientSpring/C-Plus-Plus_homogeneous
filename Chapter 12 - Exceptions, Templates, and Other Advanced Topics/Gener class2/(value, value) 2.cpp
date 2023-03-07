@@ -3,7 +3,8 @@
 #include <iostream>
 using namespace std;
 
-template <class T> 
+template <class T>
+
 class MyClass {
 	T x, y;
 
@@ -23,5 +24,5 @@ public:
 int main() {
 
 	// Create a version of MyClass for doubles.
-	MyClass<double> d_ob(10.0, 3.0);
+	MyClass<double> d_ob = MyClass(10.0, 3.0);
 }
