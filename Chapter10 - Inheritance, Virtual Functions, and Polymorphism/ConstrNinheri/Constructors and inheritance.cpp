@@ -53,6 +53,11 @@ public:
 		
 	}
 
+
+	double area() {
+		return getWidth() * getHeight() / 2;
+	}
+
 };
 
 int main() {
