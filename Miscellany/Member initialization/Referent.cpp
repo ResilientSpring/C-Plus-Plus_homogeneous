@@ -15,3 +15,7 @@ public:
 
 	}
 };
+
+Club::Club(const string& n) :name{ n }, members{}, officers{}{
+
+}
