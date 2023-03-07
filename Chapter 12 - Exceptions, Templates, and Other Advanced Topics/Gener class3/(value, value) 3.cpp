@@ -3,8 +3,9 @@
 #include <iostream>
 using namespace std;
 
-template <class T> 
-class MyClass {
+template <class T>
+
+class MyClasss {
 	T x, y;
 
 public:
@@ -22,6 +23,6 @@ public:
 
 int main() {
 
-	// Create a version of MyClass for doubles.
-	MyClass<double> d_ob(10.0, 3.0);
+
+	MyClass<double> myClass = 
 }
