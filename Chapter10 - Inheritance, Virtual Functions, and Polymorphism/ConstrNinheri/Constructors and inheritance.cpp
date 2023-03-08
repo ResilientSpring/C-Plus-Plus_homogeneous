@@ -61,5 +61,6 @@ public:
 };
 
 int main() {
-
+	
+	TwoDShape parent = TwoDshape();
 }
