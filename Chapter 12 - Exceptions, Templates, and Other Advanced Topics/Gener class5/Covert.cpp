@@ -24,4 +24,6 @@ public:
 
 int main() {
 
+	MyClass ob(10.0, 3.0);
+
 }
