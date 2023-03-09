@@ -37,6 +37,6 @@ int main() {
 
 	MyClass<int> i_ob(10, 3);
 
-
+	cout << "integer division: " << i_ob.division() << endl;
 
 }
