@@ -66,6 +66,8 @@ int main() {
 
 	TwoDShape twoDshape;
 
+	twoDshape.height = 10;
+
 	cout << twoDshape.height;
 	
 }
