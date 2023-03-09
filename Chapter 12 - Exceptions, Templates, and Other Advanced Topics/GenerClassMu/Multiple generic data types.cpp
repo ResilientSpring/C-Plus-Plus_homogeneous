@@ -29,4 +29,8 @@ int main() {
 
 	MyClass<char, const char*> ob2('X', "This is a test");
 
+	ob1.show();
+
+	ob2.show();
+
 }
