@@ -1,6 +1,7 @@
 // Add a constructor to triangle.
 #include <iostream>
 #include <cstring>
+#define _CRT_SECURE_NO_WARNINGS
 using namespace std;
 
 // A class for two-dimensional objects.
