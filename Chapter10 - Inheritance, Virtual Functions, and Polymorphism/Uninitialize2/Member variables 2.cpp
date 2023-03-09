@@ -71,4 +71,8 @@ int main() {
 	cout << twoDshape.height;
 
 	cout << endl << twoDshape.width;
+	// It seems that, C++ disallows to use an object's member variable before it is initialized.
+
+	// In contrast, in Java, an object's non-initialized member variables have their default values
+	// of zero, null, and false for numeric types, reference types, and booleans, respectively.
 }
