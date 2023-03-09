@@ -70,4 +70,5 @@ int main() {
 
 	cout << twoDshape.height;
 	
+//	cout << endl << twoDshape.width;
 }
