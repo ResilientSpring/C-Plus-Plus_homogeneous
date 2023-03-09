@@ -13,7 +13,7 @@ int main(int argc, char **argv) { // [1]
 		exit(1);
 	}
 
-	string blif_file = argv[1];
+	string input_blif = argv[1];
 
 	K = stoi(argv[2]);
 
@@ -21,6 +21,13 @@ int main(int argc, char **argv) { // [1]
 	cout << "K: " << argv[2] << endl;
 	cout << "Output File: " << argv[3] << endl;
 }
+
+
+void read_blif(string blif) {
+
+}
+
+
 
 /*
 *
