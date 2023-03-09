@@ -33,6 +33,10 @@ int main() {
 
 	MyClass<double> d_ob(10.0, 3.0);
 
-	cout << "double division: " << d_ob.division();
+	cout << "double division: " << d_ob.division() << endl;
+
+	MyClass<int> i_ob(10, 3);
+
+
 
 }
