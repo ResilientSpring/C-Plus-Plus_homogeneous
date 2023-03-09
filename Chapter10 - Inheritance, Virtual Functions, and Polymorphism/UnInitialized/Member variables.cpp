@@ -1,4 +1,6 @@
 // Add a constructor to triangle.
+
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <cstring>
 using namespace std;
@@ -6,11 +8,11 @@ using namespace std;
 // A class for two-dimensional objects.
 class TwoDShape {
 
-	// these are private
+public:
+
 	double width;
 	double height;
 
-public:
 	void showDim() {
 		cout << "Width and height are " << width << " and " << height << "\n";
 	}
@@ -19,7 +21,7 @@ public:
 	double getWidth() {
 		return width;
 	}
-	
+
 	double getHeight() {
 		return height;
 	}
@@ -42,15 +44,15 @@ class Triangle : public TwoDShape {
 public:
 
 	// Constructor for Triangle.
-	Triangle(const char *str, double w, double h) {
-		
+	Triangle(const char* str, double w, double h) {
+
 		// Initialize the base class portion.
 		setWidth(w);
 		setHeight(h);
 
 		// Initialize the derived class portion.
 		strcpy(style, str);
-		
+
 	}
 
 
@@ -61,6 +63,12 @@ public:
 };
 
 int main() {
+
+	TwoDShape twoDshape;
+
+	twoDshape.height = 10;
+
+	cout << twoDshape.height;
 	
-	TwoDShape parent = TwoDshape();
+//	cout << endl << twoDshape.width;
 }
