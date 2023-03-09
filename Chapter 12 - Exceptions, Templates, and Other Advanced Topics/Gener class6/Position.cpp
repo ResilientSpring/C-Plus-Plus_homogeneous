@@ -5,6 +5,10 @@ using namespace std;
 
 template <class T>
 
+class Immediately_Below_template_declaration {
+
+};
+
 class MyClass {
 
 	T x, y;
@@ -24,6 +28,6 @@ public:
 
 int main() {
 
-//	MyClass ob(10.0, 3.0);
+	//	MyClass ob(10.0, 3.0);
 
 }
