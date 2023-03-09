@@ -25,4 +25,8 @@ public:
 
 int main() {
 
+	MyClass<int, double> ob1(10, 0.23);
+
+	MyClass<char, const char*> ob2('X', "This is a test");
+
 }
