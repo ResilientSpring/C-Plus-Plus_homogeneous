@@ -2,6 +2,8 @@
 #include <string>
 using namespace std;
 
+void read_blif(string blif);
+
 int K;
 
 int main(int argc, char **argv) { // [1]
