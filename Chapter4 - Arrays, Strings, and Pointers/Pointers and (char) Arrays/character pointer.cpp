@@ -10,7 +10,7 @@ int main() {
 	p1 = str;
 
 
-	char *variable;
+	char *variable = "string";
 
 }
 
