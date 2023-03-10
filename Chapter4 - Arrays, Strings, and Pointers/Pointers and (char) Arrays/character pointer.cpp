@@ -12,5 +12,7 @@ int main() {
 
 	char *variable = "string";
 
+	const char *variable = "string";
+
 }
 
