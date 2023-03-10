@@ -36,10 +36,11 @@ int main() {
 
 	// Use a reverse iterator to show the contents of v in reverse.
 	cout << "Here is v in reverse: ";
+	
 	for (ritr = v.rbegin(); ritr != v.rend(); ++ritr)
 		cout << *ritr << " ";
-	cout << "\n\n";
 
+	cout << "\n\n";
 
 	// Create another vector that is the same as the first.
 	vector<char> v2(v);
