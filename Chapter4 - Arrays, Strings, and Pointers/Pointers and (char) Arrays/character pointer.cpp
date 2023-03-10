@@ -9,5 +9,8 @@ int main() {
 
 	p1 = str;
 
+
+	char *variable;
+
 }
 
