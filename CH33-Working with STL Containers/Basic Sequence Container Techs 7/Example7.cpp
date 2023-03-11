@@ -66,6 +66,13 @@ int main() {
 	
 	show("The contents of v: ", v);
 	show("The contents of v2: ", v2);
+
+	cout << "\n";
+
+	// Determine if v is less than v2. This is a lexicographical comparison. Therefore, the first non-matching 
+	// element determines which container is less than another.
+	if (v < v2)
+		cout << "v is less than v2" << endl << endl;
 }
 
 
