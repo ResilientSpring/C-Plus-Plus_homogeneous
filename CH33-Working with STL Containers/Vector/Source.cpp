@@ -44,6 +44,14 @@ int main() {
 	cout << "The first and last element in v as pointed to by begin() and end()-1: \n" << *(v.begin()) << ", ";
 	cout << *(v.end() - 1) << endl << endl;
 
+	/* 
+		Since v.end() stands for a memory address, 
+		let's test if * and & not only applies to pointer but also memory address.	
+	*/
+	int test = 10;
+
+	cout << *(&test) << endl;
+
 }
 
 
