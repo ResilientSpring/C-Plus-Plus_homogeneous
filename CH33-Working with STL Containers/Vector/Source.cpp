@@ -71,6 +71,10 @@ int main() {
 
 	cout << endl << endl;
 
+	// Create another vecctor that contains a subrange of v.
+	vector<int> v2(v.begin() + 2, v.end() - 4);
+
+	show("v2 contains a subrange of v: ", v2);
 }
 
 
