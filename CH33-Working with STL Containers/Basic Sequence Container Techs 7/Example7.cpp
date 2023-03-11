@@ -50,7 +50,7 @@ int main() {
 	cout << "\n\n";
 
 	// Show the size of v, which is the number of elements currently held by v.
-	cout << "Size of v is " << v.size();
+	cout << "Size of v is " << v.size() << endl;
 
 	// Compare two containers.
 	if (v2 == v)
