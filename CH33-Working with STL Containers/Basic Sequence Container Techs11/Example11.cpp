@@ -116,6 +116,12 @@ int main() {
 	show("The contents of v3: ", v3);
 
 	cout << "\n\n";
+
+	// Clear v.
+	v.clear();
+
+	if (v.empty())
+		cout << "v is now empty." << endl;
 }
 
 
