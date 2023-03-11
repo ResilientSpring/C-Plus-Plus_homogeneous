@@ -3,6 +3,8 @@
 #include <queue>
 using namespace std;
 
+void show(const char* message, vector<int> vect);
+
 int main() {
 
 	vector<int> vector_of_integer;
