@@ -19,6 +19,8 @@ int main() {
 
 	show("The contents of this vector of integer: ", vector_of_integer);
 
+	cout << vector_of_integer.front() << endl;
+
 }
 
 void show(const char *message, vector<int> vect) {
