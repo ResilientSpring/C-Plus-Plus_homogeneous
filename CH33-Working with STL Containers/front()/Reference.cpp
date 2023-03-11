@@ -21,6 +21,8 @@ int main() {
 
 	cout << vector_of_integer.front() << endl;
 
+	cout << vector_of_integer.back() << endl;
+
 }
 
 void show(const char *message, vector<int> vect) {
