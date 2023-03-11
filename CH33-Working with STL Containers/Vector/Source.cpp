@@ -4,6 +4,8 @@
 #include <vector>
 using namespace std;
 
+void show(const char* message, vector<int> vec);
+
 int main() {
 
 	// Declare a vector that has an initial capacity of 10.
@@ -12,4 +14,14 @@ int main() {
 	// Assign its elements some values. 
 	for (unsigned i = 0; i < v.size(); ++i)
 		v[i] = i * i;
+
+
+
+}
+
+
+void show(const char *message, vector<int> vec) {
+
+	cout << message;
+
 }
