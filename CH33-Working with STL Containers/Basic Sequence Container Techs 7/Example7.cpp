@@ -58,6 +58,14 @@ int main() {
 
 
 	// Insert more characters into v and v2. This time, insert them at the end.
+	cout << "Insert more characters into v and v2. This time, insert them at the end of the vector." << endl;
+
+	v.insert(v.end(), 'D');
+	v.insert(v.end(), 'E');
+	v2.insert(v2.end(), 'X');
+	
+	show("The contents of v: ", v);
+	show("The contents of v2: ", v2);
 }
 
 
