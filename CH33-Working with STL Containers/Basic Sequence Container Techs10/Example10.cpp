@@ -98,6 +98,11 @@ int main() {
 
 	// Create another vector.
 	vector<char> v3;
+	v3.insert(v3.end(), 'x');
+	v3.insert(v3.end(), 'Y');
+	v3.insert(v3.end(), 'Z');
+
+	show("The contents of v3: ", v3);
 }
 
 
