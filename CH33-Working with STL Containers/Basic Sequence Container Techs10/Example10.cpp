@@ -103,6 +103,17 @@ int main() {
 	v3.insert(v3.end(), 'Z');
 
 	show("The contents of v3: ", v3);
+
+	cout << "\n";
+
+	// Exchange the contents of v and v3.
+	cout << "Swap the contents of v and v3." << endl;
+	
+	v.swap(v3);
+
+	show("The contents of v: ", v);
+
+	show("The contents of v3: ", v3);
 }
 
 
