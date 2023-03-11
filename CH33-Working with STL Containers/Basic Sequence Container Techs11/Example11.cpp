@@ -108,12 +108,20 @@ int main() {
 
 	// Exchange the contents of v and v3.
 	cout << "Swap the contents of v and v3." << endl;
-	
-	v.swap(v3);
+
+	v3.swap(v);
 
 	show("The contents of v: ", v);
 
 	show("The contents of v3: ", v3);
+
+	cout << "\n\n";
+
+	// Clear v.
+	v.clear();
+
+	if (v.empty())
+		cout << "v is now empty." << endl;
 }
 
 
