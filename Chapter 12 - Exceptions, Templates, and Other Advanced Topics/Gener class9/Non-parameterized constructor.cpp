@@ -5,22 +5,14 @@ using namespace std;
 
 template <class T>
 
-/*
-class Immediately_Below_template_declaration {
-
-};
-
-*/
-
 class MyClass {
 
 	T x, y;
 
 public:
 
-	MyClass(T x, T y) {
-		this->x = x;
-		this->y = y;
+	MyClass() {
+
 	}
 
 	T division() {
@@ -31,11 +23,11 @@ public:
 
 int main() {
 
-	MyClass<double> d_ob(10.0, 3.0);
+	MyClass<double> d_ob;
 
 	cout << "double division: " << d_ob.division() << endl;
 
-	MyClass<int> i_ob(10, 3);
+	MyClass<int> i_ob;
 
 	cout << "integer division: " << i_ob.division() << endl;
 
