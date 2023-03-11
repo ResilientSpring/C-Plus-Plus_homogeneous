@@ -18,4 +18,13 @@ int main() {
 	queue_of_strings.push("three");
 	queue_of_strings.push("four");
 
+	cout << "Now, retrieve those values in FIFO order. \n";
+
+	while (!queue_of_strings.empty()) {
+		
+		cout << "Popping ";
+
+
+
+	}
 }
