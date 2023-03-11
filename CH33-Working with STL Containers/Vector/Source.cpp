@@ -75,6 +75,14 @@ int main() {
 	vector<int> v2(v.begin() + 2, v.end() - 4);
 
 	show("v2 contains a subrange of v: ", v2);
+
+
+	// Change the values of some of v2's elements.
+	v2[1] = 100;
+	v2[2] = 88;
+	v2[4] = 99;
+
+	show("After the assignments, v2 now contains: ", v2);
 }
 
 
