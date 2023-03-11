@@ -41,7 +41,8 @@ int main() {
 	show("v after back-popping one element: ", v);
 	cout << endl;
 
-	cout << "The first and last element in v as pointed to by begin() and end()-1: \n" << *(v.begin()) 
+	cout << "The first and last element in v as pointed to by begin() and end()-1: \n" << *(v.begin()) << ", ";
+	cout << *(v.end() - 1) << endl << endl;
 
 }
 
