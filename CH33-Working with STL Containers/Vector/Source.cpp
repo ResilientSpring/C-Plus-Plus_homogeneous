@@ -58,6 +58,23 @@ int main() {
 	cout << "The first and last element in v as pointed to by rbegin() and rend()-1: \n" << *(v.rbegin()) << ", ";
 	cout << *(v.rend() - 1) << endl << endl;
 
+
+	// Declare an iterator to a vector<int>.
+	vector<int>::iterator itr;
+
+	// Now, declare reverse iterator to a vector<int>
+	vector<int>::reverse_iterator ritr;
+
+	// Cycle through v in the reverse direction using a reverse_iterator.
+	for (ritr = v.rbegin(); ritr != v.rend(); ritr++)
+		cout << *ritr << " ";
+
+	cout << endl << endl;
+
+	// Create another vecctor that contains a subrange of v.
+	vector<int> v2(v.begin() + 2, v.end() - 4);
+
+	show("v2 contains a subrange of v: ", v2);
 }
 
 
