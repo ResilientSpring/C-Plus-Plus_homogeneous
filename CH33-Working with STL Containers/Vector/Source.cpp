@@ -24,4 +24,9 @@ void show(const char *message, vector<int> vec) {
 
 	cout << message;
 
+	vector<int>::iterator itr;
+
+	for (itr = vec.begin(); itr != vec.end(); itr++)
+		cout << *itr << " ";
+
 }
