@@ -16,3 +16,13 @@ int main() {
 	vector_of_integer.push_back(5);
 
 }
+
+void show(const char *message, vector<int> vect) {
+	cout << message;
+	vector<int>::iterator itr;
+
+	for (itr = vect.begin(); itr != vect.end(); itr++)
+		cout << *itr << " ";
+
+	cout << "\n";
+}
