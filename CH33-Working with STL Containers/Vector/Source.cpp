@@ -31,6 +31,8 @@ int main() {
 	v.push_back(100);
 	v.push_back(121);
 
+	show("v after pushing elements onto the end: ", v);
+
 }
 
 
@@ -43,4 +45,5 @@ void show(const char *message, vector<int> vec) {
 	for (itr = vec.begin(); itr != vec.end(); itr++)
 		cout << *itr << " ";
 
+	cout << endl;
 }
