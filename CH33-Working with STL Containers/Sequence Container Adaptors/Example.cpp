@@ -25,6 +25,6 @@ int main() {
 		cout << "Popping ";
 
 
-
+		cout << queue_of_strings.front() << endl;
 	}
 }
