@@ -52,8 +52,11 @@ int main() {
 
 	cout << *(&test) << endl;
 
+	// Correction: v.end() actually returns an iterator that is akin to a pointer.
 
 
+	cout << "The first and last element in v as pointed to by rbegin() and rend()-1: \n" << *(v.rbegin()) << ", ";
+	cout << *(v.rend() - 1) << endl << endl;
 
 }
 
