@@ -6,7 +6,7 @@
 #include <vector>
 using namespace std;
 
-void show(const char* msg, vector<char> vect);
+void show(const char *msg, vector<char> vect);
 
 int main() {
 
@@ -114,11 +114,13 @@ int main() {
 	show("The contents of v: ", v);
 
 	show("The contents of v3: ", v3);
+
+	cout << "\n\n";
 }
 
 
 // Display the contents of a vector<char> by using an iterator.
-void show(const char* msg, vector<char> vect) {
+void show(const char *msg, vector<char> vect) {
 
 	vector<char>::iterator itr;
 
