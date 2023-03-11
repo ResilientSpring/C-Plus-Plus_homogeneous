@@ -83,6 +83,11 @@ int main() {
 	show("The content of v: ", v);
 
 	cout << "\n";
+
+	// Now, compare v to v2 again.
+	if (v < v2) cout << "v is less than v2";
+	else if (v == v2) null;
+	else if (v > v2) cout << "Now, v is greater than v2." << endl << endl;
 }
 
 
