@@ -40,7 +40,7 @@ void show(const char *msg, vector<char> vect) {
 
 	cout << msg;
 
-	for (itr = vect.begin(); itr != vect.end(); ++itr)
+	for (itr = vect.begin(); itr != vect.end(); itr++)
 		cout << *itr << " ";
 	cout << "\n";
 }
