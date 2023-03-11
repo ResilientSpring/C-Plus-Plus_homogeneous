@@ -83,6 +83,8 @@ int main() {
 	v2[4] = 99;
 
 	show("After the assignments, v2 now contains: ", v2);
+
+	cout << endl;
 }
 
 
