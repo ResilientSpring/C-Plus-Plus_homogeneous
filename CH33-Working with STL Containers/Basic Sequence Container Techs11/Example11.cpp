@@ -86,8 +86,42 @@ int main() {
 
 	// Now, compare v to v2 again.
 	if (v < v2) cout << "v is less than v2";
-	else if (v == v2) ;  // [Note 1]
+	else if (v == v2);
 	else if (v > v2) cout << "Now, v is greater than v2." << endl << endl;
+
+
+	// Remove the first element from v2.
+	v2.erase(v2.begin());
+
+	show("v2 after removing the first element: ", v2);
+
+
+	// Create another vector.
+	vector<char> v3;
+	v3.insert(v3.end(), 'x');
+	v3.insert(v3.end(), 'Y');
+	v3.insert(v3.end(), 'Z');
+
+	show("The contents of v3: ", v3);
+
+	cout << "\n";
+
+	// Exchange the contents of v and v3.
+	cout << "Swap the contents of v and v3." << endl;
+
+	v3.swap(v);
+
+	show("The contents of v: ", v);
+
+	show("The contents of v3: ", v3);
+
+	cout << "\n\n";
+
+	// Clear v.
+	v.clear();
+
+	if (v.empty())
+		cout << "v is now empty." << endl;
 }
 
 
@@ -98,23 +132,7 @@ void show(const char *msg, vector<char> vect) {
 
 	cout << msg;
 
-	for (itr = vect.begin(); itr != vect.end(); ++itr)
+	for (itr = vect.begin(); itr != vect.end(); itr++)
 		cout << *itr << " ";
 	cout << "\n";
 }
-
-/* Note:
-* 
-* 1. do nothing in c
-* 
-* Just put a semi colon. It works in C and Obj-C (and Java, and Swift, and many other languages)
-* 
-* 
-* https://www.google.com/search?q=do+nothing+in+c
-* 
-* https://stackoverflow.com/questions/22264284/how-to-write-a-dummy-do-nothing-line-in-c
-* 
-* https://stackoverflow.com/a/22264315
-
-
-*/
