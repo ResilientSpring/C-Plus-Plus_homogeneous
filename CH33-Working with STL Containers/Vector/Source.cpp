@@ -17,6 +17,11 @@ int main() {
 
 	show("Contents of v: ", v);
 
+	// Compute the average of the values.
+	int sum = 0;
+	for (unsigned i = 0; i < v.size(); ++i)
+		sum += v[i];
+
 }
 
 
