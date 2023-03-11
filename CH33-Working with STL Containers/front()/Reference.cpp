@@ -15,6 +15,8 @@ int main() {
 
 	vector_of_integer.push_back(5);
 
+	show("The contents of this vector of integer", vector_of_integer);
+
 }
 
 void show(const char *message, vector<int> vect) {
