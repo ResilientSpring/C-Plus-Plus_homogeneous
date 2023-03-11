@@ -86,7 +86,7 @@ int main() {
 
 	// Now, compare v to v2 again.
 	if (v < v2) cout << "v is less than v2";
-	else if (v == v2) ;
+	else if (v == v2) ;  // [Note 1]
 	else if (v > v2) cout << "Now, v is greater than v2." << endl << endl;
 }
 
@@ -102,3 +102,19 @@ void show(const char* msg, vector<char> vect) {
 		cout << *itr << " ";
 	cout << "\n";
 }
+
+/* Note:
+* 
+* 1. do nothing in c
+* 
+* Just put a semi colon. It works in C and Obj-C (and Java, and Swift, and many other languages)
+* 
+* 
+* https://www.google.com/search?q=do+nothing+in+c
+* 
+* https://stackoverflow.com/questions/22264284/how-to-write-a-dummy-do-nothing-line-in-c
+* 
+* https://stackoverflow.com/a/22264315
+
+
+*/
