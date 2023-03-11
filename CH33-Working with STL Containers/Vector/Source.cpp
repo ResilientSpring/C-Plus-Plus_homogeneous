@@ -15,7 +15,7 @@ int main() {
 	for (unsigned i = 0; i < v.size(); ++i)
 		v[i] = i * i;
 
-
+	show("Contents of v: ", v);
 
 }
 
