@@ -22,6 +22,15 @@ int main() {
 	for (unsigned i = 0; i < v.size(); ++i)
 		sum += v[i];
 
+	double average = sum / v.size();
+
+	cout << "The average of the element is " << average << endl << endl;
+
+
+	// Add elements to the end of v.
+	v.push_back(100);
+	v.push_back(121);
+
 }
 
 
