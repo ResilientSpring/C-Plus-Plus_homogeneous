@@ -33,6 +33,16 @@ int main() {
 
 	show("v after pushing elements onto the end: ", v);
 
+	cout << endl;
+
+	// Now, use pop_back() to remove one element.
+	v.pop_back();
+
+	show("v after back-popping one element: ", v);
+	cout << endl;
+
+	cout << "The first and last element in v as pointed to by begin() and end()-1: \n" << *(v.begin()) 
+
 }
 
 
