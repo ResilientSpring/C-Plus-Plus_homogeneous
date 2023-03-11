@@ -91,6 +91,9 @@ int main() {
 
 
 	// Remove the first element from v2.
+	v2.erase(v2.begin());
+
+	show("v2 after removing the first element: ", v2);
 }
 
 
