@@ -60,8 +60,10 @@ int main() {
 	else
 		cout << "Key not found. " << endl << endl; 
 
-	cout << endl;
-
+	
+	// Create another map that is the same as the first
+	map<string, int> m2(m);
+	show("The contents of m2: ", m2);
 
 }
 
