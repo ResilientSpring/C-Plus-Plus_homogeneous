@@ -33,4 +33,24 @@ int main() {
 	// Demonstrate priority queue.
 	priority_queue<int> pq;
 
+	cout << "Demonstrate a priority queue for integers. " << endl;
+
+	cout << "Pushing 1, 3, 4, 2" << endl;
+
+	pq.push(1);
+	pq.push(3);
+	pq.push(4);
+	pq.push(2);
+
+	cout << "Now, retrieve those values in priority order. " << endl;
+
+	while (!pq.empty())
+	{
+		cout << "Popping ";
+		cout << pq.top() << endl;
+		pq.pop();
+	}
+
+	cout << endl;
+
 }
