@@ -102,7 +102,7 @@ int main() {
 	// Clear m.
 	m.clear();
 
-	if (!m.empty())
+	if (m.empty())
 		cout << "m is now empty.";
 
 
