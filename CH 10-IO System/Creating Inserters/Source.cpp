@@ -16,10 +16,14 @@ public:
 
 int main() {
 
+	ThreeD a(1, 2, 3), b(3, 4, 5), c(5, 6, 7);
+
+	cout << a << b << c;   // Use ThreeD inserter to output coordinates.
+
 }
 
 // Display X, Y, Z coordinates - ThreeD inserters.
-ostream& operator<<(ostream &stream, ThreeD obj) {
+ostream& operator<<(ostream &stream, ThreeD obj) {   // An inserter for ThreeD
 
 	stream << obj.x << ", ";
 	stream << obj.y << ", ";
