@@ -84,6 +84,18 @@ int main() {
 	if (m < m2)
 		cout << "m is less than m2." << endl << endl;
 
+
+	// Remove the Beta from m.
+	m.erase("Beta");
+	show("m after removing Beta: ", m);
+
+	if (m > m2)
+		cout << "Now, m is greater than m2." << endl << endl;
+
+
+	// Exchange the contents of m and m2.
+	cout << "Exchange m and m2. " << endl << endl;
+
 }
 
 // Display the contents of a map<string, int> by using an iterator.
