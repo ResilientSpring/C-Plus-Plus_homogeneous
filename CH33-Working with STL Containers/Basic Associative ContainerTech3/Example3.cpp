@@ -38,6 +38,9 @@ int main() {
 	// Display the entire contents of m.
 	show("Entire contents of m: ", m);
 
+	// Show the size of m, which is the number of elements currently held by map.
+	cout << "Size of m is " << m.size();
+
 }
 
 // Display the contents of a map<string, int> by using an iterator.
