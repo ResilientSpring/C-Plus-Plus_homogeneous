@@ -58,6 +58,11 @@ int main() {
 
 	cout << "Demonstrate a stack for characters. " << endl;
 
+	cout << "Pushing A, B, C, and D. " << endl;
 
+	stack.push('A');
+	stack.push('B');
+	stack.push('C');
+	stack.push('D');
 
 }
