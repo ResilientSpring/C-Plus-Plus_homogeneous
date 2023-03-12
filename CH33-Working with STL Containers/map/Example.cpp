@@ -61,6 +61,25 @@ int main() {
 	element if successful or to an already existing element that uses the same key.
 
 	*/
+
+	// Use insert() to add an entry.
+	result = phone_map.insert(pair<string, string>("Jay", "555-9999"));
+
+	if (result.second)
+		cout << "Jay added." << endl;
+
+	show("phone_map after adding Jay: ", phone_map);
+
+
+	// Duplicate keys are not allowed, as the following proves.
+	result = phone_map.insert(pair<string, string>("Jay", "555-1010"));
+	if (result.second)
+		cout << "Duplicate Jay added! Error!";
+	else
+		cout << "Duplicate Jay not allowed." << endl;
+
+	show("phone_map after attempt to add duplicate Jay key: ", phone_map);
+
 }
 
 
