@@ -36,6 +36,19 @@ int main() {
 	if (itr != phone_map.end())
 		cout << "Number for Jane is " << itr->second << endl << endl;
 
+
+	// Cycle through the map in the reverse direction.
+	map<string, string>::reverse_iterator ritr;
+	cout << "Display phone_map in reverse order: " << endl;
+
+	for (ritr = phone_map.rbegin(); ritr != phone_map.rend(); ritr++)
+		cout << ritr->first << ", " << ritr->second << endl;
+
+	cout << endl;
+
+
+	// Create a pair object that will contain the result of a call to insert().
+	pair<map<string, string>::iterator, bool> result;
 }
 
 
