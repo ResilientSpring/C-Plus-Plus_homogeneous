@@ -54,15 +54,23 @@ int main() {
 	cout << endl;
 
 	// Finally, demonstrate stack.
-	stack<char> stack;
+	stack<char> stack_of_character;
 
 	cout << "Demonstrate a stack for characters. " << endl;
 
 	cout << "Pushing A, B, C, and D. " << endl;
 
-	stack.push('A');
-	stack.push('B');
-	stack.push('C');
-	stack.push('D');
+	stack_of_character.push('A');
+	stack_of_character.push('B');
+	stack_of_character.push('C');
+	stack_of_character.push('D');
 
+	cout << "Now, retrieve those values in LIFO order." << endl;
+
+	while (!stack_of_character.empty())
+	{
+		cout << "Popping: ";
+		cout << stack_of_character.top();
+		stack_of_character.pop();
+	}
 }
