@@ -42,6 +42,10 @@ void show(const char *message, map<string, int> m) {
 	
 	cout << message;
 
+	map<string, int>::iterator itr;
 
+	for (itr = m.begin(); itr != m.end(); itr++)
+		cout << itr->first << ", " << itr->second << endl;
 
+	cout << endl;
 }
