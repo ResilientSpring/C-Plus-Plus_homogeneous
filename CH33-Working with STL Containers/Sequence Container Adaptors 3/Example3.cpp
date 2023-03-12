@@ -53,4 +53,11 @@ int main() {
 
 	cout << endl;
 
+	// Finally, demonstrate stack.
+	stack<char> stack;
+
+	cout << "Demonstrate a stack for characters. " << endl;
+
+
+
 }
