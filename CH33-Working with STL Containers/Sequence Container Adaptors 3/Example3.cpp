@@ -70,7 +70,7 @@ int main() {
 	while (!stack_of_character.empty())
 	{
 		cout << "Popping: ";
-		cout << stack_of_character.top();
+		cout << stack_of_character.top() << endl;
 		stack_of_character.pop();
 	}
 }
