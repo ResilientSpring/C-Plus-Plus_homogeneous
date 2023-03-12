@@ -57,6 +57,8 @@ int main() {
 
 	if (itr != m.end())
 		cout << itr->first << " has the value " << itr->second << endl;
+	else
+		cout << "Key not found. " << endl << endl; 
 
 	cout << endl;
 
