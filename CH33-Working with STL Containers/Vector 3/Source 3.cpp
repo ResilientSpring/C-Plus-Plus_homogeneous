@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-void show(const char* message, vector<int> vec);
+void show(const char *message, vector<int> vec);
 
 int main() {
 
@@ -44,9 +44,9 @@ int main() {
 	cout << "The first and last element in v as pointed to by begin() and end()-1: \n" << *(v.begin()) << ", ";
 	cout << *(v.end() - 1) << endl << endl;
 
-	/* 
-		Since v.end() stands for a memory address, 
-		let's test if * and & not only applies to pointer but also memory address.	
+	/*
+		Since v.end() stands for a memory address,
+		let's test if * and & not only applies to pointer but also memory address.
 	*/
 	int test = 10;
 
@@ -91,17 +91,39 @@ int main() {
 	v3.assign(v.rbegin(), v.rend());
 
 	show("v3 contains the reverse v: ", v3);
+
+
+	// Show the size and capacity of v.
+	cout << "Size of v is " << v.size() << ". The capacity is " << v.capacity() << endl;
+
+
+	cout << endl;
+
+	show("The contents of v: ", v);
+
+
+	// Now, resize v.
+	v.resize(20);
+
+	cout << "After calling resize(20), the size of v is " << v.size() << " and the capacity is " << v.capacity();
+
+	cout << endl;
+
+	show("The contents of v: ", v);
+
+	cout << endl;
+
 }
 
 
 void show(const char *message, vector<int> vec) {
 
-	cout << message;
+	cout << message << endl;
 
 	vector<int>::iterator itr;
 
 	for (itr = vec.begin(); itr != vec.end(); itr++)
 		cout << *itr << " ";
 
-	cout << endl;
+	cout << endl << endl;
 }
