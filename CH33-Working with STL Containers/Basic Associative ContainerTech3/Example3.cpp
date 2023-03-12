@@ -53,6 +53,12 @@ int main() {
 	cout << endl;
 
 	// Find an element given its key.
+	itr = m.find("Beta");
+
+	if (itr != m.end())
+		cout << itr->first << " has the value " << itr->second << endl;
+
+	cout << endl;
 
 
 }
