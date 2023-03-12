@@ -50,11 +50,16 @@ int main() {
 	// Create a pair object that will contain the result of a call to insert().
 	pair<map<string, string>::iterator, bool> result;
 
-	/* Insert() inserts a key/value pair into the invoking map. 
+	/* 	
+	Insert() inserts a key/value pair into the invoking map. 
 	It returns a pair object that indicates the outcome of the operation.
 	
-	If the specified key already exists, then the bool value of the returned pair object (which is in the second field)
-	will be false.
+	If the specified key already exists, then the bool value of the returned pair object 
+	(which is in the second field) will be false.
+
+	The iteration portion of the returned pair object (which is in the first field) will point to the inserted 
+	element if successful or to an already existing element that uses the same key.
+
 	*/
 }
 
