@@ -95,6 +95,16 @@ int main() {
 
 	// Exchange the contents of m and m2.
 	cout << "Exchange m and m2. " << endl << endl;
+	m.swap(m2);
+	show("Contents of m: ", m);
+	show("Contents of m2: ", m2);
+
+	// Clear m.
+	m.clear();
+
+	if (!m.empty())
+		cout << "m is now empty.";
+
 
 }
 
