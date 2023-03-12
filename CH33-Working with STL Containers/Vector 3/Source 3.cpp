@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-void show(const char* message, vector<int> vec);
+void show(const char *message, vector<int> vec);
 
 int main() {
 
@@ -116,14 +116,14 @@ int main() {
 }
 
 
-void show(const char* message, vector<int> vec) {
+void show(const char *message, vector<int> vec) {
 
-	cout << message;
+	cout << message << endl;
 
 	vector<int>::iterator itr;
 
 	for (itr = vec.begin(); itr != vec.end(); itr++)
 		cout << *itr << " ";
 
-	cout << endl;
+	cout << endl << endl;
 }
