@@ -70,6 +70,20 @@ int main() {
 	if (m2 == m)
 		cout << "m2 and m are equivalent. " << endl << endl;
 
+
+	// Insert more elements into m and m2.
+	cout << "Insert more elements into m and m2." << endl;
+
+	m.insert(make_pair("Epsilon", 99));
+	m2.insert(make_pair("Zeta", 88));
+	show("Contents of m are now: ", m);
+	show("Contents of m2 are now: ", m2);
+
+	// Determine the relationship between m and m2. This is a lexicographical comparison. Therefore, the first
+	// non-matching element in the container determines which container is less than the other.
+	if (m < m2)
+		cout << "m is less than m2." << endl << endl;
+
 }
 
 // Display the contents of a map<string, int> by using an iterator.
