@@ -22,6 +22,13 @@ int main() {
 
 	show("Here is the original map: ", phone_map);
 
+	cout << endl;
+
+	// Now, change the phone number for Ken.
+	phone_map["Ken"] = "415 997-8893";
+
+	cout << "New number for Ken: " << phone_map["Ken"] << endl << endl;
+
 }
 
 
