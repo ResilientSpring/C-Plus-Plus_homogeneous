@@ -63,7 +63,12 @@ int main() {
 	
 	// Create another map that is the same as the first
 	map<string, int> m2(m);
-	show("The contents of m2: ", m2);
+	show("Contents of m2: ", m2);
+
+
+	// Compare two maps.
+	if (m2 == m)
+		cout << "m2 and m are equivalent. " << endl << endl;
 
 }
 
