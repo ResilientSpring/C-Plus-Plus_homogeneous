@@ -29,6 +29,13 @@ int main() {
 
 	cout << "New number for Ken: " << phone_map["Ken"] << endl << endl;
 
+
+	// Use find() to find a number.
+	map<string, string>::iterator itr;
+	itr = phone_map.find("Jane");
+	if (itr != phone_map.end())
+		cout << "Number for Jane is " << itr->second << endl << endl;
+
 }
 
 
