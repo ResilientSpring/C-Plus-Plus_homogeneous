@@ -50,6 +50,11 @@ int main() {
 	for (ritr = m.rbegin(); ritr != m.rend(); ritr++)
 		cout << ritr->first << ", " << ritr->second << endl;
 
+	cout << endl;
+
+	// Find an element given its key.
+
+
 }
 
 // Display the contents of a map<string, int> by using an iterator.
