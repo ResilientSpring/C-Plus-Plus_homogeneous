@@ -47,7 +47,7 @@ int main() {
 	// Now, show the contents of m in reverse order.
 	cout << "The contents of m in reverse: " << endl;
 
-	for (ritr = m.rbegin(), ritr != m.rend(); ritr++)
+	for (ritr = m.rbegin(); ritr != m.rend(); ritr++)
 		cout << ritr->first << ", " << ritr->second << endl;
 
 }
