@@ -53,6 +53,57 @@ int main() {
 	cout << endl;
 
 	// Find an element given its key.
+	itr = m.find("Beta");
+
+	if (itr != m.end())
+		cout << itr->first << " has the value " << itr->second << endl;
+	else
+		cout << "Key not found. " << endl << endl; 
+
+	
+	// Create another map that is the same as the first
+	map<string, int> m2(m);
+	show("Contents of m2: ", m2);
+
+
+	// Compare two maps.
+	if (m2 == m)
+		cout << "m2 and m are equivalent. " << endl << endl;
+
+
+	// Insert more elements into m and m2.
+	cout << "Insert more elements into m and m2." << endl;
+
+	m.insert(make_pair("Epsilon", 99));
+	m2.insert(make_pair("Zeta", 88));
+	show("Contents of m are now: ", m);
+	show("Contents of m2 are now: ", m2);
+
+	// Determine the relationship between m and m2. This is a lexicographical comparison. Therefore, the first
+	// non-matching element in the container determines which container is less than the other.
+	if (m < m2)
+		cout << "m is less than m2." << endl << endl;
+
+
+	// Remove the Beta from m.
+	m.erase("Beta");
+	show("m after removing Beta: ", m);
+
+	if (m > m2)
+		cout << "Now, m is greater than m2." << endl << endl;
+
+
+	// Exchange the contents of m and m2.
+	cout << "Exchange m and m2. " << endl << endl;
+	m.swap(m2);
+	show("Contents of m: ", m);
+	show("Contents of m2: ", m2);
+
+	// Clear m.
+	m.clear();
+
+	if (m.empty())
+		cout << "m is now empty.";
 
 
 }
