@@ -35,12 +35,15 @@ int main() {
 	--itr;
 	cout << "Here is the last key/value pair in m: " << itr->first << ", " << itr->second << endl << endl;
 
+	// Display the entire contents of m.
+	show("Entire contents of m: ", m);
+
 }
 
 // Display the contents of a map<string, int> by using an iterator.
 void show(const char *message, map<string, int> m) {
 	
-	cout << message;
+	cout << message << endl;;
 
 	map<string, int>::iterator itr;
 
