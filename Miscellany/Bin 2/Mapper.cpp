@@ -3,6 +3,7 @@
 #include <fstream>
 using namespace std;
 
+/*
 #define print_flag 0
 #define read_flag 0
 #define topology_flag 0
@@ -10,6 +11,7 @@ using namespace std;
 #define map_flag 0
 #define output_flag 0
 #define decomposition_flag 0
+*/
 
 void read_blif(string blif);
 
@@ -53,8 +55,30 @@ void read_blif(string blif) {
 	// model name
 	fin >> temp >> model_name;
 
-	if (read_flag) {
+	if (1) {
 		cout << "Model name : " << model_name << endl;
+	}
+
+	// input port
+	fin >> temp;
+
+	while (1) {
+
+		fin >> port;
+
+		if (strcmp(port.c_str(), ".outputs") == 0) {
+			break;
+		}
+		else {
+
+			if (port[0] != '\\') {
+
+				// create new node
+				// store into input vector
+				G_node.push_back(port);
+				G_input.push_back(port);
+			}
+		}
 	}
 }
 
