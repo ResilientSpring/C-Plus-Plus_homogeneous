@@ -89,6 +89,8 @@ int main() {
 	// Create an empty vector and then assign it a sequence that is a reverse of v.
 	vector<int> v3;
 	v3.assign(v.rbegin(), v.rend());
+
+	show("v3 contains the reverse v: ", v3);
 }
 
 
