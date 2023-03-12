@@ -39,7 +39,16 @@ int main() {
 	show("Entire contents of m: ", m);
 
 	// Show the size of m, which is the number of elements currently held by map.
-	cout << "Size of m is " << m.size();
+	cout << "Size of m is " << m.size() << endl << endl;
+
+	// Declare a reverse iterator to a map<string, map>.
+	map<string, int>::reverse_iterator ritr;
+
+	// Now, show the contents of m in reverse order.
+	cout << "The contents of m in reverse: " << endl;
+
+	for (ritr = m.rbegin(), ritr != m.rend(); ritr++)
+		cout << ritr->first << ", " << ritr->second << endl;
 
 }
 
