@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 using namespace std;
 
 void read_blif(string blif);
@@ -27,6 +28,16 @@ int main(int argc, char **argv) { // [1]
 
 void read_blif(string blif) {
 
+	ifstream fin;
+
+	fin.open(blif, ios::in);
+
+	if (!fin) {
+
+		cout << "Cannot open the file" << endl;
+
+		return;
+	}
 }
 
 
