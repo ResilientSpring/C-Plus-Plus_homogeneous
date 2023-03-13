@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-ostream& operator<<(ostream& stream, ThreeD obj);
+ostream& operator<<(ostream &stream, ThreeD obj);
 
 class ThreeD {
 public:
