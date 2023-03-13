@@ -22,7 +22,7 @@ int main() {
 
 }
 
-// Display X, Y, Z coordinates - ThreeD inserters.
+// Overload ostream's operator <<
 ostream& operator<<(ostream &stream, ThreeD obj) {   // An inserter for ThreeD
 
 	stream << obj.x << ", ";
