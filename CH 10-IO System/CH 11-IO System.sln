@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.33130.400
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Creating Inserters", "Creating Inserters\Creating Inserters.vcxproj", "{BE834F55-6D57-491F-AD1B-A6481DDB53E5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Creating Inserters 2", "Creating Inserters 2\Creating Inserters 2.vcxproj", "{4FA0954A-4E13-48DB-83B9-DDE3D3EEFF4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{BE834F55-6D57-491F-AD1B-A6481DDB53E5}.Release|x64.Build.0 = Release|x64
 		{BE834F55-6D57-491F-AD1B-A6481DDB53E5}.Release|x86.ActiveCfg = Release|Win32
 		{BE834F55-6D57-491F-AD1B-A6481DDB53E5}.Release|x86.Build.0 = Release|Win32
+		{4FA0954A-4E13-48DB-83B9-DDE3D3EEFF4E}.Debug|x64.ActiveCfg = Debug|x64
+		{4FA0954A-4E13-48DB-83B9-DDE3D3EEFF4E}.Debug|x64.Build.0 = Debug|x64
+		{4FA0954A-4E13-48DB-83B9-DDE3D3EEFF4E}.Debug|x86.ActiveCfg = Debug|Win32
+		{4FA0954A-4E13-48DB-83B9-DDE3D3EEFF4E}.Debug|x86.Build.0 = Debug|Win32
+		{4FA0954A-4E13-48DB-83B9-DDE3D3EEFF4E}.Release|x64.ActiveCfg = Release|x64
+		{4FA0954A-4E13-48DB-83B9-DDE3D3EEFF4E}.Release|x64.Build.0 = Release|x64
+		{4FA0954A-4E13-48DB-83B9-DDE3D3EEFF4E}.Release|x86.ActiveCfg = Release|Win32
+		{4FA0954A-4E13-48DB-83B9-DDE3D3EEFF4E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
