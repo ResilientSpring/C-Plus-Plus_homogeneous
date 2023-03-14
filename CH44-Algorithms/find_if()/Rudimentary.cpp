@@ -6,7 +6,7 @@
 #include <string>
 using namespace std;
 
-
+bool is_short_str(string str);
 
 int main() {
 
@@ -30,4 +30,12 @@ int main() {
 		itr = find_if(itr, v.end(), is_short_str);
 	} while ();
 
+}
+
+bool is_short_str(string str) {
+	
+	if (str.size() <= 3)
+		return true;
+
+	return false;
 }
