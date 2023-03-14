@@ -27,7 +27,15 @@ int main() {
 	itr = v.begin();
 
 	do {
+		
 		itr = find_if(itr, v.end(), is_short_str);
+
+		if (itr != v.end()) {
+
+			cout << "Found " << *itr << endl;
+		
+		}
+
 	} while ();
 
 }
