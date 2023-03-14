@@ -32,4 +32,18 @@ int main() {
 
 	cout << endl << endl;
 
+
+	// Find the element that contains "two".
+	cout << "Searching for \"two\" \n";
+
+	itr = find(v.begin(), v.end(), "two");
+
+	if (itr != v.end()) {
+
+		cout << "Found \"two\", Replacing with \"TWO\" \n";
+
+		*itr = "TWO";
+	}
+
+
 }
