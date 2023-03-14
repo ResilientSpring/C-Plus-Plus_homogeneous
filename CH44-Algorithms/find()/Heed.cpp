@@ -25,5 +25,11 @@ int main() {
 
 	cout << endl << endl;
 
+	cout << "Contents of v: ";
+
+	for (itr = v.begin(); itr != v.end(); itr++)
+		cout << *itr << " ";
+
+	cout << endl << endl;
 
 }
