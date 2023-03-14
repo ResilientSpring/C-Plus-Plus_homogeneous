@@ -47,10 +47,4 @@ int main() {
 
 	cout << endl;
 
-
-	// Find all strings that are less than 4 characters long.
-	cout << "Searching for all strings that have 3 or fewer characters. \n";
-
-
-
 }
