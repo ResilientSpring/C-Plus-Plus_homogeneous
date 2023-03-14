@@ -47,4 +47,17 @@ int main() {
 
 	cout << endl;
 
+
+	// Find the element that contains "TWO"
+	itr = find(v.begin(), v.end(), "TWO");
+
+	if (itr != v.end()) {
+
+		cout << *itr
+			<< " is found! And the location of which in this flexible array (vector) is "
+			<< itr->npos;
+
+	}
+
+	cout << endl;
 }
