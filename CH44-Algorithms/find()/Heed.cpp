@@ -1,4 +1,4 @@
-// Demonstrate the find() and find_if() algorithms.
+// Demonstrate the find() algorithm.
 
 #include <iostream>
 #include <algorithm>

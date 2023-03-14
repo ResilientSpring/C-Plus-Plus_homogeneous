@@ -1,4 +1,4 @@
-// Demonstrate the find() and find_if() algorithms.
+// Demonstrate the find_if() algorithm.
 
 #include <iostream>
 #include <vector>
