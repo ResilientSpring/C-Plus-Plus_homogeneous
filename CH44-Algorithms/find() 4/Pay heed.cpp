@@ -69,4 +69,6 @@ int main() {
 	v.at(0) = "pay heed (attention) to";
 
 	cout << endl << v.at(0) << endl;
+
+	cout << endl << v[3] << endl;
 }
