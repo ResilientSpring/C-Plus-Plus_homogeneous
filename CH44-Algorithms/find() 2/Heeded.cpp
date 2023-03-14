@@ -53,8 +53,9 @@ int main() {
 
 	if (itr != v.end()) {
 
-		cout << "Found! And the location of which in this flexible array (vector) is  "
-			<< itr->
+		cout << *itr 
+			<< " is found! And the location of which in this flexible array (vector) is "
+			<< itr->at();
 
 	}
 
