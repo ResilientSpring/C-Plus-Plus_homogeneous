@@ -70,6 +70,8 @@ int main() {
 	cout << endl << itr->find("O") << endl;     // string classs' member function.
 
 	/*
+	 
+	 Don't confuse <algorithm>'s find() with string class' find()
 	
 	*/
 }
