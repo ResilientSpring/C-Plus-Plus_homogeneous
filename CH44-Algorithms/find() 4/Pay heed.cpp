@@ -65,4 +65,8 @@ int main() {
 	string pay_heed_now = v.at(2);
 
 	cout << endl << pay_heed_now << endl;
+
+	v.at(0) = "pay heed (attention) to";
+
+	cout << endl << v.at(0) << endl;
 }
