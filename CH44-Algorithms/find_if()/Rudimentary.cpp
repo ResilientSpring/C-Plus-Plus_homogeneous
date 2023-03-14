@@ -33,10 +33,11 @@ int main() {
 		if (itr != v.end()) {
 
 			cout << "Found " << *itr << endl;
-		
+			
+			++itr;
 		}
 
-	} while ();
+	} while (itr != v.end());
 
 }
 
