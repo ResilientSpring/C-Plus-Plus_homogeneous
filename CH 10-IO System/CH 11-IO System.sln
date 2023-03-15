@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Creating Inserters", "Creat
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Creating Inserters 2", "Creating Inserters 2\Creating Inserters 2.vcxproj", "{4FA0954A-4E13-48DB-83B9-DDE3D3EEFF4E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Formatted IO", "Formatted IO\Formatted IO.vcxproj", "{F3785D83-CF75-4477-B091-1D599976E1B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{4FA0954A-4E13-48DB-83B9-DDE3D3EEFF4E}.Release|x64.Build.0 = Release|x64
 		{4FA0954A-4E13-48DB-83B9-DDE3D3EEFF4E}.Release|x86.ActiveCfg = Release|Win32
 		{4FA0954A-4E13-48DB-83B9-DDE3D3EEFF4E}.Release|x86.Build.0 = Release|Win32
+		{F3785D83-CF75-4477-B091-1D599976E1B7}.Debug|x64.ActiveCfg = Debug|x64
+		{F3785D83-CF75-4477-B091-1D599976E1B7}.Debug|x64.Build.0 = Debug|x64
+		{F3785D83-CF75-4477-B091-1D599976E1B7}.Debug|x86.ActiveCfg = Debug|Win32
+		{F3785D83-CF75-4477-B091-1D599976E1B7}.Debug|x86.Build.0 = Debug|Win32
+		{F3785D83-CF75-4477-B091-1D599976E1B7}.Release|x64.ActiveCfg = Release|x64
+		{F3785D83-CF75-4477-B091-1D599976E1B7}.Release|x64.Build.0 = Release|x64
+		{F3785D83-CF75-4477-B091-1D599976E1B7}.Release|x86.ActiveCfg = Release|Win32
+		{F3785D83-CF75-4477-B091-1D599976E1B7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
