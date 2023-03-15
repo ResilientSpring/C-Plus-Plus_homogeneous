@@ -15,6 +15,9 @@ int main() {
 		return 1;
 	}
 
+	stream << 10 << " " << 123.23 << endl;
+	stream << "This is a short text file.";
 
+	stream.close();
 
 }
