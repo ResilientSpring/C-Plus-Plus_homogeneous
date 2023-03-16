@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
 	// while loop
 	while (input_stream) {  // in will be false when eof is reached.
 
-		input_stream.get(ch);  // get() reads a character from stream by putting that char in ch.
+		input_stream.get(ch); // get() reads a character from stream by putting that char in ch.
 
 		if (input_stream)
 			cout << ch;
