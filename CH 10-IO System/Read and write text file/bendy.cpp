@@ -12,6 +12,10 @@ int main() {
 
 		cout << "Cannot open file. \n";
 
+		return 1;
+
 	}
+
+
 
 }
