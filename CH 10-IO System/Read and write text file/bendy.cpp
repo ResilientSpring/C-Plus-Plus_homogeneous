@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 
-	ofstream out("text");
+	ofstream out("test");
 
 
 	// If the file cannot be opened, the stream object will be be false.
@@ -23,5 +23,25 @@ int main() {
 	// A stream is linked to a file through an open operation and disassociated from it through
 	// a close operation.
 	out.close();
+
+
+	////////////////////////////////////////////////
+
+
+	char ch;
+	int i;
+	float f;
+	char str[80];
+
+	ifstream in("test");
+
+	// If the file cannot be opened to read, the stream object will be false.
+	if (!in) {
+
+		cout << "The file cannot be opened.";
+		
+		return 1;
+	}
+
 
 }
