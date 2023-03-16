@@ -15,6 +15,7 @@ int main(int argc, char *argv[]) {
 		return 1;
 	}
 	
+	// Because you are dealing with a file, the class of the stream object shall be ifstream.
 	istream input_stream(argv[1]);
 
 }
