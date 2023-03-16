@@ -155,6 +155,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reading a string from keybo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reading a string from keyboard 5", "Reading a string from keyboard 5\Reading a string from keyboard 5.vcxproj", "{6AE0E984-C848-4DEA-8A06-CFEA30D59F32}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reading a string from keyboard 6", "Reading a string from keyboard 6\Reading a string from keyboard 6.vcxproj", "{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -771,6 +773,14 @@ Global
 		{6AE0E984-C848-4DEA-8A06-CFEA30D59F32}.Release|x64.Build.0 = Release|x64
 		{6AE0E984-C848-4DEA-8A06-CFEA30D59F32}.Release|x86.ActiveCfg = Release|Win32
 		{6AE0E984-C848-4DEA-8A06-CFEA30D59F32}.Release|x86.Build.0 = Release|Win32
+		{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}.Debug|x64.ActiveCfg = Debug|x64
+		{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}.Debug|x64.Build.0 = Debug|x64
+		{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}.Debug|x86.ActiveCfg = Debug|Win32
+		{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}.Debug|x86.Build.0 = Debug|Win32
+		{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}.Release|x64.ActiveCfg = Release|x64
+		{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}.Release|x64.Build.0 = Release|x64
+		{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}.Release|x86.ActiveCfg = Release|Win32
+		{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
