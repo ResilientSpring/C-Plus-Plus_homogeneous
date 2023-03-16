@@ -39,7 +39,7 @@ int main() {
 	if (!in) {
 
 		cout << "The file cannot be opened.";
-		
+
 		return 1;
 	}
 
@@ -49,12 +49,10 @@ int main() {
 
 	cout << endl << endl;
 
-	cout << i << " " << f << " " << str;
-
-	cout << endl << endl;
-
 	cout << i << " " << f << " " << ch << "\n";
 	cout << str;
 
 	cout << endl;
+
+
 }
