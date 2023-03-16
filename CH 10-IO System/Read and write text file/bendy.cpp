@@ -51,4 +51,6 @@ int main() {
 
 	cout << i << " " << f << " " << ch << "\n";
 	cout << str;
+
+	cout << endl;
 }
