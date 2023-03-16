@@ -17,5 +17,4 @@ int main(int argc, char *argv[]) {
 	
 	istream input_stream(argv[1]);
 
-
 }
