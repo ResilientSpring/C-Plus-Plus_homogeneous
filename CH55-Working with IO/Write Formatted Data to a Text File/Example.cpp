@@ -17,4 +17,8 @@ int main() {
 		return 1;
 	}
 
+
+	// Write output to the file.
+	fout << 10 << " " << -20 << " " << 30.2 << "\n";
+
 }
