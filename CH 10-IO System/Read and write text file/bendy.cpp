@@ -10,7 +10,7 @@ int main() {
 	// If the file cannot be opened, the stream object will be be false.
 	if (!out) {
 
-
+		cout << "Cannot open file. \n";
 
 	}
 
