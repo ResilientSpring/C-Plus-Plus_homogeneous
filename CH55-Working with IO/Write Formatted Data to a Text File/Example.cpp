@@ -19,6 +19,8 @@ int main() {
 
 
 	// Write output to the file.
-	fout << 10 << " " << -20 << " " << 30.2 << "\n";
+	fout << 10 << " " << -20 << " " << 30.2 << "\n" << "This is a test.";
+
+	fout.close();
 
 }
