@@ -8,7 +8,7 @@ int main() {
 
 	char str[80];
 
-	cout << "Enter a string: " << endl;
+	cout << "Enter a string: ";
 
 	gets_s(str);    // read a string using gets_s(), meaning "get string" securely().    
 
