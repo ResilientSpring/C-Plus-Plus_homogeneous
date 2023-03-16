@@ -43,7 +43,7 @@ int main() {
 		return 1;
 	}
 
-
+	in >> i >> f >> ch >> str;
 
 
 }
