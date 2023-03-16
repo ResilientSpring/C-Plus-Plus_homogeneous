@@ -43,7 +43,7 @@ int main() {
 		return 1;
 	}
 
-	in >> i >> f >> ch >> str;
+	in >> i >> f >> ch >> str;  // Read from the file.
 
-
+	cout << i << " " << f << " " << ch << " " << str;
 }
