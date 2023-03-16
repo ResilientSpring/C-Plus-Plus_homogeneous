@@ -4,7 +4,7 @@
 #include <fstream>
 using namespace std;
 
-int main(int argc, char *argv[]) {
+int main(int argc, char* argv[]) {
 
 	char ch;
 
@@ -21,13 +21,15 @@ int main(int argc, char *argv[]) {
 	if (!input_stream) {
 
 		cout << "Cannot open file. \n";
-		
+
 		return 1;
 	}
 
-	while (input_stream) {  // input_stream will be false when eof is reached.
-		
-		input_stream.get(ch);
+
+	// while loop
+	while (input_stream.get(ch)) {  // input_stream will be false when eof is reached.
+
+		cout << ch;
 
 	}
 

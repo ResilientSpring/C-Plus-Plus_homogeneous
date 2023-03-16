@@ -21,13 +21,18 @@ int main(int argc, char *argv[]) {
 	if (!input_stream) {
 
 		cout << "Cannot open file. \n";
-		
+
 		return 1;
 	}
 
+
+	// while loop
 	while (input_stream) {  // input_stream will be false when eof is reached.
-		
-		input_stream.get(ch);
+
+		input_stream.get(ch); // get() reads a character from stream by putting that char in ch.
+
+		if (input_stream)
+			cout << ch;
 
 	}
 
