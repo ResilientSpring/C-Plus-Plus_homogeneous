@@ -7,7 +7,7 @@ int main() {
 	ofstream out("test");
 
 
-	// If the file cannot be opened, the stream object will be be false.
+	// If the file cannot be opened, the stream object will be false.
 	if (!out) {
 
 		cout << "Cannot open file. \n";
