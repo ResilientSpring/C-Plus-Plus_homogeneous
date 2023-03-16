@@ -26,6 +26,8 @@ int main(int argc, char* argv[]) {
 	}
 
 	while (input_stream) {  // in will be false when eof is reached.
+		
+		input_stream.get(ch);
 
 	}
 
