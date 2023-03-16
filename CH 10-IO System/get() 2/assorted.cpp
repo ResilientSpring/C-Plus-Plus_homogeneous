@@ -18,6 +18,11 @@ int main(int argc, char* argv[]) {
 	// Because you are dealing with a file, the class of the stream object shall be ifstream.
 	ifstream input_stream(argv[1], ios::binary);
 
+	if (!input_stream) {
 
+		cout << "Cannot open.";
+		
+		return 1;
+	}
 
 }
