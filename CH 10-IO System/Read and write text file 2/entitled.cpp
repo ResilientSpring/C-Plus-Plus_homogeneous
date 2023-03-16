@@ -45,11 +45,11 @@ int main() {
 
 	in >> i >> f >> str;  // Read from the file.
 
-	cout << i << " " << f << " " << ch << " " << str;
+	cout << i << " " << f << " " << " " << str;
 
 	cout << endl << endl;
 
-	cout << i << " " << f << " " << ch << "\n";
+	cout << i << " " << f << " " << "\n";
 	cout << str;
 
 	cout << endl;
