@@ -8,5 +8,7 @@ int main() {
 
 	char str[80];
 
+	cout << "Enter a string: " << endl;
 
+	gets_s(str[80]);
 }
