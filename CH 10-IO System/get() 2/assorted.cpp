@@ -25,4 +25,8 @@ int main(int argc, char* argv[]) {
 		return 1;
 	}
 
+	while (input_stream) {  // in will be false when eof is reached.
+
+	}
+
 }
