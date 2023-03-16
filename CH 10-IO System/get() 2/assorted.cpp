@@ -20,7 +20,7 @@ int main(int argc, char* argv[]) {
 
 	if (!input_stream) {
 
-		cout << "Cannot open.";
+		cout << "Cannot open file. \n";
 		
 		return 1;
 	}
