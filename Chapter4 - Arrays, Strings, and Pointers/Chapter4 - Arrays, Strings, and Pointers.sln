@@ -153,6 +153,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointers and (char) Arrays"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reading a string from keyboard 4", "Reading a string from keyboard 4\Reading a string from keyboard 4.vcxproj", "{729CAF26-C75C-468B-B613-FA3E5388F55B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reading a string from keyboard 5", "Reading a string from keyboard 5\Reading a string from keyboard 5.vcxproj", "{6AE0E984-C848-4DEA-8A06-CFEA30D59F32}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reading a string from keyboard 6", "Reading a string from keyboard 6\Reading a string from keyboard 6.vcxproj", "{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reading a string from keyboard 7", "Read a string from keyboard 7\Read a string from keyboard 7.vcxproj", "{10B8D324-8A7E-4F06-A438-97FCD7673C21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -761,6 +767,30 @@ Global
 		{729CAF26-C75C-468B-B613-FA3E5388F55B}.Release|x64.Build.0 = Release|x64
 		{729CAF26-C75C-468B-B613-FA3E5388F55B}.Release|x86.ActiveCfg = Release|Win32
 		{729CAF26-C75C-468B-B613-FA3E5388F55B}.Release|x86.Build.0 = Release|Win32
+		{6AE0E984-C848-4DEA-8A06-CFEA30D59F32}.Debug|x64.ActiveCfg = Debug|x64
+		{6AE0E984-C848-4DEA-8A06-CFEA30D59F32}.Debug|x64.Build.0 = Debug|x64
+		{6AE0E984-C848-4DEA-8A06-CFEA30D59F32}.Debug|x86.ActiveCfg = Debug|Win32
+		{6AE0E984-C848-4DEA-8A06-CFEA30D59F32}.Debug|x86.Build.0 = Debug|Win32
+		{6AE0E984-C848-4DEA-8A06-CFEA30D59F32}.Release|x64.ActiveCfg = Release|x64
+		{6AE0E984-C848-4DEA-8A06-CFEA30D59F32}.Release|x64.Build.0 = Release|x64
+		{6AE0E984-C848-4DEA-8A06-CFEA30D59F32}.Release|x86.ActiveCfg = Release|Win32
+		{6AE0E984-C848-4DEA-8A06-CFEA30D59F32}.Release|x86.Build.0 = Release|Win32
+		{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}.Debug|x64.ActiveCfg = Debug|x64
+		{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}.Debug|x64.Build.0 = Debug|x64
+		{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}.Debug|x86.ActiveCfg = Debug|Win32
+		{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}.Debug|x86.Build.0 = Debug|Win32
+		{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}.Release|x64.ActiveCfg = Release|x64
+		{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}.Release|x64.Build.0 = Release|x64
+		{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}.Release|x86.ActiveCfg = Release|Win32
+		{7316E7A3-2C1C-4D2C-8CA0-75FF6918E8CC}.Release|x86.Build.0 = Release|Win32
+		{10B8D324-8A7E-4F06-A438-97FCD7673C21}.Debug|x64.ActiveCfg = Debug|x64
+		{10B8D324-8A7E-4F06-A438-97FCD7673C21}.Debug|x64.Build.0 = Debug|x64
+		{10B8D324-8A7E-4F06-A438-97FCD7673C21}.Debug|x86.ActiveCfg = Debug|Win32
+		{10B8D324-8A7E-4F06-A438-97FCD7673C21}.Debug|x86.Build.0 = Debug|Win32
+		{10B8D324-8A7E-4F06-A438-97FCD7673C21}.Release|x64.ActiveCfg = Release|x64
+		{10B8D324-8A7E-4F06-A438-97FCD7673C21}.Release|x64.Build.0 = Release|x64
+		{10B8D324-8A7E-4F06-A438-97FCD7673C21}.Release|x86.ActiveCfg = Release|Win32
+		{10B8D324-8A7E-4F06-A438-97FCD7673C21}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
