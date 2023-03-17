@@ -32,7 +32,7 @@ int main() {
 	}
 
 
-	ofstream output_stream2("Comparison.txt");
+	ofstream output_stream2("get.txt");
 
 	if (!output_stream2) {
 
@@ -50,6 +50,8 @@ int main() {
 		output_stream2 << ch;
 
 	}
+
+	ofstream output_stream3("getline.txt");
 
 
 }
