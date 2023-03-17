@@ -1,10 +1,13 @@
 #include <iostream>
 #include <fstream>
+#include <vector>
 using namespace std;
 
 int main() {
 
 	char ch;
+
+	vector<char> vector_of_char;
 
 	ofstream output_stream("enticement.txt");
 
@@ -59,5 +62,9 @@ int main() {
 		return 1;
 	}
 
+	while (input_stream)
+	{
+		input_stream.getline()
+	}
 
 }
