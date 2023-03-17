@@ -53,5 +53,11 @@ int main() {
 
 	ofstream output_stream3("getline.txt");
 
+	if (!output_stream3) {
+		cout << "Tried to associate stream with your file but it didn't succeed.";
+
+		return 1;
+	}
+
 
 }
