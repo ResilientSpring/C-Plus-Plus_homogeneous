@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.33130.400
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Write Formatted Data to a Text File", "Write Formatted Data to a Text File\Write Formatted Data to a Text File.vcxproj", "{88CB013F-0C27-44EA-979D-6FABD95184D8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Read Formatted Data from a Text File", "Read Formatted Data from a Text File\Read Formatted Data from a Text File.vcxproj", "{257A9F21-65F8-41C8-A7B5-CCDCD5728FE0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Write Unformatted Binary Data to a File", "Write Unformatted Binary Data to a File\Write Unformatted Binary Data to a File.vcxproj", "{ED5211DE-F828-4DE5-B9CD-B82A8B48695F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +25,22 @@ Global
 		{88CB013F-0C27-44EA-979D-6FABD95184D8}.Release|x64.Build.0 = Release|x64
 		{88CB013F-0C27-44EA-979D-6FABD95184D8}.Release|x86.ActiveCfg = Release|Win32
 		{88CB013F-0C27-44EA-979D-6FABD95184D8}.Release|x86.Build.0 = Release|Win32
+		{257A9F21-65F8-41C8-A7B5-CCDCD5728FE0}.Debug|x64.ActiveCfg = Debug|x64
+		{257A9F21-65F8-41C8-A7B5-CCDCD5728FE0}.Debug|x64.Build.0 = Debug|x64
+		{257A9F21-65F8-41C8-A7B5-CCDCD5728FE0}.Debug|x86.ActiveCfg = Debug|Win32
+		{257A9F21-65F8-41C8-A7B5-CCDCD5728FE0}.Debug|x86.Build.0 = Debug|Win32
+		{257A9F21-65F8-41C8-A7B5-CCDCD5728FE0}.Release|x64.ActiveCfg = Release|x64
+		{257A9F21-65F8-41C8-A7B5-CCDCD5728FE0}.Release|x64.Build.0 = Release|x64
+		{257A9F21-65F8-41C8-A7B5-CCDCD5728FE0}.Release|x86.ActiveCfg = Release|Win32
+		{257A9F21-65F8-41C8-A7B5-CCDCD5728FE0}.Release|x86.Build.0 = Release|Win32
+		{ED5211DE-F828-4DE5-B9CD-B82A8B48695F}.Debug|x64.ActiveCfg = Debug|x64
+		{ED5211DE-F828-4DE5-B9CD-B82A8B48695F}.Debug|x64.Build.0 = Debug|x64
+		{ED5211DE-F828-4DE5-B9CD-B82A8B48695F}.Debug|x86.ActiveCfg = Debug|Win32
+		{ED5211DE-F828-4DE5-B9CD-B82A8B48695F}.Debug|x86.Build.0 = Debug|Win32
+		{ED5211DE-F828-4DE5-B9CD-B82A8B48695F}.Release|x64.ActiveCfg = Release|x64
+		{ED5211DE-F828-4DE5-B9CD-B82A8B48695F}.Release|x64.Build.0 = Release|x64
+		{ED5211DE-F828-4DE5-B9CD-B82A8B48695F}.Release|x86.ActiveCfg = Release|Win32
+		{ED5211DE-F828-4DE5-B9CD-B82A8B48695F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
