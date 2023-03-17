@@ -29,4 +29,7 @@ int main() {
 
 	input_stream >> str;
 
+	cout << i << " " << n << " " << d << endl;
+	cout << str;
+
 }
