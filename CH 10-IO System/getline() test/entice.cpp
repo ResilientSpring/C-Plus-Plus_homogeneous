@@ -9,6 +9,8 @@ int main() {
 
 	vector<char> vector_of_char;
 
+	char str[999];
+
 	ofstream output_stream("enticement.txt");
 
 	if (!output_stream) {
@@ -66,7 +68,8 @@ int main() {
 	{
 		//	input_stream.getline(vector_of_char, 1000);
 
-
+		input_stream.getline(str, 998);
+		
 	}
 
 }
