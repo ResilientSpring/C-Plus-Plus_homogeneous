@@ -18,4 +18,10 @@ int main() {
 	output_stream << "Those choosing to donate may similarly benefit intangibly." << endl;
 	output_stream << "\n They are rewarded, tangibly or intangibly, for their efforts. \n";
 
+
+	ifstream input_stream("enticement.txt");
+
+	if (input_stream) {
+
+	}
 }
