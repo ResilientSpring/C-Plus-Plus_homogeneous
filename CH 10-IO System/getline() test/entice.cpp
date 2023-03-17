@@ -28,4 +28,16 @@ int main() {
 		return 1;
 
 	}
+
+
+	ofstream output_stream2("Comparison.txt");
+
+	if (output_stream2) {
+
+		cout << "Failed to associate the stream with your file.";
+		
+		return 1;
+	}
+
+
 }
