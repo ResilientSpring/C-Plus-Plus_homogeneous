@@ -69,6 +69,8 @@ int main() {
 		//	input_stream.getline(vector_of_char, 1000);
 
 		input_stream.getline(str, 998);
+
+		output_stream3 << str;
 		
 	}
 
