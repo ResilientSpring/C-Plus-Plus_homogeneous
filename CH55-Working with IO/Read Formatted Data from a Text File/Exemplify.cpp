@@ -21,4 +21,12 @@ int main() {
 		return 1;
 	}
 
+	input_stream >> i;
+
+	input_stream >> n;
+
+	input_stream >> d;
+
+	input_stream >> str;
+
 }
