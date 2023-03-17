@@ -74,4 +74,9 @@ int main() {
 		
 	}
 
+	while (input_stream)
+	{
+		// input_stream.getline(str);
+	}
+
 }
