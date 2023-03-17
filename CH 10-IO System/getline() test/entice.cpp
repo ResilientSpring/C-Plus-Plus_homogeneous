@@ -34,7 +34,7 @@ int main() {
 
 	ofstream output_stream2("Comparison.txt");
 
-	if (output_stream2) {
+	if (!output_stream2) {
 
 		cout << "Failed to associate the stream with your file.";
 		
