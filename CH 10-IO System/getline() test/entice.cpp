@@ -14,4 +14,8 @@ int main() {
 
 	}
 
+	output_stream << "Spending quality time with family is intangibly valuable." << endl;
+	output_stream << "Those choosing to donate may similarly benefit intangibly." << endl;
+	output_stream << "\n They are rewarded, tangibly or intangibly, for their efforts. \n";
+
 }
