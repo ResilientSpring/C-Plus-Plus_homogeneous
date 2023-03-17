@@ -4,6 +4,8 @@ using namespace std;
 
 int main() {
 
+	char ch;
+
 	ofstream output_stream("enticement.txt");
 
 	if (!output_stream) {
@@ -37,6 +39,16 @@ int main() {
 		cout << "Failed to associate the stream with your file.";
 		
 		return 1;
+	}
+
+
+	while (input_stream) {
+
+		// get() reads a character from stream and puts that character in ch.
+		input_stream.get(ch);
+
+		output_stream2 << ch;
+
 	}
 
 
