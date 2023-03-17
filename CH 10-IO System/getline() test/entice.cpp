@@ -64,7 +64,9 @@ int main() {
 
 	while (input_stream)
 	{
-		input_stream.getline(vector_of_char, 1000);
+		//	input_stream.getline(vector_of_char, 1000);
+
+
 	}
 
 }
