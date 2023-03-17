@@ -21,7 +21,11 @@ int main() {
 
 	ifstream input_stream("enticement.txt");
 
-	if (input_stream) {
+	if (!input_stream) {
+
+		cout << "Failed to associate the stream with your file.";
+
+		return 1;
 
 	}
 }
