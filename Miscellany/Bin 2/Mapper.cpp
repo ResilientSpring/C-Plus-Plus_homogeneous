@@ -1,24 +1,44 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <vector>
+#include <map>
 using namespace std;
-
-/*
-#define print_flag 0
-#define read_flag 0
-#define topology_flag 0
-#define label_flag 0
-#define map_flag 0
-#define output_flag 0
-#define decomposition_flag 0
-*/
 
 void read_blif(string blif);
 
 int K;
-string model_name;
+int number_of_primary_inputs = 0;
+int number_of_primary_outputs = 0;
+int number_of_intermediate_nodes = 0;
+string model_name, intermediate;
 
-int main(int argc, char** argv) { // [1]
+map<string, LUT*> find_Node;
+
+vector<string> primary_inputs;
+vector<string> intermediate_nodes;
+vector<string> primary_outputs;
+
+
+class LUT {      // [3]
+public:
+	string ID;
+
+	bool in_use;
+	vector<int> fanins;
+	int fanout;
+	int number_of_fanouts;
+
+	int label;
+	int operate;
+
+	LUT *first = NULL;
+	LUT *second = NULL;
+};
+
+
+
+int main(int argc, char **argv) { // [1]
 
 	if (argc != 4) {
 
@@ -39,47 +59,61 @@ int main(int argc, char** argv) { // [1]
 
 void read_blif(string blif) {
 
-	ifstream fin;
+	ifstream input_stream;
 
-	fin.open(blif, ios::in);
+	input_stream.open(blif);
 
-	if (!fin) {
+	if (!input_stream) {
 
 		cout << "Cannot open the file" << endl;
 
 		return;
 	}
 
-	string temp, port, node;  // [2]
+	while (input_stream)
+	{
+		input_stream >> intermediate;     // [2]
 
-	// model name
-	fin >> temp >> model_name;
-
-	if (1) {
-		cout << "Model name : " << model_name << endl;
-	}
-
-	// input port
-	fin >> temp;
-
-	while (1) {
-
-		fin >> port;
-
-		if (strcmp(port.c_str(), ".outputs") == 0) {
+		if (intermediate == "\\")
+			continue;
+		else if (intermediate == ".outputs")
 			break;
-		}
 		else {
 
-			if (port[0] != '\\') {
+			LUT *n = new LUT();
+			n->ID = intermediate;
+			n->label = 0;
+			find_Node[intermediate] = n;  // intermediate here serves as a key.
+			primary_inputs.push_back(intermediate);
+			number_of_primary_inputs++;        // [4]
+		}
 
-				// create new node
-				// store into input vector
-				G_node.push_back(port);
-				G_input.push_back(port);
-			}
+	}
+
+	while (input_stream)
+	{
+		input_stream >> intermediate;
+
+		if (intermediate == "\\") continue;
+		else if (intermediate == ".names") break;
+		else {
+			primary_outputs.push_back(intermediate);
+			number_of_primary_outputs++;
 		}
 	}
+
+	while (input_stream)
+	{
+		while (input_stream)
+		{
+			input_stream >> intermediate;
+
+			if (intermediate[0] == '0' || intermediate[0] == '1' || intermediate[0] == '-')
+				break;
+
+		}
+	}
+
 }
 
 
@@ -89,6 +123,5 @@ void read_blif(string blif) {
 * References:
 *
 * 1. https://stackoverflow.com/a/645111
-  2. https://github.com/alan861130/Logic-synthesis/blob/main/src/map.cpp
 
 */
