@@ -1,12 +1,32 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <vector>
 using namespace std;
 
 void read_blif(string blif);
 
 int K;
-string model_name;
+string model_name, intermediate;
+
+
+class LUT {
+public:
+	string ID;
+
+	bool in_use;
+	vector<int> fanins;
+	int fanout;
+	int number_of_fanouts;
+
+	int label;
+	int operate;
+
+	LUT *first = NULL;
+	LUT *second = NULL;
+};
+
+
 
 int main(int argc, char **argv) { // [1]
 
@@ -42,6 +62,15 @@ void read_blif(string blif) {
 
 	while (input_stream)
 	{
+		input_stream >> intermediate;
+
+		if (intermediate == "\\")
+			continue;
+		else if (intermediate == ".outputs")
+			break;
+		else {
+
+		}
 
 	}
 
