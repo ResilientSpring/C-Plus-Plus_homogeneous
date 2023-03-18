@@ -12,6 +12,8 @@ string model_name, intermediate;
 
 map<string, LUT*> find_Node;
 
+vector<string> primary_inputs;
+
 
 class LUT {
 public:
