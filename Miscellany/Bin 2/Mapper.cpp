@@ -3,22 +3,12 @@
 #include <fstream>
 using namespace std;
 
-/*
-#define print_flag 0
-#define read_flag 0
-#define topology_flag 0
-#define label_flag 0
-#define map_flag 0
-#define output_flag 0
-#define decomposition_flag 0
-*/
-
 void read_blif(string blif);
 
 int K;
 string model_name;
 
-int main(int argc, char** argv) { // [1]
+int main(int argc, char **argv) { // [1]
 
 	if (argc != 4) {
 
