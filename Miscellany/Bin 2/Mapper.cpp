@@ -2,12 +2,15 @@
 #include <string>
 #include <fstream>
 #include <vector>
+#include <map>
 using namespace std;
 
 void read_blif(string blif);
 
 int K;
 string model_name, intermediate;
+
+map<string, LUT*> find_Node;
 
 
 class LUT {
@@ -69,6 +72,12 @@ void read_blif(string blif) {
 		else if (intermediate == ".outputs")
 			break;
 		else {
+
+			LUT *n = new LUT();
+			n->ID = intermediate;
+			n->label = 0;
+			find_Node[intermediate] = n;  // intermediate here serves as a key.
+
 
 		}
 
