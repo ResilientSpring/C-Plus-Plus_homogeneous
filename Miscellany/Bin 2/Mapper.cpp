@@ -29,16 +29,18 @@ int main(int argc, char **argv) { // [1]
 
 void read_blif(string blif) {
 
-	ifstream fin;
+	ifstream input_stream;
 
-	fin.open(blif, ios::in);
+	input_stream.open(blif);
 
-	if (!fin) {
+	if (!input_stream) {
 
 		cout << "Cannot open the file" << endl;
 
 		return;
 	}
+
+
 
 }
 
