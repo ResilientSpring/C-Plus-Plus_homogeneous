@@ -40,36 +40,6 @@ void read_blif(string blif) {
 		return;
 	}
 
-	string temp, port, node;  // [2]
-
-	// model name
-	fin >> temp >> model_name;
-
-	if (1) {
-		cout << "Model name : " << model_name << endl;
-	}
-
-	// input port
-	fin >> temp;
-
-	while (1) {
-
-		fin >> port;
-
-		if (strcmp(port.c_str(), ".outputs") == 0) {
-			break;
-		}
-		else {
-
-			if (port[0] != '\\') {
-
-				// create new node
-				// store into input vector
-				G_node.push_back(port);
-				G_input.push_back(port);
-			}
-		}
-	}
 }
 
 
@@ -79,6 +49,5 @@ void read_blif(string blif) {
 * References:
 *
 * 1. https://stackoverflow.com/a/645111
-  2. https://github.com/alan861130/Logic-synthesis/blob/main/src/map.cpp
 
 */
