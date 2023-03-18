@@ -40,7 +40,10 @@ void read_blif(string blif) {
 		return;
 	}
 
+	while (input_stream)
+	{
 
+	}
 
 }
 
