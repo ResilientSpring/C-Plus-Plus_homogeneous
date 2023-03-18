@@ -79,7 +79,7 @@ void read_blif(string blif) {
 			n->ID = intermediate;
 			n->label = 0;
 			find_Node[intermediate] = n;  // intermediate here serves as a key.
-
+			primary_inputs.push_back(intermediate);
 
 		}
 
