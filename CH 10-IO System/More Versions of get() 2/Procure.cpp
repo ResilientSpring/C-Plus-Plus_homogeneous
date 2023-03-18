@@ -13,7 +13,7 @@ int main() {
 
 		return 1;
 	}
-
+	
 	input_stream >> str;
 
 	cout << str;
