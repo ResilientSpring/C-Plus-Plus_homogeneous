@@ -85,9 +85,21 @@ void read_blif(string blif) {
 			n->label = 0;
 			find_Node[intermediate] = n;  // intermediate here serves as a key.
 			primary_inputs.push_back(intermediate);
-			number_of_primary_inputs++;
+			number_of_primary_inputs++;        // [4]
 		}
 
+	}
+
+	while (input_stream)
+	{
+		input_stream >> intermediate;
+
+		if (intermediate == "\\") continue;
+		else if (intermediate == ".names") break;
+		else {
+			primary_outputs.push_back(intermediate);
+			number_of_primary_outputs++;
+		}
 	}
 
 }
