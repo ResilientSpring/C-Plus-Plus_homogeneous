@@ -7,7 +7,10 @@ using namespace std;
 
 void read_blif(string blif);
 
-int K, number_of_primary_inputs, number_of_primary_outputs, number_of_intermediate_nodes;
+int K;
+int number_of_primary_inputs = 0;
+int number_of_primary_outputs = 0;
+int number_of_intermediate_nodes = 0;
 string model_name, intermediate;
 
 map<string, LUT*> find_Node;
