@@ -13,9 +13,11 @@ string model_name, intermediate;
 map<string, LUT*> find_Node;
 
 vector<string> primary_inputs;
+vector<string> intermediate_nodes;
+vector<string> primary_outputs;
 
 
-class LUT {
+class LUT {      // [3]
 public:
 	string ID;
 
@@ -67,7 +69,7 @@ void read_blif(string blif) {
 
 	while (input_stream)
 	{
-		input_stream >> intermediate;
+		input_stream >> intermediate;     // [2]
 
 		if (intermediate == "\\")
 			continue;
