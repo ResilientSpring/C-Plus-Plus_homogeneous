@@ -102,6 +102,18 @@ void read_blif(string blif) {
 		}
 	}
 
+	while (input_stream)
+	{
+		while (input_stream)
+		{
+			input_stream >> intermediate;
+
+			if (intermediate[0] == '0' || intermediate[0] == '1' || intermediate[0] == '-')
+				break;
+
+		}
+	}
+
 }
 
 
