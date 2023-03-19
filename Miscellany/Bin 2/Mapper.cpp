@@ -22,6 +22,8 @@ vector<string> primary_inputs;
 vector<string> intermediate_nodes;
 vector<string> primary_outputs;
 
+vector<string> operand;
+
 
 class LUT {      // [3]
 public:
