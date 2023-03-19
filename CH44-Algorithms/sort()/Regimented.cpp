@@ -17,4 +17,11 @@ int main() {
 		v[i] = rand() % 100;
 	}
 
+
+
+}
+
+// Display the contents of a vector<int>.
+void show() {
+
 }
