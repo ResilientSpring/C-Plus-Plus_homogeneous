@@ -124,6 +124,7 @@ void read_blif(string blif) {
 		}
 	}
 
+	// Fetch nodes between PI and PO.
 	while (input_stream)
 	{
 		while (input_stream)
