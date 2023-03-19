@@ -7,6 +7,8 @@
 #include <algorithm>
 using namespace std;
 
+void show(const char* message, vector<int> vect);
+
 int main() {
 
 	vector<int> v(10);
