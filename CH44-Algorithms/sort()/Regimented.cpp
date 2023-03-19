@@ -35,6 +35,11 @@ int main() {
 	show("Order after sorting into descending order: \n", v);
 	cout << endl;
 
+
+	// Sort a subset of the container.
+	sort(v.begin() + 2, v.end() - 2);
+
+	show("After sorting elements v[2] to v[7] into natural order: \n", v);
 }
 
 // Display the contents of a vector<int>.
