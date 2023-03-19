@@ -24,6 +24,13 @@ int main() {
 // Display the contents of a vector<int>.
 void show(const char *message, vector<int> vect) {
 	
+	vector<int>::iterator itr;
+
 	cout << message << endl;
+
+	for (itr = vect.begin(); itr != vect.end(); itr++)
+		cout << *itr << " ";
+
+	cout << endl;
 
 }
