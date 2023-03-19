@@ -14,4 +14,18 @@ int main() {
 
 	cout << "String to be searched: " << str << endl << endl;
 
+	cout << "Searching for the first occurence of 'two' \n";
+
+	index = str.find("two");
+}
+
+
+void show_result(string s, string::size_type i) {
+
+	if (i == string::npos)
+	{
+		cout << "No match found." << endl;
+		return;
+	}
+
 }
