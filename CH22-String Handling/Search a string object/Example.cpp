@@ -28,4 +28,8 @@ void show_result(string s, string::size_type i) {
 		return;
 	}
 
+	cout << "Match found at index " << i << endl;
+
+	cout << "Remaining string from point of match: " << s.substr(i) << endl << endl;
+
 }
