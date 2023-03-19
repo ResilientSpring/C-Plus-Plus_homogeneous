@@ -70,6 +70,15 @@ void read_blif(string blif) {
 		return;
 	}
 
+	
+	do
+	{
+		getline(input_stream, model_name);
+
+	} while (model_name.find(".model") == string::npos);
+
+
+
 	while (input_stream)
 	{
 		input_stream >> intermediate;     // [2]
