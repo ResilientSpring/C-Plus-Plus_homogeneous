@@ -22,6 +22,8 @@ int main() {
 }
 
 // Display the contents of a vector<int>.
-void show() {
+void show(const char *message, vector<int> vect) {
+	
+	cout << message << endl;
 
 }
