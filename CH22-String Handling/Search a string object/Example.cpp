@@ -4,6 +4,8 @@
 #include <string>
 using namespace std;
 
+void show_result(string s, string::size_type i);
+
 int main() {
 
 	string::size_type index;
@@ -17,6 +19,8 @@ int main() {
 	cout << "Searching for the first occurence of 'two' \n";
 
 	index = str.find("two");
+
+	show_result(str, index);
 }
 
 
