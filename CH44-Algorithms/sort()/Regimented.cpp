@@ -9,4 +9,12 @@ using namespace std;
 
 int main() {
 
+	vector<int> v(10);
+
+	// Initialize v with random values.
+	for (unsigned i = 0; i < v.size(); i++)
+	{
+		v[i] = rand() % 100;
+	}
+
 }
