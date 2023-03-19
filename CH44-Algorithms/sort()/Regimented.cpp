@@ -17,6 +17,9 @@ int main() {
 		v[i] = rand() % 100;
 	}
 
+	show("Original order: \n", v);
+	cout << endl;
+
 
 
 }
