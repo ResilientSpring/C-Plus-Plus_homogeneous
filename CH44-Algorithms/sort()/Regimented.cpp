@@ -28,6 +28,13 @@ int main() {
 	show("Order after sorting into natural order: \n", v);
 	cout << endl;
 
+
+	// Now, sort into descending order by using greater()
+	sort(v.begin(), v.end(), greater<int>());
+
+	show("Order after sorting into descending order: \n", v);
+	cout << endl;
+
 }
 
 // Display the contents of a vector<int>.
