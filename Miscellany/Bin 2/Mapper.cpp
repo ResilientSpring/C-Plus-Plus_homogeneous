@@ -3,6 +3,7 @@
 #include <fstream>
 #include <vector>
 #include <map>
+#include <cstring>
 using namespace std;
 
 void read_blif(string blif);
@@ -11,13 +12,17 @@ int K;
 int number_of_primary_inputs = 0;
 int number_of_primary_outputs = 0;
 int number_of_intermediate_nodes = 0;
-string model_name, intermediate;
+string blif_name, intermediate;
+
+char model[] = ".model";
 
 map<string, LUT*> find_Node;
 
 vector<string> primary_inputs;
 vector<string> intermediate_nodes;
 vector<string> primary_outputs;
+
+vector<string> operand;
 
 
 class LUT {      // [3]
@@ -70,12 +75,20 @@ void read_blif(string blif) {
 		return;
 	}
 
-	
+	/*
+
 	do
 	{
-		getline(input_stream, model_name);
+		getline(input_stream, blif_name);
 
-	} while (model_name.find(".model") == string::npos);
+	} while (blif_name.find(".model") == string::npos);
+
+	*/
+
+	input_stream >> blif_name;
+
+	if (strcmp(blif_name.c_str(), model) == 0)
+		input_stream >> blif_name;
 
 
 
@@ -111,6 +124,7 @@ void read_blif(string blif) {
 		}
 	}
 
+	// Fetch nodes between PI and PO.
 	while (input_stream)
 	{
 		while (input_stream)
