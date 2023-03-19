@@ -22,7 +22,11 @@ int main() {
 	show("Original order: \n", v);
 	cout << endl;
 
+	// Sort the entire container.
+	sort(v.begin(), v.end());
 
+	show("Order after sorting into natural order: \n", v);
+	cout << endl;
 
 }
 
