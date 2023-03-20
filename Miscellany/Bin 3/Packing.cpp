@@ -168,6 +168,14 @@ void read_blif(string blif) {
 						sitting_model.node[vertex_count].level = max_level + 1;
 						intermediate_inputs.clear();
 					}
+					else {
+						intermediate_inputs.push_back(sitting_model.node[vertex_count]);
+
+						if (sitting_model.node[vertex_count].level > max_level)
+						{
+							max_level = sitting_model.node[vertex_count].level;
+						}
+					}
 				}
 			}
 
