@@ -83,6 +83,8 @@ int main(int argc, char** argv) { // [1]
 
 void read_blif(string blif) {
 
+	string sitting_line;
+
 	ifstream input_stream;
 
 	input_stream.open(blif);
