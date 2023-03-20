@@ -118,6 +118,10 @@ void read_blif(string blif) {
 			{
 				if (intermediate != "\\") {
 					sitting_vertex.ID = intermediate;
+					sitting_vertex.type = 1;
+					sitting_vertex.level = 0;
+					sitting_vertex.and_or_inv = -1;
+					sitting_model.node.push_back(sitting_vertex);
 				}
 			}
 
