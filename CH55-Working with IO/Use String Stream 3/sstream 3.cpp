@@ -31,4 +31,29 @@ int main() {
 	cout << endl << load[4];
 
 	cout << endl << load[5];
+
+	// Write some more to strout.
+	strout << "\nThis is some more output.\n";
+
+	cout << endl;
+
+	cout << "Use an input string stream called strin. \n";
+
+	// Now, use the contents of strout to create strin:
+	istringstream strin(strout.str());
+
+	// Display the contents of strin via calls to get().
+	cout << "Here are the current contents of strin via get(): \n";
+
+	do
+	{
+
+		ch = strin.get();
+
+
+		if (!strin.eof())
+			cout << ch;
+
+
+	} while (!strin.eof());
 }
