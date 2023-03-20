@@ -17,5 +17,8 @@ int main() {
 	strout << 10 << " " << -20 << " " << 30.2 << "\n";
 	strout << "This is a test.";
 
-	// Now, obtain a copy of the current contents of the string stream buffer.
+	// Now, obtain a copy of the current contents of the string stream buffer and use it
+	// to display the contents of the buffer.
+	cout << "The current contents of strout as obtained from str(): \n" << strout.str() << endl;
+
 }
