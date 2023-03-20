@@ -23,7 +23,7 @@ namespace CounterNameSpace {
 
 		int run() {
 			if (count > lowerbound)
-				return count--;
+				return --count;
 			else
 				return lowerbound;
 		}
@@ -58,19 +58,6 @@ int main() {
 	do
 	{
 
-		i = ob2.run();
-
-		cout << i << " ";
-
-	} while (i > CounterNameSpace::lowerbound);
-
-	cout << endl;
-
-	ob2.reset(100);
-	CounterNameSpace::lowerbound = 90;
-
-	do
-	{
 		i = ob2.run();
 
 		cout << i << " ";
