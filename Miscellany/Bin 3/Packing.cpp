@@ -38,8 +38,19 @@ public:
 	int label;
 	int operate;
 
+	int type;
+	int level;
+	int and_or_inv;
+
 	LUT* first = NULL;
 	LUT* second = NULL;
+};
+
+
+
+class model {
+	string name;
+	vector<LUT> node;
 };
 
 
