@@ -34,6 +34,7 @@ public:
 
 	bool in_use;
 	vector<int> fanins;
+	vector<vertex> inputs;
 	int fanout;
 	int number_of_fanouts;
 
@@ -60,6 +61,10 @@ public:
 	vector<vertex> LUT;
 
 } sitting_model;
+
+
+
+vector<vertex> intermediate_inputs;
 
 
 
@@ -154,6 +159,15 @@ void read_blif(string blif) {
 				{
 					if (sitting_model.node[vertex_count].ID == intermediate)
 						break;
+				}
+				if (vertex_count != sitting_model.node.size()) {
+
+					if (sitting_model.node[vertex_count].type == 3) {
+						
+						sitting_model.node[vertex_count].inputs = intermediate_inputs;
+						sitting_model.node[vertex_count].level = max_level + 1;
+						intermediate_inputs.clear();
+					}
 				}
 			}
 
