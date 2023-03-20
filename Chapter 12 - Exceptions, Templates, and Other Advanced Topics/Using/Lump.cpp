@@ -41,9 +41,7 @@ namespace CounterNameSpace {
 int main() {
 
 	// Use only upperbound from CounterNameSpace.
-//	using namespace CounterNameSpace::upperbound;
-
-	using CounterNameSpace::upperbound;//Why isn't using namespace CounterNameSpace::upperbound;?
+	using CounterNameSpace::upperbound;
 	
 	upperbound = 100;
 
@@ -63,7 +61,9 @@ int main() {
 
 	cout << endl;
 
-	CounterNameSpace::counter ob2(20);
+	using namespace CounterNameSpace;
+
+	counter ob2(20);
 
 	do
 	{
@@ -72,12 +72,12 @@ int main() {
 
 		cout << i << " ";
 
-	} while (i > CounterNameSpace::lowerbound);
+	} while (i > lowerbound);
 
 	cout << endl;
 
 	ob2.reset(100);
-	CounterNameSpace::lowerbound = 90;
+	lowerbound = 90;
 
 	do
 	{
@@ -85,6 +85,6 @@ int main() {
 
 		cout << i << " ";
 
-	} while (i > CounterNameSpace::lowerbound);
+	} while (i > lowerbound);
 }
 
