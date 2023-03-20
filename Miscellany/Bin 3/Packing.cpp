@@ -71,6 +71,7 @@ int main(int argc, char** argv) { // [1]
 	}
 
 	string input_blif = argv[1];
+	read_blif(input_blif);
 
 	K = stoi(argv[2]);
 
@@ -93,24 +94,8 @@ void read_blif(string blif) {
 		return;
 	}
 
-	/*
 
-	do
-	{
-		getline(input_stream, blif_name);
-
-	} while (blif_name.find(".model") == string::npos);
-
-	*/
-
-	input_stream >> blif_name;
-
-	if (strcmp(blif_name.c_str(), model) == 0)
-		input_stream >> blif_name;
-
-
-
-	while (input_stream)
+	while (getline(input_stream, ))
 	{
 		input_stream >> intermediate;     // [2]
 
