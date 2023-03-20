@@ -13,6 +13,7 @@ int K;
 int number_of_primary_inputs = 0;
 int number_of_primary_outputs = 0;
 int number_of_intermediate_nodes = 0;
+int reading_the_line_from_hereon = 0;
 string blif_name, intermediate;
 
 char model[] = ".model";
@@ -99,12 +100,29 @@ void read_blif(string blif) {
 
 	while (getline(input_stream, sitting_line))
 	{
-		input_stream >> intermediate;     // [2]
+		stringstream string_stream(sitting_line);
+		getline(string_stream, intermediate, ' ');
 
-		if (intermediate == "\\")
-			continue;
-		else if (intermediate == ".outputs")
-			break;
+		if (intermediate == ".model") {
+
+			reading_the_line_from_hereon = 1;
+			getline(string_stream, intermediate, ' ');
+			sitting_model.name = intermediate;
+
+		}
+		else if (intermediate == ".inputs") {
+
+			reading_the_line_from_hereon = 2;
+
+			while (getline(string_stream, intermediate, ' '))
+			{
+				if (intermediate != "\\") {
+					sitting_vertex.ID = intermediate;
+				}
+			}
+
+
+		}
 		else {
 
 			vertex* n = new vertex();
