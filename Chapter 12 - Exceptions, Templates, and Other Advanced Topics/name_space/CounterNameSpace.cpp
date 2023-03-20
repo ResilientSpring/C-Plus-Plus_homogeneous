@@ -53,4 +53,5 @@ int main() {
 
 	cout << endl;
 
+	CounterNameSpace::counter ob2(20);
 }
