@@ -25,4 +25,8 @@ int main() {
 
 	cout << load.size();
 
+	// Check if negative symbol is counted as a character.
+	cout << endl << load[3];
+
+
 }
