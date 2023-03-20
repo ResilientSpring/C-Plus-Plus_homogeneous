@@ -17,7 +17,7 @@ string blif_name, intermediate;
 
 char model[] = ".model";
 
-map<string, LUT*> find_Node;
+map<string, vertex*> find_Node;
 
 vector<string> primary_inputs;
 vector<string> intermediate_nodes;
@@ -26,7 +26,7 @@ vector<string> primary_outputs;
 vector<string> operand;
 
 
-class LUT {      // [3]
+class vertex {      // [3]
 public:
 	string ID;
 
@@ -42,15 +42,15 @@ public:
 	int level;
 	int and_or_inv;
 
-	LUT* first = NULL;
-	LUT* second = NULL;
+	vertex* first = NULL;
+	vertex* second = NULL;
 };
 
 
 
 class model {
 	string name;
-	vector<LUT> node;
+	vector<vertex> node;
 };
 
 
@@ -114,7 +114,7 @@ void read_blif(string blif) {
 			break;
 		else {
 
-			LUT* n = new LUT();
+			vertex* n = new vertex();
 			n->ID = intermediate;
 			n->label = 0;
 			find_Node[intermediate] = n;  // intermediate here serves as a key.
