@@ -227,6 +227,18 @@ void read_blif(string blif) {
 				sitting_vertex.type = 3;
 				sitting_model.node.push_back(sitting_vertex);
 				primary_outputs.push_back(intermediate);
+				number_of_primary_outputs++;
+
+				while (getline(string_stream, intermediate, ' '))
+				{
+					if (intermediate != "\\") {
+						sitting_vertex.ID = intermediate;
+						sitting_vertex.type = 3;
+						sitting_model.node.push_back(sitting_vertex);
+						primary_outputs.push_back(intermediate);
+						number_of_primary_outputs++;
+					}
+				}
 			}
 		}
 	}
