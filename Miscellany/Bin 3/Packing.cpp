@@ -14,6 +14,7 @@ int number_of_primary_inputs = 0;
 int number_of_primary_outputs = 0;
 int number_of_intermediate_nodes = 0;
 int reading_the_line_from_hereon = 0;
+int vertex_count;
 string blif_name, intermediate;
 
 char model[] = ".model";
@@ -140,6 +141,22 @@ void read_blif(string blif) {
 					number_of_primary_outputs++;
 				}
 			}
+		}
+		else if (intermediate == ".names") {
+			
+			int max_level = -1;
+
+			reading_the_line_from_hereon = 4;
+
+			while (getline(string_stream, intermediate, ' '))
+			{
+				for (vertex_count = 0; vertex_count < sitting_model.node.size(); vertex_count++)
+				{
+					if (sitting_model.node[vertex_count].ID == intermediate)
+						break;
+				}
+			}
+
 		}
 
 	}
