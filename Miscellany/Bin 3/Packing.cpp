@@ -97,7 +97,7 @@ void read_blif(string blif) {
 	}
 
 
-	while (getline(input_stream, ))
+	while (getline(input_stream, sitting_line))
 	{
 		input_stream >> intermediate;     // [2]
 
