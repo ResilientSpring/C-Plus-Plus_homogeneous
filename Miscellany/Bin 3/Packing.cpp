@@ -206,7 +206,21 @@ void read_blif(string blif) {
 
 				sitting_model.node.push_back(sitting_vertex);
 				primary_inputs.push_back(intermediate);
+				number_of_primary_inputs++;
 
+				while (getline(string_stream, intermediate, ' '))
+				{
+					if (intermediate != "\\") {
+
+						sitting_vertex.ID = intermediate;
+						sitting_vertex.type = 1;
+						sitting_vertex.level = 0;
+						sitting_vertex.and_or_inv = -1;
+						sitting_model.node.push_back(sitting_vertex);
+						primary_inputs.push_back(intermediate);
+
+					}
+				}
 			}
 
 		}
