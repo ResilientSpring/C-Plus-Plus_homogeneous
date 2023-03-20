@@ -8,6 +8,7 @@
 using namespace std;
 
 void read_blif(string blif);
+bool Depth_comparison(vertex vtx1, vertex vtx2);
 
 int K;
 int number_of_primary_inputs = 0;
@@ -244,11 +245,22 @@ void read_blif(string blif) {
 
 				int skipping_line = sitting_model.node[vertex_count].inputs.size();
 
+				if (intermediate[0] == '1' && intermediate[1] == '1')
 
+					sitting_model.node[vertex_count].and_or_inv = 1;
+
+				else if (intermediate[0] == '1' && intermediate[1] == '-')
+
+					sitting_model.node[vertex_count].and_or_inv = 2;
+
+				else if (intermediate[0] == '0')
+
+					sitting_model.node[vertex_count].and_or_inv = 3;
 
 			}
 		}
 	}
+
 
 	while (input_stream)
 	{
@@ -277,6 +289,11 @@ void read_blif(string blif) {
 
 }
 
+
+bool Depth_comparison(vertex vtx1, vertex vtx2) {
+
+	return (vtx1.level < vtx2.level);
+}
 
 
 /*
