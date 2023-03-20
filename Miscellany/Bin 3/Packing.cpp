@@ -240,6 +240,13 @@ void read_blif(string blif) {
 					}
 				}
 			}
+			else if (reading_the_line_from_hereon == 4) {
+
+				int skipping_line = sitting_model.node[vertex_count].inputs.size();
+
+
+
+			}
 		}
 	}
 
