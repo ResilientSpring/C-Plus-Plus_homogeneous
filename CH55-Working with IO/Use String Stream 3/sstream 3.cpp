@@ -56,4 +56,7 @@ int main() {
 
 
 	} while (!strin.eof());
+
+
+	cout << endl;
 }
