@@ -54,4 +54,11 @@ int main() {
 	cout << endl;
 
 	CounterNameSpace::counter ob2(20);
+
+	do
+	{
+
+		i = ob2.run();
+
+	} while (i > CounterNameSpace::lowerbound);
 }
