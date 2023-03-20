@@ -45,7 +45,6 @@ int main() {
 
 	do
 	{
-
 		i = ob1.run();
 
 		cout << i << " ";
