@@ -4,6 +4,7 @@
 #include <vector>
 #include <map>
 #include <cstring>
+#include <sstream>
 using namespace std;
 
 void read_blif(string blif);
