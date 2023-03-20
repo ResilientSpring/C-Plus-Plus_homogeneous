@@ -28,5 +28,7 @@ int main() {
 	// Check if negative symbol is counted as a character.
 	cout << endl << load[3];
 
+	cout << endl << load[4];
 
+	cout << endl << load[5];
 }
