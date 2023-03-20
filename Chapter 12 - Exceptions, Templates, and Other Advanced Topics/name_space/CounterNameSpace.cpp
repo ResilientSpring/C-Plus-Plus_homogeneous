@@ -1,5 +1,8 @@
 // Demonstrate a namespace
 
+#include <iostream>
+using namespace std;
+
 namespace CounterNameSpace {
 
 	int upperbound;
@@ -42,6 +45,10 @@ int main() {
 
 	do
 	{
+
+		i = ob1.run();
+
+		cout << i << " ";
 
 	} while (i > CounterNameSpace::lowerbound);
 
