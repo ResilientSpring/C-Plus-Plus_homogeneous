@@ -51,6 +51,7 @@ public:
 class model {
 	string name;
 	vector<vertex> node;
+	vector<vertex> LUT;
 };
 
 
