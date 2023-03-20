@@ -262,6 +262,8 @@ void read_blif(string blif) {
 	}
 
 
+	/*
+
 	while (input_stream)
 	{
 		input_stream >> intermediate;
@@ -286,6 +288,7 @@ void read_blif(string blif) {
 
 		}
 	}
+	*/
 
 }
 
