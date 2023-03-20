@@ -49,6 +49,7 @@ public:
 
 
 class model {
+public:
 	string name;
 	vector<vertex> node;
 	vector<vertex> LUT;
