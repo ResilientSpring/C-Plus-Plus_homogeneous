@@ -177,6 +177,16 @@ void read_blif(string blif) {
 						}
 					}
 				}
+				else {
+					sitting_vertex.ID = intermediate;
+					sitting_vertex.type = 2;
+					sitting_vertex.level = max_level + 1;
+					sitting_vertex.inputs = intermediate_inputs;
+					intermediate_inputs.clear();
+					
+					sitting_model.node.push_back(sitting_vertex);
+					sitting_vertex.inputs.clear();
+				}
 			}
 
 		}
