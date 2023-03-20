@@ -218,11 +218,16 @@ void read_blif(string blif) {
 						sitting_vertex.and_or_inv = -1;
 						sitting_model.node.push_back(sitting_vertex);
 						primary_inputs.push_back(intermediate);
-
+						number_of_primary_inputs++;
 					}
 				}
 			}
-
+			else if (reading_the_line_from_hereon == 3) {
+				sitting_vertex.ID = intermediate;
+				sitting_vertex.type = 3;
+				sitting_model.node.push_back(sitting_vertex);
+				primary_outputs.push_back(intermediate);
+			}
 		}
 	}
 
