@@ -9,9 +9,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Read Formatted Data from a 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Write Unformatted Binary Data to a File", "Write Unformatted Binary Data to a File\Write Unformatted Binary Data to a File.vcxproj", "{ED5211DE-F828-4DE5-B9CD-B82A8B48695F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Use String Streams", "Use String Streams\Use String Streams.vcxproj", "{8AC93065-D146-4EBD-889E-67ABA6E18977}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Use String Stream", "Use String Streams\Use String Streams.vcxproj", "{8AC93065-D146-4EBD-889E-67ABA6E18977}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Use String Streams 2", "Use String Streams 2\Use String Streams 2.vcxproj", "{C5474103-658C-4058-B6DF-E699E58ACE61}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Use String Stream 2", "Use String Streams 2\Use String Streams 2.vcxproj", "{C5474103-658C-4058-B6DF-E699E58ACE61}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Use String Stream 3", "Use String Stream 3\Use String Stream 3.vcxproj", "{649326BD-4E39-4FA3-BED4-CD55C8349094}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,14 @@ Global
 		{C5474103-658C-4058-B6DF-E699E58ACE61}.Release|x64.Build.0 = Release|x64
 		{C5474103-658C-4058-B6DF-E699E58ACE61}.Release|x86.ActiveCfg = Release|Win32
 		{C5474103-658C-4058-B6DF-E699E58ACE61}.Release|x86.Build.0 = Release|Win32
+		{649326BD-4E39-4FA3-BED4-CD55C8349094}.Debug|x64.ActiveCfg = Debug|x64
+		{649326BD-4E39-4FA3-BED4-CD55C8349094}.Debug|x64.Build.0 = Debug|x64
+		{649326BD-4E39-4FA3-BED4-CD55C8349094}.Debug|x86.ActiveCfg = Debug|Win32
+		{649326BD-4E39-4FA3-BED4-CD55C8349094}.Debug|x86.Build.0 = Debug|Win32
+		{649326BD-4E39-4FA3-BED4-CD55C8349094}.Release|x64.ActiveCfg = Release|x64
+		{649326BD-4E39-4FA3-BED4-CD55C8349094}.Release|x64.Build.0 = Release|x64
+		{649326BD-4E39-4FA3-BED4-CD55C8349094}.Release|x86.ActiveCfg = Release|Win32
+		{649326BD-4E39-4FA3-BED4-CD55C8349094}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
