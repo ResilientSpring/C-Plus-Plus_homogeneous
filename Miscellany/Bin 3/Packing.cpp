@@ -205,6 +205,7 @@ void read_blif(string blif) {
 				sitting_vertex.and_or_inv = -1;
 
 				sitting_model.node.push_back(sitting_vertex);
+				primary_inputs.push_back(intermediate);
 
 			}
 
