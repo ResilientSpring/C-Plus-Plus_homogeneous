@@ -13,6 +13,18 @@ namespace CounterNameSpace {
 			if (n <= upperbound) count = n;
 			else count = upperbound;
 		}
+
+		void reset(int n) {
+			if (n <= upperbound) count = n;
+		}
+
+		int run() {
+			if (count > lowerbound)
+				return count--;
+			else
+				return lowerbound;
+		}
+
 	};
 
 }
