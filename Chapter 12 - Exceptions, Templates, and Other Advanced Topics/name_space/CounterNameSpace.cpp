@@ -38,5 +38,11 @@ int main() {
 
 	CounterNameSpace::counter ob1(10);
 
+	int i;
+
+	do
+	{
+
+	} while (i > CounterNameSpace::lowerbound);
 
 }
