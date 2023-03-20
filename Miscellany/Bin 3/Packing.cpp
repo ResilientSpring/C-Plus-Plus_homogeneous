@@ -29,7 +29,7 @@ vector<string> primary_outputs;
 vector<string> operand;
 
 
-class vertex {      // [3]
+class vertex {      
 public:
 	string ID;
 
