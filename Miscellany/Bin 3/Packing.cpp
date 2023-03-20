@@ -312,5 +312,6 @@ bool Depth_comparison(vertex vtx1, vertex vtx2) {
 * 7. https://github.com/weitunglin/blif_parser/blob/main/blif_parser.cpp
 * 8. https://github.com/Ohpaipai/BLIF_CAD/blob/master/Source.cpp
 * 9. https://github.com/alan861130/Logic-synthesis/blob/main/src/map.cpp#L419
+* 10. https://github.com/rushhuang/NTHU_ALS_Final/blob/main/LEDA/map.cpp
 
 */
