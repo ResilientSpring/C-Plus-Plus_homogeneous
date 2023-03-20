@@ -36,5 +36,7 @@ int main() {
 	CounterNameSpace::upperbound = 100;
 	CounterNameSpace::lowerbound = 0;
 
+	CounterNameSpace::counter ob1(10);
+
 
 }
