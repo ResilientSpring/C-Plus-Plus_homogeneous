@@ -28,3 +28,13 @@ namespace CounterNameSpace {
 	};
 
 }
+
+
+int main() {
+
+	//Explicitly refer to members of CounterNameSpace. Note the use of scope resolution operator.
+	CounterNameSpace::upperbound = 100;
+	CounterNameSpace::lowerbound = 0;
+
+
+}
