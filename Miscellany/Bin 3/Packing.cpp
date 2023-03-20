@@ -4,19 +4,23 @@
 #include <vector>
 #include <map>
 #include <cstring>
+#include <sstream>
 using namespace std;
 
 void read_blif(string blif);
+bool Depth_comparison(vertex vtx1, vertex vtx2);
 
 int K;
 int number_of_primary_inputs = 0;
 int number_of_primary_outputs = 0;
 int number_of_intermediate_nodes = 0;
+int reading_the_line_from_hereon = 0;
+int vertex_count;
 string blif_name, intermediate;
 
 char model[] = ".model";
 
-map<string, LUT*> find_Node;
+map<string, vertex*> find_Node;
 
 vector<string> primary_inputs;
 vector<string> intermediate_nodes;
@@ -25,21 +29,43 @@ vector<string> primary_outputs;
 vector<string> operand;
 
 
-class LUT {      // [3]
+class vertex {      // [3]
 public:
 	string ID;
 
 	bool in_use;
 	vector<int> fanins;
+	vector<vertex> inputs;
 	int fanout;
 	int number_of_fanouts;
 
 	int label;
 	int operate;
 
-	LUT* first = NULL;
-	LUT* second = NULL;
-};
+	int type;
+	int level;
+	int and_or_inv;
+
+	vertex* first = NULL;
+	vertex* second = NULL;
+
+} sitting_vertex;
+
+
+
+class model {
+
+public:
+
+	string name;
+	vector<vertex> node;
+	vector<vertex> LUT;
+
+} sitting_model;
+
+
+
+vector<vertex> intermediate_inputs;
 
 
 
@@ -53,6 +79,7 @@ int main(int argc, char** argv) { // [1]
 	}
 
 	string input_blif = argv[1];
+	read_blif(input_blif);
 
 	K = stoi(argv[2]);
 
@@ -63,6 +90,8 @@ int main(int argc, char** argv) { // [1]
 
 
 void read_blif(string blif) {
+
+	string sitting_line;
 
 	ifstream input_stream;
 
@@ -75,42 +104,163 @@ void read_blif(string blif) {
 		return;
 	}
 
-	/*
 
-	do
+	while (getline(input_stream, sitting_line))
 	{
-		getline(input_stream, blif_name);
+		stringstream string_stream(sitting_line);
+		getline(string_stream, intermediate, ' ');
 
-	} while (blif_name.find(".model") == string::npos);
+		if (intermediate == ".model") {
 
-	*/
+			reading_the_line_from_hereon = 1;
+			getline(string_stream, intermediate, ' ');
+			sitting_model.name = intermediate;
 
-	input_stream >> blif_name;
+		}
+		else if (intermediate == ".inputs") {
 
-	if (strcmp(blif_name.c_str(), model) == 0)
-		input_stream >> blif_name;
+			reading_the_line_from_hereon = 2;
 
+			while (getline(string_stream, intermediate, ' '))
+			{
+				if (intermediate != "\\") {
+					sitting_vertex.ID = intermediate;
+					sitting_vertex.type = 1;
+					sitting_vertex.level = 0;
+					sitting_vertex.and_or_inv = -1;
+					sitting_model.node.push_back(sitting_vertex);
+					primary_inputs.push_back(intermediate);
+					number_of_primary_inputs++;
+				}
+			}
+		}
+		else if (intermediate == ".outputs") {
 
+			reading_the_line_from_hereon = 3;
+			while (getline(string_stream, intermediate, ' '))
+			{
+				if (intermediate != "\\") {
+					sitting_vertex.ID = intermediate;
+					sitting_vertex.type = 3;
+					sitting_model.node.push_back(sitting_vertex);
+					primary_outputs.push_back(intermediate);
+					number_of_primary_outputs++;
+				}
+			}
+		}
+		else if (intermediate == ".names") {
+			
+			int max_level = -1;
 
-	while (input_stream)
-	{
-		input_stream >> intermediate;     // [2]
+			reading_the_line_from_hereon = 4;
 
-		if (intermediate == "\\")
-			continue;
-		else if (intermediate == ".outputs")
-			break;
+			while (getline(string_stream, intermediate, ' '))
+			{
+				for (vertex_count = 0; vertex_count < sitting_model.node.size(); vertex_count++)
+				{
+					if (sitting_model.node[vertex_count].ID == intermediate)
+						break;
+				}
+				if (vertex_count != sitting_model.node.size()) {
+
+					if (sitting_model.node[vertex_count].type == 3) {
+						
+						sitting_model.node[vertex_count].inputs = intermediate_inputs;
+						sitting_model.node[vertex_count].level = max_level + 1;
+						intermediate_inputs.clear();
+					}
+					else {
+						intermediate_inputs.push_back(sitting_model.node[vertex_count]);
+
+						if (sitting_model.node[vertex_count].level > max_level)
+						{
+							max_level = sitting_model.node[vertex_count].level;
+						}
+					}
+				}
+				else {
+					sitting_vertex.ID = intermediate;
+					sitting_vertex.type = 2;
+					sitting_vertex.level = max_level + 1;
+					sitting_vertex.inputs = intermediate_inputs;
+					intermediate_inputs.clear();
+					
+					sitting_model.node.push_back(sitting_vertex);
+					sitting_vertex.inputs.clear();
+					vertex_count = sitting_model.node.size() - 1;
+				}
+			}
+		}
+		else if (intermediate == ".end") {
+
+			reading_the_line_from_hereon = 5;
+
+		}
 		else {
 
-			LUT* n = new LUT();
-			n->ID = intermediate;
-			n->label = 0;
-			find_Node[intermediate] = n;  // intermediate here serves as a key.
-			primary_inputs.push_back(intermediate);
-			number_of_primary_inputs++;        // [4]
-		}
+			if (reading_the_line_from_hereon == 2)
+			{
+				sitting_vertex.ID = intermediate;
+				sitting_vertex.type = 1;
+				sitting_vertex.level = 0;
+				sitting_vertex.and_or_inv = -1;
 
+				sitting_model.node.push_back(sitting_vertex);
+				primary_inputs.push_back(intermediate);
+				number_of_primary_inputs++;
+
+				while (getline(string_stream, intermediate, ' '))
+				{
+					if (intermediate != "\\") {
+
+						sitting_vertex.ID = intermediate;
+						sitting_vertex.type = 1;
+						sitting_vertex.level = 0;
+						sitting_vertex.and_or_inv = -1;
+						sitting_model.node.push_back(sitting_vertex);
+						primary_inputs.push_back(intermediate);
+						number_of_primary_inputs++;
+					}
+				}
+			}
+			else if (reading_the_line_from_hereon == 3) {
+				sitting_vertex.ID = intermediate;
+				sitting_vertex.type = 3;
+				sitting_model.node.push_back(sitting_vertex);
+				primary_outputs.push_back(intermediate);
+				number_of_primary_outputs++;
+
+				while (getline(string_stream, intermediate, ' '))
+				{
+					if (intermediate != "\\") {
+						sitting_vertex.ID = intermediate;
+						sitting_vertex.type = 3;
+						sitting_model.node.push_back(sitting_vertex);
+						primary_outputs.push_back(intermediate);
+						number_of_primary_outputs++;
+					}
+				}
+			}
+			else if (reading_the_line_from_hereon == 4) {
+
+				int skipping_line = sitting_model.node[vertex_count].inputs.size();
+
+				if (intermediate[0] == '1' && intermediate[1] == '1')
+
+					sitting_model.node[vertex_count].and_or_inv = 1;
+
+				else if (intermediate[0] == '1' && intermediate[1] == '-')
+
+					sitting_model.node[vertex_count].and_or_inv = 2;
+
+				else if (intermediate[0] == '0')
+
+					sitting_model.node[vertex_count].and_or_inv = 3;
+
+			}
+		}
 	}
+
 
 	while (input_stream)
 	{
@@ -139,6 +289,11 @@ void read_blif(string blif) {
 
 }
 
+
+bool Depth_comparison(vertex vtx1, vertex vtx2) {
+
+	return (vtx1.level < vtx2.level);
+}
 
 
 /*
