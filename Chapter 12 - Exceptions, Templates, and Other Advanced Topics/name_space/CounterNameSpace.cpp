@@ -63,4 +63,15 @@ int main() {
 		cout << i << " ";
 
 	} while (i > CounterNameSpace::lowerbound);
+
+	cout << endl;
+
+	ob2.reset(100);
+	CounterNameSpace::lowerbound = 90;
+
+	do
+	{
+
+
+	} while (i > CounterNameSpace::lowerbound);
 }
