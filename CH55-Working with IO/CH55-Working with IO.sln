@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Read Formatted Data from a 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Write Unformatted Binary Data to a File", "Write Unformatted Binary Data to a File\Write Unformatted Binary Data to a File.vcxproj", "{ED5211DE-F828-4DE5-B9CD-B82A8B48695F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Use String Streams", "Use String Streams\Use String Streams.vcxproj", "{8AC93065-D146-4EBD-889E-67ABA6E18977}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{ED5211DE-F828-4DE5-B9CD-B82A8B48695F}.Release|x64.Build.0 = Release|x64
 		{ED5211DE-F828-4DE5-B9CD-B82A8B48695F}.Release|x86.ActiveCfg = Release|Win32
 		{ED5211DE-F828-4DE5-B9CD-B82A8B48695F}.Release|x86.Build.0 = Release|Win32
+		{8AC93065-D146-4EBD-889E-67ABA6E18977}.Debug|x64.ActiveCfg = Debug|x64
+		{8AC93065-D146-4EBD-889E-67ABA6E18977}.Debug|x64.Build.0 = Debug|x64
+		{8AC93065-D146-4EBD-889E-67ABA6E18977}.Debug|x86.ActiveCfg = Debug|Win32
+		{8AC93065-D146-4EBD-889E-67ABA6E18977}.Debug|x86.Build.0 = Debug|Win32
+		{8AC93065-D146-4EBD-889E-67ABA6E18977}.Release|x64.ActiveCfg = Release|x64
+		{8AC93065-D146-4EBD-889E-67ABA6E18977}.Release|x64.Build.0 = Release|x64
+		{8AC93065-D146-4EBD-889E-67ABA6E18977}.Release|x86.ActiveCfg = Release|Win32
+		{8AC93065-D146-4EBD-889E-67ABA6E18977}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
