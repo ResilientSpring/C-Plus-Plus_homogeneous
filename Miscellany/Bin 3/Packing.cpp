@@ -44,16 +44,20 @@ public:
 
 	vertex* first = NULL;
 	vertex* second = NULL;
-};
+
+} sitting_vertex;
 
 
 
 class model {
+
 public:
+
 	string name;
 	vector<vertex> node;
 	vector<vertex> LUT;
-};
+
+} sitting_model;
 
 
 
