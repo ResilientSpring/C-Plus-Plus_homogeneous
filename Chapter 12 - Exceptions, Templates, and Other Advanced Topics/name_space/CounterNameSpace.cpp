@@ -60,5 +60,7 @@ int main() {
 
 		i = ob2.run();
 
+		cout << i << " ";
+
 	} while (i > CounterNameSpace::lowerbound);
 }
