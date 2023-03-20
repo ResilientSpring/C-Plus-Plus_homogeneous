@@ -51,4 +51,6 @@ int main() {
 
 	} while (i > CounterNameSpace::lowerbound);
 
+	cout << endl;
+
 }
