@@ -41,8 +41,12 @@ namespace CounterNameSpace {
 int main() {
 
 	// Use only upperbound from CounterNameSpace.
+//	using namespace CounterNameSpace::upperbound;
 
-	CounterNameSpace::upperbound = 100;
+	using CounterNameSpace::upperbound;//Why isn't using namespace CounterNameSpace::upperbound;?
+	
+	upperbound = 100;
+
 	CounterNameSpace::lowerbound = 0;
 
 	CounterNameSpace::counter ob1(10);
