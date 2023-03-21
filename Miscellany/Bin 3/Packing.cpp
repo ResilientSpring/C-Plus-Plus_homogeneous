@@ -29,7 +29,7 @@ vector<string> primary_outputs;
 vector<string> operand;
 
 
-class vertex {      // [3]
+class vertex {      
 public:
 	string ID;
 
@@ -262,6 +262,8 @@ void read_blif(string blif) {
 	}
 
 
+	/*
+
 	while (input_stream)
 	{
 		input_stream >> intermediate;
@@ -286,6 +288,7 @@ void read_blif(string blif) {
 
 		}
 	}
+	*/
 
 }
 
@@ -296,10 +299,25 @@ bool Depth_comparison(vertex vtx1, vertex vtx2) {
 }
 
 
+
+
+
+
+
 /*
 *
 * References:
 *
 * 1. https://stackoverflow.com/a/645111
+* 2. https://github.com/Lyeuiechang/Advanced_Logic_Synthesis/blob/main/Final%20Project/Upload%20Ready/main.cpp
+* 3. https://github.com/yunchenlo/FlowMap_Tech_Mapping/blob/master/main.cpp
+* 4. https://github.com/romulus0914/fpga_technology_mapping/blob/master/greedy_mapping.cpp
+* 5. https://github.com/Koyama-Tsubasa/Advanced_Logic_Synthesis/blob/main/Final%20Project/submit/src/map.cpp
+* 6. https://github.com/abhishekjain1991-zz/Raja_Raman_and_Wong_Clustering/blob/master/Source_code/RandW_clustering.cpp
+* 7. https://github.com/weitunglin/blif_parser/blob/main/blif_parser.cpp
+* 8. https://github.com/Ohpaipai/BLIF_CAD/blob/master/Source.cpp
+* 9. https://github.com/alan861130/Logic-synthesis/blob/main/src/map.cpp#L419
+* 10. https://github.com/rushhuang/NTHU_ALS_Final/blob/main/LEDA/map.cpp
+* 11. https://stackoverflow.com/questions/5590381/easiest-way-to-convert-int-to-string-in-c
 
 */
