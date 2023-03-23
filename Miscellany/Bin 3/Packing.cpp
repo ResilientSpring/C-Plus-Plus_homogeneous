@@ -20,7 +20,7 @@ string blif_name, intermediate;
 
 char model[] = ".model";
 
-map<string, vertex*> find_Node;
+map<string, vertex *> find_Node;
 
 vector<string> primary_inputs;
 vector<string> intermediate_nodes;
@@ -29,7 +29,7 @@ vector<string> primary_outputs;
 vector<string> operand;
 
 
-class vertex {      
+class vertex {
 public:
 	string ID;
 
@@ -46,8 +46,8 @@ public:
 	int level;
 	int and_or_inv;
 
-	vertex* first = NULL;
-	vertex* second = NULL;
+	vertex *first = NULL;
+	vertex *second = NULL;
 
 } sitting_vertex;
 
@@ -69,7 +69,7 @@ vector<vertex> intermediate_inputs;
 
 
 
-int main(int argc, char** argv) { // [1]
+int main(int argc, char **argv) { // [1]
 
 	if (argc != 4) {
 
@@ -149,7 +149,7 @@ void read_blif(string blif) {
 			}
 		}
 		else if (intermediate == ".names") {
-			
+
 			int max_level = -1;
 
 			reading_the_line_from_hereon = 4;
@@ -164,7 +164,7 @@ void read_blif(string blif) {
 				if (vertex_count != sitting_model.node.size()) {
 
 					if (sitting_model.node[vertex_count].type == 3) {
-						
+
 						sitting_model.node[vertex_count].inputs = intermediate_inputs;
 						sitting_model.node[vertex_count].level = max_level + 1;
 						intermediate_inputs.clear();
@@ -184,7 +184,7 @@ void read_blif(string blif) {
 					sitting_vertex.level = max_level + 1;
 					sitting_vertex.inputs = intermediate_inputs;
 					intermediate_inputs.clear();
-					
+
 					sitting_model.node.push_back(sitting_vertex);
 					sitting_vertex.inputs.clear();
 					vertex_count = sitting_model.node.size() - 1;
