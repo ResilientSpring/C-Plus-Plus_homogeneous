@@ -24,4 +24,11 @@ int main() {
 	for (i = 0; i < 10; i++)
 		p[i] = i;
 
+
+	for (i = 0; i < 10; i++)
+		cout << p[i] << " ";
+
+
+	delete[] p;    // Release the array.
+
 }
