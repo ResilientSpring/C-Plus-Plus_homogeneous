@@ -38,6 +38,13 @@ int main() {
 	
 	Rectangle *p;
 
+	try
+	{
+		p = new Rectangle(10, 8);
+	}
+	catch (bad_alloc xa)
+	{
 
+	}
 
 }
