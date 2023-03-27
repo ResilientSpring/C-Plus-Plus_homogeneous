@@ -44,7 +44,11 @@ int main() {
 	}
 	catch (bad_alloc xa)
 	{
+		cout << "Allocation Failure\n";
 
+		return 1;
 	}
+
+
 
 }
