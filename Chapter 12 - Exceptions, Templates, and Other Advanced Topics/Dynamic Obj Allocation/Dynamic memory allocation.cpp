@@ -49,6 +49,6 @@ int main() {
 		return 1;
 	}
 
-
+	cout << "Area is " << p->area();
 
 }
