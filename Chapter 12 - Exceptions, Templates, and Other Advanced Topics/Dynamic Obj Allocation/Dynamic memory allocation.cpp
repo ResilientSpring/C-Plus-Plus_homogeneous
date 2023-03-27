@@ -51,4 +51,10 @@ int main() {
 
 	cout << "Area is " << p->area();
 
+
+
+	cout << "\n";
+
+	delete p;
+
 }
