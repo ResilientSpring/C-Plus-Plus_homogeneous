@@ -5,7 +5,7 @@
 
 int main() {
 
-	int* p;
+	int *p;
 
 	try
 	{
