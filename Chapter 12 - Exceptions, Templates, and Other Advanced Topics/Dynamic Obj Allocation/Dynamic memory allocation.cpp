@@ -17,15 +17,26 @@ public:
 
 		this->height = height;
 
+		cout << "Constructing " << width << " by " << height << " rectangle.\n";
+
+	}
+
+
+	~Rectangle() {
+		cout << "Destructing " << width << " by " << height << " rectangle. \n";
+	}
+
+	
+	int area() {
+		return width * height;
 	}
 
 };
 
 
-
-
 int main() {
-
+	
+	Rectangle *p;
 
 
 
