@@ -15,8 +15,13 @@ int main() {
 	}
 	catch (bad_alloc xa)
 	{
+		cout << "Allocation Failure" << endl;
 
+		return 1;
 	}
 
+
+	for (i = 0; i < 10; i++)
+		p[i] = i;
 
 }
