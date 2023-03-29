@@ -34,6 +34,18 @@ public:
 
 	}
 
+
+	// Construct a complete employee object.
+	employee(string name, string ID, string department, string phone) {
+
+		this->name = name;
+		this->ID = ID;
+		this->department = department;
+		this->phone = phone;
+
+
+	}
+
 };
 
 
