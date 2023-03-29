@@ -158,7 +158,7 @@ void Depth_First_Search(int v, bool *visited, stack<int> &topological_Stack) {
 }
 
 
-void Inverse_Depth_First_Search(int v, bool *visited, queue<int> queued, vector<int> *tree_inv) {
+void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &queued, vector<int> *tree_inv) {
 
 	// Mark the current node as visited.
 	visited[v] = true;
@@ -173,6 +173,8 @@ void Inverse_Depth_First_Search(int v, bool *visited, queue<int> queued, vector<
 		if (!visited[*itr])
 			Inverse_Depth_First_Search(*itr, visited, queued, tree_inv);
 	}
+
+	queued.push(v);
 
 }
 
