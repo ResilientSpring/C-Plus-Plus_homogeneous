@@ -133,6 +133,8 @@ void read(string aag) {
 		inverse_adjacency_list_of_network[AND_ID].push_back(fan_in_2_ID);
 	}
 
+	input_stream.close();
+
 }
 
 
