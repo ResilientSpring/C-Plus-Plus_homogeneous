@@ -100,6 +100,8 @@ int main() {
 
 	do
 	{
+		cout << *itr << endl;
+		itr++;
 
 	} while (itr != employee_list.end());
 
