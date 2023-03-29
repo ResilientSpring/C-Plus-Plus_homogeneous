@@ -139,7 +139,7 @@ void read(string aag) {
 
 }
 
-void Depth_First_Search(int v, bool *visited, stack<int> &topological_Stack) {
+void Depth_First_Search(int v, bool *visited, stack<int> &Stack) {
 
 	// Mark the current node as visited.
 	visited[v] = true;
@@ -149,11 +149,11 @@ void Depth_First_Search(int v, bool *visited, stack<int> &topological_Stack) {
 	// Recur for all vertices adjacent to this vertex.
 	for (itr = adjacency_list_of_network[v].begin(); itr != adjacency_list_of_network[v].end(); itr++)
 		if (!visited[*itr])
-			Depth_First_Search(*itr, visited, topological_Stack);
+			Depth_First_Search(*itr, visited, Stack);
 
 
 	// Push current vertex onto stack which stores result except for primary input.
-	topological_Stack.push(v);
+	Stack.push(v);
 
 }
 
