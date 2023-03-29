@@ -11,6 +11,8 @@
 #include <stack>
 using namespace std;
 
+void Depth_First_Search(int v, bool *visited, stack<int> &topological_Stack);
+
 string title;
 
 int intermediate_node;
@@ -152,6 +154,25 @@ void Depth_First_Search(int v, bool *visited, stack<int> &topological_Stack) {
 
 	// Push current vertex onto stack which stores result except for primary input.
 	topological_Stack.push(v);
+
+}
+
+
+void Inverse_Depth_First_Search(int v, bool *visited, queue<int> queued, vector<int> *tree_inv) {
+
+	// Mark the current node as visited.
+	visited[v] = true;
+
+	list<int>::iterator itr;
+
+	for (itr = inverse_adjacency_list_of_network[v].begin();
+		itr != inverse_adjacency_list_of_network[v].end(); itr++) {
+
+		tree_inv[v].push_back(*itr);
+
+		if (!visited[*itr])
+			Inverse_Depth_First_Search(*itr, visited, queued, tree_inv);
+	}
 
 }
 
