@@ -115,6 +115,11 @@ int main() {
 
 	itr = employee_list.find(employee("8723"));
 
+	if (itr != employee_list.end())
+	{
+		cout << "Found. Information follows: \n";
 
+		cout << *itr << endl;
+	}
 
 }
