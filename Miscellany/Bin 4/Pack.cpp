@@ -55,6 +55,9 @@ public:
 } LUT;
 
 
+vector<vertex**> trees_LUTs;
+
+
 int main(int argc, char **argv) { // [1]
 
 	if (argc != 4) {
