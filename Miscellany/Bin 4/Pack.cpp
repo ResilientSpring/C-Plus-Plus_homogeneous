@@ -158,7 +158,7 @@ void Depth_First_Search(int v, bool *visited, stack<int> &Stack) {
 }
 
 
-void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &queued, vector<int> *tree_inv) {
+void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv) {
 
 	// Mark the current node as visited.
 	visited[v] = true;
@@ -171,10 +171,10 @@ void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &queued, vector
 		tree_inv[v].push_back(*itr);
 
 		if (!visited[*itr])
-			Inverse_Depth_First_Search(*itr, visited, queued, tree_inv);
+			Inverse_Depth_First_Search(*itr, visited, Queue, tree_inv);
 	}
 
-	queued.push(v);
+	Queue.push(v);
 
 }
 
