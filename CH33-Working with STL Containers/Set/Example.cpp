@@ -78,6 +78,8 @@ ostream& operator<<(ostream &s, employee &o) {
 	s << "Employee #:  " << o.get_ID() << endl;
 	s << "Dept:  "       << o.get_department() << endl;
 	s << "Phone: " << o.get_phone() << endl;
+
+	return s;
 }
 
 
