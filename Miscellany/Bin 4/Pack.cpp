@@ -11,6 +11,8 @@
 #include <stack>
 using namespace std;
 
+string title;
+
 int K;
 int total_number_of_nodes = 0;
 int number_of_primary_inputs = 0;
@@ -29,6 +31,8 @@ vector<vector<int> *> trees_inverse;
 
 // Sort trees' nodes in topological order.
 vector<queue<int>> trees_sorted_order;
+
+vector<vertex **> trees_LUTs;
 
 
 class vertex {
@@ -53,9 +57,6 @@ public:
 	vertex *second = NULL;
 
 } LUT;
-
-
-vector<vertex**> trees_LUTs;
 
 
 int main(int argc, char **argv) { // [1]
