@@ -13,6 +13,7 @@ using namespace std;
 
 string title;
 
+int intermediate_node;
 int K;
 int total_number_of_nodes = 0;
 int number_of_primary_inputs = 0;
@@ -20,8 +21,8 @@ int number_of_latches = 0;
 int number_of_primary_outputs = 0;
 int number_of_AND_nodes = 0;
 
-set<int> primary_input;
-set<int> primary_output;
+set<int> primary_inputs;
+set<int> primary_outputs;
 
 list<int> *circuit;
 list<int> *circuit_inverse;
@@ -98,6 +99,18 @@ void read(string aag) {
 	input_stream >> number_of_latches;
 	input_stream >> number_of_primary_outputs;
 	input_stream >> number_of_AND_nodes;
+
+	for (int i = 0; i < number_of_primary_inputs; i++)
+	{
+		input_stream >> intermediate_node;
+		primary_inputs.insert(intermediate_node);
+	}
+
+	for (int i = 0; i < number_of_primary_outputs; i++)
+	{
+		input_stream >> intermediate_node;
+		primary_outputs.insert(intermediate_node);
+	}
 
 }
 
