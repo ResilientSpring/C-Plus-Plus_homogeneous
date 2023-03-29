@@ -20,6 +20,9 @@ class employee {
 public:
 
 	// Default constructor
+	employee() {
+		ID = name = phone = department = "";
+	}
 
 };
 
