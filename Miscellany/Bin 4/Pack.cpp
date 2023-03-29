@@ -18,7 +18,7 @@ int total_number_of_nodes = 0;
 int number_of_primary_inputs = 0;
 int number_of_latches = 0;
 int number_of_primary_outputs = 0;
-int number_of_and_nodes = 0;
+int number_of_AND_nodes = 0;
 
 set<int> primary_input;
 set<int> primary_output;
@@ -68,8 +68,8 @@ int main(int argc, char **argv) { // [1]
 		exit(1);
 	}
 
-	string input_blif = argv[1];
-	read_blif(input_blif);
+	string input_aag = argv[1];
+	read(input_aag);
 
 	K = stoi(argv[2]);
 
@@ -79,11 +79,11 @@ int main(int argc, char **argv) { // [1]
 }
 
 
-void read_blif(string blif) {
+void read(string aag) {
 
 	ifstream input_stream;
 
-	input_stream.open(blif);
+	input_stream.open(aag);
 
 	if (!input_stream) {
 
@@ -92,8 +92,12 @@ void read_blif(string blif) {
 		return;
 	}
 
-
-
+	input_stream >> title;
+	input_stream >> total_number_of_nodes;
+	input_stream >> number_of_primary_inputs;
+	input_stream >> number_of_latches;
+	input_stream >> number_of_primary_outputs;
+	input_stream >> number_of_AND_nodes;
 
 }
 
