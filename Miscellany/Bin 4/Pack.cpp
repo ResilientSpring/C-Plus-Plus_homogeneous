@@ -25,7 +25,7 @@ set<int> primary_inputs;
 set<int> primary_outputs;
 
 list<int> *circuit;
-list<int> *circuit_inverse;
+list<int> *circuit_inverse = NULL;
 
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
@@ -111,6 +111,9 @@ void read(string aag) {
 		input_stream >> intermediate_node;
 		primary_outputs.insert(intermediate_node);
 	}
+
+
+
 
 }
 
