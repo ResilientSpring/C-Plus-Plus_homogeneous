@@ -110,4 +110,9 @@ int main() {
 
 	cout << endl;
 
+	// Find a specific employee.
+	cout << "Searching for employee 8723. \n";
+
+	itr = employee_list.find(employee("8723"));
+
 }
