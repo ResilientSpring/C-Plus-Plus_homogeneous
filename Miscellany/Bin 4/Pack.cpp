@@ -127,6 +127,10 @@ void read(string aag) {
 	while (input_stream >> AND_ID)
 	{
 		adjacency_list_of_network[fan_in_1_ID].push_back(AND_ID);
+		adjacency_list_of_network[fan_in_2_ID].push_back(AND_ID);
+
+		inverse_adjacency_list_of_network[AND_ID].push_back(fan_in_1_ID);
+		inverse_adjacency_list_of_network[AND_ID].push_back(fan_in_2_ID);
 	}
 
 }
