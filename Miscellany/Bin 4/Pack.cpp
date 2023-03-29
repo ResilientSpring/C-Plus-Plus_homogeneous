@@ -27,6 +27,7 @@ list<int> *circuit_inverse;
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
 
+// Sort trees' nodes in topological order.
 vector<queue<int>> trees_sorted_order;
 
 string blif_name, intermediate;
@@ -50,7 +51,7 @@ public:
 	vector<int> fanins;
 	vector<vertex> inputs;
 	int fanout;
-	int number_of_fanouts;
+	int number_of_fanins;
 
 	int label;
 	int operate;
