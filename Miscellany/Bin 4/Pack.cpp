@@ -5,25 +5,39 @@
 #include <map>
 #include <cstring>
 #include <sstream>
+#include <set>
+#include <list>
+#include <queue>
+#include <stack>
 using namespace std;
 
+void Depth_First_Search(int v, bool *visited, stack<int> &topological_Stack);
+void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv);
+
+string title;
+
+int intermediate_node;
 int K;
+int total_number_of_nodes = 0;
 int number_of_primary_inputs = 0;
+int number_of_latches = 0;
 int number_of_primary_outputs = 0;
-int number_of_intermediate_nodes = 0;
-int vertex_count;
+int number_of_AND_nodes = 0;
 
-string blif_name, intermediate;
+set<int> primary_inputs;
+set<int> latches;
+set<int> primary_outputs;
 
-char model[] = ".model";
+list<int> *adjacency_list_of_network;
+list<int> *inverse_adjacency_list_of_network = NULL;
 
-map<string, vertex *> find_Node;
+// Cut trees from forest.
+vector<vector<int> *> trees_inverse;
 
-vector<string> primary_inputs;
-vector<string> intermediate_nodes;
-vector<string> primary_outputs;
+// Sort trees' nodes in topological order.
+vector<queue<int>> trees_sorted_order;
 
-vector<string> operand;
+vector<vertex **> trees_LUTs;
 
 
 class vertex {
@@ -32,12 +46,13 @@ public:
 
 	bool in_use;
 	vector<int> fanins;
-	vector<vertex> inputs;
 	int fanout;
-	int number_of_fanouts;
+	int number_of_fanins;
 
 	int label;
 	int operate;
+
+	vector<vertex> inputs;
 
 	int type;
 	int level;
@@ -46,24 +61,7 @@ public:
 	vertex *first = NULL;
 	vertex *second = NULL;
 
-} sitting_vertex;
-
-
-
-class model {
-
-public:
-
-	string name;
-	vector<vertex> node;
-	vector<vertex> LUT;
-
-} sitting_model;
-
-
-
-vector<vertex> intermediate_inputs;
-
+} LUT;
 
 
 int main(int argc, char **argv) { // [1]
@@ -75,8 +73,8 @@ int main(int argc, char **argv) { // [1]
 		exit(1);
 	}
 
-	string input_blif = argv[1];
-	read_blif(input_blif);
+	string input_aag = argv[1];
+	read(input_aag);
 
 	K = stoi(argv[2]);
 
@@ -86,13 +84,11 @@ int main(int argc, char **argv) { // [1]
 }
 
 
-void read_blif(string blif) {
-
-	string sitting_line;
+void read(string aag) {
 
 	ifstream input_stream;
 
-	input_stream.open(blif);
+	input_stream.open(aag);
 
 	if (!input_stream) {
 
@@ -101,12 +97,100 @@ void read_blif(string blif) {
 		return;
 	}
 
+	input_stream >> title;
+	input_stream >> total_number_of_nodes;
+	input_stream >> number_of_primary_inputs;
+	input_stream >> number_of_latches;
+	input_stream >> number_of_primary_outputs;
+	input_stream >> number_of_AND_nodes;
+
+	for (int i = 0; i < number_of_primary_inputs; i++)
+	{
+		input_stream >> intermediate_node;
+		primary_inputs.insert(intermediate_node);
+	}
+
+	for (int i = 0; i < number_of_latches; i++)
+	{
+		input_stream >> intermediate_node;
+		latches.insert(intermediate_node);
+	}
+
+	for (int i = 0; i < number_of_primary_outputs; i++)
+	{
+		input_stream >> intermediate_node;
+		primary_outputs.insert(intermediate_node);
+	}
+
+	adjacency_list_of_network = new list<int>[total_number_of_nodes];
+	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes];
+
+	int fan_in_1_ID, fan_in_2_ID, AND_ID;
+
+	while (input_stream >> AND_ID)
+	{
+		adjacency_list_of_network[fan_in_1_ID].push_back(AND_ID);
+		adjacency_list_of_network[fan_in_2_ID].push_back(AND_ID);
+
+		inverse_adjacency_list_of_network[AND_ID].push_back(fan_in_1_ID);
+		inverse_adjacency_list_of_network[AND_ID].push_back(fan_in_2_ID);
+	}
+
+	input_stream.close();
+
+}
+
+void Depth_First_Search(int v, bool *visited, stack<int> &Stack) {
+
+	// Mark the current node as visited.
+	visited[v] = true;
+
+	list<int>::iterator itr;
+
+	// Recur for all vertices adjacent to this vertex.
+	for (itr = adjacency_list_of_network[v].begin(); itr != adjacency_list_of_network[v].end(); itr++)
+		if (!visited[*itr])
+			Depth_First_Search(*itr, visited, Stack);
 
 
+	// Push current vertex onto stack which stores result except for primary input.
+	Stack.push(v);
 
 }
 
 
+void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv) {
+
+	// Mark the current node as visited.
+	visited[v] = true;
+
+	list<int>::iterator itr;
+
+	for (itr = inverse_adjacency_list_of_network[v].begin();
+		itr != inverse_adjacency_list_of_network[v].end(); itr++) {
+
+		tree_inv[v].push_back(*itr);
+
+		if (!visited[*itr])
+			Inverse_Depth_First_Search(*itr, visited, Queue, tree_inv);
+	}
+
+	Queue.push(v);
+
+}
+
+
+void Topological_sort() {
+
+	// Mark all vertices as not visited.
+	bool *visited = new bool[total_number_of_nodes];
+
+	for (int i = 0; i < total_number_of_nodes; i++)
+		visited[i] = false;
+
+
+
+}
 
 
 
