@@ -142,6 +142,11 @@ void Depth_First_Search(int v, bool visited[], stack<int> &topological_Stack) {
 	// Mark the current node as visited.
 	visited[v] = true;
 
+	list<int>::iterator itr;
+
+	for (itr = adjacency_list_of_network[v].begin(); itr != adjacency_list_of_network[v].end(); itr++)
+		if (!visited[*itr])
+			Depth_First_Search(*itr, visited, topological_Stack);
 
 }
 
