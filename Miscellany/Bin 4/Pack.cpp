@@ -7,6 +7,8 @@
 #include <sstream>
 #include <set>
 #include <list>
+#include <queue>
+#include <stack>
 using namespace std;
 
 int K;
@@ -21,6 +23,11 @@ set<int> primary_output;
 
 list<int> *circuit;
 list<int> *circuit_inverse;
+
+// Cut trees from forest.
+vector<vector<int> *> trees_inverse;
+
+vector<queue<int>> trees_sorted_order;
 
 string blif_name, intermediate;
 
