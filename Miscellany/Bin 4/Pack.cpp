@@ -37,12 +37,13 @@ public:
 
 	bool in_use;
 	vector<int> fanins;
-	vector<vertex> inputs;
 	int fanout;
 	int number_of_fanins;
 
 	int label;
 	int operate;
+
+	vector<vertex> inputs;
 
 	int type;
 	int level;
