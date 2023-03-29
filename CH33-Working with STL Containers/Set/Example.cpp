@@ -8,6 +8,17 @@
 #include <string>
 using namespace std;
 
+
+// This class stores employee information. 
+class employee {
+
+public:
+
+
+};
+
+
+
 int main() {
 
 }
