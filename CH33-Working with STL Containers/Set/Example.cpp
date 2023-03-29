@@ -77,14 +77,18 @@ ostream& operator<<(ostream &s, employee &o) {
 	s << o.get_name() << endl;
 	s << "Employee #:  " << o.get_ID() << endl;
 	s << "Dept:  "       << o.get_department() << endl;
-	s << "Phone: " << o.get_phone() << endl;
+	s << "Phone: "		 << o.get_phone() << endl;
 
 	return s;
 }
 
 
-
-
 int main() {
+
+	set<employee> employee_list;
+
+	// Initialize the employee list.
+	employee_list.insert(employee("Tom Harvy", "9423", "Client Relations", "555-1010"));
+	employee_list.insert(employee("Susan Thomasy", "8723", "Sales", "555-8899"));
 
 }
