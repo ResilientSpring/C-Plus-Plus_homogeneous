@@ -24,8 +24,8 @@ int number_of_AND_nodes = 0;
 set<int> primary_inputs;
 set<int> primary_outputs;
 
-list<int> *circuit;
-list<int> *circuit_inverse = NULL;
+list<int> *adjacency_list_of_network;
+list<int> *inverse_adjacency_list_of_network = NULL;
 
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
