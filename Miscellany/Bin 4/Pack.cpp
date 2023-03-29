@@ -12,6 +12,7 @@
 using namespace std;
 
 void Depth_First_Search(int v, bool *visited, stack<int> &topological_Stack);
+void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv);
 
 string title;
 
