@@ -137,7 +137,7 @@ void read(string aag) {
 
 }
 
-void Depth_First_Search(int v, bool visited[], stack<int> &topological_Stack) {
+void Depth_First_Search(int v, bool *visited, stack<int> &topological_Stack) {
 
 	// Mark the current node as visited.
 	visited[v] = true;
