@@ -72,10 +72,12 @@ bool operator==(employee a, employee b) {
 }
 
 // Create an inserter for employee.
-ostream &operator<<(ostream &s, employee &o) {
+ostream& operator<<(ostream &s, employee &o) {
 
 	s << o.get_name() << endl;
-
+	s << "Employee #:  " << o.get_ID() << endl;
+	s << "Dept:  "       << o.get_department() << endl;
+	s << "Phone: " << o.get_phone() << endl;
 }
 
 
