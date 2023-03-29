@@ -5,6 +5,8 @@
 #include <map>
 #include <cstring>
 #include <sstream>
+#include <set>
+#include <list>
 using namespace std;
 
 int K;
