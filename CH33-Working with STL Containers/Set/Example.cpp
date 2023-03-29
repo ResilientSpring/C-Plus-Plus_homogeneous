@@ -24,7 +24,6 @@ public:
 		ID = name = phone = department = "";
 	}
 
-
 	// Construct temporary object using only the ID, which is the key.
 	employee(string ID) {
 
@@ -33,7 +32,6 @@ public:
 		name = phone = department = "";
 
 	}
-
 
 	// Construct a complete employee object.
 	employee(string name, string ID, string department, string phone) {
