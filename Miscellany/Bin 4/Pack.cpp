@@ -180,6 +180,19 @@ void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<
 }
 
 
+void Topological_sort() {
+
+	// Mark all vertices as not visited.
+	bool *visited = new bool[total_number_of_nodes];
+
+	for (int i = 0; i < total_number_of_nodes; i++)
+		visited[i] = false;
+
+
+
+}
+
+
 
 /*
 *
