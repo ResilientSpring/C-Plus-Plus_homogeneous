@@ -10,10 +10,17 @@
 using namespace std;
 
 int K;
+int total_number_of_nodes = 0;
 int number_of_primary_inputs = 0;
+int number_of_latches = 0;
 int number_of_primary_outputs = 0;
-int number_of_intermediate_nodes = 0;
-int vertex_count;
+int number_of_and_nodes = 0;
+
+set<int> primary_input;
+set<int> primary_output;
+
+list<int> *circuit;
+list<int> *circuit_inverse;
 
 string blif_name, intermediate;
 
