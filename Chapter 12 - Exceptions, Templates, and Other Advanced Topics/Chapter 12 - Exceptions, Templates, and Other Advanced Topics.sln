@@ -85,6 +85,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Using", "Using\Using.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicArrayAllocation", "DynamicArrayAllocation\DynamicArrayAllocation.vcxproj", "{04F12962-E105-4B53-B535-052A6DA71638}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dynamic Obj Allocation", "Dynamic Obj Allocation\Dynamic Obj Allocation.vcxproj", "{01D35968-94B9-4A26-92F7-E64A50680517}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -421,6 +423,14 @@ Global
 		{04F12962-E105-4B53-B535-052A6DA71638}.Release|x64.Build.0 = Release|x64
 		{04F12962-E105-4B53-B535-052A6DA71638}.Release|x86.ActiveCfg = Release|Win32
 		{04F12962-E105-4B53-B535-052A6DA71638}.Release|x86.Build.0 = Release|Win32
+		{01D35968-94B9-4A26-92F7-E64A50680517}.Debug|x64.ActiveCfg = Debug|x64
+		{01D35968-94B9-4A26-92F7-E64A50680517}.Debug|x64.Build.0 = Debug|x64
+		{01D35968-94B9-4A26-92F7-E64A50680517}.Debug|x86.ActiveCfg = Debug|Win32
+		{01D35968-94B9-4A26-92F7-E64A50680517}.Debug|x86.Build.0 = Debug|Win32
+		{01D35968-94B9-4A26-92F7-E64A50680517}.Release|x64.ActiveCfg = Release|x64
+		{01D35968-94B9-4A26-92F7-E64A50680517}.Release|x64.Build.0 = Release|x64
+		{01D35968-94B9-4A26-92F7-E64A50680517}.Release|x86.ActiveCfg = Release|Win32
+		{01D35968-94B9-4A26-92F7-E64A50680517}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
