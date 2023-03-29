@@ -30,18 +30,6 @@ vector<vector<int> *> trees_inverse;
 // Sort trees' nodes in topological order.
 vector<queue<int>> trees_sorted_order;
 
-string blif_name, intermediate;
-
-char model[] = ".model";
-
-map<string, vertex *> find_Node;
-
-vector<string> primary_inputs;
-vector<string> intermediate_nodes;
-vector<string> primary_outputs;
-
-vector<string> operand;
-
 
 class vertex {
 public:
@@ -63,24 +51,7 @@ public:
 	vertex *first = NULL;
 	vertex *second = NULL;
 
-} sitting_vertex;
-
-
-
-class model {
-
-public:
-
-	string name;
-	vector<vertex> node;
-	vector<vertex> LUT;
-
-} sitting_model;
-
-
-
-vector<vertex> intermediate_inputs;
-
+} LUT;
 
 
 int main(int argc, char **argv) { // [1]
