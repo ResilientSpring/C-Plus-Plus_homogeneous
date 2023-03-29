@@ -180,7 +180,7 @@ void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<
 }
 
 
-void Topological_sort() {
+void Topological_sort() {   // [12]
 
 	// Mark all vertices as not visited.
 	bool *visited = new bool[total_number_of_nodes];
@@ -209,5 +209,6 @@ void Topological_sort() {
 * 9. https://github.com/alan861130/Logic-synthesis/blob/main/src/map.cpp#L419
 * 10. https://github.com/rushhuang/NTHU_ALS_Final/blob/main/LEDA/map.cpp
 * 11. https://stackoverflow.com/questions/5590381/easiest-way-to-convert-int-to-string-in-c
+* 12. https://archive.is/DQbVo
 
 */
