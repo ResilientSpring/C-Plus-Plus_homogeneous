@@ -112,8 +112,8 @@ void read(string aag) {
 		primary_outputs.insert(intermediate_node);
 	}
 
-
-
+	adjacency_list_of_network = new list<int>[total_number_of_nodes];
+	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes];
 
 }
 
