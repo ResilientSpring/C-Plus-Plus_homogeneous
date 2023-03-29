@@ -24,6 +24,16 @@ public:
 		ID = name = phone = department = "";
 	}
 
+
+	// Construct temporary object using only the ID, which is the key.
+	employee(string ID) {
+
+		this->ID = ID;
+
+		name = phone = department = "";
+
+	}
+
 };
 
 
