@@ -108,5 +108,6 @@ int main() {
 
 	} while (itr != employee_list.end());
 
+	cout << endl;
 
 }
