@@ -42,10 +42,24 @@ public:
 		this->ID = ID;
 		this->department = department;
 		this->phone = phone;
-
-
 	}
 
+	// Accessor functions for employee data.
+	string get_name() {
+		return name;
+	}
+
+	string get_ID() {
+		return ID;
+	}
+
+	string get_department() {
+		return department;
+	}
+
+	string get_phone() {
+		return phone;
+	}
 };
 
 
