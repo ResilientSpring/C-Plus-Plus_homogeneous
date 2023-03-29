@@ -12,8 +12,14 @@ using namespace std;
 // This class stores employee information. 
 class employee {
 
+	string name;
+	string ID;
+	string phone;
+	string department;
+
 public:
 
+	// Default constructor
 
 };
 
