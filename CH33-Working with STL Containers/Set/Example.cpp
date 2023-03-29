@@ -90,5 +90,18 @@ int main() {
 	// Initialize the employee list.
 	employee_list.insert(employee("Tom Harvy", "9423", "Client Relations", "555-1010"));
 	employee_list.insert(employee("Susan Thomasy", "8723", "Sales", "555-8899"));
+	employee_list.insert(employee("Alex Johnson", "5719", "Repair", "555-0174"));
+
+	// Create an iterator to the set.
+	set<employee>::iterator itr = employee_list.begin();
+
+	// Display contents of the set.
+	cout << "Current set: \n\n";
+
+	do
+	{
+
+	} while (itr != employee_list.end());
+
 
 }
