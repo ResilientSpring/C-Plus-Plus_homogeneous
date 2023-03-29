@@ -61,6 +61,25 @@ public:
 };
 
 
+// Compare objects by ID.
+bool operator<(employee a, employee b) {
+	return a.get_ID() < b.get_ID();
+}
+
+// Check for equality based on ID.
+bool operator==(employee a, employee b) {
+	return a.get_ID() == b.get_ID();
+}
+
+// Create an inserter for employee.
+ostream &operator<<(ostream &s, employee &o) {
+
+	s << o.get_name() << endl;
+
+}
+
+
+
 
 int main() {
 
