@@ -22,6 +22,7 @@ int number_of_primary_outputs = 0;
 int number_of_AND_nodes = 0;
 
 set<int> primary_inputs;
+set<int> latches;
 set<int> primary_outputs;
 
 list<int> *adjacency_list_of_network;
@@ -106,6 +107,12 @@ void read(string aag) {
 		primary_inputs.insert(intermediate_node);
 	}
 
+	for (int i = 0; i < number_of_latches; i++)
+	{
+		input_stream >> intermediate_node;
+		latches.insert(intermediate_node);
+	}
+
 	for (int i = 0; i < number_of_primary_outputs; i++)
 	{
 		input_stream >> intermediate_node;
@@ -114,6 +121,8 @@ void read(string aag) {
 
 	adjacency_list_of_network = new list<int>[total_number_of_nodes];
 	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes];
+
+
 
 }
 
