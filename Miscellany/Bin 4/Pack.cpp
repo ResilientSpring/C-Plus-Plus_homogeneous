@@ -243,8 +243,9 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 
 			continue;
 
+	//	vector<int> tree_inv[total_number_of_nodes];
 
-
+		vector<int> *tree_inv = new vector<int>[total_number_of_nodes];
 
 	}
 
