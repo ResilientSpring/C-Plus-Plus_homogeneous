@@ -65,7 +65,7 @@ public:
 	vertex *first = NULL;
 	vertex *second = NULL;
 
-} LUT;
+} Look_Up_Table;
 
 
 int main(int argc, char **argv) { // [1]
@@ -308,6 +308,23 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 
 
 }
+
+
+void mapper() {
+
+	// Broken down the forest into several trees.
+	int number_of_trees = trees_inverse.size();
+
+	for (int i = 0; i < number_of_trees; i++)
+	{
+
+		vertex *LUTs = new vertex[total_number_of_nodes];
+		
+
+	}
+}
+
+
 
 
 /*
