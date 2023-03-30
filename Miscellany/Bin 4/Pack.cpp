@@ -15,6 +15,7 @@ void Depth_First_Search(int v, bool *visited, stack<int> &topological_Stack);
 void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv);
 void Topological_sort(stack<int> &Stack);
 void Topological_sort_2(stack<int> &Stack);
+void dismantle_forest_to_trees(stack<int> &Stack);
 
 string title;
 
