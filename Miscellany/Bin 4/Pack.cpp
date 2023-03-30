@@ -318,13 +318,41 @@ void mapper() {
 	for (int i = 0; i < number_of_trees; i++)
 	{
 
-		vertex *LUTs = new vertex[total_number_of_nodes];
+		Look_Up_Table *LUTs = new Look_Up_Table[total_number_of_nodes];
 		
 
 	}
 }
 
 
+void mapper2() {
+
+	// Broken down the forest into several trees.
+	int number_of_trees = trees_inverse.size();
+
+	for (int i = 0; i < number_of_trees; i++)
+	{
+
+		Look_Up_Table *LUTs = new Look_Up_Table[total_number_of_nodes + 1];
+
+
+	}
+}
+
+
+void mapper3() {
+
+	// Broken down the forest into several trees.
+	int number_of_trees = trees_inverse.size();
+
+	for (int i = 0; i < number_of_trees; i++)
+	{
+
+		Look_Up_Table **LUTs = new Look_Up_Table*[total_number_of_nodes];
+
+
+	}
+}
 
 
 /*
