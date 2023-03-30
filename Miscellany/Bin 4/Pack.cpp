@@ -263,6 +263,8 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 		trees_topologically_sorted.push_back(tree_sort_order);
 
 
+		inverse_adjacency_list_of_network[node].clear();
+
 	}
 
 
@@ -301,7 +303,7 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 		trees_inverse.push_back(tree_inv);
 		trees_topologically_sorted.push_back(tree_sort_order);
 
-
+		inverse_adjacency_list_of_network[node].clear();
 	}
 
 
