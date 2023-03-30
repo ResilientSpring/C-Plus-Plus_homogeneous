@@ -13,6 +13,8 @@ using namespace std;
 
 void Depth_First_Search(int v, bool *visited, stack<int> &topological_Stack);
 void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv);
+void Topological_sort(stack<int> &Stack);
+void Topological_sort_2(stack<int> &Stack);
 
 string title;
 
@@ -179,7 +181,7 @@ void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<
 
 }
 
-
+/*
 void Topological_sort() {   // [12]
 
 	// Mark all vertices as not visited.
@@ -188,10 +190,43 @@ void Topological_sort() {   // [12]
 	for (int i = 0; i < total_number_of_nodes; i++)
 		visited[i] = false;
 
-
+	for (int i = 0; i < total_number_of_nodes; i++)
+		if (visited[i] == false)
+			Depth_First_Search(i, visited, Stack);
 
 }
 
+*/
+
+
+void Topological_sort(stack<int> &Stack) {   // [12]
+
+	// Mark all vertices as not visited.
+	bool *visited = new bool[total_number_of_nodes];
+
+	for (int i = 0; i < total_number_of_nodes; i++)
+		visited[i] = false;
+
+	for (int i = 0; i < total_number_of_nodes; i++)
+		if (visited[i] == false)
+			Depth_First_Search(i, visited, Stack);
+
+}
+
+
+void Topological_sort_2(stack<int> &Stack) {   // [12]
+
+	// Mark all vertices as not visited.
+	bool *visited = new bool[total_number_of_nodes + 1];
+
+	for (int i = 0; i <= total_number_of_nodes; i++)
+		visited[i] = false;
+
+	for (int i = 1; i <= total_number_of_nodes; i++)
+		if (visited[i] == false)
+			Depth_First_Search(i, visited, Stack);
+
+}
 
 
 /*
