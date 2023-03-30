@@ -17,6 +17,9 @@ void Topological_sort(stack<int> &Stack);
 void Topological_sort_2(stack<int> &Stack);
 void dismantle_forest_to_trees(stack<int> &Stack);
 void dismantle_forest_to_trees_2(stack<int> &Stack);
+void mapper();
+void mapper2();
+void mapper3();
 
 string title;
 
