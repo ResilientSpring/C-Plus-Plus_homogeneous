@@ -44,7 +44,7 @@ vector<queue<int>> trees_topologically_sorted;
 vector<vertex **> trees_LUTs;
 
 
-class vertex {
+typedef class vertex {
 public:
 	string ID;
 
