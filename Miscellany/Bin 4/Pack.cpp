@@ -324,6 +324,28 @@ void mapper() {
 		Look_Up_Table *LUTs = new Look_Up_Table[total_number_of_nodes];
 		
 
+		for (int i = 0; i < total_number_of_nodes; i++) {
+
+		//  One may not specify an initializer when dynamically allocating arrays. 
+		//	LUTs[i] = NULL; 
+
+		}
+			
+	}
+}
+
+
+void mapper1() {
+
+	// Broken down the forest into several trees.
+	int number_of_trees = trees_inverse.size();
+
+	for (int i = 0; i < number_of_trees; i++)
+	{
+
+		Look_Up_Table **LUTs = new Look_Up_Table*[total_number_of_nodes];
+
+
 		for (int i = 0; i < total_number_of_nodes; i++)
 			LUTs[i] = NULL;
 	}
