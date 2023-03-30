@@ -17,6 +17,10 @@ void Topological_sort(stack<int> &Stack);
 void Topological_sort_2(stack<int> &Stack);
 void dismantle_forest_to_trees(stack<int> &Stack);
 void dismantle_forest_to_trees_2(stack<int> &Stack);
+void mapper();
+void mapper1();
+void mapper2();
+void mapper3();
 
 string title;
 
@@ -44,7 +48,7 @@ vector<queue<int>> trees_topologically_sorted;
 vector<vertex **> trees_LUTs;
 
 
-class vertex {
+typedef class vertex {
 public:
 	string ID;
 
@@ -65,7 +69,7 @@ public:
 	vertex *first = NULL;
 	vertex *second = NULL;
 
-} LUT;
+} Look_Up_Table;
 
 
 int main(int argc, char **argv) { // [1]
@@ -307,6 +311,77 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 	}
 
 
+}
+
+
+void mapper() {
+
+	// Broken down the forest into several trees.
+	int number_of_trees = trees_inverse.size();
+
+	for (int i = 0; i < number_of_trees; i++)
+	{
+
+		Look_Up_Table *LUTs = new Look_Up_Table[total_number_of_nodes];
+		
+
+		for (int i = 0; i < total_number_of_nodes; i++) {
+
+		//  One may not specify an initializer when dynamically allocating arrays. 
+		//	LUTs[i] = NULL; 
+
+		}
+			
+	}
+}
+
+
+void mapper1() {
+
+	// Broken down the forest into several trees.
+	int number_of_trees = trees_inverse.size();
+
+	for (int i = 0; i < number_of_trees; i++)
+	{
+
+		Look_Up_Table **LUTs = new Look_Up_Table*[total_number_of_nodes];
+
+
+		for (int i = 0; i < total_number_of_nodes; i++)
+			LUTs[i] = NULL;
+	}
+}
+
+
+void mapper2() {
+
+	// Broken down the forest into several trees.
+	int number_of_trees = trees_inverse.size();
+
+	for (int i = 0; i < number_of_trees; i++)
+	{
+
+		Look_Up_Table *LUTs = new Look_Up_Table[total_number_of_nodes + 1];
+
+
+	}
+}
+
+
+void mapper3() {
+
+	// Broken down the forest into several trees.
+	int number_of_trees = trees_inverse.size();
+
+	for (int i = 0; i < number_of_trees; i++)
+	{
+
+		Look_Up_Table **LUTs = new Look_Up_Table*[total_number_of_nodes + 1];
+
+
+		for (int i = 0; i <= total_number_of_nodes; i++)
+			LUTs[i] = NULL;
+	}
 }
 
 
