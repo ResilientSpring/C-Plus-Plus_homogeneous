@@ -252,6 +252,8 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 
 		bool *visited = new bool[total_number_of_nodes];
 
+		for (int i = 0; i < total_number_of_nodes; i++)
+			visited[i] = false;
 	}
 
 
