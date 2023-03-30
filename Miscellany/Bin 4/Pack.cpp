@@ -327,7 +327,7 @@ void mapper() {
 
 		for (int i = 0; i < total_number_of_nodes; i++) {
 
-		//  One may not specify an initializer when dynamically allocating arrays. 
+		//  C++ syntactic rule bans specifying an initializer when dynamically allocating arrays. 
 		//	LUTs[i] = NULL; 
 
 		}
