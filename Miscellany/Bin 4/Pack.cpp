@@ -15,6 +15,7 @@ void Depth_First_Search(int v, bool *visited, stack<int> &topological_Stack);
 void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv);
 void Topological_sort(stack<int> &Stack);
 void Topological_sort_2(stack<int> &Stack);
+void dismantle_forest_to_trees(stack<int> &Stack);
 
 string title;
 
@@ -37,7 +38,7 @@ list<int> *inverse_adjacency_list_of_network = NULL;
 vector<vector<int> *> trees_inverse;
 
 // Sort trees' nodes in topological order.
-vector<queue<int>> trees_sorted_order;
+vector<queue<int>> trees_topologically_sorted;
 
 vector<vertex **> trees_LUTs;
 
@@ -210,7 +211,6 @@ void Topological_sort(stack<int> &Stack) {   // [12][2]
 	for (int i = 0; i < total_number_of_nodes; i++)
 		if (visited[i] == false)
 			Depth_First_Search(i, visited, Stack);
-
 }
 
 
@@ -225,8 +225,13 @@ void Topological_sort_2(stack<int> &Stack) {   // [12][3]
 	for (int i = 1; i <= total_number_of_nodes; i++)
 		if (visited[i] == false)
 			Depth_First_Search(i, visited, Stack);
+}
+
+
+void dismantle_forest_to_trees(stack<int> &Stack) {
 
 }
+
 
 
 /*
