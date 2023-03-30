@@ -275,11 +275,11 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 
 		//	vector<int> tree_inv[total_number_of_nodes];
 
-		vector<int> *tree_inv = new vector<int>[total_number_of_nodes];
+		vector<int> *tree_inv = new vector<int>[total_number_of_nodes + 1];
 
 		queue<int> tree_sort_order;
 
-		bool *visited = new bool[total_number_of_nodes];
+		bool *visited = new bool[total_number_of_nodes + 1];
 
 	}
 
