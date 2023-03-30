@@ -376,9 +376,11 @@ void mapper3() {
 	for (int i = 0; i < number_of_trees; i++)
 	{
 
-		Look_Up_Table **LUTs = new Look_Up_Table*[total_number_of_nodes];
+		Look_Up_Table **LUTs = new Look_Up_Table*[total_number_of_nodes + 1];
 
 
+		for (int i = 0; i <= total_number_of_nodes; i++)
+			LUTs[i] = NULL;
 	}
 }
 
