@@ -261,6 +261,8 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 
 		trees_inverse.push_back(tree_inv);
 		trees_topologically_sorted.push_back(tree_sort_order);
+
+
 	}
 
 
@@ -296,6 +298,8 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 
 		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv);
 
+		trees_inverse.push_back(tree_inv);
+		trees_topologically_sorted.push_back(tree_sort_order);
 
 
 	}
