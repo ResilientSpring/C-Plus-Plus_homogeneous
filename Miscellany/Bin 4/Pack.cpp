@@ -16,6 +16,7 @@ void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<
 void Topological_sort(stack<int> &Stack);
 void Topological_sort_2(stack<int> &Stack);
 void dismantle_forest_to_trees(stack<int> &Stack);
+void dismantle_forest_to_trees_2(stack<int> &Stack);
 
 string title;
 
@@ -161,7 +162,7 @@ void Depth_First_Search(int v, bool *visited, stack<int> &Stack) {
 
 }
 
-
+// DFS from primary output to primary input
 void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv) {
 
 	// Mark the current node as visited.
@@ -243,14 +244,70 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 
 			continue;
 
+	//	vector<int> tree_inv[total_number_of_nodes];
+
+		vector<int> *tree_inv = new vector<int>[total_number_of_nodes];
+
+		queue<int> tree_sort_order;
 
 
+		// Topological srot starting from primary outputs to primary inputs.
+		bool *visited = new bool[total_number_of_nodes];
+
+		for (int i = 0; i < total_number_of_nodes; i++)
+			visited[i] = false;
+
+		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv);
+
+		trees_inverse.push_back(tree_inv);
+		trees_topologically_sorted.push_back(tree_sort_order);
+
+
+		inverse_adjacency_list_of_network[node].clear();
 
 	}
 
 
 }
 
+
+void dismantle_forest_to_trees_2(stack<int> &Stack) {
+
+	while (!Stack.empty())
+	{
+		int node = Stack.top();
+		Stack.pop();
+
+		// If the node taken from the top of stack is found to be a primary input, or 
+		// not a primary output and has fanout node fewer than 2.
+		if (primary_inputs.find(node) != primary_inputs.end() or
+			(primary_outputs.find(node) == primary_outputs.end() &&
+				adjacency_list_of_network[node].size() < 2))
+
+			continue;
+
+		//	vector<int> tree_inv[total_number_of_nodes];
+
+		vector<int> *tree_inv = new vector<int>[total_number_of_nodes + 1];
+
+		queue<int> tree_sort_order;
+
+		// Topological srot starting from primary outputs to primary inputs.
+		bool *visited = new bool[total_number_of_nodes + 1];
+
+		for (int i = 0; i <= total_number_of_nodes; i++)
+			visited[i] = false;
+
+		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv);
+
+		trees_inverse.push_back(tree_inv);
+		trees_topologically_sorted.push_back(tree_sort_order);
+
+		inverse_adjacency_list_of_network[node].clear();
+	}
+
+
+}
 
 
 /*
