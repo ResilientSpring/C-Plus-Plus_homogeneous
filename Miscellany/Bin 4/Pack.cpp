@@ -230,6 +230,22 @@ void Topological_sort_2(stack<int> &Stack) {   // [12][3]
 
 void dismantle_forest_to_trees(stack<int> &Stack) {
 
+	while (! Stack.empty())
+	{
+		int node = Stack.top();
+		Stack.pop();
+
+
+
+
+
+
+
+
+
+	}
+
+
 }
 
 
