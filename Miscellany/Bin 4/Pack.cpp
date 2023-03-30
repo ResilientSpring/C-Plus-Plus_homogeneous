@@ -199,7 +199,7 @@ void Topological_sort() {   // [12]
 */
 
 
-void Topological_sort(stack<int> &Stack) {   // [12]
+void Topological_sort(stack<int> &Stack) {   // [12][2]
 
 	// Mark all vertices as not visited.
 	bool *visited = new bool[total_number_of_nodes];
@@ -214,7 +214,7 @@ void Topological_sort(stack<int> &Stack) {   // [12]
 }
 
 
-void Topological_sort_2(stack<int> &Stack) {   // [12]
+void Topological_sort_2(stack<int> &Stack) {   // [12][3]
 
 	// Mark all vertices as not visited.
 	bool *visited = new bool[total_number_of_nodes + 1];
