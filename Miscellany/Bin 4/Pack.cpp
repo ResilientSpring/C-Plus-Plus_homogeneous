@@ -250,10 +250,16 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 
 		queue<int> tree_sort_order;
 
+
+		// Topological srot starting from primary outputs to primary inputs.
 		bool *visited = new bool[total_number_of_nodes];
 
 		for (int i = 0; i < total_number_of_nodes; i++)
 			visited[i] = false;
+
+		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv);
+
+
 	}
 
 
@@ -281,7 +287,15 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 
 		queue<int> tree_sort_order;
 
+		// Topological srot starting from primary outputs to primary inputs.
 		bool *visited = new bool[total_number_of_nodes + 1];
+
+		for (int i = 0; i <= total_number_of_nodes; i++)
+			visited[i] = false;
+
+		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv);
+
+
 
 	}
 
