@@ -324,6 +324,8 @@ void mapper() {
 		Look_Up_Table *LUTs = new Look_Up_Table[total_number_of_nodes];
 		
 
+		for (int i = 0; i < total_number_of_nodes; i++)
+			LUTs[i] = NULL;
 	}
 }
 
