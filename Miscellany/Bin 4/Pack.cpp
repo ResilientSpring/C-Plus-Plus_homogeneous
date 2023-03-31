@@ -11,7 +11,7 @@
 #include <stack>
 using namespace std;
 
-void Depth_First_Search(int v, bool *visited, stack<int> &topological_Stack);
+void Depth_First_Search(int v, bool *visited, stack<int> &Stack);
 void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv);
 void Topological_sort(stack<int> &Stack);
 void Topological_sort_2(stack<int> &Stack);
