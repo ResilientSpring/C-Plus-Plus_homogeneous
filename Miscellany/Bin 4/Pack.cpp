@@ -349,6 +349,9 @@ void mapper1() {
 
 		for (int i = 0; i < total_number_of_nodes; i++)
 			LUTs[i] = NULL;
+
+
+		queue<int> 
 	}
 }
 
