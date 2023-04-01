@@ -11,7 +11,7 @@
 #include <stack>
 using namespace std;
 
-void Depth_First_Search(int v, bool *visited, stack<int> &topological_Stack);
+void Depth_First_Search(int v, bool *visited, stack<int> &Stack);
 void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv);
 void Topological_sort(stack<int> &Stack);
 void Topological_sort_2(stack<int> &Stack);
@@ -248,6 +248,8 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 
 			continue;
 
+	//  Visual Studio disapproves of static declaration of variable-length array.
+	// 
 	//	vector<int> tree_inv[total_number_of_nodes];
 
 		vector<int> *tree_inv = new vector<int>[total_number_of_nodes];
@@ -327,7 +329,7 @@ void mapper() {
 
 		for (int i = 0; i < total_number_of_nodes; i++) {
 
-		//  One may not specify an initializer when dynamically allocating arrays. 
+		//  C++ syntactic rule bans specifying an initializer when dynamically allocating arrays. 
 		//	LUTs[i] = NULL; 
 
 		}
@@ -349,6 +351,9 @@ void mapper1() {
 
 		for (int i = 0; i < total_number_of_nodes; i++)
 			LUTs[i] = NULL;
+
+
+		queue<int> 
 	}
 }
 
