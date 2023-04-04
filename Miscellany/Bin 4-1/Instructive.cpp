@@ -301,6 +301,8 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 		vector<int> tree_inv[10];
 		// vector<int> *tree_inv = new vector<int>[total_number_of_nodes + 1];
 
+		// tree_inv[0].push_back();  So, vector<int> tree_inv[10]; is clearly an array of vector<int>.
+
 		queue<int> tree_sort_order;
 
 		// Topological srot starting from primary outputs to primary inputs.
