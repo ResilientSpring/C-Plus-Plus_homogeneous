@@ -205,7 +205,7 @@ void Topological_sort() {   // [12]
 */
 
 
-void Topological_sort(stack<int> &Stack) {   // [12][2]
+void Topological_sort(stack<int> &Stack) {   // [12][2] [Note2]
 
 	// Mark all vertices as not visited.
 	bool *visited = new bool[total_number_of_nodes];
@@ -219,7 +219,7 @@ void Topological_sort(stack<int> &Stack) {   // [12][2]
 }
 
 
-void Topological_sort_2(stack<int> &Stack) {   // [12][3]
+void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
 
 	// Mark all vertices as not visited.
 	bool *visited = new bool[total_number_of_nodes + 1];
@@ -304,7 +304,7 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 		for (int i = 0; i <= total_number_of_nodes; i++)
 			visited[i] = false;
 
-		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv);
+		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
 
 		trees_inverse.push_back(tree_inv);
 		trees_topologically_sorted.push_back(tree_sort_order);
@@ -427,6 +427,7 @@ void mapper3() {
 * 12. https://archive.is/DQbVo
 * 13. https://en.wikipedia.org/wiki/Depth-first_search#Applications
 * 14. https://en.wikipedia.org/wiki/Component_(graph_theory)#Definitions_and_examples
+* 15. https://en.wikipedia.org/wiki/Depth-first_search#Vertex_orderings
 
 */
 
@@ -435,5 +436,6 @@ void mapper3() {
  1. Application of the depth-first search in finding connected components.[13] 
     In a forest, every component is a tree. [14]
 
+ 2. "Reverse postordering produces a topological sorting of any directed acyclic graph." [15]
 
 */
