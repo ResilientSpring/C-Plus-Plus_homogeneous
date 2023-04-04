@@ -233,7 +233,7 @@ void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
 }
 
 
-// Identifying the nodes within the DAG that have an outdegree greater than one, and using 
+// Identifying the nodes within the DAG that have an out-degree greater than one, and using 
 // these nodes as 'breaking points'. [16]
 void dismantle_forest_to_trees(stack<int> &Stack) {
 
