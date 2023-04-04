@@ -280,6 +280,8 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 }
 
 
+// Each node in the tree can be connected to many children (depending on the type of tree), 
+// but must be connected to exactly one parent. [17]
 void dismantle_forest_to_trees_2(stack<int> &Stack) {
 
 	while (!Stack.empty())
@@ -432,6 +434,7 @@ void mapper3() {
 * 14. https://en.wikipedia.org/wiki/Component_(graph_theory)#Definitions_and_examples
 * 15. https://en.wikipedia.org/wiki/Depth-first_search#Vertex_orderings
 * 16. https://janders.eecg.utoronto.ca/pdfs/dac98.pdf (Technology Mapping for Large Complex PLDs)
+* 17. https://en.wikipedia.org/wiki/Tree_(data_structure) 
 
 */
 
