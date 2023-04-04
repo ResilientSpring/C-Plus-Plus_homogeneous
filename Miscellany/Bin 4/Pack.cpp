@@ -395,8 +395,14 @@ void mapper3() {
 			LUTs[i] = NULL;
 
 
-		queue<int> *Queue = &trees_topologically_sorted[i];
+		queue<int> Queue = trees_topologically_sorted[i];
+//		queue<int> *Queue = &trees_topologically_sorted[i];
 		vector<int> *tree_inv = trees_inverse[i];
+
+		while (!Queue.empty())
+		{
+
+		}
 	}
 }
 
