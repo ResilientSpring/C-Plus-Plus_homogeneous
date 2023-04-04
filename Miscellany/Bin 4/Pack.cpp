@@ -353,7 +353,7 @@ void mapper1() {
 			LUTs[i] = NULL;
 
 
-		queue<int> 
+		queue<int> *Queue = &trees_topologically_sorted[i];
 	}
 }
 
