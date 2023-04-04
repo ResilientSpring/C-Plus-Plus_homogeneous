@@ -314,6 +314,7 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
 
 		trees_inverse.push_back(tree_inv);  // It expects a vector, but is fed with an array (of vector).
+		trees_inverse.push_back(tree_inv[0]);
 		trees_topologically_sorted.push_back(tree_sort_order);
 
 		inverse_adjacency_list_of_network[node].clear();
