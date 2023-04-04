@@ -402,7 +402,8 @@ void mapper3() {
 
 		while (!Queue.empty())
 		{
-
+			int node = Queue.front();
+			Queue.pop();
 		}
 	}
 }
