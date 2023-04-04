@@ -258,6 +258,12 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 		vector<int> *tree_inv;
 		tree_inv = new vector<int>[total_number_of_nodes];
 
+		tree_inv[0].push_back(2);
+		tree_inv->push_back(3);
+
+		for (int i = 0; i < tree_inv->size(); i++)
+			cout << tree_inv[i];
+
 		queue<int> tree_sort_order;
 
 
