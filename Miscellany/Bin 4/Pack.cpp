@@ -439,3 +439,10 @@ void mapper3() {
  2. "Reverse postordering produces a topological sorting of any directed acyclic graph." [15]
 
 */
+
+/* Further reading
+
+1. 3.1.1 Tree-based matching (https://web.archive.org/web/20230404084740/https://si2.epfl.ch/~demichel/publications/archive/1991/ACTRSA91pg580.pdf)
+2. Tree matching (https://web.archive.org/web/20230404083129/https://ocw.snu.ac.kr/sites/default/files/NOTE/1741.pdf)
+
+*/
