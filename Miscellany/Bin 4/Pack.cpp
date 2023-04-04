@@ -353,7 +353,15 @@ void mapper1() {
 			LUTs[i] = NULL;
 
 
-		queue<int> 
+		queue<int> Queue = trees_topologically_sorted[i];
+//		queue<int> *Queue = &trees_topologically_sorted[i];
+		vector<int> *tree_inv = trees_inverse[i];
+
+		while (!Queue.empty())
+		{
+			int node = Queue.front();
+			Queue.pop();
+		}
 	}
 }
 
@@ -386,6 +394,17 @@ void mapper3() {
 
 		for (int i = 0; i <= total_number_of_nodes; i++)
 			LUTs[i] = NULL;
+
+
+		queue<int> Queue = trees_topologically_sorted[i];
+//		queue<int> *Queue = &trees_topologically_sorted[i];
+		vector<int> *tree_inv = trees_inverse[i];
+
+		while (!Queue.empty())
+		{
+			int node = Queue.front();
+			Queue.pop();
+		}
 	}
 }
 
