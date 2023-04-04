@@ -205,7 +205,7 @@ void Topological_sort() {   // [12]
 */
 
 
-void Topological_sort(stack<int> &Stack) {   // [12][2]
+void Topological_sort(stack<int> &Stack) {   // [12][2] [Note2]
 
 	// Mark all vertices as not visited.
 	bool *visited = new bool[total_number_of_nodes];
@@ -219,7 +219,7 @@ void Topological_sort(stack<int> &Stack) {   // [12][2]
 }
 
 
-void Topological_sort_2(stack<int> &Stack) {   // [12][3]
+void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
 
 	// Mark all vertices as not visited.
 	bool *visited = new bool[total_number_of_nodes + 1];
@@ -263,7 +263,7 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 		for (int i = 0; i < total_number_of_nodes; i++)
 			visited[i] = false;
 
-		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv);
+		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
 
 		trees_inverse.push_back(tree_inv);
 		trees_topologically_sorted.push_back(tree_sort_order);
@@ -304,7 +304,7 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 		for (int i = 0; i <= total_number_of_nodes; i++)
 			visited[i] = false;
 
-		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv);
+		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
 
 		trees_inverse.push_back(tree_inv);
 		trees_topologically_sorted.push_back(tree_sort_order);
@@ -400,7 +400,7 @@ void mapper3() {
 //		queue<int> *Queue = &trees_topologically_sorted[i];
 		vector<int> *tree_inv = trees_inverse[i];
 
-		while (!Queue.empty())
+		while (Queue.empty() == true)
 		{
 			int node = Queue.front();
 			Queue.pop();
@@ -425,5 +425,24 @@ void mapper3() {
 * 10. https://github.com/rushhuang/NTHU_ALS_Final/blob/main/LEDA/map.cpp
 * 11. https://stackoverflow.com/questions/5590381/easiest-way-to-convert-int-to-string-in-c
 * 12. https://archive.is/DQbVo
+* 13. https://en.wikipedia.org/wiki/Depth-first_search#Applications
+* 14. https://en.wikipedia.org/wiki/Component_(graph_theory)#Definitions_and_examples
+* 15. https://en.wikipedia.org/wiki/Depth-first_search#Vertex_orderings
+
+*/
+
+/* Notes
+ 
+ 1. Application of the depth-first search in finding connected components.[13] 
+    In a forest, every component is a tree. [14]
+
+ 2. "Reverse postordering produces a topological sorting of any directed acyclic graph." [15]
+
+*/
+
+/* Further reading
+
+1. 3.1.1 Tree-based matching (https://web.archive.org/web/20230404084740/https://si2.epfl.ch/~demichel/publications/archive/1991/ACTRSA91pg580.pdf)
+2. Tree matching (https://web.archive.org/web/20230404083129/https://ocw.snu.ac.kr/sites/default/files/NOTE/1741.pdf)
 
 */
