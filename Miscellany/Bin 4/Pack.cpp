@@ -233,6 +233,8 @@ void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
 }
 
 
+// Identifying the nodes within the DAG that have an outdegree greater than one, and using 
+// these nodes as 'breaking points'. [16]
 void dismantle_forest_to_trees(stack<int> &Stack) {
 
 	while (! Stack.empty())
@@ -429,6 +431,7 @@ void mapper3() {
 * 13. https://en.wikipedia.org/wiki/Depth-first_search#Applications
 * 14. https://en.wikipedia.org/wiki/Component_(graph_theory)#Definitions_and_examples
 * 15. https://en.wikipedia.org/wiki/Depth-first_search#Vertex_orderings
+* 16. https://janders.eecg.utoronto.ca/pdfs/dac98.pdf (Technology Mapping for Large Complex PLDs)
 
 */
 
