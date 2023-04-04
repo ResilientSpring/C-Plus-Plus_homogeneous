@@ -354,6 +354,7 @@ void mapper1() {
 
 
 		queue<int> *Queue = &trees_topologically_sorted[i];
+		vector<int> *tree_inv = trees_inverse[i];
 	}
 }
 
@@ -389,6 +390,7 @@ void mapper3() {
 
 
 		queue<int> *Queue = &trees_topologically_sorted[i];
+		vector<int> *tree_inv = trees_inverse[i];
 	}
 }
 
