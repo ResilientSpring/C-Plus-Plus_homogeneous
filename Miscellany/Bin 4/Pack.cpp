@@ -233,6 +233,8 @@ void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
 }
 
 
+// Identifying the nodes within the DAG that have an outdegree greater than one, and using 
+// these nodes as 'breaking points'. [16]
 void dismantle_forest_to_trees(stack<int> &Stack) {
 
 	while (! Stack.empty())
@@ -252,7 +254,8 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 	// 
 	//	vector<int> tree_inv[total_number_of_nodes];
 
-		vector<int> *tree_inv = new vector<int>[total_number_of_nodes];
+		vector<int> *tree_inv;
+		tree_inv = new vector<int>[total_number_of_nodes];
 
 		queue<int> tree_sort_order;
 
@@ -277,6 +280,8 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 }
 
 
+// Each node in the tree can be connected to many children (depending on the type of tree), 
+// but must be connected to exactly one parent. [17]
 void dismantle_forest_to_trees_2(stack<int> &Stack) {
 
 	while (!Stack.empty())
@@ -293,7 +298,6 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 			continue;
 
 		//	vector<int> tree_inv[total_number_of_nodes];
-
 		vector<int> *tree_inv = new vector<int>[total_number_of_nodes + 1];
 
 		queue<int> tree_sort_order;
@@ -356,6 +360,7 @@ void mapper1() {
 		queue<int> Queue = trees_topologically_sorted[i];
 //		queue<int> *Queue = &trees_topologically_sorted[i];
 		vector<int> *tree_inv = trees_inverse[i];
+//		vector<int> tree_inverted = trees_inverse[i];
 
 		while (!Queue.empty())
 		{
@@ -428,6 +433,8 @@ void mapper3() {
 * 13. https://en.wikipedia.org/wiki/Depth-first_search#Applications
 * 14. https://en.wikipedia.org/wiki/Component_(graph_theory)#Definitions_and_examples
 * 15. https://en.wikipedia.org/wiki/Depth-first_search#Vertex_orderings
+* 16. https://janders.eecg.utoronto.ca/pdfs/dac98.pdf (Technology Mapping for Large Complex PLDs)
+* 17. https://en.wikipedia.org/wiki/Tree_(data_structure) 
 
 */
 
