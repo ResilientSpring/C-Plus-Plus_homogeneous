@@ -386,6 +386,9 @@ void mapper3() {
 
 		for (int i = 0; i <= total_number_of_nodes; i++)
 			LUTs[i] = NULL;
+
+
+		queue<int> *Queue = &trees_topologically_sorted[i];
 	}
 }
 
