@@ -7,7 +7,7 @@
 #include <algorithm>
 using namespace std;
 
-void show(const char* message, vector<int> vect);
+void show(const char *message, vector<int> vect);
 
 int main() {
 
@@ -44,7 +44,7 @@ int main() {
 
 // Display the contents of a vector<int>.
 void show(const char *message, vector<int> vect) {
-	
+
 	vector<int>::iterator itr;
 
 	cout << message << endl;

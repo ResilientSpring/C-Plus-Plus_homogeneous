@@ -40,7 +40,8 @@ list<int> *adjacency_list_of_network;
 list<int> *inverse_adjacency_list_of_network = NULL;
 
 // Cut trees from forest.
-vector<vector<int> *> trees_inverse;
+//vector<vector<int> *> trees_inverse;
+vector<vector<int> > trees_inverse;
 
 // Sort trees' nodes in topological order.
 vector<queue<int>> trees_topologically_sorted;
@@ -237,7 +238,7 @@ void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
 // these nodes as 'breaking points'. [16]
 void dismantle_forest_to_trees(stack<int> &Stack) {
 
-	while (! Stack.empty())
+	while (!Stack.empty())
 	{
 		int node = Stack.top();
 		Stack.pop();
@@ -250,9 +251,9 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 
 			continue;
 
-	//  Visual Studio disapproves of static declaration of variable-length array.
-	// 
-	//	vector<int> tree_inv[total_number_of_nodes];
+		//  Visual Studio disapproves of static declaration of variable-length array.
+		// 
+		//	vector<int> tree_inv[total_number_of_nodes];
 
 		vector<int> *tree_inv;
 		tree_inv = new vector<int>[total_number_of_nodes];
@@ -297,8 +298,10 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 
 			continue;
 
-		//	vector<int> tree_inv[total_number_of_nodes];
-		vector<int> *tree_inv = new vector<int>[total_number_of_nodes + 1];
+		vector<int> tree_inv[10];
+		// vector<int> *tree_inv = new vector<int>[total_number_of_nodes + 1];
+
+		// tree_inv[0].push_back();  So, vector<int> tree_inv[10]; is clearly an array of vector<int>.
 
 		queue<int> tree_sort_order;
 
@@ -310,7 +313,8 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 
 		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
 
-		trees_inverse.push_back(tree_inv);
+		trees_inverse.push_back(tree_inv);  // It expects a vector, but is fed with an array (of vector).
+		trees_inverse.push_back(tree_inv[0]);
 		trees_topologically_sorted.push_back(tree_sort_order);
 
 		inverse_adjacency_list_of_network[node].clear();
@@ -329,15 +333,15 @@ void mapper() {
 	{
 
 		Look_Up_Table *LUTs = new Look_Up_Table[total_number_of_nodes];
-		
+
 
 		for (int i = 0; i < total_number_of_nodes; i++) {
 
-		//  C++ syntactic rule bans specifying an initializer when dynamically allocating arrays. 
-		//	LUTs[i] = NULL; 
+			//  C++ syntactic rule bans specifying an initializer when dynamically allocating arrays. 
+			//	LUTs[i] = NULL; 
 
 		}
-			
+
 	}
 }
 
@@ -350,7 +354,7 @@ void mapper1() {
 	for (int i = 0; i < number_of_trees; i++)
 	{
 
-		Look_Up_Table **LUTs = new Look_Up_Table*[total_number_of_nodes];
+		Look_Up_Table **LUTs = new Look_Up_Table * [total_number_of_nodes];
 
 
 		for (int i = 0; i < total_number_of_nodes; i++)
@@ -358,9 +362,9 @@ void mapper1() {
 
 
 		queue<int> Queue = trees_topologically_sorted[i];
-//		queue<int> *Queue = &trees_topologically_sorted[i];
+		//		queue<int> *Queue = &trees_topologically_sorted[i];
 		vector<int> *tree_inv = trees_inverse[i];
-//		vector<int> tree_inverted = trees_inverse[i];
+		//		vector<int> tree_inverted = trees_inverse[i];
 
 		while (!Queue.empty())
 		{
@@ -394,7 +398,7 @@ void mapper3() {
 	for (int i = 0; i < number_of_trees; i++)
 	{
 
-		Look_Up_Table **LUTs = new Look_Up_Table*[total_number_of_nodes + 1];
+		Look_Up_Table **LUTs = new Look_Up_Table * [total_number_of_nodes + 1];
 
 
 		for (int i = 0; i <= total_number_of_nodes; i++)
@@ -402,7 +406,7 @@ void mapper3() {
 
 
 		queue<int> Queue = trees_topologically_sorted[i];
-//		queue<int> *Queue = &trees_topologically_sorted[i];
+		//		queue<int> *Queue = &trees_topologically_sorted[i];
 		vector<int> *tree_inv = trees_inverse[i];
 
 		while (Queue.empty() == true)
@@ -434,14 +438,14 @@ void mapper3() {
 * 14. https://en.wikipedia.org/wiki/Component_(graph_theory)#Definitions_and_examples
 * 15. https://en.wikipedia.org/wiki/Depth-first_search#Vertex_orderings
 * 16. https://janders.eecg.utoronto.ca/pdfs/dac98.pdf (Technology Mapping for Large Complex PLDs)
-* 17. https://en.wikipedia.org/wiki/Tree_(data_structure) 
+* 17. https://en.wikipedia.org/wiki/Tree_(data_structure)
 
 */
 
 /* Notes
- 
- 1. Application of the depth-first search in finding connected components.[13] 
-    In a forest, every component is a tree. [14]
+
+ 1. Application of the depth-first search in finding connected components.[13]
+	In a forest, every component is a tree. [14]
 
  2. "Reverse postordering produces a topological sorting of any directed acyclic graph." [15]
 
