@@ -15,15 +15,16 @@ void Depth_First_Search(int v, bool *visited, stack<int> &Stack);
 void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv);
 void Topological_sort(stack<int> &Stack);
 void Topological_sort_2(stack<int> &Stack);
+void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int> *tree_inv);
+void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<int> *tree_inv);
 void dismantle_forest_to_trees(stack<int> &Stack);
 void dismantle_forest_to_trees_2(stack<int> &Stack);
 void dismantle_forest_to_trees_3(stack<int> &Stack);
+void dismantle_forest_to_trees_4(stack<int> &Stack);
 void mapper();
 void mapper1();
 void mapper2();
 void mapper3();
-void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int> *tree_inv);
-void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<int> *tree_inv);
 
 string title;
 
