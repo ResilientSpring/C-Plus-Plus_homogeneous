@@ -12,9 +12,9 @@
 using namespace std;
 
 void Depth_First_Search(int v, bool *visited, stack<int> &Stack);
-void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv);
 void Topological_sort(stack<int> &Stack);
 void Topological_sort_2(stack<int> &Stack);
+void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv);
 void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int> *tree_inv);
 void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<int> *tree_inv);
 void dismantle_forest_to_trees(stack<int> &Stack);
@@ -46,8 +46,8 @@ list<int> *inverse_adjacency_list_of_network = NULL;
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
 
-// Sort trees' nodes in topological order.
-vector<queue<int>> trees_topologically_sorted;
+// Sort each tree's internal nodes in topological order.
+vector<queue<int>> topologically_sorted_nodes_in_a_tree;
 
 vector<vertex **> trees_LUTs;
 
@@ -249,7 +249,7 @@ void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int>
 	Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1] [Note3] [Note4]
 
 	trees_inverse.push_back(tree_inv);
-	trees_topologically_sorted.push_back(tree_sort_order);
+	topologically_sorted_nodes_in_a_tree.push_back(tree_sort_order);
 
 
 	inverse_adjacency_list_of_network[node].clear();
@@ -267,7 +267,7 @@ void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<in
 	Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1] [Note3] [Note4]
 
 	trees_inverse.push_back(tree_inv);
-	trees_topologically_sorted.push_back(tree_sort_order);
+	topologically_sorted_nodes_in_a_tree.push_back(tree_sort_order);
 
 
 	inverse_adjacency_list_of_network[node].clear();
@@ -310,7 +310,7 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
 
 		trees_inverse.push_back(tree_inv);
-		trees_topologically_sorted.push_back(tree_sort_order);
+		topologically_sorted_nodes_in_a_tree.push_back(tree_sort_order);
 
 
 		inverse_adjacency_list_of_network[node].clear();
@@ -352,7 +352,7 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
 
 		trees_inverse.push_back(tree_inv);
-		trees_topologically_sorted.push_back(tree_sort_order);
+		topologically_sorted_nodes_in_a_tree.push_back(tree_sort_order);
 
 		inverse_adjacency_list_of_network[node].clear();
 	}
@@ -457,14 +457,14 @@ void mapper1() {
 			LUTs[i] = NULL;
 
 
-		queue<int> Queue = trees_topologically_sorted[i];
+		queue<int> Queue = topologically_sorted_nodes_in_a_tree[i];
 //		queue<int> *Queue = &trees_topologically_sorted[i];
-		vector<int> *tree_inv = trees_inverse[i];         // tree_inv is declared as an array of int vector.
+		vector<int> *tree_inv = trees_inverse[i];  // tree_inv is declared as an array of int vector (trees).
 //		vector<int> tree_inverted = trees_inverse[i];
 
 		while (!Queue.empty())
 		{
-			int node = Queue.front();
+			int node = Queue.front();  // A tree's first node (b/c queue follows FIFO) in topological order.
 			Queue.pop();
 
 			if (tree_inv[node].empty())
@@ -507,7 +507,7 @@ void mapper3() {
 			LUTs[i] = NULL;
 
 
-		queue<int> Queue = trees_topologically_sorted[i];
+		queue<int> Queue = topologically_sorted_nodes_in_a_tree[i];
 //		queue<int> *Queue = &trees_topologically_sorted[i];
 		vector<int> *tree_inv = trees_inverse[i];
 
@@ -543,6 +543,7 @@ void mapper3() {
 * 17. https://en.wikipedia.org/wiki/Tree_(data_structure) 
 * 18. https://stackoverflow.com/questions/12373495/relationship-between-bfs-and-topological-sort
 * 19. https://stackoverflow.com/questions/30869987/topological-order-using-bfs
+* 20. https://stackoverflow.com/questions/25229624/using-bfs-for-topological-sort
 
 */
 
@@ -557,6 +558,12 @@ void mapper3() {
 
  4. "With the algorithm you proposed, node D would come before node C, which is clearly not a topological order. 
     You really have to use DFS." [19]
+
+ 5. "Kahn's algorithm works with any graph traversal, including BFS or DFS. Tarjan's algorithm, 
+     which is now the most well known, uses a "reverse DFS postorder" traversal of the graph. 
+	 Postorder means you add a node to the list after visiting its children. 
+	 Since you don't keep track of this when you conduct BFS (instead, you just append to a queue), 
+	 you need to use DFS for Tarjan's algorithm." [20]
 
 */
 
