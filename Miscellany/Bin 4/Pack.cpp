@@ -47,7 +47,7 @@ list<int> *inverse_adjacency_list_of_network = NULL;
 vector<vector<int> *> trees_inverse;
 
 // Sort each tree's internal nodes in topological order.
-vector<queue<int>> trees_topologically_sorted;
+vector<queue<int>> topologically_sorted_nodes_in_a_tree;
 
 vector<vertex **> trees_LUTs;
 
@@ -249,7 +249,7 @@ void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int>
 	Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1] [Note3] [Note4]
 
 	trees_inverse.push_back(tree_inv);
-	trees_topologically_sorted.push_back(tree_sort_order);
+	topologically_sorted_nodes_in_a_tree.push_back(tree_sort_order);
 
 
 	inverse_adjacency_list_of_network[node].clear();
@@ -267,7 +267,7 @@ void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<in
 	Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1] [Note3] [Note4]
 
 	trees_inverse.push_back(tree_inv);
-	trees_topologically_sorted.push_back(tree_sort_order);
+	topologically_sorted_nodes_in_a_tree.push_back(tree_sort_order);
 
 
 	inverse_adjacency_list_of_network[node].clear();
@@ -310,7 +310,7 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
 
 		trees_inverse.push_back(tree_inv);
-		trees_topologically_sorted.push_back(tree_sort_order);
+		topologically_sorted_nodes_in_a_tree.push_back(tree_sort_order);
 
 
 		inverse_adjacency_list_of_network[node].clear();
@@ -352,7 +352,7 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
 
 		trees_inverse.push_back(tree_inv);
-		trees_topologically_sorted.push_back(tree_sort_order);
+		topologically_sorted_nodes_in_a_tree.push_back(tree_sort_order);
 
 		inverse_adjacency_list_of_network[node].clear();
 	}
@@ -457,7 +457,7 @@ void mapper1() {
 			LUTs[i] = NULL;
 
 
-		queue<int> Queue = trees_topologically_sorted[i];
+		queue<int> Queue = topologically_sorted_nodes_in_a_tree[i];
 //		queue<int> *Queue = &trees_topologically_sorted[i];
 		vector<int> *tree_inv = trees_inverse[i];         // tree_inv is declared as an array of int vector.
 //		vector<int> tree_inverted = trees_inverse[i];
@@ -507,7 +507,7 @@ void mapper3() {
 			LUTs[i] = NULL;
 
 
-		queue<int> Queue = trees_topologically_sorted[i];
+		queue<int> Queue = topologically_sorted_nodes_in_a_tree[i];
 //		queue<int> *Queue = &trees_topologically_sorted[i];
 		vector<int> *tree_inv = trees_inverse[i];
 
