@@ -21,6 +21,8 @@ void mapper();
 void mapper1();
 void mapper2();
 void mapper3();
+void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int> *tree_inv);
+void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<int> *tree_inv);
 
 string title;
 
@@ -230,6 +232,43 @@ void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
 	for (int i = 1; i <= total_number_of_nodes; i++)
 		if (visited[i] == false)
 			Depth_First_Search(i, visited, Stack);
+}
+
+
+// Topological srot starting from primary outputs to primary inputs.
+void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int> *tree_inv) {
+
+	bool *visited = new bool[total_number_of_nodes];
+
+	for (int i = 0; i < total_number_of_nodes; i++)
+		visited[i] = false;
+
+
+	Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
+
+	trees_inverse.push_back(tree_inv);
+	trees_topologically_sorted.push_back(tree_sort_order);
+
+
+	inverse_adjacency_list_of_network[node].clear();
+}
+
+// Topological srot starting from primary outputs to primary inputs.
+void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<int> *tree_inv) {
+
+	bool *visited = new bool[total_number_of_nodes + 1];
+
+	for (int i = 0; i <= total_number_of_nodes; i++)
+		visited[i] = false;
+
+
+	Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
+
+	trees_inverse.push_back(tree_inv);
+	trees_topologically_sorted.push_back(tree_sort_order);
+
+
+	inverse_adjacency_list_of_network[node].clear();
 }
 
 
