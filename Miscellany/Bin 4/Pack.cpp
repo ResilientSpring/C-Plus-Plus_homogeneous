@@ -246,7 +246,7 @@ void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int>
 		visited[i] = false;
 
 
-	Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
+	Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1] [Note3] [Note4]
 
 	trees_inverse.push_back(tree_inv);
 	trees_topologically_sorted.push_back(tree_sort_order);
@@ -264,7 +264,7 @@ void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<in
 		visited[i] = false;
 
 
-	Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
+	Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1] [Note3] [Note4]
 
 	trees_inverse.push_back(tree_inv);
 	trees_topologically_sorted.push_back(tree_sort_order);
@@ -541,6 +541,8 @@ void mapper3() {
 * 15. https://en.wikipedia.org/wiki/Depth-first_search#Vertex_orderings
 * 16. https://janders.eecg.utoronto.ca/pdfs/dac98.pdf (Technology Mapping for Large Complex PLDs)
 * 17. https://en.wikipedia.org/wiki/Tree_(data_structure) 
+* 18. https://stackoverflow.com/questions/12373495/relationship-between-bfs-and-topological-sort
+* 19. https://stackoverflow.com/questions/30869987/topological-order-using-bfs
 
 */
 
@@ -550,6 +552,11 @@ void mapper3() {
     In a forest, every component is a tree. [14]
 
  2. "Reverse postordering produces a topological sorting of any directed acyclic graph." [15]
+
+ 3. Topological sort can be done using both a DFS(having edges reversed) and also using a queue. [18]
+
+ 4. "With the algorithm you proposed, node D would come before node C, which is clearly not a topological order. 
+    You really have to use DFS." [19]
 
 */
 
