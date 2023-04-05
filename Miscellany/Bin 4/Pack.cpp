@@ -15,8 +15,12 @@ void Depth_First_Search(int v, bool *visited, stack<int> &Stack);
 void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv);
 void Topological_sort(stack<int> &Stack);
 void Topological_sort_2(stack<int> &Stack);
+void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int> *tree_inv);
+void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<int> *tree_inv);
 void dismantle_forest_to_trees(stack<int> &Stack);
 void dismantle_forest_to_trees_2(stack<int> &Stack);
+void dismantle_forest_to_trees_3(stack<int> &Stack);
+void dismantle_forest_to_trees_4(stack<int> &Stack);
 void mapper();
 void mapper1();
 void mapper2();
@@ -233,6 +237,43 @@ void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
 }
 
 
+// Topological srot starting from primary outputs to primary inputs.
+void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int> *tree_inv) {
+
+	bool *visited = new bool[total_number_of_nodes];
+
+	for (int i = 0; i < total_number_of_nodes; i++)
+		visited[i] = false;
+
+
+	Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
+
+	trees_inverse.push_back(tree_inv);
+	trees_topologically_sorted.push_back(tree_sort_order);
+
+
+	inverse_adjacency_list_of_network[node].clear();
+}
+
+// Topological srot starting from primary outputs to primary inputs.
+void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<int> *tree_inv) {
+
+	bool *visited = new bool[total_number_of_nodes + 1];
+
+	for (int i = 0; i <= total_number_of_nodes; i++)
+		visited[i] = false;
+
+
+	Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
+
+	trees_inverse.push_back(tree_inv);
+	trees_topologically_sorted.push_back(tree_sort_order);
+
+
+	inverse_adjacency_list_of_network[node].clear();
+}
+
+
 // Identifying the nodes within the DAG that have an out-degree greater than one, and using 
 // these nodes as 'breaking points'. [16]
 void dismantle_forest_to_trees(stack<int> &Stack) {
@@ -320,6 +361,65 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 }
 
 
+void dismantle_forest_to_trees_3(stack<int> &Stack) {
+
+	while (!Stack.empty())
+	{
+		int node = Stack.top();
+		Stack.pop();
+
+		// If the node taken from the top of stack is found to be a primary input, or 
+		// not a primary output and has fanout node fewer than 2.
+		if (primary_inputs.find(node) != primary_inputs.end() or
+			(primary_outputs.find(node) == primary_outputs.end() &&
+				adjacency_list_of_network[node].size() < 2))
+
+			continue;
+
+		//  Visual Studio disapproves of static declaration of variable-length array.
+		// 
+		//	vector<int> tree_inv[total_number_of_nodes];
+
+		vector<int> *tree_inv;
+		tree_inv = new vector<int>[total_number_of_nodes];
+
+		queue<int> tree_sort_order;
+
+		// Topological srot starting from primary outputs to primary inputs.
+		converse_topological_sort(node, tree_sort_order, tree_inv);
+
+	}
+
+}
+
+
+void dismantle_forest_to_trees_4(stack<int> &Stack) {
+
+	while (!Stack.empty())
+	{
+		int node = Stack.top();
+		Stack.pop();
+
+		// If the node taken from the top of stack is found to be a primary input, or 
+		// not a primary output and has fanout node fewer than 2.
+		if (primary_inputs.find(node) != primary_inputs.end() or
+			(primary_outputs.find(node) == primary_outputs.end() &&
+				adjacency_list_of_network[node].size() < 2))
+
+			continue;
+
+		//	vector<int> tree_inv[total_number_of_nodes];
+		vector<int> *tree_inv = new vector<int>[total_number_of_nodes + 1];
+
+		queue<int> tree_sort_order;
+
+		// Topological srot starting from primary outputs to primary inputs.
+		converse_topological_sort_2(node, tree_sort_order, tree_inv);
+	}
+
+}
+
+
 void mapper() {
 
 	// Broken down the forest into several trees.
@@ -359,13 +459,19 @@ void mapper1() {
 
 		queue<int> Queue = trees_topologically_sorted[i];
 //		queue<int> *Queue = &trees_topologically_sorted[i];
-		vector<int> *tree_inv = trees_inverse[i];
+		vector<int> *tree_inv = trees_inverse[i];         // tree_inv is declared as an array of int vector.
 //		vector<int> tree_inverted = trees_inverse[i];
 
 		while (!Queue.empty())
 		{
 			int node = Queue.front();
 			Queue.pop();
+
+			if (tree_inv[node].empty())
+			{
+
+			}
+
 		}
 	}
 }
