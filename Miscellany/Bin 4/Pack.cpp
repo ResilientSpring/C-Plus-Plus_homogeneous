@@ -543,6 +543,7 @@ void mapper3() {
 * 17. https://en.wikipedia.org/wiki/Tree_(data_structure) 
 * 18. https://stackoverflow.com/questions/12373495/relationship-between-bfs-and-topological-sort
 * 19. https://stackoverflow.com/questions/30869987/topological-order-using-bfs
+* 20. https://stackoverflow.com/questions/25229624/using-bfs-for-topological-sort
 
 */
 
@@ -557,6 +558,12 @@ void mapper3() {
 
  4. "With the algorithm you proposed, node D would come before node C, which is clearly not a topological order. 
     You really have to use DFS." [19]
+
+ 5. "Kahn's algorithm works with any graph traversal, including BFS or DFS. Tarjan's algorithm, 
+     which is now the most well known, uses a "reverse DFS postorder" traversal of the graph. 
+	 Postorder means you add a node to the list after visiting its children. 
+	 Since you don't keep track of this when you conduct BFS (instead, you just append to a queue), 
+	 you need to use DFS for Tarjan's algorithm." [20]
 
 */
 
