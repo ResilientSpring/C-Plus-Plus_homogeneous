@@ -2,6 +2,8 @@
 #include <vector>
 using namespace std;
 
+void show(vector<int> v);
+
 int main() {
 
 	vector<int> v();   // An empty vector.
@@ -9,7 +11,7 @@ int main() {
 
 	vector<int> v3(5, 3);   // Constructs a vector that has 5 elements with the value of 3.
 
-
+	show(v3);
 
 }
 
