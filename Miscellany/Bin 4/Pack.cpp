@@ -366,6 +366,12 @@ void mapper1() {
 		{
 			int node = Queue.front();
 			Queue.pop();
+
+			if (tree_inv[node].empty())
+			{
+
+			}
+
 		}
 	}
 }
