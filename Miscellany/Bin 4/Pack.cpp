@@ -17,6 +17,7 @@ void Topological_sort(stack<int> &Stack);
 void Topological_sort_2(stack<int> &Stack);
 void dismantle_forest_to_trees(stack<int> &Stack);
 void dismantle_forest_to_trees_2(stack<int> &Stack);
+void dismantle_forest_to_trees_3(stack<int> &Stack);
 void mapper();
 void mapper1();
 void mapper2();
@@ -355,6 +356,37 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 		inverse_adjacency_list_of_network[node].clear();
 	}
 
+
+}
+
+
+void dismantle_forest_to_trees_3(stack<int> &Stack) {
+
+	while (!Stack.empty())
+	{
+		int node = Stack.top();
+		Stack.pop();
+
+		// If the node taken from the top of stack is found to be a primary input, or 
+		// not a primary output and has fanout node fewer than 2.
+		if (primary_inputs.find(node) != primary_inputs.end() or
+			(primary_outputs.find(node) == primary_outputs.end() &&
+				adjacency_list_of_network[node].size() < 2))
+
+			continue;
+
+		//  Visual Studio disapproves of static declaration of variable-length array.
+		// 
+		//	vector<int> tree_inv[total_number_of_nodes];
+
+		vector<int> *tree_inv;
+		tree_inv = new vector<int>[total_number_of_nodes];
+
+		queue<int> tree_sort_order;
+
+		converse_topological_sort(node, tree_sort_order, tree_inv);
+
+	}
 
 }
 
