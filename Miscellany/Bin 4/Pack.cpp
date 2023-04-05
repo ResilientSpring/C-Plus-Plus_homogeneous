@@ -459,12 +459,12 @@ void mapper1() {
 
 		queue<int> Queue = topologically_sorted_nodes_in_a_tree[i];
 //		queue<int> *Queue = &trees_topologically_sorted[i];
-		vector<int> *tree_inv = trees_inverse[i];         // tree_inv is declared as an array of int vector.
+		vector<int> *tree_inv = trees_inverse[i];  // tree_inv is declared as an array of int vector (trees).
 //		vector<int> tree_inverted = trees_inverse[i];
 
 		while (!Queue.empty())
 		{
-			int node = Queue.front();
+			int node = Queue.front();  // A tree's first node (b/c queue follows FIFO) in topological order.
 			Queue.pop();
 
 			if (tree_inv[node].empty())
