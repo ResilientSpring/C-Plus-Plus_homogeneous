@@ -46,7 +46,7 @@ list<int> *inverse_adjacency_list_of_network = NULL;
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
 
-// Sort trees' nodes in topological order.
+// Sort each tree's internal nodes in topological order.
 vector<queue<int>> trees_topologically_sorted;
 
 vector<vertex **> trees_LUTs;
