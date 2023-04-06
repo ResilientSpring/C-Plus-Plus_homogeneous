@@ -467,7 +467,7 @@ void mapper1() {
 			int node = Queue.front();  // A tree's first node (b/c queue follows FIFO) in topological order.
 			Queue.pop();
 
-			if (tree_inv[node].empty())
+			if (tree_inv[node].empty())  // if a fanout node has no fanin1 and fanin2.
 			{
 
 			}
