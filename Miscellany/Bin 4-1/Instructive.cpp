@@ -21,6 +21,7 @@ void mapper();
 void mapper1();
 void mapper2();
 void mapper3();
+void show(vector<int> v);
 
 string title;
 
@@ -261,6 +262,8 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 		tree_inv[0].push_back(2);
 		tree_inv->push_back(3);
 
+		show(tree_inv);
+
 		for (int i = 0; i < tree_inv->size(); i++)
 			cout << tree_inv[i];
 
@@ -276,6 +279,7 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
 
 		trees_inverse.push_back(tree_inv);
+		trees_inverse.push_back(tree_inv[0]);  // tree_inv has proved an array of vector.
 		trees_topologically_sorted.push_back(tree_sort_order);
 
 
@@ -421,6 +425,16 @@ void mapper3() {
 			Queue.pop();
 		}
 	}
+}
+
+void show(vector<int> v) {
+
+	vector<int>::iterator itr;
+
+	for (itr = v.begin(); itr != v.end(); itr++)
+		cout << *itr << " ";
+
+	cout << endl;
 }
 
 
