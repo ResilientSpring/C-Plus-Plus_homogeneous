@@ -286,7 +286,7 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 
 		// If the node taken from the top of stack is found to be a primary input, or 
 		// not a primary output and has fanout node fewer than 2.
-		if (primary_inputs.find(node) != primary_inputs.end() or
+		if (primary_inputs.find(node) != primary_inputs.end() ||
 			(primary_outputs.find(node) == primary_outputs.end() &&
 				adjacency_list_of_network[node].size() < 2))
 
@@ -333,7 +333,7 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 
 		// If the node taken from the top of stack is found to be a primary input, or 
 		// not a primary output and has fanout node fewer than 2.
-		if (primary_inputs.find(node) != primary_inputs.end() or
+		if (primary_inputs.find(node) != primary_inputs.end() ||
 			(primary_outputs.find(node) == primary_outputs.end() &&
 				adjacency_list_of_network[node].size() < 2))
 
@@ -371,7 +371,7 @@ void dismantle_forest_to_trees_3(stack<int> &Stack) {
 
 		// If the node taken from the top of stack is found to be a primary input, or 
 		// not a primary output and has fanout node fewer than 2.
-		if (primary_inputs.find(node) != primary_inputs.end() or
+		if (primary_inputs.find(node) != primary_inputs.end() ||
 			(primary_outputs.find(node) == primary_outputs.end() &&
 				adjacency_list_of_network[node].size() < 2))
 
@@ -403,7 +403,7 @@ void dismantle_forest_to_trees_4(stack<int> &Stack) {
 
 		// If the node taken from the top of stack is found to be a primary input, or 
 		// not a primary output and has fanout node fewer than 2.
-		if (primary_inputs.find(node) != primary_inputs.end() or
+		if (primary_inputs.find(node) != primary_inputs.end() ||
 			(primary_outputs.find(node) == primary_outputs.end() &&
 				adjacency_list_of_network[node].size() < 2))
 
