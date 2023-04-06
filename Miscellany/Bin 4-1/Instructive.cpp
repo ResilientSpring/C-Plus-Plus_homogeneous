@@ -21,6 +21,7 @@ void mapper();
 void mapper1();
 void mapper2();
 void mapper3();
+void show(vector<int> v);
 
 string title;
 
@@ -260,6 +261,8 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 
 		tree_inv[0].push_back(2);
 		tree_inv->push_back(3);
+
+		show(tree_inv);
 
 		for (int i = 0; i < tree_inv->size(); i++)
 			cout << tree_inv[i];
