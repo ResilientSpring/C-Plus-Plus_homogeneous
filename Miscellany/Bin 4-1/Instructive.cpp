@@ -424,6 +424,16 @@ void mapper3() {
 	}
 }
 
+void show(vector<int> v) {
+
+	vector<int>::iterator itr;
+
+	for (itr = v.begin(); itr != v.end(); itr++)
+		cout << *itr << " ";
+
+	cout << endl;
+}
+
 
 /*
 *
