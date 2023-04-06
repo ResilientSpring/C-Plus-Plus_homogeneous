@@ -50,7 +50,7 @@ vector<vector<int> *> trees_inverse;
 // Sort each tree's internal nodes in topological order.
 vector<queue<int>> topologically_sorted_nodes_in_a_tree;
 
-vector<vertex **> trees_LUTs;
+// vector<vertex **> trees_LUTs;  Should be declared after class vertex's definition.
 
 
 typedef class vertex {
@@ -75,6 +75,9 @@ public:
 	vertex *second = NULL;
 
 } Look_Up_Table;
+
+
+vector<vertex **> trees_LUTs;
 
 
 int main(int argc, char **argv) { // [1]
