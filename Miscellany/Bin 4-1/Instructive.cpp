@@ -262,7 +262,7 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 		tree_inv[0].push_back(2);
 		tree_inv->push_back(3);
 
-		show(tree_inv);
+		show(tree_inv);   // Thus, tree_inv is not a vector.
 
 		for (int i = 0; i < tree_inv->size(); i++)
 			cout << tree_inv[i];
