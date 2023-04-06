@@ -141,9 +141,10 @@ void read(string aag) {
 	adjacency_list_of_network = new list<int>[total_number_of_nodes];
 	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes];
 
-	int fan_in_1_ID, fan_in_2_ID, AND_ID;
+	int AND_ID;
+	int fan_in_1_ID, fan_in_2_ID;
 
-	while (input_stream >> AND_ID)
+	while (input_stream >> AND_ID >> fan_in_1_ID >> fan_in_2_ID)
 	{
 		adjacency_list_of_network[fan_in_1_ID].push_back(AND_ID);
 		adjacency_list_of_network[fan_in_2_ID].push_back(AND_ID);
@@ -282,7 +283,7 @@ void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<in
 // these nodes as 'breaking points'. [16]
 void dismantle_forest_to_trees(stack<int> &Stack) {
 
-	while (! Stack.empty())
+	while (!Stack.empty())
 	{
 		int node = Stack.top();
 		Stack.pop();
@@ -295,9 +296,9 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 
 			continue;
 
-	//  Visual Studio disapproves of static declaration of variable-length array.
-	// 
-	//	vector<int> tree_inv[total_number_of_nodes];
+		//  Visual Studio disapproves of static declaration of variable-length array.
+		// 
+		//	vector<int> tree_inv[total_number_of_nodes];
 
 		vector<int> *tree_inv;
 		tree_inv = new vector<int>[total_number_of_nodes];
@@ -433,15 +434,15 @@ void mapper() {
 	{
 
 		Look_Up_Table *LUTs = new Look_Up_Table[total_number_of_nodes];
-		
+
 
 		for (int i = 0; i < total_number_of_nodes; i++) {
 
-		//  C++ syntactic rule bans specifying an initializer when dynamically allocating arrays. 
-		//	LUTs[i] = NULL; 
+			//  C++ syntactic rule bans specifying an initializer when dynamically allocating arrays. 
+			//	LUTs[i] = NULL; 
 
 		}
-			
+
 	}
 }
 
@@ -449,12 +450,12 @@ void mapper() {
 void mapper1() {
 
 	// Broken down the forest into several trees.
-	int number_of_trees = trees_inverse.size();  // How many arrays of vector<int> are there in the forest?
+	int number_of_trees = trees_inverse.size();
 
 	for (int i = 0; i < number_of_trees; i++)
 	{
 
-		Look_Up_Table **LUTs = new Look_Up_Table*[total_number_of_nodes];
+		Look_Up_Table **LUTs = new Look_Up_Table * [total_number_of_nodes];
 
 
 		for (int i = 0; i < total_number_of_nodes; i++)
@@ -462,7 +463,7 @@ void mapper1() {
 
 
 		queue<int> Queue = topologically_sorted_nodes_in_a_tree[i];
-//		queue<int> *Queue = &trees_topologically_sorted[i];
+		//		queue<int> *Queue = &trees_topologically_sorted[i];
 		vector<int> *tree_inv = trees_inverse[i];  // tree_inv is declared as an array of int vector (trees).
 //		vector<int> tree_inverted = trees_inverse[i];
 
@@ -471,7 +472,7 @@ void mapper1() {
 			int node = Queue.front();  // A tree's first node (b/c queue follows FIFO) in topological order.
 			Queue.pop();
 
-			if (tree_inv[node].empty())  // if a fanout node has no fanin1 and fanin2.
+			if (tree_inv[node].empty())
 			{
 
 			}
@@ -504,7 +505,7 @@ void mapper3() {
 	for (int i = 0; i < number_of_trees; i++)
 	{
 
-		Look_Up_Table **LUTs = new Look_Up_Table*[total_number_of_nodes + 1];
+		Look_Up_Table **LUTs = new Look_Up_Table * [total_number_of_nodes + 1];
 
 
 		for (int i = 0; i <= total_number_of_nodes; i++)
@@ -512,7 +513,7 @@ void mapper3() {
 
 
 		queue<int> Queue = topologically_sorted_nodes_in_a_tree[i];
-//		queue<int> *Queue = &trees_topologically_sorted[i];
+		//		queue<int> *Queue = &trees_topologically_sorted[i];
 		vector<int> *tree_inv = trees_inverse[i];
 
 		while (Queue.empty() == true)
@@ -544,7 +545,7 @@ void mapper3() {
 * 14. https://en.wikipedia.org/wiki/Component_(graph_theory)#Definitions_and_examples
 * 15. https://en.wikipedia.org/wiki/Depth-first_search#Vertex_orderings
 * 16. https://janders.eecg.utoronto.ca/pdfs/dac98.pdf (Technology Mapping for Large Complex PLDs)
-* 17. https://en.wikipedia.org/wiki/Tree_(data_structure) 
+* 17. https://en.wikipedia.org/wiki/Tree_(data_structure)
 * 18. https://stackoverflow.com/questions/12373495/relationship-between-bfs-and-topological-sort
 * 19. https://stackoverflow.com/questions/30869987/topological-order-using-bfs
 * 20. https://stackoverflow.com/questions/25229624/using-bfs-for-topological-sort
@@ -552,21 +553,21 @@ void mapper3() {
 */
 
 /* Notes
- 
- 1. Application of the depth-first search in finding connected components.[13] 
-    In a forest, every component is a tree. [14]
+
+ 1. Application of the depth-first search in finding connected components.[13]
+	In a forest, every component is a tree. [14]
 
  2. "Reverse postordering produces a topological sorting of any directed acyclic graph." [15]
 
  3. Topological sort can be done using both a DFS(having edges reversed) and also using a queue. [18]
 
- 4. "With the algorithm you proposed, node D would come before node C, which is clearly not a topological order. 
-    You really have to use DFS." [19]
+ 4. "With the algorithm you proposed, node D would come before node C, which is clearly not a topological order.
+	You really have to use DFS." [19]
 
- 5. "Kahn's algorithm works with any graph traversal, including BFS or DFS. Tarjan's algorithm, 
-     which is now the most well known, uses a "reverse DFS postorder" traversal of the graph. 
-	 Postorder means you add a node to the list after visiting its children. 
-	 Since you don't keep track of this when you conduct BFS (instead, you just append to a queue), 
+ 5. "Kahn's algorithm works with any graph traversal, including BFS or DFS. Tarjan's algorithm,
+	 which is now the most well known, uses a "reverse DFS postorder" traversal of the graph.
+	 Postorder means you add a node to the list after visiting its children.
+	 Since you don't keep track of this when you conduct BFS (instead, you just append to a queue),
 	 you need to use DFS for Tarjan's algorithm." [20]
 
 */
