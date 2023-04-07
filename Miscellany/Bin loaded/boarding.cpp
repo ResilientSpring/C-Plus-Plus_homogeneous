@@ -50,8 +50,7 @@ vector<vector<int> *> trees_inverse;
 // Sort each tree's internal nodes in topological order.
 vector<queue<int>> topologically_sorted_nodes_in_a_tree;
 
-vector<vertex **> trees_LUTs;
-
+// vector<vertex **> trees_LUTs;  Should be declared after class vertex's definition.
 
 typedef class vertex {
 public:
@@ -75,6 +74,9 @@ public:
 	vertex *second = NULL;
 
 } Look_Up_Table;
+
+
+vector<vertex **> trees_LUTs;
 
 
 int main(int argc, char **argv) { // [1]
@@ -138,6 +140,8 @@ void read(string aag) {
 	adjacency_list_of_network = new list<int>[total_number_of_nodes];
 	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes];
 
+	/*
+
 	int fan_in_1_ID, fan_in_2_ID, AND_ID;
 
 	while (input_stream >> AND_ID)
@@ -148,6 +152,8 @@ void read(string aag) {
 		inverse_adjacency_list_of_network[AND_ID].push_back(fan_in_1_ID);
 		inverse_adjacency_list_of_network[AND_ID].push_back(fan_in_2_ID);
 	}
+
+	*/
 
 	input_stream.close();
 
