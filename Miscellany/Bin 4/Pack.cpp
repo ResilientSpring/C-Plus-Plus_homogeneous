@@ -449,7 +449,7 @@ void mapper() {
 void mapper1() {
 
 	// Broken down the forest into several trees.
-	int number_of_trees = trees_inverse.size();
+	int number_of_trees = trees_inverse.size();  // How many arrays of vector<int> are there in the forest?
 
 	for (int i = 0; i < number_of_trees; i++)
 	{
@@ -471,7 +471,7 @@ void mapper1() {
 			int node = Queue.front();  // A tree's first node (b/c queue follows FIFO) in topological order.
 			Queue.pop();
 
-			if (tree_inv[node].empty())
+			if (tree_inv[node].empty())  // if a fanout node has no fanin1 and fanin2.
 			{
 
 			}
