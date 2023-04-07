@@ -114,7 +114,7 @@ void read(string aag) {
 	}
 
 	input_stream >> title;
-	input_stream >> total_number_of_nodes;
+	input_stream >> total_number_of_nodes;      // = PI + Latches + ANDs
 	input_stream >> number_of_primary_inputs;
 	input_stream >> number_of_latches;
 	input_stream >> number_of_primary_outputs;
