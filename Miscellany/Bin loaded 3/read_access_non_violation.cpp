@@ -79,8 +79,9 @@ public:
 vector<vertex **> trees_LUTs;
 
 
-int main(int argc, char **argv) { // [1]
+int main() {
 
+	/*
 	if (argc != 4) {
 
 		cout << "Usage:  \n";
@@ -88,14 +89,18 @@ int main(int argc, char **argv) { // [1]
 		exit(1);
 	}
 
-	string input_aag = "alu4.aag";
+	*/
+
+//	string input_aag = "alu4.aag";     void ifstream::open(const char *filename, )
+
+	const char *input_aag = "alu4.aag";
 	read(input_aag);
 
 	K = 4;
 
-//	cout << "Input File: " << argv[1] << endl;
-//	cout << "K: " << argv[2] << endl;
-//	cout << "Output File: " << argv[3] << endl;
+	//	cout << "Input File: " << argv[1] << endl;
+	//	cout << "K: " << argv[2] << endl;
+	//	cout << "Output File: " << argv[3] << endl;
 }
 
 
@@ -103,7 +108,7 @@ void read(string aag) {
 
 	ifstream input_stream;
 
-	input_stream.open(aag);
+	input_stream.open(aag);       //  void ifstream::open(const char *filename, )
 
 	if (!input_stream) {
 
@@ -137,8 +142,8 @@ void read(string aag) {
 		primary_outputs.insert(intermediate_node);
 	}
 
-	adjacency_list_of_network = new list<int>[total_number_of_nodes];
-	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes];
+	adjacency_list_of_network = new list<int>[total_number_of_nodes + 1];
+	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes + 1];
 
 	/*
 

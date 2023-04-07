@@ -79,8 +79,9 @@ public:
 vector<vertex **> trees_LUTs;
 
 
-int main(int argc, char **argv) { // [1]
+int main() {
 
+	/*
 	if (argc != 4) {
 
 		cout << "Usage:  \n";
@@ -88,14 +89,16 @@ int main(int argc, char **argv) { // [1]
 		exit(1);
 	}
 
+	*/
+
 	string input_aag = "alu4.aag";
 	read(input_aag);
 
 	K = 4;
 
-//	cout << "Input File: " << argv[1] << endl;
-//	cout << "K: " << argv[2] << endl;
-//	cout << "Output File: " << argv[3] << endl;
+	//	cout << "Input File: " << argv[1] << endl;
+	//	cout << "K: " << argv[2] << endl;
+	//	cout << "Output File: " << argv[3] << endl;
 }
 
 
