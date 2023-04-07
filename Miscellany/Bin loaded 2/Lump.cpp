@@ -93,9 +93,9 @@ int main(int argc, char **argv) { // [1]
 
 	K = 4;
 
-//	cout << "Input File: " << argv[1] << endl;
-//	cout << "K: " << argv[2] << endl;
-//	cout << "Output File: " << argv[3] << endl;
+	//	cout << "Input File: " << argv[1] << endl;
+	//	cout << "K: " << argv[2] << endl;
+	//	cout << "Output File: " << argv[3] << endl;
 }
 
 
