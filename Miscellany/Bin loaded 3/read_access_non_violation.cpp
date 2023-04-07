@@ -91,7 +91,9 @@ int main() {
 
 	*/
 
-	string input_aag = "alu4.aag";
+//	string input_aag = "alu4.aag";     void ifstream::open(const char *filename, )
+
+	const char *input_aag = "alu4.aag";
 	read(input_aag);
 
 	K = 4;
@@ -106,7 +108,7 @@ void read(string aag) {
 
 	ifstream input_stream;
 
-	input_stream.open(aag);
+	input_stream.open(aag);       //  void ifstream::open(const char *filename, )
 
 	if (!input_stream) {
 
