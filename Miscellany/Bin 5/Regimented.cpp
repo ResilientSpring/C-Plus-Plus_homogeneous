@@ -114,7 +114,7 @@ void read(string aag) {
 	}
 
 	input_stream >> title;
-	input_stream >> total_number_of_nodes;
+	input_stream >> total_number_of_nodes;      // = PI + Latches + ANDs
 	input_stream >> number_of_primary_inputs;
 	input_stream >> number_of_latches;
 	input_stream >> number_of_primary_outputs;
@@ -141,8 +141,7 @@ void read(string aag) {
 	adjacency_list_of_network = new list<int>[total_number_of_nodes];
 	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes];
 
-	int AND_ID;
-	int fan_in_1_ID, fan_in_2_ID;
+	int AND_ID, fan_in_1_ID, fan_in_2_ID;
 
 	while (input_stream >> AND_ID >> fan_in_1_ID >> fan_in_2_ID)
 	{
