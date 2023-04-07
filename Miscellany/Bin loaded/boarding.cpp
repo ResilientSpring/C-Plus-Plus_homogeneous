@@ -76,6 +76,8 @@ public:
 
 } Look_Up_Table;
 
+// vector<vertex **> trees_LUTs;  Should be declared after class vertex's definition.
+
 
 int main(int argc, char **argv) { // [1]
 
