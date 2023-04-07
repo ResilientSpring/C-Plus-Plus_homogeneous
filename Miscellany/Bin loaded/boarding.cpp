@@ -140,6 +140,8 @@ void read(string aag) {
 	adjacency_list_of_network = new list<int>[total_number_of_nodes];
 	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes];
 
+	/*
+
 	int fan_in_1_ID, fan_in_2_ID, AND_ID;
 
 	while (input_stream >> AND_ID)
@@ -150,6 +152,8 @@ void read(string aag) {
 		inverse_adjacency_list_of_network[AND_ID].push_back(fan_in_1_ID);
 		inverse_adjacency_list_of_network[AND_ID].push_back(fan_in_2_ID);
 	}
+
+	*/
 
 	input_stream.close();
 
