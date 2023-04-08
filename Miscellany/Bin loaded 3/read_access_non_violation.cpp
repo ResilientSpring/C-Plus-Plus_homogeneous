@@ -93,7 +93,7 @@ int main() {
 
 //	string input_aag = "alu4.aag";     void ifstream::open(const char *filename, )
 
-	const char *input_aag = "alu4.aag";
+	const char *input_aag = "alu4.aag";// In C++11 and newer, you can pass a std::string as well. [21][Note6]
 	read(input_aag);
 
 	K = 4;
@@ -108,7 +108,7 @@ void read(string aag) {
 
 	ifstream input_stream;
 
-	input_stream.open(aag);       //  void ifstream::open(const char *filename, )
+	input_stream.open(aag);       //  void ifstream::open(const char *filename, )   
 
 	if (!input_stream) {
 
@@ -567,6 +567,9 @@ void mapper3() {
 * 18. https://stackoverflow.com/questions/12373495/relationship-between-bfs-and-topological-sort
 * 19. https://stackoverflow.com/questions/30869987/topological-order-using-bfs
 * 20. https://stackoverflow.com/questions/25229624/using-bfs-for-topological-sort
+* 21. https://stackoverflow.com/questions/36824225/use-string-or-array-of-char-for-filename
+* 22. https://stackoverflow.com/questions/48284348/strings-as-file-names
+* 23. https://stackoverflow.com/questions/20233177/opening-file-to-read-in-c-issue-with-filename-string
 
 */
 
@@ -587,6 +590,13 @@ void mapper3() {
 	 Postorder means you add a node to the list after visiting its children.
 	 Since you don't keep track of this when you conduct BFS (instead, you just append to a queue),
 	 you need to use DFS for Tarjan's algorithm." [20]
+
+ 6.  "If your compiler doesn't support C++11, then perhaps you should get a newer one. 
+      Or perhaps it does support C++11 and you just have to turn on the support with a flag like 
+	  -std=c++11" [22]
+
+ 7. "The constructor of ifstream and friends accepting an std::string has only been added in C++11, 
+    which means you should use a C++11 conforming standard library implementation" [23]
 
 */
 
