@@ -152,6 +152,8 @@ void read(string aag) {
 		adjacency_list_of_network[fan_in_1_ID].push_back(AND_ID);
 		adjacency_list_of_network[fan_in_2_ID].push_back(AND_ID);
 
+		// "Array and linked lists are two common ways to store a linear list
+		// , and each has its upside and downside" [21]
 		inverse_adjacency_list_of_network[AND_ID].push_back(fan_in_1_ID);
 		inverse_adjacency_list_of_network[AND_ID].push_back(fan_in_2_ID);
 	}
@@ -552,6 +554,7 @@ void mapper3() {
 * 18. https://stackoverflow.com/questions/12373495/relationship-between-bfs-and-topological-sort
 * 19. https://stackoverflow.com/questions/30869987/topological-order-using-bfs
 * 20. https://stackoverflow.com/questions/25229624/using-bfs-for-topological-sort
+* 21. <Advanced Topics in Java> $ 3.13 Arrays vs. Linked Lists
 
 */
 
