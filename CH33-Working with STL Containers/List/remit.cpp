@@ -50,6 +50,17 @@ int main() {
 	lstA.unique();
 
 	show("lstA after call to unique(): ", lstA);
+
+	cout << endl;
+
+	// Give listB some new elements.
+	lstB.push_back('G');
+	lstB.push_back('H');
+	lstB.push_back('P');
+
+	show("New contents of lstB: ", lstB);
+	
+	cout << endl;
 }
 
 void show(const char *message, list<char> lst) {
