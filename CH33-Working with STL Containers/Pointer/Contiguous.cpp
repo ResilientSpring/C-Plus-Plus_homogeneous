@@ -15,6 +15,10 @@ int main() {
 	v.push_back(10);
 
 	show("The content of vector v: ", v);
+
+	vector<int> *v_p;
+
+	v_p = &v[2];    // There is not such pointer operation in vector under C++
 }
 
 void show(const char *message, vector<int> v) {
