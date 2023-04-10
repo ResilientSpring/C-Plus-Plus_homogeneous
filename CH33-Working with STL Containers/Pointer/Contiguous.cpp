@@ -2,6 +2,8 @@
 #include <vector>
 using namespace std;
 
+void show(const char *message, vector<int> v);
+
 int main() {
 
 	vector<int> v;
