@@ -14,7 +14,7 @@ int main() {
 
 	// Use push_back() to give the lists some elements.
 	lstA.push_back('A');
-	lstB.push_back('F');
+	lstA.push_back('F');
 	lstA.push_back('B');
 	lstA.push_back('R');
 
