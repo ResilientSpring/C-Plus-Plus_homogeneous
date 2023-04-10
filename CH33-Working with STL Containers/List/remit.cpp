@@ -39,6 +39,11 @@ int main() {
 
 	cout << endl;
 
+	// Merge lstB into lstA.
+	lstA.merge(lstB);
+
+	show("lstA after merge: ", lstA);
+
 	// Remove duplicates from lstA.
 	lstA.unique();
 }
@@ -52,5 +57,5 @@ void show(const char *message, list<char> lst) {
 	for (itr = lst.begin(); itr != lst.end(); itr++)
 		cout << *itr << " ";
 
-	cout << endl;
+	cout << endl << endl;
 }
