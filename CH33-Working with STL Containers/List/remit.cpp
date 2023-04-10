@@ -22,7 +22,7 @@ int main() {
 	lstB.push_back('A');
 	lstB.push_back('F');
 
-	show()
+	show("Original contents of lstA: ", lstA);
 }
 
 void show(const char *message, list<char> lst) {
