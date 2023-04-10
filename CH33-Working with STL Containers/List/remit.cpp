@@ -64,6 +64,8 @@ int main() {
 
 	// Now splice lstB into lstA.
 	list<char>::iterator itr;
+	itr = lstA.begin();
+	itr = itr + 1;
 }
 
 void show(const char *message, list<char> lst) {
