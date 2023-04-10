@@ -4,6 +4,8 @@
 #include <list>
 using namespace std;
 
+void show(list<char> lst);
+
 int main() {
 
 	// Declae two lists.
@@ -19,4 +21,16 @@ int main() {
 	lstB.push_back('X');
 	lstB.push_back('A');
 	lstB.push_back('F');
+
+	
+}
+
+void show(list<char> lst) {
+
+	list<char>::iterator itr;
+
+	for (itr = lst.begin(); itr != lst.end(); itr++)
+		cout << *itr << " ";
+
+	cout << endl;
 }
