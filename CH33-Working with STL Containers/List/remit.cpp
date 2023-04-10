@@ -44,8 +44,12 @@ int main() {
 
 	show("lstA after merge: ", lstA);
 
+	if (lstB.empty()) cout << "lstB is now empty.\n" << endl;
+
 	// Remove duplicates from lstA.
 	lstA.unique();
+
+	show("lstA after call to unique(): ", lstA);
 }
 
 void show(const char *message, list<char> lst) {
