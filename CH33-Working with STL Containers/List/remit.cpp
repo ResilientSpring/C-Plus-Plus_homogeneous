@@ -29,6 +29,15 @@ int main() {
 	cout << "Size of lstB is " << lstB.size() << endl;
 
 	cout << endl;
+
+	// Sort lstA and lstB
+	lstA.sort();
+	lstB.sort();
+
+	show("Sorted contents of lstA: ", lstA);
+	show("Sorted contents of lstB: ", lstB);
+
+	cout << endl;
 }
 
 void show(const char *message, list<char> lst) {
