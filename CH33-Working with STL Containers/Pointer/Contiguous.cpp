@@ -14,7 +14,7 @@ int main() {
 	v.push_back(8);
 	v.push_back(10);
 
-	
+	show("The content of vector v: ", v);
 }
 
 void show(const char *message, vector<int> v) {
@@ -24,8 +24,8 @@ void show(const char *message, vector<int> v) {
 	vector<int>::iterator itr;
 
 	for (itr = v.begin(); itr != v.end(); itr++)
-		cout << *itr << endl;
+		cout << *itr << " ";
 
-	cout << endl;
+	cout << endl << endl;
 
 }
