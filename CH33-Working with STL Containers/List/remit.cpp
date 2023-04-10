@@ -71,7 +71,7 @@ int main() {
 	section on 33.1.1 has stated that "Iterator is akin to pointer in that it provides operations for indirect access
 	(* for dereferencing)	and for moving to point to the next element (++ for moving to the next element)". 
 
-	This is to say pointer and iterator are similar but not the same. 
+	This is to say pointer and iterator are very similar but not the same. 
 	*/
 }
 
