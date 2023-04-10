@@ -38,6 +38,9 @@ int main() {
 	show("Sorted contents of lstB: ", lstB);
 
 	cout << endl;
+
+	// Remove duplicates from lstA.
+	lstA.unique();
 }
 
 void show(const char *message, list<char> lst) {
