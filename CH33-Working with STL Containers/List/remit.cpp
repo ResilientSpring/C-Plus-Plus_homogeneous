@@ -23,6 +23,12 @@ int main() {
 	lstB.push_back('F');
 
 	show("Original contents of lstA: ", lstA);
+	show("Original contents of lstB: ", lstB);
+
+	cout << "Size of lstA is " << lstA.size() << endl;
+	cout << "Size of lstB is " << lstB.size() << endl;
+
+	cout << endl;
 }
 
 void show(const char *message, list<char> lst) {
