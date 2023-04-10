@@ -61,6 +61,9 @@ int main() {
 	show("New contents of lstB: ", lstB);
 	
 	cout << endl;
+
+	// Now splice lstB into lstA.
+	list<char>::iterator itr;
 }
 
 void show(const char *message, list<char> lst) {
