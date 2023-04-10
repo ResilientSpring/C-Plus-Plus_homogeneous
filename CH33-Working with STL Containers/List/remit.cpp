@@ -66,6 +66,13 @@ int main() {
 	list<char>::iterator itr;
 	itr = lstA.begin();
 	itr = itr + 1;
+	/*
+	* According to C++ designer Bjarne Stroustrup's authored book <The C++ Programming Language (4th edition)>
+	section on 33.1.1 has stated that "Iterator is akin to pointer in that it provides operations for indirect access
+	(* for dereferencing)	and for moving to point to the next element (++ for moving to the next element)". 
+
+	This is to say pointer and iterator are similar but not the same. 
+	*/
 }
 
 void show(const char *message, list<char> lst) {
