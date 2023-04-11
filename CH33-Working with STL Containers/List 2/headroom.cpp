@@ -68,6 +68,16 @@ int main() {
 	itr++;
 	lstA.splice(itr, lstB);
 	show("lstA after splice: ", lstA);
+
+	cout << endl;
+
+	// Remove A and H
+	lstA.remove('A');
+	lstA.remove('H');
+	show("lstA after removing A and H: ", lstA);
+
+	cout << endl;
+
 }
 
 void show(const char *message, list<char> lst) {
