@@ -42,7 +42,8 @@ set<int> latches;
 set<int> primary_outputs;
 
 list<int> *adjacency_list_of_network;
-list<int> *inverse_adjacency_list_of_network = NULL;
+// list<int> *inverse_adjacency_list_of_network = NULL;
+list<int> *inverse_adjacency_list_of_network;
 
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
@@ -144,7 +145,7 @@ void read(string aag) {
 		//  while loop above will already become false if the input is not a series of 3 int.
 		//	if (AND_ID == 'c') break;
 
-			// A node's ID is the same as its index in the array of list.
+		// A node's ID is the same as its index in the array of list.
 		adjacency_list_of_network[fan_in_1_ID].push_back(AND_ID);
 		adjacency_list_of_network[fan_in_2_ID].push_back(AND_ID);
 
@@ -152,6 +153,7 @@ void read(string aag) {
 		// , and each has its upside and downside" [21]
 		inverse_adjacency_list_of_network[AND_ID].push_back(fan_in_1_ID);
 		inverse_adjacency_list_of_network[AND_ID].push_back(fan_in_2_ID);
+
 	}
 
 	input_stream.close();
