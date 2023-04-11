@@ -151,7 +151,7 @@ void read(string aag) {
 		input_stream >> fan_in_2_ID)
 	{
 
-		if (AND_ID == 'c') break;
+	//	if (AND_ID == 'c') break;  No need, because while loop above will already become false.
 
 		// A node's ID is the same as its index in the array of list.
 		adjacency_list_of_network[fan_in_1_ID].push_back(AND_ID);
