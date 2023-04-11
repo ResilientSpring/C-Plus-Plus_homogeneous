@@ -42,8 +42,8 @@ set<int> latches;
 set<int> primary_outputs;
 
 list<int> *adjacency_list_of_network;
-// list<int> *inverse_adjacency_list_of_network = NULL;
-list<int> *inverse_adjacency_list_of_network;
+list<int> *inverse_adjacency_list_of_network = NULL;
+// list<int> *inverse_adjacency_list_of_network;  It doesn't resolve the problem that inverse_adjacency_list_of_network[474]'s size = infinity.
 
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
