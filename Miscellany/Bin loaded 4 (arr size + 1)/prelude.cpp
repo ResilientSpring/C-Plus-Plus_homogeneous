@@ -80,23 +80,13 @@ public:
 vector<vertex **> trees_LUTs;
 
 
-int main(int argc, char **argv) { // [1]
+int main() { 
 
-	if (argc != 4) {
 
-		cout << "Usage:  \n";
-		cout << "./mapping <path_to_the_input_blif> <LUT_size_(K)> <output_file_name>" << endl;
-		exit(1);
-	}
-
-	string input_aag = argv[1];
+	string input_aag = "alu4.aag";
 	read(input_aag);
 
-	K = stoi(argv[2]);
-
-	cout << "Input File: " << argv[1] << endl;
-	cout << "K: " << argv[2] << endl;
-	cout << "Output File: " << argv[3] << endl;
+	K = 4;
 }
 
 
@@ -141,8 +131,8 @@ void read(string aag) {
 		primary_outputs.insert(intermediate_node);
 	}
 
-	adjacency_list_of_network = new list<int>[total_number_of_nodes];
-	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes];
+	adjacency_list_of_network = new list<int>[total_number_of_nodes + 1];
+	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes + 1];
 
 	int AND_ID, fan_in_1_ID, fan_in_2_ID;
 
@@ -151,10 +141,10 @@ void read(string aag) {
 		input_stream >> fan_in_2_ID)
 	{
 
-	//  while loop above will already become false if the input is not a series of 3 int.
-	//	if (AND_ID == 'c') break;
+		//  while loop above will already become false if the input is not a series of 3 int.
+		//	if (AND_ID == 'c') break;
 
-		// A node's ID is the same as its index in the array of list.
+			// A node's ID is the same as its index in the array of list.
 		adjacency_list_of_network[fan_in_1_ID].push_back(AND_ID);
 		adjacency_list_of_network[fan_in_2_ID].push_back(AND_ID);
 
