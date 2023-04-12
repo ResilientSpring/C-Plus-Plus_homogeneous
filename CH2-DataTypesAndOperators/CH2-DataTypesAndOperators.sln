@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Characters", "Characters\Ch
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cast", "Cast\Cast.vcxproj", "{7F324EE4-4551-4AE5-ADAF-98E4284D2CFD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cast 2", "Cast 2\Cast 2.vcxproj", "{2D1B0995-4709-477A-8671-EF3656600219}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{7F324EE4-4551-4AE5-ADAF-98E4284D2CFD}.Release|x64.Build.0 = Release|x64
 		{7F324EE4-4551-4AE5-ADAF-98E4284D2CFD}.Release|x86.ActiveCfg = Release|Win32
 		{7F324EE4-4551-4AE5-ADAF-98E4284D2CFD}.Release|x86.Build.0 = Release|Win32
+		{2D1B0995-4709-477A-8671-EF3656600219}.Debug|x64.ActiveCfg = Debug|x64
+		{2D1B0995-4709-477A-8671-EF3656600219}.Debug|x64.Build.0 = Debug|x64
+		{2D1B0995-4709-477A-8671-EF3656600219}.Debug|x86.ActiveCfg = Debug|Win32
+		{2D1B0995-4709-477A-8671-EF3656600219}.Debug|x86.Build.0 = Debug|Win32
+		{2D1B0995-4709-477A-8671-EF3656600219}.Release|x64.ActiveCfg = Release|x64
+		{2D1B0995-4709-477A-8671-EF3656600219}.Release|x64.Build.0 = Release|x64
+		{2D1B0995-4709-477A-8671-EF3656600219}.Release|x86.ActiveCfg = Release|Win32
+		{2D1B0995-4709-477A-8671-EF3656600219}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
