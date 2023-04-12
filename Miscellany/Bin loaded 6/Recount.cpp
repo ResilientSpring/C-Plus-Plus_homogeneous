@@ -131,9 +131,22 @@ void read(string aag) {
 		input_stream >> intermediate_node;
 		primary_outputs.insert(intermediate_node);
 	}
+	
+	/* Previously, Exception thrown: read access violation.
+	was because the maximum number that represents inputs, latches, outputs, or AND-gates 
+	are in fact much larger than "total_number_of_nodes".
+	*/
 
-	adjacency_list_of_network = new list<int>[total_number_of_nodes + 1];
-	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes + 1];
+//	adjacency_list_of_network = new list<int>[total_number_of_nodes + 1];
+//	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes + 1];
+
+
+	/* "All numbers that represent inputs, latches, outputs or AND-gates need to be not greater
+	   than 2M + 1" [22]
+	*/
+
+	adjacency_list_of_network = new list<int>[2 * total_number_of_nodes + 1];
+	inverse_adjacency_list_of_network = new list<int>[2 * total_number_of_nodes + 1];
 
 	int AND_ID, fan_in_1_ID, fan_in_2_ID;
 
@@ -553,6 +566,7 @@ void mapper3() {
 * 19. https://stackoverflow.com/questions/30869987/topological-order-using-bfs
 * 20. https://stackoverflow.com/questions/25229624/using-bfs-for-topological-sort
 * 21. <Advanced Topics in Java> $ 3.13 Arrays vs. Linked Lists
+* 22. https://web.archive.org/web/20220710064154/https://arxiv.org/pdf/1405.5793.pdf
 
 */
 
