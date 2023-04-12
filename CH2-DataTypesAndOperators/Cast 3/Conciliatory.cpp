@@ -7,7 +7,7 @@ int main() {
 
 	int i;
 
-	for (i = 1; i <= 10; i++)
-		cout << i << "/2 is: " << (float) i / 2 << endl;
+	for (i = 1; i <= 10; ++i)
+		cout << i << "/2 is: " << i / 2 << endl;
 
 }
