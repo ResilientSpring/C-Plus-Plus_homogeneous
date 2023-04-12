@@ -81,7 +81,7 @@ public:
 vector<vertex **> trees_LUTs;
 
 
-int main() { 
+int main() {
 
 
 	string input_aag = "alu4.aag";
@@ -234,7 +234,7 @@ void Topological_sort(stack<int> &Stack) {   // [12][2] [Note2]
 void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
 
 	// Mark all vertices as not visited.
-	bool *visited = new bool[total_number_of_nodes + 1];
+	bool *visited = new bool[total_number_of_nodes + 1.0];
 
 	for (int i = 0; i <= total_number_of_nodes; i++)
 		visited[i] = false;
@@ -266,7 +266,7 @@ void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int>
 // Topological srot starting from primary outputs to primary inputs.
 void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<int> *tree_inv) {
 
-	bool *visited = new bool[total_number_of_nodes + 1];
+	bool *visited = new bool[total_number_of_nodes + 1.0];
 
 	for (int i = 0; i <= total_number_of_nodes; i++)
 		visited[i] = false;
