@@ -29,6 +29,7 @@ void mapper3();
 
 string title;
 
+int addition = 1;  
 int intermediate_node;
 int K;
 int total_number_of_nodes = 0;
@@ -132,8 +133,11 @@ void read(string aag) {
 		primary_outputs.insert(intermediate_node);
 	}
 
-	adjacency_list_of_network = new list<int>[total_number_of_nodes + 1];
-	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes + 1];
+	adjacency_list_of_network = new list<int>[total_number_of_nodes + 1.0];
+	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes + 1.0];
+
+//  C26451 warning of arithmetic overflow was still thrown.
+//	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes + addition];
 
 	int AND_ID, fan_in_1_ID, fan_in_2_ID;
 
@@ -234,7 +238,7 @@ void Topological_sort(stack<int> &Stack) {   // [12][2] [Note2]
 void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
 
 	// Mark all vertices as not visited.
-	bool *visited = new bool[total_number_of_nodes + 1];
+	bool *visited = new bool[total_number_of_nodes + 1.0];
 
 	for (int i = 0; i <= total_number_of_nodes; i++)
 		visited[i] = false;
@@ -266,7 +270,7 @@ void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int>
 // Topological srot starting from primary outputs to primary inputs.
 void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<int> *tree_inv) {
 
-	bool *visited = new bool[total_number_of_nodes + 1];
+	bool *visited = new bool[total_number_of_nodes + 1.0];
 
 	for (int i = 0; i <= total_number_of_nodes; i++)
 		visited[i] = false;
