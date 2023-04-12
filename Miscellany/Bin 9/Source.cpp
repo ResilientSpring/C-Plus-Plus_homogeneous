@@ -43,7 +43,6 @@ set<int> primary_outputs;
 
 list<int> *adjacency_list_of_network;
 list<int> *inverse_adjacency_list_of_network = NULL;
-// list<int> *inverse_adjacency_list_of_network;  It doesn't resolve the problem that inverse_adjacency_list_of_network[474]'s size = infinity.
 
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
@@ -81,13 +80,23 @@ public:
 vector<vertex **> trees_LUTs;
 
 
-int main() {
+int main(int argc, char **argv) { // [1]
 
+	if (argc != 4) {
 
-	string input_aag = "alu4.aag";
+		cout << "Usage:  \n";
+		cout << "./mapping <path_to_the_input_blif> <LUT_size_(K)> <output_file_name>" << endl;
+		exit(1);
+	}
+
+	string input_aag = argv[1];
 	read(input_aag);
 
-	K = 4;
+	K = stoi(argv[2]);
+
+	cout << "Input File: " << argv[1] << endl;
+	cout << "K: " << argv[2] << endl;
+	cout << "Output File: " << argv[3] << endl;
 }
 
 
@@ -131,19 +140,6 @@ void read(string aag) {
 		input_stream >> intermediate_node;
 		primary_outputs.insert(intermediate_node);
 	}
-	
-	/* Previously, Exception thrown: read access violation.
-	was because the maximum number that represents inputs, latches, outputs, or AND-gates 
-	are in fact much larger than "total_number_of_nodes".
-	*/
-
-//	adjacency_list_of_network = new list<int>[total_number_of_nodes + 1];
-//	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes + 1];
-
-
-	/* "All numbers that represent inputs, latches, outputs or AND-gates need to be not greater
-	   than 2M + 1" [22]
-	*/
 
 	adjacency_list_of_network = new list<int>[2 * total_number_of_nodes + 1];
 	inverse_adjacency_list_of_network = new list<int>[2 * total_number_of_nodes + 1];
@@ -158,7 +154,7 @@ void read(string aag) {
 		//  while loop above will already become false if the input is not a series of 3 int.
 		//	if (AND_ID == 'c') break;
 
-		// A node's ID is the same as its index in the array of list.
+			// A node's ID is the same as its index in the array of list.
 		adjacency_list_of_network[fan_in_1_ID].push_back(AND_ID);
 		adjacency_list_of_network[fan_in_2_ID].push_back(AND_ID);
 
@@ -166,7 +162,6 @@ void read(string aag) {
 		// , and each has its upside and downside" [21]
 		inverse_adjacency_list_of_network[AND_ID].push_back(fan_in_1_ID);
 		inverse_adjacency_list_of_network[AND_ID].push_back(fan_in_2_ID);
-
 	}
 
 	input_stream.close();
@@ -247,7 +242,7 @@ void Topological_sort(stack<int> &Stack) {   // [12][2] [Note2]
 void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
 
 	// Mark all vertices as not visited.
-	bool *visited = new bool[total_number_of_nodes + 1.0];
+	bool *visited = new bool[total_number_of_nodes + 1];
 
 	for (int i = 0; i <= total_number_of_nodes; i++)
 		visited[i] = false;
@@ -279,7 +274,7 @@ void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int>
 // Topological srot starting from primary outputs to primary inputs.
 void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<int> *tree_inv) {
 
-	bool *visited = new bool[total_number_of_nodes + 1.0];
+	bool *visited = new bool[total_number_of_nodes + 1];
 
 	for (int i = 0; i <= total_number_of_nodes; i++)
 		visited[i] = false;
@@ -566,7 +561,6 @@ void mapper3() {
 * 19. https://stackoverflow.com/questions/30869987/topological-order-using-bfs
 * 20. https://stackoverflow.com/questions/25229624/using-bfs-for-topological-sort
 * 21. <Advanced Topics in Java> $ 3.13 Arrays vs. Linked Lists
-* 22. https://web.archive.org/web/20220710064154/https://arxiv.org/pdf/1405.5793.pdf
 
 */
 

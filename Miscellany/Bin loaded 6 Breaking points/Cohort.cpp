@@ -131,19 +131,19 @@ void read(string aag) {
 		input_stream >> intermediate_node;
 		primary_outputs.insert(intermediate_node);
 	}
-	
+
 	/* Previously, Exception thrown: read access violation.
-	was because the maximum number that represents inputs, latches, outputs, or AND-gates 
+	was because the maximum number that represents inputs, latches, outputs, or AND-gates
 	are in fact much larger than "total_number_of_nodes".
 	*/
 
-//	adjacency_list_of_network = new list<int>[total_number_of_nodes + 1];
-//	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes + 1];
+	//	adjacency_list_of_network = new list<int>[total_number_of_nodes + 1];
+	//	inverse_adjacency_list_of_network = new list<int>[total_number_of_nodes + 1];
 
 
-	/* "All numbers that represent inputs, latches, outputs or AND-gates need to be not greater
-	   than 2M + 1" [22]
-	*/
+		/* "All numbers that represent inputs, latches, outputs or AND-gates need to be not greater
+		   than 2M + 1" [22]
+		*/
 
 	adjacency_list_of_network = new list<int>[2 * total_number_of_nodes + 1];
 	inverse_adjacency_list_of_network = new list<int>[2 * total_number_of_nodes + 1];
