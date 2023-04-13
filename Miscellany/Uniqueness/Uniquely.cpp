@@ -40,7 +40,7 @@ int main() {
 
 	elements.unique();
 
-	cout << "The size of unique elements in the list is " <<  elements.size();
+	cout << "\nThe size of unique elements in the list is " << elements.size() << endl;
 
 }
 
