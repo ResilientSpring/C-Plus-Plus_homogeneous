@@ -256,9 +256,9 @@ void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
 // Topological srot starting from primary outputs to primary inputs.
 void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int> *tree_inv) {
 
-	bool *visited = new bool[total_number_of_nodes];
+	bool *visited = new bool[2 * total_number_of_nodes + 1];
 
-	for (int i = 0; i < total_number_of_nodes; i++)
+	for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
 		visited[i] = false;
 
 
@@ -274,9 +274,9 @@ void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int>
 // Topological srot starting from primary outputs to primary inputs.
 void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<int> *tree_inv) {
 
-	bool *visited = new bool[total_number_of_nodes + 1];
+	bool *visited = new bool[2 * total_number_of_nodes + 1];
 
-	for (int i = 0; i <= total_number_of_nodes; i++)
+	for (int i = 0; i <= 2 * total_number_of_nodes + 1; i++)
 		visited[i] = false;
 
 
@@ -318,9 +318,9 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 
 
 		// Topological srot starting from primary outputs to primary inputs.
-		bool *visited = new bool[total_number_of_nodes];
+		bool *visited = new bool[2 * total_number_of_nodes + 1];
 
-		for (int i = 0; i < total_number_of_nodes; i++)
+		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
 			visited[i] = false;
 
 		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
@@ -361,9 +361,9 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 		queue<int> tree_sort_order;
 
 		// Topological srot starting from primary outputs to primary inputs.
-		bool *visited = new bool[total_number_of_nodes + 1];
+		bool *visited = new bool[2 * total_number_of_nodes + 1];
 
-		for (int i = 0; i <= total_number_of_nodes; i++)
+		for (int i = 0; i <= 2 * total_number_of_nodes + 1; i++)
 			visited[i] = false;
 
 		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
@@ -445,10 +445,10 @@ void mapper() {
 	for (int i = 0; i < number_of_trees; i++)
 	{
 
-		Look_Up_Table *LUTs = new Look_Up_Table[total_number_of_nodes];
+		Look_Up_Table *LUTs = new Look_Up_Table[2 * total_number_of_nodes + 1];
 
 
-		for (int i = 0; i < total_number_of_nodes; i++) {
+		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++) {
 
 			//  C++ syntactic rule bans specifying an initializer when dynamically allocating arrays. 
 			//	LUTs[i] = NULL; 
@@ -467,10 +467,10 @@ void mapper1() {
 	for (int i = 0; i < number_of_trees; i++)
 	{
 
-		Look_Up_Table **LUTs = new Look_Up_Table * [total_number_of_nodes];
+		Look_Up_Table **LUTs = new Look_Up_Table * [2 * total_number_of_nodes + 1];
 
 
-		for (int i = 0; i < total_number_of_nodes; i++)
+		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
 			LUTs[i] = NULL;
 
 
@@ -502,7 +502,7 @@ void mapper2() {
 	for (int i = 0; i < number_of_trees; i++)
 	{
 
-		Look_Up_Table *LUTs = new Look_Up_Table[total_number_of_nodes + 1];
+		Look_Up_Table *LUTs = new Look_Up_Table[2 * total_number_of_nodes + 1];
 
 
 	}
