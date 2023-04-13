@@ -46,6 +46,7 @@ int main() {
 
 	cout << endl;
 
+	cout << "The size of the list is: " << elements.size() << ". \n";
 
 	elements.unique();
 
