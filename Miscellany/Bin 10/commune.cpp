@@ -228,7 +228,7 @@ void Topological_sort() {   // [12]
 void Topological_sort(stack<int> &Stack) {   // [12][2] [Note2]
 
 	// Mark all vertices as not visited.
-	bool *visited = new bool[total_number_of_nodes];
+	bool *visited = new bool[2 * total_number_of_nodes + 1];
 
 	for (int i = 0; i < total_number_of_nodes; i++)
 		visited[i] = false;
@@ -242,7 +242,7 @@ void Topological_sort(stack<int> &Stack) {   // [12][2] [Note2]
 void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
 
 	// Mark all vertices as not visited.
-	bool *visited = new bool[total_number_of_nodes + 1];
+	bool *visited = new bool[2 * total_number_of_nodes + 1];
 
 	for (int i = 0; i <= total_number_of_nodes; i++)
 		visited[i] = false;
