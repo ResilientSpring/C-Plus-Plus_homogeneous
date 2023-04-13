@@ -32,4 +32,8 @@ int main() {
 
 	input_stream.close();
 
+	elements.unique();
+
+	cout << elements.size();
+
 }
