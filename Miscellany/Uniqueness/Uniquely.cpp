@@ -35,7 +35,7 @@ int main() {
 	input_stream.close();
 
 
-	Show_last_five_elements_("The last five elements of the list are: ", elements);
+	Show_last_five_elements_("The last five elements of the list are: \n", elements);
 
 
 	elements.unique();
