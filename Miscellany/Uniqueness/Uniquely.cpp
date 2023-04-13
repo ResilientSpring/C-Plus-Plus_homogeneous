@@ -58,7 +58,9 @@ int main() {
 
 	elements.unique();  // [Note1] [Note2]
 
+	cout << "\nThe size of unique elements in the list is " << elements.size() << endl;
 
+	cout << endl;
 
 }
 
