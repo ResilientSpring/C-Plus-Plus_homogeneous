@@ -50,8 +50,17 @@ void Show_last_five_elements_(const char *message, list<int> lst) {
 
 	list<int>::reverse_iterator ritr;
 
-	for (ritr = lst.rbegin(); ritr == lst.rbegin() + 5; ritr++)
+	int counter = 0;
+
+	for (ritr = lst.rbegin(); ritr != lst.rend(); ritr++) {
+
 		cout << *ritr << " " << endl;
+
+		counter++;
+
+		if (counter > 5) break;
+	}
+		
 
 	cout << endl;
 
