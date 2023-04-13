@@ -54,7 +54,7 @@ void Show_last_five_elements_(const char *message, list<int> lst) {
 
 	for (ritr = lst.rbegin(); ritr != lst.rend(); ritr++) {
 
-		cout << *ritr << " " << endl;
+		cout << *ritr << " ";
 
 		counter++;
 
