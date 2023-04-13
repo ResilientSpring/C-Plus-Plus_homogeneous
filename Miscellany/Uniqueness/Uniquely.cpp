@@ -44,7 +44,7 @@ int main() {
 
 	Show_the_first_five_elements_("The first five elements of the list are: \n", elements);
 
-	cout << endl;
+	cout << endl << endl;
 
 	cout << "The size of the list is: " << elements.size() << ". \n";
 
