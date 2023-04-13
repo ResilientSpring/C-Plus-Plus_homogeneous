@@ -65,3 +65,22 @@ void Show_last_five_elements_(const char *message, list<int> lst) {
 	cout << endl;
 
 }
+
+void Show_the_first_five_elements_(const char *message, list<int> lst) {
+
+	cout << message;
+
+	list<int>::iterator itr;
+
+	int counter = 0;
+
+	for (itr = lst.begin(); itr != lst.end(); itr++) {
+
+		cout << *itr << " ";
+
+		counter++;
+
+		if (counter > 5) break;
+	}
+
+}
