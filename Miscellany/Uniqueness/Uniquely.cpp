@@ -4,6 +4,8 @@
 #include <list>
 using namespace std;
 
+void Show_last_five_elements_(const char *message, list<int> lst);
+
 int main() {
 
 	string title;
@@ -32,8 +34,23 @@ int main() {
 
 	input_stream.close();
 
+
+
+
+
 	elements.unique();
 
 	cout << elements.size();
+
+}
+
+void Show_last_five_elements_(const char *message, list<int> lst) {
+
+	list<int>::reverse_iterator ritr;
+
+	for (ritr = lst.rbegin(); ritr == lst.rbegin() + 5; ritr++)
+		cout << *ritr << " " << endl;
+
+	cout << endl;
 
 }
