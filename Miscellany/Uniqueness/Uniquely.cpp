@@ -30,4 +30,6 @@ int main() {
 		elements.push_back(temp);
 	}
 
+	input_stream.close();
+
 }
