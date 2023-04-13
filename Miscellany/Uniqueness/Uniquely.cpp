@@ -38,6 +38,8 @@ int main() {
 
 	Show_last_five_elements_("The last five elements of the list are: \n", elements);
 
+	Show_the_first_five_elements_("The first five elements of the list are: \n", elements);
+
 
 	elements.unique();
 
