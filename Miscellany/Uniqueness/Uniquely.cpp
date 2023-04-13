@@ -5,6 +5,7 @@
 using namespace std;
 
 void Show_last_five_elements_(const char *message, list<int> lst);
+void Show_the_first_five_elements_(const char *message, list<int> lst);
 
 int main() {
 
