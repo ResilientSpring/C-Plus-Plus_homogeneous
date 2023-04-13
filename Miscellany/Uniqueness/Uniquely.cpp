@@ -35,7 +35,7 @@ int main() {
 	input_stream.close();
 
 
-
+	Show_last_five_elements_("The last five elements of the list are: ", elements);
 
 
 	elements.unique();
@@ -45,6 +45,8 @@ int main() {
 }
 
 void Show_last_five_elements_(const char *message, list<int> lst) {
+
+	cout << message;
 
 	list<int>::reverse_iterator ritr;
 
