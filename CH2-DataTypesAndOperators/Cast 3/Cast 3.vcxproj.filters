@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="headroom.cpp">
+    <ClCompile Include="Conciliatory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
