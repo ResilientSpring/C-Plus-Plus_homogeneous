@@ -436,7 +436,7 @@ void dismantle_forest_to_trees_4(stack<int> &Stack) {
 
 }
 
-
+// Only one asterisk before LUTs.
 void mapper() {
 
 	// Broken down the forest into several trees.
@@ -451,7 +451,7 @@ void mapper() {
 		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++) {
 
 			//  C++ syntactic rule bans specifying an initializer when dynamically allocating arrays. 
-			//	LUTs[i] = NULL; 
+			//	LUTs[i] = NULL;
 
 		}
 
