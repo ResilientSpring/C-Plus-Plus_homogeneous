@@ -12,9 +12,13 @@
 using namespace std;
 
 void read(string aag);
+
+// v: starting node; *visited: array of visited; &Stack: graph
 void Depth_First_Search(int v, bool *visited, stack<int> &Stack);
 void Topological_sort(stack<int> &Stack);
 void Topological_sort_2(stack<int> &Stack);
+
+// v: starting node; *visited: array of visited; &Queue: nodes in DFS order; *tree_inv: graph
 void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv);
 void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int> *tree_inv);
 void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<int> *tree_inv);
@@ -294,7 +298,7 @@ void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<in
 // these nodes as 'breaking points'. [16]
 void dismantle_forest_to_trees(stack<int> &Stack) {
 
-	while (!Stack.empty())
+	while (!Stack.empty())  // Stack here is the topologically sorted graph.
 	{
 		int node = Stack.top();
 		Stack.pop();
@@ -317,7 +321,7 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 		queue<int> tree_sort_order;
 
 
-		// Topological srot starting from primary outputs to primary inputs.
+		// Topological sort starting from primary outputs to primary inputs.
 		bool *visited = new bool[2 * total_number_of_nodes + 1];
 
 		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
@@ -436,7 +440,7 @@ void dismantle_forest_to_trees_4(stack<int> &Stack) {
 
 }
 
-
+// Only one asterisk before LUTs.
 void mapper() {
 
 	// Broken down the forest into several trees.
@@ -451,7 +455,7 @@ void mapper() {
 		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++) {
 
 			//  C++ syntactic rule bans specifying an initializer when dynamically allocating arrays. 
-			//	LUTs[i] = NULL; 
+			//	LUTs[i] = NULL;
 
 		}
 
@@ -473,7 +477,8 @@ void mapper1() {
 		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
 			LUTs[i] = NULL;
 
-
+		// Because topologically_sorted_nodes_in_a_tree[i] returns an entire queue, 
+		// it seems safer to precede the receiving variable with &; it's tested okay not doing it, though.
 		queue<int> Queue = topologically_sorted_nodes_in_a_tree[i];
 		//		queue<int> *Queue = &trees_topologically_sorted[i];
 		vector<int> *tree_inv = trees_inverse[i];  // tree_inv is declared as an array of int vector (trees).
@@ -517,10 +522,10 @@ void mapper3() {
 	for (int i = 0; i < number_of_trees; i++)
 	{
 
-		Look_Up_Table **LUTs = new Look_Up_Table * [total_number_of_nodes + 1];
+		Look_Up_Table **LUTs = new Look_Up_Table * [2 * total_number_of_nodes + 1];
 
 
-		for (int i = 0; i <= total_number_of_nodes; i++)
+		for (int i = 0; i <= 2 * total_number_of_nodes; i++)
 			LUTs[i] = NULL;
 
 
