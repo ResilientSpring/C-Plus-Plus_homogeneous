@@ -298,7 +298,7 @@ void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<in
 // these nodes as 'breaking points'. [16]
 void dismantle_forest_to_trees(stack<int> &Stack) {
 
-	while (!Stack.empty())
+	while (!Stack.empty())  // Stack here is the topologically sorted graph.
 	{
 		int node = Stack.top();
 		Stack.pop();
