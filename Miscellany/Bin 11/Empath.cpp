@@ -321,7 +321,7 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 		queue<int> tree_sort_order;
 
 
-		// Topological srot starting from primary outputs to primary inputs.
+		// Topological sort starting from primary outputs to primary inputs.
 		bool *visited = new bool[2 * total_number_of_nodes + 1];
 
 		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
