@@ -15,6 +15,8 @@ void read(string aag);
 void Depth_First_Search(int v, bool *visited, stack<int> &Stack);
 void Topological_sort(stack<int> &Stack);
 void Topological_sort_2(stack<int> &Stack);
+
+// v: starting node; *visited: array of visited; &Queue: nodes in DFS order; *tree_inv: graph
 void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv);
 void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int> *tree_inv);
 void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<int> *tree_inv);
