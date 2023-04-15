@@ -473,7 +473,8 @@ void mapper1() {
 		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
 			LUTs[i] = NULL;
 
-
+		// Because topologically_sorted_nodes_in_a_tree[i] returns an entire queue, 
+		// it is safer to precede the receiving variable with &; it's okay not doing it, though.
 		queue<int> Queue = topologically_sorted_nodes_in_a_tree[i];
 		//		queue<int> *Queue = &trees_topologically_sorted[i];
 		vector<int> *tree_inv = trees_inverse[i];  // tree_inv is declared as an array of int vector (trees).
