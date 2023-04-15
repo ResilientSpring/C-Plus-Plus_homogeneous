@@ -12,6 +12,8 @@
 using namespace std;
 
 void read(string aag);
+
+// v: starting node; *visited: array of visited; &Stack: graph
 void Depth_First_Search(int v, bool *visited, stack<int> &Stack);
 void Topological_sort(stack<int> &Stack);
 void Topological_sort_2(stack<int> &Stack);
