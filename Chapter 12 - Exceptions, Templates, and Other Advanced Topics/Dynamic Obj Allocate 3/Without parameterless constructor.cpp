@@ -45,7 +45,7 @@ int main() {
 
 	try
 	{
-		p = new Rectangle[3];
+		p = new Rectangle[3];  // Since no array allocated by new can have an initializer, you must make sure that if the class defines constructors, one will be parameterless.
 	}
 	catch (bad_alloc xa)
 	{
