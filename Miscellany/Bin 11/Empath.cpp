@@ -486,10 +486,10 @@ void mapper1() {
 
 		while (!Queue.empty())
 		{
-			int node = Queue.front();  // A tree's first node (b/c queue follows FIFO) in topological order.
+			int node = Queue.front();  // A tree's first (root) node (b/c queue follows FIFO) in topological order.
 			Queue.pop();
 
-			if (tree_inv[node].empty())
+			if (tree_inv[node].empty())   
 			{
 
 			}
@@ -533,7 +533,7 @@ void mapper3() {
 		//		queue<int> *Queue = &trees_topologically_sorted[i];
 		vector<int> *tree_inv = trees_inverse[i];
 
-		while (Queue.empty() == true)
+		while (Queue.empty() == false)
 		{
 			int node = Queue.front();
 			Queue.pop();
