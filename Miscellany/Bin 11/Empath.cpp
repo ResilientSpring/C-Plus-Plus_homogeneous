@@ -489,9 +489,11 @@ void mapper1() {
 			int node = Queue.front();  // A tree's first (root) node (b/c queue follows FIFO) in topological order.
 			Queue.pop();
 
-			if (tree_inv[node].empty())   
+			if (tree_inv[node].empty())   // if the node is a primary input, i.e. a node without fanouts.
 			{
-
+				Look_Up_Table *dummy_LUT = new Look_Up_Table();
+				dummy_LUT->in_use = true;
+				dummy_LUT->fanins.push_back(node);
 			}
 
 		}
