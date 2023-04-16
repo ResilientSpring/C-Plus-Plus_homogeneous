@@ -486,7 +486,7 @@ void mapper1() {
 
 		while (!Queue.empty())
 		{
-			int node = Queue.front();  // A tree's first node (b/c queue follows FIFO) in topological order.
+			int node = Queue.front();  // A tree's first (root) node (b/c queue follows FIFO) in topological order.
 			Queue.pop();
 
 			if (tree_inv[node].empty())
