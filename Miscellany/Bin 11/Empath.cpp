@@ -481,6 +481,7 @@ void mapper1() {
 		// it seems safer to precede the receiving variable with &; it's tested okay not doing it, though.
 		queue<int> Queue = topologically_sorted_nodes_in_a_tree[i];
 		//		queue<int> *Queue = &trees_topologically_sorted[i];
+
 		vector<int> *tree_inv = trees_inverse[i];  // tree_inv is declared as an array of int vector (trees).
 //		vector<int> tree_inverted = trees_inverse[i];
 
@@ -489,8 +490,13 @@ void mapper1() {
 			int node = Queue.front();  // A tree's first (root) node (b/c queue follows FIFO) in topological order.
 			Queue.pop();
 
-			if (tree_inv[node].empty())   
+			if (tree_inv[node].empty())   // if the node is a primary input, i.e. a node without fanouts.
 			{
+				Look_Up_Table *dummy_LUT = new Look_Up_Table();
+				dummy_LUT->in_use = true;
+				dummy_LUT->fanins.push_back(node);
+				dummy_LUT->fanout = node;
+				dummy_LUT->number_of_fanins = 1;
 
 			}
 
