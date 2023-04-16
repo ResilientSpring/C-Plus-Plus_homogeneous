@@ -66,6 +66,6 @@ int main() {
 
 	cout << "\n";
 
-	delete[] p;
+	delete[] p;     // This calls the destructor for each object in the array.
 
 }
