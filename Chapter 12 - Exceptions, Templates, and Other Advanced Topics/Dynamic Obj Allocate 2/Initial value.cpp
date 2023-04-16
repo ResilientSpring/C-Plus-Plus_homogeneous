@@ -55,5 +55,17 @@ int main() {
 
 	cout << "\n";
 
+	p[0].set(3, 4);
+	p[1].set(10, 8);
+	p[2].set(5, 6);
+
+	for (int i = 0; i < 3; i++)
+	{
+		cout << "Area is " << p[i].area() << endl;
+	}
+
+	cout << "\n";
+
+	delete[] p;
 
 }
