@@ -47,7 +47,7 @@ int main() {
 	{
 		p = new Rectangle[3];
 	}
-	catch (const std::exception &)
+	catch (bad_alloc xa)
 	{
 
 	}
