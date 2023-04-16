@@ -496,7 +496,9 @@ void mapper1() {
 				dummy_LUT->fanins.push_back(node);
 				dummy_LUT->fanout = node;
 				dummy_LUT->number_of_fanins = 1;
+				LUTs[node] = dummy_LUT;
 
+				continue;
 			}
 
 		}
