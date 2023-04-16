@@ -208,7 +208,7 @@ void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<
 	}
 
 	Queue.push(v);  // v is the node who has multiple parents (fanouts) in adjacency_list_of_network.
-
+	                // v is also *itr
 }
 
 /*
