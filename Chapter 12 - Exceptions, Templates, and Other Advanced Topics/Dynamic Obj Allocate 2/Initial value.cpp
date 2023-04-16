@@ -32,6 +32,10 @@ public:
 		width = w;
 		height = h;
 	}
+
+	int area() {
+		return width * height;
+	}
 };
 
 
