@@ -41,4 +41,16 @@ public:
 
 int main() {
 
+	Rectangle *p;
+
+	try
+	{
+		p = new Rectangle[3];
+	}
+	catch (const std::exception &)
+	{
+
+	}
+
+
 }
