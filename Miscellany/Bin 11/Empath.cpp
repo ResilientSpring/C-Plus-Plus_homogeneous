@@ -208,7 +208,7 @@ void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<
 	}
 
 	Queue.push(v);  // v is the node who has multiple parents (fanouts) in adjacency_list_of_network.
-
+	                // v is also *itr
 }
 
 /*
@@ -329,7 +329,7 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 
 		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
 
-		// tree_inv is a copy of inverse_adjacency_list_of_network
+		// tree_inv is a copy of inverse_adjacency_list_of_network starting from a subtree's root.
 		trees_inverse.push_back(tree_inv);
 		topologically_sorted_nodes_in_a_tree.push_back(tree_sort_order);
 
