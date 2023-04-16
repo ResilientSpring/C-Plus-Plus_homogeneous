@@ -23,6 +23,15 @@ public:
 
 		cout << "Constructing " << width << " by " << height << " rectangle. \n";
 	}
+
+	~Rectangle() {
+		cout << "Destructing " << width << " by " << height << " rectangle. \n";
+	}
+
+	void set(int w, int h) {
+		width = w;
+		height = h;
+	}
 };
 
 
