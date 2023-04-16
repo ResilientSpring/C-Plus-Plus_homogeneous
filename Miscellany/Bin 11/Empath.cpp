@@ -533,7 +533,7 @@ void mapper3() {
 		//		queue<int> *Queue = &trees_topologically_sorted[i];
 		vector<int> *tree_inv = trees_inverse[i];
 
-		while (Queue.empty() == true)
+		while (Queue.empty() == false)
 		{
 			int node = Queue.front();
 			Queue.pop();
