@@ -494,6 +494,8 @@ void mapper1() {
 				Look_Up_Table *dummy_LUT = new Look_Up_Table();
 				dummy_LUT->in_use = true;
 				dummy_LUT->fanins.push_back(node);
+				dummy_LUT->fanout = node;
+				dummy_LUT->number_of_fanins = 1;
 			}
 
 		}
