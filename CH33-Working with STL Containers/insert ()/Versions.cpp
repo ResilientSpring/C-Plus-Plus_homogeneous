@@ -62,6 +62,8 @@ int main() {
 		cout << var << " ";
 
 	cout << endl << endl;
+
+	v2.insert(v2.end(), temp.begin() + 2, temp.begin() + 6);
 }
 
 void show(const char *message, vector<int> vec) {
