@@ -55,6 +55,13 @@ int main() {
 
 	v2.insert(v2.end(), temp.begin() + 2, temp.begin() + 5);
 
+	// Printing the modified vector
+	cout << "V2 after inserting the portion of temp vector: \n";
+
+	for (auto var : v2)
+		cout << var << " ";
+
+	cout << endl;
 }
 
 void show(const char *message, vector<int> vec) {
