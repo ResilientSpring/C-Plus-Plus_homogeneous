@@ -23,8 +23,19 @@ int main() {
 
 	cout << endl << endl;
 
+	vector<int>::iterator itr;
+	
+	itr = v.insert(v.end(), 5);
+
+	show("Contents of v: ", v);
+
+
+	cout << endl << endl;
+
 
 	vector<int> v2;
+
+//	v2.insert()
 
 
 
