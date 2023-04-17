@@ -33,9 +33,7 @@ int main() {
 	cout << endl << endl;
 
 
-	vector<int> v2;
-
-//	v2.insert()
+	vector<int> v2{ 1, 2, 3, 4, 5 };
 
 
 
