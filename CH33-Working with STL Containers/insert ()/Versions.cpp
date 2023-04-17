@@ -2,6 +2,8 @@
 #include <vector>
 using namespace std;
 
+void show(const char *message, vector<int> vec);
+
 int main() {
 
 	vector<int> v;
@@ -13,6 +15,14 @@ int main() {
 	
 
 	cout << endl << endl;
+
+
+	show("Contents of v: ", v);
+
+
+
+	cout << endl << endl;
+
 
 	vector<int> v2;
 
