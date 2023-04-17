@@ -20,4 +20,13 @@ int main() {
 
 	vector<int> *v3 = new vector<int>;
 	v3[0] = v2;
+
+	vector<vector<int>> *v4 = new vector<vector<int>>;
+
+	vector<int> *v5 = new vector<int>;
+
+	v5->push_back(1);
+	v5->push_back(3);
+	v5->push_back(5);
+
 }
