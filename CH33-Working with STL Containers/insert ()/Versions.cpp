@@ -42,6 +42,19 @@ int main() {
 	for (auto var : v2)
 		cout << var << " ";
 	cout << endl;
+
+
+	vector<int> temp{ 2, 5, 9, 0, 3, 10 };
+
+
+	/* Inserting the portion of temp vector in original vector.
+	*   
+	*  temp.begin() + 3 is starting iterator of vector to be copied. 
+	*  temp.begin() + 5 is ending iterator of vector to be copied.
+	*/
+
+	v2.insert(v2.end(), temp.begin() + 2, temp.begin() + 5);
+
 }
 
 void show(const char *message, vector<int> vec) {
