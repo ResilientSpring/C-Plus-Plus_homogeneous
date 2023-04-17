@@ -29,4 +29,5 @@ int main() {
 	v5->push_back(3);
 	v5->push_back(5);
 
+	v4->push_back(*v5);
 }
