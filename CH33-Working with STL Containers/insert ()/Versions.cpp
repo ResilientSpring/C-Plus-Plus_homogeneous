@@ -34,7 +34,7 @@ int main() {
 
 
 	// Initializing the vector.
-	vector<int> v2{ 1, 2, 3, 4, 5 };
+	vector<int> v2{ 1, 2, 3, 4, 5 };      // [1]
 
 	// Printing out the original vector.
 	cout << "Original vector: \n";
@@ -86,3 +86,6 @@ void show(const char *message, vector<int> vec) {
 	cout << endl;
 
 }
+
+// Reference:
+// 1. https://www.geeksforgeeks.org/vector-insert-function-in-c-stl/
