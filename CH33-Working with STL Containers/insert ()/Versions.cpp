@@ -37,6 +37,10 @@ int main() {
 	vector<int> v2{ 1, 2, 3, 4, 5 };
 
 	// Printing out the original vector.
+	cout << "Original vector: \n";
+
+	for (auto var : v2)
+		cout << var << " ";
 
 }
 
