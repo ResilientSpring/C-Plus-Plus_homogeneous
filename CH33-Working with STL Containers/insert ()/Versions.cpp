@@ -41,7 +41,7 @@ int main() {
 
 	for (auto var : v2)
 		cout << var << " ";
-
+	cout << endl;
 }
 
 void show(const char *message, vector<int> vec) {
