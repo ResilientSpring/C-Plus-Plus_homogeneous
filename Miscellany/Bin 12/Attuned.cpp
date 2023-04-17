@@ -501,6 +501,9 @@ void mapper1() {
 				continue;
 			}
 
+			// Check whether the node's fanin is a primary input or LUT 
+			int fan_in_1 = tree_inv[node][0];
+			int fan_in_2 = tree_inv[node][1];
 		}
 	}
 }
