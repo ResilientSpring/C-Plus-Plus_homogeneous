@@ -71,6 +71,15 @@ int main() {
 		cout << var << " ";
 
 	cout << endl << endl;
+
+	v2.insert(v2.end(), temp.begin() + 2, temp.end());
+
+	cout << "v2 after inserting the portion of temp vector: \n";
+
+	for (auto var : v2)
+		cout << var << " ";
+
+	cout << endl << endl;
 }
 
 void show(const char *message, vector<int> vec) {
@@ -89,3 +98,4 @@ void show(const char *message, vector<int> vec) {
 
 // Reference:
 // 1. https://www.geeksforgeeks.org/vector-insert-function-in-c-stl/
+//    https://web.archive.org/web/20230403075427/https://www.geeksforgeeks.org/vector-insert-function-in-c-stl/
