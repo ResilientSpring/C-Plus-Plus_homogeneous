@@ -41,7 +41,7 @@ int main() {
 
 	for (auto var : v2)
 		cout << var << " ";
-	cout << endl;
+	cout << endl << endl;
 
 
 	vector<int> temp{ 2, 5, 9, 0, 3, 10 };
