@@ -208,7 +208,7 @@ void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<
 	}
 
 	Queue.push(v);  // v is the node who has multiple parents (fanouts) in adjacency_list_of_network.
-	                // v is also *itr
+					// v is also *itr
 }
 
 /*
@@ -454,7 +454,6 @@ void mapper() {
 
 		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++) {
 
-			//  C++ syntactic rule bans specifying an initializer when dynamically allocating arrays. 
 			//	LUTs[i] = NULL;
 
 		}
@@ -497,7 +496,9 @@ void mapper1() {
 				dummy_LUT->fanins.push_back(node);
 				dummy_LUT->fanout = node;
 				dummy_LUT->number_of_fanins = 1;
+				LUTs[node] = dummy_LUT;
 
+				continue;
 			}
 
 		}
