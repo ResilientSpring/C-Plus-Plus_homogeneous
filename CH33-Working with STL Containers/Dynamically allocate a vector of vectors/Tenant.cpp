@@ -19,4 +19,5 @@ int main() {
 
 
 	vector<int> *v3 = new vector<int>;
+	v3[0] = v2;
 }
