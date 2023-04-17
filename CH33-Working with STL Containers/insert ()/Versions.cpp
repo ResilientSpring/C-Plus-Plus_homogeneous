@@ -89,3 +89,4 @@ void show(const char *message, vector<int> vec) {
 
 // Reference:
 // 1. https://www.geeksforgeeks.org/vector-insert-function-in-c-stl/
+//    https://web.archive.org/web/20230403075427/https://www.geeksforgeeks.org/vector-insert-function-in-c-stl/
