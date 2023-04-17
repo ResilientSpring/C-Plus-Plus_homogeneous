@@ -33,9 +33,10 @@ int main() {
 	cout << endl << endl;
 
 
+	// Initializing the vector.
 	vector<int> v2{ 1, 2, 3, 4, 5 };
 
-
+	// Printing out the original vector.
 
 }
 
