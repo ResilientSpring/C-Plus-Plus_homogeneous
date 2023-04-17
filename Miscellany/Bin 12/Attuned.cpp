@@ -547,6 +547,8 @@ void mapper3() {
 		{
 			int node = Queue.front();
 			Queue.pop();
+
+
 		}
 	}
 }
