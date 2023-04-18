@@ -93,6 +93,15 @@ int main() {
 	read(input_aag);
 
 	K = 4;
+
+	stack<int> gates;
+
+	Topological_sort(gates);
+	dismantle_forest_to_trees(gates);
+	mapper1();
+
+	string output_file_name = "alu4.mapping_result";
+	Output(output_file_name);
 }
 
 
