@@ -577,6 +577,17 @@ void mapper1() {
 						new_LUT->fanout = node;
 						new_LUT->number_of_fanins = new_LUT->fanins.size();
 						LUTs[node] = new_LUT;
+						fan_in_2_LUT->in_use = false;
+					}
+					else
+					{
+						Look_Up_Table *new_LUT = new Look_Up_Table;
+						new_LUT->in_use = true;
+						new_LUT->fanins.push_back(fan_in_1);
+						new_LUT->fanins.push_back(fan_in_2);
+						new_LUT->fanout = node;
+						new_LUT->number_of_fanins = 2;
+						LUTs[node] = new_LUT;
 					}
 				}
 			}
