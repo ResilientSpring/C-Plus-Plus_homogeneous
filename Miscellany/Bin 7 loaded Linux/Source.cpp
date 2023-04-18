@@ -86,7 +86,8 @@ public:
 vector<vertex **> trees_LUTs;
 
 
-int main(int argc, char **argv) { // [1]
+int main(int argc, char **argv) {
+
 
 	if (argc != 4) {
 
@@ -100,9 +101,20 @@ int main(int argc, char **argv) { // [1]
 
 	K = stoi(argv[2]);
 
+
+	stack<int> gates;
+
+	Topological_sort(gates);
+	dismantle_forest_to_trees(gates);
+	mapper1();
+
+	string output_file_name = argv[3];
+	Output(output_file_name);
+
 	cout << "Input File: " << argv[1] << endl;
 	cout << "K: " << argv[2] << endl;
 	cout << "Output File: " << argv[3] << endl;
+
 }
 
 
