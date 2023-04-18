@@ -96,7 +96,7 @@ int main() {
 
 	stack<int> gates;
 
-	Topological_sort_2(gates);
+	Topological_sort(gates);
 	dismantle_forest_to_trees_2(gates);
 	mapper3();
 
