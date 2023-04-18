@@ -744,6 +744,32 @@ void mapper3() {
 }
 
 
+void Output(string output_file) {
+
+	ofstream output_stream;
+
+	output_stream.open(output_file);
+
+	for (auto **LUTs : trees_LUTs) {
+
+		for (int i = 1; i <= total_number_of_nodes; i++)
+		{
+			if (LUTs[i] != NULL && LUTs[i]->in_use == true)
+			{
+				output_stream << LUTs[i]->fanout;
+
+				for (auto j : LUTs[i]->fanins)
+					output_stream << " " << j;
+
+				output_stream << endl;
+			}
+		}
+
+	}
+
+}
+
+
 /*
 *
 * References:
