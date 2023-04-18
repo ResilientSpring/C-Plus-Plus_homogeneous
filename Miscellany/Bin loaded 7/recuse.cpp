@@ -30,8 +30,6 @@ void mapper();
 void mapper1();
 void mapper2();
 void mapper3();
-void Output(string output_file);
-void Output2(string output_file);
 
 string title;
 
