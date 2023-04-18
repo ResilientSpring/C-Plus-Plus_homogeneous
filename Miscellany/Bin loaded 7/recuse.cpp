@@ -86,23 +86,13 @@ public:
 vector<vertex **> trees_LUTs;
 
 
-int main(int argc, char **argv) { // [1]
+int main() {
 
-	if (argc != 4) {
 
-		cout << "Usage:  \n";
-		cout << "./mapping <path_to_the_input_blif> <LUT_size_(K)> <output_file_name>" << endl;
-		exit(1);
-	}
-
-	string input_aag = argv[1];
+	string input_aag = "alu4.aag";
 	read(input_aag);
 
-	K = stoi(argv[2]);
-
-	cout << "Input File: " << argv[1] << endl;
-	cout << "K: " << argv[2] << endl;
-	cout << "Output File: " << argv[3] << endl;
+	K = 4;
 }
 
 
