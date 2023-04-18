@@ -26,6 +26,7 @@ void dismantle_forest_to_trees(stack<int> &Stack);
 void dismantle_forest_to_trees_2(stack<int> &Stack);
 void dismantle_forest_to_trees_3(stack<int> &Stack);
 void dismantle_forest_to_trees_4(stack<int> &Stack);
+void dismantle_forest_to_trees_5(stack<int> &Stack);
 void mapper();
 void mapper1();
 void mapper2();
