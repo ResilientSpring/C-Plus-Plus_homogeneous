@@ -560,6 +560,17 @@ void mapper1() {
 						Look_Up_Table *new_LUT = new Look_Up_Table;
 						new_LUT->in_use = true;
 						new_LUT->fanins.push_back(fan_in_1);
+						new_LUT->fanins.push_back(fan_in_2);
+						new_LUT->fanout = node;
+						new_LUT->number_of_fanins = 2;
+						LUTs[node] = new_LUT;
+					}
+				}
+				else
+				{
+					if (number_of_inputs[1] + 1 <= K)
+					{
+						Look_Up_Table *new_LUT = new Look_Up_Table;
 
 					}
 				}
