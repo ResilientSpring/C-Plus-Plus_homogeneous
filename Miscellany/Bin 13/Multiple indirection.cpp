@@ -534,6 +534,8 @@ void mapper1() {
 				Look_Up_Table new_LUT;
 				new_LUT.in_use = true;
 				new_LUT.fanins = fan_in_1_LUT->fanins;
+				new_LUT.fanins.insert(new_LUT.fanins.end(), fan_in_2_LUT->fanins.begin(), fan_in_2_LUT->fanins.end());
+				new_LUT.fanout = node;
 			}
 		}
 	}
