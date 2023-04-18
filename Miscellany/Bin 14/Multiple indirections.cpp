@@ -592,6 +592,7 @@ void mapper1() {
 				}
 			}
 		}
+		trees_LUTs.push_back(LUTs);
 	}
 }
 
