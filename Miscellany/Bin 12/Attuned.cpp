@@ -504,6 +504,28 @@ void mapper1() {
 			// Check whether the node's fanin is a primary input or LUT 
 			int fan_in_1 = tree_inv[node][0];
 			int fan_in_2 = tree_inv[node][1];
+
+			// Record the check result.
+			int number_of_inputs[2];
+
+			if (tree_inv[fan_in_1].empty())
+				number_of_inputs[0] = 1;
+			else
+				number_of_inputs[0] = LUTs[fan_in_1]->number_of_fanins;
+
+			if (tree_inv[fan_in_2].empty())
+				number_of_inputs[1] = 1;
+			else
+				number_of_inputs[1] = LUTs[fan_in_2]->number_of_fanins;
+
+			
+			// Greedy mapping
+			if (number_of_inputs[0] + number_of_inputs[1] <= K )
+			{
+				Look_Up_Table new_LUT;
+				new_LUT.in_use = true;
+				new_LUT.fanins = LUTs[fan_in_1]->number_of_fanins;
+			}
 		}
 	}
 }
