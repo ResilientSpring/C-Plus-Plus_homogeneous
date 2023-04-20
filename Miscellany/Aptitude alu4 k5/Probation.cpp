@@ -95,12 +95,12 @@ int main() {
 
 	stack<int> gates;
 
-	Topological_sort(gates);
-	dismantle_forest_to_trees(gates);
-	mapper1();
+	Topological_sort_2(gates);
+	dismantle_forest_to_trees_2(gates);
+	mapper3();
 
 	string output_file_name = "alu4.mapping_result";
-	Output(output_file_name);
+	Output2(output_file_name);
 
 }
 
