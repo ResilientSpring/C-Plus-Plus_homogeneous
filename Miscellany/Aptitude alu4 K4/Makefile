@@ -24,18 +24,18 @@ bigkey: anthology.exe
 	./anthology.exe ${BIG_AAG} ${BIG_K} ${BIG_OUT}
 	./checker ${BIG_AAG} ${BIG_K} ${BIG_OUT}
 
-c1908: FlowMap.exe
-	./FlowMap.exe ${C1908_AAG} ${BIG_K} ${C1908_OUT}
+c1908: anthology.exe
+	./anthology.exe ${C1908_AAG} ${BIG_K} ${C1908_OUT}
 	./checker ${C1908_AAG} ${BIG_K} ${C1908_OUT}
 
-c5315: FlowMap.exe
-	./FlowMap.exe ${C5315_AAG} ${BIG_K} ${C5315_OUT}
+c5315: anthology.exe
+	./anthology.exe ${C5315_AAG} ${BIG_K} ${C5315_OUT}
 	./checker ${C5315_AAG} ${BIG_K} ${C5315_OUT}
 
-debug:FlowMap.exe
-	./FlowMap.exe testcase/my_alu.aag 3 output.aag
+debug:anthology.exe
+	./anthology.exe testcase/alu4.aag 6 output.aag
 
-FlowMap.exe:${OBJS}
+anthology.exe:${OBJS}
 	${CPP} ${CPPFLAGS} -o $@ ${OBJS}
 
 %o.: %.cpp ${DEPS}
