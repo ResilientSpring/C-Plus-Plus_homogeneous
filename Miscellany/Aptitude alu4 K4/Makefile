@@ -16,12 +16,12 @@ C1908_OUT="c1908.aag_output"
 C5315_AAG="testcase/c5315.aag"
 C5315_OUT="c5315.aag_output"
 
-alu4: FlowMap.exe
-	./FlowMap.exe ${ALU4_AAG} ${BIG_K} ${ALU4_OUT}
+alu4: anthology.exe
+	./anthology.exe ${ALU4_AAG} ${BIG_K} ${ALU4_OUT}
 	./checker ${ALU4_AAG} ${BIG_K} ${ALU4_OUT}
 
-bigkey: FlowMap.exe
-	./FlowMap.exe ${BIG_AAG} ${BIG_K} ${BIG_OUT}
+bigkey: anthology.exe
+	./anthology.exe ${BIG_AAG} ${BIG_K} ${BIG_OUT}
 	./checker ${BIG_AAG} ${BIG_K} ${BIG_OUT}
 
 c1908: FlowMap.exe
