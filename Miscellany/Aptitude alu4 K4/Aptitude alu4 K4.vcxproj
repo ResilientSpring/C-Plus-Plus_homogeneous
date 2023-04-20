@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="anthology.cpp" />
+    <ClCompile Include="Makefile" />
   </ItemGroup>
   <ItemGroup>
     <None Include="alu4.aag" />

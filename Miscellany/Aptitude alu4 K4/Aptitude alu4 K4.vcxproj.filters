@@ -18,6 +18,9 @@
     <ClCompile Include="anthology.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Makefile">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="alu4.mapping_result">
