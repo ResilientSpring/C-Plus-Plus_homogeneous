@@ -19,4 +19,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="alu4.aag">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="alu4.mapping_result">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2e3254f1-3a1b-43dc-9cf3-d91eb4a42257}</ProjectGuid>
-    <RootNamespace>Aptitudealu4k5</RootNamespace>
+    <ProjectGuid>{c58c6596-78a5-43ee-bbd3-73fbcfe48b83}</ProjectGuid>
+    <RootNamespace>Packing</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,11 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Probation.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="alu4.aag" />
-    <None Include="alu4.mapping_result" />
+    <ClCompile Include="quadratic.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
