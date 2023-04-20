@@ -23,5 +23,8 @@
     <None Include="bigkey.aag">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="bigkey.mapping_result">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
