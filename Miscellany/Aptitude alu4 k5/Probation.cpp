@@ -249,10 +249,10 @@ void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
 	// Mark all vertices as not visited.
 	bool *visited = new bool[2 * total_number_of_nodes + 1];
 
-	for (int i = 0; i <= 2 * total_number_of_nodes + 1; i++)
+	for (int i = 0; i <= 2 * total_number_of_nodes; i++)
 		visited[i] = false;
 
-	for (int i = 1; i <= 2 * total_number_of_nodes + 1; i++)
+	for (int i = 1; i <= 2 * total_number_of_nodes; i++)
 		if (visited[i] == false)
 			Depth_First_Search(i, visited, Stack);
 }
