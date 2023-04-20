@@ -91,7 +91,7 @@ int main() {
 	string input_aag = "alu4.aag";
 	read(input_aag);
 
-	K = 6;
+	K = 4;
 
 	stack<int> gates;
 
