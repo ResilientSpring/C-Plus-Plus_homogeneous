@@ -783,7 +783,7 @@ void Output2(string output_file) {
 
 	for (auto **LUTs : trees_LUTs) {
 
-		for (int i = 1; i <= 2 * total_number_of_nodes + 1; i++)
+		for (int i = 1; i <= 2 * total_number_of_nodes; i++)
 		{
 			if (LUTs[i] != NULL && LUTs[i]->in_use == true)
 			{
