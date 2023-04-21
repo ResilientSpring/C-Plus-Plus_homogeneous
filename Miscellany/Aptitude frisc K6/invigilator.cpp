@@ -91,7 +91,7 @@ int main() {
 	string input_aag = "frisc.aag";
 	read(input_aag);
 
-	K = 6;
+	K = 5;
 
 	stack<int> gates;
 
