@@ -19,4 +19,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="des.aag">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="des.mapping_result">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>
