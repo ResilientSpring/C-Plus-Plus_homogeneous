@@ -88,19 +88,19 @@ vector<vertex **> trees_LUTs;
 
 int main() {
 
-	string input_aag = "alu4.aag";
+	string input_aag = "des.aag";
 	read(input_aag);
 
-	K = 5;
+	K = 6;
 
 	stack<int> gates;
 
-	Topological_sort_2(gates);
-	dismantle_forest_to_trees_2(gates);
-	mapper3();
+	Topological_sort(gates);
+	dismantle_forest_to_trees(gates);
+	mapper1();
 
-	string output_file_name = "alu4.mapping_result";
-	Output2(output_file_name);
+	string output_file_name = "des.mapping_result";
+	Output(output_file_name);
 
 }
 
@@ -249,10 +249,10 @@ void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
 	// Mark all vertices as not visited.
 	bool *visited = new bool[2 * total_number_of_nodes + 1];
 
-	for (int i = 0; i <= 2 * total_number_of_nodes; i++)
+	for (int i = 0; i <= 2 * total_number_of_nodes + 1; i++)
 		visited[i] = false;
 
-	for (int i = 1; i <= 2 * total_number_of_nodes; i++)
+	for (int i = 1; i <= 2 * total_number_of_nodes + 1; i++)
 		if (visited[i] == false)
 			Depth_First_Search(i, visited, Stack);
 }
@@ -783,7 +783,7 @@ void Output2(string output_file) {
 
 	for (auto **LUTs : trees_LUTs) {
 
-		for (int i = 1; i <= 2 * total_number_of_nodes; i++)
+		for (int i = 1; i <= 2 * total_number_of_nodes + 1; i++)
 		{
 			if (LUTs[i] != NULL && LUTs[i]->in_use == true)
 			{
