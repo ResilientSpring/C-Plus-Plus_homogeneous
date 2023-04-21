@@ -91,7 +91,7 @@ int main() {
 	string input_aag = "bigkey.aag";
 	read(input_aag);
 
-	K = 6;
+	K = 2;
 
 	stack<int> gates;
 
