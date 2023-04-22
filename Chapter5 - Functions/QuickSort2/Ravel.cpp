@@ -1,3 +1,5 @@
+#include <iostream>
+using namespace std;
 
 void quicksort(char* items, int len);
 void qs(char* items, int left, int right);
@@ -5,6 +7,8 @@ void qs(char* items, int left, int right);
 int main() {
 
 	char str[] = "jfmckldoelazlkper";
+
+	cout << "Original order: " << str << "\n";
 
 }
 
