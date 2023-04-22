@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 void quicksort(char* items, int len);
@@ -9,6 +10,8 @@ int main() {
 	char str[] = "jfmckldoelazlkper";
 
 	cout << "Original order: " << str << "\n";
+
+	quicksort(str, strlen(str));
 
 }
 
