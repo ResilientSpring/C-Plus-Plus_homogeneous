@@ -4,6 +4,8 @@ void qs(char* items, int left, int right);
 
 int main() {
 
+	char str[] = "jfmckldoelazlkper";
+
 }
 
 
