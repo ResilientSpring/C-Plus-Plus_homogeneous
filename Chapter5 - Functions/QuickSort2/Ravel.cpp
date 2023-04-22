@@ -13,6 +13,8 @@ int main() {
 
 	quicksort(str, strlen(str));
 
+	cout << "Sorted order: " << str << "\n";
+
 }
 
 
