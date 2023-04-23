@@ -28,6 +28,7 @@ int main() {
 		if (i != 0)
 		{
 			vi.push_back(i);
+			int_itr++;
 		}
 
 	} while (i != 0);
