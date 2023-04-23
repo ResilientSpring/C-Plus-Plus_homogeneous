@@ -39,7 +39,7 @@ void qs(char *items, int left, int right) {
 		while ((items[i] < x) && (i < right))
 			i++;
 
-		while ((x < items[j]) && (j < left))
+		while ((x < items[j]) && (j > left))
 			j--;
 
 
