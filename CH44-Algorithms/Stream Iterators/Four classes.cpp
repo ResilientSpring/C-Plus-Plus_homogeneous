@@ -15,6 +15,13 @@ int main() {
 	vector<double> vd;
 	vector<string> vs;
 
+	// Use istream_iterator to read from cin.
 
+
+	// Create an input stream iterator for int.
+
+
+
+	// Create an input stream iterators from doubles.
 
 }
