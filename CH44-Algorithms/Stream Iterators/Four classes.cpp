@@ -21,6 +21,17 @@ int main() {
 	// Create an input stream iterator for int.
 	cout << "Enter some integers, enter 0 to stop. \n";
 	istream_iterator<int> int_itr(cin);
+	do
+	{
+		i = *int_itr;
+
+		if (i != 0)
+		{
+			vi.push_back(i);
+		}
+
+	} while (i != 0);
+
 
 	// Create an input stream iterators from doubles.
 
