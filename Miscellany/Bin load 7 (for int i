@@ -1,0 +1,12 @@
+﻿  recoil.cpp
+D:\Coding projects\C-Plus-Plus_homogeneous\Miscellany\Bin load 7 (for int i =1)\recoil.cpp(448,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Coding projects\C-Plus-Plus_homogeneous\Miscellany\Bin load 7 (for int i =1)\recoil.cpp(469,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Coding projects\C-Plus-Plus_homogeneous\Miscellany\Bin load 7 (for int i =1)\recoil.cpp(540,55): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\Coding projects\C-Plus-Plus_homogeneous\Miscellany\Bin load 7 (for int i =1)\recoil.cpp(555,57): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\Coding projects\C-Plus-Plus_homogeneous\Miscellany\Bin load 7 (for int i =1)\recoil.cpp(579,57): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\Coding projects\C-Plus-Plus_homogeneous\Miscellany\Bin load 7 (for int i =1)\recoil.cpp(604,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Coding projects\C-Plus-Plus_homogeneous\Miscellany\Bin load 7 (for int i =1)\recoil.cpp(619,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Coding projects\C-Plus-Plus_homogeneous\Miscellany\Bin load 7 (for int i =1)\recoil.cpp(687,55): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\Coding projects\C-Plus-Plus_homogeneous\Miscellany\Bin load 7 (for int i =1)\recoil.cpp(702,57): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\Coding projects\C-Plus-Plus_homogeneous\Miscellany\Bin load 7 (for int i =1)\recoil.cpp(726,57): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Bin load 7 (for int i =1).vcxproj -> D:\Coding projects\C-Plus-Plus_homogeneous\Miscellany\x64\Debug\Bin loaded 7 (for int i =1).exe

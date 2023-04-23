@@ -26,10 +26,13 @@ void dismantle_forest_to_trees(stack<int> &Stack);
 void dismantle_forest_to_trees_2(stack<int> &Stack);
 void dismantle_forest_to_trees_3(stack<int> &Stack);
 void dismantle_forest_to_trees_4(stack<int> &Stack);
+void dismantle_forest_to_trees_5(stack<int> &Stack);
 void mapper();
 void mapper1();
 void mapper2();
 void mapper3();
+void Output(string output_file);
+void Output2(string output_file);
 
 string title;
 
@@ -84,23 +87,22 @@ public:
 vector<vertex **> trees_LUTs;
 
 
-int main(int argc, char **argv) { // [1]
+int main() {
 
-	if (argc != 4) {
 
-		cout << "Usage:  \n";
-		cout << "./mapping <path_to_the_input_blif> <LUT_size_(K)> <output_file_name>" << endl;
-		exit(1);
-	}
-
-	string input_aag = argv[1];
+	string input_aag = "alu4.aag";
 	read(input_aag);
 
-	K = stoi(argv[2]);
+	K = 4;
 
-	cout << "Input File: " << argv[1] << endl;
-	cout << "K: " << argv[2] << endl;
-	cout << "Output File: " << argv[3] << endl;
+	stack<int> gates;
+
+	Topological_sort_2(gates);
+	dismantle_forest_to_trees_5(gates);
+	mapper3();
+
+	string output_file_name = "alu4.mapping_result";
+	Output2(output_file_name);
 }
 
 
@@ -251,7 +253,7 @@ void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
 	for (int i = 0; i <= 2 * total_number_of_nodes + 1; i++)
 		visited[i] = false;
 
-	for (int i = 1; i <= 2 * total_number_of_nodes + 1; i++)
+	for (int i = 1; i <= 2 * total_number_of_nodes; i++)
 		if (visited[i] == false)
 			Depth_First_Search(i, visited, Stack);
 }
@@ -440,6 +442,47 @@ void dismantle_forest_to_trees_4(stack<int> &Stack) {
 
 }
 
+
+// Each node in the tree can be connected to many children (depending on the type of tree), 
+// but must be connected to exactly one parent. [17]
+void dismantle_forest_to_trees_5(stack<int> &Stack) {
+
+	while (!Stack.empty())
+	{
+		int node = Stack.top();
+		Stack.pop();
+
+		// If the node taken from the top of stack is found to be a primary input, or 
+		// not a primary output and has fanout node fewer than 2.
+		if (primary_inputs.find(node) != primary_inputs.end() or
+			(primary_outputs.find(node) == primary_outputs.end() &&
+				adjacency_list_of_network[node].size() < 2))
+
+			continue;
+
+		//	vector<int> tree_inv[total_number_of_nodes];
+		vector<int> *tree_inv = new vector<int>[2 * total_number_of_nodes + 1];
+
+		queue<int> tree_sort_order;
+
+		// Topological srot starting from primary outputs to primary inputs.
+		bool *visited = new bool[2 * total_number_of_nodes + 1];
+
+		for (int i = 0; i <= 2 * total_number_of_nodes; i++)
+			visited[i] = false;
+
+		Inverse_Depth_First_Search(node, visited, tree_sort_order, tree_inv); // [Note1]
+
+		trees_inverse.push_back(tree_inv);
+		topologically_sorted_nodes_in_a_tree.push_back(tree_sort_order);
+
+		inverse_adjacency_list_of_network[node].clear();
+	}
+
+
+}
+
+
 // Only one asterisk before LUTs.
 void mapper() {
 
@@ -505,28 +548,94 @@ void mapper1() {
 			int fan_in_1 = tree_inv[node][0];
 			int fan_in_2 = tree_inv[node][1];
 
+
+			//////////////////
+
+			Look_Up_Table *fan_in_1_LUT = LUTs[fan_in_1];
+			Look_Up_Table *fan_in_2_LUT = LUTs[fan_in_2];
+
+			//////////////////
+
+
 			// Record the check result.
 			int number_of_inputs[2];
 
 			if (tree_inv[fan_in_1].empty())
 				number_of_inputs[0] = 1;
 			else
-				number_of_inputs[0] = LUTs[fan_in_1]->number_of_fanins;
+				number_of_inputs[0] = fan_in_1_LUT->number_of_fanins;
 
 			if (tree_inv[fan_in_2].empty())
 				number_of_inputs[1] = 1;
 			else
-				number_of_inputs[1] = LUTs[fan_in_2]->number_of_fanins;
+				number_of_inputs[1] = fan_in_2_LUT->number_of_fanins;
 
-			
+
 			// Greedy mapping
-			if (number_of_inputs[0] + number_of_inputs[1] <= K )
+			if (number_of_inputs[0] + number_of_inputs[1] <= K)
 			{
-				Look_Up_Table new_LUT;
-				new_LUT.in_use = true;
-				new_LUT.fanins = LUTs[fan_in_1]->number_of_fanins;
+				Look_Up_Table *new_LUT = new Look_Up_Table;
+				new_LUT->in_use = true;
+				new_LUT->fanins = fan_in_1_LUT->fanins;
+				new_LUT->fanins.insert(new_LUT->fanins.end(), fan_in_2_LUT->fanins.begin(), fan_in_2_LUT->fanins.end());
+				new_LUT->fanout = node;
+				new_LUT->number_of_fanins = new_LUT->fanins.size();
+				LUTs[node] = new_LUT;
+				fan_in_1_LUT->in_use = false;
+				fan_in_2_LUT->in_use = false;
+			}
+			else {
+				if (number_of_inputs[0] <= number_of_inputs[1])
+				{
+					if (number_of_inputs[0] + 1 <= K)
+					{
+						Look_Up_Table *new_LUT = new Look_Up_Table;
+						new_LUT->in_use = true;
+						new_LUT->fanins = fan_in_1_LUT->fanins;
+						new_LUT->fanins.push_back(fan_in_2);
+						new_LUT->fanout = node;
+						new_LUT->number_of_fanins = new_LUT->fanins.size();
+						LUTs[node] = new_LUT;
+						fan_in_1_LUT->in_use = false;
+					}
+					else
+					{
+						Look_Up_Table *new_LUT = new Look_Up_Table;
+						new_LUT->in_use = true;
+						new_LUT->fanins.push_back(fan_in_1);
+						new_LUT->fanins.push_back(fan_in_2);
+						new_LUT->fanout = node;
+						new_LUT->number_of_fanins = 2;
+						LUTs[node] = new_LUT;
+					}
+				}
+				else
+				{
+					if (number_of_inputs[1] + 1 <= K)
+					{
+						Look_Up_Table *new_LUT = new Look_Up_Table;
+						new_LUT->in_use = true;
+						new_LUT->fanins = fan_in_2_LUT->fanins;
+						new_LUT->fanins.push_back(fan_in_1);
+						new_LUT->fanout = node;
+						new_LUT->number_of_fanins = new_LUT->fanins.size();
+						LUTs[node] = new_LUT;
+						fan_in_2_LUT->in_use = false;
+					}
+					else
+					{
+						Look_Up_Table *new_LUT = new Look_Up_Table;
+						new_LUT->in_use = true;
+						new_LUT->fanins.push_back(fan_in_1);
+						new_LUT->fanins.push_back(fan_in_2);
+						new_LUT->fanout = node;
+						new_LUT->number_of_fanins = 2;
+						LUTs[node] = new_LUT;
+					}
+				}
 			}
 		}
+		trees_LUTs.push_back(LUTs);
 	}
 }
 
@@ -570,11 +679,164 @@ void mapper3() {
 			int node = Queue.front();
 			Queue.pop();
 
+			if (tree_inv[node].empty())   // if the node is a primary input, i.e. a node without fanouts.
+			{
+				Look_Up_Table *dummy_LUT = new Look_Up_Table();
+				dummy_LUT->in_use = true;
+				dummy_LUT->fanins.push_back(node);
+				dummy_LUT->fanout = node;
+				dummy_LUT->number_of_fanins = 1;
+				LUTs[node] = dummy_LUT;
 
+				continue;
+			}
+
+			// Check whether the node's fanin is a primary input or LUT 
+			int fan_in_1 = tree_inv[node][0];
+			int fan_in_2 = tree_inv[node][1];
+
+
+			//////////////////
+
+			Look_Up_Table *fan_in_1_LUT = LUTs[fan_in_1];
+			Look_Up_Table *fan_in_2_LUT = LUTs[fan_in_2];
+
+			//////////////////
+
+
+			// Record the check result.
+			int number_of_inputs[2];
+
+			if (tree_inv[fan_in_1].empty())
+				number_of_inputs[0] = 1;
+			else
+				number_of_inputs[0] = fan_in_1_LUT->number_of_fanins;
+
+			if (tree_inv[fan_in_2].empty())
+				number_of_inputs[1] = 1;
+			else
+				number_of_inputs[1] = fan_in_2_LUT->number_of_fanins;
+
+
+			// Greedy mapping
+			if (number_of_inputs[0] + number_of_inputs[1] <= K)
+			{
+				Look_Up_Table *new_LUT = new Look_Up_Table;
+				new_LUT->in_use = true;
+				new_LUT->fanins = fan_in_1_LUT->fanins;
+				new_LUT->fanins.insert(new_LUT->fanins.end(), fan_in_2_LUT->fanins.begin(), fan_in_2_LUT->fanins.end());
+				new_LUT->fanout = node;
+				new_LUT->number_of_fanins = new_LUT->fanins.size();
+				LUTs[node] = new_LUT;
+				fan_in_1_LUT->in_use = false;
+				fan_in_2_LUT->in_use = false;
+			}
+			else {
+				if (number_of_inputs[0] <= number_of_inputs[1])
+				{
+					if (number_of_inputs[0] + 1 <= K)
+					{
+						Look_Up_Table *new_LUT = new Look_Up_Table;
+						new_LUT->in_use = true;
+						new_LUT->fanins = fan_in_1_LUT->fanins;
+						new_LUT->fanins.push_back(fan_in_2);
+						new_LUT->fanout = node;
+						new_LUT->number_of_fanins = new_LUT->fanins.size();
+						LUTs[node] = new_LUT;
+						fan_in_1_LUT->in_use = false;
+					}
+					else
+					{
+						Look_Up_Table *new_LUT = new Look_Up_Table;
+						new_LUT->in_use = true;
+						new_LUT->fanins.push_back(fan_in_1);
+						new_LUT->fanins.push_back(fan_in_2);
+						new_LUT->fanout = node;
+						new_LUT->number_of_fanins = 2;
+						LUTs[node] = new_LUT;
+					}
+				}
+				else
+				{
+					if (number_of_inputs[1] + 1 <= K)
+					{
+						Look_Up_Table *new_LUT = new Look_Up_Table;
+						new_LUT->in_use = true;
+						new_LUT->fanins = fan_in_2_LUT->fanins;
+						new_LUT->fanins.push_back(fan_in_1);
+						new_LUT->fanout = node;
+						new_LUT->number_of_fanins = new_LUT->fanins.size();
+						LUTs[node] = new_LUT;
+						fan_in_2_LUT->in_use = false;
+					}
+					else
+					{
+						Look_Up_Table *new_LUT = new Look_Up_Table;
+						new_LUT->in_use = true;
+						new_LUT->fanins.push_back(fan_in_1);
+						new_LUT->fanins.push_back(fan_in_2);
+						new_LUT->fanout = node;
+						new_LUT->number_of_fanins = 2;
+						LUTs[node] = new_LUT;
+					}
+				}
+			}
 		}
+		trees_LUTs.push_back(LUTs);
 	}
 }
 
+
+void Output(string output_file) {
+
+	ofstream output_stream;
+
+	output_stream.open(output_file);
+
+	for (auto **LUTs : trees_LUTs) {
+
+		for (int i = 0; i < total_number_of_nodes; i++)
+		{
+			if (LUTs[i] != NULL && LUTs[i]->in_use == true)
+			{
+				output_stream << LUTs[i]->fanout;
+
+				for (auto j : LUTs[i]->fanins)
+					output_stream << " " << j;
+
+				output_stream << endl;
+			}
+		}
+
+	}
+	output_stream.close();
+}
+
+
+void Output2(string output_file) {
+
+	ofstream output_stream;
+
+	output_stream.open(output_file);
+
+	for (auto **LUTs : trees_LUTs) {
+
+		for (int i = 1; i <= total_number_of_nodes; i++)
+		{
+			if (LUTs[i] != NULL && LUTs[i]->in_use == true)
+			{
+				output_stream << LUTs[i]->fanout;
+
+				for (auto j : LUTs[i]->fanins)
+					output_stream << " " << j;
+
+				output_stream << endl;
+			}
+		}
+
+	}
+	output_stream.close();
+}
 
 /*
 *
