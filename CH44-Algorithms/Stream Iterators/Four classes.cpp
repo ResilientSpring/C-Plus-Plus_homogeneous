@@ -8,6 +8,13 @@ using namespace std;
 
 int main() {
 
+	unsigned i;
+	double d;
+	string str;
+	vector<int> vi;
+	vector<double> vd;
+	vector<string> vs;
+
 
 
 }
