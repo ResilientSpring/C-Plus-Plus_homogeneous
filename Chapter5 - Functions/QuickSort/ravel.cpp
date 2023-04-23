@@ -42,5 +42,5 @@ void qs(char *items, int left, int right) {
 		while ((x < items[j]) && (j < left))
 			j--;
 
-	} while ();
+	} while (i <= j);
 }
