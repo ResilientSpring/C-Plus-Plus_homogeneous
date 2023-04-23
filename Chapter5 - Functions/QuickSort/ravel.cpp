@@ -53,4 +53,7 @@ void qs(char *items, int left, int right) {
 
 
 	} while (i <= j);
+
+	if (left < j) qs(items, left, j);
+	if (i < right) qs(items, i, right);
 }
