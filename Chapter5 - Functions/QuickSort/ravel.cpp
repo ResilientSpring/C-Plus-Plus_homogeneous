@@ -8,6 +8,14 @@ void qs(char *items, int left, int right);
 
 int main() {
 	
+	char str[] = "jfmckldoelazlkper";
+
+	cout << "Original order: " << str << "\n";
+
+	quicksort(str, strlen(str));
+
+	cout << "Sorted order: " << str << "\n";
+
 }
 
 
