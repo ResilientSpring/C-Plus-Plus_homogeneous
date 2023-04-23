@@ -1,0 +1,27 @@
+// Use istream_iterator and ostream_iterator to read from cin and write to cout.
+
+#include <iostream>
+#include <iterator>
+#include <string>
+#include <vector>
+using namespace std;
+
+int main() {
+
+	unsigned i;
+	double d;
+	string str;
+	vector<int> vi;
+	vector<double> vd;
+	vector<string> vs;
+
+	// Use istream_iterator to read from cin.
+
+
+	// Create an input stream iterator for int.
+	cout << "Enter some integers, enter 0 to stop. \n";
+	istream_iterator<int> int_itr(cin);
+
+	// Create an input stream iterators from doubles.
+
+}
