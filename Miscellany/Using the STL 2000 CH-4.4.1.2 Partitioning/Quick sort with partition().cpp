@@ -51,4 +51,9 @@ int main() {
 	random_shuffle(ar, ar + 10);
 	copy(ar, ar + 10, outStream);
 	cout << "\n";
+
+	QuickSort(ar, ar + 10);
+
+	copy(ar, ar + 10, outStream);
+	cout << "\n";
 }
