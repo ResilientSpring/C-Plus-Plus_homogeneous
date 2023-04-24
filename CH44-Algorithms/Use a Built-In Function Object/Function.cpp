@@ -6,6 +6,8 @@
 #include <functional>
 using namespace std;
 
+void show(const char *message, T cont);
+
 int main() {
 
 	vector<int> v, v2, result(10);
