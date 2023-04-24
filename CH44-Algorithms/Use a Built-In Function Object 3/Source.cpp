@@ -21,6 +21,7 @@ int main() {
 
 	show("Contents of v:\n", v);
 	show("Contents of v2:\n", v2);
+	cout << endl;
 
 }
 
