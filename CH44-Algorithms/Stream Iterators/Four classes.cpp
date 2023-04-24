@@ -48,4 +48,22 @@ int main() {
 		}
 
 	} while (i != 0.0);
+
+
+	// Create an input stream iterator for string.
+	cout << "Enter some strings, enter \"quit\" to stop. \n";
+	istream_iterator<string> string_itr(cin);
+	do
+	{
+		str = *string_itr;
+
+		if (str != "quit")
+		{
+			vs.push_back(str);
+			string_itr++;
+		}
+
+	} while (str != "quit");
+
+	cout << endl;
 }
