@@ -45,4 +45,7 @@ int main() {
 	int ar[10], i;
 	ostream_iterator<int> outStream(cout, " ");
 
+	for (i = 0; i < 10; i++)
+		ar[i] = i;
+
 }
