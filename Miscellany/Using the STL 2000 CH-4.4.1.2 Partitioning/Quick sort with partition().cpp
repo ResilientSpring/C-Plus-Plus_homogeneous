@@ -30,6 +30,13 @@ void QuickSort(int *first, int *last) {
 
 	splitPoint = partition(first, last, bind2nd(less<int>(), *pivot));
 
+	if (splitPoint == first)
+		splitPoint++;
+
+	// avoid loop
+	QuickSort(first, splitPoint);
+	QuickSort(splitPoint, last);
+
 }
 
 
