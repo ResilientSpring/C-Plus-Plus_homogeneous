@@ -25,6 +25,10 @@ int main() {
 
 	// Multiply v and v2 together.
 	transform(v.begin(), v.end(), v2.begin(), result.begin(), multiplies<int>());
+
+	show("Result of multiplying the elements in v with those in v2: \n", result);
+
+	cout << endl;
 }
 
 // Display the contents of a container.
