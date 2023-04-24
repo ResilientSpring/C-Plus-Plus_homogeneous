@@ -48,4 +48,7 @@ int main() {
 	for (i = 0; i < 10; i++)
 		ar[i] = i;
 
+	random_shuffle(ar, ar + 10);
+	copy(ar, ar + 10, outStream);
+	cout << "\n";
 }
