@@ -23,6 +23,8 @@ int main() {
 	show("Contents of v2:\n", v2);
 	cout << endl;
 
+	// Multiply v and v2 together.
+	transform(v.begin(), v.end(), v2.begin(), result.begin(), multiplies<int>());
 }
 
 // Display the contents of a container.
