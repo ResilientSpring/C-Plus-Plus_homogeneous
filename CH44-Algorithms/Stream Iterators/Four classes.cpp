@@ -66,4 +66,11 @@ int main() {
 	} while (str != "quit");
 
 	cout << endl;
+
+	cout << "Here is what you entered: \n";
+	for (i = 0; i < vi.size(); i++)
+		cout << vi[i] << " ";
+
+	cout << endl;
+
 }
