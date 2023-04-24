@@ -41,12 +41,11 @@ int main() {
 	{
 		i = *double_itr;
 
-		if (i != 0)
+		if (i != 0.0)
 		{
 			vd.push_back(i);
 			double_itr++;
 		}
 
-
-	} while (i != 0);
+	} while (i != 0.0);
 }
