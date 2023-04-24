@@ -77,4 +77,11 @@ int main() {
 		cout << vd[i] << " ";
 
 	cout << endl;
+	
+	for (i = 0; i < vs.size(); i++)
+		cout << vs[i] << " ";
+
+	cout << endl;
+
+
 }
