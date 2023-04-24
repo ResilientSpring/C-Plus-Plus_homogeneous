@@ -29,6 +29,12 @@ int main() {
 	show("Result of multiplying the elements in v with those in v2: \n", result);
 
 	cout << endl;
+
+
+	// Next, negate the contents of result.
+	transform(v.begin(), v.end(), v.begin(), negate<int>());
+
+	show("After negating v: \n", v);
 }
 
 // Display the contents of a container.
