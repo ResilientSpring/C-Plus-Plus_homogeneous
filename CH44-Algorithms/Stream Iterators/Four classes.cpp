@@ -35,5 +35,46 @@ int main() {
 
 
 	// Create an input stream iterators from doubles.
+	cout << "Enter some doubles, enter 0 to stop. \n";
+	istream_iterator<double> double_itr(cin);
+	do
+	{
+		i = *double_itr;
 
+		if (i != 0.0)
+		{
+			vd.push_back(i);
+			double_itr++;
+		}
+
+	} while (i != 0.0);
+
+
+	// Create an input stream iterator for string.
+	cout << "Enter some strings, enter \"quit\" to stop. \n";
+	istream_iterator<string> string_itr(cin);
+	do
+	{
+		str = *string_itr;
+
+		if (str != "quit")
+		{
+			vs.push_back(str);
+			string_itr++;
+		}
+
+	} while (str != "quit");
+
+	cout << endl;
+
+	cout << "Here is what you entered: \n";
+	for (i = 0; i < vi.size(); i++)
+		cout << vi[i] << " ";
+
+	cout << endl;
+
+	for (i = 0; i < vd.size(); i++)
+		cout << vd[i] << " ";
+
+	cout << endl;
 }
