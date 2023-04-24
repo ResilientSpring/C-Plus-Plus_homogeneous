@@ -10,6 +10,15 @@ void QuickSort(int *first, int *last) {
 	int *pivot, *second, *splitPoint;
 
 	len = distance(first, last);
+
+	if (len < 2)
+		return;
+
+	if (len == 2) {
+		second = first;
+		second++;
+	}
+
 }
 
 
