@@ -8,6 +8,8 @@ void QuickSort(int *first, int *last) {
 
 	int len;
 	int *pivot, *second, *splitPoint;
+
+	len = distance(first, last);
 }
 
 
