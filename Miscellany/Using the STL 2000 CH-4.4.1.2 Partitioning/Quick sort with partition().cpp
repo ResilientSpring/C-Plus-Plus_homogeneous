@@ -24,6 +24,12 @@ void QuickSort(int *first, int *last) {
 
 	pivot = adjacent_find(first, last, not_equal_to<int>());
 
+	// avoid loop
+	if (pivot == last)
+		return;
+
+	splitPoint = partition(first, last, bind2nd(less<int>(), *pivot));
+
 }
 
 
