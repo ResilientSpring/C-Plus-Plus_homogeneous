@@ -22,6 +22,8 @@ void QuickSort(int *first, int *last) {
 			iter_swap(first, second);
 	}
 
+	pivot = adjacent_find(first, last, not_equal_to<int>());
+
 }
 
 
