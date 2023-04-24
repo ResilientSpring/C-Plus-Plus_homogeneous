@@ -77,4 +77,19 @@ int main() {
 		cout << vd[i] << " ";
 
 	cout << endl;
+	
+	for (i = 0; i < vs.size(); i++)
+		cout << vs[i] << " ";
+
+	cout << endl;
+
+
+	// Now, use ostream_iterator to write cout.
+
+	// Create an output iterator for string.
+	ostream_iterator<string> output_string_itr(cout);
+	
+	*output_string_itr = "\n";
+	*output_string_itr = string("\nThis is a string\n");
+	*output_string_itr = "This is too.\n";
 }
