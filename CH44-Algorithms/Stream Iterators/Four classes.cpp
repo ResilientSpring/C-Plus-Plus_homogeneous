@@ -84,4 +84,9 @@ int main() {
 	cout << endl;
 
 
+	// Now, use ostream_iterator to write cout.
+
+	// Create an output iterator for string.
+	ostream_iterator<string> output_string_itr(cout);
+
 }
