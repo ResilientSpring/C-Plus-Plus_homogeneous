@@ -88,5 +88,6 @@ int main() {
 
 	// Create an output iterator for string.
 	ostream_iterator<string> output_string_itr(cout);
-
+	
+	*output_string_itr = "\n";
 }
