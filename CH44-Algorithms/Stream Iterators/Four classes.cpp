@@ -91,4 +91,5 @@ int main() {
 	
 	*output_string_itr = "\n";
 	*output_string_itr = string("\nThis is a string\n");
+	*output_string_itr = "This is too.\n";
 }
