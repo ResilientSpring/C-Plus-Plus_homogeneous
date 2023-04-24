@@ -42,6 +42,7 @@ void QuickSort(int *first, int *last) {
 
 int main() {
 
-
+	int ar[10], i;
+	ostream_iterator<int> outStream(cout, " ");
 
 }
