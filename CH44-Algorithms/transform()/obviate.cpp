@@ -14,5 +14,9 @@ using namespace std;
 int main() {
 
 	// First, demonstrate the single-sequence form of transform()
+	vector<double> v;
 
+	// Put values into v.
+	for (int i = 0; i < 10; i++)
+		v.push_back((double)i);
 }
