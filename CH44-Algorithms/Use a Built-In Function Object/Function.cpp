@@ -24,6 +24,10 @@ void show(const char *message, T cont) {
 
 	cout << message;
 
-	
+	T::iterator itr;
 
+	for (itr = cont.begin(); itr != cont.end(); itr++)
+		cout << *itr << " ";
+
+	cout << "\n";
 }
