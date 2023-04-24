@@ -17,6 +17,9 @@ void QuickSort(int *first, int *last) {
 	if (len == 2) {
 		second = first;
 		second++;
+
+		if (*first > *second)
+			iter_swap(first, second);
 	}
 
 }
