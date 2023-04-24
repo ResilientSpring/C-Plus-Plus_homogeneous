@@ -90,4 +90,5 @@ int main() {
 	ostream_iterator<string> output_string_itr(cout);
 	
 	*output_string_itr = "\n";
+	*output_string_itr = string("\nThis is a string\n");
 }
