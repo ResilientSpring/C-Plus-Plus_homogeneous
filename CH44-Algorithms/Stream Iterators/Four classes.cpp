@@ -37,4 +37,16 @@ int main() {
 	// Create an input stream iterators from doubles.
 	cout << "Enter some doubles, enter 0 to stop. \n";
 	istream_iterator<double> double_itr(cin);
+	do
+	{
+		i = *double_itr;
+
+		if (i != 0)
+		{
+			vd.push_back(i);
+			double_itr++;
+		}
+
+
+	} while (i != 0);
 }
