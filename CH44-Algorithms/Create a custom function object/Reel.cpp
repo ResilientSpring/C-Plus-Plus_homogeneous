@@ -74,6 +74,18 @@ int main() {
 
 	cout << endl;
 
+	vector<int> v3, v4, v5(10);
+
+	for (int i = 0; i < 10; i++)
+		v3.push_back(i);
+	
+	for (int i = 10; i < 20; i++) {
+		
+		if (i % 2)
+			v4.push_back(i);
+		else
+			v4.push_back(-i);
+	}
 
 }
 
