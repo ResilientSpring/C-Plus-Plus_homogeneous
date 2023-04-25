@@ -64,6 +64,11 @@ int main() {
 		
 	show("Contents of v3:\n", v3);
 	show("Contents of v4:\n", v4);
+
+	cout << endl;
+
+	cout << "Compute midpoints between v3 and v4 and store results in v5." << endl;
+	transform(v3.begin(), v3.end(), v4.begin(), v5.begin(), midpoint);
 }
 
 // Display the contents of a vector<int>.
