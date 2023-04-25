@@ -11,6 +11,12 @@
 #include <algorithm>
 using namespace std;
 
+template<class T>
+void show(const char *message, vector<T> vect);
+int midpoint(int a, int b);
+double reciprocal(double val);
+
+
 int main() {
 
 	// First, demonstrate the single-sequence form of transform()
@@ -19,4 +25,45 @@ int main() {
 	// Put values into v.
 	for (int i = 0; i < 10; i++)
 		v.push_back((double)i);
+
+	cout << "Demonstrate single-sentence form of transformation(). \n";
+ 	show("Initial contents of v: \n", v);
+	cout << endl;
+
+
+	// Transform v by applying reciprocal() function.
+	// Put the result back into v.
+	cout << "Compute reciprocals for v and store the results back in v. \n";
+	transform(v.begin(), v.end(), v.begin(), reciprocal);
+}
+
+// Display the contents of a vector<int>.
+template<class T>
+void show(const char *message, vector<T> vect) {
+
+	cout << message;
+
+	for (unsigned i = 0; i < vect.size(); i++)
+		cout << vect[i] << " ";
+
+	cout << "\n";
+
+}
+
+// Return the whole number midpoint between two values.
+int midpoint(int a, int b) {
+
+	return ((a - b) / 2) + b;
+
+}
+
+
+// Return the reciprocal of a double.
+double reciprocal(double val) {
+
+	if (val == 0.0)
+		return 0.0;
+
+	return 1.0 / val;
+
 }
