@@ -4,12 +4,14 @@
 #include <algorithm>
 using namespace std;
 
+double power_of_two();
+
 int main() {
 
 	vector<double> v(5);
 
 	// Generate a sequence.
-	generate(v.begin, v.end(), )
+	generate(v.begin(), v.end(), power_of_two);
 
 }
 
