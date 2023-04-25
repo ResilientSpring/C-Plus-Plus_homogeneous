@@ -19,4 +19,6 @@ int main() {
 	// Put values into v.
 	for (int i = 0; i < 10; i++)
 		v.push_back((double)i);
+
+	cout << "Demonstrate single-sentence form of transformation(). \n";
 }
