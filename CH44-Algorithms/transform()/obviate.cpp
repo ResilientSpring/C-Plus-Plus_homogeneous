@@ -23,3 +23,14 @@ int main() {
 	cout << "Demonstrate single-sentence form of transformation(). \n";
 // 	show("Initial contents of v: \n", v);
 }
+
+// Display the contents of a vector<int>.
+template<class T>
+void show(const char *message, vector<T> vect) {
+
+	cout << message;
+
+	for (unsigned i = 0; i < vect.size(); i++)
+		cout << vect[i] << " ";
+
+}
