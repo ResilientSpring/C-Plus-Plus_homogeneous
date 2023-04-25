@@ -38,7 +38,7 @@ int main() {
 
 	show("Transfomred contents of v: \n", v);
 
-	// Transform v a secon time, putting a result into a new sequence.
+	// Transform v a second time, putting a result into a new sequence.
 	cout << "Transform v again. This time, putting the result in v2.\n";
 
 }
