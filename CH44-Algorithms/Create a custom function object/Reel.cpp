@@ -68,6 +68,11 @@ int main() {
 	cout << "Use a unary function object to transform v again. \n";
 	cout << "This time, store the results in v2.\n";
 	vector<double> v2(10);
+	transform(v.begin(), v.end(), v2.begin(), reciprocal());
+
+	show("Here is v2:\n", v2);
+
+	cout << endl;
 
 
 }
