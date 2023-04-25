@@ -40,6 +40,8 @@ int main() {
 
 	// Transform v a second time, putting a result into a new sequence.
 	cout << "Transform v again. This time, putting the result in v2.\n";
+	vector<double> v2(10);
+	transform(v.begin(), v.end(), v2.begin(), reciprocal);
 
 }
 
