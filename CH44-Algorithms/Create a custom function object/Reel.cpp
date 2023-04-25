@@ -41,6 +41,40 @@ public:
 
 int main() {
 
+	vector<double> v;
+
+	// Put values into v.
+	for (int i = 0; i < 10; i++)
+		v.push_back((double)i);
+
+	show("Initial contents of v: \n", v);
+
+	cout << endl;
+
+	// First, demonstratre a unary function object.
+
+	// Transform v by applying the reciprocal function object. 
+	// Put the result back into v.
+	cout << "Use a unary function object in calls to transform() to compute reciprocals for v and";
+	cout << " store the results back in v.\n";
+	transform(v.begin(), v.end(), v.begin(), reciprocal());
+
+
+	show("Transformed contents of v: \n", v);
+
+	cout << endl;
+
+	// Transform v a second time, putting the result into a new sequence.
+	cout << "Use a unary function object to transform v again. \n";
+	cout << "This time, store the results in v2.\n";
+	vector<double> v2(10);
+	transform(v.begin(), v.end(), v2.begin(), reciprocal());
+
+	show("Here is v2:\n", v2);
+
+	cout << endl;
+
+
 }
 
 
