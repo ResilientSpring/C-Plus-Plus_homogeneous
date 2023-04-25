@@ -35,6 +35,42 @@ int main() {
 	// Put the result back into v.
 	cout << "Compute reciprocals for v and store the results back in v. \n";
 	transform(v.begin(), v.end(), v.begin(), reciprocal);
+
+	show("Transfomred contents of v: \n", v);
+
+	// Transform v a second time, putting a result into a new sequence.
+	cout << "Transform v again. This time, putting the result in v2.\n";
+	vector<double> v2(10);
+	transform(v.begin(), v.end(), v2.begin(), reciprocal);
+
+	show("Here is v2:\n", v2);
+
+	cout << endl;
+
+	// Now, demonstrate the two-sequence form of transform()
+	cout << "Demonstrate double-sequence form of transform(). \n";
+	vector<int> v3, v4, v5(10);
+
+	for (int i = 0; i < 10; i++)
+		v3.push_back(i);
+
+	for (int i = 10; i < 20; i++) {
+
+		if (i % 2)
+			v4.push_back(i);
+		else
+			v4.push_back(-i);
+	}
+		
+	show("Contents of v3:\n", v3);
+	show("Contents of v4:\n", v4);
+
+	cout << endl;
+
+	cout << "Compute midpoints between v3 and v4 and store results in v5." << endl;
+	transform(v3.begin(), v3.end(), v4.begin(), v5.begin(), midpoint);
+
+	show("Contents of v5:\n", v5);
 }
 
 // Display the contents of a vector<int>.
