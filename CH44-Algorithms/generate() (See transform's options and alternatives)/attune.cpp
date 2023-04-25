@@ -13,8 +13,8 @@ int main() {
 	// Generate a sequence.
 	generate(v.begin(), v.end(), power_of_two);
 
-	cout << "Powers of 2:";
-	for (unsigned i = 0; i < v.size(), i++)
+	cout << "Powers of 2: ";
+	for (unsigned i = 0; i < v.size(); i++)
 		cout << v[i] << " ";
 
 }
