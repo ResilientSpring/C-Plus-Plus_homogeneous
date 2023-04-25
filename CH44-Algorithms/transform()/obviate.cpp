@@ -43,6 +43,8 @@ int main() {
 	vector<double> v2(10);
 	transform(v.begin(), v.end(), v2.begin(), reciprocal);
 
+	show("Here is v2:\n", v2);
+
 }
 
 // Display the contents of a vector<int>.
