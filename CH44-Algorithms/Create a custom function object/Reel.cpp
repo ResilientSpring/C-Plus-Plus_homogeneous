@@ -96,6 +96,7 @@ int main() {
 	cout << " and store the results in v5. \n";
 	transform(v3.begin(), v3.end(), v4.begin(), v5.begin(), midpoint());
 
+	show("Contents of v5:\n", v5);
 }
 
 
