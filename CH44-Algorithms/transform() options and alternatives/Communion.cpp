@@ -15,6 +15,7 @@ template<class T>
 void show(const char *message, vector<T> vect);
 int midpoint(int a, int b);
 double midpoint2(int a, int b);
+double midpoint3(int a, int b);
 double reciprocal(double val);
 
 
@@ -82,6 +83,16 @@ int main() {
 	show("Contents of v5:\n", v5);
 
 	cout << endl;
+
+	vector<double> d;
+
+	cout << "Compute midpoints between the first 5 elements of v3 and whose next 5 elements"
+		 << "starting from its 6th element. And store results in v5.";
+	transform(v3.begin(), v3.begin() + 5, v3.begin() + 5, d.begin(), midpoint3);  // return doubles
+
+	show("Contents of v5:\n", d);
+
+	cout << endl;
 }
 
 // Display the contents of a vector<int>.
@@ -109,6 +120,14 @@ int midpoint(int a, int b) {
 double midpoint2(int a, int b) {
 
 	return ((a - b) / 2) + b;
+
+}
+
+
+// Return the whole number midpoint between two values.
+double midpoint3(int a, int b) {
+
+	return (double)((a - b) / 2) + b;
 
 }
 
