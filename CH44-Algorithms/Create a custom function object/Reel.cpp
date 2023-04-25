@@ -59,6 +59,17 @@ int main() {
 	cout << " store the results back in v.\n";
 	transform(v.begin(), v.end(), v.begin(), reciprocal());
 
+
+	show("Transformed contents of v: \n", v);
+
+	cout << endl;
+
+	// Transform v a second time, putting the result into a new sequence.
+	cout << "Use a unary function object to transform v again. \n";
+	cout << "This time, store the results in v2.\n";
+	vector<double> v2(10);
+
+
 }
 
 
