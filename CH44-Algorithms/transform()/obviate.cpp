@@ -11,6 +11,12 @@
 #include <algorithm>
 using namespace std;
 
+template<class T>
+void show(const char *message, vector<T> vect);
+int midpoint(int a, int b);
+double reciprocal(double val);
+
+
 int main() {
 
 	// First, demonstrate the single-sequence form of transform()
@@ -41,5 +47,16 @@ void show(const char *message, vector<T> vect) {
 int midpoint(int a, int b) {
 
 	return ((a - b) / 2) + b;
+
+}
+
+
+// Return the reciprocal of a double.
+double reciprocal(double val) {
+
+	if (val == 0.0)
+		return 0.0;
+
+	return 1.0 / val;
 
 }
