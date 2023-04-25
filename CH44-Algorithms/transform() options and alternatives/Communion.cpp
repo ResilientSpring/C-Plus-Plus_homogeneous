@@ -14,6 +14,7 @@ using namespace std;
 template<class T>
 void show(const char *message, vector<T> vect);
 int midpoint(int a, int b);
+double midpoint2(int a, int b);
 double reciprocal(double val);
 
 
@@ -98,6 +99,14 @@ void show(const char *message, vector<T> vect) {
 
 // Return the whole number midpoint between two values.
 int midpoint(int a, int b) {
+
+	return ((a - b) / 2) + b;
+
+}
+
+
+// Return the whole number midpoint between two values.
+double midpoint2(int a, int b) {
 
 	return ((a - b) / 2) + b;
 
