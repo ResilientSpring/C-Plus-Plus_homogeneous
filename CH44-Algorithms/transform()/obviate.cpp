@@ -35,6 +35,12 @@ int main() {
 	// Put the result back into v.
 	cout << "Compute reciprocals for v and store the results back in v. \n";
 	transform(v.begin(), v.end(), v.begin(), reciprocal);
+
+	show("Transfomred contents of v: \n", v);
+
+	// Transform v a secon time, putting a result into a new sequence.
+	cout << "Transform v again. This time, putting the result in v2.\n";
+
 }
 
 // Display the contents of a vector<int>.
