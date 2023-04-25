@@ -45,6 +45,24 @@ int main() {
 
 	show("Here is v2:\n", v2);
 
+	cout << endl;
+
+	// Now, demonstrate the two-sequence form of transform()
+	cout << "Demonstrate double-sequence form of transform(). \n";
+	vector<int> v3, v4, v5(10);
+
+	for (int i = 0; i < 10; i++)
+		v3.push_back(i);
+
+	for (int i = 10; i < 20; i++) {
+
+		if (i % 2)
+			v4.push_back(i);
+		else
+			v4.push_back(-i);
+	}
+		
+
 }
 
 // Display the contents of a vector<int>.
