@@ -21,4 +21,5 @@ int main() {
 		v.push_back((double)i);
 
 	cout << "Demonstrate single-sentence form of transformation(). \n";
+// 	show("Initial contents of v: \n", v);
 }
