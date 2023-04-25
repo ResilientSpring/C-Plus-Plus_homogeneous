@@ -29,6 +29,12 @@ int main() {
 	cout << "Demonstrate single-sentence form of transformation(). \n";
  	show("Initial contents of v: \n", v);
 	cout << endl;
+
+
+	// Transform v by applying reciprocal() function.
+	// Put the result back into v.
+	cout << "Compute reciprocals for v and store the results back in v. \n";
+	transform(v.begin(), v.end(), v.begin(), reciprocal);
 }
 
 // Display the contents of a vector<int>.
