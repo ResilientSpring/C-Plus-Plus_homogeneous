@@ -10,6 +10,9 @@
 #include <functional>
 using namespace std;
 
+template<class T>
+void show(const char *message, vector<T> vect);
+
 // A function object that computes a reciprocal.
 class reciprocal : unary_function<double, double> {
 
@@ -41,6 +44,13 @@ int main() {
 }
 
 
-template<class T> void show(const char *message) {
+template<class T> 
+void show(const char *message, vector<T> vect) {
+
+	cout << message;
+
+	for (unsigned i = 0; i < vect.size(); i++)
+		cout << vect[i] << " ";
+	cout << "\n";
 
 }
