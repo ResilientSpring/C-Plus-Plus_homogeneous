@@ -90,7 +90,7 @@ int main() {
 		 << "starting from its 6th element. And store results in a vector of double, d.\n";
 	transform(v3.begin(), v3.begin() + 5, v3.begin() + 5, d.begin(), midpoint3);  // return doubles
 
-	show("Contents of v5:\n", d);
+	show("Contents of d:\n", d);
 
 	cout << endl;
 }
