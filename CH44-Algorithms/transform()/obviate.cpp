@@ -62,7 +62,8 @@ int main() {
 			v4.push_back(-i);
 	}
 		
-
+	show("Contents of v3:\n", v3);
+	show("Contents of v4:\n", v4);
 }
 
 // Display the contents of a vector<int>.
