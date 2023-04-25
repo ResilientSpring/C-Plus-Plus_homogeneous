@@ -36,3 +36,10 @@ void show(const char *message, vector<T> vect) {
 	cout << "\n";
 
 }
+
+// Return the whole number midpoint between two values.
+int midpoint(int a, int b) {
+
+	return ((a - b) / 2) + b;
+
+}
