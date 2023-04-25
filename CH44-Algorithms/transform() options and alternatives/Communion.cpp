@@ -78,6 +78,8 @@ int main() {
 		 << "starting from its 6th element. And store results in v5.";
 	transform(v3.begin(), v3.begin() + 5, v3.begin() + 5, v5.begin(), midpoint);
 
+	show("Contents of v5:\n", v5);
+
 	cout << endl;
 }
 
