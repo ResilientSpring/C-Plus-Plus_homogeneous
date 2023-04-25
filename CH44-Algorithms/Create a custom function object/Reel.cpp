@@ -22,9 +22,25 @@ public:
 
 		return 1.0 / val;   // return reciprocal
 }
-
 };
 
+
+// A function object that finds the midpoint between two values.
+class midpoint : binary_function<int, int, double> {
+
+public:
+	result_type operator()(first_argument_type a, second_argument_type b) {
+
+		return ((a - b) / 2) + b;
+	}
+};
+
+
 int main() {
+
+}
+
+
+template<class T> void show(const char *message) {
 
 }
