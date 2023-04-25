@@ -33,4 +33,6 @@ void show(const char *message, vector<T> vect) {
 	for (unsigned i = 0; i < vect.size(); i++)
 		cout << vect[i] << " ";
 
+	cout << "\n";
+
 }
