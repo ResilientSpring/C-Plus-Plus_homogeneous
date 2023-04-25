@@ -69,7 +69,7 @@ int main() {
 
 	cout << endl;
 
-	cout << "Compute midpoints between v3 and v4 and store results in v5." << endl;
+	cout << "Compute midpoints between v3 and v4 and store results in v5.\n" << endl;
 	transform(v3.begin(), v3.end(), v4.begin(), v5.begin(), midpoint);
 
 	show("Contents of v5:\n", v5);
@@ -77,17 +77,17 @@ int main() {
 	cout << endl;
 
 	cout << "Compute midpoints between the first 5 elements of v3 and whose next 5 elements" 
-		 << "starting from its 6th element. And store results in v5.";
+		 << "starting from its 6th element. And store results in v5.\n";
 	transform(v3.begin(), v3.begin() + 5, v3.begin() + 5, v5.begin(), midpoint);
 
 	show("Contents of v5:\n", v5);
 
 	cout << endl;
 
-	vector<double> d;
+	vector<double> d(5);
 
 	cout << "Compute midpoints between the first 5 elements of v3 and whose next 5 elements"
-		 << "starting from its 6th element. And store results in v5.";
+		 << "starting from its 6th element. And store results in a vector of double, d.\n";
 	transform(v3.begin(), v3.begin() + 5, v3.begin() + 5, d.begin(), midpoint3);  // return doubles
 
 	show("Contents of v5:\n", d);
@@ -127,7 +127,7 @@ double midpoint2(int a, int b) {
 // Return the whole number midpoint between two values.
 double midpoint3(int a, int b) {
 
-	return (double)((a - b) / 2) + b;
+	return ((double)((a - b) / 2)) + b;
 
 }
 
