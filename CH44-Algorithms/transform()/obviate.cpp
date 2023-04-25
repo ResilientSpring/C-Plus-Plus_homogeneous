@@ -27,7 +27,8 @@ int main() {
 		v.push_back((double)i);
 
 	cout << "Demonstrate single-sentence form of transformation(). \n";
-// 	show("Initial contents of v: \n", v);
+ 	show("Initial contents of v: \n", v);
+	cout << endl;
 }
 
 // Display the contents of a vector<int>.
