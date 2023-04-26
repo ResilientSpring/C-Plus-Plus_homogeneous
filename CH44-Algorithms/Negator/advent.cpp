@@ -31,6 +31,8 @@ int main() {
 	// Use not1() to remove all characters that are not equal to H.
 	vector<char>::iterator res_end;
 	res_end = remove_if(v.begin(), v.end(), not1(bind2nd(equal_to<char>(), 'H')));
+
+	show_range("v after removing elements not equal to H:\n", v.begin(), res_end);
 }
 
 // Show a range of elements.
