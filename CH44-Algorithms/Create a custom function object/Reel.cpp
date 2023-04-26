@@ -74,7 +74,29 @@ int main() {
 
 	cout << endl;
 
+	vector<int> v3, v4, v5(10);
 
+	for (int i = 0; i < 10; i++)
+		v3.push_back(i);
+	
+	for (int i = 10; i < 20; i++) {
+		
+		if (i % 2)
+			v4.push_back(i);
+		else
+			v4.push_back(-i);
+	}
+
+	show("Contents of v3: \n", v3);
+	show("Contents of v4: \n", v4);
+	cout << endl;
+
+	// Now, demonstrate a binary function object.
+	cout << "Now, use a binary function object to find the midpoint between elements in v3 and v4";
+	cout << " and store the results in v5. \n";
+	transform(v3.begin(), v3.end(), v4.begin(), v5.begin(), midpoint());
+
+	show("Contents of v5:\n", v5);
 }
 
 
