@@ -23,7 +23,7 @@ int main() {
 
 // Show a range of elements.
 template<class InIter>
-void show_range(const char *message, InIter end) {
+void show_range(const char *message, InIter start, InIter end) {
 
 	InIter itr;
 
