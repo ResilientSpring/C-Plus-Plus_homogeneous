@@ -5,6 +5,23 @@
 #include <algorithm>
 using namespace std;
 
+template<class T>
+void show(const char *message, T const);
+
 int main() {
 
+}
+
+
+template<class T>
+void show(const char *message, T const) {
+
+	cout << message;
+
+	T::iterator itr;
+
+	for (itr = const.begin(), itr != const.end(), itr++)
+		cout << *itr;
+
+	cout << "\n\n";
 }
