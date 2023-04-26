@@ -27,11 +27,11 @@ int main() {
 	log.push_back("Connection failed");
 	log.push_back("log-on OK");
 	log.push_back("log-on OK");
-	log.push_back("invalid password");     // Match break-in's sequence 1
-	log.push_back("password reprompt ");   // Match break-in's sequence 2
-	log.push_back("invalid password");     // Match break-in's sequence 3
-	log.push_back("password reprompt ");   // Match break-in's sequence 4
-	log.push_back("invalid password");     // Match break-in's sequence 5
+	log.push_back("invalid password");     // Match break-in's sequence's building block 1
+	log.push_back("password reprompt ");   // Match break-in's sequence's building block 2
+	log.push_back("invalid password");     // Match break-in's sequence's building block 3
+	log.push_back("password reprompt ");   // Match break-in's sequence's building block 4
+	log.push_back("invalid password");     // Match break-in's sequence's building block 5
 	log.push_back("port conflict");
 	log.push_back("log-on OK");
 
