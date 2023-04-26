@@ -71,6 +71,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Binder", "Binder\Binder.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Binder 2", "Binder 2\Binder 2.vcxproj", "{DBB0A8D3-0824-4F40-8E4F-7405D5C209EB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Binder 3", "Binder 3\Binder 3.vcxproj", "{79C61F26-DA4E-46DD-B86F-33811ADF8758}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -351,6 +353,14 @@ Global
 		{DBB0A8D3-0824-4F40-8E4F-7405D5C209EB}.Release|x64.Build.0 = Release|x64
 		{DBB0A8D3-0824-4F40-8E4F-7405D5C209EB}.Release|x86.ActiveCfg = Release|Win32
 		{DBB0A8D3-0824-4F40-8E4F-7405D5C209EB}.Release|x86.Build.0 = Release|Win32
+		{79C61F26-DA4E-46DD-B86F-33811ADF8758}.Debug|x64.ActiveCfg = Debug|x64
+		{79C61F26-DA4E-46DD-B86F-33811ADF8758}.Debug|x64.Build.0 = Debug|x64
+		{79C61F26-DA4E-46DD-B86F-33811ADF8758}.Debug|x86.ActiveCfg = Debug|Win32
+		{79C61F26-DA4E-46DD-B86F-33811ADF8758}.Debug|x86.Build.0 = Debug|Win32
+		{79C61F26-DA4E-46DD-B86F-33811ADF8758}.Release|x64.ActiveCfg = Release|x64
+		{79C61F26-DA4E-46DD-B86F-33811ADF8758}.Release|x64.Build.0 = Release|x64
+		{79C61F26-DA4E-46DD-B86F-33811ADF8758}.Release|x86.ActiveCfg = Release|Win32
+		{79C61F26-DA4E-46DD-B86F-33811ADF8758}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
