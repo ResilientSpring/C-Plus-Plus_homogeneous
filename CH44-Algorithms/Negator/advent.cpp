@@ -1,4 +1,4 @@
-Z// Demonstrate not1() and not2()
+// Demonstrate not1() and not2()
 
 #include <iostream>
 #include <vector>
@@ -7,7 +7,7 @@ Z// Demonstrate not1() and not2()
 using namespace std;
 
 template<class InIter>
-void show_range(const char *message, InIter end);
+void show_range(const char *message, InIter start, InIter end);
 
 int main() {
 
