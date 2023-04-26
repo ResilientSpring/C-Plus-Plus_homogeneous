@@ -17,7 +17,7 @@ int main() {
 	break_in.push_back("password reprompt ");
 	break_in.push_back("invalid password");
 //	break_in.push_back("password reprompt ");
-//	break_in.push_back("invalid password");
+	break_in.push_back("invalid password");
 
 	// Create some log entries.
 	log.push_back("log-on OK");
