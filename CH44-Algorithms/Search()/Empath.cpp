@@ -35,7 +35,19 @@ int main() {
 	log.push_back("port conflict");	
 	log.push_back("log-on OK");
 
+	cout << "Here is the log: \n";
 
+	for (itr = log.begin(); itr != log.end(); itr++)
+		cout << *itr << " " << endl;
 
+	cout << endl;
+
+	// See if an attempt was made to break in.
+	itr = search(log.begin(), log.end(), break_in.begin(), break_in.end());
+
+	if (itr != log.end())
+		cout << "Possible attempted break-in found.\n";
+	else
+		cout << "No repeated password failures found.\n";
 
 }
