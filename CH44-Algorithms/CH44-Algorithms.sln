@@ -67,6 +67,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Copy() 4", "Copy() 4\Copy()
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Use a Built-in Function Objects 4", "Use a Built-in Function Objects 4\Use a Built-in Function Objects 4.vcxproj", "{F9323B27-81F5-4067-82C8-D95DF2E9775D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Binder", "Binder\Binder.vcxproj", "{999B9052-C981-4C22-A209-99ED4A6C4328}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -331,6 +333,14 @@ Global
 		{F9323B27-81F5-4067-82C8-D95DF2E9775D}.Release|x64.Build.0 = Release|x64
 		{F9323B27-81F5-4067-82C8-D95DF2E9775D}.Release|x86.ActiveCfg = Release|Win32
 		{F9323B27-81F5-4067-82C8-D95DF2E9775D}.Release|x86.Build.0 = Release|Win32
+		{999B9052-C981-4C22-A209-99ED4A6C4328}.Debug|x64.ActiveCfg = Debug|x64
+		{999B9052-C981-4C22-A209-99ED4A6C4328}.Debug|x64.Build.0 = Debug|x64
+		{999B9052-C981-4C22-A209-99ED4A6C4328}.Debug|x86.ActiveCfg = Debug|Win32
+		{999B9052-C981-4C22-A209-99ED4A6C4328}.Debug|x86.Build.0 = Debug|Win32
+		{999B9052-C981-4C22-A209-99ED4A6C4328}.Release|x64.ActiveCfg = Release|x64
+		{999B9052-C981-4C22-A209-99ED4A6C4328}.Release|x64.Build.0 = Release|x64
+		{999B9052-C981-4C22-A209-99ED4A6C4328}.Release|x86.ActiveCfg = Release|Win32
+		{999B9052-C981-4C22-A209-99ED4A6C4328}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
