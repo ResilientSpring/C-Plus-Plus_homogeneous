@@ -7,6 +7,9 @@
 #include <cstring>
 using namespace std;
 
+template<class InIter>
+void show_range(const char *message, InIter start, InIter end);
+
 int main() {
 
 	// A vector of character pointers that point to character strings (character arrays).
