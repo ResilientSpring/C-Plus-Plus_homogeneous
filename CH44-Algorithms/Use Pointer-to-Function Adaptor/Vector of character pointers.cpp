@@ -19,6 +19,16 @@ int main() {
 	v.push_back("Four");
 	v.push_back("Five");
 
+
+	show_range("Sequence contains: ", v.begin(), v.end());
+
+	cout << endl;
+
+	cout << "Searching sequence for Three. \n\n";
+
+	// Use a pointer-to-function adaptor.
+	itr = find_if(v.begin(), v.end(), not1(bind2nd(ptr_fun(strcmp), "Three")));
+
 }
 
 
