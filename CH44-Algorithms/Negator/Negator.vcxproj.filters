@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Zap.cpp">
+    <ClCompile Include="advent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
