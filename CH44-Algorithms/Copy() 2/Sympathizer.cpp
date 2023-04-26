@@ -8,6 +8,7 @@ using namespace std;
 template<class T>
 void show(const char *message, T const);
 void show(const char *message, list<char> lst);
+void show(const char *message, vector<char> v);
 
 int main() {
 
@@ -54,6 +55,19 @@ void show(const char *message, list<char> lst) {
 	list<char>::iterator itr;
 
 	for (itr = lst.begin(); itr != lst.end(); itr++)
+		cout << *itr;
+
+	cout << "\n\n";
+}
+
+
+void show(const char *message, vector<char> v) {
+
+	cout << message;
+
+	vector<char>::iterator itr;
+
+	for (itr = v.begin(); itr != v.end(); itr++)
 		cout << *itr;
 
 	cout << "\n\n";
