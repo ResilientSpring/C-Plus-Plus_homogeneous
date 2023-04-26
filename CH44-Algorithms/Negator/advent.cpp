@@ -24,7 +24,7 @@ int main() {
 	// Use not2() to reverse sort v.
 	sort(v.begin(), v.end(), not2(less<char>()));
 
-	show_range("AFter sorting v using not2( less<char>() ): ", v.begin(), v.end());
+	show_range("AFter sorting v using not2( less<char>() ): \n", v.begin(), v.end());
 
 	cout << endl;
 
