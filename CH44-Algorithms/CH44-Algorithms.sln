@@ -61,6 +61,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Copy() _", "Copy() _\Copy()
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Copy() 1", "Copy() 1\Copy() 1.vcxproj", "{FEF0156F-18E0-46FF-8B90-8F0FBFFF4CD3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Copy() 3", "Copy() 3\Copy() 3.vcxproj", "{DA9CE0D7-4CBA-43E6-9052-3A57184BB225}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -301,6 +303,14 @@ Global
 		{FEF0156F-18E0-46FF-8B90-8F0FBFFF4CD3}.Release|x64.Build.0 = Release|x64
 		{FEF0156F-18E0-46FF-8B90-8F0FBFFF4CD3}.Release|x86.ActiveCfg = Release|Win32
 		{FEF0156F-18E0-46FF-8B90-8F0FBFFF4CD3}.Release|x86.Build.0 = Release|Win32
+		{DA9CE0D7-4CBA-43E6-9052-3A57184BB225}.Debug|x64.ActiveCfg = Debug|x64
+		{DA9CE0D7-4CBA-43E6-9052-3A57184BB225}.Debug|x64.Build.0 = Debug|x64
+		{DA9CE0D7-4CBA-43E6-9052-3A57184BB225}.Debug|x86.ActiveCfg = Debug|Win32
+		{DA9CE0D7-4CBA-43E6-9052-3A57184BB225}.Debug|x86.Build.0 = Debug|Win32
+		{DA9CE0D7-4CBA-43E6-9052-3A57184BB225}.Release|x64.ActiveCfg = Release|x64
+		{DA9CE0D7-4CBA-43E6-9052-3A57184BB225}.Release|x64.Build.0 = Release|x64
+		{DA9CE0D7-4CBA-43E6-9052-3A57184BB225}.Release|x86.ActiveCfg = Release|Win32
+		{DA9CE0D7-4CBA-43E6-9052-3A57184BB225}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
