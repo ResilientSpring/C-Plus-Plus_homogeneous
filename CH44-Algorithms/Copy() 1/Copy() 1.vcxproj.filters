@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Symthesizer.cpp">
+    <ClCompile Include="Preclude.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

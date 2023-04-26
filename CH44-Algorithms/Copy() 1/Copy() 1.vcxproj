@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{63de89f6-5aad-4eee-b5e6-c539baad88c2}</ProjectGuid>
-    <RootNamespace>Copy</RootNamespace>
+    <ProjectGuid>{fef0156f-18e0-46ff-8b90-8f0fbfff4cd3}</ProjectGuid>
+    <RootNamespace>Copy1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Symthesizer.cpp" />
+    <ClCompile Include="Preclude.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
