@@ -12,6 +12,8 @@ int main() {
 	deque<string> break_in;
 	deque<string>::iterator itr;
 
+	// Create a sequence of three invalid password responses.
+	break_in.push_back("invalid password");
 
 
 
