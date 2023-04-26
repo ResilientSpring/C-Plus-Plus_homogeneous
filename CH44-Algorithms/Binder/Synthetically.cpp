@@ -1,4 +1,4 @@
-// Demonstrate bind2nd()
+// Demonstrate bind2nd() to bind a value to a function object.
 
 #include <iostream>
 #include <list>
@@ -22,7 +22,9 @@ int main() {
 
 	// Use bind2nd() to create a unary function object that will return true when a value 
 	// is greater than 10.
-	res_itr = remove_if(lst.begin(), lst.end(), bind2nd(greater<int>(), 10));
+	res_itr = remove_if(lst.begin(), lst.end(), bind2nd(greater<int>(), 10));  // Bind 10 to the function object.
+
+	show_range("Resulting sequence: \n", lst.begin(), res_itr);
 
 }
 
