@@ -25,6 +25,12 @@ int main() {
 	sort(v.begin(), v.end(), not2(less<char>()));
 
 	show_range("AFter sorting v using not2( less<char>() ): ", v.begin(), v.end());
+
+	cout << endl;
+
+	// Use not1() to remove all characters that are not equal to H.
+	vector<char>::iterator res_end;
+	res_end = remove_if(v.begin(), v.end(), not1(bind2nd(equal_to<char>(), 'H')));
 }
 
 // Show a range of elements.
