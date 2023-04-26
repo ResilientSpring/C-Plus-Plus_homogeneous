@@ -17,6 +17,9 @@ int main() {
 	for (int i = 0; str[i]; i++)
 		lst.push_back(str[i]);
 
+	// Create a vector that initiallly contains 40 periods.
+	vector<char> v(40, '.');
+
 }
 
 
