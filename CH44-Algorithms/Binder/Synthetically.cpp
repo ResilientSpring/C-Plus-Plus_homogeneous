@@ -20,6 +20,10 @@ int main() {
 	show_range("Original sequence:\n", lst.begin(), lst.end());
 	cout << endl;
 
+	// Use bind2nd() to create a unary function object that will return true when a value 
+	// is greater than 10.
+	res_itr = remove_if(lst.begin(), lst.end(), bind2nd(greater<int>(), 10));
+
 }
 
 
