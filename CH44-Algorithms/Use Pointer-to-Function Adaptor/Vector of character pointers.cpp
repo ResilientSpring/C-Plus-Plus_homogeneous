@@ -29,6 +29,14 @@ int main() {
 	// Use a pointer-to-function adaptor.
 	itr = find_if(v.begin(), v.end(), not1(bind2nd(ptr_fun(strcmp), "Three")));
 
+	
+	if (itr != v.end())
+	{
+		cout << "Found! \n";
+
+		show_range("Sequence from that point is: ", itr, v.end());
+	}
+
 }
 
 
