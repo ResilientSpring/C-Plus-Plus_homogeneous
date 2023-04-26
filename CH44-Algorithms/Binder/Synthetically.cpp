@@ -21,4 +21,14 @@ int main() {
 template<class InIter>
 void show_range(const char *message, InIter start, InIter end) {
 
+	InIter itr;
+
+	cout << message;
+
+	for (itr = start; itr != end; itr++) {
+		cout << *itr << " ";
+	}
+
+	cout << endl;
+
 }
