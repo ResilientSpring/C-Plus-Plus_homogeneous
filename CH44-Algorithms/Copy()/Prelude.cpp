@@ -20,6 +20,15 @@ int main() {
 	// Create a vector that initiallly contains 40 periods.
 	vector<char> v(40, '.');
 
+	show("Contents of lst:\n", lst);
+	show("Contents of v: \n", v);
+
+	// Copy lst into v.
+	copy(lst.begin(), lst.end(), v.begin() + 5);
+
+	// Display result.
+	show("Contents of v after copy: \n", v);
+
 }
 
 
