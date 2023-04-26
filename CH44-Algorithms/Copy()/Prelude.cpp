@@ -10,6 +10,13 @@ void show(const char *message, T const);
 
 int main() {
 
+	list<char> lst;
+
+	// Add elements to lst.
+	char str[] = "Algorithms act on containers";
+	for (int i = 0; str[i]; i++)
+		lst.push_back(str[i]);
+
 }
 
 
