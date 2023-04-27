@@ -25,4 +25,9 @@ int main() {
 	for (int i = 1; i < 11; i++)
 		v.push_back(i);
 
+	cout << "Contents of v: ";
+	for_each(v.begin(), v.end(), show);
+	
+	cout << "\n";
+
 }
