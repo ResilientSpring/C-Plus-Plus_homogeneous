@@ -16,4 +16,6 @@ int main() {
 
 	auto average = accumulate(begin(temperatures), end(temperatures), 0.0) / temperatures.size();
 
+	cout << endl << "Average temperature: " << average << endl;
+
 }
