@@ -18,7 +18,7 @@ int main() {
 
 	cout << endl << "Average temperature: " << average << endl << endl;
 
-	partition(begin(temperatures), end(temperatures), [average](double t) {return t < average; });
+	partition(begin(temperatures), end(temperatures), [average](double t) {return t > average; });
 
 	copy(begin(temperatures), end(temperatures), ostream_iterator<double>{cout, " "});
 
