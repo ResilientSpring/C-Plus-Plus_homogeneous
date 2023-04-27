@@ -12,7 +12,7 @@ int main() {
 
 	// Output the elements in their original order
 	cout << "The elements in the original sequence are:\n";
-	copy(std::begin(values), std::end(values), std::ostream_iterator<int> {std::cout, " "});
+	copy(begin(values), end(values), ostream_iterator<int> {cout, " "});
 	cout << std::endl;
 
 
@@ -23,6 +23,12 @@ int main() {
 	
 	// Partition the values with !(wanted < value)
 	partition(begin(values), end(values), [wanted](double value) { return !(wanted < value); });
+
+
+	// Output the elements after partitioning
+	cout << "The elements after partitioning are:\n";
+	copy(begin(values), end(values), ostream_iterator<int> {cout, " "});
+	cout << endl;
 
 }
 
