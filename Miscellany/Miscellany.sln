@@ -119,6 +119,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bin 17", "Bin 17\Bin 17.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bin loaded 9", "Bin loaded 9\Bin loaded 9.vcxproj", "{92B3E876-7263-474A-8D79-2F9749D19844}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bin loaded 10", "Bin loaded 10\Bin loaded 10.vcxproj", "{E4CE1899-C00D-40E2-BC79-907F700BFB73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -827,6 +829,18 @@ Global
 		{92B3E876-7263-474A-8D79-2F9749D19844}.Release|x64.Build.0 = Release|x64
 		{92B3E876-7263-474A-8D79-2F9749D19844}.Release|x86.ActiveCfg = Release|Win32
 		{92B3E876-7263-474A-8D79-2F9749D19844}.Release|x86.Build.0 = Release|Win32
+		{E4CE1899-C00D-40E2-BC79-907F700BFB73}.Debug|ARM.ActiveCfg = Debug|Win32
+		{E4CE1899-C00D-40E2-BC79-907F700BFB73}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{E4CE1899-C00D-40E2-BC79-907F700BFB73}.Debug|x64.ActiveCfg = Debug|x64
+		{E4CE1899-C00D-40E2-BC79-907F700BFB73}.Debug|x64.Build.0 = Debug|x64
+		{E4CE1899-C00D-40E2-BC79-907F700BFB73}.Debug|x86.ActiveCfg = Debug|Win32
+		{E4CE1899-C00D-40E2-BC79-907F700BFB73}.Debug|x86.Build.0 = Debug|Win32
+		{E4CE1899-C00D-40E2-BC79-907F700BFB73}.Release|ARM.ActiveCfg = Release|Win32
+		{E4CE1899-C00D-40E2-BC79-907F700BFB73}.Release|ARM64.ActiveCfg = Release|Win32
+		{E4CE1899-C00D-40E2-BC79-907F700BFB73}.Release|x64.ActiveCfg = Release|x64
+		{E4CE1899-C00D-40E2-BC79-907F700BFB73}.Release|x64.Build.0 = Release|x64
+		{E4CE1899-C00D-40E2-BC79-907F700BFB73}.Release|x86.ActiveCfg = Release|Win32
+		{E4CE1899-C00D-40E2-BC79-907F700BFB73}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
