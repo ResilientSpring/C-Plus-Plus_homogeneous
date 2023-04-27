@@ -16,8 +16,11 @@ int main() {
 
 	auto average = accumulate(begin(temperatures), end(temperatures), 0.0) / temperatures.size();
 
-	cout << endl << "Average temperature: " << average << endl;
+	cout << endl << "Average temperature: " << average << endl << endl;
 
 	partition(begin(temperatures), end(temperatures), [average](double t) {return t < average; });
 
+	copy(begin(temperatures), end(temperatures), ostream_iterator<double>{cout, " "});
+
+	cout << endl;
 }
