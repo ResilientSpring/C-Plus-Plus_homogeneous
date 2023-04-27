@@ -37,7 +37,7 @@ int main() {
 
 	cout << "\nThe elements found by equal_range() are:\n";
 	copy(pr.first, pr.second, ostream_iterator<int> {cout, " "});
-	cout << std::endl;
+	cout << endl;
 
 
 }
