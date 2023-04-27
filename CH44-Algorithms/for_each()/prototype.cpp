@@ -30,4 +30,7 @@ int main() {
 	
 	cout << "\n";
 
+	for_each(v.begin(), v.end(), summation);
+	cout << "Summation of v: " << summation(0);
+
 }
