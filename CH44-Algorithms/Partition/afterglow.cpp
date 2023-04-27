@@ -4,6 +4,7 @@
 #include <list>                                  // For list container
 #include <algorithm>                             // For copy(), partition()
 #include <iterator>                              // For ostream_iterator
+#include <functional>
 using namespace std;
 
 int main() {
@@ -31,7 +32,7 @@ int main() {
 	cout << endl;
 
 
-	auto pr = std::equal_range(begin(values), end(values), wanted);
+	auto pr = equal_range(begin(values), end(values), wanted);
 	cout << "The lower bound for " << wanted << " is " << *pr.first << endl;
 	cout << "The upper bound for " << wanted << " is " << *pr.second << endl;
 
