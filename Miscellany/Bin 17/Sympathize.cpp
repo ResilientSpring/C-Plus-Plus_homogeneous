@@ -51,6 +51,7 @@ set<int> primary_outputs;
 
 list<int> *adjacency_list_of_network;
 list<int> *inverse_adjacency_list_of_network = NULL;
+list<int> num_of_fanins_of_each_LUT = {};
 
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
@@ -769,8 +770,10 @@ void Output(string output_file) {
 			{
 				output_stream << LUTs[i]->fanout;
 
-				for (auto j : LUTs[i]->fanins)
+				for (auto j : LUTs[i]->fanins) 					
 					output_stream << " " << j;
+
+				num_of_fanins_of_each_LUT.push_back(LUTs[i]->fanins.size());
 
 				output_stream << endl;
 			}
@@ -797,6 +800,8 @@ void Output2(string output_file) {
 
 				for (auto j : LUTs[i]->fanins)
 					output_stream << " " << j;
+
+				num_of_fanins_of_each_LUT.push_back(LUTs[i]->fanins.size());
 
 				output_stream << endl;
 			}
