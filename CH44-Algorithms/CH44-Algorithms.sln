@@ -101,6 +101,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Partitioning a Range 5", "P
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Partitioning Ranges 2", "Partitioning Ranges 2\Partitioning Ranges 2.vcxproj", "{BAF4CD2F-47E2-4621-86CF-7B8A9F98E41F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Partitioning a Range 6", "Partitioning a Range 6\Partitioning a Range 6.vcxproj", "{9BDF6C26-FA02-469A-BB97-3C4B03D8122C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -501,6 +503,14 @@ Global
 		{BAF4CD2F-47E2-4621-86CF-7B8A9F98E41F}.Release|x64.Build.0 = Release|x64
 		{BAF4CD2F-47E2-4621-86CF-7B8A9F98E41F}.Release|x86.ActiveCfg = Release|Win32
 		{BAF4CD2F-47E2-4621-86CF-7B8A9F98E41F}.Release|x86.Build.0 = Release|Win32
+		{9BDF6C26-FA02-469A-BB97-3C4B03D8122C}.Debug|x64.ActiveCfg = Debug|x64
+		{9BDF6C26-FA02-469A-BB97-3C4B03D8122C}.Debug|x64.Build.0 = Debug|x64
+		{9BDF6C26-FA02-469A-BB97-3C4B03D8122C}.Debug|x86.ActiveCfg = Debug|Win32
+		{9BDF6C26-FA02-469A-BB97-3C4B03D8122C}.Debug|x86.Build.0 = Debug|Win32
+		{9BDF6C26-FA02-469A-BB97-3C4B03D8122C}.Release|x64.ActiveCfg = Release|x64
+		{9BDF6C26-FA02-469A-BB97-3C4B03D8122C}.Release|x64.Build.0 = Release|x64
+		{9BDF6C26-FA02-469A-BB97-3C4B03D8122C}.Release|x86.ActiveCfg = Release|Win32
+		{9BDF6C26-FA02-469A-BB97-3C4B03D8122C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
