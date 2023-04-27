@@ -30,6 +30,16 @@ int main() {
 	copy(begin(values), end(values), ostream_iterator<int> {cout, " "});
 	cout << endl;
 
+
+	auto pr = std::equal_range(begin(values), end(values), wanted);
+	cout << "The lower bound for " << wanted << " is " << *pr.first << endl;
+	cout << "The upper bound for " << wanted << " is " << *pr.second << endl;
+
+	cout << "\nThe elements found by equal_range() are:\n";
+	copy(pr.first, pr.second, ostream_iterator<int> {cout, " "});
+	cout << std::endl;
+
+
 }
 
 // Source: https://github.com/Apress/using-cpp-standard-template-libraries/blob/master/Chapter%206/Ex6_05.cpp
