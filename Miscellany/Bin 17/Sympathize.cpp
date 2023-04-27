@@ -9,6 +9,7 @@
 #include <list>
 #include <queue>
 #include <stack>
+#include <numeric>
 using namespace std;
 
 void read(string aag);
@@ -34,11 +35,12 @@ void Output(string output_file);
 void Output2(string output_file);
 
 void packing(int CLB_input_size_constrain);
+bool comparison(int a);
 
 string title;
 
 int intermediate_node;
-int K, CLB_size;
+int K, CLB_size, average;
 int total_number_of_nodes = 0;
 int number_of_primary_inputs = 0;
 int number_of_latches = 0;
@@ -815,8 +817,22 @@ void Output2(string output_file) {
 
 void packing(int CLB_input_size_constrain) {
 
+	average = accumulate(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(), 0) 
+		/ num_of_fanins_of_each_LUT.size();
+
+	partition(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(), comparison);
 
 
+
+}
+
+
+bool comparison(int a) {
+
+	if (a < average)
+		return true;
+	else
+		return false;
 }
 
 
