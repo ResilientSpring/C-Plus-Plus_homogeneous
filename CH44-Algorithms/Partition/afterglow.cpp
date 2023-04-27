@@ -13,7 +13,7 @@ int main() {
 	// Output the elements in their original order
 	cout << "The elements in the original sequence are:\n";
 	copy(begin(values), end(values), ostream_iterator<int> {cout, " "});
-	cout << std::endl;
+	cout << endl;
 
 
 	int wanted{ 22 };  // What we are looking for
