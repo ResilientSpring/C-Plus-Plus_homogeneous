@@ -54,7 +54,7 @@ set<int> primary_outputs;
 list<int> *adjacency_list_of_network;
 list<int> *inverse_adjacency_list_of_network = NULL;
 list<int> num_of_fanins_of_each_LUT;
-list<int> lower_than_average, equal_to_or_higher_than_average;
+list<int> lower_than_average, equal_to_or_higher_than_average, higher_than_average;
 
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;

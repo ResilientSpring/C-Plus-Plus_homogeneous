@@ -54,7 +54,7 @@ set<int> primary_outputs;
 list<int> *adjacency_list_of_network;
 list<int> *inverse_adjacency_list_of_network = NULL;
 list<int> num_of_fanins_of_each_LUT = {};
-list<int> lower_than_average, equal_to_or_higher_than_average;
+list<int> lower_than_average, equal_to_or_higher_than_average, higher_than_average;
 
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
@@ -826,10 +826,14 @@ void packing(int CLB_input_size_constrain) {
 
 //	partition(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(), comparison);
 
-	partition_copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
-		back_inserter(equal_to_or_higher_than_average), back_inserter(lower_than_average),
-		[average](int t) {return t < average; });
+//	partition_copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
+//		back_inserter(lower_than_average), back_inserter(equal_to_or_higher_than_average),
+//		[average](int t) {return t < average; });
 
+
+	partition_copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
+		back_inserter(lower_than_average), back_inserter(higher_than_average),
+		[average](int t) {return t < average; });
 
 
 }
