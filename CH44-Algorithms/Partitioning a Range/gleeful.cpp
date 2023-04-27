@@ -18,4 +18,6 @@ int main() {
 
 	cout << endl << "Average temperature: " << average << endl;
 
+	partition(begin(temperatures), end(temperatures), [average](double t) {return t < average; });
+
 }
