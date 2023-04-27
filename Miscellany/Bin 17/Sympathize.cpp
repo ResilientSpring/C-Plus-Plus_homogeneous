@@ -9,6 +9,7 @@
 #include <list>
 #include <queue>
 #include <stack>
+#include <numeric>
 using namespace std;
 
 void read(string aag);
@@ -34,11 +35,12 @@ void Output(string output_file);
 void Output2(string output_file);
 
 void packing(int CLB_input_size_constrain);
+bool comparison(int a);
 
 string title;
 
 int intermediate_node;
-int K, CLB_size;
+int K, CLB_size, average;
 int total_number_of_nodes = 0;
 int number_of_primary_inputs = 0;
 int number_of_latches = 0;
@@ -51,6 +53,7 @@ set<int> primary_outputs;
 
 list<int> *adjacency_list_of_network;
 list<int> *inverse_adjacency_list_of_network = NULL;
+list<int> num_of_fanins_of_each_LUT = {};
 
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
@@ -769,8 +772,10 @@ void Output(string output_file) {
 			{
 				output_stream << LUTs[i]->fanout;
 
-				for (auto j : LUTs[i]->fanins)
+				for (auto j : LUTs[i]->fanins) 					
 					output_stream << " " << j;
+
+				num_of_fanins_of_each_LUT.push_back(LUTs[i]->fanins.size());
 
 				output_stream << endl;
 			}
@@ -798,6 +803,8 @@ void Output2(string output_file) {
 				for (auto j : LUTs[i]->fanins)
 					output_stream << " " << j;
 
+				num_of_fanins_of_each_LUT.push_back(LUTs[i]->fanins.size());
+
 				output_stream << endl;
 			}
 		}
@@ -810,8 +817,22 @@ void Output2(string output_file) {
 
 void packing(int CLB_input_size_constrain) {
 
+	average = accumulate(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(), 0) 
+		/ num_of_fanins_of_each_LUT.size();
+
+	partition(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(), comparison);
 
 
+
+}
+
+
+bool comparison(int a) {
+
+	if (a < average)
+		return true;
+	else
+		return false;
 }
 
 
