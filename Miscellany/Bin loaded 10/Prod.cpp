@@ -821,6 +821,14 @@ void packing(int CLB_input_size_constrain) {
 
 //	partition(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(), comparison);
 
+//	partition_copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
+//		back_inserter(lower_than_average), back_inserter(equal_to_or_higher_than_average),
+//		[average](int t) {return t < average; });
+
+
+	partition_copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
+		back_inserter(lower_than_average), back_inserter(higher_than_average),
+		[average](int t) {return t < average; });
 
 
 }
