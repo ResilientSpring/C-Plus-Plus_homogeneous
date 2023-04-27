@@ -16,4 +16,7 @@ int main() {
 
 	partition(names.begin(), names.end(), [](const Name &name) {return get<2>(name) == 'f'; });
 
+	for (const auto &name : names)
+		cout << get<0>(name) << " " << get<1>(name) << endl;
+
 }
