@@ -53,7 +53,7 @@ set<int> primary_outputs;
 
 list<int> *adjacency_list_of_network;
 list<int> *inverse_adjacency_list_of_network = NULL;
-list<int> num_of_fanins_of_each_LUT = {};
+list<int> num_of_fanins_of_each_LUT;
 list<int> lower_than_average, equal_to_or_higher_than_average, higher_than_average;
 
 // Cut trees from forest.
@@ -92,26 +92,22 @@ public:
 vector<vertex **> trees_LUTs;
 
 
-int main(int argc, char **argv) { // [1]
+int main() {
 
-	if (argc != 4) {
-
-		cout << "Usage:  \n";
-		cout << "./mapper <path_to_the_input_blif> <LUT_size_(K)> <output_file_name> <CLB size>" << endl;
-		exit(1);
-	}
-
-	string input_aag = argv[1];
+	string input_aag = "alu4.aag";
 	read(input_aag);
 
-	K = stoi(argv[2]);
+	K = 4;
 
-	cout << "Input File: " << argv[1] << endl;
-	cout << "K: " << argv[2] << endl;
-	cout << "Output File: " << argv[3] << endl;
-	cout << "CLB's input size constraint: " << argv[4] << endl;
+	stack<int> gates;
 
-	CLB_size = stoi(argv[4]);
+	Topological_sort(gates);
+	dismantle_forest_to_trees(gates);
+	mapper1();
+
+	string output_file_name = "alu4.mapping_result";
+	Output(output_file_name);
+
 }
 
 
@@ -773,7 +769,7 @@ void Output(string output_file) {
 			{
 				output_stream << LUTs[i]->fanout;
 
-				for (auto j : LUTs[i]->fanins) 					
+				for (auto j : LUTs[i]->fanins)
 					output_stream << " " << j;
 
 				num_of_fanins_of_each_LUT.push_back(LUTs[i]->fanins.size());
@@ -815,13 +811,12 @@ void Output2(string output_file) {
 }
 
 
-
 void packing(int CLB_input_size_constrain) {
 
 	num_of_fanins_of_each_LUT.sort();
 
 	double average = 
-		accumulate(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(), 0.0) 
+		accumulate(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(), 0.0)
 		/ num_of_fanins_of_each_LUT.size();
 
 //	partition(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(), comparison);
