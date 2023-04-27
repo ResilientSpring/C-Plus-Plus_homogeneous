@@ -834,6 +834,7 @@ void packing(int CLB_input_size_constrain) {
 
 }
 
+/*
 
 bool comparison(int a) {
 
@@ -843,7 +844,7 @@ bool comparison(int a) {
 		return false;
 }
 
-
+*/
 
 /*
 *
