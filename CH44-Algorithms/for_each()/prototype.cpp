@@ -20,6 +20,9 @@ int summation(int i) {
 
 int main() {
 
-
+	vector<int> v;
+	
+	for (int i = 1; i < 11; i++)
+		v.push_back(i);
 
 }
