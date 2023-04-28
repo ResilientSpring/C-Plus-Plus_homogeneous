@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/CH44-Algorithms/Negator/Zap.cpp
+/CH44-Algorithms/Negator/Zap.cpp
