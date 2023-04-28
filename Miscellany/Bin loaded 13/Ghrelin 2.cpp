@@ -58,6 +58,7 @@ list<int> num_of_fanins_of_each_LUT = {};
 list<int> lower_than_average, equal_to_or_higher_than_average, higher_than_average;
 
 deque<int> lower_than_average_v, equal_to_or_higher_than_average_v, higher_than_average_v;
+deque<int> num_of_fanins_of_each_LUT_v;
 
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
@@ -832,16 +833,19 @@ int packing(int CLB_input_size_) {
 	//		[average](int t) {return t < average; });
 
 
-	partition_copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
-		back_inserter(lower_than_average), back_inserter(higher_than_average),
-		[average](int t) {return t < average; });
+//	partition_copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
+//		back_inserter(lower_than_average), back_inserter(higher_than_average),
+//		[average](int t) {return t < average; });
 
 	int num_of_LUTs = num_of_fanins_of_each_LUT.size();
 	int num_of_CLBs = 1;
 	deque<deque<int>> num_of_CLBs_dequeue;
 
-	copy(lower_than_average.begin(), lower_than_average.end(), back_inserter(lower_than_average_v));
-	copy(higher_than_average.begin(), higher_than_average.end(), back_inserter(higher_than_average_v));
+//	copy(lower_than_average.begin(), lower_than_average.end(), back_inserter(lower_than_average_v));
+//	copy(higher_than_average.begin(), higher_than_average.end(), back_inserter(higher_than_average_v));
+
+	copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(), 
+		back_inserter(num_of_fanins_of_each_LUT_v));
 
 	for (int i = 0; i < lower_than_average_v.size(); i++) {
 
