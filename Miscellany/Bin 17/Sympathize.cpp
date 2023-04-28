@@ -35,7 +35,7 @@ void Output(string output_file);
 void Output2(string output_file);
 
 void packing(int CLB_input_size_constrain);
-bool comparison(int a);
+// bool comparison(int a);
 
 string title;
 
@@ -55,6 +55,8 @@ list<int> *adjacency_list_of_network;
 list<int> *inverse_adjacency_list_of_network = NULL;
 list<int> num_of_fanins_of_each_LUT = {};
 list<int> lower_than_average, equal_to_or_higher_than_average, higher_than_average;
+
+vector<int> lower_than_average_v, equal_to_or_higher_than_average_v, higher_than_average_v;
 
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
@@ -835,7 +837,18 @@ void packing(int CLB_input_size_constrain) {
 		back_inserter(lower_than_average), back_inserter(higher_than_average),
 		[average](int t) {return t < average; });
 
+	int num_of_LUTs = num_of_fanins_of_each_LUT.size();
 
+	copy(lower_than_average.begin(), lower_than_average.end(), back_inserter(lower_than_average_v));
+	copy(higher_than_average.begin(), higher_than_average.end(), back_inserter(higher_than_average_v));
+
+	for (int i = 0; i = lower_than_average_v.size(); i++) {
+
+		for (int j = 0; j = equal_to_or_higher_than_average_v.size(); j++) {
+
+		}
+
+	}
 }
 
 /*

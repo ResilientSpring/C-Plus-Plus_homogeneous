@@ -35,7 +35,7 @@ void Output(string output_file);
 void Output2(string output_file);
 
 void packing(int CLB_input_size_constrain);
-bool comparison(int a);
+// bool comparison(int a);
 
 string title;
 
