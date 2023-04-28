@@ -10,6 +10,7 @@
 #include <queue>
 #include <stack>
 #include <numeric>
+#include <deque>
 using namespace std;
 
 void read(string aag);
@@ -34,13 +35,13 @@ void mapper3();
 void Output(string output_file);
 void Output2(string output_file);
 
-void packing(int CLB_input_size_constrain);
-bool comparison(int a);
+int packing(int CLB_input_size_);
+// bool comparison(int a);
 
 string title;
 
 int intermediate_node;
-int K, CLB_size;
+int K, CLB_input_size;
 int total_number_of_nodes = 0;
 int number_of_primary_inputs = 0;
 int number_of_latches = 0;
@@ -55,6 +56,8 @@ list<int> *adjacency_list_of_network;
 list<int> *inverse_adjacency_list_of_network = NULL;
 list<int> num_of_fanins_of_each_LUT = {};
 list<int> lower_than_average, equal_to_or_higher_than_average, higher_than_average;
+
+deque<int> lower_than_average_v, equal_to_or_higher_than_average_v, higher_than_average_v;
 
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
@@ -111,7 +114,9 @@ int main(int argc, char **argv) { // [1]
 	cout << "Output File: " << argv[3] << endl;
 	cout << "CLB's input size constraint: " << argv[4] << endl;
 
-	CLB_size = stoi(argv[4]);
+	CLB_input_size = stoi(argv[4]);
+
+	packing(CLB_input_size);
 }
 
 
@@ -816,7 +821,7 @@ void Output2(string output_file) {
 
 
 
-void packing(int CLB_input_size_constrain) {
+int packing(int CLB_input_size_) {
 
 	num_of_fanins_of_each_LUT.sort();
 
@@ -835,7 +840,47 @@ void packing(int CLB_input_size_constrain) {
 		back_inserter(lower_than_average), back_inserter(higher_than_average),
 		[average](int t) {return t < average; });
 
+	int num_of_LUTs = num_of_fanins_of_each_LUT.size();
+	int num_of_CLBs = 1;
+	deque<deque<int>> num_of_CLBs_dequeue;
 
+	copy(lower_than_average.begin(), lower_than_average.end(), back_inserter(lower_than_average_v));
+	copy(higher_than_average.begin(), higher_than_average.end(), back_inserter(higher_than_average_v));
+
+	for (int i = 0; i = lower_than_average_v.size(); i++) {
+
+		for (int j = 0; j = equal_to_or_higher_than_average_v.size(); j++) {
+
+			if (lower_than_average_v[i] + higher_than_average_v[i] < CLB_input_size_) {
+
+				num_of_CLBs_dequeue[num_of_CLBs].push_back(lower_than_average_v[i] 
+					+ higher_than_average_v[i]);
+
+				if (num_of_CLBs_dequeue[num_of_CLBs][0] == CLB_input_size_) {
+					num_of_CLBs++;
+				}
+
+				lower_than_average_v.pop_front();
+				higher_than_average_v.pop_front();
+
+			}
+			else if (lower_than_average_v[i] + higher_than_average_v[i] == CLB_input_size_) {
+
+				num_of_CLBs_dequeue[num_of_CLBs].push_back(lower_than_average_v[i]
+					+ higher_than_average_v[i]);
+
+				num_of_CLBs++;
+
+				lower_than_average_v.pop_front();
+				higher_than_average_v.pop_front();
+
+			}
+
+		}
+
+	}
+
+	return num_of_CLBs_dequeue.size();
 }
 
 /*
