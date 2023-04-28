@@ -847,9 +847,9 @@ int packing(int CLB_input_size_) {
 	copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(), 
 		back_inserter(num_of_fanins_of_each_LUT_v));
 
-	for (int i = 0; i < lower_than_average_v.size(); i++) {
+	for (int i = 0; i <= middle_index; i++) {
 
-		for (int j = 0; j < equal_to_or_higher_than_average_v.size(); j++) {
+		for (int j = num_of_fanins_of_each_LUT_v.size() - 1; j > middle_index; j--) {
 
 			if (lower_than_average_v[i] + higher_than_average_v[i] < CLB_input_size_) {
 
