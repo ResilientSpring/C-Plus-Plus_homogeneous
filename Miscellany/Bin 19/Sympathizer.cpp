@@ -99,7 +99,7 @@ vector<vertex **> trees_LUTs;
 
 int main(int argc, char **argv) {
 
-	if (argc != 4) {
+	if (argc != 5) {
 
 		cout << "Usage:  \n";
 		cout << "./mapper <path_to_the_input_blif> <LUT_size_(K)> <output_file_name> <CLB size> \n";
