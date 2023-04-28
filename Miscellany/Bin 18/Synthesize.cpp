@@ -95,26 +95,28 @@ public:
 vector<vertex **> trees_LUTs;
 
 
-int main() {
+int main(int argc, char **argv) { // [1]
 
+	if (argc != 4) {
 
-	string input_aag = "alu4.aag";
+		cout << "Usage:  \n";
+		cout << "./mapper <path_to_the_input_blif> <LUT_size_(K)> <output_file_name> <CLB size>" << endl;
+		exit(1);
+	}
+
+	string input_aag = argv[1];
 	read(input_aag);
 
-	K = 4;
+	K = stoi(argv[2]);
 
-	stack<int> gates;
+	cout << "Input File: " << argv[1] << endl;
+	cout << "K: " << argv[2] << endl;
+	cout << "Output File: " << argv[3] << endl;
+	cout << "CLB's input size constraint: " << argv[4] << endl;
 
-	Topological_sort(gates);
-	dismantle_forest_to_trees(gates);
-	mapper1();
+	CLB_input_size = stoi(argv[4]);
 
-	string output_file_name = "alu4.mapping_result";
-	Output(output_file_name);
-
-	CLB_input_size = 4;
-
-	cout << endl << "The number of CLBs: " << packing(CLB_input_size);
+	packing(CLB_input_size);
 }
 
 
@@ -845,40 +847,8 @@ int packing(int CLB_input_size_) {
 	copy(lower_than_average.begin(), lower_than_average.end(), back_inserter(lower_than_average_v));
 	copy(higher_than_average.begin(), higher_than_average.end(), back_inserter(higher_than_average_v));
 
-	for (int i = 0; i < lower_than_average_v.size(); i++) {
 
-		for (int j = 0; j < equal_to_or_higher_than_average_v.size(); j++) {
 
-			if (lower_than_average_v[i] + higher_than_average_v[i] < CLB_input_size_) {
-
-				num_of_CLBs_dequeue[num_of_CLBs].push_back(lower_than_average_v[i]
-					+ higher_than_average_v[i]);
-
-				if (num_of_CLBs_dequeue[num_of_CLBs][0] == CLB_input_size_) {
-					num_of_CLBs++;
-				}
-
-				lower_than_average_v.pop_front();
-				higher_than_average_v.pop_front();
-
-			}
-			else if (lower_than_average_v[i] + higher_than_average_v[i] == CLB_input_size_) {
-
-				num_of_CLBs_dequeue[num_of_CLBs].push_back(lower_than_average_v[i]
-					+ higher_than_average_v[i]);
-
-				num_of_CLBs++;
-
-				lower_than_average_v.pop_front();
-				higher_than_average_v.pop_front();
-
-			}
-
-		}
-
-	}
-
-	return num_of_CLBs_dequeue.size();
 }
 
 /*
