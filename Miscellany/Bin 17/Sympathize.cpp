@@ -866,6 +866,11 @@ void packing(int CLB_input_size_) {
 			}
 			else if (lower_than_average_v[i] + higher_than_average_v[i] == CLB_input_size_) {
 
+				num_of_CLBs_dequeue[num_of_CLBs].push_back(lower_than_average_v[i]
+					+ higher_than_average_v[i]);
+
+				num_of_CLBs++;
+
 				lower_than_average_v.pop_front();
 				higher_than_average_v.pop_front();
 
