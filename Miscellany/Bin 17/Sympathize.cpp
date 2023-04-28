@@ -35,7 +35,7 @@ void mapper3();
 void Output(string output_file);
 void Output2(string output_file);
 
-void packing(int CLB_input_size_constrain);
+void packing(int CLB_input_size_);
 // bool comparison(int a);
 
 string title;
@@ -115,6 +115,8 @@ int main(int argc, char **argv) { // [1]
 	cout << "CLB's input size constraint: " << argv[4] << endl;
 
 	CLB_input_size = stoi(argv[4]);
+
+	packing(CLB_input_size);
 }
 
 
@@ -819,7 +821,7 @@ void Output2(string output_file) {
 
 
 
-void packing(int CLB_input_size_constrain) {
+void packing(int CLB_input_size_) {
 
 	num_of_fanins_of_each_LUT.sort();
 
@@ -846,6 +848,17 @@ void packing(int CLB_input_size_constrain) {
 	for (int i = 0; i = lower_than_average_v.size(); i++) {
 
 		for (int j = 0; j = equal_to_or_higher_than_average_v.size(); j++) {
+
+			if (lower_than_average_v[i] + higher_than_average_v[i] < CLB_input_size_) {
+
+				
+
+			}
+			else if (lower_than_average_v[i] + higher_than_average_v[i] == CLB_input_size_) {
+
+
+
+			}
 
 		}
 
