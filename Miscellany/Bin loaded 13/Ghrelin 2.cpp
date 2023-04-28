@@ -36,6 +36,7 @@ void Output(string output_file);
 void Output2(string output_file);
 
 int packing(int CLB_input_size_);
+int packing_2(int CLB_input_size_);
 // bool comparison(int a);
 
 string title;
@@ -58,6 +59,7 @@ list<int> num_of_fanins_of_each_LUT = {};
 list<int> lower_than_average, equal_to_or_higher_than_average, higher_than_average;
 
 deque<int> lower_than_average_v, equal_to_or_higher_than_average_v, higher_than_average_v;
+deque<int> num_of_fanins_of_each_LUT_v;
 
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
@@ -832,43 +834,27 @@ int packing(int CLB_input_size_) {
 	//		[average](int t) {return t < average; });
 
 
-	partition_copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
-		back_inserter(lower_than_average), back_inserter(higher_than_average),
-		[average](int t) {return t < average; });
+//	partition_copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
+//		back_inserter(lower_than_average), back_inserter(higher_than_average),
+//		[average](int t) {return t < average; });
 
 	int num_of_LUTs = num_of_fanins_of_each_LUT.size();
 	int num_of_CLBs = 1;
 	deque<deque<int>> num_of_CLBs_dequeue;
 
-	copy(lower_than_average.begin(), lower_than_average.end(), back_inserter(lower_than_average_v));
-	copy(higher_than_average.begin(), higher_than_average.end(), back_inserter(higher_than_average_v));
+//	copy(lower_than_average.begin(), lower_than_average.end(), back_inserter(lower_than_average_v));
+//	copy(higher_than_average.begin(), higher_than_average.end(), back_inserter(higher_than_average_v));
 
-	for (int i = 0; i < lower_than_average_v.size(); i++) {
+	copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(), 
+		back_inserter(num_of_fanins_of_each_LUT_v));
 
-		for (int j = 0; j < equal_to_or_higher_than_average_v.size(); j++) {
+	for (int i = 0; i <= middle_index; i++) {
 
-			if (lower_than_average_v[i] + higher_than_average_v[i] < CLB_input_size_) {
+		for (int j = num_of_fanins_of_each_LUT_v.size() - 1; j > middle_index; j--) {
 
-				num_of_CLBs_dequeue[num_of_CLBs].push_back(lower_than_average_v[i]
-					+ higher_than_average_v[i]);
-
-				if (num_of_CLBs_dequeue[num_of_CLBs][0] == CLB_input_size_) {
-					num_of_CLBs++;
-				}
-
-				lower_than_average_v.pop_front();
-				higher_than_average_v.pop_front();
-
-			}
-			else if (lower_than_average_v[i] + higher_than_average_v[i] == CLB_input_size_) {
-
-				num_of_CLBs_dequeue[num_of_CLBs].push_back(lower_than_average_v[i]
-					+ higher_than_average_v[i]);
+			if (num_of_fanins_of_each_LUT_v[i] + num_of_fanins_of_each_LUT_v[j] <= CLB_input_size_) {
 
 				num_of_CLBs++;
-
-				lower_than_average_v.pop_front();
-				higher_than_average_v.pop_front();
 
 			}
 
@@ -878,6 +864,48 @@ int packing(int CLB_input_size_) {
 
 	return num_of_CLBs;
 }
+
+
+int packing_2(int CLB_input_size_) {
+
+	num_of_fanins_of_each_LUT.sort();
+
+	double middle_index = num_of_fanins_of_each_LUT.size() / 2;
+
+	int num_of_LUTs = num_of_fanins_of_each_LUT.size();
+	int num_of_CLBs = 1;
+	deque<deque<int>> num_of_CLBs_dequeue;
+
+	copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
+		back_inserter(num_of_fanins_of_each_LUT_v));
+
+	int i, j;
+
+	/*
+
+	for (int i = 0, j = num_of_fanins_of_each_LUT_v.size() - 1; i <= middle_index, j > middle_index;
+		i++, j--) {
+
+
+
+	}
+
+	*/
+
+	for (int i = 0, j = num_of_fanins_of_each_LUT_v.size() - 1; i <= middle_index && j > middle_index;
+		i++, j--) {
+
+		if (num_of_fanins_of_each_LUT_v[i] + num_of_fanins_of_each_LUT_v[j] <= CLB_input_size_) {
+
+			num_of_CLBs++;
+
+		}
+
+	}
+
+	return num_of_CLBs;
+}
+
 
 /*
 
