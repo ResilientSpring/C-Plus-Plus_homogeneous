@@ -95,28 +95,26 @@ public:
 vector<vertex **> trees_LUTs;
 
 
-int main(int argc, char **argv) { // [1]
+int main() {
 
-	if (argc != 4) {
 
-		cout << "Usage:  \n";
-		cout << "./mapper <path_to_the_input_blif> <LUT_size_(K)> <output_file_name> <CLB size>" << endl;
-		exit(1);
-	}
-
-	string input_aag = argv[1];
+	string input_aag = "alu4.aag";
 	read(input_aag);
 
-	K = stoi(argv[2]);
+	K = 4;
 
-	cout << "Input File: " << argv[1] << endl;
-	cout << "K: " << argv[2] << endl;
-	cout << "Output File: " << argv[3] << endl;
-	cout << "CLB's input size constraint: " << argv[4] << endl;
+	stack<int> gates;
 
-	CLB_input_size = stoi(argv[4]);
+	Topological_sort(gates);
+	dismantle_forest_to_trees(gates);
+	mapper1();
 
-	packing(CLB_input_size);
+	string output_file_name = "alu4.mapping_result";
+	Output(output_file_name);
+
+	CLB_input_size = 4;
+
+	cout << endl << "The number of CLBs: " << packing(CLB_input_size);
 }
 
 
