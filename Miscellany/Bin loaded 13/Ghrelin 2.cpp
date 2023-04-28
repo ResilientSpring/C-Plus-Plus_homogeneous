@@ -895,11 +895,15 @@ int packing_2(int CLB_input_size_) {
 	for (int i = 0, j = num_of_fanins_of_each_LUT_v.size() - 1; i <= middle_index && j > middle_index;
 		i++, j--) {
 
+		if (num_of_fanins_of_each_LUT_v[i] + num_of_fanins_of_each_LUT_v[j] <= CLB_input_size_) {
 
+			num_of_CLBs++;
+
+		}
 
 	}
 
-
+	return num_of_CLBs;
 }
 
 
