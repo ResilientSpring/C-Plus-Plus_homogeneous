@@ -10,6 +10,7 @@
 #include <queue>
 #include <stack>
 #include <numeric>
+#include <deque>
 using namespace std;
 
 void read(string aag);
@@ -34,13 +35,13 @@ void mapper3();
 void Output(string output_file);
 void Output2(string output_file);
 
-void packing(int CLB_input_size_constrain);
+int packing(int CLB_input_size_);
 // bool comparison(int a);
 
 string title;
 
 int intermediate_node;
-int K, CLB_size;
+int K, CLB_input_size;
 int total_number_of_nodes = 0;
 int number_of_primary_inputs = 0;
 int number_of_latches = 0;
@@ -53,8 +54,10 @@ set<int> primary_outputs;
 
 list<int> *adjacency_list_of_network;
 list<int> *inverse_adjacency_list_of_network = NULL;
-list<int> num_of_fanins_of_each_LUT;
+list<int> num_of_fanins_of_each_LUT = {};
 list<int> lower_than_average, equal_to_or_higher_than_average, higher_than_average;
+
+deque<int> lower_than_average_v, equal_to_or_higher_than_average_v, higher_than_average_v;
 
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
@@ -94,6 +97,7 @@ vector<vertex **> trees_LUTs;
 
 int main() {
 
+
 	string input_aag = "alu4.aag";
 	read(input_aag);
 
@@ -108,6 +112,9 @@ int main() {
 	string output_file_name = "alu4.mapping_result";
 	Output(output_file_name);
 
+	CLB_input_size = 6;
+
+	cout << endl << "The number of CLBs: " << packing(CLB_input_size);
 }
 
 
@@ -811,26 +818,67 @@ void Output2(string output_file) {
 }
 
 
-void packing(int CLB_input_size_constrain) {
+
+int packing(int CLB_input_size_) {
 
 	num_of_fanins_of_each_LUT.sort();
 
-	double average = 
+	double average =
 		accumulate(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(), 0.0)
 		/ num_of_fanins_of_each_LUT.size();
 
-//	partition(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(), comparison);
+	//	partition(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(), comparison);
 
-//	partition_copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
-//		back_inserter(lower_than_average), back_inserter(equal_to_or_higher_than_average),
-//		[average](int t) {return t < average; });
+	//	partition_copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
+	//		back_inserter(lower_than_average), back_inserter(equal_to_or_higher_than_average),
+	//		[average](int t) {return t < average; });
 
 
 	partition_copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
 		back_inserter(lower_than_average), back_inserter(higher_than_average),
 		[average](int t) {return t < average; });
 
+	int num_of_LUTs = num_of_fanins_of_each_LUT.size();
+	int num_of_CLBs = 1;
+	deque<deque<int>> num_of_CLBs_dequeue;
 
+	copy(lower_than_average.begin(), lower_than_average.end(), back_inserter(lower_than_average_v));
+	copy(higher_than_average.begin(), higher_than_average.end(), back_inserter(higher_than_average_v));
+
+	for (int i = 0; i = lower_than_average_v.size(); i++) {
+
+		for (int j = 0; j = equal_to_or_higher_than_average_v.size(); j++) {
+
+			if (lower_than_average_v[i] + higher_than_average_v[i] < CLB_input_size_) {
+
+				num_of_CLBs_dequeue[num_of_CLBs].push_back(lower_than_average_v[i]
+					+ higher_than_average_v[i]);
+
+				if (num_of_CLBs_dequeue[num_of_CLBs][0] == CLB_input_size_) {
+					num_of_CLBs++;
+				}
+
+				lower_than_average_v.pop_front();
+				higher_than_average_v.pop_front();
+
+			}
+			else if (lower_than_average_v[i] + higher_than_average_v[i] == CLB_input_size_) {
+
+				num_of_CLBs_dequeue[num_of_CLBs].push_back(lower_than_average_v[i]
+					+ higher_than_average_v[i]);
+
+				num_of_CLBs++;
+
+				lower_than_average_v.pop_front();
+				higher_than_average_v.pop_front();
+
+			}
+
+		}
+
+	}
+
+	return num_of_CLBs_dequeue.size();
 }
 
 /*
