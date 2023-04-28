@@ -14,5 +14,11 @@ int main() {
 	my_words.splice(my_words.begin(), your_words, your_words.begin());
 
 	copy(your_words.begin(), your_words.end(), ostream_iterator<string>(cout, " "));
+	
+	cout << endl;
+
+	copy(my_words.begin(), my_words.end(), ostream_iterator<string>(cout, " "));
+
+	cout << endl;
 
 }
