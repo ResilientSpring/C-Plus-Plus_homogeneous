@@ -35,7 +35,7 @@ void mapper3();
 void Output(string output_file);
 void Output2(string output_file);
 
-void packing(int CLB_input_size_);
+int packing(int CLB_input_size_);
 // bool comparison(int a);
 
 string title;
@@ -821,7 +821,7 @@ void Output2(string output_file) {
 
 
 
-void packing(int CLB_input_size_) {
+int packing(int CLB_input_size_) {
 
 	num_of_fanins_of_each_LUT.sort();
 
@@ -879,6 +879,8 @@ void packing(int CLB_input_size_) {
 		}
 
 	}
+
+	return num_of_CLBs_dequeue.size();
 }
 
 /*
