@@ -841,6 +841,8 @@ void packing(int CLB_input_size_) {
 		[average](int t) {return t < average; });
 
 	int num_of_LUTs = num_of_fanins_of_each_LUT.size();
+	int num_of_CLBs = 0;
+	deque<deque<int>> num_of_CLBs_dequeue;
 
 	copy(lower_than_average.begin(), lower_than_average.end(), back_inserter(lower_than_average_v));
 	copy(higher_than_average.begin(), higher_than_average.end(), back_inserter(higher_than_average_v));
@@ -851,12 +853,18 @@ void packing(int CLB_input_size_) {
 
 			if (lower_than_average_v[i] + higher_than_average_v[i] < CLB_input_size_) {
 
-				
+				num_of_CLBs_dequeue[num_of_CLBs].push_back(lower_than_average_v[i] 
+					+ higher_than_average_v[i]);
+
+				lower_than_average_v.pop_front();
+				higher_than_average_v.pop_front();
+				num_of_CLBs++;
 
 			}
 			else if (lower_than_average_v[i] + higher_than_average_v[i] == CLB_input_size_) {
 
-
+				lower_than_average_v.pop_front();
+				higher_than_average_v.pop_front();
 
 			}
 
