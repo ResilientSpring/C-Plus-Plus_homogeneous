@@ -847,8 +847,40 @@ int packing(int CLB_input_size_) {
 	copy(lower_than_average.begin(), lower_than_average.end(), back_inserter(lower_than_average_v));
 	copy(higher_than_average.begin(), higher_than_average.end(), back_inserter(higher_than_average_v));
 
+	for (int i = 0; i < lower_than_average_v.size(); i++) {
 
+		for (int j = 0; j < equal_to_or_higher_than_average_v.size(); j++) {
 
+			if (lower_than_average_v[i] + higher_than_average_v[i] < CLB_input_size_) {
+
+				num_of_CLBs_dequeue[num_of_CLBs].push_back(lower_than_average_v[i]
+					+ higher_than_average_v[i]);
+
+				if (num_of_CLBs_dequeue[num_of_CLBs][0] == CLB_input_size_) {
+					num_of_CLBs++;
+				}
+
+				lower_than_average_v.pop_front();
+				higher_than_average_v.pop_front();
+
+			}
+			else if (lower_than_average_v[i] + higher_than_average_v[i] == CLB_input_size_) {
+
+				num_of_CLBs_dequeue[num_of_CLBs].push_back(lower_than_average_v[i]
+					+ higher_than_average_v[i]);
+
+				num_of_CLBs++;
+
+				lower_than_average_v.pop_front();
+				higher_than_average_v.pop_front();
+
+			}
+
+		}
+
+	}
+
+	return num_of_CLBs;
 }
 
 /*
