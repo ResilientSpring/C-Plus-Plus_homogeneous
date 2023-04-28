@@ -36,6 +36,7 @@ void Output(string output_file);
 void Output2(string output_file);
 
 int packing(int CLB_input_size_);
+int packing_2(int CLB_input_size_);
 // bool comparison(int a);
 
 string title;
@@ -851,28 +852,9 @@ int packing(int CLB_input_size_) {
 
 		for (int j = num_of_fanins_of_each_LUT_v.size() - 1; j > middle_index; j--) {
 
-			if (lower_than_average_v[i] + higher_than_average_v[i] < CLB_input_size_) {
-
-				num_of_CLBs_dequeue[num_of_CLBs].push_back(lower_than_average_v[i]
-					+ higher_than_average_v[i]);
-
-				if (num_of_CLBs_dequeue[num_of_CLBs][0] == CLB_input_size_) {
-					num_of_CLBs++;
-				}
-
-				lower_than_average_v.pop_front();
-				higher_than_average_v.pop_front();
-
-			}
-			else if (lower_than_average_v[i] + higher_than_average_v[i] == CLB_input_size_) {
-
-				num_of_CLBs_dequeue[num_of_CLBs].push_back(lower_than_average_v[i]
-					+ higher_than_average_v[i]);
+			if (num_of_fanins_of_each_LUT_v[i] + num_of_fanins_of_each_LUT_v[j] <= CLB_input_size_) {
 
 				num_of_CLBs++;
-
-				lower_than_average_v.pop_front();
-				higher_than_average_v.pop_front();
 
 			}
 
@@ -882,6 +864,15 @@ int packing(int CLB_input_size_) {
 
 	return num_of_CLBs;
 }
+
+
+int packing_2(int CLB_input_size_) {
+
+
+
+
+}
+
 
 /*
 
