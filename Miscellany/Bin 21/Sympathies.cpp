@@ -34,7 +34,7 @@ void mapper2();
 void mapper3();
 void Output(string output_file);
 void Output2(string output_file);
-
+void Output_3();
 int packing(int CLB_input_size_);
 int packing_2(int CLB_input_size_);
 // bool comparison(int a);
@@ -114,8 +114,8 @@ int main(int argc, char **argv) {
 
 	cout << "Input File: " << argv[1] << endl;
 	cout << "K: " << argv[2] << endl;
-	cout << "Output File: " << argv[3] << endl;
-	cout << "CLB's input size constraint: " << argv[4] << endl;
+//	cout << "Output File: " << argv[3] << endl;
+	cout << "CLB's input size constraint: " << argv[3] << endl;
 
 	stack<int> gates;
 
@@ -123,10 +123,9 @@ int main(int argc, char **argv) {
 	dismantle_forest_to_trees(gates);
 	mapper1();
 
-	string output_file_name = argv[3];
-	Output(output_file_name);
+	void Output_3();
 
-	CLB_input_size = stoi(argv[4]);
+	CLB_input_size = stoi(argv[3]);
 
 	cout << endl << "The number of LUTs: " << num_of_fanins_of_each_LUT.size() << endl;
 
@@ -790,10 +789,10 @@ void Output(string output_file) {
 		{
 			if (LUTs[i] != NULL && LUTs[i]->in_use == true)
 			{
-				output_stream << LUTs[i]->fanout;
+				 output_stream << LUTs[i]->fanout;
 
 				for (auto j : LUTs[i]->fanins)
-					output_stream << " " << j;
+					 output_stream << " " << j;
 
 				num_of_fanins_of_each_LUT.push_back(LUTs[i]->fanins.size());
 
@@ -833,6 +832,33 @@ void Output2(string output_file) {
 	output_stream.close();
 }
 
+
+void Output_3() {
+
+	//	ofstream output_stream;
+
+	//	output_stream.open(output_file);
+
+	for (auto **LUTs : trees_LUTs) {
+
+		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
+		{
+			if (LUTs[i] != NULL && LUTs[i]->in_use == true)
+			{
+				// output_stream << LUTs[i]->fanout;
+
+				for (auto j : LUTs[i]->fanins)
+					// output_stream << " " << j;
+
+					num_of_fanins_of_each_LUT.push_back(LUTs[i]->fanins.size());
+
+				// output_stream << endl;
+			}
+		}
+
+	}
+	//	output_stream.close();
+}
 
 
 int packing(int CLB_input_size_) {
