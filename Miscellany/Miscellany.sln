@@ -145,6 +145,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bin loaded 18", "Bin loaded
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bin 21", "Bin 21\Bin 21.vcxproj", "{DA9E72FC-2BD9-41B1-B9BE-442F027A342A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bin 22", "Bin 22\Bin 22.vcxproj", "{F6DA42F5-02AB-4CD8-9F6C-CB2BD5153169}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -1009,6 +1011,18 @@ Global
 		{DA9E72FC-2BD9-41B1-B9BE-442F027A342A}.Release|x64.Build.0 = Release|x64
 		{DA9E72FC-2BD9-41B1-B9BE-442F027A342A}.Release|x86.ActiveCfg = Release|Win32
 		{DA9E72FC-2BD9-41B1-B9BE-442F027A342A}.Release|x86.Build.0 = Release|Win32
+		{F6DA42F5-02AB-4CD8-9F6C-CB2BD5153169}.Debug|ARM.ActiveCfg = Debug|Win32
+		{F6DA42F5-02AB-4CD8-9F6C-CB2BD5153169}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{F6DA42F5-02AB-4CD8-9F6C-CB2BD5153169}.Debug|x64.ActiveCfg = Debug|x64
+		{F6DA42F5-02AB-4CD8-9F6C-CB2BD5153169}.Debug|x64.Build.0 = Debug|x64
+		{F6DA42F5-02AB-4CD8-9F6C-CB2BD5153169}.Debug|x86.ActiveCfg = Debug|Win32
+		{F6DA42F5-02AB-4CD8-9F6C-CB2BD5153169}.Debug|x86.Build.0 = Debug|Win32
+		{F6DA42F5-02AB-4CD8-9F6C-CB2BD5153169}.Release|ARM.ActiveCfg = Release|Win32
+		{F6DA42F5-02AB-4CD8-9F6C-CB2BD5153169}.Release|ARM64.ActiveCfg = Release|Win32
+		{F6DA42F5-02AB-4CD8-9F6C-CB2BD5153169}.Release|x64.ActiveCfg = Release|x64
+		{F6DA42F5-02AB-4CD8-9F6C-CB2BD5153169}.Release|x64.Build.0 = Release|x64
+		{F6DA42F5-02AB-4CD8-9F6C-CB2BD5153169}.Release|x86.ActiveCfg = Release|Win32
+		{F6DA42F5-02AB-4CD8-9F6C-CB2BD5153169}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
