@@ -924,7 +924,15 @@ int packing_2(int CLB_input_size_) {
 
 int packing_3(int CLB_input_size_) {
 
+	num_of_fanins_of_each_LUT.sort();
 
+	double middle_index = num_of_fanins_of_each_LUT.size() / 2;
+
+	int num_of_LUTs = num_of_fanins_of_each_LUT.size();
+
+	int num_of_CLBs = 0;
+
+	deque<deque<int>> num_of_CLBs_dequeue;
 
 
 
