@@ -993,6 +993,12 @@ int packing_3(int CLB_input_size_) {
 }
 
 
+bool compare_size() {
+
+}
+
+
+
 /*
 
 bool comparison(int a) {
