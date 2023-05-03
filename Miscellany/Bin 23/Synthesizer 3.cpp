@@ -62,7 +62,7 @@ list<int> lower_than_average, equal_to_or_higher_than_average, higher_than_avera
 deque<int> lower_than_average_v, equal_to_or_higher_than_average_v, higher_than_average_v;
 deque<int> num_of_fanins_of_each_LUT_v;
 deque<deque<int>> go_inside_each_LUT_dequeue;
-deque<multiset<int>> go_inside_each_LUT_dequeue_multiset;
+deque<list<int>> go_inside_each_LUT_dequeue_list;
 
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
@@ -852,10 +852,12 @@ void Output_3(string output_file) {
 				output_stream << LUTs[i]->fanout;
 
 				for (auto j : LUTs[i]->fanins) {
-					
+
 					output_stream << " " << j;
 
 					go_inside_each_LUT_dequeue[i].push_back(j);
+//					go_inside_each_LUT_dequeue_list[i].insert(j);
+//					go_inside_each_LUT_dequeue_list.at(i).insert(j);
 				}
 
 				num_of_fanins_of_each_LUT.push_back(LUTs[i]->fanins.size());
@@ -990,6 +992,17 @@ int packing_3(int CLB_input_size_) {
 
 
 }
+
+
+bool compare_size(deque<int> a, deque<int> b) {
+
+	if (a.size() < b.size())
+		true;
+	else
+		return false;
+
+}
+
 
 
 /*

@@ -34,10 +34,9 @@ void mapper2();
 void mapper3();
 void Output(string output_file);
 void Output2(string output_file);
-void Output_3(string output_file);
+
 int packing(int CLB_input_size_);
 int packing_2(int CLB_input_size_);
-int packing_3(int CLB_input_size_);
 // bool comparison(int a);
 
 string title;
@@ -61,8 +60,6 @@ list<int> lower_than_average, equal_to_or_higher_than_average, higher_than_avera
 
 deque<int> lower_than_average_v, equal_to_or_higher_than_average_v, higher_than_average_v;
 deque<int> num_of_fanins_of_each_LUT_v;
-deque<deque<int>> go_inside_each_LUT_dequeue;
-deque<multiset<int>> go_inside_each_LUT_dequeue_multiset;
 
 // Cut trees from forest.
 vector<vector<int> *> trees_inverse;
@@ -837,37 +834,6 @@ void Output2(string output_file) {
 }
 
 
-void Output_3(string output_file) {
-
-	ofstream output_stream;
-
-	output_stream.open(output_file);
-
-	for (auto **LUTs : trees_LUTs) {
-
-		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
-		{
-			if (LUTs[i] != NULL && LUTs[i]->in_use == true)
-			{
-				output_stream << LUTs[i]->fanout;
-
-				for (auto j : LUTs[i]->fanins) {
-					
-					output_stream << " " << j;
-
-					go_inside_each_LUT_dequeue[i].push_back(j);
-				}
-
-				num_of_fanins_of_each_LUT.push_back(LUTs[i]->fanins.size());
-
-				output_stream << endl;
-			}
-		}
-
-	}
-	output_stream.close();
-}
-
 
 int packing(int CLB_input_size_) {
 
@@ -887,7 +853,7 @@ int packing(int CLB_input_size_) {
 //		[average](int t) {return t < average; });
 
 	int num_of_LUTs = num_of_fanins_of_each_LUT.size();
-	int num_of_CLBs = 1;
+	int num_of_CLBs = 0;
 	deque<deque<int>> num_of_CLBs_dequeue;
 
 	//	copy(lower_than_average.begin(), lower_than_average.end(), back_inserter(lower_than_average_v));
@@ -921,7 +887,7 @@ int packing_2(int CLB_input_size_) {
 	double middle_index = num_of_fanins_of_each_LUT.size() / 2;
 
 	int num_of_LUTs = num_of_fanins_of_each_LUT.size();
-	int num_of_CLBs = 1;
+	int num_of_CLBs = 0;
 	deque<deque<int>> num_of_CLBs_dequeue;
 
 	copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
@@ -952,43 +918,6 @@ int packing_2(int CLB_input_size_) {
 	}
 
 	return num_of_CLBs;
-}
-
-
-int packing_3(int CLB_input_size_) {
-
-	num_of_fanins_of_each_LUT.sort();
-
-	double middle_index = num_of_fanins_of_each_LUT.size() / 2;
-
-	int num_of_LUTs = num_of_fanins_of_each_LUT.size();
-
-	int num_of_CLBs = 0;
-
-	copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
-		back_inserter(num_of_fanins_of_each_LUT_v));
-
-	int i, j;
-
-
-	for (i = 0, j = num_of_fanins_of_each_LUT_v.size() - 1; i <= middle_index && j > middle_index;
-		i++, j--) {
-
-		if (num_of_fanins_of_each_LUT_v[i] + num_of_fanins_of_each_LUT_v[j] <= CLB_input_size_) {
-
-			num_of_CLBs++;
-
-		}
-		else if (num_of_fanins_of_each_LUT_v[i] + num_of_fanins_of_each_LUT_v[j] > CLB_input_size_) {
-
-
-
-
-		}
-
-	}
-
-
 }
 
 
