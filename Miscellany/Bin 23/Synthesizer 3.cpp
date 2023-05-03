@@ -993,7 +993,7 @@ int packing_3(int CLB_input_size_) {
 
 			}
 
-			vector<int> v_intersection;
+			deque<int> v_intersection;
 			set_intersection(go_inside_each_LUT_dequeue[i].begin(), go_inside_each_LUT_dequeue[i].end(),
 				go_inside_each_LUT_dequeue[j].begin(), go_inside_each_LUT_dequeue[j].end(), 
 				back_inserter(v_intersection));
