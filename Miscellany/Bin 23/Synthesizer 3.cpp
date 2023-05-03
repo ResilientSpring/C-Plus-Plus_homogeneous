@@ -1009,7 +1009,7 @@ int packing_3(int CLB_input_size_) {
 
 	}
 
-
+	return num_of_CLBs;
 }
 
 
@@ -1067,7 +1067,7 @@ int packing_4(int CLB_input_size_) {
 
 	}
 
-
+	return num_of_CLBs;
 }
 
 
