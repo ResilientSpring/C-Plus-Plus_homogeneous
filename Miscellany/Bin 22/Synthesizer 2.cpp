@@ -34,7 +34,7 @@ void mapper2();
 void mapper3();
 void Output(string output_file);
 void Output2(string output_file);
-
+void Output_3(string output_file);
 int packing(int CLB_input_size_);
 int packing_2(int CLB_input_size_);
 int packing_3(int CLB_input_size_);
@@ -834,6 +834,37 @@ void Output2(string output_file) {
 	output_stream.close();
 }
 
+
+void Output_3(string output_file) {
+
+	ofstream output_stream;
+
+	output_stream.open(output_file);
+
+	for (auto **LUTs : trees_LUTs) {
+
+		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
+		{
+			if (LUTs[i] != NULL && LUTs[i]->in_use == true)
+			{
+				output_stream << LUTs[i]->fanout;
+
+				for (auto j : LUTs[i]->fanins) {
+					
+					output_stream << " " << j;
+
+				}
+					
+
+				num_of_fanins_of_each_LUT.push_back(LUTs[i]->fanins.size());
+
+				output_stream << endl;
+			}
+		}
+
+	}
+	output_stream.close();
+}
 
 
 int packing(int CLB_input_size_) {
