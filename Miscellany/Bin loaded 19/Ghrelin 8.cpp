@@ -117,7 +117,7 @@ int main() {
 	mapper1();
 
 	string output_file_name = "alu4.mapping_result";
-	Output(output_file_name);
+	Output_3(output_file_name);
 
 	CLB_input_size = 8;
 
