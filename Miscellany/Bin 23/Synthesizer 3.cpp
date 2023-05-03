@@ -39,6 +39,7 @@ void Output_3(string output_file);
 int packing(int CLB_input_size_);
 int packing_2(int CLB_input_size_);
 int packing_3(int CLB_input_size_);
+int packing_4(int CLB_input_size_);
 // bool comparison(int a);
 bool compare_size(deque<int> a, deque<int> b);
 
@@ -999,6 +1000,64 @@ int packing_3(int CLB_input_size_) {
 				back_inserter(v_intersection));
 
 			if (num_of_fanins_of_each_LUT_v[i] + num_of_fanins_of_each_LUT_v[j] - v_intersection.size() <= CLB_input_size_) {
+
+				num_of_CLBs++;
+
+			}
+
+		}
+
+	}
+
+
+}
+
+
+int packing_4(int CLB_input_size_) {
+
+//	num_of_fanins_of_each_LUT.sort();
+
+//	double middle_index = num_of_fanins_of_each_LUT.size() / 2;
+
+//	int num_of_LUTs = num_of_fanins_of_each_LUT.size();
+
+	int num_of_CLBs = 0;
+
+//	copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
+//		back_inserter(num_of_fanins_of_each_LUT_v));
+
+	sort(go_inside_each_LUT_dequeue.begin(), go_inside_each_LUT_dequeue.end(), compare_size);
+
+	double middle_index = go_inside_each_LUT_dequeue.size() / 2;
+
+	int num_of_LUTs = go_inside_each_LUT_dequeue.size();
+
+	int i, j;
+
+
+	for (i = 0, j = go_inside_each_LUT_dequeue.size() - 1; i <= middle_index && j > middle_index;
+		i++, j--) {
+
+		if (go_inside_each_LUT_dequeue[i].size() + go_inside_each_LUT_dequeue[j].size() 
+			<= CLB_input_size_) {
+
+			num_of_CLBs++;
+
+		}
+		else if (go_inside_each_LUT_dequeue[i].size() + go_inside_each_LUT_dequeue[j].size() > CLB_input_size_) {
+
+			for (int z = 0; z < go_inside_each_LUT_dequeue.size(); z++) {
+
+				sort(go_inside_each_LUT_dequeue[z].begin(), go_inside_each_LUT_dequeue[z].end(), less<int>());
+
+			}
+
+			deque<int> v_intersection;
+			set_intersection(go_inside_each_LUT_dequeue[i].begin(), go_inside_each_LUT_dequeue[i].end(),
+				go_inside_each_LUT_dequeue[j].begin(), go_inside_each_LUT_dequeue[j].end(),
+				back_inserter(v_intersection));
+
+			if (go_inside_each_LUT_dequeue[i].size() + go_inside_each_LUT_dequeue[j].size() - v_intersection.size() <= CLB_input_size_) {
 
 				num_of_CLBs++;
 
