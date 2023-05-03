@@ -39,6 +39,7 @@ int packing(int CLB_input_size_);
 int packing_2(int CLB_input_size_);
 int packing_3(int CLB_input_size_);
 // bool comparison(int a);
+bool compare_size(deque<int> a, deque<int> b);
 
 string title;
 
