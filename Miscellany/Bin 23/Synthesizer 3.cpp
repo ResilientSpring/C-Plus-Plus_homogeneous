@@ -989,10 +989,13 @@ int packing_3(int CLB_input_size_) {
 
 			for (int z = 0; z < go_inside_each_LUT_dequeue.size(); z++) {
 
-				sort(go_inside_each_LUT_dequeue[i].begin(), go_inside_each_LUT_dequeue[i].end(), less<int>());
+				sort(go_inside_each_LUT_dequeue[z].begin(), go_inside_each_LUT_dequeue[z].end(), less<int>());
 
 			}
 
+			vector<int> v_intersection;
+			set_intersection(go_inside_each_LUT_dequeue[i].begin(), go_inside_each_LUT_dequeue[i].end(),
+				go_inside_each_LUT_dequeue[j].begin(), go_inside_each_LUT_dequeue[j].end());
 
 		}
 
