@@ -125,6 +125,8 @@ int main() {
 
 	cout << endl << "The number of LUTs: " << go_inside_each_LUT_dequeue.size() << endl;
 
+	cout << endl << "The number of CLBs: " << packing_2(CLB_input_size) << endl;
+
 	cout << endl << "The number of CLBs: " << packing_4(CLB_input_size) << endl;
 }
 
