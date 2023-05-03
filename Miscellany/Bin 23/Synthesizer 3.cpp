@@ -994,7 +994,12 @@ int packing_3(int CLB_input_size_) {
 }
 
 
-bool compare_size() {
+bool compare_size(deque<int> a, deque<int> b) {
+
+	if (a.size() < b.size())
+		true;
+	else
+		return false;
 
 }
 
