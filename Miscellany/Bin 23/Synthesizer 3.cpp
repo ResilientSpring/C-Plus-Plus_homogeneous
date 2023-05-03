@@ -971,6 +971,8 @@ int packing_3(int CLB_input_size_) {
 	copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
 		back_inserter(num_of_fanins_of_each_LUT_v));
 
+	sort(go_inside_each_LUT_dequeue.begin(), go_inside_each_LUT_dequeue.end(), compare_size);
+
 	int i, j;
 
 
