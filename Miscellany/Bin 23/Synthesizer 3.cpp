@@ -11,6 +11,7 @@
 #include <stack>
 #include <numeric>
 #include <deque>
+#include <functional>
 using namespace std;
 
 void read(string aag);
@@ -986,7 +987,11 @@ int packing_3(int CLB_input_size_) {
 		}
 		else if (num_of_fanins_of_each_LUT_v[i] + num_of_fanins_of_each_LUT_v[j] > CLB_input_size_) {
 
+			for (int z = 0; z < go_inside_each_LUT_dequeue.size(); z++) {
 
+				sort(go_inside_each_LUT_dequeue[i].begin(), go_inside_each_LUT_dequeue[i].end(), less<int>());
+
+			}
 
 
 		}
