@@ -856,7 +856,7 @@ void Output_3(string output_file) {
 //					go_inside_each_LUT_dequeue[i].insert(back_it, j);
 //					back_inserter(go_inside_each_LUT_dequeue[i], j);
 					
-					go_inside_each_LUT_dequeue.at(i).push_back(j);
+//					go_inside_each_LUT_dequeue.at(i).push_back(j);
 				}
 
 				num_of_fanins_of_each_LUT.push_back(LUTs[i]->fanins.size());
