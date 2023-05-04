@@ -851,12 +851,11 @@ void Output_3(string output_file) {
 					output_stream << " " << j;
 
 					go_inside_each_LUT_dequeue[i].push_back(j);
-					back_inserter(go_inside_each_LUT_dequeue[i], j);
+//					go_inside_each_LUT_dequeue[i].insert(go_inside_each_LUT_dequeue[i].begin(), j);
+					// back_inserter(go_inside_each_LUT_dequeue[i], j);
+
+					// back_insert_iterator<deque<int>> back_it(go_inside_each_LUT_dequeue[i]);
 					
-					
-					
-					//					go_inside_each_LUT_dequeue_list[i].insert(j);
-					//					go_inside_each_LUT_dequeue_list.at(i).insert(j);
 				}
 
 				num_of_fanins_of_each_LUT.push_back(LUTs[i]->fanins.size());
