@@ -850,7 +850,7 @@ void Output_3(string output_file) {
 
 					output_stream << " " << j;
 
-//					go_inside_each_LUT_dequeue[i].push_back(j);
+					go_inside_each_LUT_dequeue[i].push_back(j);
 //					go_inside_each_LUT_dequeue[i].insert(go_inside_each_LUT_dequeue[i].begin(), j);
 //					back_insert_iterator<deque<int>> back_it(go_inside_each_LUT_dequeue[i]);
 //					go_inside_each_LUT_dequeue[i].insert(back_it, j);
