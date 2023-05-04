@@ -65,7 +65,7 @@ list<int> lower_than_average, equal_to_or_higher_than_average, higher_than_avera
 
 deque<int> lower_than_average_v, equal_to_or_higher_than_average_v, higher_than_average_v;
 deque<int> num_of_fanins_of_each_LUT_v;
-deque<deque<int>> go_inside_each_LUT_dequeue = { {} };
+deque<deque<int>> go_inside_each_LUT_dequeue;
 deque<list<int>> go_inside_each_LUT_dequeue_list;
 
 // Cut trees from forest.
