@@ -103,25 +103,12 @@ public:
 vector<vertex **> trees_LUTs;
 
 
-int main(int argc, char **argv) {
+int main() {
 
-	if (argc != 5) {
-
-		cout << "Usage:  \n";
-		cout << "./mapper <path_to_the_input_blif> <LUT_size_(K)> <output_file_name> <CLB size> \n";
-		exit(1);
-	}
-
-
-	string input_aag = argv[1];
+	string input_aag = "alu4.aag";
 	read(input_aag);
 
-	K = stoi(argv[2]);
-
-	cout << "Input File: " << argv[1] << endl;
-	cout << "K: " << argv[2] << endl;
-	cout << "Output File: " << argv[3] << endl;
-	cout << "CLB's input size constraint: " << argv[4] << endl;
+	K = 4;
 
 	stack<int> gates;
 
@@ -129,14 +116,18 @@ int main(int argc, char **argv) {
 	dismantle_forest_to_trees(gates);
 	mapper1();
 
-	string output_file_name = argv[3];
+	string output_file_name = "alu4.mapping_result";
 	Output(output_file_name);
 
-	CLB_input_size = stoi(argv[4]);
+	CLB_input_size = 8;
 
 	cout << endl << "The number of LUTs: " << num_of_fanins_of_each_LUT.size() << endl;
 
+	cout << endl << "The number of LUTs: " << go_inside_each_LUT_dequeue.size() << endl;
+
 	cout << endl << "The number of CLBs: " << packing_2(CLB_input_size) << endl;
+
+	cout << endl << "The number of CLBs: " << packing_4(CLB_input_size) << endl;
 }
 
 
@@ -859,8 +850,8 @@ void Output_3(string output_file) {
 					output_stream << " " << j;
 
 					go_inside_each_LUT_dequeue[i].push_back(j);
-//					go_inside_each_LUT_dequeue_list[i].insert(j);
-//					go_inside_each_LUT_dequeue_list.at(i).insert(j);
+					//					go_inside_each_LUT_dequeue_list[i].insert(j);
+					//					go_inside_each_LUT_dequeue_list.at(i).insert(j);
 				}
 
 				num_of_fanins_of_each_LUT.push_back(LUTs[i]->fanins.size());
@@ -996,7 +987,7 @@ int packing_3(int CLB_input_size_) {
 
 			deque<int> v_intersection;
 			set_intersection(go_inside_each_LUT_dequeue[i].begin(), go_inside_each_LUT_dequeue[i].end(),
-				go_inside_each_LUT_dequeue[j].begin(), go_inside_each_LUT_dequeue[j].end(), 
+				go_inside_each_LUT_dequeue[j].begin(), go_inside_each_LUT_dequeue[j].end(),
 				back_inserter(v_intersection));
 
 			if (num_of_fanins_of_each_LUT_v[i] + num_of_fanins_of_each_LUT_v[j] - v_intersection.size() <= CLB_input_size_) {
@@ -1015,16 +1006,16 @@ int packing_3(int CLB_input_size_) {
 
 int packing_4(int CLB_input_size_) {
 
-//	num_of_fanins_of_each_LUT.sort();
+	//	num_of_fanins_of_each_LUT.sort();
 
-//	double middle_index = num_of_fanins_of_each_LUT.size() / 2;
+	//	double middle_index = num_of_fanins_of_each_LUT.size() / 2;
 
-//	int num_of_LUTs = num_of_fanins_of_each_LUT.size();
+	//	int num_of_LUTs = num_of_fanins_of_each_LUT.size();
 
 	int num_of_CLBs = 0;
 
-//	copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
-//		back_inserter(num_of_fanins_of_each_LUT_v));
+	//	copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
+	//		back_inserter(num_of_fanins_of_each_LUT_v));
 
 	sort(go_inside_each_LUT_dequeue.begin(), go_inside_each_LUT_dequeue.end(), compare_size);
 
@@ -1038,7 +1029,7 @@ int packing_4(int CLB_input_size_) {
 	for (i = 0, j = go_inside_each_LUT_dequeue.size() - 1; i <= middle_index && j > middle_index;
 		i++, j--) {
 
-		if (go_inside_each_LUT_dequeue[i].size() + go_inside_each_LUT_dequeue[j].size() 
+		if (go_inside_each_LUT_dequeue[i].size() + go_inside_each_LUT_dequeue[j].size()
 			<= CLB_input_size_) {
 
 			num_of_CLBs++;
