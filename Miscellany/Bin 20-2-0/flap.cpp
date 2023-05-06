@@ -134,9 +134,7 @@ int main(int argc, char **argv) {
 
 	packing_preparation(num_of_fanins_of_each_LUT);
 
-	packer(num_of_fanins_of_each_LUT_v);
-
-	cout << endl << "The number of CLBs: " << packing_2(CLB_input_size) << endl;
+	cout << endl << "The number of CLBs: " << packer(num_of_fanins_of_each_LUT_v) << endl;
 }
 
 
