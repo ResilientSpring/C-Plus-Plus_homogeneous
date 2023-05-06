@@ -132,6 +132,10 @@ int main(int argc, char **argv) {
 
 	cout << endl << "The number of LUTs: " << num_of_fanins_of_each_LUT.size() << endl;
 
+	packing_preparation(num_of_fanins_of_each_LUT);
+
+	packer(num_of_fanins_of_each_LUT_v);
+
 	cout << endl << "The number of CLBs: " << packing_2(CLB_input_size) << endl;
 }
 
