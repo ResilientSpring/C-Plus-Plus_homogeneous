@@ -916,8 +916,10 @@ int packing_2(int CLB_input_size_) {
 			num_of_fanins_of_each_LUT_v.pop_front();
 			num_of_fanins_of_each_LUT_v.pop_back();
 
-		}
+			// packing_2(int CLB_input_size_);
 
+		}
+		
 	}
 
 	return num_of_CLBs;
