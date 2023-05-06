@@ -950,7 +950,7 @@ int packer(deque<int> the_number_of_fanins_of_each_LUT) {
 		}
 
 	}
-
+	return the_number_of_CLBs;
 }
 
 
