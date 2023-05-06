@@ -37,6 +37,7 @@ void Output2(string output_file);
 
 int packing(int CLB_input_size_);
 int packing_2(int CLB_input_size_);
+void packing_preparation(list<int> the_number_of_fanins_of_each_LUT);
 int packer(deque<int> the_number_of_fanins_of_each_LUT);
 // bool comparison(int a);
 
