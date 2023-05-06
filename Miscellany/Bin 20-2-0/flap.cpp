@@ -37,6 +37,8 @@ void Output2(string output_file);
 
 int packing(int CLB_input_size_);
 int packing_2(int CLB_input_size_);
+void packing_preparation(list<int> the_number_of_fanins_of_each_LUT);
+int packer(deque<int> the_number_of_fanins_of_each_LUT);
 // bool comparison(int a);
 
 string title;
@@ -130,7 +132,9 @@ int main(int argc, char **argv) {
 
 	cout << endl << "The number of LUTs: " << num_of_fanins_of_each_LUT.size() << endl;
 
-	cout << endl << "The number of CLBs: " << packing_2(CLB_input_size) << endl;
+	packing_preparation(num_of_fanins_of_each_LUT);
+
+	cout << endl << "The number of CLBs: " << packer(num_of_fanins_of_each_LUT_v) << endl;
 }
 
 
@@ -919,11 +923,49 @@ int packing_2(int CLB_input_size_) {
 			packing_2(CLB_input_size_);
 
 		}
-		
+
 	}
 
 	return num_of_CLBs;
 }
+
+
+void packing_preparation(list<int> the_number_of_fanins_of_each_LUT) {
+
+	the_number_of_fanins_of_each_LUT.sort();
+
+	copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
+		back_inserter(num_of_fanins_of_each_LUT_v));
+
+}
+
+
+int packer(deque<int> the_number_of_fanins_of_each_LUT) {
+
+	int i, j;
+	double middle_index = the_number_of_fanins_of_each_LUT.size() / 2;
+
+	static int the_number_of_CLBs = 0;
+
+	for (i = 0, j = the_number_of_fanins_of_each_LUT.size() - 1; i <= middle_index && 
+		j > middle_index; i++, j--) {
+
+		if (the_number_of_fanins_of_each_LUT[i] + the_number_of_fanins_of_each_LUT[j] 
+			<= CLB_input_size) {
+
+			the_number_of_CLBs++;
+
+			the_number_of_fanins_of_each_LUT.pop_front();
+			the_number_of_fanins_of_each_LUT.pop_back();
+
+			packer(the_number_of_fanins_of_each_LUT);
+
+		}
+
+	}
+	return the_number_of_CLBs;
+}
+
 
 
 /*
