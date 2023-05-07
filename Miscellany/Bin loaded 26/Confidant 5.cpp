@@ -127,7 +127,7 @@ int main() {
 
 	packing_preparation(num_of_fanins_of_each_LUT);
 
-	cout << endl << "The number of CLBs: " << packer_4(num_of_fanins_of_each_LUT_v) << endl;
+	cout << endl << "The number of CLBs: " << packer_3_2(num_of_fanins_of_each_LUT_v) << endl;
 }
 
 
