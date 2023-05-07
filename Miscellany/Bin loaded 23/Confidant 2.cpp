@@ -123,7 +123,7 @@ int main() {
 
 	packing_preparation(num_of_fanins_of_each_LUT);
 
-	cout << endl << "The number of CLBs: " << packer(num_of_fanins_of_each_LUT_v) << endl;
+	cout << endl << "The number of CLBs: " << packer_2(num_of_fanins_of_each_LUT_v) << endl;
 }
 
 
@@ -982,7 +982,7 @@ int packer_2(deque<int> the_number_of_fanins_of_each_LUT) {
 
 		}
 
-	} while (the_number_of_fanins_of_each_LUT.empty() != true);
+	} while (the_number_of_fanins_of_each_LUT.empty() == false);
 
 
 	return the_number_of_CLBs;
