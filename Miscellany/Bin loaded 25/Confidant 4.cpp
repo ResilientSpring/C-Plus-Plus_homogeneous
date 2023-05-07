@@ -41,6 +41,7 @@ void packing_preparation(list<int> the_number_of_fanins_of_each_LUT);
 int packer(deque<int> the_number_of_fanins_of_each_LUT);
 int packer_2(deque<int> the_number_of_fanins_of_each_LUT);
 int packer_3(deque<int> the_number_of_fanins_of_each_LUT);
+int packer_4(deque<int> the_number_of_fanins_of_each_LUT);
 // bool comparison(int a);
 
 string title;
@@ -124,7 +125,7 @@ int main() {
 
 	packing_preparation(num_of_fanins_of_each_LUT);
 
-	cout << endl << "The number of CLBs: " << packer_3(num_of_fanins_of_each_LUT_v) << endl;
+	cout << endl << "The number of CLBs: " << packer_4(num_of_fanins_of_each_LUT_v) << endl;
 }
 
 
@@ -1030,7 +1031,7 @@ int packer_4(deque<int> the_number_of_fanins_of_each_LUT) {
 
 	static int the_number_of_CLBs = 0;
 
-	do
+	while (the_number_of_fanins_of_each_LUT.empty() == false)
 	{
 		for (i = 0, j = the_number_of_fanins_of_each_LUT.size() - 1; i <= middle_index &&
 			j > middle_index; i++, j--) {
@@ -1049,8 +1050,7 @@ int packer_4(deque<int> the_number_of_fanins_of_each_LUT) {
 
 		}
 
-	} while (the_number_of_fanins_of_each_LUT.empty() == false);
-
+	}
 
 	return the_number_of_CLBs;
 }
