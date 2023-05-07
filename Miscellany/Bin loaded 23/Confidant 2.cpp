@@ -962,22 +962,28 @@ int packer_2(deque<int> the_number_of_fanins_of_each_LUT) {
 
 	static int the_number_of_CLBs = 0;
 
-	for (i = 0, j = the_number_of_fanins_of_each_LUT.size() - 1; i <= middle_index &&
-		j > middle_index; i++, j--) {
+	do
+	{
+		for (i = 0, j = the_number_of_fanins_of_each_LUT.size() - 1; i <= middle_index &&
+			j > middle_index; i++, j--) {
 
-		if (the_number_of_fanins_of_each_LUT[i] + the_number_of_fanins_of_each_LUT[j]
-			<= CLB_input_size) {
+			if (the_number_of_fanins_of_each_LUT[i] + the_number_of_fanins_of_each_LUT[j]
+				<= CLB_input_size) {
 
-			the_number_of_CLBs++;
+				the_number_of_CLBs++;
 
-			the_number_of_fanins_of_each_LUT.pop_front();
-			the_number_of_fanins_of_each_LUT.pop_back();
+				the_number_of_fanins_of_each_LUT.pop_front();
+				the_number_of_fanins_of_each_LUT.pop_back();
 
-			packer(the_number_of_fanins_of_each_LUT);
+				packer(the_number_of_fanins_of_each_LUT);
+
+			}
 
 		}
 
-	}
+	} while (the_number_of_fanins_of_each_LUT.empty() != true);
+
+
 	return the_number_of_CLBs;
 }
 
