@@ -99,18 +99,13 @@ public:
 vector<vertex **> trees_LUTs;
 
 
-int main(int argc, char **argv) {
+int main() {
 
 
-	string input_aag = argv[1];
+	string input_aag = "alu4.aag";
 	read(input_aag);
 
-	K = stoi(argv[2]);
-
-	cout << "Input File: " << argv[1] << endl;
-	cout << "K: " << argv[2] << endl;
-	cout << "Output File: " << argv[3] << endl;
-	cout << "CLB's input size constraint: " << argv[4] << endl;
+	K = 4;
 
 	stack<int> gates;
 
@@ -118,10 +113,10 @@ int main(int argc, char **argv) {
 	dismantle_forest_to_trees(gates);
 	mapper1();
 
-	string output_file_name = argv[3];
+	string output_file_name = "alu4.mapping_result";
 	Output(output_file_name);
 
-	CLB_input_size = stoi(argv[4]);
+	CLB_input_size = 8;
 
 	cout << endl << "The number of LUTs: " << num_of_fanins_of_each_LUT.size() << endl;
 
