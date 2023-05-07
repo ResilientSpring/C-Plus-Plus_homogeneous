@@ -141,6 +141,9 @@
   <ItemGroup>
     <ClCompile Include="Confidant 2.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="alu4.aag" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

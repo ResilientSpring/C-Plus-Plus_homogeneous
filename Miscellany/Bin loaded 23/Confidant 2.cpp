@@ -39,6 +39,7 @@ int packing(int CLB_input_size_);
 int packing_2(int CLB_input_size_);
 void packing_preparation(list<int> the_number_of_fanins_of_each_LUT);
 int packer(deque<int> the_number_of_fanins_of_each_LUT);
+int packer_2(deque<int> the_number_of_fanins_of_each_LUT);
 // bool comparison(int a);
 
 string title;
@@ -975,7 +976,7 @@ int packer_2(deque<int> the_number_of_fanins_of_each_LUT) {
 				the_number_of_fanins_of_each_LUT.pop_front();
 				the_number_of_fanins_of_each_LUT.pop_back();
 
-				packer(the_number_of_fanins_of_each_LUT);
+				packer_2(the_number_of_fanins_of_each_LUT);
 
 			}
 
