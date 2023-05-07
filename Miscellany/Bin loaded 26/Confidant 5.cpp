@@ -41,7 +41,9 @@ void packing_preparation(list<int> the_number_of_fanins_of_each_LUT);
 int packer(deque<int> the_number_of_fanins_of_each_LUT);
 int packer_2(deque<int> the_number_of_fanins_of_each_LUT);
 int packer_3(deque<int> the_number_of_fanins_of_each_LUT);
+int packer_3_2(deque<int> the_number_of_fanins_of_each_LUT);
 int packer_4(deque<int> the_number_of_fanins_of_each_LUT);
+int packer_4_2(deque<int> the_number_of_fanins_of_each_LUT);
 // bool comparison(int a);
 
 string title;
