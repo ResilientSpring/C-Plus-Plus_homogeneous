@@ -601,7 +601,7 @@ void mapper1() {
 						LUTs[node] = new_LUT;
 					}
 				}
-				else
+				else  // if (number_of_inputs[0] > number_of_inputs[1])
 				{
 					if (number_of_inputs[1] + 1 <= K)
 					{
