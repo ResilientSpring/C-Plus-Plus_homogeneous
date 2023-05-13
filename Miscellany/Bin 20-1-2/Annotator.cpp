@@ -602,7 +602,8 @@ void mapper1() {
 					}
 				}
 				else  // if (number_of_inputs[0] > number_of_inputs[1])
-				{
+				{   
+					// check if the smaller one + a primary input will <= K
 					if (number_of_inputs[1] + 1 <= K)
 					{
 						Look_Up_Table *new_LUT = new Look_Up_Table;
