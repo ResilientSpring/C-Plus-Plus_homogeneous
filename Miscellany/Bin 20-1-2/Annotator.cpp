@@ -381,7 +381,7 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 		int node = Stack.top();
 		Stack.pop();
 
-		// If the node taken from the topological sorted adjacency list is found to be a primary input, or 
+		// If the node taken from the topological sorted network is found to be a primary input, or 
 		// not a primary output and has fanout node fewer than 2.
 		if (primary_inputs.find(node) != primary_inputs.end() or
 			(primary_outputs.find(node) == primary_outputs.end() &&
