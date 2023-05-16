@@ -590,7 +590,7 @@ void mapper1() {
 						LUTs[node] = new_LUT;
 						fan_in_1_LUT->in_use = false;
 					}
-					else  // in case number_of_inputs[0] + 1 > K
+					else  // in case number_of_inputs[0] + 1 > K 
 					{
 						Look_Up_Table *new_LUT = new Look_Up_Table;
 						new_LUT->in_use = true;
