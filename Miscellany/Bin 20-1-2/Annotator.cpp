@@ -526,7 +526,7 @@ void mapper1() {
 				dummy_LUT->fanins.push_back(node);
 				dummy_LUT->fanout = node;
 				dummy_LUT->number_of_fanins = 1;
-				LUTs[node] = dummy_LUT;    // a trivial cut
+				LUTs[node] = dummy_LUT;    // a trivial cut  [23]
 
 				continue;
 			}
@@ -962,6 +962,7 @@ bool comparison(int a) {
 * 20. https://stackoverflow.com/questions/25229624/using-bfs-for-topological-sort
 * 21. <Advanced Topics in Java> $ 3.13 Arrays vs. Linked Lists
 * 22. <Exploring FPGA Technology Mapping for Fracturable LUT Minimization>
+* 23. <Dual-output LUT Merging during FPGA Technology Mapping>
 
 */
 
