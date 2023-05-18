@@ -693,7 +693,7 @@ void mapper3() {
 
 
 			// Record the check result.
-			int number_of_inputs[2];// 2 b/c a node has 2 fan-ins. A LUT can have more than 2 inputs.
+			int number_of_inputs[2];
 
 			if (tree_inv[fan_in_1].empty())
 				number_of_inputs[0] = 1;
