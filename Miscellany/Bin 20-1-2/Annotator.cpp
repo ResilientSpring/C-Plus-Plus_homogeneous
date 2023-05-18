@@ -595,10 +595,10 @@ void mapper1() {
 					{
 						Look_Up_Table *new_LUT = new Look_Up_Table;
 						new_LUT->in_use = true;
-						new_LUT->fanins.push_back(fan_in_1);
-						new_LUT->fanins.push_back(fan_in_2);
-						new_LUT->fanout = node;
-						new_LUT->number_of_fanins = 2;
+						new_LUT->fanins.push_back(fan_in_1);   // Pack LUTs into FLUTs, either 
+						new_LUT->fanins.push_back(fan_in_2);   // individually or in pairs. [22]
+						new_LUT->fanout = node;                // In this case, it individually packs 
+						new_LUT->number_of_fanins = 2;         // this LUT into a FLUT.
 						LUTs[node] = new_LUT;
 					}
 				}
@@ -961,6 +961,7 @@ bool comparison(int a) {
 * 19. https://stackoverflow.com/questions/30869987/topological-order-using-bfs
 * 20. https://stackoverflow.com/questions/25229624/using-bfs-for-topological-sort
 * 21. <Advanced Topics in Java> $ 3.13 Arrays vs. Linked Lists
+* 22. <Exploring FPGA Technology Mapping for Fracturable LUT Minimization>
 
 */
 
