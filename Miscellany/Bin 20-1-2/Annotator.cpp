@@ -616,7 +616,7 @@ void mapper1() {
 						LUTs[node] = new_LUT;
 						fan_in_2_LUT->in_use = false;
 					}
-					else
+					else   // this implies that number_of_inputs[1] == K
 					{
 						Look_Up_Table *new_LUT = new Look_Up_Table;
 						new_LUT->in_use = true;
