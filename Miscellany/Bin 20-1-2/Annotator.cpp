@@ -526,7 +526,7 @@ void mapper1() {
 				dummy_LUT->fanins.push_back(node);
 				dummy_LUT->fanout = node;
 				dummy_LUT->number_of_fanins = 1;
-				LUTs[node] = dummy_LUT;
+				LUTs[node] = dummy_LUT;    // a trivial cut
 
 				continue;
 			}
@@ -576,6 +576,7 @@ void mapper1() {
 				fan_in_2_LUT->in_use = false;
 			}
 			else { // in case number_of_inputs[0] + number_of_inputs[1] > K, 
+
 				// determine if number_of_inputs[0] or number_of_inputs[1] is the causative factor. 
 				if (number_of_inputs[0] <= number_of_inputs[1])
 				{
@@ -590,7 +591,7 @@ void mapper1() {
 						LUTs[node] = new_LUT;
 						fan_in_1_LUT->in_use = false;
 					}
-					else  // in case number_of_inputs[0] + 1 > K
+					else  // in case number_of_inputs[0] + 1 > K 
 					{
 						Look_Up_Table *new_LUT = new Look_Up_Table;
 						new_LUT->in_use = true;
