@@ -567,8 +567,11 @@ void mapper1() {
 			{
 				Look_Up_Table *new_LUT = new Look_Up_Table;
 				new_LUT->in_use = true;
-				new_LUT->fanins = fan_in_1_LUT->fanins;
-				new_LUT->fanins.insert(new_LUT->fanins.end(), fan_in_2_LUT->fanins.begin(), fan_in_2_LUT->fanins.end());
+//				new_LUT->fanins = fan_in_1_LUT->fanins;
+
+				new_LUT->fanins = LUTs[fan_in_1].fanins;
+
+				new_LUT->fanins.insert(new_LUT->fanins.end(), LUTs[fan_in_2].fanins.begin(), LUTs[fan_in_2].fanins.end());
 				new_LUT->fanout = node;
 				new_LUT->number_of_fanins = new_LUT->fanins.size();
 				LUTs[node] = new_LUT;
