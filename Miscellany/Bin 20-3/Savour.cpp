@@ -381,7 +381,7 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 		int node = Stack.top();
 		Stack.pop();
 
-		// If the node taken from the topological sorted network is found to be a primary input, or 
+		// If the node taken from the top of stack is found to be a primary input, or 
 		// not a primary output and has fanout node fewer than 2.
 		if (primary_inputs.find(node) != primary_inputs.end() or
 			(primary_outputs.find(node) == primary_outputs.end() &&
@@ -500,14 +500,13 @@ void mapper1() {
 	for (int i = 0; i < number_of_trees; i++)
 	{
 
-		Look_Up_Table **LUTs = new Look_Up_Table * [2 * total_number_of_nodes + 1];
+		Look_Up_Table *LUTs = new Look_Up_Table[2 * total_number_of_nodes + 1];
 
+		//		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
+		//			LUTs[i] = Look_Up_Table();
 
-		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
-			LUTs[i] = NULL;
-
-		// Because topologically_sorted_nodes_in_a_tree[i] returns an entire queue, 
-		// it seems safer to precede the receiving variable with &; it's tested okay not doing it, though.
+				// Because topologically_sorted_nodes_in_a_tree[i] returns an entire queue, 
+				// it seems safer to precede the receiving variable with &; it's tested okay not doing it, though.
 		queue<int> Queue = topologically_sorted_nodes_in_a_tree[i];
 		//		queue<int> *Queue = &trees_topologically_sorted[i];
 
@@ -526,7 +525,7 @@ void mapper1() {
 				dummy_LUT->fanins.push_back(node);
 				dummy_LUT->fanout = node;
 				dummy_LUT->number_of_fanins = 1;
-				LUTs[node] = dummy_LUT;    // a trivial cut  [23]
+				LUTs[node] = *dummy_LUT;    // a trivial cut  [23]
 
 				continue;
 			}
@@ -538,8 +537,8 @@ void mapper1() {
 
 			//////////////////
 
-			Look_Up_Table *fan_in_1_LUT = LUTs[fan_in_1];
-			Look_Up_Table *fan_in_2_LUT = LUTs[fan_in_2];
+//			Look_Up_Table *fan_in_1_LUT = LUTs[fan_in_1];
+//			Look_Up_Table *fan_in_2_LUT = LUTs[fan_in_2];
 
 			//////////////////
 
@@ -552,14 +551,15 @@ void mapper1() {
 			if (tree_inv[fan_in_1].empty())
 				number_of_inputs[0] = 1;
 			else
-				number_of_inputs[0] = fan_in_1_LUT->number_of_fanins;
+				number_of_inputs[0] = LUTs[fan_in_1].number_of_fanins;
+			//			number_of_inputs[0] = fan_in_1_LUT->number_of_fanins;
 
 
 			// if the node's fan-in 2 is a primary input, i.e. a node without fanouts.
 			if (tree_inv[fan_in_2].empty())
 				number_of_inputs[1] = 1;
 			else
-				number_of_inputs[1] = fan_in_2_LUT->number_of_fanins;
+				number_of_inputs[1] = LUTs[fan_in_2].number_of_fanins;
 
 
 			// Greedy mapping
@@ -567,9 +567,12 @@ void mapper1() {
 			{
 				Look_Up_Table *new_LUT = new Look_Up_Table;
 				new_LUT->in_use = true;
-				new_LUT->fanins = fan_in_1_LUT->fanins;
-				new_LUT->fanins.insert(new_LUT->fanins.end(), fan_in_2_LUT->fanins.begin(), fan_in_2_LUT->fanins.end());
-				new_LUT->fanout = node;   // A single-output cone rooted at the node.
+//				new_LUT->fanins = fan_in_1_LUT->fanins;
+
+				new_LUT->fanins = LUTs[fan_in_1].fanins;
+
+				new_LUT->fanins.insert(new_LUT->fanins.end(), LUTs[fan_in_2].fanins.begin(), LUTs[fan_in_2].fanins.end());
+				new_LUT->fanout = node;
 				new_LUT->number_of_fanins = new_LUT->fanins.size();
 				LUTs[node] = new_LUT;
 				fan_in_1_LUT->in_use = false;
@@ -603,7 +606,7 @@ void mapper1() {
 					}
 				}
 				else  // if (number_of_inputs[0] > number_of_inputs[1])
-				{   
+				{
 					// check if the smaller one + a primary input will <= K
 					if (number_of_inputs[1] + 1 <= K)
 					{
