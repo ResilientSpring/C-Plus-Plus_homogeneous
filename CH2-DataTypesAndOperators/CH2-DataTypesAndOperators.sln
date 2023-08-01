@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Integer", "Integer\Integer.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Float", "Float\Float.vcxproj", "{6A09E47F-31F0-4AC9-A64E-6F41C281FDCC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bool", "bool\bool.vcxproj", "{15937EA4-C8A2-45BA-BA0E-DCF04EB23C0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{6A09E47F-31F0-4AC9-A64E-6F41C281FDCC}.Release|x64.Build.0 = Release|x64
 		{6A09E47F-31F0-4AC9-A64E-6F41C281FDCC}.Release|x86.ActiveCfg = Release|Win32
 		{6A09E47F-31F0-4AC9-A64E-6F41C281FDCC}.Release|x86.Build.0 = Release|Win32
+		{15937EA4-C8A2-45BA-BA0E-DCF04EB23C0B}.Debug|x64.ActiveCfg = Debug|x64
+		{15937EA4-C8A2-45BA-BA0E-DCF04EB23C0B}.Debug|x64.Build.0 = Debug|x64
+		{15937EA4-C8A2-45BA-BA0E-DCF04EB23C0B}.Debug|x86.ActiveCfg = Debug|Win32
+		{15937EA4-C8A2-45BA-BA0E-DCF04EB23C0B}.Debug|x86.Build.0 = Debug|Win32
+		{15937EA4-C8A2-45BA-BA0E-DCF04EB23C0B}.Release|x64.ActiveCfg = Release|x64
+		{15937EA4-C8A2-45BA-BA0E-DCF04EB23C0B}.Release|x64.Build.0 = Release|x64
+		{15937EA4-C8A2-45BA-BA0E-DCF04EB23C0B}.Release|x86.ActiveCfg = Release|Win32
+		{15937EA4-C8A2-45BA-BA0E-DCF04EB23C0B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
