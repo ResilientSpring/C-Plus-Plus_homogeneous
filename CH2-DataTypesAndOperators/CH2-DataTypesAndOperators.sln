@@ -19,6 +19,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bool", "bool\bool.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Character Escape Seuences", "Character Escape Seuences\Character Escape Seuences.vcxproj", "{5B4F888F-12BC-4ACA-B847-A2F0A2DF16F7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Increment and decrement", "Increment and decrement\Increment and decrement.vcxproj", "{2DD777BC-7611-46CC-85D9-9530ECFC5679}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Increment and decrement 2", "Increment and decrement 2\Increment and decrement 2.vcxproj", "{A401378C-A28E-4033-AED1-41216EBB9651}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +95,22 @@ Global
 		{5B4F888F-12BC-4ACA-B847-A2F0A2DF16F7}.Release|x64.Build.0 = Release|x64
 		{5B4F888F-12BC-4ACA-B847-A2F0A2DF16F7}.Release|x86.ActiveCfg = Release|Win32
 		{5B4F888F-12BC-4ACA-B847-A2F0A2DF16F7}.Release|x86.Build.0 = Release|Win32
+		{2DD777BC-7611-46CC-85D9-9530ECFC5679}.Debug|x64.ActiveCfg = Debug|x64
+		{2DD777BC-7611-46CC-85D9-9530ECFC5679}.Debug|x64.Build.0 = Debug|x64
+		{2DD777BC-7611-46CC-85D9-9530ECFC5679}.Debug|x86.ActiveCfg = Debug|Win32
+		{2DD777BC-7611-46CC-85D9-9530ECFC5679}.Debug|x86.Build.0 = Debug|Win32
+		{2DD777BC-7611-46CC-85D9-9530ECFC5679}.Release|x64.ActiveCfg = Release|x64
+		{2DD777BC-7611-46CC-85D9-9530ECFC5679}.Release|x64.Build.0 = Release|x64
+		{2DD777BC-7611-46CC-85D9-9530ECFC5679}.Release|x86.ActiveCfg = Release|Win32
+		{2DD777BC-7611-46CC-85D9-9530ECFC5679}.Release|x86.Build.0 = Release|Win32
+		{A401378C-A28E-4033-AED1-41216EBB9651}.Debug|x64.ActiveCfg = Debug|x64
+		{A401378C-A28E-4033-AED1-41216EBB9651}.Debug|x64.Build.0 = Debug|x64
+		{A401378C-A28E-4033-AED1-41216EBB9651}.Debug|x86.ActiveCfg = Debug|Win32
+		{A401378C-A28E-4033-AED1-41216EBB9651}.Debug|x86.Build.0 = Debug|Win32
+		{A401378C-A28E-4033-AED1-41216EBB9651}.Release|x64.ActiveCfg = Release|x64
+		{A401378C-A28E-4033-AED1-41216EBB9651}.Release|x64.Build.0 = Release|x64
+		{A401378C-A28E-4033-AED1-41216EBB9651}.Release|x86.ActiveCfg = Release|Win32
+		{A401378C-A28E-4033-AED1-41216EBB9651}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
