@@ -102,7 +102,7 @@ int main(int argc, char **argv) {
 	if (argc != 5) {
 
 		cout << "Usage:  \n";
-		cout << "./mapper <path_to_the_input_blif> <LUT_size_(K)> <output_file_name> <CLB size> \n";
+		cout << "./mapper <path_to_the_input_aag> <LUT_size_(K)> <output_file_name> <CLB size> \n";
 		exit(1);
 	}
 
@@ -603,7 +603,7 @@ void mapper1() {
 					}
 				}
 				else  // if (number_of_inputs[0] > number_of_inputs[1])
-				{   
+				{
 					// check if the smaller one + a primary input will <= K
 					if (number_of_inputs[1] + 1 <= K)
 					{

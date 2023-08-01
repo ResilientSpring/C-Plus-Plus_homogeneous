@@ -1,9 +1,21 @@
 
+#include <iostream>
+#include <cstring>
+using namespace std;
+
 void quicksort(char *items, int len);
-void qs(char* items, int left, int right);
+void qs(char *items, int left, int right);
 
 int main() {
 	
+	char str[] = "jfmckldoelazlkper";
+
+	cout << "Original order: " << str << "\n";
+
+	quicksort(str, strlen(str));
+
+	cout << "Sorted order: " << str << "\n";
+
 }
 
 
@@ -27,7 +39,21 @@ void qs(char *items, int left, int right) {
 		while ((items[i] < x) && (i < right))
 			i++;
 
-		while()
+		while ((x < items[j]) && (j > left))
+			j--;
 
-	} while ();
+
+		if (i <= j)
+		{
+			y = items[i];
+			items[i] = items[j];
+			items[j] = y;
+			i++; j--;
+		}
+
+
+	} while (i <= j);
+
+	if (left < j) qs(items, left, j);
+	if (i < right) qs(items, i, right);
 }
