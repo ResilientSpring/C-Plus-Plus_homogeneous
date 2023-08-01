@@ -16,6 +16,7 @@ int main() {
 
 	y = x++;
 
-	
+	cout << "y is " << y << "\n";
+	cout << "x is " << x << "\n";
 
 }
