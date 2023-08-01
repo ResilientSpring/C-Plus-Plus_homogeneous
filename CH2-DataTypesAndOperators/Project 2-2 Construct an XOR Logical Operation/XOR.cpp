@@ -19,4 +19,9 @@ int main() {
 
 	cout << p << " XOR " << q << " is " << ((p || q) && !(p && q)) << "\n";
 
+	p = false;
+	q = true;
+
+	cout << p << " XOR " << q << " is " << ((p || q) && !(p && q)) << "\n";
+
 }
