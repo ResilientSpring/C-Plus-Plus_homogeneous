@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Increment and decrement 2",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project 2-2 Construct an XOR Logical Operation", "Project 2-2 Construct an XOR Logical Operation\Project 2-2 Construct an XOR Logical Operation.vcxproj", "{428740EA-2358-4BEE-BB64-64EFDB8FB52A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment Operator", "Assignment Operator\Assignment Operator.vcxproj", "{813AA7D4-119E-4C34-B922-D1F45CFA561E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{428740EA-2358-4BEE-BB64-64EFDB8FB52A}.Release|x64.Build.0 = Release|x64
 		{428740EA-2358-4BEE-BB64-64EFDB8FB52A}.Release|x86.ActiveCfg = Release|Win32
 		{428740EA-2358-4BEE-BB64-64EFDB8FB52A}.Release|x86.Build.0 = Release|Win32
+		{813AA7D4-119E-4C34-B922-D1F45CFA561E}.Debug|x64.ActiveCfg = Debug|x64
+		{813AA7D4-119E-4C34-B922-D1F45CFA561E}.Debug|x64.Build.0 = Debug|x64
+		{813AA7D4-119E-4C34-B922-D1F45CFA561E}.Debug|x86.ActiveCfg = Debug|Win32
+		{813AA7D4-119E-4C34-B922-D1F45CFA561E}.Debug|x86.Build.0 = Debug|Win32
+		{813AA7D4-119E-4C34-B922-D1F45CFA561E}.Release|x64.ActiveCfg = Release|x64
+		{813AA7D4-119E-4C34-B922-D1F45CFA561E}.Release|x64.Build.0 = Release|x64
+		{813AA7D4-119E-4C34-B922-D1F45CFA561E}.Release|x86.ActiveCfg = Release|Win32
+		{813AA7D4-119E-4C34-B922-D1F45CFA561E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
