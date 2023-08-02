@@ -17,4 +17,6 @@ int main() {
 	else
 		result = 4;        // this else is associated with if(i)
 
+
+	cout << "result: " << result << "\n";
 }
