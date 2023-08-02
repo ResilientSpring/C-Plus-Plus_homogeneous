@@ -15,7 +15,7 @@ int main() {
 	cout << "Enter principal: ";
 	cin >> Principal;
 
-	cout << "Enter interest rate (i.e., 0.075)";
+	cout << "Enter interest rate (i.e., 0.075): ";
 	cin >> Interest_rate;
 
 	cout << "Enter number of payments per year: ";
@@ -34,6 +34,6 @@ int main() {
 
 	Payment = numer / denom;
 
-	cout << "Regular payment is " << Payment;
+	cout << "Regular payment is " << Payment << "\n";
 
 }
