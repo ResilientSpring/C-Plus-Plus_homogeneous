@@ -18,7 +18,7 @@ int main() {
 	case 3:
 		
 		cout << "input is less than 4";
-
+		break;
 	case 4:
 		cout << "input is 4.";
 	}
