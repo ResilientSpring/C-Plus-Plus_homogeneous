@@ -13,6 +13,8 @@ int main() {
 		case 3: cout << "less than 4\n";
 		case 4: cout << "less than 5\n";
 
+		default: cout << "Default output.\n";
+			break;
 		}
 
 	}
