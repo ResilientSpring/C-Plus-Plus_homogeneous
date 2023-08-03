@@ -5,7 +5,7 @@ int main() {
 
 	int input;
 
-	cout << "Enter a number between 1 and 3, inclusive.\n";
+	cout << "Enter a number between 1 and 4, inclusive.\n";
 
 	cin >> input;
 
