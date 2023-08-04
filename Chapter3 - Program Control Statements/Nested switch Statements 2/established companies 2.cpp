@@ -25,7 +25,7 @@ int main() {
 			break;
 		}
 
-	case 'B': cout << "This B is part of outer switch";
+	case 'B': cout << "This B is part of outer switch. \n";
 
 	}
 
