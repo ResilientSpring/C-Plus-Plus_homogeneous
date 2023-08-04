@@ -13,15 +13,15 @@ int main() {
 
 	switch (ch1)
 	{
-	case 'A': cout << "This A is part of outer switch";
+	case 'A': cout << "This A is part of outer switch. \n";
 
 		switch (ch2)
 		{
 		case 'A':
-			cout << "This A is part of inner switch";
+			cout << "This A is part of inner switch. \n";
 			break;
 		case 'B':
-			cout << "This B is part of inner switch";
+			cout << "This B is part of inner switch. \n";
 			break;
 		}
 
