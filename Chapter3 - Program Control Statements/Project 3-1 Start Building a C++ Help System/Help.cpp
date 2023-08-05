@@ -27,7 +27,7 @@ int main() {
 		cout << "    statement sequence\n";
 		cout << "    break;\n";
 		cout << "  // ...\n";
-		cout << "|\n";
+		cout << "}\n";
 		break;
 
 	default:
