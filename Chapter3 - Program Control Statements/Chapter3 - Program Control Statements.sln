@@ -55,6 +55,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project 3-1 Start Building 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "The for loop", "The for loop\The for loop.vcxproj", "{FD4C6E35-0E1B-45C7-9261-EF4BB5224412}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "The for loop 2", "The for loop 2\The for loop 2.vcxproj", "{D1C39080-7B71-4182-80D9-5D37C01CE129}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -271,6 +273,14 @@ Global
 		{FD4C6E35-0E1B-45C7-9261-EF4BB5224412}.Release|x64.Build.0 = Release|x64
 		{FD4C6E35-0E1B-45C7-9261-EF4BB5224412}.Release|x86.ActiveCfg = Release|Win32
 		{FD4C6E35-0E1B-45C7-9261-EF4BB5224412}.Release|x86.Build.0 = Release|Win32
+		{D1C39080-7B71-4182-80D9-5D37C01CE129}.Debug|x64.ActiveCfg = Debug|x64
+		{D1C39080-7B71-4182-80D9-5D37C01CE129}.Debug|x64.Build.0 = Debug|x64
+		{D1C39080-7B71-4182-80D9-5D37C01CE129}.Debug|x86.ActiveCfg = Debug|Win32
+		{D1C39080-7B71-4182-80D9-5D37C01CE129}.Debug|x86.Build.0 = Debug|Win32
+		{D1C39080-7B71-4182-80D9-5D37C01CE129}.Release|x64.ActiveCfg = Release|x64
+		{D1C39080-7B71-4182-80D9-5D37C01CE129}.Release|x64.Build.0 = Release|x64
+		{D1C39080-7B71-4182-80D9-5D37C01CE129}.Release|x86.ActiveCfg = Release|Win32
+		{D1C39080-7B71-4182-80D9-5D37C01CE129}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
