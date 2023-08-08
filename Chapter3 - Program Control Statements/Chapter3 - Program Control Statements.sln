@@ -53,6 +53,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Nested switch Statements 3"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project 3-1 Start Building a C++ Help System", "Project 3-1 Start Building a C++ Help System\Project 3-1 Start Building a C++ Help System.vcxproj", "{551690A0-CBC4-490D-B8A0-B10F322E99CB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "The for loop", "The for loop\The for loop.vcxproj", "{FD4C6E35-0E1B-45C7-9261-EF4BB5224412}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -261,6 +263,14 @@ Global
 		{551690A0-CBC4-490D-B8A0-B10F322E99CB}.Release|x64.Build.0 = Release|x64
 		{551690A0-CBC4-490D-B8A0-B10F322E99CB}.Release|x86.ActiveCfg = Release|Win32
 		{551690A0-CBC4-490D-B8A0-B10F322E99CB}.Release|x86.Build.0 = Release|Win32
+		{FD4C6E35-0E1B-45C7-9261-EF4BB5224412}.Debug|x64.ActiveCfg = Debug|x64
+		{FD4C6E35-0E1B-45C7-9261-EF4BB5224412}.Debug|x64.Build.0 = Debug|x64
+		{FD4C6E35-0E1B-45C7-9261-EF4BB5224412}.Debug|x86.ActiveCfg = Debug|Win32
+		{FD4C6E35-0E1B-45C7-9261-EF4BB5224412}.Debug|x86.Build.0 = Debug|Win32
+		{FD4C6E35-0E1B-45C7-9261-EF4BB5224412}.Release|x64.ActiveCfg = Release|x64
+		{FD4C6E35-0E1B-45C7-9261-EF4BB5224412}.Release|x64.Build.0 = Release|x64
+		{FD4C6E35-0E1B-45C7-9261-EF4BB5224412}.Release|x86.ActiveCfg = Release|Win32
+		{FD4C6E35-0E1B-45C7-9261-EF4BB5224412}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
