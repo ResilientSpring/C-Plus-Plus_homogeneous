@@ -9,7 +9,7 @@ int main() {
 	{
 		double square_root = sqrt((double)num);
 
-		cout << num << " " << square_root << endl;
+		cout << square_root << " " << num << endl;
 	}
 
 }
