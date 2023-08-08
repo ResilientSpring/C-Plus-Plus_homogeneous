@@ -69,6 +69,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "The for loop (decrement)", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "The for loop (decrement) 2", "The for loop (decrement) 2\The for loop (decrement) 2.vcxproj", "{7C8BDD73-5A50-4C95-A409-9E49B1B42609}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Some variations on the for loop", "Some variations on the for loop\Some variations on the for loop.vcxproj", "{B1F7E7E1-60CA-450E-B796-96F71CF59F7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -341,6 +343,14 @@ Global
 		{7C8BDD73-5A50-4C95-A409-9E49B1B42609}.Release|x64.Build.0 = Release|x64
 		{7C8BDD73-5A50-4C95-A409-9E49B1B42609}.Release|x86.ActiveCfg = Release|Win32
 		{7C8BDD73-5A50-4C95-A409-9E49B1B42609}.Release|x86.Build.0 = Release|Win32
+		{B1F7E7E1-60CA-450E-B796-96F71CF59F7A}.Debug|x64.ActiveCfg = Debug|x64
+		{B1F7E7E1-60CA-450E-B796-96F71CF59F7A}.Debug|x64.Build.0 = Debug|x64
+		{B1F7E7E1-60CA-450E-B796-96F71CF59F7A}.Debug|x86.ActiveCfg = Debug|Win32
+		{B1F7E7E1-60CA-450E-B796-96F71CF59F7A}.Debug|x86.Build.0 = Debug|Win32
+		{B1F7E7E1-60CA-450E-B796-96F71CF59F7A}.Release|x64.ActiveCfg = Release|x64
+		{B1F7E7E1-60CA-450E-B796-96F71CF59F7A}.Release|x64.Build.0 = Release|x64
+		{B1F7E7E1-60CA-450E-B796-96F71CF59F7A}.Release|x86.ActiveCfg = Release|Win32
+		{B1F7E7E1-60CA-450E-B796-96F71CF59F7A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
