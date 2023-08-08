@@ -10,4 +10,12 @@ int main() {
 	double c = ceil(b);
 	double d = floor(a);
 
+	int i, j, k;
+
+	for (i = 0, j = 10, k = -100; k > -51 ; ++i, --j, k++) {
+
+
+
+	}
+
 }
