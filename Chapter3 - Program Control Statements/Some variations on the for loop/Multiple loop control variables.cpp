@@ -8,5 +8,6 @@ int main() {
 	double b = log2(100000000 + 0.01);
 
 	double c = ceil(b);
+	double d = floor(a);
 
 }
