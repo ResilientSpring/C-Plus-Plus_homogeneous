@@ -25,6 +25,18 @@ char *get_substring(char *substring, char *string) {
 
 		p2 = substring;
 
+		while (*p2 && *p2 == *p)   // Check for substring
+		{
+			p++;
+			p2++;
+		}
+
+		// If at end of p2 (i.e, substring), then a match has been found.
+		if (!*p2)
+			return start;   // Return the pointer to the beginning of substring.
+
 	}
+
+	return 0;  // no match found.
 
 }
