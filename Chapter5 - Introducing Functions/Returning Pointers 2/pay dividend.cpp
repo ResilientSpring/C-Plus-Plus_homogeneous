@@ -2,18 +2,18 @@
 using namespace std;
 
 // The function searches a string for a substring.
-char *get_substring(const char *substring, const char *string);
+const char *get_substring(const char *substring, const char *string);
 
 int main() {
 
-	char *substr;
+	const char *substr;
 	substr = get_substring("three", "one two three four");
 
 }
 
 
 // Return "pointer to substring" or null if not found.
-char *get_substring(const char *substring, const char *string) {
+const char *get_substring(const char *substring, const char *string) {
 
 	int t;
 	const char *p, *p2, *start;
