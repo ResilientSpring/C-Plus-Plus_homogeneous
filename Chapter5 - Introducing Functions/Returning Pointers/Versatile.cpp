@@ -22,6 +22,8 @@ char *get_substring(char *substring, char *string) {
 
 		start = p;
 
+		p2 = substring;
+
 	}
 
 }
