@@ -26,7 +26,7 @@ char *get_substring(const char *substring, const char *string) {
 
 		p2 = substring;
 
-		while (*p2 && *p2 == *p)   // Check for substring
+		while (*p2 &&  *p2 == *p)   // Check for substring
 		{
 			p++;
 			p2++;
