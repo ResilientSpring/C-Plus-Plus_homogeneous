@@ -9,6 +9,8 @@ int main() {
 	const char *substr;
 	substr = get_substring("three", "one two three four");
 
+	cout << "substring found: " << substr;
+
 }
 
 
