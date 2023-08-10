@@ -43,3 +43,12 @@ const char *get_substring(const char *substring, const char *string) {
 	return 0;  // no match found.
 
 }
+
+
+/* Futher reading:
+  
+  What is the time complexity of while loops?
+
+  https://stackoverflow.com/questions/33637125/what-is-the-time-complexity-of-while-loops
+
+*/
