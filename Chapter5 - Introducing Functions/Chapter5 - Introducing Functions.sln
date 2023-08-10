@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mastery_check_No7", "Master
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Passing an array Cube()", "Passing an array Cube()\Passing an array Cube().vcxproj", "{0FEC538A-2A5E-466A-A711-FB933DEC1928}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Returning Pointers", "Returning Pointers\Returning Pointers.vcxproj", "{AE0D7A1B-7E55-490F-B467-DBCA85DFB867}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{0FEC538A-2A5E-466A-A711-FB933DEC1928}.Release|x64.Build.0 = Release|x64
 		{0FEC538A-2A5E-466A-A711-FB933DEC1928}.Release|x86.ActiveCfg = Release|Win32
 		{0FEC538A-2A5E-466A-A711-FB933DEC1928}.Release|x86.Build.0 = Release|Win32
+		{AE0D7A1B-7E55-490F-B467-DBCA85DFB867}.Debug|x64.ActiveCfg = Debug|x64
+		{AE0D7A1B-7E55-490F-B467-DBCA85DFB867}.Debug|x64.Build.0 = Debug|x64
+		{AE0D7A1B-7E55-490F-B467-DBCA85DFB867}.Debug|x86.ActiveCfg = Debug|Win32
+		{AE0D7A1B-7E55-490F-B467-DBCA85DFB867}.Debug|x86.Build.0 = Debug|Win32
+		{AE0D7A1B-7E55-490F-B467-DBCA85DFB867}.Release|x64.ActiveCfg = Release|x64
+		{AE0D7A1B-7E55-490F-B467-DBCA85DFB867}.Release|x64.Build.0 = Release|x64
+		{AE0D7A1B-7E55-490F-B467-DBCA85DFB867}.Release|x86.ActiveCfg = Release|Win32
+		{AE0D7A1B-7E55-490F-B467-DBCA85DFB867}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
