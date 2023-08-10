@@ -2,7 +2,7 @@
 using namespace std;
 
 // The function searches a string for a substring.
-char *get_substring(char *substring, char *string);
+char *get_substring(const char *substring, const char *string);
 
 int main() {
 
@@ -13,7 +13,7 @@ int main() {
 
 
 // Return "pointer to substring" or null if not found.
-char *get_substring(char *substring, char *string) {
+char *get_substring(const char *substring, const char *string) {
 
 	int t;
 	char *p, *p2, *start;
