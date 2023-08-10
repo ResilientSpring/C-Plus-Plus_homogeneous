@@ -6,7 +6,8 @@ char *get_substring(char *substring, char *string);
 
 int main() {
 
-
+	char *substr;
+	substr = get_substring("three", "one two three four");
 
 }
 
