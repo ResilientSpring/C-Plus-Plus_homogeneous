@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// The function searches a string for a substring.
 char *get_substring(char *substring, char *string);
 
 int main() {
