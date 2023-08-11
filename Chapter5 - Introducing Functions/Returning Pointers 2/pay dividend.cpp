@@ -10,7 +10,7 @@ int main() {
 	substr = get_substring("three", "one two three four");
 
 	cout << "substring found: " << substr;
-
+	// The name of a character array can be used at any place that a string constant can be used.
 }
 
 
