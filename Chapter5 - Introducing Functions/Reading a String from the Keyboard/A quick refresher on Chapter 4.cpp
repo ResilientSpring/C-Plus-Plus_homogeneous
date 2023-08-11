@@ -8,6 +8,6 @@ int main() {
 
 	cout << "Enter a string: ";
 	cin >> str;
-	cout << "Here is your string: " << str;
+	cout << "Here is your string: " << str << endl;
 
 }
