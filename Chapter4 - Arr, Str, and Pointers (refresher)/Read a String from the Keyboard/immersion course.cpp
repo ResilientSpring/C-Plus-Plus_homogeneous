@@ -13,5 +13,5 @@ int main() {
 	// The name of a character array that holds a string can be used at any place that 
 	// a string constant can be used.
 	cout << "Here is your string: " << str << endl;
-
+	// A string constant is a set of characters enclosed in double quotes.
 }
