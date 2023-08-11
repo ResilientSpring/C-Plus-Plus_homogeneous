@@ -9,6 +9,9 @@ int main() {
 
 	cout << "Enter a string: ";
 	cin >> str;
+
+	// The name of a character array that holds a string can be used at any place that 
+	// a string constant can be used.
 	cout << "Here is your string: " << str << endl;
 
 }
