@@ -883,19 +883,17 @@ int packing_2(int CLB_input_size_) {
 
 //	int i, j;
 
-		/*
+	/*
 
-		for (int i = 0, j = num_of_fanins_of_each_LUT_v.size() - 1; i <= middle_index, j > middle_index;
-			i++, j--) {
-
-
-
-		}
-
-		*/
+	for (int i = 0, j = num_of_fanins_of_each_LUT_v.size() - 1; i <= middle_index, j > middle_index;
+		i++, j--) {
 
 
-		// It's still an invalid declaration. i and j must be declared outside for loop under this context.
+
+	}
+
+	*/
+
 	for (int i = 0, j = num_of_fanins_of_each_LUT_v.size() - 1; i <= middle_index && j > middle_index;
 		i++, j--) {
 
