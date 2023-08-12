@@ -881,7 +881,7 @@ int packing_2(int CLB_input_size_) {
 	copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
 		back_inserter(num_of_fanins_of_each_LUT_v));
 
-//	int i, j;
+	//	int i, j;
 
 		/*
 
@@ -895,6 +895,7 @@ int packing_2(int CLB_input_size_) {
 		*/
 
 
+		// It's still an invalid declaration. i and j must be declared outside for loop under this context.
 	for (int i = 0, j = num_of_fanins_of_each_LUT_v.size() - 1; i <= middle_index && j > middle_index;
 		i++, j--) {
 
