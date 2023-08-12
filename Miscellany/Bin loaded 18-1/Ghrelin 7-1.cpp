@@ -881,7 +881,7 @@ int packing_2(int CLB_input_size_) {
 	copy(num_of_fanins_of_each_LUT.begin(), num_of_fanins_of_each_LUT.end(),
 		back_inserter(num_of_fanins_of_each_LUT_v));
 
-	int i, j;
+//	int i, j;
 
 		/*
 
