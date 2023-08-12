@@ -81,6 +81,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Missing Pieces", "Missing P
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Missing Pieces 2", "Missing Pieces 2\Missing Pieces 2.vcxproj", "{705E2DA5-3803-4B68-A223-00F6F48540F4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "The infinite for loop", "The infinite for loop\The infinite for loop.vcxproj", "{2433BE72-A9D7-48EC-9793-438D9A4B0307}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -401,6 +403,14 @@ Global
 		{705E2DA5-3803-4B68-A223-00F6F48540F4}.Release|x64.Build.0 = Release|x64
 		{705E2DA5-3803-4B68-A223-00F6F48540F4}.Release|x86.ActiveCfg = Release|Win32
 		{705E2DA5-3803-4B68-A223-00F6F48540F4}.Release|x86.Build.0 = Release|Win32
+		{2433BE72-A9D7-48EC-9793-438D9A4B0307}.Debug|x64.ActiveCfg = Debug|x64
+		{2433BE72-A9D7-48EC-9793-438D9A4B0307}.Debug|x64.Build.0 = Debug|x64
+		{2433BE72-A9D7-48EC-9793-438D9A4B0307}.Debug|x86.ActiveCfg = Debug|Win32
+		{2433BE72-A9D7-48EC-9793-438D9A4B0307}.Debug|x86.Build.0 = Debug|Win32
+		{2433BE72-A9D7-48EC-9793-438D9A4B0307}.Release|x64.ActiveCfg = Release|x64
+		{2433BE72-A9D7-48EC-9793-438D9A4B0307}.Release|x64.Build.0 = Release|x64
+		{2433BE72-A9D7-48EC-9793-438D9A4B0307}.Release|x86.ActiveCfg = Release|Win32
+		{2433BE72-A9D7-48EC-9793-438D9A4B0307}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
