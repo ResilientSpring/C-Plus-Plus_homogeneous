@@ -141,9 +141,6 @@
   <ItemGroup>
     <ClCompile Include="Ghrelin 7-1.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="..\Bin loaded 17\alu4.aag" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
