@@ -10,7 +10,7 @@ int main() {
 	int sum = 0;
 
 	// sum the numbers from 1 through 10
-	for (i = 1; i <= 10; sum += i++) {
+	for (i = 1; i <= 10; ) {
 
 		sum = sum + i;
 
