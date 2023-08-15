@@ -25,5 +25,13 @@ public:
 		return val;
 
 	}
+
+
+	MyClass mkBigger() {
+
+		MyClass o(val * 2);
+		
+		return o;
+	}
 };
 
