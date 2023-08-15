@@ -41,3 +41,10 @@ void display(MyClass ob) {
 	cout << ob.getValue() << endl;
 
 }
+
+
+int main() {
+
+
+
+}
