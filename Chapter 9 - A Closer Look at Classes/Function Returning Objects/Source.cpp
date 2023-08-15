@@ -14,7 +14,16 @@ public:
 		cout << "Inside constructor\n";
 	}
 
+
 	~MyClass() {
 		cout << "Destructing\n";
 	}
+
+
+	int getValue() {
+
+		return val;
+
+	}
 };
+
