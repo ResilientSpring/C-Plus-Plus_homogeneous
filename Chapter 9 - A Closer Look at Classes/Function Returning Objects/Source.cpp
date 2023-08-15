@@ -26,7 +26,7 @@ public:
 
 	}
 
-
+	// Return an object.
 	MyClass mkBigger() {
 
 		MyClass o(val * 2);
