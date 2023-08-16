@@ -51,4 +51,10 @@ int main() {
 
 	cout << "After constructing a. \n\n";
 
+	cout << "Before call to display(). \n";
+
+	display(a);
+
+	cout << "After display() returns. \n\n";
+
 }
