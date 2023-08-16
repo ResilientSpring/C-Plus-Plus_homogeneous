@@ -30,7 +30,7 @@ public:
 	MyClass mkBigger() {
 
 		MyClass o(val * 2);
-		
+
 		return o;
 	}
 };
@@ -47,11 +47,11 @@ int main() {
 
 	cout << "Before constructing a.\n";
 
-	MyClass a(10);
+	MyClass a = MyClass(10);
 
 	cout << "After constructing a. \n\n";
 
-	//////////////////////////////////////////
+	///////////////////////////////////////
 
 	cout << "Before call to display(). \n";
 
@@ -59,14 +59,15 @@ int main() {
 
 	cout << "After display() returns. \n\n";
 
-	///////////////////////////////////////////
+	////////////////////////////////////////
 
 	cout << "Before call to mkBigger(). \n";
 
 	a = a.mkBigger();
 
-	cout << "After miBigger returns. \n\n";
+	cout << "After mkBigger() returns. \n\n";
 
-	///////////////////////////////////////////
+	/////////////////////////////////////////
+
 
 }
