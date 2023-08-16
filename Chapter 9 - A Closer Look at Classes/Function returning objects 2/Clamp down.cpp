@@ -65,5 +65,9 @@ int main() {
 
 	a = a.mkBigger();
 
+	cout << "After mkBigger() returns. \n\n";
+
+	/////////////////////////////////////////
+
 
 }
