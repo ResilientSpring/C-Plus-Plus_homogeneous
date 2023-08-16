@@ -55,4 +55,6 @@ int main() {
 
 	display(a);
 
+	cout << "After display() returns. \n\n";
+
 }
