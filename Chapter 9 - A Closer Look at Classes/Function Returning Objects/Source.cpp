@@ -69,4 +69,10 @@ int main() {
 
 	///////////////////////////////////////////
 
+	cout << "Before the second call to display(). \n";
+
+	display(a);
+
+	cout << "After display() returns. \n\n";
+
 }
