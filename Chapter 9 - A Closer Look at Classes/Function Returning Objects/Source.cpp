@@ -49,4 +49,6 @@ int main() {
 
 	MyClass a(10);
 
+	cout << "After constructing a. \n\n";
+
 }
