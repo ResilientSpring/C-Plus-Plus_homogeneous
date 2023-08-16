@@ -45,6 +45,6 @@ void display(MyClass ob) {
 
 int main() {
 
-
+	cout << "Before constructing a.\n";
 
 }
