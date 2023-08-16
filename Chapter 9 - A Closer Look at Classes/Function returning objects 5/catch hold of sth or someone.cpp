@@ -5,12 +5,12 @@ using namespace std;
 
 class MyClass {
 
-	int val;
+	int value;
 
 public:
 
-	MyClass(int i) {
-		val = i;
+	MyClass(int value) {
+		this.
 		cout << "Inside constructor\n";
 	}
 
@@ -22,14 +22,14 @@ public:
 
 	int getValue() {
 
-		return val;
+		return value;
 
 	}
 
 	// Return an object.
 	MyClass mkBigger() {
 
-		MyClass o(val * 2);
+		MyClass o = MyClass(value * 2);
 
 		return o;
 	}
