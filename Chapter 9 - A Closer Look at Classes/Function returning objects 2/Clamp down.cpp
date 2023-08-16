@@ -30,7 +30,7 @@ public:
 	MyClass mkBigger() {
 
 		MyClass o(val * 2);
-		
+
 		return o;
 	}
 };
@@ -47,6 +47,6 @@ int main() {
 
 	cout << "Before constructing a.\n";
 
-	MyClass a(10);
+	MyClass a = MyClass(10);
 
 }

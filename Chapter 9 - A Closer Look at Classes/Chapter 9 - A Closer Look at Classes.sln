@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.33423.256
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Function Returning Objects", "Function Returning Objects\Function Returning Objects.vcxproj", "{0CC7CA3F-3AD8-4C7B-A86D-500C2F99B9D6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Function returning objects 2", "Function returning objects 2\Function returning objects 2.vcxproj", "{AB774060-5234-4586-8394-D73AA55E3E3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{0CC7CA3F-3AD8-4C7B-A86D-500C2F99B9D6}.Release|x64.Build.0 = Release|x64
 		{0CC7CA3F-3AD8-4C7B-A86D-500C2F99B9D6}.Release|x86.ActiveCfg = Release|Win32
 		{0CC7CA3F-3AD8-4C7B-A86D-500C2F99B9D6}.Release|x86.Build.0 = Release|Win32
+		{AB774060-5234-4586-8394-D73AA55E3E3F}.Debug|x64.ActiveCfg = Debug|x64
+		{AB774060-5234-4586-8394-D73AA55E3E3F}.Debug|x64.Build.0 = Debug|x64
+		{AB774060-5234-4586-8394-D73AA55E3E3F}.Debug|x86.ActiveCfg = Debug|Win32
+		{AB774060-5234-4586-8394-D73AA55E3E3F}.Debug|x86.Build.0 = Debug|Win32
+		{AB774060-5234-4586-8394-D73AA55E3E3F}.Release|x64.ActiveCfg = Release|x64
+		{AB774060-5234-4586-8394-D73AA55E3E3F}.Release|x64.Build.0 = Release|x64
+		{AB774060-5234-4586-8394-D73AA55E3E3F}.Release|x86.ActiveCfg = Release|Win32
+		{AB774060-5234-4586-8394-D73AA55E3E3F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
