@@ -10,6 +10,11 @@ public:
 
 	Sample() { x = y = 0; };     // Overload the default constructor.
 
+	// Constructor with one parameter.
+	Sample(int i) {
+		x = y = i;
+	}
+
 };
 
 
