@@ -15,9 +15,7 @@ public:
 
 
 	// Constructor with two parameters.
-	Sample() {
-
-	}
+	Sample(int i, int j) { x = i; y = j; }
 
 
 };
