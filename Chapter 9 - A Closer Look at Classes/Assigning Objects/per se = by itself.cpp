@@ -8,6 +8,11 @@ class Test {
 
 public:
 
+	void set_ab(int a, int b) {
+
+	}
+
+
 };
 
 
