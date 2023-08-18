@@ -16,6 +16,10 @@ int main() {
 
 	strcpy(str, "This Is A Test");
 
+	strInvertCase(str);
+
+	cout << str << endl;
+
 }
 
 
