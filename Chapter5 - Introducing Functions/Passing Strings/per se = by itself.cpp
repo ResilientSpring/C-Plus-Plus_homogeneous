@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 // Pass a string to a function.
 
 #include <iostream>
