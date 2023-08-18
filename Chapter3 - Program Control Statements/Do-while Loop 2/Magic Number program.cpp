@@ -29,7 +29,7 @@ int main() {
 			if (guess > magic)
 				cout << " Your guess is too high.\n";
 			else
-				cout << " You guess is too low.\n";
+				cout << " You guess is too low.\n";   // The opposite of (guess > magic) is (guess < magic).
 		}
 
 	} while (guess != magic);
