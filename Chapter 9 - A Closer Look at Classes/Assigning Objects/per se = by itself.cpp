@@ -34,5 +34,12 @@ int main() {
 	ob2.show_ab();
 	cout << endl;
 
-	ob2 = ob1;
+	ob2 = ob1;  // assign ob1 to ob2
+
+	cout << "ob1 after assignment: \n";
+	ob1.show_ab();
+	cout << "ob2 after assignment: \n";
+	ob2.show_ab();
+	cout << endl;
+
 }
