@@ -32,6 +32,6 @@ int main() {
 				cout << " You guess is too low.\n";
 		}
 
-	} while (true);
+	} while (guess != magic);
 
 }
