@@ -19,13 +19,20 @@ public:
 		cout << "a is " << a << endl;
 		cout << "b is " << b << endl;
 	}
-
-
 };
 
 
 int main() {
 
+	Test ob1, ob2;
 
+	ob1.set_ab(10, 20);
+	ob2.set_ab(0, 0);
+	cout << "ob1 before assignment: \n";
+	ob1.show_ab();
+	cout << "ob2 before assignment: \n";
+	ob2.show_ab();
+	cout << endl;
 
+	ob2 = ob1;
 }
