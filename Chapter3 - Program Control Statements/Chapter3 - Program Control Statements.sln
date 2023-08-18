@@ -91,6 +91,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Loops with No Body 1-2", "L
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Loops with No Body 1-1", "Loops with No Body 1-1\Loops with No Body 1-1.vcxproj", "{89BA3C0A-2C42-455E-95B9-43E5740DAFB4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Declare Loop Control Variables Inside for Loop", "Declare Loop Control Variables Inside for Loop\Declare Loop Control Variables Inside for Loop.vcxproj", "{2D318D39-3F69-468E-8E15-AE8E3943AEA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -451,6 +453,14 @@ Global
 		{89BA3C0A-2C42-455E-95B9-43E5740DAFB4}.Release|x64.Build.0 = Release|x64
 		{89BA3C0A-2C42-455E-95B9-43E5740DAFB4}.Release|x86.ActiveCfg = Release|Win32
 		{89BA3C0A-2C42-455E-95B9-43E5740DAFB4}.Release|x86.Build.0 = Release|Win32
+		{2D318D39-3F69-468E-8E15-AE8E3943AEA6}.Debug|x64.ActiveCfg = Debug|x64
+		{2D318D39-3F69-468E-8E15-AE8E3943AEA6}.Debug|x64.Build.0 = Debug|x64
+		{2D318D39-3F69-468E-8E15-AE8E3943AEA6}.Debug|x86.ActiveCfg = Debug|Win32
+		{2D318D39-3F69-468E-8E15-AE8E3943AEA6}.Debug|x86.Build.0 = Debug|Win32
+		{2D318D39-3F69-468E-8E15-AE8E3943AEA6}.Release|x64.ActiveCfg = Release|x64
+		{2D318D39-3F69-468E-8E15-AE8E3943AEA6}.Release|x64.Build.0 = Release|x64
+		{2D318D39-3F69-468E-8E15-AE8E3943AEA6}.Release|x86.ActiveCfg = Release|Win32
+		{2D318D39-3F69-468E-8E15-AE8E3943AEA6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
