@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.33423.256
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reference Variables and Assignment", "Reference Variables and Assignment\Reference Variables and Assignment.vcxproj", "{DAE24131-3A2C-4541-9186-DEBB92988ED9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reference Variables and Assignments 2", "Reference Variables and Assignments 2\Reference Variables and Assignments 2.vcxproj", "{E30EA29B-8BF5-4DFA-95CF-52B4068BF7AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{DAE24131-3A2C-4541-9186-DEBB92988ED9}.Release|x64.Build.0 = Release|x64
 		{DAE24131-3A2C-4541-9186-DEBB92988ED9}.Release|x86.ActiveCfg = Release|Win32
 		{DAE24131-3A2C-4541-9186-DEBB92988ED9}.Release|x86.Build.0 = Release|Win32
+		{E30EA29B-8BF5-4DFA-95CF-52B4068BF7AD}.Debug|x64.ActiveCfg = Debug|x64
+		{E30EA29B-8BF5-4DFA-95CF-52B4068BF7AD}.Debug|x64.Build.0 = Debug|x64
+		{E30EA29B-8BF5-4DFA-95CF-52B4068BF7AD}.Debug|x86.ActiveCfg = Debug|Win32
+		{E30EA29B-8BF5-4DFA-95CF-52B4068BF7AD}.Debug|x86.Build.0 = Debug|Win32
+		{E30EA29B-8BF5-4DFA-95CF-52B4068BF7AD}.Release|x64.ActiveCfg = Release|x64
+		{E30EA29B-8BF5-4DFA-95CF-52B4068BF7AD}.Release|x64.Build.0 = Release|x64
+		{E30EA29B-8BF5-4DFA-95CF-52B4068BF7AD}.Release|x86.ActiveCfg = Release|Win32
+		{E30EA29B-8BF5-4DFA-95CF-52B4068BF7AD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
