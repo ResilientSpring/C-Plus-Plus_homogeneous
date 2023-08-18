@@ -15,6 +15,11 @@ public:
 
 	}
 
+	void show_ab() {
+		cout << "a is " << a << endl;
+		cout << "b is " << b << endl;
+	}
+
 
 };
 
