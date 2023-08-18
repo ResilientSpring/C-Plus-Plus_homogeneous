@@ -42,4 +42,10 @@ int main() {
 	ob2.show_ab();
 	cout << endl;
 
+	ob1.set_ab(-1, -1);  // change ob1.
+
+	cout << "ob1 after changing ob1: \n";
+	ob1.show_ab();
+	cout << "ob2 after changing ob1: \n";
+	ob2.show_ab();
 }
