@@ -22,7 +22,10 @@ void strInvertCase(char *str) {
 		// invert case
 		if (isupper(*str))
 			*str = tolower(*str);
+		else if (islower(*str))
+			*str = toupper(*str);
 
+		str++;  // move on to next char.
 	}
 
 }
