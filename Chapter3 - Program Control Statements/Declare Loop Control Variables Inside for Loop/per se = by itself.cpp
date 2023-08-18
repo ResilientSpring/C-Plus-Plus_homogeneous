@@ -16,4 +16,7 @@ int main() {
 		factorial *= i;
 	}
 
+	cout << "Sum is " << sum << "\n";
+	cout << "Factorial is " << factorial << endl;
+
 }
