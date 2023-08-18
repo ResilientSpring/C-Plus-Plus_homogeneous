@@ -28,5 +28,9 @@ int main() {
 
 	car2 = car3;
 
-	
+//	cout << car2.mpg << endl;
+
+	car3 = car1;
+
+	cout << car3.mpg << endl;
 }
