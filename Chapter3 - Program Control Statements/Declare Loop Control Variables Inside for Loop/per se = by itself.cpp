@@ -9,7 +9,7 @@ int main() {
 	int factorial = 1;
 
 	// coompare the factorial of the numbers through 5
-	for (int i = 1; i < 5; i++)
+	for (int i = 1; i <= 5; i++)
 	{
 		sum += i;
 
