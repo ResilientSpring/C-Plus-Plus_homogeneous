@@ -24,4 +24,9 @@ int main() {
 	cout << car1.mpg << endl;
 	cout << car2.mpg << endl;
 
+	Vehicle car3;
+
+	car2 = car3;
+
+	
 }
