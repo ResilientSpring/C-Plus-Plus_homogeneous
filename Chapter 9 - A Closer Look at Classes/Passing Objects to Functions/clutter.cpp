@@ -27,6 +27,8 @@ public:
 
 void display(MyClass ob) {
 
+	cout << ob.get_value() << endl;
+
 }
 
 
