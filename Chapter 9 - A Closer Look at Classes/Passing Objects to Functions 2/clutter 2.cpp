@@ -36,13 +36,22 @@ void change(MyClass ob) {
 
 	ob.set_value(100);
 
-	cout << "Value of ob inside: " << display(ob);
+	cout << "Value of ob inside: ";
+
+	display(ob);
 }
 
 
 
 int main() {
 
+	MyClass a(20);
 
+	cout << "Value of a before calling change(): ";
+	display(a);   // Pass a MyClass object to display().
+
+	change(a);    // Pass a MyClass object to change().
+	cout << "Value of a after calling change(): ";
+	display(a);
 
 }
