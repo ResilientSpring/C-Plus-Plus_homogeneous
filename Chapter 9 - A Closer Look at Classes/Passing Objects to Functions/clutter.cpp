@@ -32,6 +32,14 @@ void display(MyClass ob) {
 }
 
 
+void change(MyClass ob) {
+
+	ob.set_value(100);
+
+	cout << "Value of ob inside: " << display(ob);
+}
+
+
 
 int main() {
 
