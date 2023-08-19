@@ -20,10 +20,14 @@ public:
 
 	void set_value(int value) {
 		this->value = value;
-
 	}
 
 };
+
+
+void display(MyClass ob) {
+
+}
 
 
 
