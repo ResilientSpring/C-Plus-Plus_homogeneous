@@ -62,3 +62,7 @@ int main() {
 	display(a);
 
 }
+
+// Unlike Java who automatically passes class objects to functions by reference, freeing programmers from
+// thinking about pointers, C++ gives programmers a choice between call-by-value or call-by-reference for 
+// class objects.
