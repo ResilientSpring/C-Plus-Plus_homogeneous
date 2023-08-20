@@ -37,11 +37,15 @@ void display(MyClass ob) {
 
 void change(MyClass ob) {
 
+	// C++ creates a copy of ob.
+
 	ob.set_value(100);
 
 	cout << "Value of ob inside: ";
 
 	display(ob);
+
+	// C++ destroys the copy of ob.
 }
 
 
