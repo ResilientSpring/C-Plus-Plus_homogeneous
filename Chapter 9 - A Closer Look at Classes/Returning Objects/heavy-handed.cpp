@@ -28,6 +28,8 @@ public:
 
 		MyClass o(value * 2);
 
+		return o;
+
 	}
 
 };
