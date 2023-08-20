@@ -58,5 +58,8 @@ void display(MyClass ob) {
 
 int main() {
 
+	cout << "Before constructing a. " << endl;
+	MyClass a(10);
+	cout << "After constructing a. " << endl << endl;
 
 }
