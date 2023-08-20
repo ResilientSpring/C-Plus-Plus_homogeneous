@@ -70,8 +70,8 @@ int main() {
 	a = a.mkBigger();
 	cout << "After mkBigger() returns." << endl << endl;
 
-	cout << "Before second call to display(). " << endl << endl;
+	cout << "Before second call to display(). " << endl;
 	display(a);
-	cout << "After display() returns. " << endl;
+	cout << "After display() returns. " << endl << endl;
 
 }
