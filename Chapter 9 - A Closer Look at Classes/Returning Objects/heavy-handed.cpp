@@ -32,6 +32,13 @@ public:
 
 	}
 
+
+
+
+	int get_value2() {
+		// Visual Studio's C++ compiler does not remind you of returning an integer.
+	}
+
 };
 
 
