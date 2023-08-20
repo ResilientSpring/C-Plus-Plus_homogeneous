@@ -13,6 +13,16 @@ public:
 
 		cout << "Inside constructor" << endl;
 	}
+
+	~MyClass() {
+		cout << "Destructing" << endl;
+	}
+
+	int get_value() {
+
+		return value;
+
+	}
 };
 
 
