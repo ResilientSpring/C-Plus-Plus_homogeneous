@@ -52,4 +52,8 @@ int main() {
 	display(a);
 	cout << "After display() returns. " << endl;
 
+	change(a);
+	cout << "After calling change(). \n";
+	display(a);
+
 }
