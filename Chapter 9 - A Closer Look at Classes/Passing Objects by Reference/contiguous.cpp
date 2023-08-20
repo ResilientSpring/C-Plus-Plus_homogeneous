@@ -37,6 +37,13 @@ void display(MyClass &ob) {
 }
 
 
+void change(MyClass &ob) {
+
+	ob.set_value(100);
+
+}
+
+
 int main() {
 
 
