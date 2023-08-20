@@ -33,10 +33,17 @@ public:
 	}
 
 
+	MyClass mkBigger2() {
+
+		MyClass o(value * 3);
+
+		// Visual Studio's C++ compiler does not remind me of returning an instance of class MyClass.
+
+	}
 
 
 	int get_value2() {
-		// Visual Studio's C++ compiler does not remind you of returning an integer.
+		// Visual Studio's C++ compiler does not remind me of returning an integer.
 	}
 
 };
