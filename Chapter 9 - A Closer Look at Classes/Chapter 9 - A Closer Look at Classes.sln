@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Passing Objects to Function
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Passing Objects by Reference", "Passing Objects by Reference\Passing Objects by Reference.vcxproj", "{C65D199E-2D01-4465-86D6-9264C81935FD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Constructors, Destructors, and Passing Objects", "Constructors, Destructors, and Passing Objects\Constructors, Destructors, and Passing Objects.vcxproj", "{B4276965-B4BD-4AEA-8A5E-3250C83085F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{C65D199E-2D01-4465-86D6-9264C81935FD}.Release|x64.Build.0 = Release|x64
 		{C65D199E-2D01-4465-86D6-9264C81935FD}.Release|x86.ActiveCfg = Release|Win32
 		{C65D199E-2D01-4465-86D6-9264C81935FD}.Release|x86.Build.0 = Release|Win32
+		{B4276965-B4BD-4AEA-8A5E-3250C83085F9}.Debug|x64.ActiveCfg = Debug|x64
+		{B4276965-B4BD-4AEA-8A5E-3250C83085F9}.Debug|x64.Build.0 = Debug|x64
+		{B4276965-B4BD-4AEA-8A5E-3250C83085F9}.Debug|x86.ActiveCfg = Debug|Win32
+		{B4276965-B4BD-4AEA-8A5E-3250C83085F9}.Debug|x86.Build.0 = Debug|Win32
+		{B4276965-B4BD-4AEA-8A5E-3250C83085F9}.Release|x64.ActiveCfg = Release|x64
+		{B4276965-B4BD-4AEA-8A5E-3250C83085F9}.Release|x64.Build.0 = Release|x64
+		{B4276965-B4BD-4AEA-8A5E-3250C83085F9}.Release|x86.ActiveCfg = Release|Win32
+		{B4276965-B4BD-4AEA-8A5E-3250C83085F9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
