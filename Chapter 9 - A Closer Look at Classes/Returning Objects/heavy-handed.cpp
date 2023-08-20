@@ -66,4 +66,7 @@ int main() {
 	display(a);
 	cout << "After display() returns. " << endl << endl;
 
+	cout << "Before call to mkBigger(). " << endl;
+	a = a.mkBigger();
+
 }
