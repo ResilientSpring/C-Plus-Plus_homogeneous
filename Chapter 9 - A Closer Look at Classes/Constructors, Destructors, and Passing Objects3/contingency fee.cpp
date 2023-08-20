@@ -29,14 +29,14 @@ public:
 	}
 };
 
-
+// Call by reference.
 void display(MyClass &ob) {
 
 	cout << ob.get_value() << endl;
 
 }
 
-
+// Call by reference.
 void change(MyClass &ob) {
 
 	ob.set_value(100);
