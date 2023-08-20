@@ -45,7 +45,7 @@ void change(MyClass ob) {
 
 int main() {
 
-	MyClass a(20);
+	MyClass a(10);
 
 	cout << "Value of a before calling change(): ";
 	display(a);   // Pass a MyClass object to display().
