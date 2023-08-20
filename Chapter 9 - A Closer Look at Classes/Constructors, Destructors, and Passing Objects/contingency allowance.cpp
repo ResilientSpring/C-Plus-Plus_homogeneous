@@ -38,9 +38,13 @@ void display(MyClass ob) {
 }
 
 
-
 int main() {
 
+	MyClass a = MyClass(10);
 
+	cout << "Before calling display(). " << endl;
 
+	display(a);
+
+	cout << "After display() returns. " << endl;
 }
