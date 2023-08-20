@@ -71,5 +71,7 @@ int main() {
 	cout << "After mkBigger() returns." << endl << endl;
 
 	cout << "Before second call to display(). " << endl << endl;
+	display(a);
+	cout << "After display() returns. " << endl;
 
 }
