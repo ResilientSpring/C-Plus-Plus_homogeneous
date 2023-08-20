@@ -23,6 +23,10 @@ public:
 		return value;
 
 	}
+
+	void set_value(int value) {
+		this->value = value;
+	}
 };
 
 
