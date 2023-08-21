@@ -1,0 +1,79 @@
+// Returning objects.
+
+#include <iostream>
+using namespace std;
+
+class MyClass {
+
+	int value;
+
+public:
+
+	// Normal constructor.
+	MyClass(int value) {
+		this->value = value;
+		cout << "Inside constructor" << endl;
+	}
+
+	~MyClass() {
+		cout << "Destructing." << endl;
+	}
+
+	int get_value() {
+		return value;
+	}
+
+
+	// To return a reference, a function must declare its return type to be a reference.
+	MyClass& mkBigger() {
+
+		MyClass o(value * 2);
+
+		return o;
+
+	}
+
+
+	MyClass& mkBigger2() {
+
+		MyClass o(value * 3);
+
+		// Visual Studio's C++ compiler does not remind me of returning an instance of class MyClass.
+
+	}
+
+
+	int get_value2() {
+		// Visual Studio's C++ compiler does not remind me of returning an integer.
+	}
+
+};
+
+
+// Call by reference
+void display(MyClass &ob) {
+
+	cout << ob.get_value() << endl;
+
+}
+
+
+int main() {
+
+	cout << "Before constructing a. " << endl;
+	MyClass a = MyClass(10);
+	cout << "After constructing a. " << endl << endl;
+
+	cout << "Before call to display(). " << endl;
+	display(a);
+	cout << "After display() returns. " << endl << endl;
+
+	cout << "Before call to mkBigger(). " << endl;
+	a = a.mkBigger();
+	cout << "After mkBigger() returns." << endl << endl;
+
+	cout << "Before second call to display(). " << endl;
+	display(a);
+	cout << "After display() returns. " << endl << endl;
+
+}
