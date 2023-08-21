@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Return an object by reference.cpp">
+    <ClCompile Include="Call by reference.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
