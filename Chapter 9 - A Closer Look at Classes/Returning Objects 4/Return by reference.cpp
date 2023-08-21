@@ -33,6 +33,7 @@ public:
 	}
 
 
+	// To return a reference, a function must declare its return type to be a reference.
 	MyClass& mkBigger2() {
 
 		MyClass o(value * 3);
