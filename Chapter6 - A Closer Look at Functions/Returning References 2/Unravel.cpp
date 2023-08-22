@@ -18,8 +18,8 @@ int main() {
 
 	cout << endl;
 
-	change_it(1) = 5298.23;
-	change_it(3) = -98.8;
+	change_it(1) = 5298.23;  // change 2nd element.
+	change_it(3) = -98.8;    // change 4th element.
 
 }
 
