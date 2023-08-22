@@ -11,6 +11,9 @@ int main() {
 	// The name of a character array that holds a string can be used in any place that a string constant 
 	// can be used.
 
-	// That is, the memory address of a character array's first element can be used in any place that a string
-	// constant can be used.
+	// In other words, the memory address of a character array's first element can be used in any place that a
+	// string constant can be used.
+
+	// In C++, using the name of an array without an index generates a pointer to the first element in the 
+	// array.
 }
