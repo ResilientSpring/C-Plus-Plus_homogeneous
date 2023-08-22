@@ -10,7 +10,8 @@ int main() {
 
 	cout << "Here are the original values: ";
 
-	
+	for (int i = 0; i < 5; i++)
+		cout << values[i] << ' ';
 }
 
 double* change_it(int i) {
