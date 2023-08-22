@@ -17,3 +17,11 @@ int main() {
 		cout << values[i] << ' ';
 
 }
+
+
+// Return a reference.
+double& change_it(int i) {
+
+	return values[i];
+
+}
