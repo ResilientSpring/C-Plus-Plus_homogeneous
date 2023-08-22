@@ -10,7 +10,10 @@ int main() {
 
 	cout << "Here are the original values: ";
 
-
+	
 }
 
+double* change_it(int i) {
 
+	return values[i];
+}
