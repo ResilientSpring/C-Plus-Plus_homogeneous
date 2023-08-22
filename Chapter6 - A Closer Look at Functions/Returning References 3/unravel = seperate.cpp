@@ -12,6 +12,8 @@ int main() {
 
 	for (int i = 0; i < 5; i++)
 		cout << values[i] << ' ';
+
+	cout << endl;
 }
 
 double* change_it(int i) {
