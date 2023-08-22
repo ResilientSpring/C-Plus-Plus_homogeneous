@@ -3,9 +3,9 @@
 #include <iostream>
 using namespace std;
 
+double &change_it(int i);
 
 double values[] = { 1.1, 2.2, 3.3, 4.4, 5.5 };
-
 
 int main() {
 
@@ -16,8 +16,12 @@ int main() {
 	for (i = 0; i < 5; i++)
 		cout << values[i] << ' ';
 
-}
+	cout << endl;
 
+	change_it(1) = 5298.23;
+	change_it(3) = -98.8;
+
+}
 
 // Return a reference.
 double& change_it(int i) {
