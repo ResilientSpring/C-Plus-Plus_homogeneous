@@ -15,5 +15,5 @@ int main() {
 
 double* change_it(int i) {
 
-	return values[i];
+	return values + i;
 }
