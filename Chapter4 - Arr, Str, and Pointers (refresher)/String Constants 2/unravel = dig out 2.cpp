@@ -11,5 +11,6 @@ int main() {
 	// The name of a character array that holds a string can be used in any place that a string constant 
 	// can be used.
 
-	// That is, the memory address of 
+	// That is, the memory address of a character array's first element can be used in any place that a string
+	// constant can be used.
 }
