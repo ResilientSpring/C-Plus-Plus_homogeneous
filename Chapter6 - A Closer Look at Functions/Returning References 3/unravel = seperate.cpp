@@ -4,6 +4,8 @@
 #include <iostream>
 using namespace std;
 
+double *change_it(int i);
+
 double values[] = { 1.1, 2.2, 3.3, 4.4, 5.5 };
 
 int main() {
@@ -14,6 +16,8 @@ int main() {
 		cout << values[i] << ' ';
 
 	cout << endl;
+
+	change_it(1) = 5298.23;
 }
 
 double* change_it(int i) {
