@@ -13,7 +13,7 @@ int main() {
 
 	cout << "Here are the original values: ";
 
-	for(i = 0; i < 5; i++)
-		cout <<
+	for (i = 0; i < 5; i++)
+		cout << values[i] << ' ';
 
 }
