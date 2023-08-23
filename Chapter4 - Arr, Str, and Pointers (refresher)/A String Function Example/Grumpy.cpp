@@ -16,5 +16,10 @@ int main() {
 	cout << "lengths: " << strlen(s1);
 	cout << ' ' << strlen(s2) << endl;
 
+	if (!strcmp(s1, s2))
+		cout << "The strings are equal. \n";
+	else cout << "not equal\n";
 
+	strcat(s1, s2);
+	cout << s1 << endl;
 }
