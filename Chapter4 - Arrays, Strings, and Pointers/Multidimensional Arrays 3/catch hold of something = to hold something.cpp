@@ -41,4 +41,11 @@ int main() {
 	cout << sizeof multidimensional_array << " bytes." << endl;
 
 
+
+	///////////////////////////////////////////////////////////////
+
+	char multidimensional_array_2[10][10][10][10];
+	cout << "The size of this multidimensional array is ";
+	cout << sizeof multidimensional_array_2 << " bytes." << endl;
+
 }
