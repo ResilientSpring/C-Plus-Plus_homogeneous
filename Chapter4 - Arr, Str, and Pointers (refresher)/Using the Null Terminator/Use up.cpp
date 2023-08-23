@@ -13,8 +13,9 @@ int main() {
 
 	strcpy(str, "this is a test");
 
-	// This loop stops when the null terminator is indexed.
-	for (i = 0; str[i]; i++)
+	// This loop stops when the null terminator is indexed, because all character values are non-zero, 
+	// but the null, which terminates the string, is zero.
+	for (i = 0; str[i]; i++)  
 		str[i] = toupper(str[i]);
 
 	cout << str;
