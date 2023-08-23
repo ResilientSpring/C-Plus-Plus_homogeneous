@@ -38,7 +38,7 @@ int main() {
 	cout << endl;
 
 	cout << "The size of this multidimensional array is ";
-	cout << sizeof multidimensional_array << endl;
+	cout << sizeof multidimensional_array << " bytes." << endl;
 
 
 }
