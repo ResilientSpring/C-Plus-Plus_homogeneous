@@ -18,4 +18,9 @@ int main() {
 	multidimensional_array[0][0][1][3] = 'd';
 //	multidimensional_array[0][0][1][4] = '';
 	multidimensional_array[0][0][1][4] = ' ';
+
+	multidimensional_array[4][4][3][4] = 'o';
+	multidimensional_array[4][4][3][5] = 'f';
+
+
 }
