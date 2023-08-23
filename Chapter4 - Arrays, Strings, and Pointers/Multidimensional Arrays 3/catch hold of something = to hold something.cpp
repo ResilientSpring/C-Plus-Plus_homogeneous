@@ -48,4 +48,14 @@ int main() {
 	cout << "The size of this multidimensional array_2 is ";
 	cout << sizeof multidimensional_array_2 << " bytes." << endl;
 
+	
+	///////////////////////////////////////////////////////////////
+
+
+	int multidimensional_array_3[2][4][6][8];
+
+	cout << endl;
+
+	cout << "The size of this multidimensional array_3 is ";
+	cout << sizeof multidimensional_array_3 << " bytes." << endl;
 }
