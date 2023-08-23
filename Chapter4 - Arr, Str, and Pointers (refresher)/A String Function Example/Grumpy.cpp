@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 // Demonstrate the string functions.
 #include <iostream>
 #include <cstdio>
