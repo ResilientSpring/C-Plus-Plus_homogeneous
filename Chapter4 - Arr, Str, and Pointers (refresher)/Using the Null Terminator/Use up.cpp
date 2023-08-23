@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 // Convert a string to uppercase.
 #include <iostream>
 #include <cstring>
