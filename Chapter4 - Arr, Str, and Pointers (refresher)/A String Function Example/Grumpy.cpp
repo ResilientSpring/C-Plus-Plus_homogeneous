@@ -14,5 +14,7 @@ int main() {
 	strcpy(s2, " is power programming.");
 
 	cout << "lengths: " << strlen(s1);
+	cout << ' ' << strlen(s2) << endl;
+
 
 }
