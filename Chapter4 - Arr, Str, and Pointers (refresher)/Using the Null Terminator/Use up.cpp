@@ -13,6 +13,7 @@ int main() {
 
 	strcpy(str, "this is a test");
 
+	// This loop stops when the null terminator is indexed.
 	for (i = 0; str[i]; i++)
 		str[i] = toupper(str[i]);
 
