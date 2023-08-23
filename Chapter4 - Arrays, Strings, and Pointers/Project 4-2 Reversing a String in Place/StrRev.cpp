@@ -17,6 +17,8 @@ int main() {
 	int len;
 	char t;
 
-	cout 
+	cout << "Original: " << str << endl;
+
+	start = str;
 
 }
