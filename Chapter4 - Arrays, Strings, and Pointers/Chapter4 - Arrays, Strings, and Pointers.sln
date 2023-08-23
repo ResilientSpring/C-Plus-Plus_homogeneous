@@ -161,6 +161,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reading a string from keybo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reading a string from keyboard 8", "Reading a string from keyboard 8\Reading a string from keyboard 8.vcxproj", "{9379347B-F33B-43EA-9860-95F295AFACF6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project 4-2 Reversing a String in Place", "Project 4-2 Reversing a String in Place\Project 4-2 Reversing a String in Place.vcxproj", "{E279D61A-A99E-4A8A-B4CB-7FDC2408345C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -801,6 +803,14 @@ Global
 		{9379347B-F33B-43EA-9860-95F295AFACF6}.Release|x64.Build.0 = Release|x64
 		{9379347B-F33B-43EA-9860-95F295AFACF6}.Release|x86.ActiveCfg = Release|Win32
 		{9379347B-F33B-43EA-9860-95F295AFACF6}.Release|x86.Build.0 = Release|Win32
+		{E279D61A-A99E-4A8A-B4CB-7FDC2408345C}.Debug|x64.ActiveCfg = Debug|x64
+		{E279D61A-A99E-4A8A-B4CB-7FDC2408345C}.Debug|x64.Build.0 = Debug|x64
+		{E279D61A-A99E-4A8A-B4CB-7FDC2408345C}.Debug|x86.ActiveCfg = Debug|Win32
+		{E279D61A-A99E-4A8A-B4CB-7FDC2408345C}.Debug|x86.Build.0 = Debug|Win32
+		{E279D61A-A99E-4A8A-B4CB-7FDC2408345C}.Release|x64.ActiveCfg = Release|x64
+		{E279D61A-A99E-4A8A-B4CB-7FDC2408345C}.Release|x64.Build.0 = Release|x64
+		{E279D61A-A99E-4A8A-B4CB-7FDC2408345C}.Release|x86.ActiveCfg = Release|Win32
+		{E279D61A-A99E-4A8A-B4CB-7FDC2408345C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
