@@ -70,6 +70,6 @@ int main() {
 
 	cout << endl;
 
-	cout << "The size of an integer is ";
-	cout << sizeof(int) << " bytes." << endl;
+	cout << "The size of a char is ";
+	cout << sizeof(char) << " bytes." << endl;
 }
