@@ -17,4 +17,6 @@ int main() {
 	int len;
 	char t;
 
+	cout 
+
 }
