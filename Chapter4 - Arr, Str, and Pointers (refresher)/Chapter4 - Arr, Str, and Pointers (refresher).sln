@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "One-Dimensional Arrays 2", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "A String Function Example", "A String Function Example\A String Function Example.vcxproj", "{FCACE45B-F820-4493-B28B-DADFB85024F0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Using the Null Terminator", "Using the Null Terminator\Using the Null Terminator.vcxproj", "{05EF6F81-9505-4053-A118-8AE4F96B6035}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{FCACE45B-F820-4493-B28B-DADFB85024F0}.Release|x64.Build.0 = Release|x64
 		{FCACE45B-F820-4493-B28B-DADFB85024F0}.Release|x86.ActiveCfg = Release|Win32
 		{FCACE45B-F820-4493-B28B-DADFB85024F0}.Release|x86.Build.0 = Release|Win32
+		{05EF6F81-9505-4053-A118-8AE4F96B6035}.Debug|x64.ActiveCfg = Debug|x64
+		{05EF6F81-9505-4053-A118-8AE4F96B6035}.Debug|x64.Build.0 = Debug|x64
+		{05EF6F81-9505-4053-A118-8AE4F96B6035}.Debug|x86.ActiveCfg = Debug|Win32
+		{05EF6F81-9505-4053-A118-8AE4F96B6035}.Debug|x86.Build.0 = Debug|Win32
+		{05EF6F81-9505-4053-A118-8AE4F96B6035}.Release|x64.ActiveCfg = Release|x64
+		{05EF6F81-9505-4053-A118-8AE4F96B6035}.Release|x64.Build.0 = Release|x64
+		{05EF6F81-9505-4053-A118-8AE4F96B6035}.Release|x86.ActiveCfg = Release|Win32
+		{05EF6F81-9505-4053-A118-8AE4F96B6035}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
