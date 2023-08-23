@@ -22,5 +22,23 @@ int main() {
 	multidimensional_array[4][4][3][4] = 'o';
 	multidimensional_array[4][4][3][5] = 'f';
 
+	for (int i = 0; i < 5; i++)
+		cout << multidimensional_array[0][0][0][i];
+
+	cout <<' ';
+
+	for (int i = 0; i < 5; i++)
+		cout << multidimensional_array[0][0][1][i];
+
+	cout << " ";
+
+	for (int i = 4; i <= 5; i++)
+		cout << multidimensional_array[4][4][3][i];
+
+	cout << endl;
+
+	cout << "The size of this multidimensional array is ";
+	cout << sizeof multidimensional_array << endl;
+
 
 }
