@@ -12,7 +12,8 @@ int main() {
 	int i;
 
 	// It's not necessary to manually add the null (terminator) onto the end of string constants; C++ 
-	// (compiler) does this for you. Therefore, the string "this is a test" will appear in memory like this:
+	// (compiler) does this for you. Therefore, the string "this is a test" will appear in memory (
+	// one-dimensional array of character) like this:
 	// t h i s  i s  a  t e s t 0
 	// 0 1 2 3 4 ...............14
 	strcpy(str, "this is a test");
