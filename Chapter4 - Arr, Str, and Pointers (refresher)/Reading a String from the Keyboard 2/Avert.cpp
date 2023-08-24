@@ -9,8 +9,8 @@ int main() {
 	// Need not precede char str[80] with const, because neither what you will enter nor 
 	// the receiving variable is a set of characters enclosed in double quotes.
 
-	cout << "Enter a string: ";
-	cin >> str;
+	cout << "Enter a string: ";  // This is a string constant.
+	cin >> str;   // This is not a string constant.             
 
 	// The name of a character array can be used at any place that a string constant can be used.
 	cout << "Here is your string: " << str << endl;
