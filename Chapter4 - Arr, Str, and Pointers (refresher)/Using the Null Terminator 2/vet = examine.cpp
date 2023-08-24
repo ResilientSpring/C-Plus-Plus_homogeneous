@@ -18,8 +18,8 @@ int main() {
 	// 0 1 2 3 4 ...............14
 	strcpy(str, "this is a test");
 
-	// This loop stops when the null (ASCII = 0) is reached, because all character values are non-zero, 
-	// but the null, which terminates the string, is zero.
+	// This for loop stops when the condition str[i] == null (ASCII = 0), because all characters here including
+	// space (ASCII = 32) are non-zero, but the null, which marks the end of the string, is zero.
 	for (i = 0; str[i]; i++)         // True is any non-zero value.
 		str[i] = toupper(str[i]);
 
