@@ -9,7 +9,7 @@ int main() {
 
 	int i;
 	char str[80];
-	char numbers[10][80] = {
+	char numbers[10][80] = {   // This is an array of 10 strings, each capable of holding up to 79 characters.
 
 		"Tom",
 		"555-3322",
@@ -23,4 +23,17 @@ int main() {
 		"555-8873"
 	};
 
+
+	cout << "Enter name: ";
+	cin >> str;
+
+	for(i = 0; i < 10; i += 2)
+		if (!strcmp(str, numbers[i])) {
+
+			cout << "Number is " << numbers[i + 1] << endl;
+
+			break;
+		}
+
+	if (i == 10) cout << "Not foound." << endl;
 }
