@@ -58,4 +58,18 @@ int main() {
 
 	cout << "The size of this multidimensional array_3 is ";
 	cout << sizeof multidimensional_array_3 << " bytes." << endl;
+
+	////////////////////////////////////////////////////////////////
+
+	cout << endl;
+
+	cout << "The size of an integer is ";
+	cout << sizeof (int) << " bytes." << endl;
+
+	/////////////////////////////////////////////////////////////////
+
+	cout << endl;
+
+	cout << "The size of a char is ";
+	cout << sizeof(char) << " bytes." << endl;
 }
