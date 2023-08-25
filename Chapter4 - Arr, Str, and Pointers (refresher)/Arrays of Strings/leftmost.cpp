@@ -23,4 +23,17 @@ int main() {
 		"555-8873"
 	};
 
+
+	cout << "Enter name: ";
+	cin >> str;
+
+	for(i = 0; i < 10; i += 2)
+		if (!strcmp(str, numbers[i])) {
+
+			cout << "Number is " << numbers[i + 1] << endl;
+
+			break;
+		}
+
+	if (i == 10) cout << "Not foound." << endl;
 }
