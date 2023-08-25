@@ -9,4 +9,6 @@ int main() {
 	// when it is declared.
 	char str[4] = "C++";
 
+	// This is the same as writing:
+	char str[4] = { 'C', '+', '+', '\0' };
 }
