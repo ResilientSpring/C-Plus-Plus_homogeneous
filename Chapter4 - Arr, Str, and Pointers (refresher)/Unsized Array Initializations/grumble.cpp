@@ -11,6 +11,6 @@ int main() {
 
 	char e3[] = "www.amazon.com";
 
-	cout << e1 << endl << e2 << endl << e3 << endl << nums;
+	cout << e1 << endl << e2 << endl << e3 << endl << nums << endl;
 
 }
