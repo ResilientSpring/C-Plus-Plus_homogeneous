@@ -9,7 +9,7 @@ int main() {
 
 	int i;
 	char str[80];
-	char numbers[10][80] = {
+	char numbers[10][80] = {   // This is an array of 10 strings, each capable of holding up to 79 characters.
 
 		"Tom",
 		"555-3322",
