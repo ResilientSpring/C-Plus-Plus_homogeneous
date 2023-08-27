@@ -9,4 +9,6 @@ int main() {
 
 	pi[2] = &var;
 
+	cout << *pi[2];
+
 }
