@@ -25,6 +25,9 @@ int main() {
 		if (!strcmp(dictionary[i][0], word)) {
 
 			cout << dictionary[i][1] << endl;
+
+			break; // When the break statement is encountered inside a loop, the loop is immediately terminated, 
+			       // and program control resumes at the next statement following the loop.
 		}
 	}
 }
