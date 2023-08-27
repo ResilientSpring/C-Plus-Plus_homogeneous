@@ -5,6 +5,7 @@ using namespace std;
 
 int main() {
 
+	// The general form of a one-dimensional array declaration is: type name[size];
 	const char* dictionary[][2] = {
 
 		"pencil", "A writing instrument.",
