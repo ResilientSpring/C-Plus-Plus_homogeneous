@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays of Pointers", "Array
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays of Pointers 2", "Arrays of Pointers 2\Arrays of Pointers 2.vcxproj", "{22C6C973-95FF-4022-B411-2DC33C3ECDB1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Array of characters", "Array of characters\Array of characters.vcxproj", "{3DFEA302-850D-466B-A185-8FB197B1AC4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -201,6 +203,14 @@ Global
 		{22C6C973-95FF-4022-B411-2DC33C3ECDB1}.Release|x64.Build.0 = Release|x64
 		{22C6C973-95FF-4022-B411-2DC33C3ECDB1}.Release|x86.ActiveCfg = Release|Win32
 		{22C6C973-95FF-4022-B411-2DC33C3ECDB1}.Release|x86.Build.0 = Release|Win32
+		{3DFEA302-850D-466B-A185-8FB197B1AC4C}.Debug|x64.ActiveCfg = Debug|x64
+		{3DFEA302-850D-466B-A185-8FB197B1AC4C}.Debug|x64.Build.0 = Debug|x64
+		{3DFEA302-850D-466B-A185-8FB197B1AC4C}.Debug|x86.ActiveCfg = Debug|Win32
+		{3DFEA302-850D-466B-A185-8FB197B1AC4C}.Debug|x86.Build.0 = Debug|Win32
+		{3DFEA302-850D-466B-A185-8FB197B1AC4C}.Release|x64.ActiveCfg = Release|x64
+		{3DFEA302-850D-466B-A185-8FB197B1AC4C}.Release|x64.Build.0 = Release|x64
+		{3DFEA302-850D-466B-A185-8FB197B1AC4C}.Release|x86.ActiveCfg = Release|Win32
+		{3DFEA302-850D-466B-A185-8FB197B1AC4C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
