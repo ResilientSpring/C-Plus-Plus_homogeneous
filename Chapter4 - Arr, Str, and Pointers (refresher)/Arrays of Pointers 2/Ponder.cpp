@@ -16,4 +16,7 @@ int main() {
 	
 	};
 
+	char word[80];
+	int i;
+	cout << "Enter word: ";
 }
