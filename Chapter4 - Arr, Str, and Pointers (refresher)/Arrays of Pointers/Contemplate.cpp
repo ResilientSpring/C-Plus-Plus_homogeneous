@@ -4,7 +4,7 @@ using namespace std;
 int main() {
 
 	// The general form of a one-dimensional array declaration is: type name[size];
-	int *pi[10];
+	int* pi[10];
 
 	int var = 8;
 
