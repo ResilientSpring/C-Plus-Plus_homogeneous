@@ -19,4 +19,9 @@ int main() {
 	char word[80];
 	int i;
 	cout << "Enter word: ";
+	cin >> word;
+
+	for (i = 0; *dictionary[i][0]; i++) {
+
+	}
 }
