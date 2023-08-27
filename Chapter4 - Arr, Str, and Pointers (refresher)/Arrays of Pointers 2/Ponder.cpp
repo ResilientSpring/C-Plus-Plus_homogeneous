@@ -11,7 +11,7 @@ int main() {
 		"keyboard", "An input device.",
 		"rifle", "A shoulder-fired firearm.",
 		"airplane", "A fixed-wing aircraft.",
-		"network", "An interconnected group at computers.",
+		"network", "An interconnected group of computers.",
 		"", ""
 	
 	};
