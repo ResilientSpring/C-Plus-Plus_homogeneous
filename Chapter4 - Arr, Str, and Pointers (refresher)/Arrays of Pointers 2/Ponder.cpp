@@ -22,6 +22,9 @@ int main() {
 	cin >> word;
 
 	for (i = 0; *dictionary[i][0]; i++) {
+		if (!strcmp(dictionary[i][0], word)) {
 
+			cout << dictionary[i][1] << endl;
+		}
 	}
 }
