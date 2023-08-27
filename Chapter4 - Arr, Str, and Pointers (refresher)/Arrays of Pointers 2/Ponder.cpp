@@ -30,4 +30,7 @@ int main() {
 			       // and program control resumes at the next statement following the loop.
 		}
 	}
+
+	if (!*dictionary[i][0])
+		cout << word << " not found. " << endl;
 }
