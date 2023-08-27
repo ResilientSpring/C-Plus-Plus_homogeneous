@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
 
-	const char *dictionary[][2] = {
+	const char* dictionary[][2] = {
 
 		"pencil", "A writing instrument.",
 		"keyboard", "An input device.",
