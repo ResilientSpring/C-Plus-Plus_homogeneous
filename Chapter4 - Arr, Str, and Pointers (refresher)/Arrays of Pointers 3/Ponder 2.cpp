@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
 
-	// The general form of multi-dimensional array declaration is: type name[size][size];
+	// The general form of a multi-dimensional array declaration is: type name[size][size];
 	const char* dictionary[][2] = {
 
 		"pencil", "A writing instrument.",
@@ -14,8 +14,23 @@ int main() {
 		"airplane", "A fixed-wing aircraft.",
 		"network", "An interconnected group of computers.",
 		"", ""
-	
+
 	};
+
+	/*    C++ compiler automatically arranges the array in memory as unknown rows and 2 columns.
+	
+	const char* dictionary[][2] = {
+	
+	    pointer, pointer
+	    pointer, pointer
+	       :   ,   :
+		   :   ,   :
+
+	}
+	
+	*/
+
+
 
 	char word[80];
 	int i;
@@ -28,7 +43,7 @@ int main() {
 			cout << dictionary[i][1] << endl;
 
 			break; // When the break statement is encountered inside a loop, the loop is immediately terminated, 
-			       // and program control resumes at the next statement following the loop.
+				   // and program control resumes at the next statement following the loop.
 		}
 	}
 
