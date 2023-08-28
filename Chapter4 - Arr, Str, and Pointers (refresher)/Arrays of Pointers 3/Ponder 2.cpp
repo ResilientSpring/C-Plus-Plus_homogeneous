@@ -17,7 +17,7 @@ int main() {
 
 	};
 
-	/*
+	/*    C++ compiler automatically arranges the array in memory as unknown rows and 2 columns.
 	
 	const char* dictionary[][2] = {
 	
