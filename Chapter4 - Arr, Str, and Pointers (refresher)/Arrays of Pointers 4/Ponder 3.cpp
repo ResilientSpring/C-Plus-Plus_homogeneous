@@ -39,4 +39,6 @@ int main() {
 
 	cout << dictionary[2][0] << endl;
 	cout << *dictionary[2][0] << endl;
+	// In C++, using the name of an array without an index generates a pointer to the first element in the 
+    // array.
 }
