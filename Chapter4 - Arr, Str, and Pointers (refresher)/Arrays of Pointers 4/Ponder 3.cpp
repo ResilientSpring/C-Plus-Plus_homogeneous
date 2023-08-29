@@ -38,4 +38,5 @@ int main() {
 
 
 	cout << dictionary[2][0] << endl;
+	cout << *dictionary[2][0] << endl;
 }
