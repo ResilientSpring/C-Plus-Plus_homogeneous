@@ -36,4 +36,6 @@ int main() {
 	cout << *dictionary[0][1] << endl;
 
 
+
+	cout << dictionary[2][0] << endl;
 }
