@@ -36,7 +36,8 @@ int main() {
 	cout << *dictionary[0][1] << endl;
 
 
-
+	// The memory address of a character array's first element can be used in any place that a
+    // string constant can be used.
 	cout << dictionary[2][0] << endl;
 	cout << *dictionary[2][0] << endl;
 	// In C++, using the name of an array without an index generates a pointer to the first element in the 
