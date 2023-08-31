@@ -18,6 +18,7 @@ int main() {
 
 	cout << "start\n";
 
+	// Program statements that you want to monitor for errors are contained in a try block.
 	try
 	{
 		cout << "Inside try block\n";
