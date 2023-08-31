@@ -5,6 +5,7 @@
 #include <iostream>
 using namespace std;
 
+// A try/catch is reset each time a function is entered. 
 void Xhandler(int test) {
 
 	try
