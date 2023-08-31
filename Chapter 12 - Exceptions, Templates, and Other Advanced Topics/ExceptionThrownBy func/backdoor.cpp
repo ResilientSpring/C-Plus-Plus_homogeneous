@@ -20,7 +20,10 @@ int main() {
 
 	try
 	{
-
+		cout << "Inside try block\n";
+		Xtest(0);
+		Xtest(1);
+		Xtest(2);
 	}
 	catch (const std::exception &)
 	{
