@@ -11,9 +11,9 @@ void Xhandler(int test) {
 	{
 		if (test) throw test;
 	}
-	catch (const std::exception &)
+	catch (int i)
 	{
-
+		cout << "Caught One! Ex. #: " << i << endl;
 	}
 
 }
