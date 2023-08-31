@@ -10,7 +10,7 @@ void Xtest(int test) {
 	cout << "Inside Xtest, test is: " << test << endl;
 
 	if (test)
-		throw test;  // This exception is caught by the catch statement in main().
+		throw test;  // This thrown exception is caught by the catch statement in main().
 }
 
 
