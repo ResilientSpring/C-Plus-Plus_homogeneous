@@ -12,6 +12,7 @@ int main() {
 	{
 
 	}  // If an exception (that is, an error) occurs within the try block, it is thrown (using throw).
+	// The error is caught, using catch, and then processed.
 	catch (const std::exception &)
 	{
 
