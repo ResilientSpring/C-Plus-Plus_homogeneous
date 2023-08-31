@@ -16,9 +16,10 @@ int main() {
 
 	}  // If an exception (that is, an error) occurs within the try block, it is thrown (using throw).
 	// The error is caught, using catch, and then processed.
-	catch (const std::exception &)  // When an error is caught, arg of catch(arg){} will receive its value.
+	catch (int i)  // When an error is caught, arg of catch(arg){} will receive its value.
 	{
-
+		cout << "Caught an exception -- value is: " << i << endl;
 	}
 
+	cout << "end";
 }
