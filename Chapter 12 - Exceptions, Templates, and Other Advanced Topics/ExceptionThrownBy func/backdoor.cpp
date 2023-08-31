@@ -31,4 +31,5 @@ int main() {
 		cout << "Caught an exception -- value is: " << i << endl;
 	}
 
+	cout << "end";
 }
