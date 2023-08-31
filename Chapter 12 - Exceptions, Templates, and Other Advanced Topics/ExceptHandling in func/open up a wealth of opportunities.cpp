@@ -22,6 +22,13 @@ void Xhandler(int test) {
 
 int main() {
 
+	cout << "start\n";
 
+	Xhandler(1);
+	Xhandler(2);
+	Xhandler(0);
+	Xhandler(3);
+
+	cout << "end";
 
 }
