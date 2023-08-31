@@ -26,9 +26,9 @@ int main() {
 		Xtest(1); // Because Xtest() is called from within a try block, its code is also monitored for errors.
 		Xtest(2);
 	}
-	catch (const std::exception &)
+	catch (int i)
 	{
-
+		cout << "Caught an exception -- value is: " << i << endl;
 	}
 
 }
