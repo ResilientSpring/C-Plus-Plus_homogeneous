@@ -4,7 +4,16 @@
 using namespace std;
 
 // Different types of exceptions can be caught.
-void Xhandler() {
+void Xhandler(int test) {
+
+	try
+	{
+		if (test) throw test;  // throw int
+	}
+	catch (const std::exception &)
+	{
+
+	}
 
 }
 
