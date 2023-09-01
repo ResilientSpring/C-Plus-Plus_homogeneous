@@ -9,6 +9,7 @@ void Xhandler(int test) {
 	try
 	{
 		if (test) throw test;  // throw int
+		else throw "Value is zero.";  // throw const char*
 	}
 	catch (const std::exception &)
 	{
