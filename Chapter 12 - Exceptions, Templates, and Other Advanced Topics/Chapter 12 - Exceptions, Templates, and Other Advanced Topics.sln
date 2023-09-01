@@ -105,6 +105,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExceptionThrownByFunc2", "E
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Use Multiple catch", "Use Multiple catch\Use Multiple catch.vcxproj", "{DB8D7245-AE3B-40F9-8B0D-C5D7D084A996}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Use Multiple catch 2", "Use Multiple catch 2\Use Multiple catch 2.vcxproj", "{B3CFE282-C598-4105-A657-9B1756D6B89F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -521,6 +523,14 @@ Global
 		{DB8D7245-AE3B-40F9-8B0D-C5D7D084A996}.Release|x64.Build.0 = Release|x64
 		{DB8D7245-AE3B-40F9-8B0D-C5D7D084A996}.Release|x86.ActiveCfg = Release|Win32
 		{DB8D7245-AE3B-40F9-8B0D-C5D7D084A996}.Release|x86.Build.0 = Release|Win32
+		{B3CFE282-C598-4105-A657-9B1756D6B89F}.Debug|x64.ActiveCfg = Debug|x64
+		{B3CFE282-C598-4105-A657-9B1756D6B89F}.Debug|x64.Build.0 = Debug|x64
+		{B3CFE282-C598-4105-A657-9B1756D6B89F}.Debug|x86.ActiveCfg = Debug|Win32
+		{B3CFE282-C598-4105-A657-9B1756D6B89F}.Debug|x86.Build.0 = Debug|Win32
+		{B3CFE282-C598-4105-A657-9B1756D6B89F}.Release|x64.ActiveCfg = Release|x64
+		{B3CFE282-C598-4105-A657-9B1756D6B89F}.Release|x64.Build.0 = Release|x64
+		{B3CFE282-C598-4105-A657-9B1756D6B89F}.Release|x86.ActiveCfg = Release|Win32
+		{B3CFE282-C598-4105-A657-9B1756D6B89F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
