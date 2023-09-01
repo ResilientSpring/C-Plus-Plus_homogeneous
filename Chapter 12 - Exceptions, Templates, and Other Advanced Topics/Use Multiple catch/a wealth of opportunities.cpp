@@ -15,7 +15,7 @@ void Xhandler(int test) {
 	{
 		cout << "Caught one! Ex. #: " << i << endl;
 	}
-	catch (char *str) {
+	catch (const char *str) {
 
 		cout << "Caught a string: " << str << endl;
 	}
