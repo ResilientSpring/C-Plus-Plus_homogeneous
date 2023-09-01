@@ -11,9 +11,9 @@ void Xhandler(int test) {
 		if (test) throw test;  // throw int
 		else throw "Value is zero.";  // throw const char*
 	}
-	catch (const std::exception &)
+	catch (int i)
 	{
-
+		cout << "Caught one! Ex. #: " << i << endl;
 	}
 
 }
