@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reading Input from the Keyb
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reading Input from the Keyboard 2", "Reading Input from the Keyboard 2\Reading Input from the Keyboard 2.vcxproj", "{0F2D2562-5F49-4CF6-98DA-C95CB42FFF7F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reading Input from the Keyboard 3", "Reading Input from the Keyboard 3\Reading Input from the Keyboard 3.vcxproj", "{5B30562B-DC46-40E5-B6D4-A2F3BBC37791}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{0F2D2562-5F49-4CF6-98DA-C95CB42FFF7F}.Release|x64.Build.0 = Release|x64
 		{0F2D2562-5F49-4CF6-98DA-C95CB42FFF7F}.Release|x86.ActiveCfg = Release|Win32
 		{0F2D2562-5F49-4CF6-98DA-C95CB42FFF7F}.Release|x86.Build.0 = Release|Win32
+		{5B30562B-DC46-40E5-B6D4-A2F3BBC37791}.Debug|x64.ActiveCfg = Debug|x64
+		{5B30562B-DC46-40E5-B6D4-A2F3BBC37791}.Debug|x64.Build.0 = Debug|x64
+		{5B30562B-DC46-40E5-B6D4-A2F3BBC37791}.Debug|x86.ActiveCfg = Debug|Win32
+		{5B30562B-DC46-40E5-B6D4-A2F3BBC37791}.Debug|x86.Build.0 = Debug|Win32
+		{5B30562B-DC46-40E5-B6D4-A2F3BBC37791}.Release|x64.ActiveCfg = Release|x64
+		{5B30562B-DC46-40E5-B6D4-A2F3BBC37791}.Release|x64.Build.0 = Release|x64
+		{5B30562B-DC46-40E5-B6D4-A2F3BBC37791}.Release|x86.ActiveCfg = Release|Win32
+		{5B30562B-DC46-40E5-B6D4-A2F3BBC37791}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
