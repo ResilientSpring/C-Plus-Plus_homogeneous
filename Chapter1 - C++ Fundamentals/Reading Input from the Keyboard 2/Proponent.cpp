@@ -20,6 +20,9 @@ int main() {
 	{
 		cout << "You must enter an integer.";
 	}
+	catch (char c) {
+		cout << "You must enter an integer.";
+	}
 
 	cout << "The area is " << length * width << endl;
 
