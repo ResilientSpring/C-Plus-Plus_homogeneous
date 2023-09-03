@@ -11,17 +11,14 @@ int main() {
 		cout << "Enter the length: ";
 		cin >> length;
 
-	} while (length != );
+	} while (cin.exceptions());
 
-	for (; ;) {
-
-		cout << "Enter the length: ";
-		cin >> length;
-
+	do
+	{
 		cout << "Enter the width: ";
 		cin >> width;
 
-	}
+	} while (cin.fail());
 
 
 	cout << "The area is " << length * width << endl;
