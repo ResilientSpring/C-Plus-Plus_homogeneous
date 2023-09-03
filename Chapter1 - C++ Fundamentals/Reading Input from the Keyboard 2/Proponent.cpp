@@ -18,7 +18,9 @@ int main() {
 	}
 	catch (const std::exception &)
 	{
-
+		cout << "You must enter an integer.";
 	}
+
+	cout << "The area is " << length * width << endl;
 
 }
