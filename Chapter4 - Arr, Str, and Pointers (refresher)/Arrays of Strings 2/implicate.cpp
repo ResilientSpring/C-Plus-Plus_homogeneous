@@ -16,4 +16,6 @@ int main() {
 	cout << arr_str[0] << endl;
 	cout << arr_str[0][1] << endl;
 	cout << arr_str[1][2] << endl;
+	cout << arr_str2[2] << endl;
+	cout << arr_str2[3][2] << endl;
 }
