@@ -11,6 +11,6 @@ int main() {
 
 	q = &p;  // Assign q the address of p.
 
-	cout << **q;  // prints the value of x. (Accessing x's value through q. Notice that two ** are required.)
+	cout << **q;  // prints the value of x. (Accessing x's value through q. Notice that two * are required.)
 
 }
