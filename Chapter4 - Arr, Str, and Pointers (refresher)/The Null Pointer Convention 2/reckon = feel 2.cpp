@@ -6,7 +6,7 @@ int main() {
 	
 	float *p;
 
-	p = 0;
+	p = 0;   // 0 as memory address.
 
 
 	if (!p) {
