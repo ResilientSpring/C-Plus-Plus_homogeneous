@@ -24,3 +24,5 @@ int main() {
 	cout << "The area is " << length * width << endl;
 
 }
+
+// Reference: https://stackoverflow.com/questions/18728754/checking-cin-input-stream-produces-an-integer
