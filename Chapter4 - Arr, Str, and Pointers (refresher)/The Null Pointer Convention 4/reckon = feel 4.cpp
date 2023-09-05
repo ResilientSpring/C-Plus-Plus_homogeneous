@@ -7,9 +7,9 @@ int main() {
 
 	p = NULL;
 
-	if (p) {
+	if (!p) {
 
-
+		cout << "p is null" << endl;
 
 	}
 
