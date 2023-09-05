@@ -13,4 +13,9 @@ int main() {
 
 	}
 
+	if (p)
+	{
+		cout << "p is not null" << endl;
+	}
+
 }
