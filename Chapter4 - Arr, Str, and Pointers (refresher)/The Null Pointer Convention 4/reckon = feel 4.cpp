@@ -19,3 +19,5 @@ int main() {
 	}
 
 }
+
+// NULL 's ascii code is 0. 
