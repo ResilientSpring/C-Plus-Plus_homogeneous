@@ -3,11 +3,10 @@ using namespace std;
 
 int main() {
 
-	// Any type of pointer can be initialized to null when it is declared. 
 	
 	float *p;
 
-	p = 0;
+	p = 0;   // 0 as memory address.
 
 
 	if (!p) {
