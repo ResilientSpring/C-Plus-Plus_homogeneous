@@ -8,5 +8,11 @@ int main() {
 	int **q; // Declared to be a pointer to a pointer.
 
 
+	cout << x << " " << &x << endl;
+
+	x = 10;
+	p = &x;
+
+	cout << p << endl;
 
 }
