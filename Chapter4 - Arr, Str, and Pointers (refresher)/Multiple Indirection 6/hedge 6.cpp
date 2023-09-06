@@ -25,7 +25,7 @@ int main() {
 
 	q = &p;
 
-	cout << *q << endl;
+	cout << *q << endl;  // * is an operator representing the value at the memory address of its operand.
 
 	cout << **q << endl;
 }
