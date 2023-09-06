@@ -17,5 +17,5 @@ int main() {
 
 	cout << *q << endl;
 
-	cout << **q << endl;
+	cout <<
 }
