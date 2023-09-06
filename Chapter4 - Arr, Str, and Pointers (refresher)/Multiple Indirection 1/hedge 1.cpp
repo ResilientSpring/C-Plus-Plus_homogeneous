@@ -7,3 +7,5 @@ int main() {
 
 	cout << **q << endl;
 }
+
+// Review the section Dynamic Initialization in Chapter 2.
