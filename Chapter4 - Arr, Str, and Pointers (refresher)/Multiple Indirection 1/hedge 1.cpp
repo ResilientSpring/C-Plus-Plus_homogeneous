@@ -8,4 +8,4 @@ int main() {
 	cout << **q << endl;
 }
 
-// Review the section Dynamic Initialization in Chapter 2.
+// Review the section Initializing a Variable in Chapter 2.
