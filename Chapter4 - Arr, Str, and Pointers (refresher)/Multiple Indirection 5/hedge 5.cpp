@@ -3,6 +3,8 @@ using namespace std;
 
 int main() {
 
+	// In a declaration statement, preceding a variable name with ** causes that variable to be 
+	// a pointer to a pointer.
 	int x, *p, **q;
 
 	x = 10;
@@ -12,4 +14,6 @@ int main() {
 	q = &p;
 
 	cout << *q << endl;
+
+	cout << 
 }
