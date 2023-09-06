@@ -3,6 +3,13 @@ using namespace std;
 
 int main() {
 
-	int x;
+	int x, *p, **q;
+
+	x = 10;
+
+	p = &x;
+
+	q = &p;
+
 
 }
