@@ -16,6 +16,7 @@ int main() {
 	
 	int **q;  // (A pointer to a pointer is a variable that can hold a memory address of a pointer.)
 
+
 	// ----- End of declaration statements.
 
 	x = 10;
