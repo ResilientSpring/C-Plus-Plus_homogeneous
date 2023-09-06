@@ -8,7 +8,7 @@ int main() {
 	double radius = 4.0, height = 5.0;
 
 	// dynamically initialize volume
-	double volume = 3.1416 * radius * radius * height;
+	double volume = 3.1416 * radius * radius * height;  // volume is dynamically initialized at runtime.
 
 	cout << "Volume is " << volume;
 
