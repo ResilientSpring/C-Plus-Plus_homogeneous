@@ -21,11 +21,13 @@ int main() {
 
 	x = 10;
 
-	p = &x;
+	p = &x;  // get address of total.  & is an operator standing for the memory address of its operand.
 
 	q = &p;
 
-	cout << *q << endl;
+	cout << *q << endl;  // * is an operator representing the value at the memory address of its operand.
 
 	cout << **q << endl;
+
+	cout << *(*q) << endl;
 }
