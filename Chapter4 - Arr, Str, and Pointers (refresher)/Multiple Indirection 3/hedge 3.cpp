@@ -11,4 +11,6 @@ int main() {
 
 	*q = p;
 
+	cout << *q << endl;
+
 }
