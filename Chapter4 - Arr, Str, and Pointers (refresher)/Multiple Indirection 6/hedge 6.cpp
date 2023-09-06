@@ -8,10 +8,13 @@ int main() {
 	int x;
 
 	// preceding a variable name with a *causes that variable to be a pointer.
-	int *p;  // A pointer is an object that can contain a memory address.
+
+	int *p;  // A pointer is a variable that can hold a memory address of a variable.
+
 
 	// preceding a variable name with ** causes that variable to be a pointer to a pointer.
-	int **q;
+	
+	int **q;  // (A pointer to a pointer is a variable that can hold a memory address of a pointer.)
 
 	// ----- End of declaration statements.
 
