@@ -7,6 +7,8 @@ int main() {
 	// a pointer to a pointer.
 	int x, *p, **q;
 
+	// ----- End of declaration statements.
+
 	x = 10;
 
 	p = &x;
