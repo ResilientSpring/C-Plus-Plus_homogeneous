@@ -33,3 +33,8 @@ int main() {
 
 	cout << *(*q) << endl;
 }
+
+/*
+  In the case of a normal pointer, the value of the pointer is the address of a value.
+  In the case of a pointer to a pointer, the first pointer contains the address of the second pointer.
+*/
