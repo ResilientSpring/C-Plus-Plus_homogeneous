@@ -7,7 +7,7 @@ int main() {
 
 	int x;
 
-	// preceding a variable name with a *causes that variable to be a pointer.
+	// preceding a variable name with a * causes that variable to be a pointer.
 
 	int *p;  // A pointer is a variable that can hold a memory address of a variable.
 
