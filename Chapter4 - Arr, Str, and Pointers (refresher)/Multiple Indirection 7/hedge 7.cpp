@@ -14,7 +14,7 @@ int main() {
 
 	// preceding a variable name with ** causes that variable to be a pointer to a pointer.
 
-	int **q;  // (A pointer to a pointer is a variable that can hold the memory address of another pointer.)
+	int **q;  // A pointer to a pointer is a variable that can hold the memory address of another pointer.
 
 
 	// ----- End of declaration statements.
