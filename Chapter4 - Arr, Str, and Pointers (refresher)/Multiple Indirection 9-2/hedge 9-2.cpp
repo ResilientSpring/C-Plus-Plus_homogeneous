@@ -35,9 +35,9 @@ int main() {
 
 	q = &p;
 
-	cout << &q << endl;
+	cout << "&q is " << &q << endl;
 
-	cout << q << endl;   // the memory address of the pointer to the pointer.
+	cout << "q is " << q << endl;   // the memory address of the pointer to the pointer.
 
 	cout << *q << endl;  // * is an operator representing the value at the memory address of its operand.
 
