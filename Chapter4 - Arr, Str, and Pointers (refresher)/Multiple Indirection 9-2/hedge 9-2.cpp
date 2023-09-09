@@ -41,7 +41,7 @@ int main() {
 
 	cout << "*q is " << *q << endl; // * is an operator representing the value at the memory address.
 
-	cout << **q << endl;
+	cout << "**q is " << **q << endl;
 
 	cout << *(*q) << endl;
 
