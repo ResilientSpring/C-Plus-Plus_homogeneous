@@ -45,7 +45,7 @@ int main() {
 
 	cout << "*(*q) is " << *(*q) << endl;
 
-	
+	cout << "x is " << x << endl;
 
 }
 
