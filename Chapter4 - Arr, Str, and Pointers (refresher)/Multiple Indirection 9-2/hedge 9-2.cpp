@@ -23,6 +23,8 @@ int main() {
 
 	p = &x;  // get address of total.  & is an operator standing for the memory address of its operand.
 
+// 	q = &x;   a pointer to a pointer can hold the memory address of a pointer.   (x isn't a pointer.)
+
 	cout << "&x is " << &x << endl;
 
 	cout << "p is " << p << endl;
@@ -43,7 +45,7 @@ int main() {
 
 	cout << *(*q) << endl;
 
-	// 	q = &x;   a pointer to a pointer cannot hold the memory address of a variable. 
+	
 
 }
 
