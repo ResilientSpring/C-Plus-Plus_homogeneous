@@ -10,6 +10,10 @@ using namespace std;
 
 int main() {
 
-
+	// The string to be reversed is contained in str.
+	char str[] = "this is a test";
+	
+	// The pointers "start" and "end" will be used to access the string.
+	char *start, *end;
 
 }
