@@ -24,6 +24,6 @@ int main() {
 	len = strlen(str);
 
 	start = str;
-	end = &str[len - 1];
+	end = &str[len - 1];  // end points to the last character in the string, not the null terminator.
 
 }
