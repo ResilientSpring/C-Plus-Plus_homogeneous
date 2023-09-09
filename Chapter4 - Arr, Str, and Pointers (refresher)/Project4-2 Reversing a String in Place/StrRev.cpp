@@ -21,4 +21,9 @@ int main() {
 
 	cout << "Original string: " << str << endl;
 
+	len = strlen(str);
+
+	start = str;
+	end = &str[len - 1];
+
 }
