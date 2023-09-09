@@ -25,19 +25,20 @@ int main() {
 
 	cout << "&x is " << &x << endl;
 
-// 	q = &x;   a pointer to a pointer cannot hold the memory address of a variable. 
-
 	q = &p;
 
-	cout << q << endl;   // the memory address of the pointer to the pointer.
-
 	cout << &q << endl;
+
+	cout << q << endl;   // the memory address of the pointer to the pointer.
 
 	cout << *q << endl;  // * is an operator representing the value at the memory address of its operand.
 
 	cout << **q << endl;
 
 	cout << *(*q) << endl;
+
+// 	q = &x;   a pointer to a pointer cannot hold the memory address of a variable. 
+
 }
 
 /*
