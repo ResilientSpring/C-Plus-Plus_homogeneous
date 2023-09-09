@@ -43,7 +43,7 @@ int main() {
 
 	cout << "**q is " << **q << endl;
 
-	cout << *(*q) << endl;
+	cout << "*(*q) is " << *(*q) << endl;
 
 	
 
