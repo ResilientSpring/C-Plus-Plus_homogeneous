@@ -16,4 +16,9 @@ int main() {
 	// The pointers "start" and "end" will be used to access the string.
 	char *start, *end;
 
+	int len;
+	char t;
+
+	cout << "Original string: " << str << endl;
+
 }
