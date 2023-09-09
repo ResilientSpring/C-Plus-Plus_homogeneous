@@ -25,6 +25,8 @@ int main() {
 
 	cout << "&x is " << &x << endl;
 
+	cout << "p is " << p << endl;
+
 	q = &p;
 
 	cout << &q << endl;
