@@ -21,7 +21,7 @@ int main() {
 
 	x = 10;
 
-	p = &x;  // get address of total.  & is an operator standing for the memory address of its operand.
+	p = &x;  // & is an operator standing for the memory address of its operand.
 
 // 	q = &x;   a pointer to a pointer can hold the memory address of a pointer.   (x isn't a pointer.)
 
