@@ -25,7 +25,16 @@ int main() {
 
 	start = str;
 	end = &str[len - 1]; // end points to the last character in the string, not the null terminator.
+
+	// len - 1 because although there are 14 characters, the 14th character is indexed at 13.
+
+	while (start < end)
+	{
+		// swap chars
+		t = *start;
+		*start = *end;
+		*end = t;
+	}
 	                      
 }
 
-// len - 1 because although there are 14 characters, the 14th character is indexed at 13.
