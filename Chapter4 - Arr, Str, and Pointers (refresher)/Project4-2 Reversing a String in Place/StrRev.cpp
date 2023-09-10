@@ -34,6 +34,10 @@ int main() {
 		t = *start;
 		*start = *end;
 		*end = t;
+
+		// advance pointers
+		start++;
+		end--;
 	}
 	                      
 }
