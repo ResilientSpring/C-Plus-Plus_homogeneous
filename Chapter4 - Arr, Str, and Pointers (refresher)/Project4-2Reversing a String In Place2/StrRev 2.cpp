@@ -30,6 +30,8 @@ int main() {
 
 	while (start < end)
 	{
+
+
 		// swap chars
 		t = *start;
 		*start = *end;
