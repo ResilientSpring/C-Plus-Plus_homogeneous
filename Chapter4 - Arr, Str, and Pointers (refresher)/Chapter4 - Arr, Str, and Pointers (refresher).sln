@@ -99,6 +99,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project4-2Reversing a Strin
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project4-2Reversing a String In Place4", "Project4-2Reversing a String In Place4\Project4-2Reversing a String In Place4.vcxproj", "{47FEDCC1-68E3-4C16-A7AB-5C1CF7B27361}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project4-2Reversing a String In Place5", "Project4-2Reversing a String In Place5\Project4-2Reversing a String In Place5.vcxproj", "{EA912557-D2CA-473B-96A5-1214D5620F95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -491,6 +493,14 @@ Global
 		{47FEDCC1-68E3-4C16-A7AB-5C1CF7B27361}.Release|x64.Build.0 = Release|x64
 		{47FEDCC1-68E3-4C16-A7AB-5C1CF7B27361}.Release|x86.ActiveCfg = Release|Win32
 		{47FEDCC1-68E3-4C16-A7AB-5C1CF7B27361}.Release|x86.Build.0 = Release|Win32
+		{EA912557-D2CA-473B-96A5-1214D5620F95}.Debug|x64.ActiveCfg = Debug|x64
+		{EA912557-D2CA-473B-96A5-1214D5620F95}.Debug|x64.Build.0 = Debug|x64
+		{EA912557-D2CA-473B-96A5-1214D5620F95}.Debug|x86.ActiveCfg = Debug|Win32
+		{EA912557-D2CA-473B-96A5-1214D5620F95}.Debug|x86.Build.0 = Debug|Win32
+		{EA912557-D2CA-473B-96A5-1214D5620F95}.Release|x64.ActiveCfg = Release|x64
+		{EA912557-D2CA-473B-96A5-1214D5620F95}.Release|x64.Build.0 = Release|x64
+		{EA912557-D2CA-473B-96A5-1214D5620F95}.Release|x86.ActiveCfg = Release|Win32
+		{EA912557-D2CA-473B-96A5-1214D5620F95}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
