@@ -40,5 +40,8 @@ int main() {
 		end--;
 	}
 
+
+	cout << "Reversed: " << str << endl;
+
 }
 
