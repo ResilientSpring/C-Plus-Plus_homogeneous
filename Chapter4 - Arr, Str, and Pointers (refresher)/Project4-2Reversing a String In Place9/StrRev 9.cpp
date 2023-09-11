@@ -38,6 +38,12 @@ int main() {
 	while (start < end)
 	{
 
+		cout << endl;
+
+		cout << "start :" << (void *)&start;
+		cout << "  " << "end: " << (void *)&end << endl;
+
+
 		// swap chars
 		t = *start;
 		*start = *end;
