@@ -6,6 +6,7 @@
 */
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main() {
@@ -30,9 +31,7 @@ int main() {
 
 	while (start < end)
 	{
-		cout.setf(ios::dec);
-
-		cout << "start: " << start << " |||| end: " << end << endl;
+		cout << setiosflags(ios::dec) << "start: " << start << " |||| end: " << end << endl;
 
 		// swap chars
 		t = *start;
