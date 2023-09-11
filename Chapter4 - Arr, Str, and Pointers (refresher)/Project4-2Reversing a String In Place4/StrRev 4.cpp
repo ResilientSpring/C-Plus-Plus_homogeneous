@@ -30,9 +30,10 @@ int main() {
 
 	while (start < end)
 	{
+		cout << endl;
 
 		cout << "start :" << static_cast<void *>(&start);
-		cout << "  " << "end: " << static_cast<void *>(&end);
+		cout << "  " << "end: " << static_cast<void *>(&end) << endl;
 
 		// swap chars
 		t = *start;
