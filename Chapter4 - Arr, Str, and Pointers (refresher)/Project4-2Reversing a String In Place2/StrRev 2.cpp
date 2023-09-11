@@ -32,7 +32,7 @@ int main() {
 	{
 		cout.setf(ios::dec);
 
-		cout << start << "  " << end << endl;
+		cout << "start: " << start << " |||| end: " << end << endl;
 
 		// swap chars
 		t = *start;
