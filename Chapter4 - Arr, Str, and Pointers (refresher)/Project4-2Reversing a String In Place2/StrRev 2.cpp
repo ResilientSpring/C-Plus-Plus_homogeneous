@@ -30,7 +30,9 @@ int main() {
 
 	while (start < end)
 	{
+		cout.setf(ios::dec);
 
+		cout << start << "  " << end << endl;
 
 		// swap chars
 		t = *start;
