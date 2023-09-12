@@ -109,6 +109,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project4-2Reversing a Strin
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project4-2Reversing a String In Place9", "Project4-2Reversing a String In Place9\Project4-2Reversing a String In Place9.vcxproj", "{79BAFA72-445E-4138-97C1-C2F174F2D4AD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Base Type of a Pointer Is Important", "Base Type of a Pointer Is Important\Base Type of a Pointer Is Important.vcxproj", "{04095873-A32D-4781-8C81-33BC879BC871}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -541,6 +543,14 @@ Global
 		{79BAFA72-445E-4138-97C1-C2F174F2D4AD}.Release|x64.Build.0 = Release|x64
 		{79BAFA72-445E-4138-97C1-C2F174F2D4AD}.Release|x86.ActiveCfg = Release|Win32
 		{79BAFA72-445E-4138-97C1-C2F174F2D4AD}.Release|x86.Build.0 = Release|Win32
+		{04095873-A32D-4781-8C81-33BC879BC871}.Debug|x64.ActiveCfg = Debug|x64
+		{04095873-A32D-4781-8C81-33BC879BC871}.Debug|x64.Build.0 = Debug|x64
+		{04095873-A32D-4781-8C81-33BC879BC871}.Debug|x86.ActiveCfg = Debug|Win32
+		{04095873-A32D-4781-8C81-33BC879BC871}.Debug|x86.Build.0 = Debug|Win32
+		{04095873-A32D-4781-8C81-33BC879BC871}.Release|x64.ActiveCfg = Release|x64
+		{04095873-A32D-4781-8C81-33BC879BC871}.Release|x64.Build.0 = Release|x64
+		{04095873-A32D-4781-8C81-33BC879BC871}.Release|x86.ActiveCfg = Release|Win32
+		{04095873-A32D-4781-8C81-33BC879BC871}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
