@@ -9,6 +9,10 @@ int main() {
 	int *p;
 
 	x = 123.23;
+
+	cout << "&x: " << &x << endl;
+
+
 	p = (int *) &x;   // Use cast to assign double * to int *
 
 	cout << "&x: " << &x << endl;
