@@ -4,12 +4,8 @@ using namespace std;
 
 int main() {
 
-	int x, y;
-
-	double *p;
-
-	x = 123;
-	p = (double *)&x;   // Use cast to assign double * to int *
+	int x = 123;
+	double y, *p = (double *) &x;   // Use cast to assign int * to double * ;
 
 	y = *p;      // What will this do?
 	cout << y;   // What will this print?
