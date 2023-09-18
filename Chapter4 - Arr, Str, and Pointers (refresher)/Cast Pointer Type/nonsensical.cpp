@@ -30,3 +30,9 @@ int main()
 
 // Source: 
 // https://github.com/Apress/pointers-c-programming/blob/main/Chapter%2004/pointers-and-types/interpretation.c
+
+
+// Note:
+// %p, where p means void* (pointer to void) in an implementation-defined format.
+//
+// Reference: https://en.wikipedia.org/wiki/Printf
