@@ -14,7 +14,7 @@ int main() {
 	int *ip = (int *)&d;
 	char *cp = (char *)&d;
 
-	printf("dp == %p, lp = %p\nip == %p, cp == %p\n\n", dp, lp, ip, cp);
+//	printf("dp == %p, lp = %p\nip == %p, cp == %p\n\n", dp, lp, ip, cp);
 
 	cout << "dp == " << dp << ", lp = " << lp << endl;
 	cout << "ip == " << ip << ", cp = " << cp << "\n\n";
