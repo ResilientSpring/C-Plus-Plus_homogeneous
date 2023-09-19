@@ -14,16 +14,13 @@ int main()
     printf("dp == %p, lp == %p\nip == %p, cp == %p\n\n", dp, lp, ip, cp);
 
     d = 42.0;
-    printf("*dp == %.20f, *lp == %ld, *ip == %d, *cp == %d\n",
-        *dp, *lp, *ip, *cp);
+    printf("*dp == %.20f, *lp == %ld, *ip == %d, *cp == %d\n", *dp, *lp, *ip, *cp);
 
     *ip = 4200;
-    printf("*dp == %.20f, *lp == %ld, *ip == %d, *cp == %d\n",
-        *dp, *lp, *ip, *cp);
+    printf("*dp == %.20f, *lp == %ld, *ip == %d, *cp == %d\n", *dp, *lp, *ip, *cp);
 
     *cp = 42;
-    printf("*dp == %.20f, *lp == %ld, *ip == %d, *cp == %d\n",
-        *dp, *lp, *ip, *cp);
+    printf("*dp == %.20f, *lp == %ld, *ip == %d, *cp == %d\n", *dp, *lp, *ip, *cp);
 
     return 0;
 }
