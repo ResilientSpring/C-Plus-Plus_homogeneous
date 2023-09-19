@@ -23,7 +23,7 @@ int main() {
 
 
 	cout << "dp == " << dp << ", lp = " << lp << endl;
-	cout << "ip == " << ip << ", cp = " << cp << "\n\n";
+	cout << "ip == " << ip << ", cp = " << cp << "\n\n";  // Print memory address of a string of characters.
 
 	d = 42.0;
 	printf("*dp == %.20f, *lp == %ld, *ip == %d, *cp == %d\n", *dp, *lp, *ip, *cp);
