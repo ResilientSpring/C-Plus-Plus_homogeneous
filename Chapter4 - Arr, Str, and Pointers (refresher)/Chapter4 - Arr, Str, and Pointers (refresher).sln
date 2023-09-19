@@ -119,6 +119,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cast Pointer Type", "Cast P
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cast Pointer Type 2", "Cast Pointer Type 2\Cast Pointer Type 2.vcxproj", "{A676C596-BEDE-4726-BE3C-F829F010FF76}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Base Type of a Pointer Is Important 4", "Base Type of a Pointer Is Important_\Base Type of a Pointer Is Important_.vcxproj", "{EB011054-08C0-40C0-81C1-F2085131EAFA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Base Type of a Pointer Is Important 5", "Base Type of a Pointer Is Important 5\Base Type of a Pointer Is Important 5.vcxproj", "{E0FB3EB4-0675-46EC-ACFC-BAA72D6CDDD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -591,6 +595,22 @@ Global
 		{A676C596-BEDE-4726-BE3C-F829F010FF76}.Release|x64.Build.0 = Release|x64
 		{A676C596-BEDE-4726-BE3C-F829F010FF76}.Release|x86.ActiveCfg = Release|Win32
 		{A676C596-BEDE-4726-BE3C-F829F010FF76}.Release|x86.Build.0 = Release|Win32
+		{EB011054-08C0-40C0-81C1-F2085131EAFA}.Debug|x64.ActiveCfg = Debug|x64
+		{EB011054-08C0-40C0-81C1-F2085131EAFA}.Debug|x64.Build.0 = Debug|x64
+		{EB011054-08C0-40C0-81C1-F2085131EAFA}.Debug|x86.ActiveCfg = Debug|Win32
+		{EB011054-08C0-40C0-81C1-F2085131EAFA}.Debug|x86.Build.0 = Debug|Win32
+		{EB011054-08C0-40C0-81C1-F2085131EAFA}.Release|x64.ActiveCfg = Release|x64
+		{EB011054-08C0-40C0-81C1-F2085131EAFA}.Release|x64.Build.0 = Release|x64
+		{EB011054-08C0-40C0-81C1-F2085131EAFA}.Release|x86.ActiveCfg = Release|Win32
+		{EB011054-08C0-40C0-81C1-F2085131EAFA}.Release|x86.Build.0 = Release|Win32
+		{E0FB3EB4-0675-46EC-ACFC-BAA72D6CDDD8}.Debug|x64.ActiveCfg = Debug|x64
+		{E0FB3EB4-0675-46EC-ACFC-BAA72D6CDDD8}.Debug|x64.Build.0 = Debug|x64
+		{E0FB3EB4-0675-46EC-ACFC-BAA72D6CDDD8}.Debug|x86.ActiveCfg = Debug|Win32
+		{E0FB3EB4-0675-46EC-ACFC-BAA72D6CDDD8}.Debug|x86.Build.0 = Debug|Win32
+		{E0FB3EB4-0675-46EC-ACFC-BAA72D6CDDD8}.Release|x64.ActiveCfg = Release|x64
+		{E0FB3EB4-0675-46EC-ACFC-BAA72D6CDDD8}.Release|x64.Build.0 = Release|x64
+		{E0FB3EB4-0675-46EC-ACFC-BAA72D6CDDD8}.Release|x86.ActiveCfg = Release|Win32
+		{E0FB3EB4-0675-46EC-ACFC-BAA72D6CDDD8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
