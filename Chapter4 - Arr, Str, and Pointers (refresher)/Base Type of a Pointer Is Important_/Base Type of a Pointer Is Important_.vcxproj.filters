@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="reinterpret_cast.cpp">
+    <ClCompile Include="reinterpret_pointer_cast.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
