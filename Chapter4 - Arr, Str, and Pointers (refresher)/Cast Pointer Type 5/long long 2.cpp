@@ -22,8 +22,8 @@ int main() {
 	printf("dp == %p, lp == %p\nip == %p, cp == %p\n\n", dp, lp, ip, cp);
 
 
-	cout << "dp == " << dp << ", lp = " << lp << endl;
-	cout << "ip == " << ip << ", cp = " << cp << "\n\n";  // Print memory address of a string of characters.
+	cout << "dp == " << dp << ", lp == " << lp << endl;
+	cout << "ip == " << ip << ", cp == " << cp << "\n\n";  // Print memory address of a string of characters.
 
 	d = 42.0;
 	printf("*dp == %.20f, *lp == %ld, *ip == %d, *cp == %d\n", *dp, *lp, *ip, *cp);
