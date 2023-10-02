@@ -131,6 +131,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cast Pointer Type 4", "Cast
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cast Pointer Type 5", "Cast Pointer Type 5\Cast Pointer Type 5.vcxproj", "{45CFE323-5026-4B01-87D8-935551475BA1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cast Pointer Type 6", "Cast Pointer Type 6\Cast Pointer Type 6.vcxproj", "{096E6514-9F3F-458F-888A-50AB33D01B94}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cast Pointer Type 6-1", "Cast Pointer Type 6-1\Cast Pointer Type 6-1.vcxproj", "{3A2BD9C3-83A1-451C-8380-76EFDACF81A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -651,6 +655,22 @@ Global
 		{45CFE323-5026-4B01-87D8-935551475BA1}.Release|x64.Build.0 = Release|x64
 		{45CFE323-5026-4B01-87D8-935551475BA1}.Release|x86.ActiveCfg = Release|Win32
 		{45CFE323-5026-4B01-87D8-935551475BA1}.Release|x86.Build.0 = Release|Win32
+		{096E6514-9F3F-458F-888A-50AB33D01B94}.Debug|x64.ActiveCfg = Debug|x64
+		{096E6514-9F3F-458F-888A-50AB33D01B94}.Debug|x64.Build.0 = Debug|x64
+		{096E6514-9F3F-458F-888A-50AB33D01B94}.Debug|x86.ActiveCfg = Debug|Win32
+		{096E6514-9F3F-458F-888A-50AB33D01B94}.Debug|x86.Build.0 = Debug|Win32
+		{096E6514-9F3F-458F-888A-50AB33D01B94}.Release|x64.ActiveCfg = Release|x64
+		{096E6514-9F3F-458F-888A-50AB33D01B94}.Release|x64.Build.0 = Release|x64
+		{096E6514-9F3F-458F-888A-50AB33D01B94}.Release|x86.ActiveCfg = Release|Win32
+		{096E6514-9F3F-458F-888A-50AB33D01B94}.Release|x86.Build.0 = Release|Win32
+		{3A2BD9C3-83A1-451C-8380-76EFDACF81A4}.Debug|x64.ActiveCfg = Debug|x64
+		{3A2BD9C3-83A1-451C-8380-76EFDACF81A4}.Debug|x64.Build.0 = Debug|x64
+		{3A2BD9C3-83A1-451C-8380-76EFDACF81A4}.Debug|x86.ActiveCfg = Debug|Win32
+		{3A2BD9C3-83A1-451C-8380-76EFDACF81A4}.Debug|x86.Build.0 = Debug|Win32
+		{3A2BD9C3-83A1-451C-8380-76EFDACF81A4}.Release|x64.ActiveCfg = Release|x64
+		{3A2BD9C3-83A1-451C-8380-76EFDACF81A4}.Release|x64.Build.0 = Release|x64
+		{3A2BD9C3-83A1-451C-8380-76EFDACF81A4}.Release|x86.ActiveCfg = Release|Win32
+		{3A2BD9C3-83A1-451C-8380-76EFDACF81A4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
