@@ -33,7 +33,7 @@ int main() {
 	cout << "ip == " << ip << ", cp == " << cp << "\n\n";  // Print memory address of a string of characters.
 
 	d = 42.0;
-	printf("*dp == %.20f, *lp == %lld, *ip == %d, *cp == %d\n", *dp, *lp, *ip, *cp);
+	printf("*dp == %.20f, *lp == %lld, *ip == %d, *cp == %d\n", *(dp--), *lp, *ip, *cp);
 	cout << "*dp == " << *dp << ", *lp == " << *lp << ", *ip == " << *ip << ", *cp == " << *cp << "\n\n";
 
 	cout << "How large is a memory address? " << sizeof(dp) << endl << endl;
