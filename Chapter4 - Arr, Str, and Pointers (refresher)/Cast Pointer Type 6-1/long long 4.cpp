@@ -8,7 +8,6 @@ int main() {
 	cout << ", int = " << sizeof(int);
 	cout << ", char = " << sizeof(char) << endl;
 
-
 	double d;
 	double *dp;
 	long long *lp;
@@ -22,8 +21,6 @@ int main() {
 	cp = (char *)&d;
 
 	printf("dp == %p, lp == %p\nip == %p, cp == %p\n\n", dp, lp, ip, cp);
-
-
 	cout << "dp == " << dp << ", lp == " << lp << endl;
 	cout << "ip == " << ip << ", cp == " << cp << "\n\n";  // Print memory address of a string of characters.
 
@@ -31,8 +28,8 @@ int main() {
 	printf("*dp == %.20f, *lp == %lld, *ip == %d, *cp == %d\n", *dp, *lp, *ip, *cp);
 	cout << "*dp == " << *dp << ", *lp == " << *lp << ", *ip == " << *ip << ", *cp == " << *cp << "\n\n";
 
-	cout << "How large is a memory address? " << sizeof(dp) << endl << endl;
-	cout << dp << endl;
+	cout << "How large is a memory address? " << sizeof(dp) << endl;
+	cout << dp << endl << endl;
 
 	*ip = 4200;
 	printf("*dp == %.20f, *lp == %lld, *ip == %d, *cp == %d\n", *dp, *lp, *ip, *cp);
