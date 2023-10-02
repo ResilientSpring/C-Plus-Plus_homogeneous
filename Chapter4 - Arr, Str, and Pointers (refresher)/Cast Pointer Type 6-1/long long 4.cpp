@@ -16,7 +16,7 @@ int main() {
 	char *cp;
 
 	dp = &d;
-	cout << "How large is a memory address? " << sizeof(dp) << endl << endl;
+	cout << "\nHow large is a memory address? " << sizeof(dp) << " bytes." << endl << endl;
 	lp = (long long *)&d;
 	ip = (int *)&d;
 	cp = (char *)&d;
