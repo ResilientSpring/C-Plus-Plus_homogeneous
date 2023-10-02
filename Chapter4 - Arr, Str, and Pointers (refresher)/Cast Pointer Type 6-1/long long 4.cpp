@@ -33,7 +33,6 @@ int main() {
 
 	cout << "How large is a memory address? " << sizeof(dp) << endl << endl;
 	cout << dp << endl;
-	cout << dp++ << endl << endl;
 
 	*ip = 4200;
 	printf("*dp == %.20f, *lp == %lld, *ip == %d, *cp == %d\n", *dp, *lp, *ip, *cp);
