@@ -18,7 +18,7 @@ int main() {
 	{
 		throw derived;
 	}
-	catch (const std::exception &)
+	catch (B b)
 	{
 
 	}
