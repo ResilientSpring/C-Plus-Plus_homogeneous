@@ -28,11 +28,21 @@ int main() {
 
 	// len - 1 because although there are 14 characters, the 14th character is indexed at 13.
 
+
+	cout << endl;
+
+	cout << "start :" << (void *)&start;
+	cout << "  " << "end: " << (void *)&end << endl;
+
+
 	while (start < end)
 	{
-		cout.setf(ios::dec);
 
-		cout << "start: " << start << " |||| end: " << end << endl;
+		cout << endl;
+
+		cout << "start :" << (void *)&start;
+		cout << "  " << "end: " << (void *)&end << endl;
+
 
 		// swap chars
 		t = *start;
@@ -43,6 +53,9 @@ int main() {
 		start++;
 		end--;
 	}
+
+
+	cout << "Reversed: " << str << endl;
 
 }
 

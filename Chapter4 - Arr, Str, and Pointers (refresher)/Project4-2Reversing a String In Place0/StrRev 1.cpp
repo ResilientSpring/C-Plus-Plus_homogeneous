@@ -30,10 +30,6 @@ int main() {
 
 	while (start < end)
 	{
-		cout.setf(ios::dec);
-
-		cout << "start: " << start << " |||| end: " << end << endl;
-
 		// swap chars
 		t = *start;
 		*start = *end;
@@ -43,6 +39,9 @@ int main() {
 		start++;
 		end--;
 	}
+
+
+	cout << "Reversed: " << str << endl;
 
 }
 
