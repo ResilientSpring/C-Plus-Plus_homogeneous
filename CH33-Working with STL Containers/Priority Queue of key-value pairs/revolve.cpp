@@ -2,24 +2,26 @@
 #include <queue>
 #include <vector>
 #include <iostream>
+using namespace std;
 
 template<typename T> void print_queue(T &q) {
     while (!q.empty()) {
-        std::cout << q.top() << " ";
+        cout << q.top() << " ";
         q.pop();
     }
     std::cout << '\n';
 }
 
 int main() {
-    std::priority_queue<int> q;
+    
+    priority_queue<int> q;
 
     for (int n : {1, 8, 5, 6, 3, 4, 0, 9, 7, 2})
         q.push(n);
 
     print_queue(q);
 
-    std::priority_queue<int, std::vector<int>, std::greater<int> > q2;
+    priority_queue<int, vector<int>, greater<int> > q2;
 
     for (int n : {1, 8, 5, 6, 3, 4, 0, 9, 7, 2})
         q2.push(n);
@@ -28,7 +30,8 @@ int main() {
 
     // Using lambda to compare elements.
     auto cmp = [](int left, int right) { return (left ^ 1) < (right ^ 1); };
-    std::priority_queue<int, std::vector<int>, decltype(cmp)> q3(cmp);
+    
+    priority_queue<int, vector<int>, decltype(cmp)> q3(cmp);
 
     for (int n : {1, 8, 5, 6, 3, 4, 0, 9, 7, 2})
         q3.push(n);
