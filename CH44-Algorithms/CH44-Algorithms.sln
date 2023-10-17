@@ -115,6 +115,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "set_difference()", "set_dif
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "set_union()", "set_union()\set_union().vcxproj", "{FAE5EE49-1AA3-4B89-9203-6EC58594BCDB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Create and Manage a Heap", "Create and Manage a Heap\Create and Manage a Heap.vcxproj", "{988A86F0-8358-4968-8EE1-260B16913448}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -571,6 +573,14 @@ Global
 		{FAE5EE49-1AA3-4B89-9203-6EC58594BCDB}.Release|x64.Build.0 = Release|x64
 		{FAE5EE49-1AA3-4B89-9203-6EC58594BCDB}.Release|x86.ActiveCfg = Release|Win32
 		{FAE5EE49-1AA3-4B89-9203-6EC58594BCDB}.Release|x86.Build.0 = Release|Win32
+		{988A86F0-8358-4968-8EE1-260B16913448}.Debug|x64.ActiveCfg = Debug|x64
+		{988A86F0-8358-4968-8EE1-260B16913448}.Debug|x64.Build.0 = Debug|x64
+		{988A86F0-8358-4968-8EE1-260B16913448}.Debug|x86.ActiveCfg = Debug|Win32
+		{988A86F0-8358-4968-8EE1-260B16913448}.Debug|x86.Build.0 = Debug|Win32
+		{988A86F0-8358-4968-8EE1-260B16913448}.Release|x64.ActiveCfg = Release|x64
+		{988A86F0-8358-4968-8EE1-260B16913448}.Release|x64.Build.0 = Release|x64
+		{988A86F0-8358-4968-8EE1-260B16913448}.Release|x86.ActiveCfg = Release|Win32
+		{988A86F0-8358-4968-8EE1-260B16913448}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
