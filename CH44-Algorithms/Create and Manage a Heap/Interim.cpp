@@ -25,8 +25,7 @@ void show(const char *message, vector<char> vect) {
 	cout << message;
 
 	for (unsigned i = 0; i < vect.size(); ++i)
-	{
-
-	}
-
+		cout << vect[i] << " ";
+	
+	cout << "\n";
 }
