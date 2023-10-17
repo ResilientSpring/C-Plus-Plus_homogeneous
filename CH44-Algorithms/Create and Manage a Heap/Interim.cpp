@@ -14,4 +14,19 @@ int main() {
 		v.push_back('A' + i);
 	}
 
+
+
+}
+
+
+// Display the contents of a vector<char>
+void show(const char *message, vector<char> vect) {
+
+	cout << message;
+
+	for (unsigned i = 0; i < vect.size(); ++i)
+	{
+
+	}
+
 }
