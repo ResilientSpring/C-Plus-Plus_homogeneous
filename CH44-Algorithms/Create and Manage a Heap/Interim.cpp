@@ -38,6 +38,11 @@ int main() {
 
 	show("V after popping from heap: \n", v);
 	cout << endl;
+
+	// Sort the heap
+	sort_heap(v.begin(), v.end() - 1);
+
+	show("V after sorting the heap: \n", v);
 }
 
 
