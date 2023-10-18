@@ -27,6 +27,10 @@ int main() {
 	v.push_back('H');                // first, put H into vector.
 
 	push_heap(v.begin(), v.end());   // Now, push H onto heap.
+
+
+	show("v after pushing H onto heap: \n", v);
+	cout << endl;
 }
 
 
