@@ -40,6 +40,8 @@ int main() {
 	// Popping from a heap causes the first element to be moved to the end and then a new heap is constructed
 	// on the remaining (N-1) elements.
 
+	cout << endl;
+
 	// Sort the heap
 	sort_heap(v.begin(), v.end() - 1);
 
