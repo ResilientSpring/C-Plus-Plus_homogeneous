@@ -27,6 +27,9 @@ int main() {
 
 	v.push_back('H');                // Step1: put H into vector. Note that H is not part of the heap yet.
 
+	show("v before pushing H onto heap: \n", v);
+	cout << endl;
+
 	push_heap(v.begin(), v.end());   // Step2: Call push_heap() that puts the element at v.end() - 1 onto 
 	                                 //        the heap that previously started/spanned from 
 									 //        v.begin() to v.end() - 2.
@@ -46,6 +49,8 @@ int main() {
 	show("v after popping from heap: \n", v);
 	// Popping from a heap causes the first element to be moved to the end and then a new heap is constructed
 	// on the remaining (N-1) elements.
+
+	cout << endl;
 
 	// Sort the heap
 	sort_heap(v.begin(), v.end() - 1);
