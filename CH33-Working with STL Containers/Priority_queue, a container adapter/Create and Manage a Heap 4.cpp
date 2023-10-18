@@ -26,4 +26,9 @@ int main() {
 		priority_queue_of_char.pop();
 	}
 
+	// Well, I haven't found the way to better demonstrate "priority_queue, a container adapter, automatically 
+	// maintains the elements in the container in order of priority." quoted from at the end of
+	// the section [Create and Manage a Heap] in Chapter 4.
+	// 
+
 }
