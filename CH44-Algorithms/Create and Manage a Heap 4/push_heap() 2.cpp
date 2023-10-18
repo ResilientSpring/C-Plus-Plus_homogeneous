@@ -1,9 +1,10 @@
-// Demonstrate the heap algorithms.
+// Demo a heap where the top element (also called the first element) is the largest element 
+// from across the heap.
 
 /*
     Heap is useful in creating the priority queue in which  
     the highest priority element must be immediately available 
-	but a completely sorted heap is not required.
+	but a completely sorted queue is not required.
 
 */
 
