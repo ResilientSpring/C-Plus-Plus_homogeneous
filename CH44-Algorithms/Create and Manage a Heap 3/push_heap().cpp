@@ -34,6 +34,7 @@ int main() {
 	                                 //        push_heap(v.begin(), v.end()) is that the existing heap now
 	                                 //        now ends at v.end() - 1.
 
+
 	show("v after pushing H onto heap: \n", v);
 	cout << endl;
 
