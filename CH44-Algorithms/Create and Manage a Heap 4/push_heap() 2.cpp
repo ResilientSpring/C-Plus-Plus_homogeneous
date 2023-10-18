@@ -28,7 +28,7 @@ int main() {
 	show("v after building heap: \n", v);
 	cout << endl; // In a heap, the top element (also called the first element) is the largest element. [Note2]
 
-	// To push a new element onto the existing heap:
+	// To add a new element onto the existing heap:
 
 	v.push_back('H');                // Step1: put H into vector. Note that H is not part of the heap yet.
 
