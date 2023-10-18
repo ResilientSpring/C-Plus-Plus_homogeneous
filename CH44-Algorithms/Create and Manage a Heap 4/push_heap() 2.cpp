@@ -57,7 +57,7 @@ int main() {
 
 	cout << endl;
 
-	// Sort the heap
+	// Sort the heap into ascending order
 	sort_heap(v.begin(), v.end() - 1);
 
 	show("v after sorting the heap: \n", v);
