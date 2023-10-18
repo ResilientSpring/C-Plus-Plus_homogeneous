@@ -17,7 +17,7 @@ int main() {
 	priority_queue_of_char.push('D');
 	priority_queue_of_char.push('F');
 
-	cout << "Now, show the content of this priority queue: ";
+	cout << "Now, show the content of this priority queue: \n\n";
 
 	while (!priority_queue_of_char.empty())
 	{
