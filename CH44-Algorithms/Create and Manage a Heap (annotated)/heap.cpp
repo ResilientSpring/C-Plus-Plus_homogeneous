@@ -18,7 +18,7 @@ int main() {
 	cout << endl;
 
 	// Construct a heap.
-	make_heap(v.begin(), v.end());  // specify the range of elements to be made into a heap.
+	make_heap(v.begin(), v.end());  // specify the range of elements to be made into a heap. [Note1]
 
 	show("v after building heap: \n", v);
 	cout << endl;
@@ -44,3 +44,6 @@ void show(const char *message, vector<char> vect) {
 
 	cout << "\n";
 }
+
+// Notes:
+// 1. Container that supports random access can be used to "hold a heap".
