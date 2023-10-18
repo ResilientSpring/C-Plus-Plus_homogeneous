@@ -36,7 +36,7 @@ int main() {
 	cout << endl;
 
 	push_heap(v.begin(), v.end());   // Step2: Call push_heap() that puts the element at v.end() - 1 onto 
-									 //        the heap that previously started/spanned from 
+									 //        the existential heap that previously started/spanned from 
 									 //        v.begin() to v.end() - 2.
 									 //        In other words, the current heap ends at v.end() - 2 after 
 									 //        push_back() adds an element at v.end() - 1. The result of 
