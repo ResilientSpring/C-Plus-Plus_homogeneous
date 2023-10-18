@@ -1,5 +1,12 @@
 // Demonstrate the heap algorithms.
 
+/*
+    Heap is useful in creating the priority queue in which  
+    the highest priority element must be immediately available 
+	but a completely sorted heap is not required.
+
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
