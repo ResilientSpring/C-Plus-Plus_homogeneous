@@ -21,7 +21,7 @@ int main() {
 	make_heap(v.begin(), v.end());  // specify the range of elements to be made into a heap. [Note1]
 
 	show("v after building heap: \n", v);
-	cout << endl;
+	cout << endl; // In a heap, the top element (also called the first element) is the largest element. [Note2]
 
 	// To push H onto heap:
 	v.push_back('H');                // Step1: put H into vector.
@@ -48,3 +48,5 @@ void show(const char *message, vector<char> vect) {
 // Notes:
 // 
 // 1. Container that supports random access can be used to "hold a heap".
+// 
+// 2. Effect: The highest priority element is immediately available at top, in the sorted/unsorted heap.
