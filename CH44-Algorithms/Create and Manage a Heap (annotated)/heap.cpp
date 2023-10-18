@@ -23,10 +23,10 @@ int main() {
 	show("v after building heap: \n", v);
 	cout << endl;
 
-	// Push H onto heap.
-	v.push_back('H');                // first, put H into vector.
+	// To push H onto heap:
+	v.push_back('H');                // Step1: put H into vector.
 
-	push_heap(v.begin(), v.end());   // Now, push H onto heap.
+	push_heap(v.begin(), v.end());   // Step2: To add an element into the heap, call push_heap().
 
 
 	show("v after pushing H onto heap: \n", v);
