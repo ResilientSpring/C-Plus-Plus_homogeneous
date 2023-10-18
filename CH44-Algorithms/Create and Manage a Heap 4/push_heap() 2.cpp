@@ -58,7 +58,8 @@ int main() {
 	cout << endl;
 
 	// Sort the heap into ascending order
-	sort_heap(v.begin(), v.end() - 1);
+	sort_heap(v.begin(), v.end() - 1);    // v.end() - 1 b/c the element at the end of the container
+	                                      // was popped from the heap.
 
 	show("v after sorting the heap: \n", v);
 }
