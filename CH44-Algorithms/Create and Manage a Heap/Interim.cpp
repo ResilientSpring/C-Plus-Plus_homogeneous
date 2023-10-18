@@ -19,6 +19,9 @@ int main() {
 
 	// Construct a heap.
 	make_heap(v.begin(), v.end());
+
+	show("v after building heap: \n", v);
+	cout << endl;
 }
 
 
