@@ -17,6 +17,8 @@ int main() {
 	show("v before building heap: \n", v);
 	cout << endl;
 
+	// Construct a heap.
+	make_heap(v.begin(), v.end());
 }
 
 
