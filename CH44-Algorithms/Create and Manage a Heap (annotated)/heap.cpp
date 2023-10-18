@@ -46,4 +46,5 @@ void show(const char *message, vector<char> vect) {
 }
 
 // Notes:
+// 
 // 1. Container that supports random access can be used to "hold a heap".

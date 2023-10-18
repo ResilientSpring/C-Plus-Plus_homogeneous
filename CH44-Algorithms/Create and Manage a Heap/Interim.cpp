@@ -31,6 +31,13 @@ int main() {
 
 	show("v after pushing H onto heap: \n", v);
 	cout << endl;
+
+	
+	// Pop value from heap.
+	pop_heap(v.begin(), v.end());
+
+	show("V after popping from heap: \n", v);
+	cout << endl;
 }
 
 
