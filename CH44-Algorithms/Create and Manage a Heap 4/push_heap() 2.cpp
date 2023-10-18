@@ -48,7 +48,7 @@ int main() {
 	cout << endl;
 
 
-	// Pop value from heap.
+	// Pop the largest (also the first element) from a heap also moves it to the end of the container.
 	pop_heap(v.begin(), v.end());
 
 	show("v after popping from heap: \n", v);
