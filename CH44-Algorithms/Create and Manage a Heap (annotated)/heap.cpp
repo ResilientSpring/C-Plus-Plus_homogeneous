@@ -55,4 +55,4 @@ void show(const char *message, vector<char> vect) {
 // 
 // 1. Container that supports random access can be used to "hold a heap".
 // 
-// 2. Effect: The highest priority element is immediately available at top, in the unsorted heap.
+// 2. The highest priority element is immediately available at top, in the unsorted heap.
