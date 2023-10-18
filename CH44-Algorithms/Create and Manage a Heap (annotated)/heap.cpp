@@ -36,7 +36,14 @@ int main() {
 	// Pop value from heap.
 	pop_heap(v.begin(), v.end());
 
-	show("v after popping from heap: \n", v);
+	show("v after popping from heap: \n", v); 
+	// Popping from a heap causes the first element to be moved to the end and then a new heap is constructed
+	// on the remaining (N-1) elements.
+
+	// Sort the heap
+	sort_heap(v.begin(), v.end() - 1);
+
+	show("v after sorting the heap: \n", v);
 }
 
 
