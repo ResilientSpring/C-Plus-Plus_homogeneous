@@ -7,8 +7,23 @@ using namespace std;
 
 int main() {
 
-	priority_queue<char> priority_queue_of_char {'A', 'B', 'C', 'D', 'E'};
+//	priority_queue<char> priority_queue_of_char {'A', 'B', 'C', 'D', 'E'};
 
+	priority_queue<char> priority_queue_of_char;
+
+	priority_queue_of_char.push('A');
+	priority_queue_of_char.push('B');
+	priority_queue_of_char.push('C');
+	priority_queue_of_char.push('D');
 	priority_queue_of_char.push('F');
+
+	cout << "Now, show the content of this priority queue: ";
+
+	while (!priority_queue_of_char.empty())
+	{
+		cout << priority_queue_of_char.top() << endl;
+
+		priority_queue_of_char.pop();
+	}
 
 }
