@@ -22,6 +22,11 @@ int main() {
 
 	show("v after building heap: \n", v);
 	cout << endl;
+
+	// Push H onto heap.
+	v.push_back('H');                // first, put H into vector.
+
+	push_heap(v.begin(), v.end());   // Now, push H onto heap.
 }
 
 
