@@ -35,6 +35,8 @@ int main() {
 	
 	// Pop value from heap.
 	pop_heap(v.begin(), v.end());
+
+	show("v after popping from heap: \n", v);
 }
 
 
