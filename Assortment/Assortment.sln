@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.33927.289
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bubble sort", "Bubble sort\Bubble sort.vcxproj", "{ECA4E045-6576-4E17-9BD3-29F3172A74D9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bubble sort 2", "Bubble sort 2\Bubble sort 2.vcxproj", "{67136552-D0D1-47A3-9819-6644A9678A30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{ECA4E045-6576-4E17-9BD3-29F3172A74D9}.Release|x64.Build.0 = Release|x64
 		{ECA4E045-6576-4E17-9BD3-29F3172A74D9}.Release|x86.ActiveCfg = Release|Win32
 		{ECA4E045-6576-4E17-9BD3-29F3172A74D9}.Release|x86.Build.0 = Release|Win32
+		{67136552-D0D1-47A3-9819-6644A9678A30}.Debug|x64.ActiveCfg = Debug|x64
+		{67136552-D0D1-47A3-9819-6644A9678A30}.Debug|x64.Build.0 = Debug|x64
+		{67136552-D0D1-47A3-9819-6644A9678A30}.Debug|x86.ActiveCfg = Debug|Win32
+		{67136552-D0D1-47A3-9819-6644A9678A30}.Debug|x86.Build.0 = Debug|Win32
+		{67136552-D0D1-47A3-9819-6644A9678A30}.Release|x64.ActiveCfg = Release|x64
+		{67136552-D0D1-47A3-9819-6644A9678A30}.Release|x64.Build.0 = Release|x64
+		{67136552-D0D1-47A3-9819-6644A9678A30}.Release|x86.ActiveCfg = Release|Win32
+		{67136552-D0D1-47A3-9819-6644A9678A30}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
