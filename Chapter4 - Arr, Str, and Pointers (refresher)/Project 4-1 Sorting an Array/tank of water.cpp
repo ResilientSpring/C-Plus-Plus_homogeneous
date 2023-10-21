@@ -13,7 +13,7 @@ int main() {
 		cout << i << " ";
 
 	for(int i = 0; i < 10; i++)
-		for(int j = 10 - 1; j > i ; j--)  // j must be > i, otherwise j will be - 1, e.g., nums[-1]
+		for(int j = 10 - 1; j > i ; j--) // j must be > i, otherwise j will be - 1 after j--, e.g., nums[-1]
 			if (nums[j] < nums[j-1])
 			{
 				int k = nums[j];
