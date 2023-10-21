@@ -22,4 +22,8 @@ int main() {
 
 			}
 
+	cout << "Sorted array is: \n";
+	for (int i : nums)
+		cout << i << " ";
+
 }
