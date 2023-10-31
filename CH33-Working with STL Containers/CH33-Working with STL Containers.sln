@@ -67,6 +67,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Iterator + n", "Iterator + 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "List 3", "List 3\List 3.vcxproj", "{A8FC083F-0FC6-4102-A885-788BFD39BAB8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Priority Queue of key-value pairs", "Priority Queue of key-value pairs\Priority Queue of key-value pairs.vcxproj", "{1E3BA30D-F263-4B30-B183-45FD1217A9BB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Priority Queue of maps", "Priority Queue of maps\Priority Queue of maps.vcxproj", "{AD19367C-5E0E-4D90-A330-BAA97E5BFBB7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Priority queue (CppReference for C++11)", "Priority queue (CppReference for C++11)\Priority queue (CppReference for C++11).vcxproj", "{B92AE837-D9FE-4E90-B2C4-E70112AFA012}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Priority_queue, a container adapter", "Priority_queue, a container adapter\Priority_queue, a container adapter.vcxproj", "{B268B51A-8FA9-4BF7-99EF-05751BB19E20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -331,6 +339,38 @@ Global
 		{A8FC083F-0FC6-4102-A885-788BFD39BAB8}.Release|x64.Build.0 = Release|x64
 		{A8FC083F-0FC6-4102-A885-788BFD39BAB8}.Release|x86.ActiveCfg = Release|Win32
 		{A8FC083F-0FC6-4102-A885-788BFD39BAB8}.Release|x86.Build.0 = Release|Win32
+		{1E3BA30D-F263-4B30-B183-45FD1217A9BB}.Debug|x64.ActiveCfg = Debug|x64
+		{1E3BA30D-F263-4B30-B183-45FD1217A9BB}.Debug|x64.Build.0 = Debug|x64
+		{1E3BA30D-F263-4B30-B183-45FD1217A9BB}.Debug|x86.ActiveCfg = Debug|Win32
+		{1E3BA30D-F263-4B30-B183-45FD1217A9BB}.Debug|x86.Build.0 = Debug|Win32
+		{1E3BA30D-F263-4B30-B183-45FD1217A9BB}.Release|x64.ActiveCfg = Release|x64
+		{1E3BA30D-F263-4B30-B183-45FD1217A9BB}.Release|x64.Build.0 = Release|x64
+		{1E3BA30D-F263-4B30-B183-45FD1217A9BB}.Release|x86.ActiveCfg = Release|Win32
+		{1E3BA30D-F263-4B30-B183-45FD1217A9BB}.Release|x86.Build.0 = Release|Win32
+		{AD19367C-5E0E-4D90-A330-BAA97E5BFBB7}.Debug|x64.ActiveCfg = Debug|x64
+		{AD19367C-5E0E-4D90-A330-BAA97E5BFBB7}.Debug|x64.Build.0 = Debug|x64
+		{AD19367C-5E0E-4D90-A330-BAA97E5BFBB7}.Debug|x86.ActiveCfg = Debug|Win32
+		{AD19367C-5E0E-4D90-A330-BAA97E5BFBB7}.Debug|x86.Build.0 = Debug|Win32
+		{AD19367C-5E0E-4D90-A330-BAA97E5BFBB7}.Release|x64.ActiveCfg = Release|x64
+		{AD19367C-5E0E-4D90-A330-BAA97E5BFBB7}.Release|x64.Build.0 = Release|x64
+		{AD19367C-5E0E-4D90-A330-BAA97E5BFBB7}.Release|x86.ActiveCfg = Release|Win32
+		{AD19367C-5E0E-4D90-A330-BAA97E5BFBB7}.Release|x86.Build.0 = Release|Win32
+		{B92AE837-D9FE-4E90-B2C4-E70112AFA012}.Debug|x64.ActiveCfg = Debug|x64
+		{B92AE837-D9FE-4E90-B2C4-E70112AFA012}.Debug|x64.Build.0 = Debug|x64
+		{B92AE837-D9FE-4E90-B2C4-E70112AFA012}.Debug|x86.ActiveCfg = Debug|Win32
+		{B92AE837-D9FE-4E90-B2C4-E70112AFA012}.Debug|x86.Build.0 = Debug|Win32
+		{B92AE837-D9FE-4E90-B2C4-E70112AFA012}.Release|x64.ActiveCfg = Release|x64
+		{B92AE837-D9FE-4E90-B2C4-E70112AFA012}.Release|x64.Build.0 = Release|x64
+		{B92AE837-D9FE-4E90-B2C4-E70112AFA012}.Release|x86.ActiveCfg = Release|Win32
+		{B92AE837-D9FE-4E90-B2C4-E70112AFA012}.Release|x86.Build.0 = Release|Win32
+		{B268B51A-8FA9-4BF7-99EF-05751BB19E20}.Debug|x64.ActiveCfg = Debug|x64
+		{B268B51A-8FA9-4BF7-99EF-05751BB19E20}.Debug|x64.Build.0 = Debug|x64
+		{B268B51A-8FA9-4BF7-99EF-05751BB19E20}.Debug|x86.ActiveCfg = Debug|Win32
+		{B268B51A-8FA9-4BF7-99EF-05751BB19E20}.Debug|x86.Build.0 = Debug|Win32
+		{B268B51A-8FA9-4BF7-99EF-05751BB19E20}.Release|x64.ActiveCfg = Release|x64
+		{B268B51A-8FA9-4BF7-99EF-05751BB19E20}.Release|x64.Build.0 = Release|x64
+		{B268B51A-8FA9-4BF7-99EF-05751BB19E20}.Release|x86.ActiveCfg = Release|Win32
+		{B268B51A-8FA9-4BF7-99EF-05751BB19E20}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
