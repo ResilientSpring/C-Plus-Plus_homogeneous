@@ -15,6 +15,12 @@ int main() {
 	// In an assignment statement, the right-side value is converted to the type of the left-size variable.
 
 	ch = i; // line 1  High-order bits of the int variable i are lopped off, leaving ch with the lower 8 bits.
+	        //         
+	        //         If i were between -128 and +127, ch and i would have identical values.
+	        //
+			//         Otherwise, the value of ch would reflect only the lower-order bits of x.
+
+
 	i = f;  // line 2    
 	f = ch; // line 3
 	f = i;  // line 4
