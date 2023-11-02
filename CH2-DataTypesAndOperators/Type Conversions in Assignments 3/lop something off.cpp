@@ -14,9 +14,9 @@ int main() {
 
 	// In an assignment statement, the right-side value is converted to the type of the left-size variable.
 
-	ch = i;   // line 1    The high-order bits of the integer variable i are lopped off.
-	i = f;    // line 2    
-	f = ch;   // line 3
-	f = i;    // line 4
+	ch = i; // line 1  High-order bits of the int variable i are lopped off, leaving ch with the lower 8 bits.
+	i = f;  // line 2    
+	f = ch; // line 3
+	f = i;  // line 4
 
 }
