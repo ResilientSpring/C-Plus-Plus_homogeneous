@@ -5,6 +5,7 @@ int main() {
 
 	cout << "The size of a variable of int: " << sizeof(int) << endl;
 	cout << "The size of a variable of char: " << sizeof(char) << endl;
+	cout << "The size of a variable of float: " << sizeof(float) << endl;
 
 	int i;
 	char ch;
