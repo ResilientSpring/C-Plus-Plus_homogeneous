@@ -22,7 +22,7 @@ int main() {
 
 
 	i = f;  // line 2  i will receive only the non-fractional part of f.  
-	f = ch; // line 3
+	f = ch; // line 3  f will convert the 8-bit int stored in ch to the same value in floating-point format.
 	f = i;  // line 4
 
 }
