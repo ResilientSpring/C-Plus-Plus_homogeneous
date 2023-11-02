@@ -39,6 +39,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Type Conversion in Assignme
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Type Conversions in Assignments 3", "Type Conversions in Assignments 3\Type Conversions in Assignments 3.vcxproj", "{19EDEBF6-31DC-48B8-A0E0-65F5311490E9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Type Conversions in Assignments 4", "Type Conversions in Assignments 4\Type Conversions in Assignments 4.vcxproj", "{9DAB20FC-8E79-405A-99EF-A3662172A302}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -191,6 +193,14 @@ Global
 		{19EDEBF6-31DC-48B8-A0E0-65F5311490E9}.Release|x64.Build.0 = Release|x64
 		{19EDEBF6-31DC-48B8-A0E0-65F5311490E9}.Release|x86.ActiveCfg = Release|Win32
 		{19EDEBF6-31DC-48B8-A0E0-65F5311490E9}.Release|x86.Build.0 = Release|Win32
+		{9DAB20FC-8E79-405A-99EF-A3662172A302}.Debug|x64.ActiveCfg = Debug|x64
+		{9DAB20FC-8E79-405A-99EF-A3662172A302}.Debug|x64.Build.0 = Debug|x64
+		{9DAB20FC-8E79-405A-99EF-A3662172A302}.Debug|x86.ActiveCfg = Debug|Win32
+		{9DAB20FC-8E79-405A-99EF-A3662172A302}.Debug|x86.Build.0 = Debug|Win32
+		{9DAB20FC-8E79-405A-99EF-A3662172A302}.Release|x64.ActiveCfg = Release|x64
+		{9DAB20FC-8E79-405A-99EF-A3662172A302}.Release|x64.Build.0 = Release|x64
+		{9DAB20FC-8E79-405A-99EF-A3662172A302}.Release|x86.ActiveCfg = Release|Win32
+		{9DAB20FC-8E79-405A-99EF-A3662172A302}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
