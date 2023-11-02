@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dynamic Initialization", "D
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Initializing a Variable", "Initializing a Variable\Initializing a Variable.vcxproj", "{D77C5A92-49F6-47B1-A0B0-F7673B8B447A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Type Conversion in Assignments", "Type Conversion in Assignments\Type Conversion in Assignments.vcxproj", "{52C87736-7878-4D2B-A39B-235FF12A9765}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -161,6 +163,14 @@ Global
 		{D77C5A92-49F6-47B1-A0B0-F7673B8B447A}.Release|x64.Build.0 = Release|x64
 		{D77C5A92-49F6-47B1-A0B0-F7673B8B447A}.Release|x86.ActiveCfg = Release|Win32
 		{D77C5A92-49F6-47B1-A0B0-F7673B8B447A}.Release|x86.Build.0 = Release|Win32
+		{52C87736-7878-4D2B-A39B-235FF12A9765}.Debug|x64.ActiveCfg = Debug|x64
+		{52C87736-7878-4D2B-A39B-235FF12A9765}.Debug|x64.Build.0 = Debug|x64
+		{52C87736-7878-4D2B-A39B-235FF12A9765}.Debug|x86.ActiveCfg = Debug|Win32
+		{52C87736-7878-4D2B-A39B-235FF12A9765}.Debug|x86.Build.0 = Debug|Win32
+		{52C87736-7878-4D2B-A39B-235FF12A9765}.Release|x64.ActiveCfg = Release|x64
+		{52C87736-7878-4D2B-A39B-235FF12A9765}.Release|x64.Build.0 = Release|x64
+		{52C87736-7878-4D2B-A39B-235FF12A9765}.Release|x86.ActiveCfg = Release|Win32
+		{52C87736-7878-4D2B-A39B-235FF12A9765}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
