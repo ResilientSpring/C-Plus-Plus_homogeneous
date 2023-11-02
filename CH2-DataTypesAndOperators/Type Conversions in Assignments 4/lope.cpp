@@ -25,4 +25,7 @@ int main() {
 	f = ch; // line 3  f will convert the 8-bit int value stored in ch to the same value in float-point format.
 	f = i;  // line 4  What happens in line 3 also happens in line 4, except f will convert an int to float-point format.
 
+
+	cout << " i is " << i << endl;
+
 }
