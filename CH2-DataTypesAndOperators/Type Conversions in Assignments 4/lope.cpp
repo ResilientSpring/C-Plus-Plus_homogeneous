@@ -3,9 +3,9 @@ using namespace std;
 
 int main() {
 
-	cout << "The size of a variable of int: " << sizeof(int) << " byte(s)." << endl;
-	cout << "The size of a variable of char: " << sizeof(char) << " byte(s)." << endl;
-	cout << "The size of a variable of float: " << sizeof(float) << " byte(s)." << endl;
+	cout << "The size of a variable of an int: " << sizeof(int) << " byte(s)." << endl;
+	cout << "The size of a variable of a char: " << sizeof(char) << " byte(s)." << endl;
+	cout << "The size of a variable of a float: " << sizeof(float) << " byte(s)." << endl;
 
 	int i = 100;
 	char ch;
