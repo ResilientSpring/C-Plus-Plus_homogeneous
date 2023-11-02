@@ -21,7 +21,7 @@ int main() {
 			//         Otherwise, the value of ch would reflect only the lower-order bits of x.
 
 
-	i = f;  // line 2    
+	i = f;  // line 2  i will receive only the non-fractional part of f.  
 	f = ch; // line 3
 	f = i;  // line 4
 
