@@ -9,7 +9,7 @@ int main() {
 
 	int i = 100;
 	char ch;
-	float f = 3.6;
+	float f = 0.6;
 
 
 	// In an assignment statement, the right-side value is converted to the type of the left-size variable.
