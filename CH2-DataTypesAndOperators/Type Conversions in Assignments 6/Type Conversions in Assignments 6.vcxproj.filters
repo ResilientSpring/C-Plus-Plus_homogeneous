@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="lop off.cpp">
+    <ClCompile Include="lop off something.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
