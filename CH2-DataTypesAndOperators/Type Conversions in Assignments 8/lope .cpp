@@ -48,4 +48,26 @@ int main() {
 	cout << "ch is " << showpos << ch << endl;
 	cout << "f is " << showpos << f << endl;
 	cout << "d is " << showpos << d << endl;
+
+	cout << endl;
+
+	i = -123;
+	ch = i;
+	f = -3.6;
+	i = f;
+	f = ch;
+	f = i;
+	d = i;
+
+	cout << endl;
+
+	cout << "i is " << showpoint << i << endl;
+	cout << "ch is " << showpoint << ch << endl;
+	cout << "f is " << showpoint << f << endl;
+	cout << "d is " << showpoint << d << endl;
+
+	cout << endl;
+
+
+
 }
