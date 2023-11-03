@@ -26,6 +26,8 @@ int main() {
 	f = i;  // line 4  What happens in line 3 also happens in line 4, except f will convert an int to float-point format.
 
 
-	cout << " i is " << i << endl;
+	cout << "i is " << i << endl;
+	cout << "ch is " << ch << endl;
+	cout << "f is " << f << endl;
 
 }
