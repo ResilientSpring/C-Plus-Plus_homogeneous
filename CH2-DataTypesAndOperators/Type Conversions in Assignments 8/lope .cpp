@@ -68,6 +68,9 @@ int main() {
 
 	cout << endl;
 
-
+	cout << "i is " << showpos << i << endl;
+	cout << "ch is " << showpos << ch << endl;
+	cout << "f is " << showpos << f << endl;
+	cout << "d is " << showpos << d << endl;
 
 }
