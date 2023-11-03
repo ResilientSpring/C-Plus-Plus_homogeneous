@@ -35,8 +35,17 @@ int main() {
 	cout << "f is " << f << endl;
 	cout << "d is " << d << endl;
 
+	cout << endl;
+
 	cout << "i is " << showpoint << i << endl;
+	cout << "ch is " << showpoint << ch << endl;
 	cout << "f is " << showpoint << f << endl;
 	cout << "d is " << showpoint << d << endl;
 
+	cout << endl;
+
+	cout << "i is " << showpos << i << endl;
+	cout << "ch is " << showpos << ch << endl;
+	cout << "f is " << showpos << f << endl;
+	cout << "d is " << showpos << d << endl;
 }
