@@ -7,9 +7,9 @@ int main() {
 	cout << "The size of a variable of a char: " << sizeof(char) << " byte(s)." << endl;
 	cout << "The size of a variable of a float: " << sizeof(float) << " byte(s)." << endl;
 
-	int i = 100;
+	int i = 123;
 	char ch;
-	float f = 0.6;
+	float f = 3.6;
 
 
 	// In an assignment statement, the right-side value is converted to the type of the left-size variable.
