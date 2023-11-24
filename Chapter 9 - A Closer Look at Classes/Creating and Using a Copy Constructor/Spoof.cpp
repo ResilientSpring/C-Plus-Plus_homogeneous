@@ -22,7 +22,10 @@ public:
 
 	MyClass(const MyClass &ob) {
 
+		val = ob.val;
+		copynumber = ob.copynumber + 1;
 
+		cout << "Inside copy constructor.\n";
 	}
 
 };
