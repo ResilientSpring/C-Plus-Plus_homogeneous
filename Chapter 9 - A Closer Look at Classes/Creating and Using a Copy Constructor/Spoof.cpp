@@ -20,7 +20,7 @@ public:
 		cout << "Inside normal constructor\n";
 	}
 
-	MyClass() {
+	MyClass(const MyClass &ob) {
 
 
 	}
