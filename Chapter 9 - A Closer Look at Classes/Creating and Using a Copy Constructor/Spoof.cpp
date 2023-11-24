@@ -38,6 +38,10 @@ public:
 
 	}
 
+	int getval() {
+		return val;
+	}
+
 };
 
 
