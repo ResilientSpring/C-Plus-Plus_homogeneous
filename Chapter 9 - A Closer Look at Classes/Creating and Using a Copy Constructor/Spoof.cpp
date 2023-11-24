@@ -45,6 +45,13 @@ public:
 };
 
 
+void display(MyClass ob) {
+
+	cout << ob.getval() << endl;
+
+}
+
+
 int main() {
 
 }
