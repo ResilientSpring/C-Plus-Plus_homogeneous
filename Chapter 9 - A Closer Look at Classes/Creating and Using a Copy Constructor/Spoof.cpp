@@ -20,6 +20,7 @@ public:
 		cout << "Inside normal constructor\n";
 	}
 
+	// Copy constructor
 	MyClass(const MyClass &ob) {
 
 		val = ob.val;
