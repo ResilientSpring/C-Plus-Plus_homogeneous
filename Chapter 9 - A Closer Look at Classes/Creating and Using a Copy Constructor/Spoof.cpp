@@ -29,6 +29,15 @@ public:
 		cout << "Inside copy constructor.\n";
 	}
 
+	~MyClass() {
+
+		if (copynumber == 0)
+			cout << "Destructing original.\n";
+		else
+			cout << "Destructing copy " << copynumber << endl;
+
+	}
+
 };
 
 
