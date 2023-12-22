@@ -25,3 +25,16 @@ int main() {
 bool my_sort() {
 
 }
+
+template <class X>
+void show(const char* message, list<X> listing) {
+
+	cout << message << endl;
+
+	list<x>::iterator itr;
+
+	for (itr = listing.begin(); itr != listing.end(); itr++)
+		cout << *itr << " ";
+
+	cout << endl << endl;
+}
