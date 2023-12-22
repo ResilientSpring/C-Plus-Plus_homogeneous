@@ -2,6 +2,9 @@
 #include <list>
 using namespace std;
 
+template <class X>
+void show(const char* message, list<X> listing);
+
 int main() {
 
 	list<int>   list_num;
@@ -17,7 +20,7 @@ int main() {
 	list_char.push_back('1');
 	list_char.push_back('20');
 
-
+	show("Before default sort(): ", list_num);
 
 }
 
