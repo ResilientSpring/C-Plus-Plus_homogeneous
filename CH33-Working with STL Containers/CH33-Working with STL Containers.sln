@@ -77,6 +77,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Priority_queue, a container
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "List 4", "List 4\List 4.vcxproj", "{9076D4EC-5579-4D42-AD9B-044A2A51D706}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "List 5", "List 5\List 5.vcxproj", "{7589A38D-09A8-42B3-98F5-E2E9D9966BCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -381,6 +383,14 @@ Global
 		{9076D4EC-5579-4D42-AD9B-044A2A51D706}.Release|x64.Build.0 = Release|x64
 		{9076D4EC-5579-4D42-AD9B-044A2A51D706}.Release|x86.ActiveCfg = Release|Win32
 		{9076D4EC-5579-4D42-AD9B-044A2A51D706}.Release|x86.Build.0 = Release|Win32
+		{7589A38D-09A8-42B3-98F5-E2E9D9966BCA}.Debug|x64.ActiveCfg = Debug|x64
+		{7589A38D-09A8-42B3-98F5-E2E9D9966BCA}.Debug|x64.Build.0 = Debug|x64
+		{7589A38D-09A8-42B3-98F5-E2E9D9966BCA}.Debug|x86.ActiveCfg = Debug|Win32
+		{7589A38D-09A8-42B3-98F5-E2E9D9966BCA}.Debug|x86.Build.0 = Debug|Win32
+		{7589A38D-09A8-42B3-98F5-E2E9D9966BCA}.Release|x64.ActiveCfg = Release|x64
+		{7589A38D-09A8-42B3-98F5-E2E9D9966BCA}.Release|x64.Build.0 = Release|x64
+		{7589A38D-09A8-42B3-98F5-E2E9D9966BCA}.Release|x86.ActiveCfg = Release|Win32
+		{7589A38D-09A8-42B3-98F5-E2E9D9966BCA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
