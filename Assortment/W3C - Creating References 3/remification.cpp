@@ -8,5 +8,6 @@ int main() {
 	string &snack = food;
 
 	cout << food << "\n";
+	cout << snack << "\n";
 
 }
