@@ -46,4 +46,6 @@ int main() {
 	display(a);  // Pass a MyClass object to display() 
 
 	change(a);   // Pass a MyClass object to change()
+	cout << "Value of a after calling change(): ";
+	display(a);
 }
