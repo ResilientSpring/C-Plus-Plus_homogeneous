@@ -40,6 +40,10 @@ void change(MyClass ob) {      // change() also takes a MyClass object as a para
 
 int main() {
 
-	
+	MyClass a(10);
 
+	cout << "Value of a before calling change(): ";
+	display(a);  // Pass a MyClass object to display() 
+
+	change(a);   // Pass a MyClass object to change()
 }
