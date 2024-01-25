@@ -29,6 +29,12 @@ void display(MyClass object) {    // display() takes a MyClass object as a param
 }
 
 
+void change(MyClass ob) {      // change() also takes a MyClass object as a parameter.
+
+	ob.set_value(100);    // no effect on argument
+}
+
+
 int main() {
 
 	
