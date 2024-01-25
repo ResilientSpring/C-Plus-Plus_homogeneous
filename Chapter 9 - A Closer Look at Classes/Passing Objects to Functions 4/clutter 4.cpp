@@ -24,6 +24,7 @@ public:
 
 void display(MyClass object) {    // display() takes a MyClass object as a parameter.
 
+	cout << object.get_value() << "\n";
 
 }
 
