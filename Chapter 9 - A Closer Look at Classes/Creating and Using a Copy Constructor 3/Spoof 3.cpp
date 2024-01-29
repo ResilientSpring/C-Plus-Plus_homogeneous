@@ -20,7 +20,7 @@ public:
 		cout << "Inside normal constructor\n";
 	}
 
-	// Copy constructor
+	// Copy constructor Here, obj is a reference to an object that is being used to initialize another object.
 	MyClass(const MyClass &obj) {
 
 		val = obj.val;
