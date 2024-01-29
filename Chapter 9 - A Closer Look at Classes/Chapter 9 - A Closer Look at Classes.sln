@@ -51,6 +51,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assigning Objects 2", "Assi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Passing Objects to Functions 4", "Passing Objects to Functions 4\Passing Objects to Functions 4.vcxproj", "{26FE05D7-3FD5-4539-961E-590C3008C708}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Creating and Using a Copy Constructor 3", "Creating and Using a Copy Constructor 3\Creating and Using a Copy Constructor 3.vcxproj", "{84D34EE7-3B59-4530-9664-B07C429D9845}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -251,6 +253,14 @@ Global
 		{26FE05D7-3FD5-4539-961E-590C3008C708}.Release|x64.Build.0 = Release|x64
 		{26FE05D7-3FD5-4539-961E-590C3008C708}.Release|x86.ActiveCfg = Release|Win32
 		{26FE05D7-3FD5-4539-961E-590C3008C708}.Release|x86.Build.0 = Release|Win32
+		{84D34EE7-3B59-4530-9664-B07C429D9845}.Debug|x64.ActiveCfg = Debug|x64
+		{84D34EE7-3B59-4530-9664-B07C429D9845}.Debug|x64.Build.0 = Debug|x64
+		{84D34EE7-3B59-4530-9664-B07C429D9845}.Debug|x86.ActiveCfg = Debug|Win32
+		{84D34EE7-3B59-4530-9664-B07C429D9845}.Debug|x86.Build.0 = Debug|Win32
+		{84D34EE7-3B59-4530-9664-B07C429D9845}.Release|x64.ActiveCfg = Release|x64
+		{84D34EE7-3B59-4530-9664-B07C429D9845}.Release|x64.Build.0 = Release|x64
+		{84D34EE7-3B59-4530-9664-B07C429D9845}.Release|x86.ActiveCfg = Release|Win32
+		{84D34EE7-3B59-4530-9664-B07C429D9845}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
