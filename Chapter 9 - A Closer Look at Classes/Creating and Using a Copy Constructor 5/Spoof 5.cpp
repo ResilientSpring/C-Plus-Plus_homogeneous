@@ -34,7 +34,7 @@ public:
 		if (copynumber == 0)
 			cout << "Destructing original.\n";
 		else
-			cout << "Destructing copy " << copynumber << endl;
+			cout << "Destructing copy #" << copynumber << endl;
 
 	}
 
@@ -56,10 +56,10 @@ int main() {
 
 	MyClass a(10);
 
-	cout << a.getval();
+	cout << a.getval() << endl;
 
 	MyClass b = a;
 
-	cout << b.getval();
+	cout << b.getval() << endl;
 
 }
