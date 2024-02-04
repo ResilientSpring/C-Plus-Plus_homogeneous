@@ -30,4 +30,6 @@ void swap(int& x, int& y) {
 	temp = x;
 	x = y;     // Now, the exchange takes place automatically through the references.
 	y = temp;
+
+	cout << *x << endl;
 }
