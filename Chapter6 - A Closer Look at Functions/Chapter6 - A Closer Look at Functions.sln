@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Returning References 2", "R
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Returning References 3", "Returning References 3\Returning References 3.vcxproj", "{D5D8845A-8972-4E4A-8932-B0DC72CBBDFC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reference Parameter for Swap() 3", "Reference Parameter for Swap() 3\Reference Parameter for Swap() 3.vcxproj", "{3237EACC-9382-4C34-B7E7-7BC7E8D09A07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -161,6 +163,14 @@ Global
 		{D5D8845A-8972-4E4A-8932-B0DC72CBBDFC}.Release|x64.Build.0 = Release|x64
 		{D5D8845A-8972-4E4A-8932-B0DC72CBBDFC}.Release|x86.ActiveCfg = Release|Win32
 		{D5D8845A-8972-4E4A-8932-B0DC72CBBDFC}.Release|x86.Build.0 = Release|Win32
+		{3237EACC-9382-4C34-B7E7-7BC7E8D09A07}.Debug|x64.ActiveCfg = Debug|x64
+		{3237EACC-9382-4C34-B7E7-7BC7E8D09A07}.Debug|x64.Build.0 = Debug|x64
+		{3237EACC-9382-4C34-B7E7-7BC7E8D09A07}.Debug|x86.ActiveCfg = Debug|Win32
+		{3237EACC-9382-4C34-B7E7-7BC7E8D09A07}.Debug|x86.Build.0 = Debug|Win32
+		{3237EACC-9382-4C34-B7E7-7BC7E8D09A07}.Release|x64.ActiveCfg = Release|x64
+		{3237EACC-9382-4C34-B7E7-7BC7E8D09A07}.Release|x64.Build.0 = Release|x64
+		{3237EACC-9382-4C34-B7E7-7BC7E8D09A07}.Release|x86.ActiveCfg = Release|Win32
+		{3237EACC-9382-4C34-B7E7-7BC7E8D09A07}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
