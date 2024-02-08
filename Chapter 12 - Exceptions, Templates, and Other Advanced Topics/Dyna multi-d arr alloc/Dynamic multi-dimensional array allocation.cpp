@@ -11,6 +11,14 @@ int main() {
 
 	cout << "Value of pvalue: " << *pvalue << endl;
 
+	char* pointer_value;
+
+	pointer_value = new char[20];
+
+	delete[] pointer_value;  // Without this line, pointer_value cannot be reused by others.
+
+	double** pointer_value;  // Thanks to delete[] pointer_value, this name can be reused by others.
+
 
 }
 
