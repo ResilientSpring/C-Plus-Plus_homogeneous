@@ -16,14 +16,14 @@ using namespace std;
 void read(string aag);
 
 // v: starting node; *visited: array of visited; &Stack: graph
-void Depth_First_Search(int v, bool *visited, stack<int> &Stack);
-void Topological_sort(stack<int> &Stack);
-void Topological_sort_2(stack<int> &Stack);
+void Depth_First_Search(int v, bool* visited, stack<int>& Stack);
+void Topological_sort(stack<int>& Stack);
+void Topological_sort_2(stack<int>& Stack);
 
 // v: starting node; *visited: array of visited; &Queue: nodes in DFS order; *tree_inv: graph
-void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv);
-void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int> *tree_inv);
-void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<int> *tree_inv);
+void Inverse_Depth_First_Search(int v, bool* visited, queue<int>& Queue, vector<int>* tree_inv);
+void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int>* tree_inv);
+void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<int>* tree_inv);
 void dismantle_forest_to_trees(stack<int> &Stack);
 void dismantle_forest_to_trees_2(stack<int> &Stack);
 void dismantle_forest_to_trees_3(stack<int> &Stack);
@@ -53,8 +53,8 @@ set<int> primary_inputs;
 set<int> latches;
 set<int> primary_outputs;
 
-list<int> *adjacency_list_of_network;
-list<int> *inverse_adjacency_list_of_network = NULL;
+list<int>* adjacency_list_of_network;
+list<int>* inverse_adjacency_list_of_network = NULL;
 list<int> num_of_fanins_of_each_LUT = {};
 list<int> lower_than_average, equal_to_or_higher_than_average, higher_than_average;
 
@@ -88,8 +88,8 @@ public:
 	int level;
 	int and_or_inv;
 
-	vertex *first = NULL;
-	vertex *second = NULL;
+	vertex* first = NULL;
+	vertex* second = NULL;
 
 } Look_Up_Table;
 
@@ -190,7 +190,7 @@ void read(string aag) {
 
 }
 
-void Depth_First_Search(int v, bool *visited, stack<int> &Stack) {
+void Depth_First_Search(int v, bool* visited, stack<int>& Stack) {
 
 	// Mark the current node as visited.
 	visited[v] = true;
@@ -209,7 +209,7 @@ void Depth_First_Search(int v, bool *visited, stack<int> &Stack) {
 }
 
 // DFS from primary output to primary input
-void Inverse_Depth_First_Search(int v, bool *visited, queue<int> &Queue, vector<int> *tree_inv) {
+void Inverse_Depth_First_Search(int v, bool* visited, queue<int>& Queue, vector<int>* tree_inv) {
 
 	// Mark the current node as visited.
 	visited[v] = true;
@@ -247,10 +247,10 @@ void Topological_sort() {   // [12]
 */
 
 
-void Topological_sort(stack<int> &Stack) {   // [12][2] [Note2]
+void Topological_sort(stack<int>& Stack) {   // [12][2] [Note2]
 
 	// Mark all vertices as not visited.
-	bool *visited = new bool[2 * total_number_of_nodes + 1];
+	bool* visited = new bool[2 * total_number_of_nodes + 1];
 
 	for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
 		visited[i] = false;
@@ -261,10 +261,10 @@ void Topological_sort(stack<int> &Stack) {   // [12][2] [Note2]
 }
 
 
-void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
+void Topological_sort_2(stack<int>& Stack) {   // [12][3] [Note2]
 
 	// Mark all vertices as not visited.
-	bool *visited = new bool[2 * total_number_of_nodes + 1];
+	bool* visited = new bool[2 * total_number_of_nodes + 1];
 
 	for (int i = 0; i <= 2 * total_number_of_nodes + 1; i++)
 		visited[i] = false;
@@ -276,9 +276,9 @@ void Topological_sort_2(stack<int> &Stack) {   // [12][3] [Note2]
 
 
 // Topological srot starting from primary outputs to primary inputs.
-void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int> *tree_inv) {
+void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int>* tree_inv) {
 
-	bool *visited = new bool[2 * total_number_of_nodes + 1];
+	bool* visited = new bool[2 * total_number_of_nodes + 1];
 
 	for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
 		visited[i] = false;
@@ -294,9 +294,9 @@ void converse_topological_sort(int node, queue<int> tree_sort_order, vector<int>
 }
 
 // Topological srot starting from primary outputs to primary inputs.
-void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<int> *tree_inv) {
+void converse_topological_sort_2(int node, queue<int> tree_sort_order, vector<int>* tree_inv) {
 
-	bool *visited = new bool[2 * total_number_of_nodes + 1];
+	bool* visited = new bool[2 * total_number_of_nodes + 1];
 
 	for (int i = 0; i <= 2 * total_number_of_nodes + 1; i++)
 		visited[i] = false;
@@ -333,14 +333,14 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 		// 
 		//	vector<int> tree_inv[total_number_of_nodes];
 
-		vector<int> *tree_inv;
+		vector<int>* tree_inv;
 		tree_inv = new vector<int>[2 * total_number_of_nodes + 1];
 
 		queue<int> tree_sort_order;
 
 
 		// Topological sort starting from primary outputs to primary inputs.
-		bool *visited = new bool[2 * total_number_of_nodes + 1];
+		bool* visited = new bool[2 * total_number_of_nodes + 1];
 
 		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
 			visited[i] = false;
@@ -362,7 +362,7 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 
 // Each node in the tree can be connected to many children (depending on the type of tree), 
 // but must be connected to exactly one parent. [17]
-void dismantle_forest_to_trees_2(stack<int> &Stack) {
+void dismantle_forest_to_trees_2(stack<int>& Stack) {
 
 	while (!Stack.empty())
 	{
@@ -378,12 +378,12 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 			continue;
 
 		//	vector<int> tree_inv[total_number_of_nodes];
-		vector<int> *tree_inv = new vector<int>[2 * total_number_of_nodes + 1];
+		vector<int>* tree_inv = new vector<int>[2 * total_number_of_nodes + 1];
 
 		queue<int> tree_sort_order;
 
 		// Topological srot starting from primary outputs to primary inputs.
-		bool *visited = new bool[2 * total_number_of_nodes + 1];
+		bool* visited = new bool[2 * total_number_of_nodes + 1];
 
 		for (int i = 0; i <= 2 * total_number_of_nodes + 1; i++)
 			visited[i] = false;
@@ -400,7 +400,7 @@ void dismantle_forest_to_trees_2(stack<int> &Stack) {
 }
 
 
-void dismantle_forest_to_trees_3(stack<int> &Stack) {
+void dismantle_forest_to_trees_3(stack<int>& Stack) {
 
 	while (!Stack.empty())
 	{
@@ -419,7 +419,7 @@ void dismantle_forest_to_trees_3(stack<int> &Stack) {
 		// 
 		//	vector<int> tree_inv[total_number_of_nodes];
 
-		vector<int> *tree_inv;
+		vector<int>* tree_inv;
 		tree_inv = new vector<int>[2 * total_number_of_nodes + 1];
 
 		queue<int> tree_sort_order;
@@ -432,7 +432,7 @@ void dismantle_forest_to_trees_3(stack<int> &Stack) {
 }
 
 
-void dismantle_forest_to_trees_4(stack<int> &Stack) {
+void dismantle_forest_to_trees_4(stack<int>& Stack) {
 
 	while (!Stack.empty())
 	{
@@ -448,7 +448,7 @@ void dismantle_forest_to_trees_4(stack<int> &Stack) {
 			continue;
 
 		//	vector<int> tree_inv[total_number_of_nodes];
-		vector<int> *tree_inv = new vector<int>[2 * total_number_of_nodes + 1];
+		vector<int>* tree_inv = new vector<int>[2 * total_number_of_nodes + 1];
 
 		queue<int> tree_sort_order;
 
@@ -467,7 +467,7 @@ void mapper() {
 	for (int i = 0; i < number_of_trees; i++)
 	{
 
-		Look_Up_Table *LUTs = new Look_Up_Table[2 * total_number_of_nodes + 1];
+		Look_Up_Table* LUTs = new Look_Up_Table[2 * total_number_of_nodes + 1];
 
 
 		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++) {
@@ -488,7 +488,7 @@ void mapper1() {
 	for (int i = 0; i < number_of_trees; i++)
 	{
 
-		Look_Up_Table **LUTs = new Look_Up_Table * [2 * total_number_of_nodes + 1];
+		Look_Up_Table** LUTs = new Look_Up_Table*  [2 * total_number_of_nodes + 1];
 
 
 		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
@@ -499,7 +499,7 @@ void mapper1() {
 		queue<int> Queue = topologically_sorted_nodes_in_a_tree[i];
 		//		queue<int> *Queue = &trees_topologically_sorted[i];
 
-		vector<int> *tree_inv = trees_inverse[i];  // tree_inv is declared as an array of int vector (trees).
+		vector<int>* tree_inv = trees_inverse[i];  // tree_inv is declared as an array of int vector (trees).
 //		vector<int> tree_inverted = trees_inverse[i];
 
 		while (!Queue.empty())
@@ -526,8 +526,8 @@ void mapper1() {
 
 			//////////////////
 
-			Look_Up_Table *fan_in_1_LUT = LUTs[fan_in_1];
-			Look_Up_Table *fan_in_2_LUT = LUTs[fan_in_2];
+			Look_Up_Table* fan_in_1_LUT = LUTs[fan_in_1];
+			Look_Up_Table* fan_in_2_LUT = LUTs[fan_in_2];
 
 			//////////////////
 
@@ -553,7 +553,7 @@ void mapper1() {
 			// Greedy mapping
 			if (number_of_inputs[0] + number_of_inputs[1] <= K)
 			{
-				Look_Up_Table *new_LUT = new Look_Up_Table;
+				Look_Up_Table* new_LUT = new Look_Up_Table;
 				new_LUT->in_use = true;
 				new_LUT->fanins = fan_in_1_LUT->fanins;
 				new_LUT->fanins.insert(new_LUT->fanins.end(), fan_in_2_LUT->fanins.begin(), fan_in_2_LUT->fanins.end());
@@ -568,7 +568,7 @@ void mapper1() {
 				{
 					if (number_of_inputs[0] + 1 <= K)
 					{
-						Look_Up_Table *new_LUT = new Look_Up_Table;
+						Look_Up_Table* new_LUT = new Look_Up_Table;
 						new_LUT->in_use = true;
 						new_LUT->fanins = fan_in_1_LUT->fanins;
 						new_LUT->fanins.push_back(fan_in_2);
@@ -579,7 +579,7 @@ void mapper1() {
 					}
 					else
 					{
-						Look_Up_Table *new_LUT = new Look_Up_Table;
+						Look_Up_Table* new_LUT = new Look_Up_Table;
 						new_LUT->in_use = true;
 						new_LUT->fanins.push_back(fan_in_1);
 						new_LUT->fanins.push_back(fan_in_2);
@@ -592,7 +592,7 @@ void mapper1() {
 				{
 					if (number_of_inputs[1] + 1 <= K)
 					{
-						Look_Up_Table *new_LUT = new Look_Up_Table;
+						Look_Up_Table* new_LUT = new Look_Up_Table;
 						new_LUT->in_use = true;
 						new_LUT->fanins = fan_in_2_LUT->fanins;
 						new_LUT->fanins.push_back(fan_in_1);
@@ -603,7 +603,7 @@ void mapper1() {
 					}
 					else
 					{
-						Look_Up_Table *new_LUT = new Look_Up_Table;
+						Look_Up_Table* new_LUT = new Look_Up_Table;
 						new_LUT->in_use = true;
 						new_LUT->fanins.push_back(fan_in_1);
 						new_LUT->fanins.push_back(fan_in_2);
@@ -627,7 +627,7 @@ void mapper2() {
 	for (int i = 0; i < number_of_trees; i++)
 	{
 
-		Look_Up_Table *LUTs = new Look_Up_Table[2 * total_number_of_nodes + 1];
+		Look_Up_Table* LUTs = new Look_Up_Table[2 * total_number_of_nodes + 1];
 
 
 	}
@@ -642,7 +642,7 @@ void mapper3() {
 	for (int i = 0; i < number_of_trees; i++)
 	{
 
-		Look_Up_Table **LUTs = new Look_Up_Table * [2 * total_number_of_nodes + 1];
+		Look_Up_Table** LUTs = new Look_Up_Table*  [2 * total_number_of_nodes + 1];
 
 
 		for (int i = 0; i <= 2 * total_number_of_nodes; i++)
@@ -651,7 +651,7 @@ void mapper3() {
 
 		queue<int> Queue = topologically_sorted_nodes_in_a_tree[i];
 		//		queue<int> *Queue = &trees_topologically_sorted[i];
-		vector<int> *tree_inv = trees_inverse[i];
+		vector<int>* tree_inv = trees_inverse[i];
 
 		while (Queue.empty() == false)
 		{
@@ -660,7 +660,7 @@ void mapper3() {
 
 			if (tree_inv[node].empty())   // if the node is a primary input, i.e. a node without fanouts.
 			{
-				Look_Up_Table *dummy_LUT = new Look_Up_Table();
+				Look_Up_Table* dummy_LUT = new Look_Up_Table();
 				dummy_LUT->in_use = true;
 				dummy_LUT->fanins.push_back(node);
 				dummy_LUT->fanout = node;
@@ -677,8 +677,8 @@ void mapper3() {
 
 			//////////////////
 
-			Look_Up_Table *fan_in_1_LUT = LUTs[fan_in_1];
-			Look_Up_Table *fan_in_2_LUT = LUTs[fan_in_2];
+			Look_Up_Table* fan_in_1_LUT = LUTs[fan_in_1];
+			Look_Up_Table* fan_in_2_LUT = LUTs[fan_in_2];
 
 			//////////////////
 
@@ -700,7 +700,7 @@ void mapper3() {
 			// Greedy mapping
 			if (number_of_inputs[0] + number_of_inputs[1] <= K)
 			{
-				Look_Up_Table *new_LUT = new Look_Up_Table;
+				Look_Up_Table* new_LUT = new Look_Up_Table;
 				new_LUT->in_use = true;
 				new_LUT->fanins = fan_in_1_LUT->fanins;
 				new_LUT->fanins.insert(new_LUT->fanins.end(), fan_in_2_LUT->fanins.begin(), fan_in_2_LUT->fanins.end());
@@ -715,7 +715,7 @@ void mapper3() {
 				{
 					if (number_of_inputs[0] + 1 <= K)
 					{
-						Look_Up_Table *new_LUT = new Look_Up_Table;
+						Look_Up_Table* new_LUT = new Look_Up_Table;
 						new_LUT->in_use = true;
 						new_LUT->fanins = fan_in_1_LUT->fanins;
 						new_LUT->fanins.push_back(fan_in_2);
@@ -726,7 +726,7 @@ void mapper3() {
 					}
 					else
 					{
-						Look_Up_Table *new_LUT = new Look_Up_Table;
+						Look_Up_Table* new_LUT = new Look_Up_Table;
 						new_LUT->in_use = true;
 						new_LUT->fanins.push_back(fan_in_1);
 						new_LUT->fanins.push_back(fan_in_2);
@@ -739,7 +739,7 @@ void mapper3() {
 				{
 					if (number_of_inputs[1] + 1 <= K)
 					{
-						Look_Up_Table *new_LUT = new Look_Up_Table;
+						Look_Up_Table* new_LUT = new Look_Up_Table;
 						new_LUT->in_use = true;
 						new_LUT->fanins = fan_in_2_LUT->fanins;
 						new_LUT->fanins.push_back(fan_in_1);
