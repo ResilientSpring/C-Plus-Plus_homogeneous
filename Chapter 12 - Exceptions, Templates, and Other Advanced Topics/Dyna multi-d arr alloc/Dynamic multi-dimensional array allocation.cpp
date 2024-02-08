@@ -15,11 +15,11 @@ int main() {
 
 	pointer_value = new char[20];
 
-	delete[] pointer_value;  // Without this line, pointer_value cannot be reused by others.
+	delete[] pointer_value; 
 
-	double** pointer_value;  // Thanks to delete[] pointer_value, this name can be reused by others.
+	double** value_of_pointer;
 
-	pointer_value = new double[3][4];
+	value_of_pointer = new double[3][4];
 
 }
 
