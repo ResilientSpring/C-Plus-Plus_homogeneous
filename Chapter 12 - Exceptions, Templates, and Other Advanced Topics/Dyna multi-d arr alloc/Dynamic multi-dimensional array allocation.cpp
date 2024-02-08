@@ -19,6 +19,7 @@ int main() {
 
 	double** pointer_value;  // Thanks to delete[] pointer_value, this name can be reused by others.
 
+	pointer_value = new double[3][4];
 
 }
 
