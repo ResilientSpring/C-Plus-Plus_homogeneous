@@ -187,6 +187,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bin loaded 17-1", "Bin load
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bin loaded 18-2", "Bin loaded 18-2\Bin loaded 18-2.vcxproj", "{4262BD78-2F4B-4854-9072-9A2A0C040A9F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bin loaded 18-3", "Bin loaded 18-3\Bin loaded 18-3.vcxproj", "{5CF62BC8-CA65-4CF0-8317-730DF48681FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -1303,6 +1305,18 @@ Global
 		{4262BD78-2F4B-4854-9072-9A2A0C040A9F}.Release|x64.Build.0 = Release|x64
 		{4262BD78-2F4B-4854-9072-9A2A0C040A9F}.Release|x86.ActiveCfg = Release|Win32
 		{4262BD78-2F4B-4854-9072-9A2A0C040A9F}.Release|x86.Build.0 = Release|Win32
+		{5CF62BC8-CA65-4CF0-8317-730DF48681FF}.Debug|ARM.ActiveCfg = Debug|Win32
+		{5CF62BC8-CA65-4CF0-8317-730DF48681FF}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{5CF62BC8-CA65-4CF0-8317-730DF48681FF}.Debug|x64.ActiveCfg = Debug|x64
+		{5CF62BC8-CA65-4CF0-8317-730DF48681FF}.Debug|x64.Build.0 = Debug|x64
+		{5CF62BC8-CA65-4CF0-8317-730DF48681FF}.Debug|x86.ActiveCfg = Debug|Win32
+		{5CF62BC8-CA65-4CF0-8317-730DF48681FF}.Debug|x86.Build.0 = Debug|Win32
+		{5CF62BC8-CA65-4CF0-8317-730DF48681FF}.Release|ARM.ActiveCfg = Release|Win32
+		{5CF62BC8-CA65-4CF0-8317-730DF48681FF}.Release|ARM64.ActiveCfg = Release|Win32
+		{5CF62BC8-CA65-4CF0-8317-730DF48681FF}.Release|x64.ActiveCfg = Release|x64
+		{5CF62BC8-CA65-4CF0-8317-730DF48681FF}.Release|x64.Build.0 = Release|x64
+		{5CF62BC8-CA65-4CF0-8317-730DF48681FF}.Release|x86.ActiveCfg = Release|Win32
+		{5CF62BC8-CA65-4CF0-8317-730DF48681FF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
