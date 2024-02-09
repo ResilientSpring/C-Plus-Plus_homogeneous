@@ -487,7 +487,7 @@ void mapper1() {
 
 	for (int i = 0; i < number_of_trees; i++)
 	{
-
+		// Dynamically declare a 2D array using an array of pointers (to arrays).[22][23][24]
 		Look_Up_Table** LUTs = new Look_Up_Table*  [2 * total_number_of_nodes + 1];
 
 
@@ -947,6 +947,9 @@ bool comparison(int a) {
 * 19. https://stackoverflow.com/questions/30869987/topological-order-using-bfs
 * 20. https://stackoverflow.com/questions/25229624/using-bfs-for-topological-sort
 * 21. <Advanced Topics in Java> $ 3.13 Arrays vs. Linked Lists
+* 22. https://stackoverflow.com/a/936702/
+* 23. https://stackoverflow.com/a/29375830/
+* 24. https://www.geeksforgeeks.org/how-to-declare-a-2d-array-dynamically-in-c-using-new-operator/
 
 */
 
