@@ -487,7 +487,7 @@ void mapper1() {
 
 	for (int i = 0; i < number_of_trees; i++)
 	{
-		// Dynamically declare a 2D array.[22][23][24]
+		// Dynamically declare a 2D array using an array of pointers (to arrays).[22][23][24]
 		Look_Up_Table** LUTs = new Look_Up_Table*  [2 * total_number_of_nodes + 1];
 
 
