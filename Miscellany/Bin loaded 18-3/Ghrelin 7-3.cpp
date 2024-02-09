@@ -488,7 +488,7 @@ void mapper1() {
 	for (int i = 0; i < number_of_trees; i++)
 	{
 
-		Look_Up_Table** LUTs = new Look_Up_Table * [2 * total_number_of_nodes + 1];
+		Look_Up_Table** LUTs = new Look_Up_Table*  [2 * total_number_of_nodes + 1];
 
 
 		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
@@ -642,7 +642,7 @@ void mapper3() {
 	for (int i = 0; i < number_of_trees; i++)
 	{
 
-		Look_Up_Table** LUTs = new Look_Up_Table * [2 * total_number_of_nodes + 1];
+		Look_Up_Table** LUTs = new Look_Up_Table*  [2 * total_number_of_nodes + 1];
 
 
 		for (int i = 0; i <= 2 * total_number_of_nodes; i++)
