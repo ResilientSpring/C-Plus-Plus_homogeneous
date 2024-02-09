@@ -772,7 +772,7 @@ void Output(string output_file) {
 
 	output_stream.open(output_file);
 
-	for (auto **LUTs : trees_LUTs) {
+	for (auto** LUTs : trees_LUTs) {
 
 		for (int i = 0; i < 2 * total_number_of_nodes + 1; i++)
 		{
@@ -800,7 +800,7 @@ void Output2(string output_file) {
 
 	output_stream.open(output_file);
 
-	for (auto **LUTs : trees_LUTs) {
+	for (auto** LUTs : trees_LUTs) {
 
 		for (int i = 1; i <= 2 * total_number_of_nodes + 1; i++)
 		{
