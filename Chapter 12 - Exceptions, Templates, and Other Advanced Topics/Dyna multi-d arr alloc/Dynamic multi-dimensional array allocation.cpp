@@ -21,6 +21,13 @@ int main() {
 
 	value_of_pointer = new double[3][4];
 
+	
+
+
+	double* ptr_d;
+
+	ptr_d = new double[][4];
+
 }
 
 // Reference: https://www.tutorialspoint.com/cplusplus/cpp_dynamic_memory.htm
