@@ -1,9 +1,3 @@
-/*
-
-Copy constructor invoked when passing an object to a function.
-
-*/
-
 #include <iostream>
 using namespace std;
 
@@ -21,7 +15,7 @@ public:
 	}
 
 	// Copy constructor Here, obj is a reference to an object that is being used to initialize another object.
-	MyClass(const MyClass &obj) {
+	MyClass(const MyClass& obj) {
 
 		val = obj.val;
 		copynumber = obj.copynumber + 1;
@@ -34,7 +28,7 @@ public:
 		if (copynumber == 0)
 			cout << "Destructing original.\n";
 		else
-			cout << "Destructing copy " << copynumber << endl;
+			cout << "Destructing copy #" << copynumber << endl;
 
 	}
 
@@ -44,18 +38,8 @@ public:
 
 };
 
-
-void display(MyClass ob) {
-
-	cout << ob.getval() << endl;
-
-}
-
-
 int main() {
 
-	MyClass a(10);
-
-	display(a);  // debugger will first bring you to Copy Constructor, and then to display().
+	
 
 }
