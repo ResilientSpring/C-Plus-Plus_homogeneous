@@ -47,9 +47,9 @@ public:
 
 MyClass return_a_MyClass_object(int value, int copy_number) {
 
-	MyClass obj(value);
+	MyClass ob(value);
 
-	return obj;
+	return ob;
 
 }
 
