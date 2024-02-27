@@ -56,6 +56,6 @@ int main() {
 
 	MyClass a = return_a_MyClass_object(5, 6);
 
-	a.getval();
+	cout << a.getval() << endl;
 
 }
