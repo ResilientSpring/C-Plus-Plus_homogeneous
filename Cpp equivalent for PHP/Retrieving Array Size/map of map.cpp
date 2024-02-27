@@ -12,6 +12,15 @@ int main() {
 
 	states["Ohio"]["population"] = 11353140;  // [4]
 
+//	cout << states["Ohio"]["population"] << endl;
+
+	map<string, map<string, any>>::iterator itr;
+
+	for (itr = states.begin(); itr != states.end(); itr++)
+	{
+		cout << "Key: " << itr->first << ", Value: " << itr->second << endl;
+	}
+
 }
 
 /*
