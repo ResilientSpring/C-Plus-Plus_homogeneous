@@ -10,6 +10,8 @@ int main() {
 	
 	map<string, map<string, any>> states;   // [1][2][3]
 
+	states["Ohio"]["population"] = 11353140;
+
 }
 
 /*
