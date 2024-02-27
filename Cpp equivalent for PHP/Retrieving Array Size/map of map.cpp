@@ -18,7 +18,8 @@ int main() {
 
 	for (itr = states.begin(); itr != states.end(); itr++)
 	{
-		cout << "Key: " << itr->first << ", Value: " << itr->second << endl;
+		//cout << "Key: " << itr->first << ", Value: " << itr->second << endl; itr->second cotains a map.
+		cout << "Key: " << itr->first << endl;
 	}
 
 }
