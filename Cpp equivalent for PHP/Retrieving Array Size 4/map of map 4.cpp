@@ -20,8 +20,11 @@ int main() {
 		//cout << "Key: " << itr->first << ", Value: " << itr->second << endl; itr->second cotains a map.
 		cout << "Key: " << itr->first << endl;
 
-		for (itr2 = itr->second.begin(); itr2 != itr->second.end(); itr2++) // [5]
-			cout << itr2->first << " " << itr2->second << endl;   // [6] 
+		for (itr2 = itr->second.begin(); itr2 != itr->second.end(); itr2++) { // [5]
+			// cout << itr2->first << " " << itr2->second << endl;   // [6] [7] 
+
+			cout << itr2->first << " " << 
+		}
 	}
 
 }
@@ -34,4 +37,5 @@ int main() {
 * 4. https://stackoverflow.com/questions/4479017/storing-std-map-in-map
 * 5. https://stackoverflow.com/a/41687690
 * 6. https://stackoverflow.com/questions/65602318/how-to-print-elements-of-a-stdvectorstdany-vector-in-c
+* 7. https://stackoverflow.com/a/72227817/
 */
