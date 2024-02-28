@@ -12,12 +12,16 @@ int main() {
 
 //	cout << states["Ohio"]["population"] << endl;
 
-	map<string, map<string, any>>::iterator itr;
+	map<string, map<string, any>>::iterator itr, itr3;
+	map<string, any>::iterator itr2;
 
 	for (itr = states.begin(); itr != states.end(); itr++)
 	{
 		//cout << "Key: " << itr->first << ", Value: " << itr->second << endl; itr->second cotains a map.
 		cout << "Key: " << itr->first << endl;
+		
+		if (itr->second.find("population") != itr->second.end())
+			cout << *(itr->second);
 	}
 
 }
