@@ -23,7 +23,7 @@ int main() {
 		for (itr2 = itr->second.begin(); itr2 != itr->second.end(); itr2++) { // [5]
 			// cout << itr2->first << " " << itr2->second << endl;   // [6] [7] 
 
-			cout << itr2->first << " " << 
+			cout << itr2->first << " " << any_cast<int>(itr2->second);  // [8]
 		}
 	}
 
@@ -38,4 +38,5 @@ int main() {
 * 5. https://stackoverflow.com/a/41687690
 * 6. https://stackoverflow.com/questions/65602318/how-to-print-elements-of-a-stdvectorstdany-vector-in-c
 * 7. https://stackoverflow.com/a/72227817/
+* 8. https://stackoverflow.com/a/72227841/
 */
