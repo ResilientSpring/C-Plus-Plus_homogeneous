@@ -44,15 +44,11 @@ public:
 
 };
 
+volatile MyClass return_a_MyClass_object(int value, int copynumber) {
 
-MyClass return_a_MyClass_object(int value, int copy_number) {
-
-	MyClass ob(value);
-
-	return ob;
+	return MyClass(value);
 
 }
-
 
 int main() {
 
