@@ -36,7 +36,7 @@ public:
 		return val;
 	}
 
-	MyClass returns_a_MyClass_object(int value, int copynumber) {
+	MyClass returning_a_MyClass_object(int value, int copynumber) {
 
 		return MyClass(value);
 

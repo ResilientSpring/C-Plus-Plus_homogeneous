@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-volatile class MyClass {
+class MyClass {
 
 	int val;
 	int copynumber;
@@ -46,7 +46,7 @@ public:
 
 int main() {
 
-	MyClass a = return_a_MyClass_object(5, 6);
+	MyClass a = returns_a_MyClass_object(5, 6);
 
 	cout << a.getval() << endl;
 
