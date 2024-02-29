@@ -36,7 +36,7 @@ public:
 		return val;
 	}
 
-	MyClass returns_a_MyClass_object(int value, int copynumber) {
+	MyClass returning_a_MyClass_object(int value, int copynumber) {
 
 		return MyClass(value);
 
@@ -44,9 +44,15 @@ public:
 
 };
 
+volatile MyClass return_a_MyClass_object(int value, int copynumber) {
+
+	return MyClass(value);
+
+}
+
 int main() {
 
-	MyClass a = returns_a_MyClass_object(5, 6);
+	MyClass a = return_a_MyClass_object(5, 6);
 
 	cout << a.getval() << endl;
 
