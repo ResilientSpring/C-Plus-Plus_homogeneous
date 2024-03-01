@@ -67,6 +67,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Friend Functions", "Friend 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Friend functions 2", "Friend functions 2\Friend functions 2.vcxproj", "{15A75205-E772-41F6-8619-2E5A25127538}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Friend functions 3", "Friend functions 3\Friend functions 3.vcxproj", "{C9C85D7E-1C86-4E58-A064-20A5A2B6444F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -331,6 +333,14 @@ Global
 		{15A75205-E772-41F6-8619-2E5A25127538}.Release|x64.Build.0 = Release|x64
 		{15A75205-E772-41F6-8619-2E5A25127538}.Release|x86.ActiveCfg = Release|Win32
 		{15A75205-E772-41F6-8619-2E5A25127538}.Release|x86.Build.0 = Release|Win32
+		{C9C85D7E-1C86-4E58-A064-20A5A2B6444F}.Debug|x64.ActiveCfg = Debug|x64
+		{C9C85D7E-1C86-4E58-A064-20A5A2B6444F}.Debug|x64.Build.0 = Debug|x64
+		{C9C85D7E-1C86-4E58-A064-20A5A2B6444F}.Debug|x86.ActiveCfg = Debug|Win32
+		{C9C85D7E-1C86-4E58-A064-20A5A2B6444F}.Debug|x86.Build.0 = Debug|Win32
+		{C9C85D7E-1C86-4E58-A064-20A5A2B6444F}.Release|x64.ActiveCfg = Release|x64
+		{C9C85D7E-1C86-4E58-A064-20A5A2B6444F}.Release|x64.Build.0 = Release|x64
+		{C9C85D7E-1C86-4E58-A064-20A5A2B6444F}.Release|x86.ActiveCfg = Release|Win32
+		{C9C85D7E-1C86-4E58-A064-20A5A2B6444F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
