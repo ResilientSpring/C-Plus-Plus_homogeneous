@@ -31,6 +31,6 @@ int comDenom(MyClass x) {
 
 int main() {
 
-	
+	MyClass n(18, 111);
 
 }
