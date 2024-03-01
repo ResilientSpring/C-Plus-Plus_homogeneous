@@ -19,7 +19,9 @@ public:
 int comDenom(MyClass x) {
 
 	// Because comDenom() is NOT a friend of MyClass, it can NOT directly access a and b.
-	int max = x.a < x.b ? x.a : x.b;
+	// int max = x.a < x.b ? x.a : x.b;
+
+	int max = x.i > x.j ? x.i : x.j;
 
 	for (int i = 2; i <= max; i++)
 		if ((x.a % i) == 0 && (x.b % i) == 0) return i;
