@@ -37,5 +37,9 @@ int main() {
 	{
 		cout << "Common denominator is " << comDenom(n) << "\n";
 	}
+	else
+	{
+		cout << "No common denominator. \n";
+	}
 
 }
