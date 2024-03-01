@@ -63,6 +63,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Creating and Using a Copy C
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Creating and Using a Copy Constructor 8", "Creating and Using a Copy Constructor 8\Creating and Using a Copy Constructor 8.vcxproj", "{C9BAC3ED-BFB8-45BD-8CC9-E3B89D5F96FD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Friend Functions", "Friend Functions\Friend Functions.vcxproj", "{9205AD34-2783-4E10-BA07-632F77C0AB84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -311,6 +313,14 @@ Global
 		{C9BAC3ED-BFB8-45BD-8CC9-E3B89D5F96FD}.Release|x64.Build.0 = Release|x64
 		{C9BAC3ED-BFB8-45BD-8CC9-E3B89D5F96FD}.Release|x86.ActiveCfg = Release|Win32
 		{C9BAC3ED-BFB8-45BD-8CC9-E3B89D5F96FD}.Release|x86.Build.0 = Release|Win32
+		{9205AD34-2783-4E10-BA07-632F77C0AB84}.Debug|x64.ActiveCfg = Debug|x64
+		{9205AD34-2783-4E10-BA07-632F77C0AB84}.Debug|x64.Build.0 = Debug|x64
+		{9205AD34-2783-4E10-BA07-632F77C0AB84}.Debug|x86.ActiveCfg = Debug|Win32
+		{9205AD34-2783-4E10-BA07-632F77C0AB84}.Debug|x86.Build.0 = Debug|Win32
+		{9205AD34-2783-4E10-BA07-632F77C0AB84}.Release|x64.ActiveCfg = Release|x64
+		{9205AD34-2783-4E10-BA07-632F77C0AB84}.Release|x64.Build.0 = Release|x64
+		{9205AD34-2783-4E10-BA07-632F77C0AB84}.Release|x86.ActiveCfg = Release|Win32
+		{9205AD34-2783-4E10-BA07-632F77C0AB84}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
