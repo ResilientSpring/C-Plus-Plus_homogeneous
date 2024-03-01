@@ -18,7 +18,7 @@ public:
 // Notice that comDenom() is not a member function of any class.
 int comDenom(MyClass x) {
 
-	// Because comDenom() is a friend of MyClass, it can directly access a and b.
+	// Because comDenom() is NOT a friend of MyClass, it can NOT directly access a and b.
 	int max = x.a < x.b ? x.a : x.b;
 
 	for (int i = 2; i <= max; i++)
