@@ -33,4 +33,9 @@ int main() {
 
 	MyClass n(18, 111);
 
+	if (comDenom(n))
+	{
+		cout << "Common denominator is " << comDenom(n) << "\n";
+	}
+
 }
