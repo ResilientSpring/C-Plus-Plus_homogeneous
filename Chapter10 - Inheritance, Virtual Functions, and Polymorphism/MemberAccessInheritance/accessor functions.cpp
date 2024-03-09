@@ -26,7 +26,13 @@ public:
 class Triangle : public TwoDShape {
 
 public:
+	char style[20];
 
+	double area() { return getWidth(); }
+
+	void showStyle() {
+		cout << "Triangle is " << style << "\n";
+	}
 
 };
 
