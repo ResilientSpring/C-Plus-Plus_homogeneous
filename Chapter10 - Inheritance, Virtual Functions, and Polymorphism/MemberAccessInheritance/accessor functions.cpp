@@ -23,8 +23,16 @@ public:
 
 };
 
+class Triangle : public TwoDShape {
+
+public:
+
+
+};
+
 int main() {
 
-
+	Triangle t1;
+	Triangle t2;
 
 }
