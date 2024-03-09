@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Uninitialize2", "Uninitiali
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Uninitialize3", "Uninitialize3\Uninitialize3.vcxproj", "{5318CEC3-B23F-4D69-B1AD-A48DC8EA446D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Inheritance3", "Inheritance3\Inheritance3.vcxproj", "{43EE2F60-6524-4F58-B105-42647F462D6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{5318CEC3-B23F-4D69-B1AD-A48DC8EA446D}.Release|x64.Build.0 = Release|x64
 		{5318CEC3-B23F-4D69-B1AD-A48DC8EA446D}.Release|x86.ActiveCfg = Release|Win32
 		{5318CEC3-B23F-4D69-B1AD-A48DC8EA446D}.Release|x86.Build.0 = Release|Win32
+		{43EE2F60-6524-4F58-B105-42647F462D6F}.Debug|x64.ActiveCfg = Debug|x64
+		{43EE2F60-6524-4F58-B105-42647F462D6F}.Debug|x64.Build.0 = Debug|x64
+		{43EE2F60-6524-4F58-B105-42647F462D6F}.Debug|x86.ActiveCfg = Debug|Win32
+		{43EE2F60-6524-4F58-B105-42647F462D6F}.Debug|x86.Build.0 = Debug|Win32
+		{43EE2F60-6524-4F58-B105-42647F462D6F}.Release|x64.ActiveCfg = Release|x64
+		{43EE2F60-6524-4F58-B105-42647F462D6F}.Release|x64.Build.0 = Release|x64
+		{43EE2F60-6524-4F58-B105-42647F462D6F}.Release|x86.ActiveCfg = Release|Win32
+		{43EE2F60-6524-4F58-B105-42647F462D6F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
