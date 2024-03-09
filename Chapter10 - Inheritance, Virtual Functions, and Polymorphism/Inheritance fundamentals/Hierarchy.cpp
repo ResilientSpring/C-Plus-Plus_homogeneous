@@ -34,6 +34,7 @@ int main() {
 	Triangle t1;
 	Triangle t2;
 
+	// All members of Triangle are available to Triangle objects, even those inherited from TwoDShape.
 	t1.width = 4.0;
 	t1.height = 4.0;
 	strcpy(t1.style, "isosceles");
