@@ -22,6 +22,10 @@ public:
 		return false;
 	}
 
+	double area() {
+		return width * height;
+	}
+
 };
 
 int main() {
