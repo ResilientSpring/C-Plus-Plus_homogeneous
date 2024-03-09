@@ -1,6 +1,7 @@
 // A simple class hierarchy
 #include <iostream>
 #include <cstring>
+#define _CRT_SECURE_NO_WARNINGS
 
 class twoDShape {
 public:
