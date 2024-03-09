@@ -3,7 +3,6 @@
 #include <iostream>
 #include <cstring>
 
-
 class twoDShape {
 public:
 	double width;
