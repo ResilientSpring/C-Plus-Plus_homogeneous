@@ -36,8 +36,8 @@ int main() {
 
 	D ob(3);
 
-	ob.set(1, 2);  // access the member of base class.
-	ob.show();     // access the member of base class.
+	ob.set(1, 2);  // Cannot access the member of base class through D.
+	ob.show();     // Cannot access the member of base class through D.
 
 	ob.show_k();   // uses member of derived class.
 
