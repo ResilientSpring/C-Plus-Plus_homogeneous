@@ -37,6 +37,11 @@ public:
 
 int main() {
 
+	D ob;
+	ob.set(2, 3);  // OK, set() is public in B.
+	ob.show();     // OK, show() is public in B.
 
+	ob.set_k();
+	ob.show_k();
 
 }
