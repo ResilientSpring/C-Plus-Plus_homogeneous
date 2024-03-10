@@ -12,6 +12,11 @@ public:
 		this->b = b;
 	}
 
+	void show() {
+
+		cout << a << " " << b << endl;
+
+	}
 };
 
 
