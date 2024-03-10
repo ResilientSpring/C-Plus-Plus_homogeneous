@@ -12,6 +12,21 @@ public:
 
 };
 
+class D : public B {
+
+	int k;
+
+public:
+
+	D(int k) {
+		this->k = k;
+	}
+
+	void show_k() {
+		cout << k << endl;
+	}
+};
+
 int main() {
 
 
