@@ -10,6 +10,9 @@ public:
 		this->b = b;
 	}
 
+	void show() {
+		cout << a << " " << b << "\n";
+	}
 };
 
 class D : public B {
@@ -25,10 +28,15 @@ public:
 	void show_k() {
 		cout << k << endl;
 	}
+
+	// i = 10;  // Error! i is private to B and access is not allowed.
 };
 
 int main() {
 
+	D ob(3);
 
+	ob.set(1, 2);
+	ob.s
 
 }
