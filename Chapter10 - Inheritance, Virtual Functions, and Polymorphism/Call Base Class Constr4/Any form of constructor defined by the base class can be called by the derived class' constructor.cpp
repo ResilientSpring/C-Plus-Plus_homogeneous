@@ -42,6 +42,10 @@ public:
 		this->width = width;
 
 	}
+
+	void setHeight(double height) {
+		this->height = height;
+	}
 };
 
 
