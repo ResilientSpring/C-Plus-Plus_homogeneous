@@ -64,6 +64,9 @@ public:
 		strcpy(style, str);
 	}
 
+	Triangle(double x) :TwoDShape(x) {
+		strcpy(style, "isosceles");
+	}
 };
 
 
