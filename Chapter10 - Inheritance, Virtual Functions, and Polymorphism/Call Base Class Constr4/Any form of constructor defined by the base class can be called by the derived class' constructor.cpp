@@ -60,6 +60,10 @@ public:
 		strcpy(style, "unknown");
 	}
 
+	Triangle(const char* str, double width, double height) :TwoDShape(width, height) {
+		strcpy(style, str);
+	}
+
 };
 
 
