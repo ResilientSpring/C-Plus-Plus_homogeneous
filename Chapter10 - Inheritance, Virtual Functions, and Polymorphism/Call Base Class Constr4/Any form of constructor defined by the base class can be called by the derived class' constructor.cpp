@@ -17,6 +17,10 @@ public:
 		this->width = width;
 		this->height = height;
 	}
+
+	TwoDShape(double x) {
+
+	}
 };
 
 
