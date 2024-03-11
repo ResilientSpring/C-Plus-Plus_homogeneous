@@ -88,5 +88,9 @@ int main() {
 
 	cout << "Info for t1: " << endl;
 	t1.showStyle();
+	t1.showDim();
+	cout << "Area is " << t1.area() << endl;
+
+	cout << endl;
 
 }
