@@ -44,7 +44,7 @@ public:
 	// Constructor for Triangle.
 	Triangle(const char *str, double w, double h) {
 		
-		// Initialize the base class portion.
+		// Initialize the base class portion. (Initialize the TwoDShape portion of Triangle)
 		setWidth(w);
 		setHeight(h);
 
