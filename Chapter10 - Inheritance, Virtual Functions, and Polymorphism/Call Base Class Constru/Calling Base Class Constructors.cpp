@@ -43,7 +43,7 @@ class Triangle : public TwoDShape {
 
 public:
 
-	Triangle(const char* str, double width, double height) :TwoDShape(width, height) {
+	Triangle(const char* str, double width, double height) :TwoDShape(width, height) {  // Call TwoDShape constructor.
 		strcpy(style, str);
 	}
 };
