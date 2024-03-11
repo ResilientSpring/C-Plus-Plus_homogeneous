@@ -69,4 +69,6 @@ public:
 int main() {
 	
 	TwoDShape parent = TwoDShape();
+
+	Triangle t1 = Triangle("isosceles", 4.0, 4.0);
 }
