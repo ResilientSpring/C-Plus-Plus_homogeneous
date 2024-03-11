@@ -46,6 +46,14 @@ public:
 	Triangle(const char* str, double width, double height) :TwoDShape(width, height) {  // Call TwoDShape constructor.
 		strcpy(style, str);
 	}
+
+	double area() {
+		return getWidth();
+	}
+
+	void showStyle() {
+		cout << "Triangle is " << style << "\n";
+	}
 };
 
 
