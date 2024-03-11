@@ -19,7 +19,7 @@ public:
 	}
 
 	TwoDShape(double x) {
-
+		width = height = x;
 	}
 };
 
