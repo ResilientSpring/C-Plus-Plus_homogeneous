@@ -93,9 +93,16 @@ int main() {
 
 	cout << endl;
 
-	cout << "Info for t1: " << endl;
+	cout << "Info for t2: " << endl;
 	t2.showStyle();
 	t2.showDim();
+	cout << "Area is " << t2.area() << endl;
+
+	cout << endl;
+
+	cout << "Info for t3: \n";
+	t3.showStyle();
+	t3.showDim();
 	cout << "Area is " << t3.area() << endl;
 
 	cout << endl;
