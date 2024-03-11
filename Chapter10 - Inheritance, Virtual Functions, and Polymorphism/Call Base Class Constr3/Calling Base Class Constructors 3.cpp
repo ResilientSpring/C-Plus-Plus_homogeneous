@@ -44,8 +44,8 @@ class Triangle : public TwoDShape {
 
 public:
 
-	// When a base class has a constructor, the derived class must explicitly call it to initialize 
-	// the base class portion of a Triangle object.
+	// When a base class has a non-default constructor, the derived class must explicitly call it  
+	// to initialize the base class portion of a Triangle object.
 	Triangle(const char* str) {  
 		strcpy(style, str);
 	}
