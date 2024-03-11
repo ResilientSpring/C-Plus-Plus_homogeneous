@@ -67,11 +67,26 @@ public:
 	Triangle(double x) :TwoDShape(x) {
 		strcpy(style, "isosceles");
 	}
+
+	double area() {
+		return getWidth() * getHeight() / 2;
+	}
+
+	void showStyle() {
+		cout << "Triangle is " << style << endl;
+	}
 };
 
 
 int main() {
 
+	Triangle t1;
+	Triangle t2("right", 8.0, 12.0);
+	Triangle t3(4.0);
 
+	t1 = t2;
+
+	cout << "Info for t1: " << endl;
+	t1.showStyle();
 
 }
