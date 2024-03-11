@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 using namespace std;
 
@@ -46,6 +47,19 @@ public:
 	void setHeight(double height) {
 		this->height = height;
 	}
+};
+
+
+class Triangle :public TwoDShape {
+
+	char style[20];
+
+public:
+
+	Triangle() {
+		strcpy(style, "unknown");
+	}
+
 };
 
 
