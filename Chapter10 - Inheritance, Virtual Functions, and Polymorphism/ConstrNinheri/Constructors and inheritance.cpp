@@ -71,4 +71,5 @@ int main() {
 	TwoDShape parent = TwoDShape();
 
 	Triangle t1 = Triangle("isosceles", 4.0, 4.0);
+	Triangle t2("right", 8.0, 12.0);
 }
