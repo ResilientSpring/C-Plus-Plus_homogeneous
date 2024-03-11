@@ -21,6 +21,12 @@ public:
 	TwoDShape(double x) {
 		width = height = x;
 	}
+
+	void showDim() {
+
+		cout << "Width and height are " << width << " and " << height << endl;
+
+	}
 };
 
 
