@@ -1,4 +1,5 @@
 // Add a constructor to triangle.
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <cstring>
 using namespace std;
@@ -44,7 +45,7 @@ public:
 	// Constructor for Triangle.
 	Triangle(const char *str, double w, double h) {
 		
-		// Initialize the base class portion.
+		// Initialize the base class portion. (Initialize the TwoDShape portion of Triangle)
 		setWidth(w);
 		setHeight(h);
 
@@ -58,9 +59,29 @@ public:
 		return getWidth() * getHeight() / 2;
 	}
 
+	void showStyle() {
+
+		cout << "Triangle is " << style << endl;
+
+	}
+
 };
 
 int main() {
 	
 	TwoDShape parent = TwoDShape();
+
+	Triangle t1 = Triangle("isosceles", 4.0, 4.0);
+	Triangle t2("right", 8.0, 12.0);
+
+	cout << "Info for t1:\n";
+	t1.showStyle();
+	t1.showDim();
+	cout << "Area is " << t1.area() << "\n";
+
+	cout << "\n";
+	cout << "Info for t2: \n";
+	t2.showStyle();
+	t2.showDim();
+	cout << "Area is " << t2.area() << endl;
 }
