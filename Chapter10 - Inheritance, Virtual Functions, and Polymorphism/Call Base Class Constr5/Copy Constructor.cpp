@@ -73,12 +73,20 @@ public:
 		strcpy(style, "isosceles");
 	}
 
+	Triangle(Triangle& obj) {
+		strcpy(style, )
+	}
+
 	double area() {
 		return getWidth() * getHeight() / 2;
 	}
 
 	void showStyle() {
 		cout << "Triangle is " << style << endl;
+	}
+
+	char* getStyle() {
+		return style;
 	}
 };
 
@@ -88,9 +96,9 @@ int main() {
 	Triangle t1;
 	Triangle t2("right", 8.0, 12.0);
 	Triangle t3(4.0);
-	Triangle t4 = t3;
+	Triangle t4 = t3;   // Copy constructor is used when copying in initialization at decleration.
 
-	t1 = t2;
+	t1 = t2;  // Copy constructor is not used in assignment.
 
 	cout << "Info for t1: " << endl;
 	t1.showStyle();
