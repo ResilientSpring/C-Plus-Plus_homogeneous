@@ -74,7 +74,7 @@ public:
 	}
 
 	Triangle(Triangle& obj) {
-		strcpy(style, )
+		strcpy(style, obj.getStyle());
 	}
 
 	double area() {
