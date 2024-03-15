@@ -107,4 +107,11 @@ int main() {
 	cout << "Area is " << t3.area() << endl;
 
 	cout << endl;
+
+	cout << "Info for t4: \n";
+	t4.showStyle();
+	t4.showDim();
+	cout << "Area is " << t4.area() << endl;
+
+	cout << endl;
 }
