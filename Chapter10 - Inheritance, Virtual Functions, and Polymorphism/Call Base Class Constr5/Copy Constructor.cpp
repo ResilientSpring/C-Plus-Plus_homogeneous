@@ -73,8 +73,9 @@ public:
 		strcpy(style, "isosceles");
 	}
 
-	Triangle(Triangle& obj) {
+	Triangle(Triangle& obj) : TwoDShape(obj.getWidth(), obj.getHeight()) {
 		strcpy(style, obj.getStyle());
+
 	}
 
 	double area() {
