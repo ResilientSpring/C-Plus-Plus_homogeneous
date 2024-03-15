@@ -23,6 +23,11 @@ public:
 		width = height = x;
 	}
 
+	TwoDShape(const TwoDShape& obj) {
+		width = obj.width;
+		height = obj.height;
+	}
+
 	void showDim() {
 
 		cout << "Width and height are " << width << " and " << height << endl;
@@ -108,7 +113,7 @@ int main() {
 
 	cout << endl;
 
-	cout << "Info for t3: \n";
+	cout << "Info for t4: \n";
 	t4.showStyle();
 	t4.showDim();
 	cout << "Area is " << t4.area() << endl;
