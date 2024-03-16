@@ -3,7 +3,7 @@ using namespace std;
 
 class Cylinder; // a forward declaration.
 
-enum colors { red, green, yellow };
+enum class colors { red, green, yellow };
 
 class Cube {
 
