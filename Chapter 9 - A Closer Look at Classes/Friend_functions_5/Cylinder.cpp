@@ -42,8 +42,13 @@ int main() {
 	Cylinder cy1(green);
 
 	if (sameColor(cube1, cy1))
-	{
 		cout << "cube 1 and cy1 are the same color. \n";
-	}
+	else
+		cout << "cube1 and cy1 are different colors. \n";
+
+	if (sameColor(cube2, cy1))
+		cout << "cube2 and cy1 are the same color.\n";
+	else
+		cout << "cube2 and cy1 are different colors.\n";
 
 }
