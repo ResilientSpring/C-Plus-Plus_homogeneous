@@ -37,6 +37,13 @@ bool sameColor(Cube x, Cylinder y) {
 
 int main() {
 
+	Cube cube1(red);
+	Cube cube2(green);
+	Cylinder cy1(green);
 
+	if (sameColor(cube1, cy1))
+	{
+		cout << "cube 1 and cy1 are the same color. \n";
+	}
 
 }
