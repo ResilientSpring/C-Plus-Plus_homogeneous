@@ -35,6 +35,7 @@ int main() {
 
 	how = truck;
 
+	// To access an individual character within the string, you will use a statement like this:
 	cout << name[how][2] << endl;
 
 }
