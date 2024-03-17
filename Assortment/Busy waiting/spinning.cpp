@@ -9,7 +9,7 @@ using namespace std;
 atomic_int i = 0;
 
 /* f1 uses a spinlock to wait for i to change from 0. */
-static void *f1(void *p)
+static void* f1(void* p)
 {
     int local_i;
     /* Atomically load current value of i into local_i and check if that value
@@ -22,7 +22,7 @@ static void *f1(void *p)
     return NULL;
 }
 
-static void *f2(void *p)
+static void* f2(void* p)
 {
     int local_i = 99;
     Sleep(10);   /* sleep for 10 seconds */
@@ -33,24 +33,12 @@ static void *f2(void *p)
 
 int main()
 {
-    int rc;
-    thread t1, t2;
+    thread t1(f1(nullptr));
+    thread t2(f2(nullptr));
 
-    rc = pthread_create(&t1, NULL, f1, NULL);
-    if (rc != 0) {
-        fprintf(stderr, "pthread f1 failed\n");
-        return EXIT_FAILURE;
-    }
+    t1.join();
+    t2.join();
 
-    rc = pthread_create(&t2, NULL, f2, NULL);
-    if (rc != 0) {
-        fprintf(stderr, "pthread f2 failed\n");
-        return EXIT_FAILURE;
-    }
-
-    pthread_join(t1, NULL);
-    pthread_join(t2, NULL);
-    puts("All pthreads finished.");
     return 0;
 }
 
