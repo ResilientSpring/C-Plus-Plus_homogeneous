@@ -10,4 +10,8 @@ int main() {
 
 	transport how;
 
+	how = airplane;
+
+	cout << airplane << endl;
+
 }
