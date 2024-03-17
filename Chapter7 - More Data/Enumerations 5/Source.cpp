@@ -22,7 +22,7 @@ int main() {
 
 	how = car;
 
-	// Aceesing an individual string is quite easy: you simply specify only the left index. 
+	// Aceesing an individual string is quite easy: you simply specify only the left index. [1]
 	cout << name[how] << endl;
 
 	how = airplane;
@@ -34,3 +34,10 @@ int main() {
 	cout << name[how] << endl;
 
 }
+
+/*
+
+Reference:
+1. C++ A Beginner's Guide 
+
+*/
