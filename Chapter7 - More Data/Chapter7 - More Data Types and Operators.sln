@@ -57,6 +57,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Enumerations 4", "Enumerati
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Enumerations 5", "Enumerations 5\Enumerations 5.vcxproj", "{78722EAA-2361-4F2C-A3A5-4FDDFE863808}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Enumerations 6", "Enumerations 6\Enumerations 6.vcxproj", "{DE8AF255-5C7B-4BC5-A082-FB6EB71F9363}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -281,6 +283,14 @@ Global
 		{78722EAA-2361-4F2C-A3A5-4FDDFE863808}.Release|x64.Build.0 = Release|x64
 		{78722EAA-2361-4F2C-A3A5-4FDDFE863808}.Release|x86.ActiveCfg = Release|Win32
 		{78722EAA-2361-4F2C-A3A5-4FDDFE863808}.Release|x86.Build.0 = Release|Win32
+		{DE8AF255-5C7B-4BC5-A082-FB6EB71F9363}.Debug|x64.ActiveCfg = Debug|x64
+		{DE8AF255-5C7B-4BC5-A082-FB6EB71F9363}.Debug|x64.Build.0 = Debug|x64
+		{DE8AF255-5C7B-4BC5-A082-FB6EB71F9363}.Debug|x86.ActiveCfg = Debug|Win32
+		{DE8AF255-5C7B-4BC5-A082-FB6EB71F9363}.Debug|x86.Build.0 = Debug|Win32
+		{DE8AF255-5C7B-4BC5-A082-FB6EB71F9363}.Release|x64.ActiveCfg = Release|x64
+		{DE8AF255-5C7B-4BC5-A082-FB6EB71F9363}.Release|x64.Build.0 = Release|x64
+		{DE8AF255-5C7B-4BC5-A082-FB6EB71F9363}.Release|x86.ActiveCfg = Release|Win32
+		{DE8AF255-5C7B-4BC5-A082-FB6EB71F9363}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
