@@ -18,6 +18,10 @@ char name[][20] = {
 
 int main() {
 
+	transport how;
 
+	how = car;
+
+	cout << name[how][20] << endl;
 
 }
