@@ -1,4 +1,3 @@
-#include <atomic>
 #include <iostream>
 #include <Windows.h>
 #include <thread>
@@ -59,3 +58,4 @@ int main()
 
 // References:
 // 1. https://stackoverflow.com/questions/65322396/e0020-identifier-sleep-is-undefined-visual-studio-2019
+// 2. https://stackoverflow.com/questions/57812529/is-there-an-stdthread-create-like-pthread-create
