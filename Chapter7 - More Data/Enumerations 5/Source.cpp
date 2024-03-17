@@ -38,6 +38,6 @@ int main() {
 /*
 
 Reference:
-1. C++ A Beginner's Guide 
+1. C++ A Beginner's Guide - section on Array of Strings
 
 */
