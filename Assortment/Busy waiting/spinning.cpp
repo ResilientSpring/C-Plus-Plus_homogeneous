@@ -1,6 +1,7 @@
 #include <atomic>
 #include <iostream>
 #include <Windows.h>
+#include <thread>
 using namespace std;
 
 /* i is global, so it is visible to all functions. It makes use of the special
@@ -25,7 +26,7 @@ static void *f1(void *p)
 static void *f2(void *p)
 {
     int local_i = 99;
-    sleep(10);   /* sleep for 10 seconds */
+    Sleep(10);   /* sleep for 10 seconds */
     atomic_store(&i, local_i);
     printf("t2 has changed the value of i to %d.\n", local_i);
     return NULL;
@@ -34,7 +35,7 @@ static void *f2(void *p)
 int main()
 {
     int rc;
-    pthread_t t1, t2;
+    thread t1, t2;
 
     rc = pthread_create(&t1, NULL, f1, NULL);
     if (rc != 0) {
@@ -55,3 +56,6 @@ int main()
 }
 
 // Source: https://en.wikipedia.org/wiki/Busy_waiting
+
+// References:
+// 1. https://stackoverflow.com/questions/65322396/e0020-identifier-sleep-is-undefined-visual-studio-2019
