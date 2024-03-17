@@ -22,6 +22,14 @@ int main() {
 
 	how = car;
 
-	cout << name[how][20] << endl;
+	cout << name[how] << endl;
+
+	how = airplane;
+
+	cout << name[how] << endl;
+
+	how = train;
+
+	cout << name[how] << endl;
 
 }
