@@ -32,10 +32,11 @@ int main() {
 	u_type u(1000);
 
 	cout << "u as integer: " << u.i << "\n";
-	cout << "u as chars: " << u.showchars();
+	cout << "u as chars: ";
+	cout << u.showchars();
 
 	u_type u2('X', 'Y');
 	cout << "u2 as integer: " << u2.i << "\n";
-	cout << "u2 as chars: " << u2.showchars();
-
+	cout << "u2 as chars: ";
+	cout << u2.showchars();
 }
