@@ -79,6 +79,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Union", "Union\Union.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "union 2", "union 2\union 2.vcxproj", "{66D2DA9A-8A70-4147-87B9-7D6A49044630}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "union 3", "union 3\union 3.vcxproj", "{474D562D-B25C-424E-813C-E8B4D841496A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -391,6 +393,14 @@ Global
 		{66D2DA9A-8A70-4147-87B9-7D6A49044630}.Release|x64.Build.0 = Release|x64
 		{66D2DA9A-8A70-4147-87B9-7D6A49044630}.Release|x86.ActiveCfg = Release|Win32
 		{66D2DA9A-8A70-4147-87B9-7D6A49044630}.Release|x86.Build.0 = Release|Win32
+		{474D562D-B25C-424E-813C-E8B4D841496A}.Debug|x64.ActiveCfg = Debug|x64
+		{474D562D-B25C-424E-813C-E8B4D841496A}.Debug|x64.Build.0 = Debug|x64
+		{474D562D-B25C-424E-813C-E8B4D841496A}.Debug|x86.ActiveCfg = Debug|Win32
+		{474D562D-B25C-424E-813C-E8B4D841496A}.Debug|x86.Build.0 = Debug|Win32
+		{474D562D-B25C-424E-813C-E8B4D841496A}.Release|x64.ActiveCfg = Release|x64
+		{474D562D-B25C-424E-813C-E8B4D841496A}.Release|x64.Build.0 = Release|x64
+		{474D562D-B25C-424E-813C-E8B4D841496A}.Release|x86.ActiveCfg = Release|Win32
+		{474D562D-B25C-424E-813C-E8B4D841496A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
