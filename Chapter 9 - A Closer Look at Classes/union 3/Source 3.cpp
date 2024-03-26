@@ -38,5 +38,9 @@ int main() {
 	u_type u2('X', 'Y');
 	cout << "u2 as integer: " << u2.i << "\n";
 	cout << "u2 as chars: ";
-	cout << u2.showchars();
+	cout << u2.showchars();   // cout does not know what to print b/c showchars() returns a void.[1][2]
 }
+
+// References:
+// 1. https://stackoverflow.com/questions/21996995/no-operator-matches-these-operands
+// 2. https://stackoverflow.com/questions/2981836/how-can-i-use-cout-myclass
