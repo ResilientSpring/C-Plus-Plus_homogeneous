@@ -14,9 +14,8 @@ int main() {
 	u_type u;
 	u.i = 101;
 
+	// Figure 9-1 shows how i and ch both share the same address.
 	cout << "u as integer: " << u.i << "\n";
-	cout << "u as chars: " << u.ch[0] << endl;
-
 	cout << "ch[0]: " << u.ch[0] << endl;
 	cout << "ch[1]: " << u.ch[1] << endl;
 }
