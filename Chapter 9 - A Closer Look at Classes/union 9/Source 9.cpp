@@ -31,5 +31,5 @@ int main() {
 
                                   ch[1]     ch[0]
 
-   This is why ch[1] is interpreted as Null. (In ASCII, decimal 0 means null.)
+   This is why printing ch[1] yielded nothing when i = 101. (In ASCII, decimal 0 means null.)
 */
