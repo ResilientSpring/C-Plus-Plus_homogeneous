@@ -36,7 +36,6 @@ int main() {
 
 	u_type u2('X', 'Y');
 	cout << "u2 as integer: " << u2.i << "\n";
-	cout << "u2 as chars: ";
-	u2.showchars();
+	cout << "u2 as chars: " << u2.ch[0] << " " << u2.ch[1] << endl ;
 }
 
