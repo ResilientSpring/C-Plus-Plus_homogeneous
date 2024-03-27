@@ -12,7 +12,7 @@ union u_type {
 int main() {
 
 	u_type u;
-	u.i = 13;
+	u.i = 101;
 
 	cout << "u as integer: " << u.i << "\n";
 	cout << "u as chars: " << u.ch[0] << endl;
