@@ -15,7 +15,7 @@ int main() {
 	u.i = 100;
 
 	cout << "u as integer: " << u.i << "\n";
-	cout << "u as chars: " << u.ch[0] << u.ch[1] << endl;
+	cout << "u as chars: " << u.ch[0] << endl;
 
 }
 
