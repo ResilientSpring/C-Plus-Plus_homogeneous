@@ -23,11 +23,11 @@ int main() {
 /*
 *  In Windows Calculator's  Programmer Mode; under WORD, and Bit Toggling Keyboard, 
 *  
-*  the bit pattern for 25957 is 0110 0101 0110 0101
+*  the binary representation for 25957 is 0110 0101 0110 0101
  
    while
 
-   the bit pattern for 101   is 0000 0000 0110 0101
+   the binary representation for 101   is 0000 0000 0110 0101
 
                                   ch[1]     ch[0]
 
