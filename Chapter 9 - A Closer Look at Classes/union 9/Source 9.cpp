@@ -12,7 +12,7 @@ union u_type {
 int main() {
 
 	u_type u;
-	u.i = 25189;
+	u.i = 25957;
 
 	// Figure 9-1 shows how i and ch both share the same address.
 	cout << "u as integer: " << u.i << "\n";
