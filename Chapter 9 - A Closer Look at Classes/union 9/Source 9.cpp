@@ -29,7 +29,7 @@ int main() {
 
    the binary representation for 101   is 0000 0000 0110 0101
 
-                                  ch[1]     ch[0]
+                                             ch[1]     ch[0]
 
    This is why printing ch[1] yielded nothing when i = 101. (In ASCII, decimal 0 means null.)
 */
