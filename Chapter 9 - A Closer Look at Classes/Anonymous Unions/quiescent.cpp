@@ -15,5 +15,8 @@ int main() {
 
 	cout << l << " ";
 	d = 123.2342;
+	cout << d << " ";
+	strcpy(s, "hi");
+	cout << s;
 
 }
