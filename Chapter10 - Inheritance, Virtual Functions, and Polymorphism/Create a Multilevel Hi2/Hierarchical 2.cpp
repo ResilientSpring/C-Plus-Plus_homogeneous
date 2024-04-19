@@ -73,6 +73,10 @@ class ColorTriangle : public Triangle {
 	char color[20];
 
 public:
+
+	// In a class hierarchy, if a base class constructor requires parameters, 
+	// then all derived classes must pass those parameters "up the line".
+	// This is true whether or not a derived class needs parameters of its own. 
 	ColorTriangle(const char* clr, const char* style, double w, double h) : Triangle(style, w, h) {
 		strcpy(color, clr);
 	}
