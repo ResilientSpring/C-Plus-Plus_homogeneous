@@ -67,6 +67,23 @@ public:
 	}
 };
 
+class ColorTriangle : public Triangle {
+
+	char color[20];
+
+public:
+	ColorTriangle(char* clr, char* style, double w, double h) : Triangle(style, w, h) {
+		strcpy(color, clr);
+	}
+
+	void showColor() {
+
+		cout << "Color is " << color << endl;
+
+	}
+
+};
+
 int main() {
 
 
