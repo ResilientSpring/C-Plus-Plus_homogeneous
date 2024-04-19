@@ -38,6 +38,25 @@ public:
 
 };
 
+class Triangle : public TwoDShape {
+	char style[20];  // now private
+
+public:
+	Triangle() {
+
+		strcpy(style, "unknown");
+
+	}
+
+	Triangle(char* str, double w, double h) : TwoDShape(w, h) {
+		strcpy(style, str);
+	}
+
+	Triangle(double x) : TwoDShape(x) {
+		strcpy(style, "isosceles");
+	}
+};
+
 int main() {
 
 
