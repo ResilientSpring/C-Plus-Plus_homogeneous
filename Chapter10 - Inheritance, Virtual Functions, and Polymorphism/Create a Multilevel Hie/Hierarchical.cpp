@@ -61,6 +61,10 @@ public:
 		return getWidth() * getHeight() / 2;
 	
 	}
+
+	void showStyle() {
+		cout << "Triangle is " << style << endl;
+	}
 };
 
 int main() {
