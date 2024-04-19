@@ -48,7 +48,7 @@ public:
 
 	}
 
-	Triangle(char* str, double w, double h) : TwoDShape(w, h) {
+	Triangle(const char* str, double w, double h) : TwoDShape(w, h) {
 		strcpy(style, str);
 	}
 
@@ -72,7 +72,7 @@ class ColorTriangle : public Triangle {
 	char color[20];
 
 public:
-	ColorTriangle(char* clr, char* style, double w, double h) : Triangle(style, w, h) {
+	ColorTriangle(const char* clr, const char* style, double w, double h) : Triangle(style, w, h) {
 		strcpy(color, clr);
 	}
 
@@ -86,6 +86,6 @@ public:
 
 int main() {
 
-
+	ColorTriangle t1("Blue", "right", 8.0, 12.0);
 
 }
