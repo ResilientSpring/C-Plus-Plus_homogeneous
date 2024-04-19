@@ -19,6 +19,10 @@ public:
 		height = h;
 	}
 
+	TwoDShape(double x) {
+		width = height = x;
+	}
+
 };
 
 int main() {
