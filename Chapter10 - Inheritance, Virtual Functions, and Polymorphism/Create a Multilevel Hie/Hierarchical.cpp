@@ -89,4 +89,18 @@ int main() {
 	ColorTriangle t1("Blue", "right", 8.0, 12.0);
 	ColorTriangle t2("Red", "isosceles", 2.0, 2.0);
 
+	cout << "Info for t1:\n";
+	t1.showStyle();
+	t1.showDim();
+	t1.showColor();
+	cout << "Area is " << t1.area() << endl;
+
+	cout << endl;
+
+	cout << "Info for t2: \n";
+	t2.showStyle();
+	t2.showDim();
+	t2.showColor();
+	cout << "Area is " << t2.area() << endl;
+
 }
