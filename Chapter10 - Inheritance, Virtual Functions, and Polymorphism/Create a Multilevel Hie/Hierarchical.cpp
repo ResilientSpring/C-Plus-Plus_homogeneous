@@ -87,5 +87,6 @@ public:
 int main() {
 
 	ColorTriangle t1("Blue", "right", 8.0, 12.0);
+	ColorTriangle t2("Red", "isosceles", 2.0, 2.0);
 
 }
