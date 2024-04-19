@@ -55,6 +55,12 @@ public:
 	Triangle(double x) : TwoDShape(x) {
 		strcpy(style, "isosceles");
 	}
+
+	double area(){
+
+		return getWidth() * getHeight() / 2;
+	
+	}
 };
 
 int main() {
