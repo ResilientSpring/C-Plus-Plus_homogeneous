@@ -49,6 +49,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Create a Multilevel Hi2", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Create a Multilevel Hi3", "Create a Multilevel Hi3\Create a Multilevel Hi3.vcxproj", "{56653002-E549-41FF-8692-99BC5220A34B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Create a Multilevel Hi4", "Create a Multilevel Hi4\Create a Multilevel Hi4.vcxproj", "{C7F887C7-B5D0-4EAE-8AFA-AB024F47B37D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -241,6 +243,14 @@ Global
 		{56653002-E549-41FF-8692-99BC5220A34B}.Release|x64.Build.0 = Release|x64
 		{56653002-E549-41FF-8692-99BC5220A34B}.Release|x86.ActiveCfg = Release|Win32
 		{56653002-E549-41FF-8692-99BC5220A34B}.Release|x86.Build.0 = Release|Win32
+		{C7F887C7-B5D0-4EAE-8AFA-AB024F47B37D}.Debug|x64.ActiveCfg = Debug|x64
+		{C7F887C7-B5D0-4EAE-8AFA-AB024F47B37D}.Debug|x64.Build.0 = Debug|x64
+		{C7F887C7-B5D0-4EAE-8AFA-AB024F47B37D}.Debug|x86.ActiveCfg = Debug|Win32
+		{C7F887C7-B5D0-4EAE-8AFA-AB024F47B37D}.Debug|x86.Build.0 = Debug|Win32
+		{C7F887C7-B5D0-4EAE-8AFA-AB024F47B37D}.Release|x64.ActiveCfg = Release|x64
+		{C7F887C7-B5D0-4EAE-8AFA-AB024F47B37D}.Release|x64.Build.0 = Release|x64
+		{C7F887C7-B5D0-4EAE-8AFA-AB024F47B37D}.Release|x86.ActiveCfg = Release|Win32
+		{C7F887C7-B5D0-4EAE-8AFA-AB024F47B37D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
