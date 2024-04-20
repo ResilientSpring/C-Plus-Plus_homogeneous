@@ -49,9 +49,9 @@ public:
 
 	}
 
-	Triangle(const char* str, double width, double height) : TwoDShape(width, height) {
-		strcpy(style, str);
-	}
+//	Triangle(const char* str, double width, double height) : TwoDShape(width, height) {
+//		strcpy(style, str);
+//	}
 
 	Triangle(const char* str, double height) : TwoDShape(height) {
 		strcpy(style, str);
@@ -77,9 +77,9 @@ class ColorTriangle : public Triangle {
 	char color[20];
 
 public:
-	ColorTriangle(const char* clr, const char* style, double w, double h) : Triangle(style, w, h) {
-		strcpy(color, clr);
-	}
+//	ColorTriangle(const char* clr, const char* style, double w, double h) : Triangle(style, w, h) {
+//		strcpy(color, clr);
+//	}
 
 	ColorTriangle(const char* clr, const char* style, double h) : Triangle(style, h) {
 		strcpy(color, clr);
@@ -95,21 +95,24 @@ public:
 
 int main() {
 
-	ColorTriangle t1("Blue", "right", 8.0, 12.0);
-	ColorTriangle t2("Red", "isosceles", 2.0, 2.0);
+//	ColorTriangle t1("Blue", "right", 8.0, 12.0);
+//	ColorTriangle t2("Red", "isosceles", 2.0, 2.0);
 
-	cout << "Info for t1:\n";
-	t1.showStyle();
-	t1.showDim();
-	t1.showColor();
-	cout << "Area is " << t1.area() << endl;
+	ColorTriangle t3("Blue", "right", 8.0);
+	ColorTriangle t4("Red", "isosceles", 2.0);
+
+	cout << "Info for t3:\n";
+	t3.showStyle();
+	t3.showDim();
+	t3.showColor();
+	cout << "Area is " << t3.area() << endl;
 
 	cout << endl;
 
-	cout << "Info for t2: \n";
-	t2.showStyle();
-	t2.showDim();
-	t2.showColor();
-	cout << "Area is " << t2.area() << endl;
+	cout << "Info for t4: \n";
+	t4.showStyle();
+	t4.showDim();
+	t4.showColor();
+	cout << "Area is " << t4.area() << endl;
 
 }
