@@ -31,6 +31,18 @@ public:
 
 };
 
+class D : public B1, public B2{
+
+public:
+
+	// x and y are accesible because they are protected in B1 and B2, not private.
+	void set(int i, int j) {
+		x = i;
+		y = j;
+	}
+
+};
+
 
 int main() {
 
