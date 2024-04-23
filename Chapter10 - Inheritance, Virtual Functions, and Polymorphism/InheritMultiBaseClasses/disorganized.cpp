@@ -18,6 +18,19 @@ public:
 
 };
 
+class B2 {
+
+protected:
+	int y;
+
+public:
+	void showy() {
+
+		cout << y << "\n";
+	}
+
+};
+
 
 int main() {
 
