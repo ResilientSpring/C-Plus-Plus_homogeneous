@@ -46,6 +46,10 @@ public:
 
 int main() {
 
+	D ob;
 
+	ob.set(10, 20);  // provided by D
+	ob.showx();      // from B1
+	ob.showy();      // from B2
 
 }
