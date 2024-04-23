@@ -53,6 +53,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Create a Multilevel Hi4", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Create a Multilevel Hi5", "Create a Multilevel Hi5\Create a Multilevel Hi5.vcxproj", "{A15E03B7-D0E1-480E-82E5-C9B7B70FB30F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InheritMultiBaseClasses", "InheritMultiBaseClasses\InheritMultiBaseClasses.vcxproj", "{66880CF2-95A9-4D9C-9CED-317182F7F6D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -261,6 +263,14 @@ Global
 		{A15E03B7-D0E1-480E-82E5-C9B7B70FB30F}.Release|x64.Build.0 = Release|x64
 		{A15E03B7-D0E1-480E-82E5-C9B7B70FB30F}.Release|x86.ActiveCfg = Release|Win32
 		{A15E03B7-D0E1-480E-82E5-C9B7B70FB30F}.Release|x86.Build.0 = Release|Win32
+		{66880CF2-95A9-4D9C-9CED-317182F7F6D5}.Debug|x64.ActiveCfg = Debug|x64
+		{66880CF2-95A9-4D9C-9CED-317182F7F6D5}.Debug|x64.Build.0 = Debug|x64
+		{66880CF2-95A9-4D9C-9CED-317182F7F6D5}.Debug|x86.ActiveCfg = Debug|Win32
+		{66880CF2-95A9-4D9C-9CED-317182F7F6D5}.Debug|x86.Build.0 = Debug|Win32
+		{66880CF2-95A9-4D9C-9CED-317182F7F6D5}.Release|x64.ActiveCfg = Release|x64
+		{66880CF2-95A9-4D9C-9CED-317182F7F6D5}.Release|x64.Build.0 = Release|x64
+		{66880CF2-95A9-4D9C-9CED-317182F7F6D5}.Release|x86.ActiveCfg = Release|Win32
+		{66880CF2-95A9-4D9C-9CED-317182F7F6D5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
