@@ -26,4 +26,7 @@ int main() {
 	twoDShape t1;
 	t1.height = 2;
 	t1.width = 3;
+
+	Shape s1;
+	s1.set(4, 5);
 }
