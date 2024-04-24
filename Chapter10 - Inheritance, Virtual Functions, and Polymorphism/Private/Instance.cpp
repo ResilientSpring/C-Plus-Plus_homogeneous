@@ -1,7 +1,5 @@
-// A simple class hierarchy
-#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
-#include <cstring>
+using namespace std;
 
 class twoDShape {
 public:
@@ -9,7 +7,7 @@ public:
 	double height;
 
 	void showDim() {
-		std::cout << "Width and height are " << width << " and " << height << "\n";
+		cout << "Width and height are " << width << " and " << height << "\n";
 	}
 };
 
