@@ -22,7 +22,7 @@ public:
 	double area() {
 
 		// Triangle can refer to members of TwoDShape as if they were part of Triangle.
-		return width * height / 2;
+		std::cout << width * height / 2 << "\n";
 	}
 
 	void showStyle() {
