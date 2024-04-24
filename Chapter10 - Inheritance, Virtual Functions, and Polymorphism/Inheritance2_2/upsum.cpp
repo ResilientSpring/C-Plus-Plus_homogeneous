@@ -51,6 +51,4 @@ int main() {
 	t1.showStyle();
 	t1.showDim();  // Class twoDshape's public showDim() has become a private member of class Triangle.
 	t1.area() ;    // area() is accessible.
-
-
 }
