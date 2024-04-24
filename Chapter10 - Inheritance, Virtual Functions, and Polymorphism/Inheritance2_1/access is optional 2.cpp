@@ -36,6 +36,8 @@ int main() {
 	Triangle t1;
 	Triangle t2;
 
+	// When the base class is inherited as private, 
+	// then all public members of the base class become private members of the derived class.
 	t1.width = 4.0;
 	t1.height = 4.0;
 	strcpy(t1.style, "isosceles");
