@@ -12,6 +12,10 @@ public:
 	void showDim() {
 		cout << "Width and height are " << width << " and " << height << "\n";
 	}
+
+	void set(int number) {
+		this->number = number;
+	}
 };
 
 // If the access specifier is not used, then it is private by default if the derived class is a class.
@@ -32,8 +36,10 @@ public:
 
 
 int main() {
-
+	twoDShape t0;
 	Triangle t1;
+
+	t0.set(7);  // twoDShape's instance cannot access twoDShape's private members.
 
 	// When the base class is inherited as private, 
 	// then all public members of the base class become private members of the derived class.
@@ -44,11 +50,7 @@ int main() {
 	std::cout << "Info for t1: \n";
 	t1.showStyle();
 	t1.showDim();  // Class twoDshape's public showDim() has become a private member of class Triangle.
-	t1.area() ;
+	t1.area() ;    // area() is accessible.
 
-	std::cout << "\n";
-	std::cout << "Info for t2:\n";
-	t2.showStyle();
-	t2.showDim();
-	std::cout << "Area is " << t2.area() << "\n";  // area() is accessible.
+
 }
