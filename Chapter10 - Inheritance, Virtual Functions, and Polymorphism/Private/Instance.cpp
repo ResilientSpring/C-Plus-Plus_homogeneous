@@ -28,5 +28,5 @@ int main() {
 	t1.width = 3;
 
 	Shape s1;
-	s1.set(4, 5); // Shape's instance can't access Shape private members.
+	s1.set(4, 5); // Shape's instance can't access Shape's private members.
 }
