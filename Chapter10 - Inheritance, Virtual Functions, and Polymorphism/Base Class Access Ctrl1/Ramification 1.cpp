@@ -15,9 +15,9 @@ public:
 	}
 };
 
-// When the base class is inherited as private, 
-// then all public members of the base class become private members of the derived class.
-class D : private B {
+// In all cases, private elements of the base class remain private to that class 
+// and are not accessible by members of the derived class.
+class D : public B {
 
 	int k;
 
@@ -38,8 +38,8 @@ int main() {
 
 	D ob(3);
 
-	ob.set(1, 2);  // Cannot access the member of base class through D.
-	ob.show();     // Cannot access the member of base class through D.
+	ob.set(1, 2);  // access the member of base class.
+	ob.show();     // access the member of base class.
 
 	ob.show_k();   // uses member of derived class.
 
