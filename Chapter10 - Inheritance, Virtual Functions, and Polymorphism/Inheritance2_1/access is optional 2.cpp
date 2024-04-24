@@ -55,5 +55,5 @@ int main() {
 	std::cout << "Info for t2:\n";
 	t2.showStyle();
 	t2.showDim();
-	std::cout << "Area is " << t2.area() << "\n";
+	std::cout << "Area is " << t2.area() << "\n";  // area() is accessible.
 }
