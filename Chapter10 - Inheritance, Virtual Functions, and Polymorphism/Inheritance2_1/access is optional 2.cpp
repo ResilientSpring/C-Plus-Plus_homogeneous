@@ -40,15 +40,15 @@ int main() {
 	// then all public members of the base class become private members of the derived class.
 	t1.width = 4.0;
 	t1.height = 4.0;
-	strcpy(t1.style, "isosceles");
+	strcpy(t1.style, "isosceles");  
 
 	t2.width = 8.0;
 	t2.height = 12.0;
-	strcpy(t2.style, "right");
+	strcpy(t2.style, "right");  // The style is accessible.
 
 	std::cout << "Info for t1: \n";
 	t1.showStyle();
-	t1.showDim();
+	t1.showDim();  // Class twoDshape's public showDim() has become a private member of class Triangle.
 	std::cout << "Area is " << t1.area() << "\n";
 
 	std::cout << "\n";
