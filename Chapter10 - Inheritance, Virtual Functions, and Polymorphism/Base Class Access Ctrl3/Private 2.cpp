@@ -15,6 +15,8 @@ public:
 	}
 };
 
+// When the base class is inherited as private, 
+// then all public members of the base class become private members of the derived class.
 class D : private B {
 
 	int k;
