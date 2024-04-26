@@ -14,8 +14,17 @@ public:
 
 };
 
+class D : public B {
+
+public:
+	D() {
+		cout << "Constructing derived portion\n";
+	}
+
+};
+
 int main() {
 
-
+	
 
 }
