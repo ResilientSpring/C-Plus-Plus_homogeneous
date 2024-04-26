@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="In what order is the constructor called.cpp">
+    <ClCompile Include="In what order are constructors called.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
