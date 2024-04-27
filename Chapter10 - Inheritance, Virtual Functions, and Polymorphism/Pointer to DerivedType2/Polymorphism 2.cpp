@@ -39,11 +39,10 @@ int main() {
 
 	cout << p << endl;
 
-
-	// Thus, in this example, p can be used to access all elements of D_ob that is inherited from B_ob.
-	p->~B();
-
 	p = &D_ob;
 
 	cout << p << endl;
+
+	// Thus, in this example, p can be used to access all elements of D_ob that is inherited from B_ob.
+	p->~B();
 }
