@@ -45,4 +45,7 @@ int main() {
 
 	// Thus, in this example, p can be used to access all elements of D_ob that is inherited from B_ob.
 	p->~B();
+
+	// However, elements specific to D_ob cannot be accessed through p.
+	// p->~D();
 }
