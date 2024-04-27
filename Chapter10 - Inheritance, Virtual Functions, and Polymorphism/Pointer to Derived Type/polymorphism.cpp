@@ -38,4 +38,8 @@ int main() {
 	p = &B_ob;
 
 	cout << p << endl;
+
+	p = &D_ob;
+
+	cout << p << endl;
 }
