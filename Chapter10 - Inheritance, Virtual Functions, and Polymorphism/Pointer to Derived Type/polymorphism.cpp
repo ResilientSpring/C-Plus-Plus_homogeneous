@@ -34,4 +34,8 @@ int main() {
 	B* p;  // pointer to object of type B
 	B B_ob; // object of type B
 	D D_ob;  // object of type D
+
+	p = &B_ob;
+
+	cout << p << endl;
 }
