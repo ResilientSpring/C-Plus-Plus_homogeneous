@@ -27,6 +27,19 @@ public:
 
 };
 
+class B2 : public B {
+
+public:
+
+	// redefine who() for B2
+	void who() {
+
+		cout << "Second derivation\n";
+
+	}
+
+};
+
 
 int main() {
 
