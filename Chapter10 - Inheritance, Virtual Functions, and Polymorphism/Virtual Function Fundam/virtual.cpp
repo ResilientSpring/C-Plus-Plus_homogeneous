@@ -14,6 +14,19 @@ public:
 
 };
 
+class B1 : public B {
+
+public:
+
+	// redefine who() for B1
+	void who() {
+
+		cout << "First derivation\n";
+
+	}
+
+};
+
 
 int main() {
 
