@@ -14,7 +14,7 @@ public:
 
 };
 
-class B1 : public B {
+class D1 : public B {
 
 public:
 
@@ -27,7 +27,7 @@ public:
 
 };
 
-class B2 : public B {
+class D2 : public B {
 
 public:
 
@@ -43,7 +43,20 @@ public:
 
 int main() {
 
+	B base_obj;
 
+	B* p;
 
+	D1 D1_obj;
+	D2 D2_obj;
 
+	p = &base_obj;
+
+	p->who();
+
+	p = &D1_obj;
+	p->who();
+
+	p = &D2_obj;
+	p->who();
 }
