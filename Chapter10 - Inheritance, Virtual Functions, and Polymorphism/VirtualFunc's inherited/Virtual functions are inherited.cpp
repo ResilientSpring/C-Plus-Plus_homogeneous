@@ -5,8 +5,7 @@ class B {
 
 public:
 
-	// Without declaring a virtual function.
-	void who() {
+	virtual void who() {
 		cout << "Base\n";
 	}
 
