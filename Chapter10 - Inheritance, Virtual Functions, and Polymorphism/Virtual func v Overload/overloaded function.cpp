@@ -57,4 +57,9 @@ int main() {
 
 	p = &D2_obj;
 	p->who();
+
+	cout << "-------------------\n";
+
+	D1_obj.who();
+	D2_obj.who();
 }
