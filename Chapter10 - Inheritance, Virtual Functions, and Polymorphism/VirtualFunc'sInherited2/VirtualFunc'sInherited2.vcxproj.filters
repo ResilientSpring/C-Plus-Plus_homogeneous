@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="overridden function.cpp">
+    <ClCompile Include="When a derived class does not override a virtual func.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8e3543ad-ba7b-4803-bf41-d9b4b9d32b2c}</ProjectGuid>
-    <RootNamespace>VirtualfuncvOverload</RootNamespace>
+    <ProjectGuid>{470c1026-0718-4cb5-8ecd-a1dfdcde2c63}</ProjectGuid>
+    <RootNamespace>VirtualFuncsinherited</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Virtual func v Override</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="overridden function.cpp" />
+    <ClCompile Include="Virtual functions are inherited.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
