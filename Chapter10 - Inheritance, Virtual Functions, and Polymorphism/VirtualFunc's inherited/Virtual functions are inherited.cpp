@@ -30,7 +30,6 @@ class D2 : public D1 {
 
 public:
 
-	// redefine who() for D2
 	void who() {
 
 		cout << "Second derivation\n";
@@ -41,6 +40,12 @@ public:
 
 int main() {
 
+	B* p;
 
+	D2 d2;
+
+	p = &d2;
+
+	p->who();
 
 }
