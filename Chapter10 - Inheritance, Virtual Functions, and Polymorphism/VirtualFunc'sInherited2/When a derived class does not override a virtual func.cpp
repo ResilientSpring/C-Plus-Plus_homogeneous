@@ -40,8 +40,14 @@ int main() {
 	D1 D1_obj;
 	D2 D2_obj;
 
-	p = &D2_obj;
-
+	p = &base_obj;
 	p->who();
+
+	p = &D1_obj;
+	p->who();
+
+	p = &D2_obj;
+	p->who();
+
 
 }
