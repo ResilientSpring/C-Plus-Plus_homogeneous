@@ -33,9 +33,12 @@ class D2 : public B {
 
 int main() {
 
+	B base_obj;
+
 	B* p;
 
-	D2 d2;
+	D1 D1_obj;
+	D2 D2_obj;
 
 	p = &d2;
 
