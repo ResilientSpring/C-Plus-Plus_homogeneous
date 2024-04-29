@@ -1,5 +1,3 @@
-// A short example that uses a virtual function.
-
 #include <iostream>
 using namespace std;
 
@@ -7,8 +5,8 @@ class B {
 
 public:
 
-	// Declare a virtual function.
-	virtual void who() {
+	// Without declaring a virtual function.
+	void who() {
 		cout << "Base\n";
 	}
 
@@ -18,7 +16,7 @@ class D1 : public B {
 
 public:
 
-	// redefine who() for B1
+	// redefine who() for D1
 	void who() {
 
 		cout << "First derivation\n";
@@ -31,7 +29,7 @@ class D2 : public B {
 
 public:
 
-	// redefine who() for B2
+	// redefine who() for D2
 	void who() {
 
 		cout << "Second derivation\n";
