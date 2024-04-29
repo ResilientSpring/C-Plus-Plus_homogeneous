@@ -40,7 +40,7 @@ int main() {
 	D1 D1_obj;
 	D2 D2_obj;
 
-	p = &d2;
+	p = &D2_obj;
 
 	p->who();
 
