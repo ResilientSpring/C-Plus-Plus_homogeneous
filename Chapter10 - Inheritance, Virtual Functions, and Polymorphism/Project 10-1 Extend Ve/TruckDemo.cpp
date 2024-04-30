@@ -22,7 +22,13 @@ public:
 
 // Use Vehicle to create a Truck specialization.
 class Truck : public Vehicle {
+	int cargo_capacity;  // cargo capacity in pounds.
 
+public:
+	// This is a constructor for Truck
+	Truck(int p, int f, int m, int c) : Vehicle(p, f, m) {
+		cargo_capacity = c;
+	}
 };
 
 int main() {
