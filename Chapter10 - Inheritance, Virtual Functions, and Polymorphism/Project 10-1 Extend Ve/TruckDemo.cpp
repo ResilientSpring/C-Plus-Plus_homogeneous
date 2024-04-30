@@ -29,6 +29,11 @@ public:
 	Truck(int p, int f, int m, int c) : Vehicle(p, f, m) {
 		cargo_capacity = c;
 	}
+
+	// Accessor function for cargo_capacity
+	int get_cargo_capacity() {
+		return cargo_capacity;
+	}
 };
 
 int main() {
