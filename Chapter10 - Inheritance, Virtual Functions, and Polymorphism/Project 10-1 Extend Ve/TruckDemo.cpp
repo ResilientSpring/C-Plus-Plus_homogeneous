@@ -38,6 +38,6 @@ public:
 
 int main() {
 
-
+	// Construct some trucks.
 
 }
