@@ -16,7 +16,7 @@ class D1 : public B {
 
 public:
 
-	// redefine who() for D1
+	// override who()
 	void who() {
 
 		cout << "First derivation\n";
@@ -29,7 +29,7 @@ class D2 : public B {
 
 public:
 
-	// redefine who() for D2
+	// override who()
 	void who() {
 
 		cout << "Second derivation\n";
