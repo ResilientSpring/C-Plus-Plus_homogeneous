@@ -38,6 +38,13 @@ public:
 
 };
 
+class D3 : public D2 {
+public:
+	void who() {
+		cout << "Third derivation\n";
+	}
+};
+
 
 int main() {
 
@@ -47,6 +54,7 @@ int main() {
 
 	D1 D1_obj;
 	D2 D2_obj;
+	D3 D3_obj;
 
 	p = &base_obj;
 
@@ -62,4 +70,5 @@ int main() {
 
 	D1_obj.who();
 	D2_obj.who();
+	D3_obj.who();
 }
