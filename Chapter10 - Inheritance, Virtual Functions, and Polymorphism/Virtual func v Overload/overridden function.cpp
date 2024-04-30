@@ -40,6 +40,7 @@ public:
 
 class D3 : public D2 {
 public:
+	// override who()
 	void who() {
 		cout << "Third derivation\n";
 	}
