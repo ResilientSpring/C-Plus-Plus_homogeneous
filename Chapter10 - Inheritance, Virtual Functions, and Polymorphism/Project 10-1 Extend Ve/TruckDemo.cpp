@@ -39,5 +39,5 @@ public:
 int main() {
 
 	// Construct some trucks.
-
+	Truck semi(2, 200, 7, 44000);
 }
