@@ -60,5 +60,5 @@ int main() {
 
 	cout << "It has a range of " << semi.range() << " miles.\n";
 
-	cout << "To go " << dist << " miles semi needs " << dist / pickup.
+	cout << "To go " << dist << " miles, semi needs " << dist / semi.get_mpg() << " gallons of fuel.\n\n";
 }
