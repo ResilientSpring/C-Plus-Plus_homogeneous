@@ -41,4 +41,9 @@ int main() {
 	// Construct some trucks.
 	Truck semi(2, 200, 7, 44000);
 	Truck pickup(3, 28, 15, 2000);
+	int dis = 252;
+
+	cout << "Semi can carry " << semi.get_cargo_capacity() << " pounds.\n";
+
+	cout << "It has a range of " << semi.range() << " miles.\n";
 }
