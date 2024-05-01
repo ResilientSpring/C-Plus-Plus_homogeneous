@@ -40,4 +40,5 @@ int main() {
 
 	// Construct some trucks.
 	Truck semi(2, 200, 7, 44000);
+	Truck pickup(3, 28, 15, 2000);
 }
