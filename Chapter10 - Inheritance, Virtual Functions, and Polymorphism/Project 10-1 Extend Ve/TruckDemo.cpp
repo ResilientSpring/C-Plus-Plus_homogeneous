@@ -18,6 +18,19 @@ public:
 		return mpg * fuelcap;
 	}
 
+	// Accessor functions.
+	int get_passengers() {
+		return passengers;
+	}
+
+	int get_fuelcap() {
+		return fuelcap;
+	}
+
+	int get_mpg() {
+		return mpg;
+	}
+
 };
 
 // Use Vehicle to create a Truck specialization.
@@ -41,9 +54,11 @@ int main() {
 	// Construct some trucks.
 	Truck semi(2, 200, 7, 44000);
 	Truck pickup(3, 28, 15, 2000);
-	int dis = 252;
+	int dist = 252;
 
 	cout << "Semi can carry " << semi.get_cargo_capacity() << " pounds.\n";
 
 	cout << "It has a range of " << semi.range() << " miles.\n";
+
+	cout << "To go " << dist << " miles semi needs " << dist / pickup.
 }
