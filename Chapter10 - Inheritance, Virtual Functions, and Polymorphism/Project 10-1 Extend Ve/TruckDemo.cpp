@@ -63,4 +63,6 @@ int main() {
 	cout << "To go " << dist << " miles, semi needs " << dist / semi.get_mpg() << " gallons of fuel.\n\n";
 
 	cout << "Pickup can carry " << pickup.get_cargo_capacity() << " pounds. \n";
+	cout << "It has a range of " << pickup.range() << " miles.\n";
+	cout << "To go " << dist << " miles, Pickup needs " << dist / pickup.get_mpg() << " gallons of fuel.\n\n";
 }
