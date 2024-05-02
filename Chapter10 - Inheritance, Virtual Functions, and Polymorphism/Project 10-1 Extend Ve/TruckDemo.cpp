@@ -49,6 +49,14 @@ public:
 	}
 };
 
+class OffRoad : public Vehicle {
+
+	int groundClearance;  // ground clearance in inches
+
+public:
+
+};
+
 int main() {
 
 	// Construct some trucks.
