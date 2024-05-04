@@ -110,7 +110,7 @@ int main(int argc, char **argv) {
 	string input_aag = argv[1];
 	read(input_aag);
 
-	K = 4;
+	K = stoi(argv[2]);
 
 	stack<int> gates;
 
