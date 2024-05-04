@@ -110,6 +110,8 @@ int main(int argc, char **argv) {
 	string input_aag = argv[1];
 	read(input_aag);
 
+	// Using the standard-library function std::stoi has the advantage of working regardless of 
+	// character encoding. [25]
 	K = stoi(argv[2]);
 
 	stack<int> gates;
@@ -957,6 +959,7 @@ bool comparison(int a) {
 * 22. https://stackoverflow.com/a/936702/
 * 23. https://stackoverflow.com/a/29375830/
 * 24. https://www.geeksforgeeks.org/how-to-declare-a-2d-array-dynamically-in-c-using-new-operator/
+* 25. https://stackoverflow.com/questions/36634600/how-to-properly-convert-char-to-int-in-c
 
 */
 
