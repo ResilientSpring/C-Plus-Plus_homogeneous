@@ -114,6 +114,11 @@ int main(int argc, char **argv) {
 	// character encoding. [25]
 	K = stoi(argv[2]);
 
+	cout << "Input File: " << argv[1] << endl;
+	cout << "K: " << argv[2] << endl;
+	cout << "Output File: " << argv[3] << endl;
+	cout << "CLB's input size constraint: " << argv[4] << endl;
+
 	stack<int> gates;
 
 	Topological_sort(gates);
