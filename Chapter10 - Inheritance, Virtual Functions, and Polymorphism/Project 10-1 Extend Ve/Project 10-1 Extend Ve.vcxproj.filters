@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="overridden function.cpp">
+    <ClCompile Include="TruckDemo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
