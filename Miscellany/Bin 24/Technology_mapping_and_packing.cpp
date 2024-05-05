@@ -97,7 +97,7 @@ public:
 vector<vertex **> trees_LUTs;
 
 
-int main(int argc, char **argv) {
+int main(int argc, char** argv) {
 
 	if (argc != 5) {
 
