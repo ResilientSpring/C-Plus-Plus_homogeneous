@@ -120,10 +120,10 @@ int main(int argc, char **argv) {
 	dismantle_forest_to_trees(gates);
 	mapper1();
 
-	string output_file_name = "alu4.mapping_result";
+	string output_file_name = argv[3];
 	Output(output_file_name);
 
-	CLB_input_size = 8;
+	CLB_input_size = stoi(argv[4]);
 
 	cout << endl << "The number of LUTs: " << num_of_fanins_of_each_LUT.size() << endl;
 
