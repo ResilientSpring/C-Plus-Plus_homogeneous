@@ -37,6 +37,7 @@ void Output2(string output_file);
 
 int packing(int CLB_input_size_);
 int packing_2(int CLB_input_size_);
+int packing_3(int CLB_input_size_);
 // bool comparison(int a);
 
 string title;
