@@ -133,7 +133,7 @@ int main(int argc, char* argv[]) {
 
 	cout << endl << "The number of LUTs: " << num_of_fanins_of_each_LUT.size() << endl;
 
-	cout << endl << "The number of CLBs: " << packing_2(CLB_input_size) << endl;
+	cout << endl << "The number of CLBs: " << packing_3(CLB_input_size) << endl;
 
 	delete[] adjacency_list_of_network;
 	delete[] inverse_adjacency_list_of_network;
