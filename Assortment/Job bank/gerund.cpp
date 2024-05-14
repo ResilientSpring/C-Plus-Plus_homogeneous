@@ -12,4 +12,9 @@ int main() {
 	else
 		printf("incorrect");
 
+
+	cout << "\n";
+
+	printf(answer == !7 ? )
+
 }
