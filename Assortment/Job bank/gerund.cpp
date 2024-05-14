@@ -17,4 +17,8 @@ int main() {
 
 	printf(answer != 7 ? "correct" : "incorrect");
 
+	cout << "\n";
+
+	printf(answer < > 7 ? "correct" : "incorrect");
+
 }
