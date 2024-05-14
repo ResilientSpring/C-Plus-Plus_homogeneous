@@ -27,6 +27,7 @@ int main() {
 	// 3
 	// printf(answer < > 7 ? "correct" : "incorrect");
 
+
 	// 4
 	answer == 7 ? printf("correct") : printf("incorrect");
 
