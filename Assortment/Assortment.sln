@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Busy waiting", "Busy waitin
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Job bank", "Job bank\Job bank.vcxproj", "{AE733159-95B9-4776-9124-C62299566123}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Job bank 2", "Job bank 2\Job bank 2.vcxproj", "{BC0A159F-09A8-4E6C-A340-564DCD18BEFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{AE733159-95B9-4776-9124-C62299566123}.Release|x64.Build.0 = Release|x64
 		{AE733159-95B9-4776-9124-C62299566123}.Release|x86.ActiveCfg = Release|Win32
 		{AE733159-95B9-4776-9124-C62299566123}.Release|x86.Build.0 = Release|Win32
+		{BC0A159F-09A8-4E6C-A340-564DCD18BEFB}.Debug|x64.ActiveCfg = Debug|x64
+		{BC0A159F-09A8-4E6C-A340-564DCD18BEFB}.Debug|x64.Build.0 = Debug|x64
+		{BC0A159F-09A8-4E6C-A340-564DCD18BEFB}.Debug|x86.ActiveCfg = Debug|Win32
+		{BC0A159F-09A8-4E6C-A340-564DCD18BEFB}.Debug|x86.Build.0 = Debug|Win32
+		{BC0A159F-09A8-4E6C-A340-564DCD18BEFB}.Release|x64.ActiveCfg = Release|x64
+		{BC0A159F-09A8-4E6C-A340-564DCD18BEFB}.Release|x64.Build.0 = Release|x64
+		{BC0A159F-09A8-4E6C-A340-564DCD18BEFB}.Release|x86.ActiveCfg = Release|Win32
+		{BC0A159F-09A8-4E6C-A340-564DCD18BEFB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
