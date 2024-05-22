@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Job bank 3", "Job bank 3\Jo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Job bank 4", "Job bank 4\Job bank 4.vcxproj", "{4696ABB8-36E2-4E30-A808-E2E86D1ACBEE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Job bank 4-2", "Job bank 4-2\Job bank 4-2.vcxproj", "{CF3F9A6E-86D4-4C07-8536-ACB5CA6653A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -151,6 +153,14 @@ Global
 		{4696ABB8-36E2-4E30-A808-E2E86D1ACBEE}.Release|x64.Build.0 = Release|x64
 		{4696ABB8-36E2-4E30-A808-E2E86D1ACBEE}.Release|x86.ActiveCfg = Release|Win32
 		{4696ABB8-36E2-4E30-A808-E2E86D1ACBEE}.Release|x86.Build.0 = Release|Win32
+		{CF3F9A6E-86D4-4C07-8536-ACB5CA6653A4}.Debug|x64.ActiveCfg = Debug|x64
+		{CF3F9A6E-86D4-4C07-8536-ACB5CA6653A4}.Debug|x64.Build.0 = Debug|x64
+		{CF3F9A6E-86D4-4C07-8536-ACB5CA6653A4}.Debug|x86.ActiveCfg = Debug|Win32
+		{CF3F9A6E-86D4-4C07-8536-ACB5CA6653A4}.Debug|x86.Build.0 = Debug|Win32
+		{CF3F9A6E-86D4-4C07-8536-ACB5CA6653A4}.Release|x64.ActiveCfg = Release|x64
+		{CF3F9A6E-86D4-4C07-8536-ACB5CA6653A4}.Release|x64.Build.0 = Release|x64
+		{CF3F9A6E-86D4-4C07-8536-ACB5CA6653A4}.Release|x86.ActiveCfg = Release|Win32
+		{CF3F9A6E-86D4-4C07-8536-ACB5CA6653A4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
