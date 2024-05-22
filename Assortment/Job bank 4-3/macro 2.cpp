@@ -15,4 +15,5 @@ int main() {
 	printf("d = %d\n", d);
 	printf("e = %e\n", e);
 
+	printf("e = %d\n", e);
 }
