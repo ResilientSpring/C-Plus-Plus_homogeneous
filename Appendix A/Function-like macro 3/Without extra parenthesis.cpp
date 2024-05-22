@@ -6,5 +6,9 @@ using namespace std;
 
 int main() {
 
+	if (EVEN(9 + 1))
+		cout << "is even";
+	else
+		cout << "is odd";
 
 }
