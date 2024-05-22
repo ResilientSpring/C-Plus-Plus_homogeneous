@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-#define EVEN(a)  a$2 == 0 ? 1 : 0
+#define EVEN(a)  a%2 == 0 ? 1 : 0
 
 int main() {
 
