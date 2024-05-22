@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.34407.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Function-Like Macro", "Function-Like Macro\Function-Like Macro.vcxproj", "{4830C351-EEB8-4619-B4F6-31385F2E60DD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Function-Like Macro 2", "Function-Like Macro 2\Function-Like Macro 2.vcxproj", "{16E98AE3-BD46-4992-B0A0-30EDA35D4F39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{4830C351-EEB8-4619-B4F6-31385F2E60DD}.Release|x64.Build.0 = Release|x64
 		{4830C351-EEB8-4619-B4F6-31385F2E60DD}.Release|x86.ActiveCfg = Release|Win32
 		{4830C351-EEB8-4619-B4F6-31385F2E60DD}.Release|x86.Build.0 = Release|Win32
+		{16E98AE3-BD46-4992-B0A0-30EDA35D4F39}.Debug|x64.ActiveCfg = Debug|x64
+		{16E98AE3-BD46-4992-B0A0-30EDA35D4F39}.Debug|x64.Build.0 = Debug|x64
+		{16E98AE3-BD46-4992-B0A0-30EDA35D4F39}.Debug|x86.ActiveCfg = Debug|Win32
+		{16E98AE3-BD46-4992-B0A0-30EDA35D4F39}.Debug|x86.Build.0 = Debug|Win32
+		{16E98AE3-BD46-4992-B0A0-30EDA35D4F39}.Release|x64.ActiveCfg = Release|x64
+		{16E98AE3-BD46-4992-B0A0-30EDA35D4F39}.Release|x64.Build.0 = Release|x64
+		{16E98AE3-BD46-4992-B0A0-30EDA35D4F39}.Release|x86.ActiveCfg = Release|Win32
+		{16E98AE3-BD46-4992-B0A0-30EDA35D4F39}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
