@@ -13,6 +13,6 @@ int main() {
 
 
 	printf("d = %d\n", d);
-
+	printf("e = %e\n", e);
 
 }
