@@ -8,7 +8,7 @@ int main() {
 
 	int x, y;
 
-	x = 10; 
+	x = 10;
 	y = 20;
 
 	cout << "The minimum is " << MIN(x, y);
