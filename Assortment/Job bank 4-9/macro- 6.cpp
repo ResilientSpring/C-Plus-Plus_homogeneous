@@ -1,4 +1,4 @@
-#define ADD(x) (x*x)
+#define ADD(x) ((x)*(x))
 
 #include <iostream>
 using namespace std;
