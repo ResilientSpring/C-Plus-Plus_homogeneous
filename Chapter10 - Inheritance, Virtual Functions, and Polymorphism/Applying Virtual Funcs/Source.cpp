@@ -36,7 +36,17 @@ public:
 	}
 
 	// accessor functions
+	double getWidth() {
+		return width;
+	}
 
+	double getHeight() {
+		return height;
+	}
+
+	void setWidth(double w) {
+		width = w;
+	}
 };
 
 
