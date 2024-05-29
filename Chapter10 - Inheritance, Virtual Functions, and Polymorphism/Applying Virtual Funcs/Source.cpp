@@ -74,4 +74,8 @@ public:
 		strcpy(style, "unknown");
 	}
 
+	// Constructor with three parameters.
+	Triangle(char* str, double w, double h) : TwoDShape(w, h, "triangle") {
+		strcpy(style, str);
+	}
 };
