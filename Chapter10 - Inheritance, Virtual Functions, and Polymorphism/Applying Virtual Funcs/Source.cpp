@@ -34,6 +34,9 @@ public:
 	void showDim() {
 		cout << "Width and height are " << width << " and " << height << endl;
 	}
+
+	// accessor functions
+
 };
 
 
