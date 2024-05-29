@@ -19,14 +19,14 @@ public:
 	}
 
 	// Constructor for TwoDShape
-	TwoDShape(double w, double h, char* n) {
+	TwoDShape(double w, double h, const char* n) {
 		width = w;
 		height = h;
 		strcpy(name, n);
 	}
 
 	// Construct object with equal width and height.
-	TwoDShape(double x, char* n) {
+	TwoDShape(double x, const char* n) {
 		width = height = x;
 		strcpy(name, n);
 	}
