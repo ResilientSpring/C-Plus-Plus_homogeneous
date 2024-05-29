@@ -11,6 +11,17 @@ class TwoDShape {
 
 public:
 
+	TwoDShape() {
+
+		width = height = 0.0;
+		strcpy(name, "unknown");
+	}
+
+	TwoDShape(double w, double h, char* n) {
+		width = w;
+		height = h;
+		strcpy(name, n);
+	}
 
 };
 
