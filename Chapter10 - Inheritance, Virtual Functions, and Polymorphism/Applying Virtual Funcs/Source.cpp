@@ -19,14 +19,14 @@ public:
 	}
 
 	// Constructor for TwoDShape
-	TwoDShape(double w, double h, char* n) {
+	TwoDShape(double w, double h, const char* n) {
 		width = w;
 		height = h;
 		strcpy(name, n);
 	}
 
 	// Construct object with equal width and height.
-	TwoDShape(double x, char* n) {
+	TwoDShape(double x, const char* n) {
 		width = height = x;
 		strcpy(name, n);
 	}
@@ -36,7 +36,48 @@ public:
 	}
 
 	// accessor functions
+	double getWidth() {
+		return width;
+	}
 
+	double getHeight() {
+		return height;
+	}
+
+	void setWidth(double w) {
+		width = w;
+	}
+
+	void setHeight(double h) {
+		height = h;
+	}
+
+	char* getName() {
+		return name;
+	}
+
+	// Add area() to TwoDShape and make it virtual.
+	virtual double area() {
+		cout << "Error: area() must be overridden.\n";
+		return 0.0;
+	}
 };
 
+class Triangle : public TwoDShape {
 
+	char style[20]; 
+
+public:
+
+	/*A default constructor. This automatically invokes the default constructor of TwoDShape*/
+	Triangle() {
+		strcpy(style, "unknown");
+	}
+
+	// Constructor with three parameters.
+	Triangle(char* str, double w, double h) : TwoDShape(w, h, "triangle") {
+		strcpy(style, str);
+	}
+
+	// Construct an isosce as triangle.
+};
