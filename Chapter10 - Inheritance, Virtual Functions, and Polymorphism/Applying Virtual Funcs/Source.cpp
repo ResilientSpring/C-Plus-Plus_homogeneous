@@ -47,6 +47,14 @@ public:
 	void setWidth(double w) {
 		width = w;
 	}
+
+	void setHeight(double h) {
+		height = h;
+	}
+
+	char* getName() {
+		return name;
+	}
 };
 
 
