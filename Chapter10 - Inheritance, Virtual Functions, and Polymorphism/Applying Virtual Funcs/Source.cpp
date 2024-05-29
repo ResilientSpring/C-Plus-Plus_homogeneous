@@ -55,6 +55,8 @@ public:
 	char* getName() {
 		return name;
 	}
+
+	// Add area() to TwoDShape and make it virtual.
 };
 
 
