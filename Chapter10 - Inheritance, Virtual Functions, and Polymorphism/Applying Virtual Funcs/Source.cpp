@@ -27,7 +27,7 @@ public:
 
 	// Construct object with equal width and height.
 	TwoDShape(double x, char* n) {
-		width = height - x;
+		width = height = x;
 		strcpy(name, n);
 	}
 
