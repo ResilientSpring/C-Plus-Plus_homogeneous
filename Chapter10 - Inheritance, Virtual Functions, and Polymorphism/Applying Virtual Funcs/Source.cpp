@@ -57,6 +57,21 @@ public:
 	}
 
 	// Add area() to TwoDShape and make it virtual.
+	virtual double area() {
+		cout << "Error: area() must be overridden.\n";
+		return 0.0;
+	}
 };
 
+class Triangle : public TwoDShape {
 
+	char style[20]; 
+
+public:
+
+	/*A default constructor. This automatically invokes the default constructor of TwoDShape*/
+	Triangle() {
+		strcpy(style, "unknown");
+	}
+
+};
