@@ -31,6 +31,9 @@ public:
 		strcpy(name, n);
 	}
 
+	void showDim() {
+		cout << "Width and height are " << width << " and " << height << endl;
+	}
 };
 
 
