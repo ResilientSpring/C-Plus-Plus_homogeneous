@@ -78,4 +78,6 @@ public:
 	Triangle(char* str, double w, double h) : TwoDShape(w, h, "triangle") {
 		strcpy(style, str);
 	}
+
+	// Construct an isosce as triangle.
 };
