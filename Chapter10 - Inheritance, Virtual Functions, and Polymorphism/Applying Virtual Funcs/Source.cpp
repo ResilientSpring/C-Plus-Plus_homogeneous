@@ -83,4 +83,9 @@ public:
 	Triangle(double x) : TwoDShape(x, "triangle") {
 		strcpy(style, "isosceles");
 	}
+
+	// This now overrides area() declared in TwoDShape.
+	double area() {
+		return getWidth() * getHeight();
+	}
 };
