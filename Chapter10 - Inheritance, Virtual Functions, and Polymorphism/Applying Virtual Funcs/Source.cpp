@@ -93,3 +93,8 @@ public:
 		cout << "Triangle is " << style << endl;
 	}
 };
+
+// A derived class of TwoDShape for rectangles.
+class Rectangle : public TwoDShape {
+
+};
