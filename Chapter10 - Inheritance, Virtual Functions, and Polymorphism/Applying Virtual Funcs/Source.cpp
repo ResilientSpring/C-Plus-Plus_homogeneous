@@ -86,6 +86,6 @@ public:
 
 	// This now overrides area() declared in TwoDShape.
 	double area() {
-		return getWidth() * getHeight();
+		return getWidth() * getHeight() / 2;
 	}
 };
