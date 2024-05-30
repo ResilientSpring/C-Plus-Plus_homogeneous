@@ -88,4 +88,8 @@ public:
 	double area() {
 		return getWidth() * getHeight() / 2;
 	}
+
+	void showStyle() {
+		cout << "Triangle is " << style << endl;
+	}
 };
