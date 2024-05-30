@@ -80,4 +80,7 @@ public:
 	}
 
 	// Construct an isosce as triangle.
+	Triangle(double x) : TwoDShape(x, "triangle") {
+		strcpy(style, "isosceles");
+	}
 };
