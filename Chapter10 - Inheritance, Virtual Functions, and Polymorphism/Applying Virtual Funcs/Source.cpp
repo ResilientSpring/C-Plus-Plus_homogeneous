@@ -80,4 +80,21 @@ public:
 	}
 
 	// Construct an isosce as triangle.
+	Triangle(double x) : TwoDShape(x, "triangle") {
+		strcpy(style, "isosceles");
+	}
+
+	// This now overrides area() declared in TwoDShape.
+	double area() {
+		return getWidth() * getHeight() / 2;
+	}
+
+	void showStyle() {
+		cout << "Triangle is " << style << endl;
+	}
+};
+
+// A derived class of TwoDShape for rectangles.
+class Rectangle : public TwoDShape {
+
 };
