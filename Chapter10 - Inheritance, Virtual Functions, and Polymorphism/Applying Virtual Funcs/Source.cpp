@@ -97,4 +97,12 @@ public:
 // A derived class of TwoDShape for rectangles.
 class Rectangle : public TwoDShape {
 
+public:
+
+	// Construct a rectangle.
+	Rectangle(double width, double height) :TwoDShape(width, height, "rectangle") {
+
+	}
+
+
 };
