@@ -154,8 +154,13 @@ Answer:
 You can work around this issue for now by disabling /permissive- by changing "Conformance Mode" to 
 "No" in the C/C++ -> Language project settings.[1]
 
+Switch the project's C++ language standard from C++20 to C++17, because Microsoft seemed to have stated 
+that the most complete support for C++20 is in Visual Studio 2022. [2]
+
 References:
 1. https://stackoverflow.com/a/65547916
 
+2. https://learn.microsoft.com/en-us/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022
+   (quote:Visual Studio 2022 includes better cross-platform app development tools and the latest version of C++ build tools, to include C++20 support.)
 
 */
