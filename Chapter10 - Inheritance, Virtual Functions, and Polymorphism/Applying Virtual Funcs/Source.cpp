@@ -109,5 +109,9 @@ public:
 
 	}
 
-
+	bool isSquare() {
+		if (getWidth() == getHeight())
+			return true;
+		return false;
+	}
 };
