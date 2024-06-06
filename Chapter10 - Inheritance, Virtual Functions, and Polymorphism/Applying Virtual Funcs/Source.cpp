@@ -139,6 +139,8 @@ int main() {
 		cout << "object in " << shapes[i]->getName() << endl;
 
 		cout << "Area is " << shapes[i]->area() << endl;
+
+		cout << "\n";
 	}
 
 }
