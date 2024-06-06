@@ -104,5 +104,10 @@ public:
 
 	}
 
+	// Construct a square
+	Rectangle(double x) :TwoDShape(x, "rectangle") {
+
+	}
+
 
 };
