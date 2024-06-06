@@ -75,7 +75,7 @@ public:
 	}
 
 	// Constructor with three parameters.
-	Triangle(char* str, double w, double h) : TwoDShape(w, h, "triangle") {
+	Triangle(const char* str, double w, double h) : TwoDShape(w, h, "triangle") {
 		strcpy(style, str);
 	}
 
@@ -114,4 +114,20 @@ public:
 			return true;
 		return false;
 	}
+
+	// This is another override of area().
+	double area() {
+
+		return getWidth() * getHeight();
+
+	}
 };
+
+int main() {
+
+	// declare an array of pointers to TwoDShape objects.
+	TwoDShape* shapes[5];
+
+	shapes[0] = &Triangle("right", 8.0, 12.0);
+
+}
