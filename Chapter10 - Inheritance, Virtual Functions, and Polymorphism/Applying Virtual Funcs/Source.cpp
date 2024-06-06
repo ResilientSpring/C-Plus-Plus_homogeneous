@@ -129,5 +129,6 @@ int main() {
 	TwoDShape* shapes[5];
 
 	shapes[0] = &Triangle("right", 8.0, 12.0);
+	shapes[1] = &Rectangle(10);
 
 }
