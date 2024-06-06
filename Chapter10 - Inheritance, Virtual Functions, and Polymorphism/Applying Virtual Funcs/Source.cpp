@@ -137,7 +137,7 @@ int main() {
 
 	for (int i = 0; i < 5; i++)
 	{
-		cout << "object in " << shapes[i]->getName() << endl;
+		cout << "object is " << shapes[i]->getName() << endl;
 
 		cout << "Area is " << shapes[i]->area() << endl;
 
