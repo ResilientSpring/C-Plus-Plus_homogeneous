@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <cstring>
 using namespace std;
@@ -75,7 +76,7 @@ public:
 	}
 
 	// Constructor with three parameters.
-	Triangle(char* str, double w, double h) : TwoDShape(w, h, "triangle") {
+	Triangle(const char* str, double w, double h) : TwoDShape(w, h, "triangle") {
 		strcpy(style, str);
 	}
 
@@ -104,5 +105,43 @@ public:
 
 	}
 
+	// Construct a square
+	Rectangle(double x) :TwoDShape(x, "rectangle") {
 
+	}
+
+	bool isSquare() {
+		if (getWidth() == getHeight())
+			return true;
+		return false;
+	}
+
+	// This is another override of area().
+	double area() {
+
+		return getWidth() * getHeight();
+
+	}
 };
+
+int main() {
+
+	// declare an array of pointers to TwoDShape objects.
+	TwoDShape* shapes[5];
+
+	shapes[0] = &Triangle("right", 8.0, 12.0);
+	shapes[1] = &Rectangle(10);
+	shapes[2] = &Rectangle(10, 4);
+	shapes[3] = &Triangle(7.0);
+	shapes[4] = &TwoDShape(10, 20, "generic");
+
+	for (int i = 0; i < 5; i++)
+	{
+		cout << "object in " << shapes[i]->getName() << endl;
+
+		cout << "Area is " << shapes[i]->area() << endl;
+
+		cout << "\n";
+	}
+
+}
