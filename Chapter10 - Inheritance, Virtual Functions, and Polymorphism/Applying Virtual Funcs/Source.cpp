@@ -134,4 +134,11 @@ int main() {
 	shapes[3] = &Triangle(7.0);
 	shapes[4] = &TwoDShape(10, 20, "generic");
 
+	for (int i = 0; i < 5; i++)
+	{
+		cout << "object in " << shapes[i]->getName() << endl;
+
+		cout << "Area is " << shapes[i]->area() << endl;
+	}
+
 }
