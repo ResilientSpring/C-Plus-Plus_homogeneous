@@ -63,6 +63,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bitwise AND to turn bits of
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bitwise AND to turn bits off 2", "bitwise AND to turn bits off 2\bitwise AND to turn bits off 2.vcxproj", "{A7844C81-F678-4699-9967-C605E41D60FB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bitwise AND to turn bits off 3", "bitwise AND to turn bits off 3\bitwise AND to turn bits off 3.vcxproj", "{B928C9C6-9025-4955-864D-D00180C14CE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -311,6 +313,14 @@ Global
 		{A7844C81-F678-4699-9967-C605E41D60FB}.Release|x64.Build.0 = Release|x64
 		{A7844C81-F678-4699-9967-C605E41D60FB}.Release|x86.ActiveCfg = Release|Win32
 		{A7844C81-F678-4699-9967-C605E41D60FB}.Release|x86.Build.0 = Release|Win32
+		{B928C9C6-9025-4955-864D-D00180C14CE5}.Debug|x64.ActiveCfg = Debug|x64
+		{B928C9C6-9025-4955-864D-D00180C14CE5}.Debug|x64.Build.0 = Debug|x64
+		{B928C9C6-9025-4955-864D-D00180C14CE5}.Debug|x86.ActiveCfg = Debug|Win32
+		{B928C9C6-9025-4955-864D-D00180C14CE5}.Debug|x86.Build.0 = Debug|Win32
+		{B928C9C6-9025-4955-864D-D00180C14CE5}.Release|x64.ActiveCfg = Release|x64
+		{B928C9C6-9025-4955-864D-D00180C14CE5}.Release|x64.Build.0 = Release|x64
+		{B928C9C6-9025-4955-864D-D00180C14CE5}.Release|x86.ActiveCfg = Release|Win32
+		{B928C9C6-9025-4955-864D-D00180C14CE5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
