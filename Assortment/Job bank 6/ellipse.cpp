@@ -5,8 +5,11 @@ int Game(int X);
 
 int main() {
 
+	int K;
 
+	K = Game(5);
 
+	cout << K << endl;
 
 }
 
