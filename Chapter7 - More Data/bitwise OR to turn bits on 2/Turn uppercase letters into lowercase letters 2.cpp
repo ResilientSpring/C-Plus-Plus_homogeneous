@@ -51,6 +51,7 @@ int main() {
 
 		*/
 
+		ch = ch | 32;
 
 		cout << ch << " ";
 	}
