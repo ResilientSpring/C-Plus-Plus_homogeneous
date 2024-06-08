@@ -13,7 +13,7 @@ int main() {
 
 		//   65 
 		// 0100 0001 OR 0110 0001
-		ch = ch | 97;
+		ch = ch | 97;          // This assignment should be commented out, otherwise ch will be altered.
 
 		/*
 			0100 0001
@@ -58,6 +58,16 @@ int main() {
 		------------------
 		   0110 0100 d 
 
+		*/
+
+		/*
+		   
+		   0100 1000 H
+		OR 
+		-----------------
+		   0110 1000 h
+		 
+		
 		*/
 
 		ch = ch | 32;
