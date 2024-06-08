@@ -32,6 +32,25 @@ int main() {
 
 		*/
 
+		/*
+		   For 0100 0011 add 32
+		   
+		   0100 0011  C
+		OR 0010 0000
+		------------------
+		   0110 0011  c  (C plus 32)
+
+		*/
+
+	    /*  Although adding 0110 0011 works as well, it only works for the conversion from C to c. 
+		   
+		   0100 0011  C
+		OR 0110 0011
+		------------------
+		   0110 0011  c  (C plus 32)
+
+		*/
+
 
 		cout << ch << " ";
 	}
