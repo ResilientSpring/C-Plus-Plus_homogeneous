@@ -71,6 +71,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bitwise AND to turn bits on
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bitwise OR to turn bits on", "bitwise OR to turn bits on\bitwise OR to turn bits on.vcxproj", "{B65E8885-3E40-4F08-AB43-04B64CE653B3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bitwise OR to turn bits on 2", "bitwise OR to turn bits on 2\bitwise OR to turn bits on 2.vcxproj", "{7B4D9FBF-F0CD-4B4E-BC2B-F63D9CDA3E08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -351,6 +353,14 @@ Global
 		{B65E8885-3E40-4F08-AB43-04B64CE653B3}.Release|x64.Build.0 = Release|x64
 		{B65E8885-3E40-4F08-AB43-04B64CE653B3}.Release|x86.ActiveCfg = Release|Win32
 		{B65E8885-3E40-4F08-AB43-04B64CE653B3}.Release|x86.Build.0 = Release|Win32
+		{7B4D9FBF-F0CD-4B4E-BC2B-F63D9CDA3E08}.Debug|x64.ActiveCfg = Debug|x64
+		{7B4D9FBF-F0CD-4B4E-BC2B-F63D9CDA3E08}.Debug|x64.Build.0 = Debug|x64
+		{7B4D9FBF-F0CD-4B4E-BC2B-F63D9CDA3E08}.Debug|x86.ActiveCfg = Debug|Win32
+		{7B4D9FBF-F0CD-4B4E-BC2B-F63D9CDA3E08}.Debug|x86.Build.0 = Debug|Win32
+		{7B4D9FBF-F0CD-4B4E-BC2B-F63D9CDA3E08}.Release|x64.ActiveCfg = Release|x64
+		{7B4D9FBF-F0CD-4B4E-BC2B-F63D9CDA3E08}.Release|x64.Build.0 = Release|x64
+		{7B4D9FBF-F0CD-4B4E-BC2B-F63D9CDA3E08}.Release|x86.ActiveCfg = Release|Win32
+		{7B4D9FBF-F0CD-4B4E-BC2B-F63D9CDA3E08}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
