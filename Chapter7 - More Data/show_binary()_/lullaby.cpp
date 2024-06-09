@@ -7,5 +7,5 @@ using namespace std;
 int main() {
 
 	show_binary(9);
-
+	show_binary(8);
 }
