@@ -12,7 +12,16 @@ int main() {
 	show_binary(192);
 	show_binary(128);
 	show_binary(127);
-
+	show_binary(96);
+	show_binary(84);
+	show_binary(81);
+	show_binary(72);
+	show_binary(69);
+	show_binary(64);
+	show_binary(63);
+	show_binary(62);
+	show_binary(32);
+	show_binary(27);
 }
 
 // Display the bits within a byte.
