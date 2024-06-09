@@ -81,6 +81,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Check if a bit (in a status
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Check if a bit (in a status) is on or off with AND 2", "Check if a bit (in a status) is on or off with AND 2\Check if a bit (in a status) is on or off with AND 2.vcxproj", "{A6220478-EFF9-442D-A282-60AF1D3039B7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Check if a bit (in a status) is on or off with AND 3", "Check if a bit (in a status) is on or off with AND 3\Check if a bit (in a status) is on or off with AND 3.vcxproj", "{8480EFB6-782C-420E-BB07-F11466AED88F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -401,6 +403,14 @@ Global
 		{A6220478-EFF9-442D-A282-60AF1D3039B7}.Release|x64.Build.0 = Release|x64
 		{A6220478-EFF9-442D-A282-60AF1D3039B7}.Release|x86.ActiveCfg = Release|Win32
 		{A6220478-EFF9-442D-A282-60AF1D3039B7}.Release|x86.Build.0 = Release|Win32
+		{8480EFB6-782C-420E-BB07-F11466AED88F}.Debug|x64.ActiveCfg = Debug|x64
+		{8480EFB6-782C-420E-BB07-F11466AED88F}.Debug|x64.Build.0 = Debug|x64
+		{8480EFB6-782C-420E-BB07-F11466AED88F}.Debug|x86.ActiveCfg = Debug|Win32
+		{8480EFB6-782C-420E-BB07-F11466AED88F}.Debug|x86.Build.0 = Debug|Win32
+		{8480EFB6-782C-420E-BB07-F11466AED88F}.Release|x64.ActiveCfg = Release|x64
+		{8480EFB6-782C-420E-BB07-F11466AED88F}.Release|x64.Build.0 = Release|x64
+		{8480EFB6-782C-420E-BB07-F11466AED88F}.Release|x86.ActiveCfg = Release|Win32
+		{8480EFB6-782C-420E-BB07-F11466AED88F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
