@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 // Display the bits within a byte.
 void show_binary(unsigned int u) {
 
