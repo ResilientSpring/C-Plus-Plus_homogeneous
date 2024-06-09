@@ -2,7 +2,7 @@
 #include "insofar_as_.cpp"
 using namespace std;
 
-extern void show_binary(unsigned int u);
+// extern void show_binary(unsigned int u);
 
 int main() {
 
