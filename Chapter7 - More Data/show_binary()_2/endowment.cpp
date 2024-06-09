@@ -5,7 +5,13 @@ void show_binary(unsigned int u);
 
 int main() {
 	
-
+	show_binary(255);
+	show_binary(252);
+	show_binary(240);
+	show_binary(224);
+	show_binary(192);
+	show_binary(128);
+	show_binary(127);
 
 }
 
