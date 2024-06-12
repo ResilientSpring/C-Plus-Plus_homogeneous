@@ -16,6 +16,8 @@ int main() {
 
 	cout << "Encoded message: " << msg << endl;
 
+	// XOR has an interesting property making it a simple way to encode an array of characters.
+
 	for (int i = 0; i < strlen(msg); i++)
 		msg[i] = msg[i] ^ key;  
 
