@@ -13,13 +13,13 @@ int main() {
 
 	// 	XOR has an interesting property making it a way to encode an array of characters.
 	for (int i = 0; i < strlen(msg); i++)
-		msg[i] = msg[i] ^ key;    // When A is XORed with B, and C ensues.
+		msg[i] = msg[i] ^ key;    // When A is XORed with B, C ensues.
 
 	cout << "Encoded message: " << msg << endl;
 
 
 	for (int i = 0; i < strlen(msg); i++)
-		msg[i] = msg[i] ^ key;   // When C is 
+		msg[i] = msg[i] ^ key;   // When C is XORed with B, A ensues.
 
 	cout << "Decoded message: " << msg << "\n";
 
