@@ -33,7 +33,11 @@ int main() {
 		      0011 0001           1     in ASCii code
 	*/
 
-
+	/*        0111 0011          i 
+	          0101 1000          88
+	    ^  ----------------------------
+		      0010 1011          +     in ASCII code
+	*/
 
 
 	cout << "Encoded message: " << msg << endl;
