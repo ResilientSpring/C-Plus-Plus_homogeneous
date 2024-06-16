@@ -11,6 +11,10 @@ int main() {
 	cin >> u;
 
 	cout << "Here's the number in binary: ";
+	show_binary(u);
+
+	cout << "Here's the complement of the number: ";
+	show_binary(~u);
 
 }
 
