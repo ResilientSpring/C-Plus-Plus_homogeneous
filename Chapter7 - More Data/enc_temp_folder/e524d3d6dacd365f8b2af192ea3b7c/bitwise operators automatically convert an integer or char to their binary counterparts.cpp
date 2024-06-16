@@ -20,8 +20,3 @@ void show_binary(unsigned int u) {
 
 	cout << "\n";
 }
-
-/*  if(1111 1100 & 1000 0000)
-
-
-*/
