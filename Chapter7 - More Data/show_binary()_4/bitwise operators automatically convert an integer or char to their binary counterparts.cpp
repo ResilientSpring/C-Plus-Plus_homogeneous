@@ -28,7 +28,7 @@ void show_binary(unsigned int u) {
 	1111 1100
 	1000 0000
   &------------
-    
+    1000 0000
 
 
 */
