@@ -9,6 +9,8 @@ int main() {
 	show_binary(65535);
 	show_binary2(65535);
 
+	show_binary2(65534);
+
 }
 
 // Display the bits within a byte.
