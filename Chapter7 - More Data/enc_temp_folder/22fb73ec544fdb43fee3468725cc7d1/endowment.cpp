@@ -30,5 +30,5 @@ void show_binary(unsigned int u) {
   &------------
 	0000 0000
 
-	In C++, any non-zero value is interpreted as true and zero is false.
+
 */
