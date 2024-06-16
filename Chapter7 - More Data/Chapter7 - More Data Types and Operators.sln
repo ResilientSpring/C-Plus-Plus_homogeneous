@@ -103,6 +103,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "One's complement (NOT) bitw
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "show_binary()_4", "show_binary()_4\show_binary()_4.vcxproj", "{B81A613A-B90D-460D-B134-1DA86A9E5236}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "show_binary()_5", "show_binary()_5\show_binary()_5.vcxproj", "{B58C5B53-0094-4075-B1F0-DB41E8FE88FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -511,6 +513,14 @@ Global
 		{B81A613A-B90D-460D-B134-1DA86A9E5236}.Release|x64.Build.0 = Release|x64
 		{B81A613A-B90D-460D-B134-1DA86A9E5236}.Release|x86.ActiveCfg = Release|Win32
 		{B81A613A-B90D-460D-B134-1DA86A9E5236}.Release|x86.Build.0 = Release|Win32
+		{B58C5B53-0094-4075-B1F0-DB41E8FE88FD}.Debug|x64.ActiveCfg = Debug|x64
+		{B58C5B53-0094-4075-B1F0-DB41E8FE88FD}.Debug|x64.Build.0 = Debug|x64
+		{B58C5B53-0094-4075-B1F0-DB41E8FE88FD}.Debug|x86.ActiveCfg = Debug|Win32
+		{B58C5B53-0094-4075-B1F0-DB41E8FE88FD}.Debug|x86.Build.0 = Debug|Win32
+		{B58C5B53-0094-4075-B1F0-DB41E8FE88FD}.Release|x64.ActiveCfg = Release|x64
+		{B58C5B53-0094-4075-B1F0-DB41E8FE88FD}.Release|x64.Build.0 = Release|x64
+		{B58C5B53-0094-4075-B1F0-DB41E8FE88FD}.Release|x86.ActiveCfg = Release|Win32
+		{B58C5B53-0094-4075-B1F0-DB41E8FE88FD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
