@@ -51,7 +51,10 @@ void main()
 		printf("\n\n");
 	}
 	tsm(a, n);
-	getch();
+
+	// To resolve "Return value ignored: getch", silence the warning by explicitly ignoring the 
+	// return value.[2]
+	(void) getch();
 }
 
 void tsm(int a[10][10], int n)
@@ -114,5 +117,6 @@ void tsm(int a[10][10], int n)
 References:
 
 1. https://stackoverflow.com/questions/10043841/c-error-ignoring-return-value-of-scanf
+2. https://stackoverflow.com/questions/55583364/6031-return-value-ignored-getchar-in-visual-studio-2019
 
 */
