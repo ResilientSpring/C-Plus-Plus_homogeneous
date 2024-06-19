@@ -8,7 +8,15 @@ void main()
 	int a[10][10], n, i, j, k;
 
 	printf("\nEnter the total number of city : ");
-	scanf("%d", &n);
+
+
+	// To resolve "Return value ignored: scanf", put scanf() in an if statement.[1]
+	if(scanf("%d", &n) > 0)
+		printf("you want %d cities.\n", n);
+	else
+		printf("You did not enter any number.\n");	
+	
+	
 	printf("\nEnter the distance of cities\n");
 
 	for (i = 0; i < n; i++)
@@ -22,7 +30,13 @@ void main()
 			else
 			{
 				printf("\nEnter the distance %d --> %d", i, j);
-				scanf("%d", &a[i][j]);
+				
+				if(scanf("%d", &a[i][j]) >= 0)
+					printf("you want %d meters between the two cities.\n", a[i][j]);
+				
+				
+
+
 				a[j][i] = a[i][j];
 			}
 		}
@@ -93,3 +107,12 @@ void tsm(int a[10][10], int n)
 	printf(" \n\t%d ---> 0 = %d\t\tSum = % d", c, min, sum);
 	printf("\n\nTotal Distance by Salesman : % d", sum);
 }
+
+
+/*
+
+References:
+
+1. https://stackoverflow.com/questions/10043841/c-error-ignoring-return-value-of-scanf
+
+*/
