@@ -42,7 +42,11 @@ void main()
 
 void tsm(int a[10][10], int n)
 {
-	int *v, c, i, j, k, min, sum = 0;
+	int* v;
+
+	v = 0;
+
+	int c, i, j, k, min, sum = 0;
 	
 	v = (int *) malloc(n * sizeof(int));
 
