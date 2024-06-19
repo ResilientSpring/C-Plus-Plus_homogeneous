@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
+#include <cstdlib>
 using namespace std;
 
 void tsm(int a[10][10], int n);
@@ -11,6 +12,7 @@ void main()
 	printf("\nEnter the total number of city : ");
 	scanf("%d", &n);
 	printf("\nEnter the distance of cities\n");
+
 	for (i = 0; i < n; i++)
 	{
 		for (j = i; j < n; j++)
