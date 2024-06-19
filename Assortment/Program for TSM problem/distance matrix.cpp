@@ -19,7 +19,7 @@ void main()
 
 	// scanf("%d", &n);
 
-	printf("\nEnter the distance of cities\n");
+	printf("\nEnter the distance between cities:\n");
 
 	for (i = 0; i < n; i++)
 	{
@@ -31,7 +31,7 @@ void main()
 			}
 			else
 			{
-				printf("\nEnter the distance %d --> %d: ", i, j);
+				printf("\nEnter the distance from %d --> %d: ", i, j);
 
 				// scanf("%d", &a[i][j]);
 
