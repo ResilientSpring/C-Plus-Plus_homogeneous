@@ -13,9 +13,9 @@ void main()
 	printf("\nEnter the total number of city : ");
 
 	if (scanf("%d", &n) > 0)
-		printf("\nYou want %d cities.", n);
+		printf("\nYou want %d cities.\n", n);
 	else
-		printf("You didn't enter a number.");
+		printf("\nYou didn't enter a number.\n");
 
 	// scanf("%d", &n);
 
@@ -31,7 +31,7 @@ void main()
 			}
 			else
 			{
-				printf("\nEnter the distance %d --> %d", i, j);
+				printf("\nEnter the distance %d --> %d: ", i, j);
 
 				// scanf("%d", &a[i][j]);
 
