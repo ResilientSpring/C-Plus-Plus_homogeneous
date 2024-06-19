@@ -31,7 +31,7 @@ void main()
 			}
 			else
 			{
-				printf("\nEnter the distance from %d --> %d: ", i, j);
+				printf("\nEnter the distance from %d --> %d (Hint: distance_matrix[%d][%d]): ", i, j, i, j);
 
 				// scanf("%d", &a[i][j]);
 
