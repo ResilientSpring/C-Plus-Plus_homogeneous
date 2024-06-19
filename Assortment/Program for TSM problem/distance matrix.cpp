@@ -10,7 +10,14 @@ void main()
 	int a[10][10], n, i, j, k;
 	
 	printf("\nEnter the total number of city : ");
-	scanf("%d", &n);
+
+	if (scanf("%d", &n) > 0)
+		printf("\nYou want %d cities.", n);
+	else
+		printf("You didn't enter a number.");
+
+	// scanf("%d", &n);
+
 	printf("\nEnter the distance of cities\n");
 
 	for (i = 0; i < n; i++)
