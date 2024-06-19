@@ -55,7 +55,9 @@ void main()
 
 	// To resolve "Return value ignored: getch", silence the warning by explicitly ignoring the 
 	// return value.[2]
-	(void) getch();
+	// (void) getch();
+
+	(void) _getch();  // getch() is deprecated, per Visual Studio's compiler message.
 }
 
 void tsm(int a[10][10], int n)
