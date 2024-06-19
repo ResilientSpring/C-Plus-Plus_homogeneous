@@ -31,7 +31,14 @@ void main()
 			else
 			{
 				printf("\nEnter the distance %d --> %d", i, j);
-				scanf("%d", &a[i][j]);
+
+				// scanf("%d", &a[i][j]);
+
+				if (scanf("%d", &a[i][j]) >= 0)
+					printf("The distance between the two cities is %d .\n", a[i][j]);
+				else
+					printf("You haven't entered the distance between the two cities.\n");
+				
 				a[j][i] = a[i][j];
 			}
 		}
