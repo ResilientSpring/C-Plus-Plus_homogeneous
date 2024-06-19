@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<conio.h>
+#include <stdlib.h>
 
 void tsm(int a[10][10], int n);
 
