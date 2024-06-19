@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
-#include <cstdlib>
+#include <cstdlib>  // To use malloc() in c++, include <cstdlib> [1]
 using namespace std;
 
 void tsm(int a[10][10], int n);
@@ -95,3 +95,7 @@ void tsm(int a[10][10], int n)
 	printf(" \n\t%d ---> 0 = %d\t\tSum = % d",c,min,sum);
 	printf("\n\nTotal Distance by Salesman : % d",sum);
 }
+
+
+// Reference:
+// 1. https://stackoverflow.com/questions/4529459/malloc-undefined
