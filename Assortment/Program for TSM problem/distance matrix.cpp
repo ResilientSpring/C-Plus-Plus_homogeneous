@@ -55,7 +55,7 @@ void main()
 	tsm(a, n);
 
 	// getch();
-	(void)getch();
+	(void) _getch();
 }
 
 void tsm(int a[10][10], int n)
