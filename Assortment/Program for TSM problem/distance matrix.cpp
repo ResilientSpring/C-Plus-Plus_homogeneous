@@ -109,8 +109,8 @@ void tsm(int a[10][10], int n)
 	min = a[c][0];
 	sum = sum + min;
 
-	printf(" \n\t%d ---> 0 = %d\t\tSum = % d",c,min,sum);
-	printf("\n\nTotal Distance by Salesman : % d",sum);
+	printf(" \n\t%d ---> 0 = %d\t\tSum = %d", c, min, sum);
+	printf("\n\nTotal Distance by Salesman : % d .\n", sum);
 }
 
 
