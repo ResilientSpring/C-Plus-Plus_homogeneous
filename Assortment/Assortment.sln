@@ -54,11 +54,22 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Job bank 5", "Job bank 5\Job bank 5.vcxproj", "{B72B68C6-6457-46AB-A7AD-849DA64D98EC}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Job bank 6 (recreated to release project id to solve conflict)", "Job bank 6 (recreated to release project id to solve conflict)\Job bank 6 (recreated to release project id to solve conflict).vcxproj", "{4A6DE989-BC0A-45CE-B5C1-C417D73D9EA5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Program for TSM problem (Laptop)", "Program for TSM problem\Program for TSM problem.vcxproj", "{C27BA727-3109-4F45-BF49-20F685BC17F9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Program for TSM problem (SP7)", "Program for TSM problem (SP7)\Program for TSM problem (SP7).vcxproj", "{D0B2E4B0-2E4A-4980-AA57-935755F2B460}"
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Program for TSM problem (Laptop)", "Program for TSM problem (Laptop)\Program for TSM problem (Laptop).vcxproj", "{C27BA727-3109-4F45-BF49-20F685BC17F9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Program for TSM problem (Traveling salesman)", "Program for TSM problem (Traveling salesman)\Program for TSM problem (Traveling salesman).vcxproj", "{DC13BAFB-E460-4168-A709-723E9108A232}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Program for TSM problem (Travelling Sales Man)", "Program for TSM problem (Travelling Sales Man)\Program for TSM problem (Travelling Sales Man).vcxproj", "{7C1B15D0-9FA6-4EEB-A6BF-946F41F096DA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Program for TSM Problem (Travelling Sales Man) in C", "Program for TSM Problem (Travelling Sales Man) in C\Program for TSM Problem (Travelling Sales Man) in C.vcxproj", "{A366280C-8BEA-43FD-9C89-AA637BB85167}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Program for TSM problem (Travelling Sales Man) in C 2", "Program for TSM problem (Travelling Sales Man) in C 2\Program for TSM problem (Travelling Sales Man) in C 2.vcxproj", "{68B8F8E5-EA36-4E4F-82F6-F3C26CA76447}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Program for TSM problem (Travelling Sales Man) in c 3", "Program for TSM problem (Travelling Sales Man) in c 3\Program for TSM problem (Travelling Sales Man) in c 3.vcxproj", "{CA11804C-DC77-45A9-8817-9699E2B07B2C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Program for TSM problem (Travelling Sales Man) in c 4", "Program for TSM problem (Travelling Sales Man) in c 4\Program for TSM problem (Travelling Sales Man) in c 4.vcxproj", "{4C3A014C-ED24-4C58-978B-5561C347BEBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -300,6 +311,46 @@ Global
 		{DC13BAFB-E460-4168-A709-723E9108A232}.Release|x64.Build.0 = Release|x64
 		{DC13BAFB-E460-4168-A709-723E9108A232}.Release|x86.ActiveCfg = Release|Win32
 		{DC13BAFB-E460-4168-A709-723E9108A232}.Release|x86.Build.0 = Release|Win32
+		{7C1B15D0-9FA6-4EEB-A6BF-946F41F096DA}.Debug|x64.ActiveCfg = Debug|x64
+		{7C1B15D0-9FA6-4EEB-A6BF-946F41F096DA}.Debug|x64.Build.0 = Debug|x64
+		{7C1B15D0-9FA6-4EEB-A6BF-946F41F096DA}.Debug|x86.ActiveCfg = Debug|Win32
+		{7C1B15D0-9FA6-4EEB-A6BF-946F41F096DA}.Debug|x86.Build.0 = Debug|Win32
+		{7C1B15D0-9FA6-4EEB-A6BF-946F41F096DA}.Release|x64.ActiveCfg = Release|x64
+		{7C1B15D0-9FA6-4EEB-A6BF-946F41F096DA}.Release|x64.Build.0 = Release|x64
+		{7C1B15D0-9FA6-4EEB-A6BF-946F41F096DA}.Release|x86.ActiveCfg = Release|Win32
+		{7C1B15D0-9FA6-4EEB-A6BF-946F41F096DA}.Release|x86.Build.0 = Release|Win32
+		{A366280C-8BEA-43FD-9C89-AA637BB85167}.Debug|x64.ActiveCfg = Debug|x64
+		{A366280C-8BEA-43FD-9C89-AA637BB85167}.Debug|x64.Build.0 = Debug|x64
+		{A366280C-8BEA-43FD-9C89-AA637BB85167}.Debug|x86.ActiveCfg = Debug|Win32
+		{A366280C-8BEA-43FD-9C89-AA637BB85167}.Debug|x86.Build.0 = Debug|Win32
+		{A366280C-8BEA-43FD-9C89-AA637BB85167}.Release|x64.ActiveCfg = Release|x64
+		{A366280C-8BEA-43FD-9C89-AA637BB85167}.Release|x64.Build.0 = Release|x64
+		{A366280C-8BEA-43FD-9C89-AA637BB85167}.Release|x86.ActiveCfg = Release|Win32
+		{A366280C-8BEA-43FD-9C89-AA637BB85167}.Release|x86.Build.0 = Release|Win32
+		{68B8F8E5-EA36-4E4F-82F6-F3C26CA76447}.Debug|x64.ActiveCfg = Debug|x64
+		{68B8F8E5-EA36-4E4F-82F6-F3C26CA76447}.Debug|x64.Build.0 = Debug|x64
+		{68B8F8E5-EA36-4E4F-82F6-F3C26CA76447}.Debug|x86.ActiveCfg = Debug|Win32
+		{68B8F8E5-EA36-4E4F-82F6-F3C26CA76447}.Debug|x86.Build.0 = Debug|Win32
+		{68B8F8E5-EA36-4E4F-82F6-F3C26CA76447}.Release|x64.ActiveCfg = Release|x64
+		{68B8F8E5-EA36-4E4F-82F6-F3C26CA76447}.Release|x64.Build.0 = Release|x64
+		{68B8F8E5-EA36-4E4F-82F6-F3C26CA76447}.Release|x86.ActiveCfg = Release|Win32
+		{68B8F8E5-EA36-4E4F-82F6-F3C26CA76447}.Release|x86.Build.0 = Release|Win32
+		{CA11804C-DC77-45A9-8817-9699E2B07B2C}.Debug|x64.ActiveCfg = Debug|x64
+		{CA11804C-DC77-45A9-8817-9699E2B07B2C}.Debug|x64.Build.0 = Debug|x64
+		{CA11804C-DC77-45A9-8817-9699E2B07B2C}.Debug|x86.ActiveCfg = Debug|Win32
+		{CA11804C-DC77-45A9-8817-9699E2B07B2C}.Debug|x86.Build.0 = Debug|Win32
+		{CA11804C-DC77-45A9-8817-9699E2B07B2C}.Release|x64.ActiveCfg = Release|x64
+		{CA11804C-DC77-45A9-8817-9699E2B07B2C}.Release|x64.Build.0 = Release|x64
+		{CA11804C-DC77-45A9-8817-9699E2B07B2C}.Release|x86.ActiveCfg = Release|Win32
+		{CA11804C-DC77-45A9-8817-9699E2B07B2C}.Release|x86.Build.0 = Release|Win32
+		{4C3A014C-ED24-4C58-978B-5561C347BEBA}.Debug|x64.ActiveCfg = Debug|x64
+		{4C3A014C-ED24-4C58-978B-5561C347BEBA}.Debug|x64.Build.0 = Debug|x64
+		{4C3A014C-ED24-4C58-978B-5561C347BEBA}.Debug|x86.ActiveCfg = Debug|Win32
+		{4C3A014C-ED24-4C58-978B-5561C347BEBA}.Debug|x86.Build.0 = Debug|Win32
+		{4C3A014C-ED24-4C58-978B-5561C347BEBA}.Release|x64.ActiveCfg = Release|x64
+		{4C3A014C-ED24-4C58-978B-5561C347BEBA}.Release|x64.Build.0 = Release|x64
+		{4C3A014C-ED24-4C58-978B-5561C347BEBA}.Release|x86.ActiveCfg = Release|Win32
+		{4C3A014C-ED24-4C58-978B-5561C347BEBA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
