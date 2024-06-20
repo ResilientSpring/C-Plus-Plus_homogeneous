@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<conio.h>
+#include <stdlib.h>
 
 void tsm(int a[10][10], int n);
 
@@ -65,7 +66,7 @@ void tsm(int a[10][10], int n)
 
 	int c, i, j, k, min, sum = 0;
 
-	v = (int*)malloc(n * sizeof(int));
+	v = (int*) malloc(n * sizeof(int));
 
 	for (c = 0; c < n; c++)
 	{
