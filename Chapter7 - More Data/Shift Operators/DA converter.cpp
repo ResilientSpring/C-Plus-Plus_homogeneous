@@ -3,9 +3,20 @@
 #include <iostream>
 using namespace std;
 
+void show_binary(unsigned int decimal_number);
+
 int main() {
 
+	int i = 1, t;
 
+	// shift left
+	for (t = 0; t < 8; t++)
+	{
+		show_binary(i);
+
+		i = 1 << 1;
+
+	}
 
 
 }
