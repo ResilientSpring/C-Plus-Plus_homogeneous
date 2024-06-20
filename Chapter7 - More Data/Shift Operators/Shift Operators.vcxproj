@@ -21,14 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d0b2e4b0-2e4a-4980-aa57-935755f2b460}</ProjectGuid>
-    <RootNamespace>ProgramforTSMproblemSP7</RootNamespace>
+    <ProjectGuid>{0c0efadd-21bf-4f77-aebd-87ab4a523c08}</ProjectGuid>
+    <RootNamespace>ShiftOperators</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Program for TSM problem (SP7)</ProjectName>
-    <ProjectGuid>{c27ba727-3109-4f45-bf49-20f685bc17f9}</ProjectGuid>
-    <RootNamespace>ProgramforTSMproblemLaptop</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Program for TSM problem (Laptop)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -121,8 +116,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
-      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -146,10 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="distance matrix %28SP7%29.c" />
-    <ClCompile Include="distance matrix %28SP7%29.cpp" />
-    <ClCompile Include="distance matrix.c" />
-    <ClCompile Include="distance matrix.cpp" />
+    <ClCompile Include="DA converter.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
