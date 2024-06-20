@@ -53,7 +53,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Job bank 4-9", "Job bank 4-
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Job bank 5", "Job bank 5\Job bank 5.vcxproj", "{B72B68C6-6457-46AB-A7AD-849DA64D98EC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Job bank 6 (recreated to release project id to solve conflict)", "Job bank 6 (recreated to release project id to solve conflict)\Job bank 6 (recreated to release project id to solve conflict).vcxproj", "{4A6DE989-BC0A-45CE-B5C1-C417D73D9EA5}"
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Program for TSM problem (Laptop)", "Program for TSM problem\Program for TSM problem.vcxproj", "{C27BA727-3109-4F45-BF49-20F685BC17F9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Program for TSM problem (SP7)", "Program for TSM problem (SP7)\Program for TSM problem (SP7).vcxproj", "{D0B2E4B0-2E4A-4980-AA57-935755F2B460}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Program for TSM problem (Laptop)", "Program for TSM problem (Laptop)\Program for TSM problem (Laptop).vcxproj", "{C27BA727-3109-4F45-BF49-20F685BC17F9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Program for TSM problem (Traveling salesman)", "Program for TSM problem (Traveling salesman)\Program for TSM problem (Traveling salesman).vcxproj", "{DC13BAFB-E460-4168-A709-723E9108A232}"
 EndProject
@@ -275,6 +279,22 @@ Global
 		{B72B68C6-6457-46AB-A7AD-849DA64D98EC}.Release|x64.Build.0 = Release|x64
 		{B72B68C6-6457-46AB-A7AD-849DA64D98EC}.Release|x86.ActiveCfg = Release|Win32
 		{B72B68C6-6457-46AB-A7AD-849DA64D98EC}.Release|x86.Build.0 = Release|Win32
+		{4A6DE989-BC0A-45CE-B5C1-C417D73D9EA5}.Debug|x64.ActiveCfg = Debug|x64
+		{4A6DE989-BC0A-45CE-B5C1-C417D73D9EA5}.Debug|x64.Build.0 = Debug|x64
+		{4A6DE989-BC0A-45CE-B5C1-C417D73D9EA5}.Debug|x86.ActiveCfg = Debug|Win32
+		{4A6DE989-BC0A-45CE-B5C1-C417D73D9EA5}.Debug|x86.Build.0 = Debug|Win32
+		{4A6DE989-BC0A-45CE-B5C1-C417D73D9EA5}.Release|x64.ActiveCfg = Release|x64
+		{4A6DE989-BC0A-45CE-B5C1-C417D73D9EA5}.Release|x64.Build.0 = Release|x64
+		{4A6DE989-BC0A-45CE-B5C1-C417D73D9EA5}.Release|x86.ActiveCfg = Release|Win32
+		{4A6DE989-BC0A-45CE-B5C1-C417D73D9EA5}.Release|x86.Build.0 = Release|Win32
+		{D0B2E4B0-2E4A-4980-AA57-935755F2B460}.Debug|x64.ActiveCfg = Debug|x64
+		{D0B2E4B0-2E4A-4980-AA57-935755F2B460}.Debug|x64.Build.0 = Debug|x64
+		{D0B2E4B0-2E4A-4980-AA57-935755F2B460}.Debug|x86.ActiveCfg = Debug|Win32
+		{D0B2E4B0-2E4A-4980-AA57-935755F2B460}.Debug|x86.Build.0 = Debug|Win32
+		{D0B2E4B0-2E4A-4980-AA57-935755F2B460}.Release|x64.ActiveCfg = Release|x64
+		{D0B2E4B0-2E4A-4980-AA57-935755F2B460}.Release|x64.Build.0 = Release|x64
+		{D0B2E4B0-2E4A-4980-AA57-935755F2B460}.Release|x86.ActiveCfg = Release|Win32
+		{D0B2E4B0-2E4A-4980-AA57-935755F2B460}.Release|x86.Build.0 = Release|Win32
 		{C27BA727-3109-4F45-BF49-20F685BC17F9}.Debug|x64.ActiveCfg = Debug|x64
 		{C27BA727-3109-4F45-BF49-20F685BC17F9}.Debug|x64.Build.0 = Debug|x64
 		{C27BA727-3109-4F45-BF49-20F685BC17F9}.Debug|x86.ActiveCfg = Debug|Win32
