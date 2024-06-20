@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<conio.h>
-#include <stdlib.h>
+#include <stdlib.h>  // [2]
 
 void tsm(int a[10][10], int n);
 
@@ -115,3 +115,4 @@ void tsm(int a[10][10], int n)
 
 // Reference:
 // 1. https://stackoverflow.com/questions/4529459/malloc-undefined
+// 2. https://stackoverflow.com/questions/71315334/malloc-always-returns-a-null-pointer-visual-studio-2022
