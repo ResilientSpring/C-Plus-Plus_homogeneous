@@ -67,7 +67,7 @@ void tsm(int a[10][10], int n)
 
 	int c, i, j, k, min, sum = 0;
 
-	v = (int*)malloc(n * sizeof(int));
+	v = (int*) malloc(n * sizeof(int));
 
 	for (c = 0; c < n; c++)
 	{
