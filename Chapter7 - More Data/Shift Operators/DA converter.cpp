@@ -18,6 +18,15 @@ int main() {
 
 	}
 
+	cout << "\n";
+
+	// shift right
+	for (t = 0; t < 8; t++) {
+
+		i = i >> 1;    // Right-shift i one position.
+
+		show_binary(i);   
+	}
 
 }
 
