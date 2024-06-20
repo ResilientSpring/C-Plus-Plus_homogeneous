@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="distance matrix.c">
+    <ClCompile Include="distance matrix %28SP7%29.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="distance matrix.cpp">
+    <ClCompile Include="distance matrix %28SP7%29.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
