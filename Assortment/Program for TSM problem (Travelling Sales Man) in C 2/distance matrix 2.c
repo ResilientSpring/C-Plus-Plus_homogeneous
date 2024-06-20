@@ -1,7 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<conio.h>
-#include <cstdlib>  // To use malloc() in c++, include <cstdlib> [1]
 
 void tsm(int a[10][10], int n);
 
