@@ -14,7 +14,7 @@ int main() {
 	{
 		show_binary(i);
 
-		i = 1 << 1;    // Left-shift i one position.
+		i = i << 1;    // Left-shift i one position.
 
 	}
 
