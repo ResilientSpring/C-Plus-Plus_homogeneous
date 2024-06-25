@@ -113,6 +113,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shift Operators", "Shift Op
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "show_binary()_8", "show_binary()_8\show_binary()_8.vcxproj", "{7541C5D9-3FDE-47A5-B9DD-30CEAAC66199}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Check if a bit (in a status) is on or off with AND 2_", "Check if a bit (in a status) is on or off with AND 2_\Check if a bit (in a status) is on or off with AND 2_.vcxproj", "{0FF1F7D9-746A-42DC-890A-A4C8BF3944D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -561,6 +563,14 @@ Global
 		{7541C5D9-3FDE-47A5-B9DD-30CEAAC66199}.Release|x64.Build.0 = Release|x64
 		{7541C5D9-3FDE-47A5-B9DD-30CEAAC66199}.Release|x86.ActiveCfg = Release|Win32
 		{7541C5D9-3FDE-47A5-B9DD-30CEAAC66199}.Release|x86.Build.0 = Release|Win32
+		{0FF1F7D9-746A-42DC-890A-A4C8BF3944D7}.Debug|x64.ActiveCfg = Debug|x64
+		{0FF1F7D9-746A-42DC-890A-A4C8BF3944D7}.Debug|x64.Build.0 = Debug|x64
+		{0FF1F7D9-746A-42DC-890A-A4C8BF3944D7}.Debug|x86.ActiveCfg = Debug|Win32
+		{0FF1F7D9-746A-42DC-890A-A4C8BF3944D7}.Debug|x86.Build.0 = Debug|Win32
+		{0FF1F7D9-746A-42DC-890A-A4C8BF3944D7}.Release|x64.ActiveCfg = Release|x64
+		{0FF1F7D9-746A-42DC-890A-A4C8BF3944D7}.Release|x64.Build.0 = Release|x64
+		{0FF1F7D9-746A-42DC-890A-A4C8BF3944D7}.Release|x86.ActiveCfg = Release|Win32
+		{0FF1F7D9-746A-42DC-890A-A4C8BF3944D7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
