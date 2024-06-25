@@ -26,7 +26,7 @@ int main() {
 	else
 		cout << "bit 4 is off" << endl;
 
-	if (x && 8)
+	if (status && 8)
 		cout << "When status = 7, (x && 8) evaluates to true " << endl;
 
 }
