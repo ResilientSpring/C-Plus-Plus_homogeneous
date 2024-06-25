@@ -35,16 +35,16 @@ int main() {
 		cout << "if(x & 8) evaluates to true." << endl;;
 
 	if (!(status & 8))
-		cout << "When status = 7, (status & 8) evaluates to false. " << endl << endl;
+		cout << "When status = 7, (status & 8) evaluates to false. " << endl;
 
 	// & is a bitwise operator.
 	// && is not a bitwise operator.
 
 	if (7 && 8)
-		cout << "if(7 && 8) is true" << endl;
+		cout << "if(7 && 8) is true" << endl << endl;
 
 	if (7 & 8)
-		cout << "if (7 & 8) is true" << endl;
+		cout << "if (7 & 8) is true" << endl << endl;
 
 
 	/**/
