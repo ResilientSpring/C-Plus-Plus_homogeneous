@@ -40,4 +40,10 @@ int main() {
 	// & is a bitwise operator.
 	// && is not a bitwise operator.
 
+	if (7 && 8)
+		cout << "if(7 && 8) is true" << endl;
+
+	if (7 & 8)
+		cout << "if (7 & 8) is true" << endl;
+
 }
