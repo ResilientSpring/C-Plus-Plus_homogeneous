@@ -40,7 +40,7 @@ void main()
 				else
 					printf("You haven't entered the distance between the two cities.\n");
 
-				a[j][i] = a[i][j];
+				a[j][i] = a[i][j];    // eliminate the need to re-calculate. 
 			}
 		}
 	}
