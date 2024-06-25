@@ -27,7 +27,7 @@ int main() {
 		cout << "bit 4 is off" << endl;
 
 	// Page 257:
-    // if x equals 7, then x && 8 evaluates to true, whereas x & 8 evaluates to false.
+	// if x equals 7, then x && 8 evaluates to true, whereas x & 8 evaluates to false.
 
 	if (status && 8)
 		cout << "When status = 7, (status && 8) evaluates to true. " << endl;
@@ -41,9 +41,19 @@ int main() {
 	// && is not a bitwise operator.
 
 	if (7 && 8)
-		cout << "if(7 && 8) is true" << endl;
+		cout << "if(7 && 8) is true" << endl << endl;
 
 	if (7 & 8)
-		cout << "if (7 & 8) is true" << endl;
+		cout << "if (7 & 8) is true" << endl << endl;
+
+
+	/**/
+
+	if (7 && 8)
+		cout << "7 is non-zero and 8 is non-zero, too!" << endl;
+
+	if (7 & 8)
+		cout << "7 is 0111 and 8 is 1000." << endl;
+
 
 }
