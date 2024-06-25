@@ -31,7 +31,7 @@ int main() {
 	else if (status & 8)
 		cout << "if(x & 8) evaluates to true." << endl;;
 
-	if (status & 8)
+	if (!(status & 8))
 		cout << "When status = 7, (status & 8) evaluates to false. " << endl;
 
 }
