@@ -37,4 +37,7 @@ int main() {
 	if (!(status & 8))
 		cout << "When status = 7, (status & 8) evaluates to false. " << endl;
 
+	// & is a bitwise operator.
+	// && is not a bitwise operator.
+
 }
