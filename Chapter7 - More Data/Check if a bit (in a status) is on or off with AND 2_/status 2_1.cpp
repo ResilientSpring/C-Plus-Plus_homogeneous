@@ -26,6 +26,9 @@ int main() {
 	else
 		cout << "bit 4 is off" << endl;
 
+	// Page 257:
+    // if x equals 7, then x && 8 evaluates to true, whereas x & 8 evaluates to false.
+
 	if (status && 8)
 		cout << "When status = 7, (status && 8) evaluates to true. " << endl;
 	else if (status & 8)
