@@ -53,6 +53,7 @@ void main()
 		}
 		printf("\n\n");
 	}
+
 	tsm(a, n);
 
 	// getch();
