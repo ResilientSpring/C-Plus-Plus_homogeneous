@@ -33,14 +33,14 @@ int main() {
 
 	target = 3;
 
-	// left shft bits up to eight times.
+	// left shft bits for eight times.
 	for (int i = 0; i < 8; i++)
 	{
 		show_binary(target);
 
 		target = target << 1;
 
-		printf("192 after being right shift one bit has become %d \n\n", target);
+		printf("192 after being left shift one bit has become %d \n\n", target);
 	}
 
 	cout << endl;
