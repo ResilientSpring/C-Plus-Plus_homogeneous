@@ -13,7 +13,8 @@ int main() {
 	int n = scanf("%d", &n);
 
 	christmas(n);
-
+	christmas2(n);
+	christmas3(n);
 }
 
 void christmas(int n){
@@ -33,7 +34,7 @@ void christmas2(int n) {
 
 	for (int i = 0; i < n; i++)
 	{
-		printf("%c*n  \n", a);
+		printf("%c \n", a*n);
 	}
 
 }
@@ -44,7 +45,7 @@ void christmas3(int n) {
 
 	for (int i = 0; i < n; i++)
 	{
-		printf("%c*n  \n", a);
+		cout << '*' * n << endl;
 	}
 
 }
