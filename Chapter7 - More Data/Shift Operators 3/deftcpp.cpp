@@ -42,7 +42,7 @@ int main() {
 
 		target = target << 1;
 
-		printf("has become %d \n", target);
+		printf(" has become %d \n", target);
 	}
 
 	cout << endl;
