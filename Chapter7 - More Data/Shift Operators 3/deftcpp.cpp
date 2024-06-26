@@ -18,6 +18,8 @@ int main() {
 
 	cout << "\n";
 
+	target = 192;
+
 	for (int i = 0; i < 8; i++)
 	{
 		show_binary(target);
