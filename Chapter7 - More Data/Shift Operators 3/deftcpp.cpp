@@ -38,9 +38,11 @@ int main() {
 	{
 		show_binary(target);
 
+		printf("%d after being left shift one bit", target);
+
 		target = target << 1;
 
-		printf("3 after being left shift one bit has become %d \n", target);
+		printf("has become %d \n", target);
 	}
 
 	cout << endl;
