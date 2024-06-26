@@ -19,7 +19,7 @@ void christmas(int n){
 
 	for (int i = 0; i < n; i++)
 	{
-
+		printf("(¡§%c*n  \n", a);
 	}
 
 }
