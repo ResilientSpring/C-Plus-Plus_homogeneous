@@ -6,9 +6,11 @@ void christmas(int n);
 
 int main() {
 
-	int n = scanf("Enter a number n: %d", &n);
+	printf("Enter a number n:");
 
-	
+	int n = scanf("%d", &n);
+
+	christmas(n);
 
 
 }
