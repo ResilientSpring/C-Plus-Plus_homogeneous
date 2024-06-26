@@ -18,6 +18,16 @@ int main() {
 
 	cout << "\n";
 
+	for (int i = 0; i < 8; i++)
+	{
+		show_binary(target);
+
+		target = target >> 1;
+
+		printf("192 after being right shift one bit has become %d \n\n", target);
+	}
+
+	cout << endl;
 }
 
 void show_binary(unsigned int decimal_number) {
