@@ -117,6 +117,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Check if a bit (in a status
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Check if a bit (in a status) is on or off withAND 2_2", "Check if a bit (in a status) is on or off withAND 2_2\Check if a bit (in a status) is on or off withAND 2_2.vcxproj", "{5478B1EF-829C-406E-BA3D-57A29D432C31}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shift Operators 2", "Shift Operators 2\Shift Operators 2.vcxproj", "{A7FDD3D8-9DAF-4779-B386-087D1C90983D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shift Operators 3", "Shift Operators 3\Shift Operators 3.vcxproj", "{EC159039-7562-4F9A-8825-19D43BE76424}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -581,6 +585,22 @@ Global
 		{5478B1EF-829C-406E-BA3D-57A29D432C31}.Release|x64.Build.0 = Release|x64
 		{5478B1EF-829C-406E-BA3D-57A29D432C31}.Release|x86.ActiveCfg = Release|Win32
 		{5478B1EF-829C-406E-BA3D-57A29D432C31}.Release|x86.Build.0 = Release|Win32
+		{A7FDD3D8-9DAF-4779-B386-087D1C90983D}.Debug|x64.ActiveCfg = Debug|x64
+		{A7FDD3D8-9DAF-4779-B386-087D1C90983D}.Debug|x64.Build.0 = Debug|x64
+		{A7FDD3D8-9DAF-4779-B386-087D1C90983D}.Debug|x86.ActiveCfg = Debug|Win32
+		{A7FDD3D8-9DAF-4779-B386-087D1C90983D}.Debug|x86.Build.0 = Debug|Win32
+		{A7FDD3D8-9DAF-4779-B386-087D1C90983D}.Release|x64.ActiveCfg = Release|x64
+		{A7FDD3D8-9DAF-4779-B386-087D1C90983D}.Release|x64.Build.0 = Release|x64
+		{A7FDD3D8-9DAF-4779-B386-087D1C90983D}.Release|x86.ActiveCfg = Release|Win32
+		{A7FDD3D8-9DAF-4779-B386-087D1C90983D}.Release|x86.Build.0 = Release|Win32
+		{EC159039-7562-4F9A-8825-19D43BE76424}.Debug|x64.ActiveCfg = Debug|x64
+		{EC159039-7562-4F9A-8825-19D43BE76424}.Debug|x64.Build.0 = Debug|x64
+		{EC159039-7562-4F9A-8825-19D43BE76424}.Debug|x86.ActiveCfg = Debug|Win32
+		{EC159039-7562-4F9A-8825-19D43BE76424}.Debug|x86.Build.0 = Debug|Win32
+		{EC159039-7562-4F9A-8825-19D43BE76424}.Release|x64.ActiveCfg = Release|x64
+		{EC159039-7562-4F9A-8825-19D43BE76424}.Release|x64.Build.0 = Release|x64
+		{EC159039-7562-4F9A-8825-19D43BE76424}.Release|x86.ActiveCfg = Release|Win32
+		{EC159039-7562-4F9A-8825-19D43BE76424}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
