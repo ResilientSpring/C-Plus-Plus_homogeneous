@@ -3,6 +3,7 @@
 using namespace std;
 
 void christmas(int n);
+void christmas2(int n);
 
 int main() {
 
@@ -21,7 +22,18 @@ void christmas(int n){
 
 	for (int i = 0; i < n; i++)
 	{
-		printf("(¡§%c*n  \n", a);
+		printf("%c*n  \n", a);
+	}
+
+}
+
+void christmas2(int n) {
+
+	char a = '*';
+
+	for (int i = 0; i < n; i++)
+	{
+		printf("%c*n  \n", a);
 	}
 
 }
