@@ -13,7 +13,7 @@ int main() {
 
 		target = target << 1;
 
-		printf("192 after being left shift one bit has become %d \n", target);
+		printf("192 after being left shift one bit has become %d \n\n", target);
 	}
 
 	cout << "\n";
