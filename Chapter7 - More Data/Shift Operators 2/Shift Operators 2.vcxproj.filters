@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="asterisk.cpp">
+    <ClCompile Include="adept at.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

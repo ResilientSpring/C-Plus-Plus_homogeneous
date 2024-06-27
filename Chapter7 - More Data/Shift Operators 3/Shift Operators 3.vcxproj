@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{dc8d0ed7-996d-4de0-9ea3-8067f3996129}</ProjectGuid>
-    <RootNamespace>christmas</RootNamespace>
+    <ProjectGuid>{ec159039-7562-4f9a-8825-19d43be76424}</ProjectGuid>
+    <RootNamespace>ShiftOperators3</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="asterisk.cpp" />
+    <ClCompile Include="deftcpp.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

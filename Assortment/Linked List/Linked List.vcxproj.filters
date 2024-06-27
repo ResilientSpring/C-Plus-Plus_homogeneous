@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="asterisk.cpp">
+    <ClCompile Include="job applicant.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
