@@ -65,7 +65,7 @@ int main() {
 
 void show_binary(unsigned int decimal_number) {
 
-	for (int i = 128; i > 0; i /= 2)
+	for (int i = 128; i > 0; i /= 2)   // compound assignment
 		if (decimal_number & i)
 			cout << "1 ";
 		else
