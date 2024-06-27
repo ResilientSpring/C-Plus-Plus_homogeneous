@@ -27,4 +27,11 @@ int main() {
 	for (int i = 0; i < 9; i++)
 		items[i].next_node_position = &items[i + 1];
 
+	items[9].next_node_position = nullptr;
+
+	for (int i = 9; i >= 0; i--)
+	{
+
+	}
+
 }
