@@ -30,8 +30,6 @@ int main() {
 	items[9].next_node_position = nullptr;
 
 	for (int i = 9; i >= 0; i--)
-	{
 		printf("%d ", items[i].sequence_number);
-	}
 
 }
