@@ -38,9 +38,24 @@ int main() {
 	{
 		show_binary(target);
 
-		printf("%d after being left shift two bit", target);
+		printf("%d after being left shift one bit", target);
 
 		target = target << 1;
+
+		printf(" has become %d \n", target);
+	}
+
+	cout << endl;
+
+	target = 6;
+
+	for (int i = 0; i < 8; i++)
+	{
+		show_binary(target);
+
+		printf("%d after being left shift one bit", target);
+
+		target = target << 2;
 
 		printf(" has become %d \n", target);
 	}
