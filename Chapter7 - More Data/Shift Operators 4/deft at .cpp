@@ -53,7 +53,7 @@ int main() {
 	{
 		show_binary(target);
 
-		printf("%d after being left shift two bit", target);
+		printf("%d after being left shift two bits", target);
 
 		target = target << 2;
 
