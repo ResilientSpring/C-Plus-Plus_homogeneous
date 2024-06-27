@@ -16,4 +16,7 @@ int main() {
 	list_item1.sequence_number = 1;
 	list_item1.next_node_position = &list_item2;
 
+	list_item2.sequence_number = 2;
+	list_item2.next_node_position = &list_item3;
+
 }
