@@ -19,4 +19,12 @@ int main() {
 	list_item2.sequence_number = 2;
 	list_item2.next_node_position = &list_item3;
 
+	node items[10];
+
+	for (int i = 0; i < 10; i++)
+	{
+		items[i].sequence_number = i + 1;
+		items[i].next_node_position = &items[i + 1];
+	}
+
 }
