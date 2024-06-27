@@ -22,9 +22,9 @@ int main() {
 	node items[10];
 
 	for (int i = 0; i < 10; i++)
-	{
 		items[i].sequence_number = i + 1;
+
+	for (int i = 0; i < 9; i++)
 		items[i].next_node_position = &items[i + 1];
-	}
 
 }
