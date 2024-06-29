@@ -125,6 +125,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shift Operators 4", "Shift 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shift Operators 5", "Shift Operators 5\Shift Operators 5.vcxproj", "{348487F5-2FF3-4B53-AB47-8E020A82A35C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shift operators 6", "Shift operators 6\Shift operators 6.vcxproj", "{6CFAAC21-A04D-47AC-9F44-AEC27F12E06E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -621,6 +623,14 @@ Global
 		{348487F5-2FF3-4B53-AB47-8E020A82A35C}.Release|x64.Build.0 = Release|x64
 		{348487F5-2FF3-4B53-AB47-8E020A82A35C}.Release|x86.ActiveCfg = Release|Win32
 		{348487F5-2FF3-4B53-AB47-8E020A82A35C}.Release|x86.Build.0 = Release|Win32
+		{6CFAAC21-A04D-47AC-9F44-AEC27F12E06E}.Debug|x64.ActiveCfg = Debug|x64
+		{6CFAAC21-A04D-47AC-9F44-AEC27F12E06E}.Debug|x64.Build.0 = Debug|x64
+		{6CFAAC21-A04D-47AC-9F44-AEC27F12E06E}.Debug|x86.ActiveCfg = Debug|Win32
+		{6CFAAC21-A04D-47AC-9F44-AEC27F12E06E}.Debug|x86.Build.0 = Debug|Win32
+		{6CFAAC21-A04D-47AC-9F44-AEC27F12E06E}.Release|x64.ActiveCfg = Release|x64
+		{6CFAAC21-A04D-47AC-9F44-AEC27F12E06E}.Release|x64.Build.0 = Release|x64
+		{6CFAAC21-A04D-47AC-9F44-AEC27F12E06E}.Release|x86.ActiveCfg = Release|Win32
+		{6CFAAC21-A04D-47AC-9F44-AEC27F12E06E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
