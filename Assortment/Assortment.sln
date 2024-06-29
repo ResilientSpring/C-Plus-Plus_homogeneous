@@ -85,6 +85,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Swap without using a tempor
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Swap without using a temporary variable 2", "Swap without using a temporary variable 2\Swap without using a temporary variable 2.vcxproj", "{FE9C1871-6DA4-407A-9B31-C0DF872CB288}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Swap without using a temporary variable 3", "Swap without using a temporary variable 3\Swap without using a temporary variable 3.vcxproj", "{D51ECF20-CFD3-4A02-ACA7-5D5E857680A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -413,6 +415,14 @@ Global
 		{FE9C1871-6DA4-407A-9B31-C0DF872CB288}.Release|x64.Build.0 = Release|x64
 		{FE9C1871-6DA4-407A-9B31-C0DF872CB288}.Release|x86.ActiveCfg = Release|Win32
 		{FE9C1871-6DA4-407A-9B31-C0DF872CB288}.Release|x86.Build.0 = Release|Win32
+		{D51ECF20-CFD3-4A02-ACA7-5D5E857680A8}.Debug|x64.ActiveCfg = Debug|x64
+		{D51ECF20-CFD3-4A02-ACA7-5D5E857680A8}.Debug|x64.Build.0 = Debug|x64
+		{D51ECF20-CFD3-4A02-ACA7-5D5E857680A8}.Debug|x86.ActiveCfg = Debug|Win32
+		{D51ECF20-CFD3-4A02-ACA7-5D5E857680A8}.Debug|x86.Build.0 = Debug|Win32
+		{D51ECF20-CFD3-4A02-ACA7-5D5E857680A8}.Release|x64.ActiveCfg = Release|x64
+		{D51ECF20-CFD3-4A02-ACA7-5D5E857680A8}.Release|x64.Build.0 = Release|x64
+		{D51ECF20-CFD3-4A02-ACA7-5D5E857680A8}.Release|x86.ActiveCfg = Release|Win32
+		{D51ECF20-CFD3-4A02-ACA7-5D5E857680A8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
