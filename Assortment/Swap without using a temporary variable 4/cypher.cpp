@@ -17,7 +17,7 @@ int main() {
 void swap(int &c, int &d) {
 
 	int e;
-	
+
 	e = c ^ d;
 
 
