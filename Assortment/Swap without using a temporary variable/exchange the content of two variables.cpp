@@ -7,7 +7,10 @@ int main() {
 
 }
 
-void swap(int a, int b) {
+void swap(int* a, int* b) {
+
+	int c = *a;
+	int d = *b;
 
 
 
