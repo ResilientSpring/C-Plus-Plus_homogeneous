@@ -7,6 +7,9 @@ int main() {
 
 	int a = 1, b = 2;
 
+	swap(&a, &b);
+
+	cout << "a is " << a << " while b is " << b << endl;
 }
 
 void swap(int* a, int* b) {
