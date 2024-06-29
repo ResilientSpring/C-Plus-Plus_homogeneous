@@ -18,6 +18,7 @@ void swap(int &c, int &d) {
 
 	int e;
 
+	// encrypted message = message ^ key
 	e = c ^ d;
 
 
