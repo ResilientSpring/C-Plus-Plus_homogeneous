@@ -8,6 +8,9 @@ int main() {
 
 	int a = 3, b = 4;
 
+	swap(a, b);
+
+	cout << "a is " << a << " while b is " << b << endl;
 
 }
 
