@@ -21,7 +21,8 @@ void swap(int &c, int &d) {
 	// encrypted message = message ^ key
 	e = c ^ d;
 
-	// use key to decrypt 
+	// use key to decrypt the message.
+	c = d ^ e;
 
 
 }
