@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void swap(char &c, char &d);
+void swapper(char &c, char &d);
 
 int main() {
 
@@ -13,11 +13,11 @@ int main() {
 	printf("The content of the 'a' array of characters: %s \n", a);  // [1]
 	printf("The content of the 'b' array of characters: %s \n", b);
 
-
+	swapper(a, b);
 }
 
 
-void swap(char &c, char &d) {
+void swapper(char &c, char &d) {
 
 	c = c ^ d;
 	d = c ^ d;
