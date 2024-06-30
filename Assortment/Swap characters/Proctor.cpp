@@ -17,7 +17,7 @@ int main() {
 }
 
 
-void swapper(char &c, char &d) {
+void swapper(char& c, char& d) {
 
 	c = c ^ d;
 	d = c ^ d;
