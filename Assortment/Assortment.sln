@@ -93,6 +93,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Swap characters", "Swap cha
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Swap characters 2", "Swap characters 2\Swap characters 2.vcxproj", "{1DEC7BC2-9336-413C-94CA-2FAB60E8C441}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Swap characters 3", "Swap characters 3\Swap characters 3.vcxproj", "{E20796B5-2F4F-4173-A1B8-59CEDA2452A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -453,6 +455,14 @@ Global
 		{1DEC7BC2-9336-413C-94CA-2FAB60E8C441}.Release|x64.Build.0 = Release|x64
 		{1DEC7BC2-9336-413C-94CA-2FAB60E8C441}.Release|x86.ActiveCfg = Release|Win32
 		{1DEC7BC2-9336-413C-94CA-2FAB60E8C441}.Release|x86.Build.0 = Release|Win32
+		{E20796B5-2F4F-4173-A1B8-59CEDA2452A6}.Debug|x64.ActiveCfg = Debug|x64
+		{E20796B5-2F4F-4173-A1B8-59CEDA2452A6}.Debug|x64.Build.0 = Debug|x64
+		{E20796B5-2F4F-4173-A1B8-59CEDA2452A6}.Debug|x86.ActiveCfg = Debug|Win32
+		{E20796B5-2F4F-4173-A1B8-59CEDA2452A6}.Debug|x86.Build.0 = Debug|Win32
+		{E20796B5-2F4F-4173-A1B8-59CEDA2452A6}.Release|x64.ActiveCfg = Release|x64
+		{E20796B5-2F4F-4173-A1B8-59CEDA2452A6}.Release|x64.Build.0 = Release|x64
+		{E20796B5-2F4F-4173-A1B8-59CEDA2452A6}.Release|x86.ActiveCfg = Release|Win32
+		{E20796B5-2F4F-4173-A1B8-59CEDA2452A6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
