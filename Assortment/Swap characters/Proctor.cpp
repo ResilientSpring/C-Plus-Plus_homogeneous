@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+void swap(char &c, char &d);
+
 int main() {
 
 	char a[] = "err on the side of caution.";
