@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void swapper(const char &c, char &d);
+void swapper(char &c, char &d);
 
 int main() {
 
@@ -17,7 +17,7 @@ int main() {
 }
 
 
-void swapper(const char& c, char& d) {
+void swapper(char& c, char& d) {
 
 	c = c ^ d;
 	d = c ^ d;
