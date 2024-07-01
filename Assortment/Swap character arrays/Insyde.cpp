@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+void exchanger2(char* a);
+
 int main() {
 
 	char str[80] = "err on the side of caution.";
@@ -8,6 +10,10 @@ int main() {
 
 	printf("The content of str is %s\n", str);
 	printf("The content of str2 is %s.\n", str2);
+
+	exchanger2(str);
+
+	printf("The content of str is now %s\n", str);
 
 }
 
