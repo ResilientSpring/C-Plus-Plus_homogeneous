@@ -97,6 +97,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Swap characters 3", "Swap c
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Swap characters 4", "Swap characters 4\Swap characters 4.vcxproj", "{89BACDBD-0CE1-418C-9FF6-102153773B6A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Swap numbers", "Swap numbers\Swap numbers.vcxproj", "{B1E76438-AD42-4279-9C77-F8A48578A9D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -473,6 +475,14 @@ Global
 		{89BACDBD-0CE1-418C-9FF6-102153773B6A}.Release|x64.Build.0 = Release|x64
 		{89BACDBD-0CE1-418C-9FF6-102153773B6A}.Release|x86.ActiveCfg = Release|Win32
 		{89BACDBD-0CE1-418C-9FF6-102153773B6A}.Release|x86.Build.0 = Release|Win32
+		{B1E76438-AD42-4279-9C77-F8A48578A9D6}.Debug|x64.ActiveCfg = Debug|x64
+		{B1E76438-AD42-4279-9C77-F8A48578A9D6}.Debug|x64.Build.0 = Debug|x64
+		{B1E76438-AD42-4279-9C77-F8A48578A9D6}.Debug|x86.ActiveCfg = Debug|Win32
+		{B1E76438-AD42-4279-9C77-F8A48578A9D6}.Debug|x86.Build.0 = Debug|Win32
+		{B1E76438-AD42-4279-9C77-F8A48578A9D6}.Release|x64.ActiveCfg = Release|x64
+		{B1E76438-AD42-4279-9C77-F8A48578A9D6}.Release|x64.Build.0 = Release|x64
+		{B1E76438-AD42-4279-9C77-F8A48578A9D6}.Release|x86.ActiveCfg = Release|Win32
+		{B1E76438-AD42-4279-9C77-F8A48578A9D6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
