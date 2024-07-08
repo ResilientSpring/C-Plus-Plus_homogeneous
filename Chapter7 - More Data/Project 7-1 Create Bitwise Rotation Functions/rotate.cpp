@@ -14,10 +14,11 @@ unsigned char lrotate(unsigned char val, int n) {
 
 		/*  If a bit shifts out, it will be in bit 8 of the integer t. 
 		   
-		    If this is the case, put that bit on the right side.
-		
-		
+		    If this is the case, put that bit on the right side.		
 		*/
+
+		if (t & 256)
+			t = t | 1;
 
 	}
 
