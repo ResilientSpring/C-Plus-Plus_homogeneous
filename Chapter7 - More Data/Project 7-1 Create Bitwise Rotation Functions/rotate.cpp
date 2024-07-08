@@ -18,7 +18,7 @@ unsigned char lrotate(unsigned char val, int n) {
 		*/
 
 		if (t & 256)
-			t = t | 1;
+			t = t | 1;    // put a 1 on the right end.
 
 	}
 
