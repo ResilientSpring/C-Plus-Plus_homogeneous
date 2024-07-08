@@ -22,6 +22,7 @@ unsigned char lrotate(unsigned char val, int n) {
 
 	}
 
+	return t;
 }
 
 
