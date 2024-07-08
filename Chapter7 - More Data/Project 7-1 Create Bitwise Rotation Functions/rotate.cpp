@@ -22,7 +22,7 @@ unsigned char lrotate(unsigned char val, int n) {
 
 	}
 
-	return t;
+	return t;   // return the lower 8 bits.
 }
 
 
