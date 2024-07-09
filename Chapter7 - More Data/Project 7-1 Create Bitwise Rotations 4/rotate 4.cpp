@@ -6,7 +6,7 @@ unsigned char lrotate(unsigned char value, int n) {
 
 	unsigned int t;  // An unsigned int is larger than a byte.
 
-	t = value;
+	t = value;  // A char is 8 bits in size.
 
 	// A loop is established that performs the required number of rotations, one at a time.
 	for (int i = 0; i < n; i++)
