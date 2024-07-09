@@ -5,7 +5,7 @@ void show_binary(unsigned int u);
 
 int main() {
 
-
+	show_binary(255);
 
 }
 
