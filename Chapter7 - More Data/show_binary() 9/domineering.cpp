@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-
+void show_binary(unsigned int u);
 
 int main() {
 
