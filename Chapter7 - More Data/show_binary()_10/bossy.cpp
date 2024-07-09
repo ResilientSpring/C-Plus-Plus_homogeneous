@@ -17,5 +17,5 @@ void show_binary(unsigned int u) {
 
 	int i = u & 255;
 
-	printf("%b \n", i);
+	printf("%d \n", i);
 }
