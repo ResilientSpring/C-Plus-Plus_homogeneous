@@ -135,6 +135,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project 7-1 Create Bitwise 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project 7-1 Create Bitwise Rotations 4", "Project 7-1 Create Bitwise Rotations 4\Project 7-1 Create Bitwise Rotations 4.vcxproj", "{2619755F-1069-4CFB-BEAA-636F0CE648C0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project 7-1 Create Bitwise Rotations 5", "Project 7-1 Create Bitwise Rotations 5\Project 7-1 Create Bitwise Rotations 5.vcxproj", "{CC27DBE6-22BF-4AA7-8759-64B0DA7851AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -671,6 +673,14 @@ Global
 		{2619755F-1069-4CFB-BEAA-636F0CE648C0}.Release|x64.Build.0 = Release|x64
 		{2619755F-1069-4CFB-BEAA-636F0CE648C0}.Release|x86.ActiveCfg = Release|Win32
 		{2619755F-1069-4CFB-BEAA-636F0CE648C0}.Release|x86.Build.0 = Release|Win32
+		{CC27DBE6-22BF-4AA7-8759-64B0DA7851AE}.Debug|x64.ActiveCfg = Debug|x64
+		{CC27DBE6-22BF-4AA7-8759-64B0DA7851AE}.Debug|x64.Build.0 = Debug|x64
+		{CC27DBE6-22BF-4AA7-8759-64B0DA7851AE}.Debug|x86.ActiveCfg = Debug|Win32
+		{CC27DBE6-22BF-4AA7-8759-64B0DA7851AE}.Debug|x86.Build.0 = Debug|Win32
+		{CC27DBE6-22BF-4AA7-8759-64B0DA7851AE}.Release|x64.ActiveCfg = Release|x64
+		{CC27DBE6-22BF-4AA7-8759-64B0DA7851AE}.Release|x64.Build.0 = Release|x64
+		{CC27DBE6-22BF-4AA7-8759-64B0DA7851AE}.Release|x86.ActiveCfg = Release|Win32
+		{CC27DBE6-22BF-4AA7-8759-64B0DA7851AE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
