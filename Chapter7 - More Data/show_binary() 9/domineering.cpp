@@ -8,6 +8,8 @@ int main() {
 	show_binary(255);
 
 	show_binary(238);
+
+	show_binary(99);
 }
 
 
