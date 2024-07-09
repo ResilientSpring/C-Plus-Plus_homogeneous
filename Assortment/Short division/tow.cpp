@@ -23,6 +23,6 @@ void short_division_of_an_unsigned_integer_by_2(unsigned int u) {
 		short_division_of_an_unsigned_integer_by_2(u);
 	}
 	else if (u < 1) {
-
+		printf("\n");
 	}
 }
