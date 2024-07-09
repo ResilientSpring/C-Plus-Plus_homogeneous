@@ -129,6 +129,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shift operators 6", "Shift 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project 7-1 Create Bitwise Rotation Functions", "Project 7-1 Create Bitwise Rotation Functions\Project 7-1 Create Bitwise Rotation Functions.vcxproj", "{4B110425-EB6B-4CB5-AEFC-3AB801240444}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project 7-1 Create Bitwise Rotations 2", "Project 7-1 Create Bitwise Rotations 2\Project 7-1 Create Bitwise Rotations 2.vcxproj", "{C39FBA84-A213-48E2-9EEA-064144E08BA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -641,6 +643,14 @@ Global
 		{4B110425-EB6B-4CB5-AEFC-3AB801240444}.Release|x64.Build.0 = Release|x64
 		{4B110425-EB6B-4CB5-AEFC-3AB801240444}.Release|x86.ActiveCfg = Release|Win32
 		{4B110425-EB6B-4CB5-AEFC-3AB801240444}.Release|x86.Build.0 = Release|Win32
+		{C39FBA84-A213-48E2-9EEA-064144E08BA4}.Debug|x64.ActiveCfg = Debug|x64
+		{C39FBA84-A213-48E2-9EEA-064144E08BA4}.Debug|x64.Build.0 = Debug|x64
+		{C39FBA84-A213-48E2-9EEA-064144E08BA4}.Debug|x86.ActiveCfg = Debug|Win32
+		{C39FBA84-A213-48E2-9EEA-064144E08BA4}.Debug|x86.Build.0 = Debug|Win32
+		{C39FBA84-A213-48E2-9EEA-064144E08BA4}.Release|x64.ActiveCfg = Release|x64
+		{C39FBA84-A213-48E2-9EEA-064144E08BA4}.Release|x64.Build.0 = Release|x64
+		{C39FBA84-A213-48E2-9EEA-064144E08BA4}.Release|x86.ActiveCfg = Release|Win32
+		{C39FBA84-A213-48E2-9EEA-064144E08BA4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
