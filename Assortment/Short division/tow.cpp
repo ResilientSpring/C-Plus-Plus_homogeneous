@@ -5,7 +5,7 @@ void short_division_of_an_unsigned_integer_by_2(unsigned int u);
 
 int main() {
 
-
+	short_division_of_an_unsigned_integer_by_2(192);
 
 }
 
