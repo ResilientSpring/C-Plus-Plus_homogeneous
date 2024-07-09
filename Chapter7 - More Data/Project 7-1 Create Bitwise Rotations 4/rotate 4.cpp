@@ -11,7 +11,8 @@ unsigned char lrotate(unsigned char value, int n) {
 	// A loop is established that performs the required number of rotations, one at a time.
 	for (int i = 0; i < n; i++)
 	{
-		// If a bit shifts left one position, it will be in bit 8 of the integer t.
+		// If a char's bits shift left one position, the char's leftmost bit 
+		// will be shifted to the bit 8 of the integer t.
 		t = t << 1;
 
 		// If the value of bit 8 is a 1, then bit 0 is set to 1.
