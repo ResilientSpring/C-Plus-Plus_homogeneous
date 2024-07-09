@@ -19,7 +19,7 @@ int main() {
 
 void swapper(char* c, char* d) {
 
-	for (int i = 0; i < strlen(); i++)
+	for (int i = 0; i < strlen(c); i++)
 	{
 
 	}
