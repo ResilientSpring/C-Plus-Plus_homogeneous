@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+unsigned char lrotate(unsigned char ch, int n) {
+
+	unsigned int t = ch;
+
+	for (int i = 0; i < n; i++)
+	{
+		t = t << 1;
+
+		/*  If a bit shifts out, it will be in bit 8 of the integer t.
+
+			If this is the case, put that bit on the right side.
+		*/
+
+		if (t & 256)
+			t = t | 1;    // put a 1 on the right end.
+
+	}
+
+	return t;   // return the lower 8 bits.
+}
+
+
+int main() {
+
+
+
+}
