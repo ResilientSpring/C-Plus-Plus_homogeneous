@@ -7,7 +7,7 @@ unsigned char lrotate(unsigned char ch_to_be_rotated, int n) {
 
 	for (int i = 0; i < n; i++)
 	{
-		t <<= 1;  // Compound assignment [1]
+		t <<= 1;  // Compound assignment. [1]
 
 		if (t & 256)
 			t = t | 1;    // put a 1 on the right end.
