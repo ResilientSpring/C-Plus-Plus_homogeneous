@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-unsigned char lrotate(unsigned char ch, int n) {
+unsigned char lrotate(unsigned char ch_to_be_rotated, int n) {
 
-	unsigned int t = ch;
+	unsigned int t = ch_to_be_rotated;
 
 	for (int i = 0; i < n; i++)
 	{
