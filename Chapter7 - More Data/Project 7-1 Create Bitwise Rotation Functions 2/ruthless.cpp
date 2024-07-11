@@ -7,12 +7,7 @@ unsigned char lrotate(unsigned char ch_to_be_rotated, int n) {
 
 	for (int i = 0; i < n; i++)
 	{
-		t = t << 1;
-
-		/*  If a bit shifts out, it will be in bit 8 of the integer t.
-
-			If this is the case, put that bit on the right side.
-		*/
+		t <<= 1;  // Compound assignment [1]
 
 		if (t & 256)
 			t = t | 1;    // put a 1 on the right end.
@@ -28,3 +23,7 @@ int main() {
 
 
 }
+
+
+// References:
+// 1.  https://en.wikipedia.org/wiki/Bitwise_operations_in_C#Bitwise_assignment_operators
