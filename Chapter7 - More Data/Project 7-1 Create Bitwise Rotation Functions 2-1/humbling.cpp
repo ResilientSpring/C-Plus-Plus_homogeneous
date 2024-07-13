@@ -31,7 +31,7 @@ int main() {
 	show_binary(ch);
 
 	printf("Rotating left 8 times:\n");
-	printf("%c", lrotate(ch, 8));
+	printf("%c \n", lrotate(ch, 8));
 
 
 }
