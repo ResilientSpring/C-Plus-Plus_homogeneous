@@ -36,6 +36,12 @@ int main() {
 	printf("Rotating left 7 times:\n");
 	printf("%c \n", lrotate(ch, 7));
 
+	printf("Rotating left 6 times:\n");
+	printf("%c \n", lrotate(ch, 6));
+
+	printf("Rotating left 9 times:\n");
+	printf("%c \n", lrotate(ch, 9));
+
 
 }
 
