@@ -17,7 +17,7 @@ unsigned char lrotate(unsigned char ch_to_be_rotated, int n) {
 
 	}
 
-	return t;   // return the lower 8 bits.
+	return t;   // return the lower 8 bits.  (An unsigned char takes up a byte. [2])
 }
 
 
@@ -46,3 +46,4 @@ void show_binary(unsigned int u) {
 
 // References:
 // 1.  https://en.wikipedia.org/wiki/Bitwise_operations_in_C#Bitwise_assignment_operators
+// 2.  https://learn.microsoft.com/en-us/cpp/cpp/data-type-ranges?view=msvc-170
