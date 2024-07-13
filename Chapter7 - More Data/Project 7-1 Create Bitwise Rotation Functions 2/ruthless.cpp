@@ -5,8 +5,10 @@ unsigned char lrotate(unsigned char ch_to_be_rotated, int n) {
 
 	unsigned int t = ch_to_be_rotated;
 
+	// A loop is established that performs the required number of rotations, one at a time.
 	for (int i = 0; i < n; i++)
 	{
+		// the value of t is left-shifted one place, regardless of the required number of rotations.
 		t <<= 1;  // Compound assignment. [1]
 
 		if (t & 256)
