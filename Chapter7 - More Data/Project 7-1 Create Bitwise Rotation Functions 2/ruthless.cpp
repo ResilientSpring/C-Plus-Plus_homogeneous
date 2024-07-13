@@ -33,7 +33,10 @@ void show_binary(unsigned int u) {
 
 
 		// Either side of a bitwise operator is automatically converted into their binary representations.
-		if(u & i)
+		if (u & i) // Test if the bit 7, for example, is 1.
+			printf("1");
+		else
+			printf("0");
 
 	}
 
