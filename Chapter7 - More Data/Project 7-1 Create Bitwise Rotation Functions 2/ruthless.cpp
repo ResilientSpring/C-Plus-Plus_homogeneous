@@ -11,6 +11,7 @@ unsigned char lrotate(unsigned char ch_to_be_rotated, int n) {
 		// The value of t is left-shifted one place, regardless of the required number of rotations.
 		t <<= 1;  // Compound assignment. [1]
 
+		// If the bit 8 after a left shift is 1, then bit 0 is set to 1.
 		if (t & 256)
 			t = t | 1;    // put a 1 on the right end.
 
