@@ -27,6 +27,18 @@ int main() {
 
 }
 
+void show_binary(unsigned int u) {
+
+	for (int i = 128; i > 0; i = i / 2) {
+
+
+		// Either side of a bitwise operator is automatically converted into their binary representations.
+		if(u & i)
+
+	}
+
+}
+
 
 // References:
 // 1.  https://en.wikipedia.org/wiki/Bitwise_operations_in_C#Bitwise_assignment_operators
