@@ -32,7 +32,7 @@ void show_binary(unsigned int u) {
 	for (int i = 128; i > 0; i = i / 2) {
 
 
-		// Either side of a bitwise operator is automatically converted into their binary representations.
+		// Either side of a bitwise operator is automatically converted into its binary representation.
 		if (u & i) // Test if the bit 7, for example, is 1.
 			printf("1");
 		else
