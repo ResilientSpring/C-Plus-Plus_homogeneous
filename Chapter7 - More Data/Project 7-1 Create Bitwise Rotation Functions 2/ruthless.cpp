@@ -38,6 +38,7 @@ void show_binary(unsigned int u) {
 		else
 			printf("0");
 
+		printf("\n");
 	}
 
 }
