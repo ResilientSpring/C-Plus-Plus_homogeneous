@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+void show_binary(unsigned int u);
+
 unsigned char lrotate(unsigned char ch_to_be_rotated, int n) {
 
 	unsigned int t = ch_to_be_rotated;
@@ -23,6 +25,16 @@ unsigned char lrotate(unsigned char ch_to_be_rotated, int n) {
 
 int main() {
 
+	char ch = 'T';
+
+	printf("Original value in binary: \n");
+	show_binary(ch);
+
+	printf("Rotating left 8 times:\n");
+	for (int i = 0; i < 8; i++) {
+		ch = lrotate(ch, 1);
+		show_binary(ch);
+	}
 
 
 }
