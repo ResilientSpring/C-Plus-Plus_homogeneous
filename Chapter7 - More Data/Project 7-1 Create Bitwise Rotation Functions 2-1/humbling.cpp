@@ -27,7 +27,7 @@ int main() {
 
 	char ch = 'T';
 
-	printf("Original value in binary:");
+	printf("Original value in binary: \n");
 	show_binary(ch);
 
 	printf("Rotating left 8 times:\n");
