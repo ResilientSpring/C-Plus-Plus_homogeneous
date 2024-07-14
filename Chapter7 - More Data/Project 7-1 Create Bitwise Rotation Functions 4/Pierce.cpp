@@ -46,9 +46,9 @@ int main() {
 	ch = lrotate(ch, 9);
 	printf("%c \n", ch);
 
-	printf("Rotating left 10 times: \n");
-	ch = lrotate(ch, 10);
-	printf("%c \n", ch);
+//	printf("Rotating left 10 times: \n");
+//	ch = lrotate(ch, 10);
+//	printf("%c \n", ch);
 
 
 }
