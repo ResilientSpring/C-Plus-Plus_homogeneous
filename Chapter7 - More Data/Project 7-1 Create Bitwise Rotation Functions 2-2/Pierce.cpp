@@ -31,10 +31,24 @@ int main() {
 	show_binary(ch);
 
 	printf("Rotating left 8 times:\n");
-	for (int i = 0; i < 8; i++) {
-		ch = lrotate(ch, 1);
-		show_binary(ch);
-	}
+	ch = lrotate(ch, 8);
+	printf("%c \n", ch);
+
+	printf("Rotating left 7 times:\n");
+	ch = lrotate(ch, 7);
+	printf("%c \n", ch);
+
+	printf("Rotating left 6 times:\n");
+	ch = lrotate(ch, 6);
+	printf("%c \n", ch);
+
+	printf("Rotating left 9 times:\n");
+	ch = lrotate(ch, 9);
+	printf("%c \n", ch);
+
+//	printf("Rotating left 10 times: \n");
+//	ch = lrotate(ch, 10);
+//	printf("%c \n", ch);
 
 
 }
@@ -50,10 +64,10 @@ void show_binary(unsigned int u) {
 		else
 			printf("0");
 
+
 	}
 
 	printf("\n");
-
 }
 
 
