@@ -143,6 +143,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Two-Dimensional Arrays 2", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Two-Dimensional arrays 3", "Two-Dimensional arrays 3\Two-Dimensional arrays 3.vcxproj", "{2E16736B-9E43-4DB3-8DC6-2672C59A9D7F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Array initialization, Multidimension 2", "Array initialization, Multidimension 2\Array initialization, Multidimension 2.vcxproj", "{345C8FA4-22F1-489F-8469-DBF0DEB0A867}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Array initialization, Multidimension 3", "Array initialization, Multidimension 3\Array initialization, Multidimension 3.vcxproj", "{5A12DE4C-A02A-4088-8DCF-9772534C3A11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -711,6 +715,22 @@ Global
 		{2E16736B-9E43-4DB3-8DC6-2672C59A9D7F}.Release|x64.Build.0 = Release|x64
 		{2E16736B-9E43-4DB3-8DC6-2672C59A9D7F}.Release|x86.ActiveCfg = Release|Win32
 		{2E16736B-9E43-4DB3-8DC6-2672C59A9D7F}.Release|x86.Build.0 = Release|Win32
+		{345C8FA4-22F1-489F-8469-DBF0DEB0A867}.Debug|x64.ActiveCfg = Debug|x64
+		{345C8FA4-22F1-489F-8469-DBF0DEB0A867}.Debug|x64.Build.0 = Debug|x64
+		{345C8FA4-22F1-489F-8469-DBF0DEB0A867}.Debug|x86.ActiveCfg = Debug|Win32
+		{345C8FA4-22F1-489F-8469-DBF0DEB0A867}.Debug|x86.Build.0 = Debug|Win32
+		{345C8FA4-22F1-489F-8469-DBF0DEB0A867}.Release|x64.ActiveCfg = Release|x64
+		{345C8FA4-22F1-489F-8469-DBF0DEB0A867}.Release|x64.Build.0 = Release|x64
+		{345C8FA4-22F1-489F-8469-DBF0DEB0A867}.Release|x86.ActiveCfg = Release|Win32
+		{345C8FA4-22F1-489F-8469-DBF0DEB0A867}.Release|x86.Build.0 = Release|Win32
+		{5A12DE4C-A02A-4088-8DCF-9772534C3A11}.Debug|x64.ActiveCfg = Debug|x64
+		{5A12DE4C-A02A-4088-8DCF-9772534C3A11}.Debug|x64.Build.0 = Debug|x64
+		{5A12DE4C-A02A-4088-8DCF-9772534C3A11}.Debug|x86.ActiveCfg = Debug|Win32
+		{5A12DE4C-A02A-4088-8DCF-9772534C3A11}.Debug|x86.Build.0 = Debug|Win32
+		{5A12DE4C-A02A-4088-8DCF-9772534C3A11}.Release|x64.ActiveCfg = Release|x64
+		{5A12DE4C-A02A-4088-8DCF-9772534C3A11}.Release|x64.Build.0 = Release|x64
+		{5A12DE4C-A02A-4088-8DCF-9772534C3A11}.Release|x86.ActiveCfg = Release|Win32
+		{5A12DE4C-A02A-4088-8DCF-9772534C3A11}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
