@@ -42,4 +42,10 @@ int main() {
 
 	cout << "The square of " << input << " is ";
 	cout << sqrs[i][1];
+
+	for (i = 0; i < 10; i++)
+		if (sqrs_2[i][0] == input)
+			break;
+
+	printf("The square of %d is %d. \n", input, sqrs_2[i][1]);
 }
