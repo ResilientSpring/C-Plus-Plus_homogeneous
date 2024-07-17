@@ -50,4 +50,6 @@ int main() {
 	printf("\nThe square of %d is %d. \n", input, sqrs_2[i][1]);
 
 	printf("\n %d ", sqrs_2[5]);
+
+	printf("\n %p ", sqrs_2[5]);
 }
