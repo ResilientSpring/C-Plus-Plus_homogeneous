@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 using namespace std;
 
@@ -32,8 +33,8 @@ int main() {
 
 
 	int i, j;
-	cout << "Enter a number between 1 and 10: ";
-	cin >> i;
+	printf("Enter a number between 1 and 10: ");
+	scanf("%d", &i);
 
 	// look up i
 	for (j = 0; j < 10; j++)
