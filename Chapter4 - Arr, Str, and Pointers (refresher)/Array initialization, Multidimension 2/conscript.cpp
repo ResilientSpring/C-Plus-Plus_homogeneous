@@ -47,5 +47,5 @@ int main() {
 		if (sqrs_2[i][0] == input)
 			break;
 
-	printf("The square of %d is %d. \n", input, sqrs_2[i][1]);
+	printf("\nThe square of %d is %d. \n", input, sqrs_2[i][1]);
 }
