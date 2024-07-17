@@ -32,14 +32,14 @@ int main() {
 	};
 
 
-	int i, j;
+	int input, i;
 	printf("Enter a number between 1 and 10: ");
-	scanf("%d", &i);
+	scanf("%d", &input);
 
 	// look up i
-	for (j = 0; j < 10; j++)
-		if (sqrs[j][0] == i) break;
+	for (i = 0; i < 10; i++)
+		if (sqrs[i][0] == input) break;
 
-	cout << "The square of " << i << " is ";
-	cout << sqrs[j][1];
+	cout << "The square of " << input << " is ";
+	cout << sqrs[i][1];
 }
