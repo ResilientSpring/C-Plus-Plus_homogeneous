@@ -36,12 +36,14 @@ void main()
 			{
 				printf("\nEnter the distance from %d --> %d (Hint: distance_matrix[%d][%d]): ", i, j, i, j);
 
-				// scanf("%d", &a[i][j]);
+				scanf("%d", &a[i][j]);
 
+				/*
 				if (scanf("%d", &a[i][j]) >= 0)
 					printf("The distance between the two cities is %d .\n", a[i][j]);
 				else
 					printf("You haven't entered the distance between the two cities.\n");
+				*/
 
 				a[j][i] = a[i][j];    // eliminate the need to re-calculate. 
 			}
