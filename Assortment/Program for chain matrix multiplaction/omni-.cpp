@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <conio.h>
 
@@ -12,6 +13,8 @@ int main() {
 	int p[10] = { 0 }, i, n;
 
 	printf("\nEnter Total number of matrices: ");
+
 	scanf("%d", &n);
+	
 	printf("\nEnter the dimensions for matrices:");
 }
