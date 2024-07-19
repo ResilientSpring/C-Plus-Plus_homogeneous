@@ -37,3 +37,24 @@ int main() {
 
 	getch();
 }
+
+// calculate minumum number of scalar multiplaction matrix \\
+
+void chain_matrix_multiplaction(int m[10][10], int s[10][10], int p[10], int n) {
+
+	int i, j, k, q, l;
+
+	for (i = 1; i <= n; i++) 
+
+		m[i][i] = 0;
+
+	for (l = 2; l <= n; l++) {
+
+		for (i = 1; i <= n - 1 + 1; i++) {
+			
+			j = i + 1 - 1;
+		}
+
+	}
+
+}
