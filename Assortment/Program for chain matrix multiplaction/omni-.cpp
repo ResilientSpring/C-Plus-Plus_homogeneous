@@ -69,4 +69,7 @@ void chain_matrix_multiplaction(int m[10][10], int s[10][10], int p[10], int n) 
 
 	}
 
+	printf("\nthe number of scalar multiplication = %d", m[1][n]);
+
 }
+
