@@ -125,3 +125,6 @@ void tsm(int a[10][10], int n)
 // Reference:
 // 1. https://stackoverflow.com/questions/4529459/malloc-undefined
 // 2. https://stackoverflow.com/questions/71315334/malloc-always-returns-a-null-pointer-visual-studio-2022
+
+// Adapted from "Algorithms: Design and Analysis (De Gruyter Textbook)"'s Chapter 7 Lab session's 
+// 12. Program for TSM problem
