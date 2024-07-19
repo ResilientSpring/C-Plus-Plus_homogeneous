@@ -88,6 +88,8 @@ int ops(int s[10][10], int i, int j) {
 		ops(s, i, s[i][j]);
 		ops(s, s[i][j] + 1, j);
 		printf(")");
-
 	}
+
+	return (0);
+
 }
