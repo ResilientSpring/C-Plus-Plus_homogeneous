@@ -73,3 +73,21 @@ void chain_matrix_multiplaction(int m[10][10], int s[10][10], int p[10], int n) 
 
 }
 
+// To solve optimal parenthesize scheme
+int ops(int s[10][10], int i, int j) {
+
+	if (i == j) {
+
+		printf(" A%d ", i);
+
+		return (0);
+	}
+	else {
+
+		printf("(");
+		ops(s, i, s[i][j]);
+		ops(s, s[i][j] + 1, j);
+		printf(")");
+
+	}
+}
