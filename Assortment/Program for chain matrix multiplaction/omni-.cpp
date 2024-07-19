@@ -35,7 +35,8 @@ int main() {
 
 	ops(s, 1, n);
 
-	getch();
+	// getch();
+	(void)_getch();
 }
 
 // calculate minumum number of scalar multiplaction matrix \\
