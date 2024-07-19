@@ -112,3 +112,6 @@ void display(int m[10][10], int n) {
 	}
 
 }
+
+// Adapted from "Algorithms: Design and Analysis (De Gruyter Textbook)"'s Chapter 7 Lab session's 
+// 7. Program for chain matrix multiplaction
