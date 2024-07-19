@@ -93,3 +93,21 @@ int ops(int s[10][10], int i, int j) {
 	return (0);
 
 }
+
+// To display the matrix
+void display(int m[10][10], int n) {
+
+	int i, j;
+
+	for (i = 1; i <= n; i++) {
+
+		for (j = 1; j <= n; j++) {
+
+			printf("\t%d", m[i][j]);
+
+		}
+
+		printf("\n");
+	}
+
+}
