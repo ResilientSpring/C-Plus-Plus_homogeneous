@@ -17,4 +17,11 @@ int main() {
 	scanf("%d", &n);
 	
 	printf("\nEnter the dimensions for matrices:");
+
+	for (i = 0; i <= n; i++)
+		scanf("%d", &p[i]);
+
+	chain_matrix_multiplaction(m, s, p, n);
+
+	printf("\n\nThe cost of optimal solution matrix \n");
 }
