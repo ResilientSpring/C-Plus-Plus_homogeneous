@@ -34,3 +34,5 @@ void main(void) {
 	char s[25];
 
 }
+
+// Source: https://www.degruyter.com/document/doi/10.1515/9783110693607-007/html
