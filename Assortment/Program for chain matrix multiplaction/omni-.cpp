@@ -32,4 +32,8 @@ int main() {
 	display(s, n);
 
 	printf("\n\nThe Optimal Parenthesization is \n\n");
+
+	ops(s, 1, n);
+
+	getch();
 }
