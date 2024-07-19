@@ -11,4 +11,7 @@ int main() {
 
 	int p[10] = { 0 }, i, n;
 
+	printf("\nEnter Total number of matrices: ");
+	scanf("%d", &n);
+	printf("\nEnter the dimensions for matrices:");
 }
