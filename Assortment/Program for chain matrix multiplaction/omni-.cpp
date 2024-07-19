@@ -53,6 +53,18 @@ void chain_matrix_multiplaction(int m[10][10], int s[10][10], int p[10], int n) 
 		for (i = 1; i <= n - 1 + 1; i++) {
 			
 			j = i + 1 - 1;
+
+			m[i][j] = 999999;
+
+			for (k = i; i <= j - 1; k++) {
+				q = m[i][k] + m[k + 1][j] + (p[i - 1] * p[k] * p[j]);
+
+				if (q < m[i][j]) {
+					m[i][j] = q;
+					s[i][j] = k;
+				}
+
+			}
 		}
 
 	}
