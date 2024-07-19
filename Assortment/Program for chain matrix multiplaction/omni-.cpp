@@ -24,4 +24,12 @@ int main() {
 	chain_matrix_multiplaction(m, s, p, n);
 
 	printf("\n\nThe cost of optimal solution matrix \n");
+
+	display(m, n);
+
+	printf("\n\nThe value of split the product\n");
+
+	display(s, n);
+
+	printf("\n\nThe Optimal Parenthesization is \n\n");
 }
