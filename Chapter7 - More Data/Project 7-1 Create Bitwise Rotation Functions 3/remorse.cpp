@@ -22,6 +22,8 @@ int main() {
 	printf("Original value in binary:\n");
 	show_binary(ch);
 
+	
+
 }
 
 
