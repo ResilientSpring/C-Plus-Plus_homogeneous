@@ -25,10 +25,14 @@ void show_binary(unsigned int u) {
 
 	for (int i = 128; i > 0; i = i / 2) {
 
-		
+		if (u & i)
+			printf("1");
+		else
+			printf("0");
 
 	}
 
+	printf("\n");
 }
 
 // References:
