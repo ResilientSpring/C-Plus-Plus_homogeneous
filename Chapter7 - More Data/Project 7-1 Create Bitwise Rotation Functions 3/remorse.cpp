@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+void show_binary(unsigned int u);
+
 unsigned char lrotate(unsigned char ch_to_be_rotated, int n) {
 
 	unsigned int t = ch_to_be_rotated;
