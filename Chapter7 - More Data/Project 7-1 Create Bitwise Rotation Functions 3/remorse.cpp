@@ -18,7 +18,9 @@ unsigned char lrotate(unsigned char ch_to_be_rotated, int n) {
 
 int main() {
 
-
+	char ch = 'T';
+	printf("Original value in binary:\n");
+	show_binary(ch);
 
 }
 
