@@ -10,7 +10,7 @@ unsigned char lrotate(unsigned char ch_to_be_rotated, int n) {
 	if (t & 256)
 		t = t | 1;
 
-	return t;   // return the lower 8 bits.
+	return t; 
 }
 
 
@@ -21,5 +21,15 @@ int main() {
 }
 
 
+void show_binary(unsigned int u) {
+
+	for (int i = 128; i > 0; i = i / 2) {
+
+		
+
+	}
+
+}
+
 // References:
-// 1.  https://en.wikipedia.org/wiki/Bitwise_operations_in_C#Bitwise_assignment_operators
+// 1. 
