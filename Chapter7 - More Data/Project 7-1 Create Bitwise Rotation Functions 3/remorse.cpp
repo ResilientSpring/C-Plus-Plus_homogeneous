@@ -22,8 +22,9 @@ int main() {
 	printf("Original value in binary:\n");
 	show_binary(ch);
 
-	
-
+	printf("Rotating left 8 times: \n");
+	ch = lrotate(ch, 8);
+	show_binary(ch);
 }
 
 
