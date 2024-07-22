@@ -32,7 +32,7 @@ int main() {
 
 	printf("Rotating left 8 times:\n");
 	ch = lrotate(ch, 8);
-	printf("%c \n", ch);
+	printf("%c \n", ch);         // ch is not T
 
 	printf("Rotating left 7 times:\n");
 	ch = lrotate(ch, 7);

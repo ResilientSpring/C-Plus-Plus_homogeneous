@@ -31,13 +31,13 @@ int main() {
 	show_binary(ch);
 
 	printf("Rotating left 8 times:\n");
-	printf("%c \n", lrotate(ch, 8));
+	printf("%c \n", lrotate(ch, 8));    // ch is T
 
 	printf("Rotating left 7 times:\n");
-	printf("%c \n", lrotate(ch, 7));
+	printf("%c \n", lrotate(ch, 7));   // ch is still T
 
 	printf("Rotating left 6 times:\n");
-	printf("%c \n", lrotate(ch, 6));
+	printf("%c \n", lrotate(ch, 6)); // ch is still T as what this function returns is a temporary value.
 
 	printf("Rotating left 9 times:\n");
 	printf("%c \n", lrotate(ch, 9));
