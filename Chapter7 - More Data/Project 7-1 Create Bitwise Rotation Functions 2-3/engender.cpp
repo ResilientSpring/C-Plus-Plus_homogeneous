@@ -21,7 +21,7 @@ unsigned char lrotate(unsigned char ch_to_be_rotated, int n) {
 
 	}
 
-	return t;   // return the lower 8 bits.  (An unsigned char takes up a byte. [2])
+	return t;
 }
 
 
