@@ -4,8 +4,10 @@ using namespace std;
 
 void show_binary(unsigned int u);
 
+//                    unsigned char takes up 1 byte.
 unsigned char lrotate(unsigned char ch_to_be_rotated, int n) {
 
+//  unsigned int takes up 4 bytes.
 	unsigned int t = ch_to_be_rotated;
 
 	t <<= n;
