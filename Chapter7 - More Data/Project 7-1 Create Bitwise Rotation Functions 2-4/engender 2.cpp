@@ -34,18 +34,22 @@ int main() {
 
 	printf("Rotating left 8 times:\n");
 	ch = lrotate(ch, 8);
+	show_binary(ch);
 	printf("%c \n", ch);         // ch is not T
 
 	printf("Rotating left 7 times:\n");
 	ch = lrotate(ch, 7);
+	show_binary(ch);
 	printf("%c \n", ch);
 
 	printf("Rotating left 6 times:\n");
 	ch = lrotate(ch, 6);
+	show_binary(ch);
 	printf("%c \n", ch);
 
 	printf("Rotating left 9 times:\n");
 	ch = lrotate(ch, 9);
+	show_binary(ch);
 	printf("%c \n", ch);
 
 	//	printf("Rotating left 10 times: \n");
