@@ -47,7 +47,7 @@ unsigned char right_rotate(unsigned char ch_to_be_rotated, int n) {
 	}
 
 	// Once rotation is complete, the value must be shifted back into the low-order byte of t so that
-	// the value can be returned. 
+	// the value can be returned. (function's return type is unsigned char.)
 	t = t >> 8;
 
 	return t;
