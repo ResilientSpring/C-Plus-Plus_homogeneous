@@ -24,6 +24,7 @@ unsigned char left_rotate(unsigned char ch_to_be_rotated, int n) {
 	return t; // function's return type is unsigned char, so t will be converted into unsigned char.
 }
 
+//                         unsigned char takes up 1 byte. [2]
 unsigned char right_rotate(unsigned char ch_to_be_rotated, int n) {
 
 	unsigned int t;
