@@ -8,13 +8,13 @@ unsigned char lrotate(unsigned char ch_to_be_rotated, int n) {
 
 	unsigned int t = ch_to_be_rotated;
 
+	t <<= n;
+
 	for (int i = pow(2, 31); i > 0; i = i / 2) {
 
 
 
-	}
-
-	t <<= n;
+	}	
 
 	if (t & 256)
 		t = t | 1;
