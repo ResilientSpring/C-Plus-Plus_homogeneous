@@ -39,10 +39,9 @@ unsigned char right_rotate(unsigned char ch_to_be_rotated, int n) {
 
 		t = t >> 1;
 
-		// If a bit shifts out, it will be in bit 7 of the integer t. If this is the case, 
-		// put that bit on the left side.
-		if (t & 128)
-			t = t | 32768;  // put a 1 on left end.
+		// Because the bit being shifted right moves to bit 7, 
+		if (t & 128)  // checks whether bit 7 is a 1.
+			t = t | 32768;
 
 	}
 
