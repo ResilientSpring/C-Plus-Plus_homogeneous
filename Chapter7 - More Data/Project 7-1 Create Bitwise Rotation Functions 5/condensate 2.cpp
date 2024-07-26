@@ -40,7 +40,7 @@ unsigned char right_rotate(unsigned char ch_to_be_rotated, int n) {
 		t = t >> 1;
 
 		// Because the bit being shifted right moves to bit 7, 
-		if (t & 128)  // checks whether bit 7 is a 1.
+		if (t & 128)  // let's check whether the bit 7 is a 1.
 			t = t | 32768;
 
 	}
