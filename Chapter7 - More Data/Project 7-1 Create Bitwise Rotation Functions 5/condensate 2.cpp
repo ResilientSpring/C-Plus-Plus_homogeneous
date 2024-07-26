@@ -61,9 +61,10 @@ int main() {
 	show_binary(ch);
 
 	printf("Rotating right 8 times:\n");
+
 	for (int i = 0; i < 8; i++) {
 
-
+		ch = right_rotate(ch, 1);
 
 	}
 
