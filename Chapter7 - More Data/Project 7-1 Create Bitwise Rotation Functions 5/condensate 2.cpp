@@ -39,9 +39,9 @@ unsigned char right_rotate(unsigned char ch_to_be_rotated, int n) {
 
 		t = t >> 1;
 
-		// Because the bit being shifted right moves to bit 7, 
-		if (t & 128)  // let's check whether the bit 7 is a 1.
-			t = t | 32768;
+		// Because the bit being shifted right moves to bit 7, let's check whether the bit 7 is a 1.
+		if (t & 128)  // If bit 7 is 1,
+			t = t | 32768;  // then we set bit 15 to 1.
 
 	}
 
@@ -55,6 +55,10 @@ unsigned char right_rotate(unsigned char ch_to_be_rotated, int n) {
 
 int main() {
 
+	char ch = 'T';
+
+	printf("Original value in binary:\n");
+	show_binary(ch);
 
 }
 
