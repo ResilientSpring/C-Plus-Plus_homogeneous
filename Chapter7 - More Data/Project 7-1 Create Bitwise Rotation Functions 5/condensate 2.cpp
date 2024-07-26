@@ -60,6 +60,13 @@ int main() {
 	printf("Original value in binary:\n");
 	show_binary(ch);
 
+	printf("Rotating right 8 times:\n");
+	for (int i = 0; i < 8; i++) {
+
+
+
+	}
+
 }
 
 void show_binary(unsigned int u) {
