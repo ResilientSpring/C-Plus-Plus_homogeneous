@@ -69,6 +69,14 @@ int main() {
 
 	}
 
+	printf("Rotating left 8 times:\n");
+
+	for (int i = 0; i < 8; i++) {
+
+		ch = left_rotate(ch, 1);
+		show_binary(ch);
+	}
+
 }
 
 void show_binary(unsigned int u) {
