@@ -65,6 +65,7 @@ int main() {
 	for (int i = 0; i < 8; i++) {
 
 		ch = right_rotate(ch, 1);
+		show_binary(ch);
 
 	}
 
