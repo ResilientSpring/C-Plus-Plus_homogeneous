@@ -38,11 +38,13 @@ void show_binary_2(int decimal_number) {
 	for (int i = 32768; i > 0; i = i >> 1)
 	{                // i > 0 because if the least bit is on, that bit stands for 1.
 
-	}
 
-	// if (decimal_number & 65535) is non-zero
-	if (decimal_number & 65535) {
+	//  if (decimal_number & i) is non-zero
+		if (decimal_number & i) {
 
+
+
+		}
 
 	}
 
