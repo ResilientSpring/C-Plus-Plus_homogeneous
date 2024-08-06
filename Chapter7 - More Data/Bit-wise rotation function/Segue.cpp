@@ -30,7 +30,7 @@ void show_binary_2(int decimal_number) {
 
 	//   decimal_number, say, 26051
 	//   0110 0101 1100 0011
-	// & 1111 1111 1111 1111    (65535)
+	// & 1000 0000 0000 0000    (32768)
 	//------------------------
 	//   0110 
 
@@ -43,6 +43,11 @@ void show_binary_2(int decimal_number) {
 		if (decimal_number & i) {
 
 			printf("1");
+
+		}
+		else {
+
+			printf("0");
 
 		}
 
