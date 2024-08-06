@@ -39,10 +39,10 @@ void show_binary_2(int decimal_number) {
 	{                // i > 0 because if the least bit is on, that bit stands for 1.
 
 
-	//  if (decimal_number & i) is non-zero
+	//  if (decimal_number & i) is non-zero, meaning if bitwise AND finds the target bit is on 
 		if (decimal_number & i) {
 
-
+			printf("1");
 
 		}
 
