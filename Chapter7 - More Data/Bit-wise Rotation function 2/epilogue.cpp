@@ -5,8 +5,9 @@ void show_binary_2(int decimal_number);
 
 int main() {
 
+	int test = 1024;
 
-
+	show_binary_2(test);
 }
 
 
