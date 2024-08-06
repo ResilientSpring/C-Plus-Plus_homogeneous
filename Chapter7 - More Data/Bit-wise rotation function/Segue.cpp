@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 void show_binary(int decimal_number);
+void show_binary_2(int decimal_number);
 
 int main() {
 
@@ -33,7 +34,8 @@ void show_binary_2(int decimal_number) {
 	//------------------------
 	//   0110 
 
-	for (size_t i = 0; i < length; i++)
+	// Check bit by bit. Examine if the 1st highest bit is on, 2nd highest bit is set, and so on.
+	for (int i = 32768; i < length; i++)
 	{
 
 	}
