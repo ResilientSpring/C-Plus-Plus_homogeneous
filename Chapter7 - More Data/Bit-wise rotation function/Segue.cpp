@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+void show_binary(int decimal_number);
+
 int main() {
 
 
