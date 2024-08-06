@@ -45,7 +45,7 @@ void show_binary_2(int decimal_number) {
 			printf("1");
 
 		}
-		else if (!(decimal_number & i)) {
+		else if (!(decimal_number & i)) {  // if bitwise AND finds the target bit is 0
 
 			printf("0");
 
