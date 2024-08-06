@@ -5,8 +5,9 @@ void show_binary_2(int decimal_number);
 
 int main() {
 
+	int test = 1024;
 
-
+	show_binary_2(test);
 }
 
 
@@ -45,8 +46,7 @@ void show_binary_2(int decimal_number) {
 			printf("1");
 
 		}
-		else {  // if bitwise AND finds the target bit is not set, then it must be 0 because there are
-			    // only two probable outcomes.
+		else if (!(decimal_number & i)) {  // if bitwise AND finds the target bit is 0
 
 			printf("0");
 
