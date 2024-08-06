@@ -171,6 +171,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project 7-1 Create Bitwise 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bit-wise rotation function", "Bit-wise rotation function\Bit-wise rotation function.vcxproj", "{424A9C39-457B-4365-AE35-9485C7653249}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bit-wise Rotation function 2", "Bit-wise Rotation function 2\Bit-wise Rotation function 2.vcxproj", "{6994EF48-B3D5-49C0-84EF-DCBCD39869F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -851,6 +853,14 @@ Global
 		{424A9C39-457B-4365-AE35-9485C7653249}.Release|x64.Build.0 = Release|x64
 		{424A9C39-457B-4365-AE35-9485C7653249}.Release|x86.ActiveCfg = Release|Win32
 		{424A9C39-457B-4365-AE35-9485C7653249}.Release|x86.Build.0 = Release|Win32
+		{6994EF48-B3D5-49C0-84EF-DCBCD39869F2}.Debug|x64.ActiveCfg = Debug|x64
+		{6994EF48-B3D5-49C0-84EF-DCBCD39869F2}.Debug|x64.Build.0 = Debug|x64
+		{6994EF48-B3D5-49C0-84EF-DCBCD39869F2}.Debug|x86.ActiveCfg = Debug|Win32
+		{6994EF48-B3D5-49C0-84EF-DCBCD39869F2}.Debug|x86.Build.0 = Debug|Win32
+		{6994EF48-B3D5-49C0-84EF-DCBCD39869F2}.Release|x64.ActiveCfg = Release|x64
+		{6994EF48-B3D5-49C0-84EF-DCBCD39869F2}.Release|x64.Build.0 = Release|x64
+		{6994EF48-B3D5-49C0-84EF-DCBCD39869F2}.Release|x86.ActiveCfg = Release|Win32
+		{6994EF48-B3D5-49C0-84EF-DCBCD39869F2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
