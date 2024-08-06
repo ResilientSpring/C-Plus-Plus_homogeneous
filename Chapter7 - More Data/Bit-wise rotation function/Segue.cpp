@@ -35,7 +35,7 @@ void show_binary_2(int decimal_number) {
 	//   0110 
 
 	// Check bit by bit. Examine if the 1st highest bit is on, 2nd highest bit is set, and so on.
-	for (int i = 32768; i < length; i++)
+	for (int i = 32768; i > 0; i = i >> 1)
 	{
 
 	}
