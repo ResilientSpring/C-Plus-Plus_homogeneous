@@ -5,6 +5,7 @@ void show_binary(int decimal_number);
 void show_binary_2(int decimal_number);
 void rotate_left(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
 void rotate_left_2(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
+void rotate_left_3(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
 
 int main() {
 
@@ -88,6 +89,21 @@ void rotate_left_2(unsigned int the_integer_to_rotate_left, int how_many_times_t
 	}
 
 }
+
+// unsigned int is chosen because dealing with negative integers involves one's and two's complements.
+void rotate_left_3(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left) {
+
+	// unsigned long long is employed because it is larger than unsigned int.[1]
+	unsigned long long holder = the_integer_to_rotate_left;
+
+	for (int i = 0; i <= how_many_times_to_rotate_left; i++)
+	{
+		holder = holder << 1;
+
+	}
+
+}
+
 
 // References:
 // 1. https://learn.microsoft.com/en-us/cpp/cpp/data-type-ranges?view=msvc-170
