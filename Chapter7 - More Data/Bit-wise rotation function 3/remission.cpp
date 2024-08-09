@@ -66,7 +66,10 @@ void show_binary_2(int decimal_number) {
 // unsigned int is chosen because dealing with negative integers involves one's and two's complements.
 void rotate_left(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left) {
 
-	// long long is employed because it is larger than int.
+	// long long is employed because it is larger than int.[1]
 	long long holder = the_integer_to_rotate_left;
 
 }
+
+// References:
+// 1. https://learn.microsoft.com/en-us/cpp/cpp/data-type-ranges?view=msvc-170
