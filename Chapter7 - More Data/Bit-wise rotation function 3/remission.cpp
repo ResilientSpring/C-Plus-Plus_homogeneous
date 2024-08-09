@@ -84,8 +84,9 @@ void rotate_left_2(unsigned int the_integer_to_rotate_left, int how_many_times_t
 	{
 		holder = holder << 1;
 
-		if (holder & pow(2, 31))
-			holder = holder | 1;
+		// pow()'s return type is double but bit-wise operations cannot be used on double.[2]
+//      if (holder & pow(2, 31))
+//	      holder = holder | 1;
 	}
 
 }
@@ -107,3 +108,4 @@ void rotate_left_3(unsigned int the_integer_to_rotate_left, int how_many_times_t
 
 // References:
 // 1. https://learn.microsoft.com/en-us/cpp/cpp/data-type-ranges?view=msvc-170
+// 2. https://www.programiz.com/c-programming/online-compiler/
