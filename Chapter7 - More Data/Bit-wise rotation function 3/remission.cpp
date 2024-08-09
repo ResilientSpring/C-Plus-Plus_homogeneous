@@ -12,6 +12,10 @@ int main() {
 	int test = 1024;
 
 	show_binary_2(test);
+
+	int test2 = 2990936064;
+
+	rotate_left_3(test2, 19);
 }
 
 
