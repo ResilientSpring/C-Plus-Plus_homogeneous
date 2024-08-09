@@ -78,6 +78,11 @@ void rotate_left_2(unsigned int the_integer_to_rotate_left, int how_many_times_t
 	// unsigned long long is employed because it is larger than unsigned int.[1]
 	unsigned long long holder = the_integer_to_rotate_left;
 
+	for (int i = 0; i <= how_many_times_to_rotate_left; i++)
+	{
+
+	}
+
 }
 
 // References:
