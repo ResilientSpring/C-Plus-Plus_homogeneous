@@ -13,11 +13,15 @@ int main() {
 
 	show_binary_2(test);
 
+	printf("\n");
+
 	int test2 = 2990936064;
 
 	rotate_left_3(test2, 19);
 
 	show_binary_2(test2);
+
+	printf("\n");
 }
 
 
