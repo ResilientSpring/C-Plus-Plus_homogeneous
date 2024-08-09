@@ -101,6 +101,9 @@ void rotate_left_3(unsigned int the_integer_to_rotate_left, int how_many_times_t
 	{
 		holder = holder << 1;
 
+		// 4294967296 = 2 to the 32nd power.
+		if (holder & 4294967296)  
+			holder = holder | 1;
 	}
 
 }
