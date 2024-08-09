@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 void show_binary(int decimal_number);
 void show_binary_2(int decimal_number);
@@ -80,7 +81,10 @@ void rotate_left_2(unsigned int the_integer_to_rotate_left, int how_many_times_t
 
 	for (int i = 0; i <= how_many_times_to_rotate_left; i++)
 	{
-		
+		holder = holder << 1;
+
+		if (holder & pow(2, 31))
+			holder = holder | 1;
 	}
 
 }
