@@ -2,6 +2,7 @@
 
 void show_binary(int decimal_number);
 void show_binary_2(int decimal_number);
+void rotate_left(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
 
 int main() {
 
@@ -62,7 +63,9 @@ void show_binary_2(int decimal_number) {
 
 }
 
-void rotate_left() {
+
+void rotate_left(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left) {
+
 
 
 
