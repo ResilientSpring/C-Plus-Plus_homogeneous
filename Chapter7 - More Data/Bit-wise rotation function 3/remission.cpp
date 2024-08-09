@@ -83,7 +83,8 @@ void rotate_left_2(unsigned int the_integer_to_rotate_left, int how_many_times_t
 	{
 		holder = holder << 1;
 
-		if(holder & pow(2, 31))
+		if (holder & pow(2, 31))
+			holder = holder | 1;
 	}
 
 }
