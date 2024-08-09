@@ -80,7 +80,7 @@ void rotate_left_2(unsigned int the_integer_to_rotate_left, int how_many_times_t
 
 	for (int i = 0; i <= how_many_times_to_rotate_left; i++)
 	{
-
+		
 	}
 
 }
