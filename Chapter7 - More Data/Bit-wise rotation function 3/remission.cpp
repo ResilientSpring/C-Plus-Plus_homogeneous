@@ -61,3 +61,9 @@ void show_binary_2(int decimal_number) {
 	}
 
 }
+
+void rotate_left() {
+
+
+
+}
