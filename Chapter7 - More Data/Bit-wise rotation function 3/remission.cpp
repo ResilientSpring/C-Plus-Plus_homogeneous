@@ -5,12 +5,17 @@ void show_binary(int decimal_number);
 void show_binary_2(int decimal_number);
 void rotate_left(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
 void rotate_left_2(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
+void rotate_left_3(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
 
 int main() {
 
 	int test = 1024;
 
 	show_binary_2(test);
+
+	int test2 = 2990936064;
+
+	rotate_left_3(test2, 19);
 }
 
 
@@ -83,11 +88,31 @@ void rotate_left_2(unsigned int the_integer_to_rotate_left, int how_many_times_t
 	{
 		holder = holder << 1;
 
-		if (holder & pow(2, 31))
+		// pow()'s return type is double but bit-wise operations cannot be used on double.[2]
+//      if (holder & pow(2, 31))
+//	      holder = holder | 1;
+	}
+
+}
+
+// unsigned int is chosen because dealing with negative integers involves one's and two's complements.
+void rotate_left_3(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left) {
+
+	// unsigned long long is employed because it is larger than unsigned int.[1]
+	unsigned long long holder = the_integer_to_rotate_left;
+
+	for (int i = 0; i <= how_many_times_to_rotate_left; i++)
+	{
+		holder = holder << 1;
+
+		// 4294967296 = 2 to the 32nd power.
+		if (holder & 4294967296)  
 			holder = holder | 1;
 	}
 
 }
 
+
 // References:
 // 1. https://learn.microsoft.com/en-us/cpp/cpp/data-type-ranges?view=msvc-170
+// 2. https://www.programiz.com/c-programming/online-compiler/
