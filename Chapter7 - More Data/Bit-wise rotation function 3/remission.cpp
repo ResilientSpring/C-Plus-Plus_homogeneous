@@ -17,6 +17,10 @@ int main() {
 
 	int test2 = 2990936064;
 
+	show_binary_2(test2);
+
+	printf("\n");
+
 	rotate_left_3(test2, 19);
 
 	show_binary_2(test2);
