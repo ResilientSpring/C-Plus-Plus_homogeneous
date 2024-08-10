@@ -34,6 +34,8 @@ int main() {
 	show_binary_6(test2);
 	show_binary_6(test);
 
+	printf("2 to the 31st power is %u.\n ", pow(2, 31));
+
 }
 
 
