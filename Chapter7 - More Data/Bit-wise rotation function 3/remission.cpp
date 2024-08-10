@@ -14,7 +14,9 @@ int main() {
 
 	show_binary_2(test);
 
-	int test2 = 2990936064;
+//  int test2 = 2990936064; overflowed.[1]
+
+	unsigned int test2 = 2990936064;
 
 	show_binary_2(test2);
 
