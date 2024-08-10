@@ -26,6 +26,8 @@ int main() {
 	show_binary_2(test3);
 	show_binary_3(test3);
 
+	show_binary_4(test);
+
 }
 
 
