@@ -142,6 +142,11 @@ void show_binary_4(unsigned int decimal_number) {
 
 		}
 
+		counter++;
+
+		if (counter == 4)
+			printf(", ");
+
 	}
 
 	printf("\n");
