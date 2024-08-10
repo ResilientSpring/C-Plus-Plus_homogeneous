@@ -17,9 +17,9 @@ int main() {
 
 	show_binary_2(test2);
 
-	rotate_left_3(test2, 19);
+	unsigned int test3 = rotate_left_3(test2, 19);
 
-	show_binary_2(test2);
+	show_binary_2(test3);
 
 }
 
