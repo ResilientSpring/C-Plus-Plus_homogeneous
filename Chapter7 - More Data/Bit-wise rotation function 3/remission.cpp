@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+// #include <math.h> needed for pow()
 
 void show_binary(int decimal_number);
 void show_binary_2(int decimal_number);
