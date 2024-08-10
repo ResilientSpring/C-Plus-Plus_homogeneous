@@ -31,6 +31,8 @@ int main() {
 	show_binary_4(test);
 	show_binary_5(test);
 
+	show_binary_6(test2);
+
 }
 
 
