@@ -13,19 +13,14 @@ int main() {
 
 	show_binary_2(test);
 
-	printf("\n");
-
 	int test2 = 2990936064;
 
 	show_binary_2(test2);
-
-	printf("\n");
 
 	rotate_left_3(test2, 19);
 
 	show_binary_2(test2);
 
-	printf("\n");
 }
 
 
@@ -78,6 +73,7 @@ void show_binary_2(int decimal_number) {
 
 	}
 
+	printf("\n");
 }
 
 // unsigned int is chosen because dealing with negative integers involves one's and two's complements.
