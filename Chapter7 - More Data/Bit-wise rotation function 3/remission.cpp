@@ -4,6 +4,7 @@
 void show_binary(int decimal_number);
 void show_binary_2(int decimal_number);
 void show_binary_3(unsigned int decimal_number);
+void show_binary_4(unsigned int decimal_number);
 void rotate_left(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
 void rotate_left_2(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
 unsigned int rotate_left_3(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
@@ -118,19 +119,10 @@ void show_binary_3(unsigned int decimal_number) {
 	printf("\n");
 }
 
+// Output a space for every 4 digits.
 void show_binary_4(unsigned int decimal_number) {
 
-	//   decimal_number, say, 26051
-	//   0110 0101 1100 0011
-	// & 1000 0000 0000 0000    (32768)
-	//------------------------
-	//   0 
-
-	//   decimal_number, say, 26051
-	//   0110 0101 1100 0011
-	// & 0100 0000 0000 0000    (16384)
-	//------------------------
-	//    1 
+	int counter = 0;
 
 	// Check bit by bit. Examine if the 1st highest bit is on, 2nd highest bit is set, and so on.
 	for (int i = 32768; i > 0; i = i >> 1)
