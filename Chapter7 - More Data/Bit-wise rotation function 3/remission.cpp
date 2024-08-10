@@ -1,11 +1,12 @@
 #include <stdio.h>
-// #include <math.h> needed for pow()
+#include <math.h> // needed for pow()
 
 void show_binary(int decimal_number);
 void show_binary_2(int decimal_number);
 void show_binary_3(unsigned int decimal_number);
 void show_binary_4(unsigned int decimal_number);
 void show_binary_5(unsigned int decimal_number);
+void show_binary_6(unsigned int decimal_number);
 void rotate_left(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
 void rotate_left_2(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
 unsigned int rotate_left_3(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
@@ -29,6 +30,12 @@ int main() {
 
 	show_binary_4(test);
 	show_binary_5(test);
+
+	show_binary_6(test2);
+	show_binary_6(test);
+
+	int accomodation = pow(2, 31);
+	printf("2 to the 31st power is %u.\n ", accomodation);
 
 }
 
@@ -164,6 +171,45 @@ void show_binary_5(unsigned int decimal_number) {
 	// Check bit by bit. Examine if the 1st highest bit is on, 2nd highest bit is set, and so on.
 	for (int i = 32768; i > 0; i = i >> 1)
 	{                // i > 0 because if the least bit is on, that bit stands for 1.
+	  // int i, not unsigned int i, in that i is set to larger than 0.
+
+
+	//  if (decimal_number & i) is non-zero, meaning if bitwise AND finds the target bit is on 
+		if (decimal_number & i) {
+
+			printf("1");
+
+		}
+		else if (!(decimal_number & i)) {  // if bitwise AND finds the target bit is 0
+
+			printf("0");
+
+		}
+
+		counter++;
+
+		if (counter == 4) {
+
+			printf(", ");
+
+			counter = 0;
+
+		}
+
+	}
+
+	printf("\n");
+}
+
+// To show all 32 bits of an unsigned int, rather than just the first eight, 
+// i in for loop must be 2 to the 31st power.
+void show_binary_6(unsigned int decimal_number) {
+
+	int counter = 0;
+
+	// Check bit by bit. Examine if the 1st highest bit is on, 2nd highest bit is set, and so on.
+	for (int i = pow(2, 31); i > 0; i = i >> 1)
+	{                     // i > 0 because if the least bit is on, that bit stands for 1.
 	  // int i, not unsigned int i, in that i is set to larger than 0.
 
 
