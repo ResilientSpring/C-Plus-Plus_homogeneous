@@ -5,6 +5,7 @@ void show_binary(int decimal_number);
 void show_binary_2(int decimal_number);
 void show_binary_3(unsigned int decimal_number);
 void show_binary_4(unsigned int decimal_number);
+void show_binary_5(unsigned int decimal_number);
 void rotate_left(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
 void rotate_left_2(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
 unsigned int rotate_left_3(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
@@ -27,6 +28,7 @@ int main() {
 	show_binary_3(test3);
 
 	show_binary_4(test);
+	show_binary_5(test);
 
 }
 
