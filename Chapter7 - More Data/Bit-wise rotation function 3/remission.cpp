@@ -120,7 +120,7 @@ unsigned int rotate_left_3(unsigned int the_integer_to_rotate_left, int how_many
 	// return type is unsigned in that "unsigned" frees me from considering the influence of sign bit.
 	// return type is int, not long long, in that what this function received is int, and that
 	// returning a long long will not only expose the rationale behind the operation but also alter 
-	// 
+	// the returned int due to lengthened bit pattern.
 }
 
 
