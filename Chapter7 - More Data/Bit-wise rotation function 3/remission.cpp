@@ -78,7 +78,7 @@ void show_binary_2(int decimal_number) {
 	printf("\n");
 }
 
-// Parameter type is unsigned in that "unsigned" frees me from considering the influence of sign bit.
+// Parameter type is unsigned, to be on the safe side, although the influence of sign bit may be zero.
 void show_binary_3(unsigned int decimal_number) {
 
 	//   decimal_number, say, 26051
