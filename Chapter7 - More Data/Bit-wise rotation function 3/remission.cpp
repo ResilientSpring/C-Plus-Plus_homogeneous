@@ -43,6 +43,11 @@ int main() {
 	int salient = pow(2, 31);
 	printf("2 to the 31st power is %d.\n", salient);
 
+	show_binary_8(test2);
+	show_binary_8(test);
+
+	show_binary_9(test2);
+	show_binary_9(test);
 }
 
 
