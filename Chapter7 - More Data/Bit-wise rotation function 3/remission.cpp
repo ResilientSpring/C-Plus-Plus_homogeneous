@@ -320,6 +320,43 @@ void show_binary_8(unsigned int decimal_number) {
 	printf("\n");
 }
 
+// To show all 32 bits of an unsigned int, rather than just the first eight, 
+// i in for loop must be 2 to the 31st power. 
+void show_binary_9(unsigned int decimal_number) {
+
+	int counter = 0;
+
+	// Check 
+	for (unsigned int i = pow(2, 31); i > 0; i = i >> 1)
+	{                             
+
+	//  if (decimal_number & i) is non-zero, meaning if bitwise AND finds the target bit is on 
+		if (decimal_number & i) {
+
+			printf("1");
+
+		}
+		else if (!(decimal_number & i)) {  // if bitwise AND finds the target bit is 0
+
+			printf("0");
+
+		}
+
+		counter++;
+
+		if (counter == 4) {
+
+			printf(", ");
+
+			counter = 0;
+
+		}
+
+	}
+
+	printf("\n");
+}
+
 // unsigned int is chosen because dealing with negative integers involves one's and two's complements.
 void rotate_left(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left) {
 
