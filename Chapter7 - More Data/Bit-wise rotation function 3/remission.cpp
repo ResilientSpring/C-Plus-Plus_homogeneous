@@ -242,7 +242,7 @@ void show_binary_6(unsigned int decimal_number) {
 }
 
 // To show all 32 bits of an unsigned int, rather than just the first eight, 
-// i in for loop must be 2 to the 31st power.
+// i in for loop must be 2 to the 31st power. 
 void show_binary_7(unsigned int decimal_number) {
 
 	int counter = 0;
@@ -251,6 +251,45 @@ void show_binary_7(unsigned int decimal_number) {
 	for (int i = 2147483648; i > 0; i = i >> 1)
 	{                     // i > 0 because if the least bit is on, that bit stands for 1.
 	  // int i, not unsigned int i, in that i is set to larger than 0.
+
+
+	//  if (decimal_number & i) is non-zero, meaning if bitwise AND finds the target bit is on 
+		if (decimal_number & i) {
+
+			printf("1");
+
+		}
+		else if (!(decimal_number & i)) {  // if bitwise AND finds the target bit is 0
+
+			printf("0");
+
+		}
+
+		counter++;
+
+		if (counter == 4) {
+
+			printf(", ");
+
+			counter = 0;
+
+		}
+
+	}
+
+	printf("\n");
+}
+
+// To show all 32 bits of an unsigned int, rather than just the first eight, 
+// i in for loop must be 2 to the 31st power. 
+void show_binary_8(unsigned int decimal_number) {
+
+	int counter = 0;
+
+	// Check bit by bit. Examine if the 1st highest bit is on, 2nd highest bit is set, and so on.
+	for (unsigned int i = 2147483648; i > 0; i = i >> 1)
+	{                              // i > 0 because if the least bit is on, that bit stands for 1.
+	  // unsigned int i, because 2147483648 overflowed int i.
 
 
 	//  if (decimal_number & i) is non-zero, meaning if bitwise AND finds the target bit is on 
