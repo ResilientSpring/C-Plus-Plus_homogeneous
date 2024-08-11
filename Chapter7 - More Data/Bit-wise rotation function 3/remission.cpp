@@ -40,8 +40,8 @@ int main() {
 	int accomodation = pow(2, 31);
 	printf("2 to the 31st power is %u.\n ", accomodation);
 
-	int accomodation = pow(2, 31);
-	printf("2 to the 31st power is %d.\n ", accomodation);
+	int salient = pow(2, 31);
+	printf("2 to the 31st power is %d.\n ", salient);
 
 }
 
