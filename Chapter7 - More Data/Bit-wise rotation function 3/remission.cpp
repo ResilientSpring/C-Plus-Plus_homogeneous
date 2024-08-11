@@ -9,6 +9,7 @@ void show_binary_5(unsigned int decimal_number);
 void show_binary_6(unsigned int decimal_number);
 void show_binary_7(unsigned int decimal_number);
 void show_binary_8(unsigned int decimal_number);
+void show_binary_9(unsigned int decimal_number);
 void rotate_left(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
 void rotate_left_2(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
 unsigned int rotate_left_3(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
@@ -326,7 +327,7 @@ void show_binary_9(unsigned int decimal_number) {
 
 	int counter = 0;
 
-	// Check 
+	// Substitute pow() for 2147483648 in order to see if 
 	for (unsigned int i = pow(2, 31); i > 0; i = i >> 1)
 	{                             
 
