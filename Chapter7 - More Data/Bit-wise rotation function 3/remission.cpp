@@ -288,9 +288,8 @@ void show_binary_8(unsigned int decimal_number) {
 
 	int counter = 0;
 
-	// Check bit by bit. Examine if the 1st highest bit is on, 2nd highest bit is set, and so on.
 	for (unsigned int i = 2147483648; i > 0; i = i >> 1)
-	{                              // i > 0 because if the least bit is on, that bit stands for 1.
+	{                              
 	  // unsigned int i, because 2147483648 overflowed int i.
 
 
