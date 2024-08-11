@@ -46,6 +46,9 @@ int main() {
 	unsigned int condensation = pow(2, 31);
 	printf("2 to the 31st power is %u.\n", condensation);
 
+	unsigned int tidal = pow(2, 31);
+	printf("2 to the 31st power is %d.\n", tidal);
+
 	show_binary_8(test2);
 	show_binary_8(test);
 
