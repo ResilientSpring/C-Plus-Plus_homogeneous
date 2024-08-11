@@ -43,6 +43,9 @@ int main() {
 	int salient = pow(2, 31);
 	printf("2 to the 31st power is %d.\n", salient);
 
+	unsigned int condensation = pow(2, 31);
+	printf("2 to the 31st power is %u.\n", condensation);
+
 	show_binary_8(test2);
 	show_binary_8(test);
 
