@@ -252,7 +252,7 @@ void show_binary_7(unsigned int decimal_number) {
 
 	int counter = 0;
 
-	//Substitute 2147483648 for pow()
+	//Substitute 2147483648 for pow(), given that show_binary_6() failed to print 
 	for (int i = 2147483648; i > 0; i = i >> 1)
 	{                     
 	//  if (decimal_number & i) is non-zero, meaning if bitwise AND finds the target bit is on 
