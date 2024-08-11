@@ -327,7 +327,7 @@ void show_binary_9(unsigned int decimal_number) {
 
 	int counter = 0;
 
-	// Substitute pow() for 2147483648 in order to see if 
+	// Substitute pow() for 2147483648 in order to see if show_binary_6()'s problem of printing blank.
 	for (unsigned int i = pow(2, 31); i > 0; i = i >> 1)
 	{                             
 
