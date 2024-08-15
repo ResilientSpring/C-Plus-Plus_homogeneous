@@ -451,7 +451,31 @@ unsigned int rotate_left_4(unsigned int the_integer_to_rotate_left, int how_many
 	// the returned int due to lengthened bit pattern.
 }
 
+unsigned int rotate_right(unsigned int the_integer_to_rotate_right, int how_many_times_to_rotate_right) 
+{
+ // unsigned long long is employed because it is larger than unsigned int.[1]
+	unsigned long long holder = the_integer_to_rotate_right;
 
+	holder <<= 32;
+
+	for (int i = 0; i <= how_many_times_to_rotate_right; i++)
+	{
+		holder = holder << 1;
+
+		// 4294967296 = 2 to the 32nd power.
+		if (holder & 4294967296)
+			holder = holder | 1;
+
+		// Print each bit rotation.
+		show_binary_9(holder);
+	}
+
+	return holder;
+	// return type is unsigned in that "unsigned" frees me from considering the influence of sign bit.
+	// return type is int, not long long, in that what this function received is int, and that
+	// returning a long long will not only expose the rationale behind the operation but also alter 
+	// the returned int due to lengthened bit pattern.
+}
 
 // References:
 // 1. https://learn.microsoft.com/en-us/cpp/cpp/data-type-ranges?view=msvc-170
