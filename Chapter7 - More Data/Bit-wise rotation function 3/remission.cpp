@@ -58,6 +58,11 @@ int main() {
 
 	unsigned int engender = rotate_left_3(test2, 2);
 	show_binary_9(engender);
+
+	unsigned int test3 = 2990937121;
+	show_binary_9(test3);
+	engender = rotate_left_4(test3, 2);
+	show_binary_9(test3);
 }
 
 
