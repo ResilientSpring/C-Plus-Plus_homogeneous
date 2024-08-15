@@ -54,6 +54,9 @@ int main() {
 
 	show_binary_9(test2);
 	show_binary_9(test);
+
+	unsigned int engender = rotate_left_3(test2, 2);
+	show_binary_9(engender);
 }
 
 
