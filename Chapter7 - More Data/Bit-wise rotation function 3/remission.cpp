@@ -462,7 +462,7 @@ unsigned int rotate_right(unsigned int the_integer_to_rotate_right, int how_many
 
 	for (int i = 0; i <= how_many_times_to_rotate_right; i++)
 	{
-		holder = holder << 1;
+		holder = holder >> 1;
 
 		// 4294967296 = 2 to the 32nd power.
 		if (holder & 4294967296)
