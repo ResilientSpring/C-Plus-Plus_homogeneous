@@ -64,7 +64,7 @@ int main() {
 	unsigned int test4 = 2990937121;
 	show_binary_9(test4);
 	engender = rotate_left_4(test4, 2);
-	show_binary_9(test4);
+	show_binary_9(engender);
 }
 
 
