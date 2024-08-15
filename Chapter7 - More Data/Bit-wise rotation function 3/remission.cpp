@@ -14,6 +14,7 @@ void rotate_left(unsigned int the_integer_to_rotate_left, int how_many_times_to_
 void rotate_left_2(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
 unsigned int rotate_left_3(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
 unsigned int rotate_left_4(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
+unsigned int rotate_right(unsigned int the_integer_to_rotate_right, int how_many_times_to_rotate_right);
 
 int main() {
 
