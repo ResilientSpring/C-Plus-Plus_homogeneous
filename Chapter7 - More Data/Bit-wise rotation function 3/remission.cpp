@@ -70,8 +70,11 @@ int main() {
 	show_binary_9(engender);
 
 	printf("============ Another separation line =================\n");
-
-
+	
+	unsigned int test5 = 3091610657;
+	show_binary_9(test5);
+	unsigned int apprehensive = rotate_right_2(test5, 3);
+	show_binary_9(apprehensive);
 }
 
 
