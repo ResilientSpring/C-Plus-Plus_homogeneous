@@ -553,7 +553,8 @@ unsigned int rotate_right_3(unsigned int the_integer_to_rotate_right, int how_ma
 		if (holder & 2147483648)
 			holder = holder | power; // 2 to the 63rd power.
 
-		holder = holder >> 32;
+	//	holder = holder >> 32; [3]
+		holder >>= 32;
 
 		// Print each bit rotation.
 		show_binary_9(holder); // Note that show_binary() is designed to show the last 32 bits.
@@ -569,3 +570,4 @@ unsigned int rotate_right_3(unsigned int the_integer_to_rotate_right, int how_ma
 // References:
 // 1. https://learn.microsoft.com/en-us/cpp/cpp/data-type-ranges?view=msvc-170
 // 2. https://www.programiz.com/c-programming/online-compiler/
+// 3. https://en.wikipedia.org/wiki/Bitwise_operations_in_C#Bitwise_assignment_operators
