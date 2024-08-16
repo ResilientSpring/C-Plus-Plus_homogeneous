@@ -466,9 +466,10 @@ unsigned int rotate_right(unsigned int the_integer_to_rotate_right, int how_many
 	{
 		holder = holder >> 1;
 
-		// 2147483648 = 2 to the 31st power.
-		if (holder & 2147483648)
-			holder = holder | 92233372036854775808; // 2 to the 63rd power.
+		//           2147483648 = 2 to the 31st power.
+//		if (holder & 2147483648)
+//			holder = holder | 92233372036854775808; // 2 to the 63rd power.
+		                   // 92233372036854775808 is too large for an integer constant, said compiler. 
 
 		// Print each bit rotation.
 		show_binary_9(holder);
@@ -495,7 +496,7 @@ unsigned int rotate_right_2(unsigned int the_integer_to_rotate_right, int how_ma
 
 		const unsigned long long power = pow(2, 63);
 
-		// 2147483648 = 2 to the 31st power.
+		//           2147483648 = 2 to the 31st power.
 		if (holder & 2147483648)
 			holder = holder | power; // 2 to the 63rd power.
 
