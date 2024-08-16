@@ -452,10 +452,11 @@ unsigned int rotate_left_4(unsigned int the_integer_to_rotate_left, int how_many
 	// the returned int due to lengthened bit pattern.
 }
 
+//                        unsigned int can load 32 bits.[1]
 unsigned int rotate_right(unsigned int the_integer_to_rotate_right, int how_many_times_to_rotate_right) 
 {
  // unsigned long long is employed because it is larger than unsigned int.[1]
-	unsigned long long holder = the_integer_to_rotate_right;  // unsigned int can load 32 bits.[1]
+	unsigned long long holder = the_integer_to_rotate_right; 
 
 	// unsigned long long can load 64 bits. [1]
 	holder <<= 32;
