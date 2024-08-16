@@ -481,7 +481,7 @@ unsigned int rotate_right(unsigned int the_integer_to_rotate_right, int how_many
 	// the returned int due to lengthened bit pattern.
 }
 
-//                        unsigned int can load 32 bits.[1]
+//                          unsigned int can load 32 bits.[1]
 unsigned int rotate_right_2(unsigned int the_integer_to_rotate_right, int how_many_times_to_rotate_right)
 {
 	// unsigned long long can load 64 bits. [1]
@@ -493,9 +493,11 @@ unsigned int rotate_right_2(unsigned int the_integer_to_rotate_right, int how_ma
 	{
 		holder = holder >> 1;
 
+		const unsigned long long power = pow(2, 63);
+
 		// 2147483648 = 2 to the 31st power.
 		if (holder & 2147483648)
-			holder = holder | 92233372036854775808; // 2 to the 63rd power.
+			holder = holder | power; // 2 to the 63rd power.
 
 		// Print each bit rotation.
 		show_binary_9(holder);
