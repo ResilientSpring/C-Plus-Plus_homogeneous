@@ -532,7 +532,7 @@ unsigned int rotate_right_3(unsigned int the_integer_to_rotate_right, int how_ma
 	//  unsigned long long can load 64 bits. [1]
 	unsigned long long holder = the_integer_to_rotate_right;
 
-	holder <<= 32;
+	holder <<= 32;  // Remember to move it back later.
 
 	for (int i = 0; i <= how_many_times_to_rotate_right; i++)
 	{
