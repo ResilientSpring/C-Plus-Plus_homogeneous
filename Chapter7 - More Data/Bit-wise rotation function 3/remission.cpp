@@ -79,7 +79,9 @@ int main() {
 
 	printf("============ Third separation line =================\n");
 
-
+	show_binary_9(test5);
+	apprehensive = rotate_right_3(test5, 3);
+	show_binary_9(apprehensive);
 }
 
 
