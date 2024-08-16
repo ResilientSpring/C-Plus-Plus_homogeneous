@@ -17,7 +17,7 @@ unsigned int rotate_left_4(unsigned int the_integer_to_rotate_left, int how_many
 unsigned int rotate_right(unsigned int the_integer_to_rotate_right, int how_many_times_to_rotate_right);
 unsigned int rotate_right_2(unsigned int the_integer_to_rotate_right, int how_many_times_to_rotate_right);
 unsigned int rotate_right_3(unsigned int the_integer_to_rotate_right, int how_many_times_to_rotate_right);
-
+unsigned int rotate_right_4(unsigned int the_integer_to_rotate_right, int how_many_times_to_rotate_right);
 
 int main() {
 
@@ -81,6 +81,12 @@ int main() {
 
 	show_binary_9(test5);
 	apprehensive = rotate_right_3(test5, 3);
+	show_binary_9(apprehensive);
+
+	printf("============ Fourth separation line =================\n");
+
+	show_binary_9(test5);
+	apprehensive = rotate_right_4(test5, 3);
 	show_binary_9(apprehensive);
 }
 
@@ -542,6 +548,41 @@ unsigned int rotate_right_3(unsigned int the_integer_to_rotate_right, int how_ma
 
 	for (int i = 0; i <= how_many_times_to_rotate_right; i++)
 	{
+		// Another reason for why the variable holder is best to be unsigned:
+		// If the variable is a signed integer containing a negative value, then each right-shift
+		// brings in a 1 on the left, which preserves the sign bit.
+		holder = holder >> 1;
+
+		const unsigned long long power = pow(2, 63);
+
+		//           2147483648 = 2 to the 31st power.
+		if (holder & 2147483648)
+			holder = holder | power; // 2 to the 63rd power.
+
+	//	holder = holder >> 32; [3]
+		holder >>= 32;
+
+		// Print each bit rotation.
+		show_binary_9(holder); // Note that show_binary() is designed to show the last 32 bits.
+	}
+
+	return holder;
+	// return type is unsigned in that "unsigned" frees me from considering the influence of sign bit.
+	// return type is int, not long long, in that what this function received is int, and that
+	// returning a long long will not only expose the rationale behind the operation but also alter 
+	// the returned int due to lengthened bit pattern.
+}
+
+//                          unsigned int can load 32 bits.[1]
+unsigned int rotate_right_4(unsigned int the_integer_to_rotate_right, int how_many_times_to_rotate_right)
+{
+	//  unsigned long long can load 64 bits. [1]
+	unsigned long long holder = the_integer_to_rotate_right;
+
+	for (int i = 0; i <= how_many_times_to_rotate_right; i++)
+	{
+		holder <<= 32;  // Remember to move it back later.
+
 		// Another reason for why the variable holder is best to be unsigned:
 		// If the variable is a signed integer containing a negative value, then each right-shift
 		// brings in a 1 on the left, which preserves the sign bit.
