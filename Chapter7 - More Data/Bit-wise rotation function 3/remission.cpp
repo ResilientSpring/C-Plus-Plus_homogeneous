@@ -548,7 +548,7 @@ unsigned int rotate_right_3(unsigned int the_integer_to_rotate_right, int how_ma
 			holder = holder | power; // 2 to the 63rd power.
 
 		// Print each bit rotation.
-		show_binary_9(holder);
+		show_binary_9(holder); // Note that show_binary() is designed to show the last 32 bits.
 	}
 
 	return holder;
