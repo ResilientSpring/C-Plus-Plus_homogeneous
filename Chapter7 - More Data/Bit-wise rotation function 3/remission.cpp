@@ -15,6 +15,8 @@ void rotate_left_2(unsigned int the_integer_to_rotate_left, int how_many_times_t
 unsigned int rotate_left_3(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
 unsigned int rotate_left_4(unsigned int the_integer_to_rotate_left, int how_many_times_to_rotate_left);
 unsigned int rotate_right(unsigned int the_integer_to_rotate_right, int how_many_times_to_rotate_right);
+unsigned int rotate_right_2(unsigned int the_integer_to_rotate_right, int how_many_times_to_rotate_right);
+
 
 int main() {
 
@@ -478,6 +480,34 @@ unsigned int rotate_right(unsigned int the_integer_to_rotate_right, int how_many
 	// returning a long long will not only expose the rationale behind the operation but also alter 
 	// the returned int due to lengthened bit pattern.
 }
+
+//                        unsigned int can load 32 bits.[1]
+unsigned int rotate_right_2(unsigned int the_integer_to_rotate_right, int how_many_times_to_rotate_right)
+{
+	// unsigned long long can load 64 bits. [1]
+	unsigned long long holder = the_integer_to_rotate_right;
+
+	holder <<= 32;
+
+	for (int i = 0; i <= how_many_times_to_rotate_right; i++)
+	{
+		holder = holder >> 1;
+
+		// 2147483648 = 2 to the 31st power.
+		if (holder & 2147483648)
+			holder = holder | 92233372036854775808; // 2 to the 63rd power.
+
+		// Print each bit rotation.
+		show_binary_9(holder);
+	}
+
+	return holder;
+	// return type is unsigned in that "unsigned" frees me from considering the influence of sign bit.
+	// return type is int, not long long, in that what this function received is int, and that
+	// returning a long long will not only expose the rationale behind the operation but also alter 
+	// the returned int due to lengthened bit pattern.
+}
+
 
 // References:
 // 1. https://learn.microsoft.com/en-us/cpp/cpp/data-type-ranges?view=msvc-170
