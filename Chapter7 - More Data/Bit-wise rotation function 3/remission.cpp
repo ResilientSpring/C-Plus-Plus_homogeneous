@@ -68,6 +68,8 @@ int main() {
 	show_binary_9(test4);
 	engender = rotate_left_4(test4, 2);
 	show_binary_9(engender);
+
+	printf("============ Another separation line =================\n");
 }
 
 
