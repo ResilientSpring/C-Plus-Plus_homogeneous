@@ -466,7 +466,7 @@ unsigned int rotate_right(unsigned int the_integer_to_rotate_right, int how_many
 
 		// 2147483648 = 2 to the 31st power.
 		if (holder & 2147483648)
-			holder = holder | 92233372036854775808;
+			holder = holder | 92233372036854775808; // 2 to the 63rd power.
 
 		// Print each bit rotation.
 		show_binary_9(holder);
