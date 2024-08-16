@@ -492,6 +492,8 @@ unsigned int rotate_right_2(unsigned int the_integer_to_rotate_right, int how_ma
 
 	for (int i = 0; i <= how_many_times_to_rotate_right; i++)
 	{
+		// If the variable is a signed integer containing a negative value, then each right-shift
+		// brings in a 1 on the left, which preserves the sign bit.
 		holder = holder >> 1;
 
 		const unsigned long long power = pow(2, 63);
