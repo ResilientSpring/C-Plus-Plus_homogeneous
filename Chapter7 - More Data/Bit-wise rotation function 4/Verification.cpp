@@ -593,7 +593,8 @@ unsigned int rotate_right_5(unsigned int the_integer_to_rotate_right, int how_ma
 {
 	unsigned long long holder = the_integer_to_rotate_right;
 
-	for (int i = 0; i <= how_many_times_to_rotate_right; i++)
+	// i should begin from 1, otherwise bits will be shifted (how_many_times_to_rotate_right + 1) times.
+	for (int i = 1; i <= how_many_times_to_rotate_right; i++)
 	{
 		holder <<= 32; 
 
