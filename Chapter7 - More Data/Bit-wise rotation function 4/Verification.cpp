@@ -422,8 +422,8 @@ unsigned int rotate_left_5(unsigned int the_integer_to_rotate_left, int how_many
 
 	unsigned long long holder = the_integer_to_rotate_left;
 
-	// i should begin from 1, otherwise holder will be shifted left for 6 times.
-	for (int i = 0; i <= how_many_times_to_rotate_left; i++)
+	// i should begin from 1, otherwise bits will be shifted (how_many_times_to_rotate_left + 1) times.
+	for (int i = 1; i <= how_many_times_to_rotate_left; i++)
 	{
 		holder = holder << 1;
 		
