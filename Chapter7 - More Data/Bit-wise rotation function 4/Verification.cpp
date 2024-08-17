@@ -588,6 +588,31 @@ unsigned int rotate_right_4(unsigned int the_integer_to_rotate_right, int how_ma
 	// the returned int due to lengthened bit pattern.
 }
 
+
+unsigned int rotate_right_5(unsigned int the_integer_to_rotate_right, int how_many_times_to_rotate_right)
+{
+	unsigned long long holder = the_integer_to_rotate_right;
+
+	for (int i = 0; i <= how_many_times_to_rotate_right; i++)
+	{
+		holder <<= 32; 
+
+		holder = holder >> 1;
+
+		const unsigned long long power = pow(2, 63);
+
+		if (holder & 2147483648)
+			holder = holder | power; 
+
+		holder >>= 32;
+
+		show_binary_9(holder); 
+	}
+
+	return holder;
+
+}
+
 // References:
 // 1. https://learn.microsoft.com/en-us/cpp/cpp/data-type-ranges?view=msvc-170
 // 2. https://www.programiz.com/c-programming/online-compiler/
