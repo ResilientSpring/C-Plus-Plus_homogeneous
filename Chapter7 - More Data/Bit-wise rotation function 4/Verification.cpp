@@ -33,25 +33,25 @@ int main() {
 
 	show_binary_9(apprehensive);
 
-	printf("======================\n");
+	printf("==========First============\n");
 
 	show_binary_9(test);
 	apprehensive = rotate_left_5(test, 5);
 	show_binary_9(apprehensive);
 
-	printf("======================\n");
+	printf("===========Second===========\n");
 
 	show_binary_9(test);
 	apprehensive = rotate_right_4(test, 5);
 	show_binary_9(apprehensive);
 
-	printf("======================\n");
+	printf("=========Third=============\n");
 
 	show_binary_9(test);
 	apprehensive = rotate_right_5(test, 5);
 	show_binary_9(apprehensive);
 
-	printf("======================\n");
+	printf("=========Fourth=============\n");
 
 	test = 2990936064;
 	show_binary_9(test);
