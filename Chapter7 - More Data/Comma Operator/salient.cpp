@@ -28,7 +28,7 @@ int main() {
 
 	printf("var is now %d, count is now %d, and incr is now %d.\n", var, count, incr);
 
-	var = (++count, ++incr, count + 1);
+	var = (++count, ++incr, count + 1);  // var = count + 1;
 
 	printf("var is now %d, count is now %d, and incr is now %d.\n", var, count, incr);
 
