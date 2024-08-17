@@ -23,4 +23,10 @@ int main() {
 	var = (incr++, ++count);
 
 	printf("var is now %d, count is now %d, and incr is now %d.\n", var, count, incr);
+
+	var = (count++, incr++, count + 1); // var = count + 1;
+
+	printf("var is now %d, count is now %d, and incr is now %d.\n", var, count, incr);
+
+	var = (count = 19, incr = 10, count + 1); // var = count + 1;
 }
