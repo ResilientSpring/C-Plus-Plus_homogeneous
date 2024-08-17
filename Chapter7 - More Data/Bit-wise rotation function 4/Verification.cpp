@@ -60,9 +60,8 @@ int main() {
 
 	printf("=========Sixth=============\n");
 
-	test = 2990936064;
 	show_binary_9(test);
-	apprehensive = rotate_left_5(test, 5);
+	apprehensive = rotate_right_5(test, 5);
 	show_binary_9(apprehensive);
 }
 
