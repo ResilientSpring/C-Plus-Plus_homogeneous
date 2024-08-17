@@ -45,6 +45,12 @@ int main() {
 
 	printf("======================\n");
 
+	show_binary_9(test);
+	apprehensive = rotate_right_5(test, 5);
+	show_binary_9(apprehensive);
+
+	printf("======================\n");
+
 	test = 2990936064;
 	show_binary_9(test);
 	apprehensive = rotate_left_5(test, 5);
