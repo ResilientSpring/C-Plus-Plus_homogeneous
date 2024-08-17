@@ -23,7 +23,7 @@ int main() {
 
 	int test = 1024;
 
-	show_binary_2(test);
+	show_binary_9(test);
 
 	unsigned int apprehensive = rotate_left_4(test, 5);
 
