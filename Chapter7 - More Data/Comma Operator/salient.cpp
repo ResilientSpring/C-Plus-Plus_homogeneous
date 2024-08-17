@@ -32,5 +32,11 @@ int main() {
 
 	printf("var is now %d, count is now %d, and incr is now %d.\n", var, count, incr);
 
+
+	// The value of a comma-separated list of expressions is the value of the right-most expression.
+	// The value of the other expressions will be discarded.
+
 	var = (count = 19, incr = 10, count + 1); // var = count + 1;
+
+	printf("var is now %d, count is now %d, and incr is now %d.\n", var, count, incr);
 }
