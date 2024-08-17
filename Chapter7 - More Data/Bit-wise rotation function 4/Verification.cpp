@@ -20,6 +20,8 @@ unsigned int rotate_right(unsigned int the_integer_to_rotate_right, int how_many
 unsigned int rotate_right_2(unsigned int the_integer_to_rotate_right, int how_many_times_to_rotate_right);
 unsigned int rotate_right_3(unsigned int the_integer_to_rotate_right, int how_many_times_to_rotate_right);
 unsigned int rotate_right_4(unsigned int the_integer_to_rotate_right, int how_many_times_to_rotate_right);
+unsigned int rotate_right_5(unsigned int the_integer_to_rotate_right, int how_many_times_to_rotate_right);
+
 
 int main() {
 
