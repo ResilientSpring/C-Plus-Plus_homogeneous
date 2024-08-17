@@ -68,9 +68,14 @@ int main() {
 
 	test = 3091610657;
 	show_binary_9(test);
-	apprehensive = rotate_left_5(test, 5);
+	apprehensive = rotate_left_5(test, 8);
 	show_binary_9(apprehensive);
 
+	printf("=========Eighth=============\n");
+
+	show_binary_9(test);
+	apprehensive = rotate_right_5(test, 5);
+	show_binary_9(apprehensive);
 }
 
 
