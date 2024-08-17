@@ -16,4 +16,8 @@ int main() {
 	   The value of the other expressions will be discarded. 
 	*/
 
+	var = (incr++, count++);
+
+	printf("var is now %d, count is now %d, and incr is now %d.\n", var, count, incr);
+
 }
