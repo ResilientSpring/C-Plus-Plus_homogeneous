@@ -25,7 +25,7 @@ unsigned int rotate_right_5(unsigned int the_integer_to_rotate_right, int how_ma
 
 int main() {
 
-	int test = 1024;
+	unsigned int test = 1024;
 
 	show_binary_9(test);
 
@@ -74,7 +74,7 @@ int main() {
 	printf("=========Eighth=============\n");
 
 	show_binary_9(test);
-	apprehensive = rotate_right_5(test, 5);
+	apprehensive = rotate_right_5(test, 8);
 	show_binary_9(apprehensive);
 }
 
@@ -471,7 +471,7 @@ unsigned int rotate_left_5(unsigned int the_integer_to_rotate_left, int how_many
 	for (int i = 1; i <= how_many_times_to_rotate_left; i++)
 	{
 		holder = holder << 1;
-		
+
 		if (holder & 4294967296)
 			holder = holder | 1;
 
@@ -623,18 +623,18 @@ unsigned int rotate_right_5(unsigned int the_integer_to_rotate_right, int how_ma
 	// i should begin from 1, or bits will be shifted (how_many_times_to_rotate_right + 1) times.
 	for (int i = 1; i <= how_many_times_to_rotate_right; i++)
 	{
-		holder <<= 32; 
+		holder <<= 32;
 
 		holder = holder >> 1;
 
 		const unsigned long long power = pow(2, 63);
 
 		if (holder & 2147483648)
-			holder = holder | power; 
+			holder = holder | power;
 
 		holder >>= 32;
 
-		show_binary_9(holder); 
+		show_binary_9(holder);
 	}
 
 	return holder;
