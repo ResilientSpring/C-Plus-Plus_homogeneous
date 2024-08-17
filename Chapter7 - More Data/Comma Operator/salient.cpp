@@ -20,4 +20,7 @@ int main() {
 
 	printf("var is now %d, count is now %d, and incr is now %d.\n", var, count, incr);
 
+	var = (incr++, ++count);
+
+	printf("var is now %d, count is now %d, and incr is now %d.\n", var, count, incr);
 }
