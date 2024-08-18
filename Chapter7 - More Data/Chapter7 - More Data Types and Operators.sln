@@ -181,6 +181,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bit-wise rotation function 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Comma Operator", "Comma Operator\Comma Operator.vcxproj", "{044E06D3-D0CE-4860-8567-4E2A7211B335}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Comma Operator 2", "Comma Operator 2\Comma Operator 2.vcxproj", "{D0A10909-371C-459F-A2D3-EAAECCE19F87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -901,6 +903,14 @@ Global
 		{044E06D3-D0CE-4860-8567-4E2A7211B335}.Release|x64.Build.0 = Release|x64
 		{044E06D3-D0CE-4860-8567-4E2A7211B335}.Release|x86.ActiveCfg = Release|Win32
 		{044E06D3-D0CE-4860-8567-4E2A7211B335}.Release|x86.Build.0 = Release|Win32
+		{D0A10909-371C-459F-A2D3-EAAECCE19F87}.Debug|x64.ActiveCfg = Debug|x64
+		{D0A10909-371C-459F-A2D3-EAAECCE19F87}.Debug|x64.Build.0 = Debug|x64
+		{D0A10909-371C-459F-A2D3-EAAECCE19F87}.Debug|x86.ActiveCfg = Debug|Win32
+		{D0A10909-371C-459F-A2D3-EAAECCE19F87}.Debug|x86.Build.0 = Debug|Win32
+		{D0A10909-371C-459F-A2D3-EAAECCE19F87}.Release|x64.ActiveCfg = Release|x64
+		{D0A10909-371C-459F-A2D3-EAAECCE19F87}.Release|x64.Build.0 = Release|x64
+		{D0A10909-371C-459F-A2D3-EAAECCE19F87}.Release|x86.ActiveCfg = Release|Win32
+		{D0A10909-371C-459F-A2D3-EAAECCE19F87}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
