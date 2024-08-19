@@ -187,6 +187,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Multiple Assignments", "Mul
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Multiple Assignments 2", "Multiple Assignments 2\Multiple Assignments 2.vcxproj", "{461716E4-2253-4886-820F-E8DB3DE3872E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "One's complement (NOT) bit-wise operator 2", "One's complement (NOT) bit-wise operator 2\One's complement (NOT) bit-wise operator 2.vcxproj", "{7965C9CA-E9BE-4218-8508-3D0B16A64B11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -931,6 +933,14 @@ Global
 		{461716E4-2253-4886-820F-E8DB3DE3872E}.Release|x64.Build.0 = Release|x64
 		{461716E4-2253-4886-820F-E8DB3DE3872E}.Release|x86.ActiveCfg = Release|Win32
 		{461716E4-2253-4886-820F-E8DB3DE3872E}.Release|x86.Build.0 = Release|Win32
+		{7965C9CA-E9BE-4218-8508-3D0B16A64B11}.Debug|x64.ActiveCfg = Debug|x64
+		{7965C9CA-E9BE-4218-8508-3D0B16A64B11}.Debug|x64.Build.0 = Debug|x64
+		{7965C9CA-E9BE-4218-8508-3D0B16A64B11}.Debug|x86.ActiveCfg = Debug|Win32
+		{7965C9CA-E9BE-4218-8508-3D0B16A64B11}.Debug|x86.Build.0 = Debug|Win32
+		{7965C9CA-E9BE-4218-8508-3D0B16A64B11}.Release|x64.ActiveCfg = Release|x64
+		{7965C9CA-E9BE-4218-8508-3D0B16A64B11}.Release|x64.Build.0 = Release|x64
+		{7965C9CA-E9BE-4218-8508-3D0B16A64B11}.Release|x86.ActiveCfg = Release|Win32
+		{7965C9CA-E9BE-4218-8508-3D0B16A64B11}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
