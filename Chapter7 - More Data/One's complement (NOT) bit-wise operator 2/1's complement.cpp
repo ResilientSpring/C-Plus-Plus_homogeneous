@@ -1,3 +1,4 @@
+#define CRT_SECURE_NO_WARNINGS
 #include <iostream>
 using namespace std;
 
@@ -8,10 +9,10 @@ int main() {
 	unsigned u;
 
 	printf("Enter a number between 0 and 255: ");
-	scanf("%");
+	scanf("%u", &u);
 
-	cout << "Enter a number between 0 and 255: ";
-	cin >> u;
+// 	cout << "Enter a number between 0 and 255: ";
+// 	cin >> u;
 
 	cout << "Here's the number in binary: ";
 	show_binary(u);
