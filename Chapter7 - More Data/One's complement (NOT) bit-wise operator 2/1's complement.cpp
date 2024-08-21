@@ -3,7 +3,7 @@
 using namespace std;
 
 void show_binary(unsigned int u);
-unsigned int show_decimal(unsigned int u);
+signed char show_decimal(unsigned int u);
 
 int main() {
 
@@ -33,7 +33,7 @@ void show_binary(unsigned int u) {
 	cout << "\n";
 }
 
-unsigned int show_decimal(unsigned int u) {
+signed char show_decimal(unsigned int u) {
 
 	return u;
 }
