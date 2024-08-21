@@ -3,6 +3,7 @@
 using namespace std;
 
 void show_binary(unsigned int u);
+unsigned int show_binary_2(unsigned int u);
 
 int main() {
 
@@ -16,6 +17,7 @@ int main() {
 
 	cout << "Here's the number in binary: ";
 	show_binary(u);
+	printf("\nAnd in decimal: %u \n", show_binary_2(u));
 
 	cout << "Here's the complement of the number: ";
 	show_binary(~u);
@@ -36,7 +38,7 @@ void show_binary(unsigned int u) {
 	cout << "\n";
 }
 
-int show_binary_2(unsigned int u) {
+unsigned int show_binary_2(unsigned int u) {
 
 	for (int t = 128; t > 0; t = t / 2)
 		if (u & t)
@@ -45,4 +47,6 @@ int show_binary_2(unsigned int u) {
 			cout << "0 ";
 
 	cout << "\n";
+
+	return u;
 }
