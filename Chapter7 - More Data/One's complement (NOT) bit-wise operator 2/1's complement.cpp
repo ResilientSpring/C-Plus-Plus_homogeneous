@@ -35,3 +35,14 @@ void show_binary(unsigned int u) {
 
 	cout << "\n";
 }
+
+int show_binary_2(unsigned int u) {
+
+	for (int t = 128; t > 0; t = t / 2)
+		if (u & t)
+			cout << "1 ";
+		else
+			cout << "0 ";
+
+	cout << "\n";
+}
