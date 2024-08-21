@@ -12,9 +12,6 @@ int main() {
 	printf("Enter a number between 0 and 255: ");
 	scanf("%u", &u);
 
-// 	cout << "Enter a number between 0 and 255: ";
-// 	cin >> u;
-
 	cout << "Here's the number in binary: ";
 	show_binary(u);
 	printf("\nAnd in decimal: %u \n", show_binary_2(u));
