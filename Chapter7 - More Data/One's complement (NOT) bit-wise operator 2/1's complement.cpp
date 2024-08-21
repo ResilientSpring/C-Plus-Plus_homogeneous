@@ -43,7 +43,7 @@ unsigned int show_binary_2(unsigned int u) {
 		else
 			cout << "0 ";
 
-	cout << "\n";
+	printf("\n");
 
 	return u;
 }
