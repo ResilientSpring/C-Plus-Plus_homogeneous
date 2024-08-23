@@ -16,7 +16,7 @@ int main() {
 	show_binary(u);
 	printf("and in decimal: %d \n", show_decimal(u));
 
-	cout << "Here's the complement of the number, in binary: ";
+	cout << "Here's the (One's) complement of the number, in binary: ";
 	show_binary(~u);
 	printf("and in decimal: %d \n", show_decimal(~u));
 }
