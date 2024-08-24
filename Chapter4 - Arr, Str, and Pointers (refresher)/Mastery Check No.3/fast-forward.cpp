@@ -20,6 +20,6 @@ int main() {
 
 void find_duplicate(int* array_in_question) {
 
-
+	int* first_element = array_in_question;
 
 }
