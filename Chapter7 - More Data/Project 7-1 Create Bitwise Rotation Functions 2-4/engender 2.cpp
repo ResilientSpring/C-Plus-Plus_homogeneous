@@ -3,8 +3,10 @@ using namespace std;
 
 void show_binary(unsigned int u);
 
+//                    unsigned char takes up 1 byte. [2]
 unsigned char lrotate(unsigned char ch_to_be_rotated, int n) {
 
+	//  unsigned int takes up 4 bytes. [2]
 	unsigned int t = ch_to_be_rotated;
 
 	// A loop is established that performs the required number of rotations, one at a time.
@@ -19,7 +21,7 @@ unsigned char lrotate(unsigned char ch_to_be_rotated, int n) {
 
 	}
 
-	return t;   // return the lower 8 bits.  (An unsigned char takes up a byte. [2])
+	return t; // function's return type is unsigned char, so t will be converted into unsigned char.
 }
 
 
@@ -32,23 +34,27 @@ int main() {
 
 	printf("Rotating left 8 times:\n");
 	ch = lrotate(ch, 8);
+	show_binary(ch);
 	printf("%c \n", ch);         // ch is not T
 
 	printf("Rotating left 7 times:\n");
 	ch = lrotate(ch, 7);
+	show_binary(ch);
 	printf("%c \n", ch);
 
 	printf("Rotating left 6 times:\n");
 	ch = lrotate(ch, 6);
+	show_binary(ch);
 	printf("%c \n", ch);
 
 	printf("Rotating left 9 times:\n");
 	ch = lrotate(ch, 9);
+	show_binary(ch);
 	printf("%c \n", ch);
 
-//	printf("Rotating left 10 times: \n");
-//	ch = lrotate(ch, 10);
-//	printf("%c \n", ch);
+	//	printf("Rotating left 10 times: \n");
+	//	ch = lrotate(ch, 10);
+	//	printf("%c \n", ch);
 
 
 }
