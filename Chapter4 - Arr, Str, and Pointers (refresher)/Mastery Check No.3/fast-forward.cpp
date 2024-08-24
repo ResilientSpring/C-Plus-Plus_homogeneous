@@ -7,15 +7,21 @@ Have the program display each duplicate found.
 */
 
 #include <iostream>
+#include <stdio.h>
 using namespace std;
 
-int main() {
+void find_duplicate(int* array_in_question);
+
+int main(void) {
 
 	int arr[10] = { 1, 1, 2, 1, 1, 0, 5, 0, 2, 3 };
 
 }
 
 
-void find_duplicate() {
+void find_duplicate(int* array_in_question) {
+
+	int* first_element = array_in_question;
+
 
 }
