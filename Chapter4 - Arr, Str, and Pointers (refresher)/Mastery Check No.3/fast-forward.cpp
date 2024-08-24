@@ -9,6 +9,8 @@ Have the program display each duplicate found.
 #include <iostream>
 using namespace std;
 
+void find_duplicate(int* array_in_question);
+
 int main() {
 
 	int arr[10] = { 1, 1, 2, 1, 1, 0, 5, 0, 2, 3 };
