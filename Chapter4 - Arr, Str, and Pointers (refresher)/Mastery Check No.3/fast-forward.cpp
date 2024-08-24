@@ -16,6 +16,8 @@ int main() {
 }
 
 
-void find_duplicate() {
+void find_duplicate(int* array_in_question) {
+
+
 
 }
