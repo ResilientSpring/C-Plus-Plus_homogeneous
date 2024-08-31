@@ -43,7 +43,10 @@ int main() {
 
 void bubble_sort(int* array_to_sort) {
 
+	for (int i = 0; i < length; i++)
+	{
 
+	}
 
 }
 
