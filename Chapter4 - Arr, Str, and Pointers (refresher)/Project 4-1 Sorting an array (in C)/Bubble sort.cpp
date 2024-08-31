@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void bubble_sort(int* array_to_sort);
+
 int main() {
 
 	int arr[10];
@@ -37,6 +39,14 @@ int main() {
 
 
 }
+
+
+void bubble_sort(int* array_to_sort) {
+
+
+
+}
+
 
 /* References:
    
