@@ -14,7 +14,12 @@ int main() {
 		arr[i] = rand();   // int r = rand() % 20;  for random int between 0 and 19. [1]
 	}
 
+	printf("The array to be underwent the bubble sort: \n");
 
+	for (int i = 0; i < 10; i++)
+	{
+		printf("%d ", arr[i]);
+	}
 }
 
 /* References:
