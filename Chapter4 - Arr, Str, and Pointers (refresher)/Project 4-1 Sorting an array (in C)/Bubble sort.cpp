@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>  // [2]
 
-int srand(unsigned int 8);
+int srand((unsigned int)time(NULL)); // [2]
 
 int main() {
 
@@ -25,6 +26,6 @@ int main() {
 /* References:
    
    1. https://stackoverflow.com/a/822361
-
+   2. https://stackoverflow.com/a/822368
 
 */
