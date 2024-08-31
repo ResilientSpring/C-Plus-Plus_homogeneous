@@ -33,6 +33,9 @@ int main() {
 	for (int i : arr2)
 		printf("%d ", i);
 
+	printf("\n");
+
+
 }
 
 /* References:
