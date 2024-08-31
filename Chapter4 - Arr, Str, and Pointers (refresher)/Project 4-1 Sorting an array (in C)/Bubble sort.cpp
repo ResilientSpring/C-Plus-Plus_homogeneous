@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>  // [2]
+// #include <time.h>  // [2]
 
-int srand((unsigned int)time(NULL)); // [2]
+// int srand((unsigned int)time(NULL)); // [2]
 
 int main() {
 
