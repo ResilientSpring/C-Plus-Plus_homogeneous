@@ -18,6 +18,10 @@ public:
 		z = k;
 	}
 
+	ThreeD operator+(ThreeD op2);  // op1 is implied.
+	ThreeD operator-(ThreeD op2);  // op1 is implied. 
+
+	void show();
 };
 
 int main() {
