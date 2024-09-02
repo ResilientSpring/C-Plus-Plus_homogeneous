@@ -29,9 +29,10 @@ ThreeD ThreeD::operator+(ThreeD op2) {
 
 	ThreeD temp;
 
-	temp.x = x + op2.x;  // These are integer additions
-	temp.y = y + op2.y;  // and the + remains its original 
-	temp.z = z + op2.z;  // meaning relative to them. 
+	// These are integer additions and the + remains its original meaning relative to them.
+	temp.x = x + op2.x;  
+	temp.y = y + op2.y;    
+	temp.z = z + op2.z;  
 
 	return temp;
 
