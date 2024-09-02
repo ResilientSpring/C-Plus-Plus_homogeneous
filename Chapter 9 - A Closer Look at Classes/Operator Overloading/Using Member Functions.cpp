@@ -33,6 +33,8 @@ ThreeD ThreeD::operator+(ThreeD op2) {
 	temp.y = y + op2.y;  // and the + remains its original 
 	temp.z = z + op2.z;  // meaning relative to them. 
 
+	return temp;
+
 }
 
 int main() {
