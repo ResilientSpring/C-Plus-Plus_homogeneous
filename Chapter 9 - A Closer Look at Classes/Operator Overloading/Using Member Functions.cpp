@@ -38,6 +38,12 @@ ThreeD ThreeD::operator+(ThreeD op2) {
 
 }
 
+// Overload assignment.
+ThreeD ThreeD::operator=(ThreeD op2) {
+
+
+}
+
 int main() {
 
 
