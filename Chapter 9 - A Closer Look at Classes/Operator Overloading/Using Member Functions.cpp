@@ -24,6 +24,20 @@ public:
 	void show();
 };
 
+// Overload+.
+ThreeD ThreeD::operator+(ThreeD op2) {
+
+	ThreeD temp;
+
+	// These are integer additions and the + remains its original meaning relative to them.
+	temp.x = x + op2.x;  
+	temp.y = y + op2.y;    
+	temp.z = z + op2.z;  
+
+	return temp;  // Return a new object. Leave arguments unchanged. 
+
+}
+
 int main() {
 
 
