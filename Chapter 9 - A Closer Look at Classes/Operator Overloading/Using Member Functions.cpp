@@ -34,7 +34,7 @@ ThreeD ThreeD::operator+(ThreeD op2) {
 	temp.y = y + op2.y;    
 	temp.z = z + op2.z;  
 
-	return temp;
+	return temp;  // Return a new object. Leave arguments unchanged. 
 
 }
 
