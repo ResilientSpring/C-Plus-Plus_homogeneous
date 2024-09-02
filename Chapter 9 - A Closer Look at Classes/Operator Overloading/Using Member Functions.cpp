@@ -24,6 +24,16 @@ public:
 	void show();
 };
 
+// Overload+.
+ThreeD ThreeD::operator+(ThreeD op2) {
+
+	ThreeD temp;
+
+	temp.x = x + op2.x;  // These are integer additions
+	temp.y = y + op2.y;  // and the + remains its original 
+
+}
+
 int main() {
 
 
