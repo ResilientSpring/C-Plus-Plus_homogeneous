@@ -66,6 +66,6 @@ void ThreeD::show() {
 
 int main() {
 
-
+	ThreeD a(1, 2, 3), b(10, 10, 10), c;
 
 }
