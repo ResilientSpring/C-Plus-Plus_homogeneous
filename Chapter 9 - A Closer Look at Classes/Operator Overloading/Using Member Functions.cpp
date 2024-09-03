@@ -68,4 +68,11 @@ int main() {
 
 	ThreeD a(1, 2, 3), b(10, 10, 10), c;
 
+	cout << "Original value of a: ";
+	a.show();
+	cout << "Original value of b: ";
+	b.show();
+
+	cout << "\n";
+
 }
