@@ -41,7 +41,12 @@ ThreeD ThreeD::operator+(ThreeD op2) {
 // Overload assignment.
 ThreeD ThreeD::operator=(ThreeD op2) {  // Overload '=' for ThreeD.
 
+	// These are integer assignments and the '=' retains its original meaning relative to them. 
 	x = op2.x;
+	y = op2.y; 
+	z = op2.z;
+
+	return *this;  // Return the modified object.
 }
 
 int main() {
