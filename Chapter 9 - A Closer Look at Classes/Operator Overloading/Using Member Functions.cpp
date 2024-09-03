@@ -81,4 +81,16 @@ int main() {
 
 	cout << "\n";
 
+	c = a + b + c;  // add a, b and c together
+	cout << "Value of c after c = b = a: ";
+	c.show();
+
+	cout << "\n";
+
+	c = b = a;  // demonstrate multiple assignment.
+	cout << "value of c after c = b = a: ";
+	c.show();
+	cout << "Value of b after c = b = a: ";
+	b.show();
+
 }
