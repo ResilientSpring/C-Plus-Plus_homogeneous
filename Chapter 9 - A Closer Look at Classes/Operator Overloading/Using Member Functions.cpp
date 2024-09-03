@@ -39,9 +39,9 @@ ThreeD ThreeD::operator+(ThreeD op2) {
 }
 
 // Overload assignment.
-ThreeD ThreeD::operator=(ThreeD op2) {
+ThreeD ThreeD::operator=(ThreeD op2) {  // Overload '=' for ThreeD.
 
-
+	x = op2.x;
 }
 
 int main() {
