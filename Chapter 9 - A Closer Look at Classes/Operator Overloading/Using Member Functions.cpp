@@ -75,4 +75,10 @@ int main() {
 
 	cout << "\n";
 
+	c = a + b;  // add a and b together
+	cout << "Value of c after c = a b: ";
+	c.show();
+
+	cout << "\n";
+
 }
