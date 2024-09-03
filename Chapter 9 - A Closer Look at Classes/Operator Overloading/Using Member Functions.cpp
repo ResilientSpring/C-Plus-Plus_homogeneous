@@ -50,6 +50,11 @@ ThreeD ThreeD::operator=(ThreeD op2) {  // Overload '=' for ThreeD.
 	return *this;  // Return the modified object.
 }
 
+ThreeD ThreeD::operator-(ThreeD op2)
+{
+	return ThreeD();
+}
+
 int main() {
 
 
