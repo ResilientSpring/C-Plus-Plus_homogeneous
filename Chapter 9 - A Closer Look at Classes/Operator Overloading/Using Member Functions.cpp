@@ -56,9 +56,11 @@ ThreeD ThreeD::operator-(ThreeD op2)
 }
 
 // Show X, Y, Z coordinates.
-ThreeD ThreeD::show() {
+void ThreeD::show() {
 
-
+	cout << x << ", ";
+	cout << y << ", ";
+	cout << z << "\n";
 
 }
 
