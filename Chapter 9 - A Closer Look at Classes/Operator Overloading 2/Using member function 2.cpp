@@ -44,8 +44,9 @@ public:
 
 	}
 
-	// The operator that you are overloading is substituted for the 
-	ThreeD operator#(ThreeD op2) {
+	// The operator that you are overloading is substituted for the '-', 
+	// and type is the type of value returned.
+	ThreeD operator-(ThreeD op2) {
 
 		return ThreeD();
 
