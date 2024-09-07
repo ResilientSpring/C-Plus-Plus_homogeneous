@@ -18,8 +18,8 @@ public:
 		z = k;
 	}
 
-	// Overload+.
-	ThreeD operator+(ThreeD op2) {
+	// Overload the plus sign.
+	ThreeD operator+(ThreeD op2) {  // Overload '+'
 
 		ThreeD temp;
 
