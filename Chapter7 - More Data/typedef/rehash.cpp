@@ -8,7 +8,7 @@
 
 typedef class EFI_COMPONENT_NAME2_PROTOCOL {
 
-
+	EFI_COMPONENT_NAME_GET_DRIVER_NAME GetDriverName;
 
 };
 
