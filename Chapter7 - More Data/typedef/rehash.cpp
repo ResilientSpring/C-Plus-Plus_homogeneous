@@ -4,6 +4,9 @@
 
 #include <stdio.h>
 #include "ComponentName.h"
+#include "ComponentName2.h"
+
+extern "ComponentName.c"
 
 // Protocol Interface Structure
 
@@ -16,7 +19,7 @@ typedef class EFI_COMPONENT_NAME2_PROTOCOL {
 
 int main() {
 
-
+	EFI_COMPONENT_NAME2_PROTOCOL hello;
 
 
 }
