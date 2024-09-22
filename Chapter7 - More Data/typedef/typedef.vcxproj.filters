@@ -21,6 +21,9 @@
     <ClCompile Include="ComponentName.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ComponentName2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ComponentName.h">
