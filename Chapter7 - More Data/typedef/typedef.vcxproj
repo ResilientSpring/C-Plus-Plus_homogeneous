@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ComponentName.c" />
     <ClCompile Include="rehash.cpp" />
   </ItemGroup>
   <ItemGroup>
