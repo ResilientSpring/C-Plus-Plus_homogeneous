@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+void LocateHandleBuffer(int** multiple_indirection, int* indirection);
+
 int main() {
 
 	int i = 8;
@@ -15,7 +17,7 @@ int main() {
 
 }
 
-void LocateHandleBuffer(int** multiple_indirection) {
+void LocateHandleBuffer(int** multiple_indirection, int* indirection) {
 
 
 }
