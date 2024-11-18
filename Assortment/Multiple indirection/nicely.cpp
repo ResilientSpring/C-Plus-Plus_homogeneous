@@ -19,5 +19,8 @@ int main() {
 
 void LocateHandleBuffer(int* indirection, int** multiple_indirection) {
 
+	cout << "indirection is " << indirection << "\n";
+
+	cout << "multiple_indirection is " << multiple_indirection << endl;
 
 }
