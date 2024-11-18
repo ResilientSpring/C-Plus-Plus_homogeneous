@@ -15,7 +15,7 @@ int main() {
 
 }
 
-void LocateHandleBuffer(int multiple_indirection) {
+void LocateHandleBuffer(int** multiple_indirection) {
 
 
 }
