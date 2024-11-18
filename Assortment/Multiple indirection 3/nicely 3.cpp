@@ -19,6 +19,7 @@ int main() {
 
 }
 
+// int** indicates the memory address of a pointer.
 void LocateHandleBuffer(int* indirection, int** multiple_indirection) {
 
 	cout << "indirection is " << indirection << "\n";
