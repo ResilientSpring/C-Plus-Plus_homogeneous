@@ -7,3 +7,9 @@ int main() {
 
 
 }
+
+void LocateHandleBuffer() {
+
+
+
+}
