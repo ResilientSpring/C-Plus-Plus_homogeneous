@@ -7,8 +7,6 @@ int main() {
 
 	int* single_indirection;
 
-	char** multiple_indirection;
-
 	single_indirection = &i;
 	
 	cout << "The value of single_indirection is " << single_indirection << "\n";
@@ -17,7 +15,7 @@ int main() {
 
 }
 
-void LocateHandleBuffer() {
+void LocateHandleBuffer(int multiple_indirection) {
 
 
 }
