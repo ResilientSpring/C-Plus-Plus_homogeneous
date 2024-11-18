@@ -15,7 +15,7 @@ int main() {
 
 	cout << "The memory address of single_indirection is " << &single_indirection << "\n";
 
-	LocateHandleBuffer(single_indirection, single_indirection);
+	LocateHandleBuffer(single_indirection, &single_indirection);
 
 }
 
