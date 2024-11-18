@@ -26,5 +26,5 @@ void LocateHandleBuffer(int* indirection, int** multiple_indirection) {
 
 	cout << "multiple_indirection is " << multiple_indirection << endl;
 
-	cout << "The memory address of multiple_indirection is " << multiple_indirection << endl;
+	cout << "The memory address of multiple_indirection is " << &multiple_indirection << endl;
 }
