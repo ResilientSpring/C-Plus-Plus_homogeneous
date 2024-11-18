@@ -15,6 +15,8 @@ int main() {
 
 	cout << "The memory address of single_indirection is " << &single_indirection << "\n";
 
+	LocateHandleBuffer(single_indirection, single_indirection);
+
 }
 
 void LocateHandleBuffer(int* indirection, int** multiple_indirection) {
