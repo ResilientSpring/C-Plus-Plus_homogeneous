@@ -29,8 +29,15 @@ void LocateHandleBuffer(int* indirection, int** multiple_indirection) {
 	cout << "The memory address of multiple_indirection is " << &multiple_indirection << endl;
 }
 
-void Comparison(int a, int b) {
+void Comparison(int* a, int* b) {
 
+	int c;
 
+	if (*a > *b)
+		c = *a;
+	else
+		c = *b;
+
+	*a = c * (*b);
 
 }
