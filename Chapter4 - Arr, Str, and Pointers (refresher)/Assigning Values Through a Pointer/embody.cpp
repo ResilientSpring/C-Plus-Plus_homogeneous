@@ -12,4 +12,12 @@ int main() {
 
 	cout << num << " ";
 
+	(*p)++;       // Increment num through p.
+
+	cout << num << " ";
+
+	(*p)--;      // Decrement num through p.
+
+	cout << num << " ";
+
 }
