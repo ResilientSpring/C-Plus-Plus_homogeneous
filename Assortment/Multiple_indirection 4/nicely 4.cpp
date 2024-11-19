@@ -2,6 +2,7 @@
 using namespace std;
 
 void LocateHandleBuffer(int* indirection, int** multiple_indirection);
+void Comparison(int* a, int* b);
 
 int main() {
 
@@ -17,6 +18,13 @@ int main() {
 
 	LocateHandleBuffer(single_indirection, &single_indirection);
 
+	void (*fp)(int* a, int* b);
+
+	fp = Comparison;
+
+	fp(&i, &i);
+
+	cout << "i is now " << i << endl;
 }
 
 // int** indicates the memory address of a pointer.
@@ -29,8 +37,15 @@ void LocateHandleBuffer(int* indirection, int** multiple_indirection) {
 	cout << "The memory address of multiple_indirection is " << &multiple_indirection << endl;
 }
 
-void Comparison(int a, int b) {
+void Comparison(int* a, int* b) {
 
+	int c;
 
+	if (*a > *b)
+		c = *a;
+	else
+		c = *b;
+
+	*a = c * (*b);
 
 }
