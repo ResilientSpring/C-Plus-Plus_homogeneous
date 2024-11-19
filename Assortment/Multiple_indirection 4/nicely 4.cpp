@@ -18,6 +18,13 @@ int main() {
 
 	LocateHandleBuffer(single_indirection, &single_indirection);
 
+	void (*fp)(int* a, int* b);
+
+	fp = Comparison;
+
+	fp(&i, &i);
+
+	cout << "i is now " << i << endl;
 }
 
 // int** indicates the memory address of a pointer.
