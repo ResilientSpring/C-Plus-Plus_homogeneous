@@ -2,6 +2,7 @@
 using namespace std;
 
 void LocateHandleBuffer(int* indirection, int** multiple_indirection);
+void Comparison(int* a, int* b);
 
 int main() {
 
