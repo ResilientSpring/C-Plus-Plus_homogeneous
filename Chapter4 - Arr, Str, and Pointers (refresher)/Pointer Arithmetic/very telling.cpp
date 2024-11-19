@@ -8,6 +8,12 @@ int main() {
 
 	p1 = a;
 
-	cout << *(p1++);
+	cout << *(p1++) << "\n";
+
+	cout << *p1 << "\n";
+
+	p1++;
+
+	cout << *p1 << "\n";
 
 }
