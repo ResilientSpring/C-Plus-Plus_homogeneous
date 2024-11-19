@@ -8,6 +8,8 @@ int main() {
 
 	p = &num;
 
-	*p = 100;
+	*p = 100;     // Assign num the value 100 through p.
+
+	cout << num << " ";
 
 }
