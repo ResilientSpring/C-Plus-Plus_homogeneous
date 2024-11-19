@@ -20,4 +20,5 @@ int main() {
 
 	cout << *p1 << "\n";
 
+	cout << *(--p1) << "\n";
 }
