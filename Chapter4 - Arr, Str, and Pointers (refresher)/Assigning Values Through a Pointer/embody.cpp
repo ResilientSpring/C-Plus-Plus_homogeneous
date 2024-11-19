@@ -18,6 +18,6 @@ int main() {
 
 	(*p)--;      // Decrement num through p.
 
-	cout << num << " ";
+	cout << num << "\n";
 
 }
