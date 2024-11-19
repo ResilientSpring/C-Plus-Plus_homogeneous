@@ -149,6 +149,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Array initialization, Multi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project 4-1 Sorting an array (in C)", "Project 4-1 Sorting an array (in C)\Project 4-1 Sorting an array (in C).vcxproj", "{A229AEE2-A96E-4FF1-8F64-BB8CE7D650A2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assigning Values Through a Pointer", "Assigning Values Through a Pointer\Assigning Values Through a Pointer.vcxproj", "{080B5E70-E6B5-4AAF-AE35-47922B6BDC4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -741,6 +743,14 @@ Global
 		{A229AEE2-A96E-4FF1-8F64-BB8CE7D650A2}.Release|x64.Build.0 = Release|x64
 		{A229AEE2-A96E-4FF1-8F64-BB8CE7D650A2}.Release|x86.ActiveCfg = Release|Win32
 		{A229AEE2-A96E-4FF1-8F64-BB8CE7D650A2}.Release|x86.Build.0 = Release|Win32
+		{080B5E70-E6B5-4AAF-AE35-47922B6BDC4A}.Debug|x64.ActiveCfg = Debug|x64
+		{080B5E70-E6B5-4AAF-AE35-47922B6BDC4A}.Debug|x64.Build.0 = Debug|x64
+		{080B5E70-E6B5-4AAF-AE35-47922B6BDC4A}.Debug|x86.ActiveCfg = Debug|Win32
+		{080B5E70-E6B5-4AAF-AE35-47922B6BDC4A}.Debug|x86.Build.0 = Debug|Win32
+		{080B5E70-E6B5-4AAF-AE35-47922B6BDC4A}.Release|x64.ActiveCfg = Release|x64
+		{080B5E70-E6B5-4AAF-AE35-47922B6BDC4A}.Release|x64.Build.0 = Release|x64
+		{080B5E70-E6B5-4AAF-AE35-47922B6BDC4A}.Release|x86.ActiveCfg = Release|Win32
+		{080B5E70-E6B5-4AAF-AE35-47922B6BDC4A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
