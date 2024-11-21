@@ -55,4 +55,6 @@ int main() {
 
 	cout << character_pointer << endl;
 
+	cout << character_pointer[0] << endl;
+
 }
