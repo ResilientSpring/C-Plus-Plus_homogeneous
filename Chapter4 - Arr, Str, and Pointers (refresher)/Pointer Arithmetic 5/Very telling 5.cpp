@@ -59,4 +59,6 @@ int main() {
 
 	cout << &character_pointer[0] << endl;
 
+	printf("%p \n", &character_pointer[0]);
+
 }
