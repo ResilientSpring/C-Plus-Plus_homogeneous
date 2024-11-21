@@ -71,6 +71,8 @@ int main() {
 
 	printf("%c \n", *character_pointer);
 
+	printf("%s \n", *character_pointer);
+
 }
 
 // References:
