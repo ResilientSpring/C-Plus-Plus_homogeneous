@@ -37,5 +37,6 @@ int main() {
 	char ch = 'a';
 	char* character_pointer = &ch;
 
+	cout << *(++character_pointer);
 
 }
