@@ -81,3 +81,5 @@ int main() {
 
 // References:
 // 1. https://stackoverflow.com/questions/5417967/pointer-will-not-work-in-printf
+// 2. https://stackoverflow.com/questions/47050210/character-pointer-in-c
+// 3. https://www.tutorialspoint.com/cprogramming/c_character_pointers_and_functions.htm
