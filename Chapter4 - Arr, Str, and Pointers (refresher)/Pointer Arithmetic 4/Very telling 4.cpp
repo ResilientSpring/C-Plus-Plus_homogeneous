@@ -35,7 +35,7 @@ int main() {
 	// In case of character pointers, an increment or decrement will appear as "normal" arithmetic
 	// because characters are one byte long.
 	char ch = 'a';
-	char* character_pointer;
+	char* character_pointer = &ch;
 
 
 }
