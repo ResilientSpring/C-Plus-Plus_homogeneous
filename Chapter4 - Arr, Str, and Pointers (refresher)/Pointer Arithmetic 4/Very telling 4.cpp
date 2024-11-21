@@ -49,4 +49,6 @@ int main() {
 
 	cout << *(str) << endl;
 
+	// cout << *(str++) << endl;
+
 }
