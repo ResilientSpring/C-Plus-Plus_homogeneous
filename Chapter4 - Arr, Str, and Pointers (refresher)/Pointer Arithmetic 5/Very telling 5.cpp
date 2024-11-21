@@ -69,7 +69,7 @@ int main() {
 
 	++character_pointer;
 
-	printf("%c \n", character_pointer);
+	printf("%c \n", *character_pointer);
 
 }
 
