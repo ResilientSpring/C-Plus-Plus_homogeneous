@@ -25,4 +25,6 @@ int main() {
 	p1 = p1 + 9;
 
 	cout << *p1 << endl;
+
+	cout << *(p1 - 2) << endl;
 }
