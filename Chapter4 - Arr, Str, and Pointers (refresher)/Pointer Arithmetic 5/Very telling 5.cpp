@@ -49,4 +49,8 @@ int main() {
 
 	character_pointer = str;
 
+	cout << "str is " << str << endl;
+
+	cout << "&str is " << &str << endl;
+
 }
