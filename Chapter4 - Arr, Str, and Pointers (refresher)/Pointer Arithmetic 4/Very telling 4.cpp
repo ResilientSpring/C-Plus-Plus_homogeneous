@@ -41,4 +41,8 @@ int main() {
 
 	cout << *(++character_pointer) << endl;
 
+	char str[6] = { 'H', 'e', 'l', 'l', 'o', '\0' };
+
+	character_pointer = &str;
+
 }
