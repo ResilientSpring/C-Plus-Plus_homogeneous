@@ -63,6 +63,8 @@ int main() {
 
 	printf("%s \n", str);
 
+	printf("%p \n", str);
+
 }
 
 // References:
