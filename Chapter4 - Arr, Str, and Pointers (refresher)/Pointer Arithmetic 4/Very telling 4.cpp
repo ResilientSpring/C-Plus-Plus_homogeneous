@@ -43,6 +43,10 @@ int main() {
 
 	char str[6] = { 'H', 'e', 'l', 'l', 'o', '\0' };
 
-	character_pointer = &str;
+	// character_pointer = &str;
+
+	// char**  character_pointers = &str;
+
+	cout << *(str) << endl;
 
 }
