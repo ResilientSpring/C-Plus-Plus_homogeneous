@@ -61,6 +61,8 @@ int main() {
 
 	printf("%p \n", &character_pointer[0]);  // [1]
 
+	printf("%s \n", str);
+
 }
 
 // References:
