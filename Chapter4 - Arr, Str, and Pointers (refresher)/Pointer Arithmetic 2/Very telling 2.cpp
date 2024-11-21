@@ -8,7 +8,7 @@ int main() {
 
 	p1 = a;
 
-	// There are only four arithmetic operators that can be used on pointers:
+	// There are only four arithmetic operators that can be used on pointers: +, -, ++, --
 
 	cout << *(p1++) << "\n";
 
