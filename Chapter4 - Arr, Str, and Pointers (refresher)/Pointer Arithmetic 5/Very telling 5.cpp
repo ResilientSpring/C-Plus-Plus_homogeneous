@@ -59,6 +59,9 @@ int main() {
 
 	cout << &character_pointer[0] << endl;
 
-	printf("%p \n", &character_pointer[0]);
+	printf("%p \n", &character_pointer[0]);  // [1]
 
 }
+
+// References:
+// 1. https://stackoverflow.com/questions/5417967/pointer-will-not-work-in-printf
