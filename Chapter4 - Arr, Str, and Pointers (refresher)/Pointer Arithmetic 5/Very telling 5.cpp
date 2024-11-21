@@ -65,6 +65,8 @@ int main() {
 
 	printf("%p \n", str);
 
+	printf("%p \n", &str);
+
 }
 
 // References:
