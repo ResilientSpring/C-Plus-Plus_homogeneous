@@ -67,6 +67,10 @@ int main() {
 
 	printf("%p \n", &str);
 
+	++character_pointer;
+
+	printf("%c \n", character_pointer);
+
 }
 
 // References:
