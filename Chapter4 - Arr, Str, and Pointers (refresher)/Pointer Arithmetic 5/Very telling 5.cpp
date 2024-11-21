@@ -77,6 +77,10 @@ int main() {
 
 	printf("%s \n", character_pointer);
 
+	character_pointer = str + 5 - 1;
+
+	printf("%c \n", *character_pointer);
+
 }
 
 // References:
