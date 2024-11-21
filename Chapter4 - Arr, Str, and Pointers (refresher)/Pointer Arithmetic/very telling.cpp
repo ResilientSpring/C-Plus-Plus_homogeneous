@@ -23,4 +23,6 @@ int main() {
 	cout << *(--p1) << "\n";
 
 	p1 = p1 + 9;
+
+	cout << *p1 << endl;
 }
