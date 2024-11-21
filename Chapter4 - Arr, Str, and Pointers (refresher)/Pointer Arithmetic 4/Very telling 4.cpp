@@ -51,4 +51,6 @@ int main() {
 
 	// cout << *(str++) << endl;
 
+	char* ptr = str;  // ptr points to first character of string str
+
 }
