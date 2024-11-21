@@ -3,6 +3,8 @@ using namespace std;
 
 int main() {
 
+	// Each time that a pointer is incremented, 
+	// it will point to the memory location of the next element of its base type.
 	int a[10] = { 2000, 2004, 6, 8, 10, 12, 14, 16, 18, 20 };
 	int* p1;
 
