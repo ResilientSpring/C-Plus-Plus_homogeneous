@@ -61,7 +61,33 @@ int main() {
 
 	printf("%p \n", &character_pointer[0]);  // [1]
 
+	printf("%s \n", str);
+
+	printf("%p \n", str);
+
+	printf("%p \n", &str);
+
+	++character_pointer;
+
+	printf("%c \n", *character_pointer);
+
+	printf("%s \n", character_pointer);
+
+	character_pointer = str;
+
+	printf("%s \n", character_pointer);
+
+	character_pointer = str + 5 - 1;
+
+	printf("%c \n", *character_pointer);
+
+	--character_pointer;
+
+	printf("%s \n", --character_pointer);
+
 }
 
 // References:
 // 1. https://stackoverflow.com/questions/5417967/pointer-will-not-work-in-printf
+// 2. https://stackoverflow.com/questions/47050210/character-pointer-in-c
+// 3. https://www.tutorialspoint.com/cprogramming/c_character_pointers_and_functions.htm
