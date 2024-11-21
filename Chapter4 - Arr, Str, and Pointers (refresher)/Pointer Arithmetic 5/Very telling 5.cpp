@@ -53,4 +53,6 @@ int main() {
 
 	cout << "&str is " << &str << endl;
 
+	cout << character_pointer << endl;
+
 }
