@@ -63,7 +63,7 @@ int main() {
 
 	printf("str is %s \n", str);
 
-	printf("str is %c \n", str);
+	printf("str is %c \n", str[1]);
 
 	printf("str is %p \n", str);
 
