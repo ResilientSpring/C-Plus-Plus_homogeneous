@@ -15,5 +15,5 @@ int main() {
 
 	cout << *(p1 - 2) << endl;
 
-
+	printf("%d \n", p1 - p2);
 }
