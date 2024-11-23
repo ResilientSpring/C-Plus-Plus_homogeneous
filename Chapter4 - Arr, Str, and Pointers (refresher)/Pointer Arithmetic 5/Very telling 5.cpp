@@ -61,11 +61,13 @@ int main() {
 
 	printf("%p \n", &character_pointer[0]);  // [1]
 
-	printf("%s \n", str);
+	printf("str is %s \n", str);
 
-	printf("%p \n", str);
+	printf("str is %c \n", str[1]);
 
-	printf("%p \n", &str);
+	printf("str is %p \n", str);
+
+	printf("&str is %p \n", &str);
 
 	++character_pointer;
 
