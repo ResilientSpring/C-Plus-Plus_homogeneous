@@ -17,4 +17,14 @@ int main() {
 	const char* p4;
 
 	p4 = &str[8];
+
+	const char* p5;
+
+	p5 = &str[3];
+
+	if (p4 > p5)
+		printf("Pointer comparison succeeded. \n");
+	else {
+		printf("p4 is holding a character of %c while p5 is holding a character of %c. \n", *p4, *p5);
+	}
 }
