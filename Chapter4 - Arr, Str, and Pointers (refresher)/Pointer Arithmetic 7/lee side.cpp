@@ -21,7 +21,8 @@ int main() {
 
 	for ( x = 0; x < 10; x++)
 	{
-		// For most 32-bit compilers, i will increase by 4s and f will increase by 8s. 
+		// For most 32-bit compilers, i will increase by 4 bytes and f will increase by 8 bytes
+		// because C uses 4 bytes to encode an integer and 8 bytes to encode a double. 
 		printf("%p %p \n", i + x, f + x);
 	}
 
