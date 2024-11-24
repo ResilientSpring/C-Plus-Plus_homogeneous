@@ -19,4 +19,9 @@ int main() {
 		cout << i + x << ' ' << f + x << '\n';
 	}
 
+	for ( x = 0; x < 10; x++)
+	{
+		printf("%p %p \n", )
+	}
+
 }
