@@ -21,7 +21,7 @@ int main() {
 
 	for ( x = 0; x < 10; x++)
 	{
-		printf("%p %p \n", )
+		printf("%p %p \n", i + x, f + x);
 	}
 
 }
