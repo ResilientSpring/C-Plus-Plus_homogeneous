@@ -20,7 +20,7 @@ int main() {
 
 	void (*fp)(int* a, int* b);
 
-	// 
+	// Like array name, function name also returns the memory address of the function.
 	fp = Comparison;
 
 	fp(&i, &i);
