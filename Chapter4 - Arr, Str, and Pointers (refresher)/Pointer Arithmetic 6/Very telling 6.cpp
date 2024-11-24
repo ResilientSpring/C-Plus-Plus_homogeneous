@@ -15,5 +15,10 @@ int main() {
 
 	cout << *(p1 - 2) << endl;
 
-	printf("%d \n", p1 - p2);
+	printf("%d \n", p1 - p2);  // [1][2]
 }
+
+
+// References:
+// 1. https://www.google.com/search?q=subtracting+one+pointer+from+another
+// 2. https://stackoverflow.com/questions/39984816/when-subtracting-two-pointers-in-c
