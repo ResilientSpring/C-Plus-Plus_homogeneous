@@ -21,6 +21,7 @@ int main() {
 
 	for ( x = 0; x < 10; x++)
 	{
+		// For most 32-bit compilers, i will increase by 4s and f will increase by 8s. 
 		printf("%p %p \n", i + x, f + x);
 	}
 
