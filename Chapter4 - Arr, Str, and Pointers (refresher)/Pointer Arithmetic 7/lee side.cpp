@@ -28,4 +28,12 @@ int main() {
 		printf("%p %p \n", i + x, f + x);
 	}
 
+	cout << "=====================================\n";
+
+	for (x = 0; x < 10; x++)
+	{
+		// Directly use array name.
+		printf("%p %p \n", j + x, g + x);
+	}
+
 }
