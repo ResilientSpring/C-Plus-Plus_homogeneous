@@ -18,4 +18,9 @@ int main() {
 		printf(" str == &str[0] \n");
 	else
 		printf(" str != &str[0] \n");
+
+	// Since p1 points to the beginning of str, you can use p1 to access elements in the array.
+
+
+
 }
