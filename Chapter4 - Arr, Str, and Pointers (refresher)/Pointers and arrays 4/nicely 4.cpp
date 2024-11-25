@@ -35,4 +35,8 @@ int main() {
 	printf("%c \n", *(&str + 7));
 
 	printf("%c \n", *(&str[0] + 7));
+
+	printf("&str = %p \n", &str);
+
+	printf("&str[0] = %p \n", &str[0]);
 }
