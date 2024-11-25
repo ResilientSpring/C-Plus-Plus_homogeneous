@@ -16,13 +16,13 @@ int main() {
 
 	p2 = &str[3];
 
-	//const char* p4;
+	// const char* p4;
 
-	//p4 = &str[8];
+	// p4 = &str[8];
 
-	//const char* p5;
+	// const char* p5;
 
-	//p5 = &str[3];
+	// p5 = &str[3];
 
 	if (p4 > p5)
 		printf("Pointer comparison succeeded. \n");
