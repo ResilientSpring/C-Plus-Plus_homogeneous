@@ -13,4 +13,9 @@ int main() {
 
 	if (p1 == p2)
 		printf(" p1 holds %p \n p2 holds %p \n Thus, str and &str[0] return the same value.\n", p1, p2);
+
+	if (str == &str[0])
+		printf("str == &str[0] \n");
+	else
+		printf("str != &str[0] \n");
 }
