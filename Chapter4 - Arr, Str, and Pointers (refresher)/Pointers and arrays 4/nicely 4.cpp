@@ -41,4 +41,6 @@ int main() {
 	printf("&str[0] = %p \n", &str[0]);
 
 	printf("str = %p  \n", str);
+
+	printf("%c \n", *(str + 7));
 }
