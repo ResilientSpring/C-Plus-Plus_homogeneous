@@ -30,5 +30,7 @@ int main() {
 		printf("%c , %c  \n", *(p1 + 8), *(&str[0 + 8]));
 	}
 
+	printf("%c \n", str[7]);
 
+	printf("%c \n", *(&str + 7));
 }
