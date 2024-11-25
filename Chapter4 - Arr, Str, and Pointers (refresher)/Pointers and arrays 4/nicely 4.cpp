@@ -33,4 +33,6 @@ int main() {
 	printf("%c \n", str[7]);
 
 	printf("%c \n", *(&str + 7));
+
+	printf("%c \n", *(&str[0] + 7));
 }
