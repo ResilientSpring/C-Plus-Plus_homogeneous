@@ -39,4 +39,6 @@ int main() {
 	printf("&str = %p \n", &str);
 
 	printf("&str[0] = %p \n", &str[0]);
+
+	printf("str = %p  \n", str);
 }
