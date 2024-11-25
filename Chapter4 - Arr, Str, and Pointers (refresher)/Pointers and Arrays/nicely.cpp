@@ -8,5 +8,5 @@ int main() {
 
 	// p1 is assigned the address of the first element, i.e. str[0], in the str array.
 	p1 = str;
-
+	// That is, after the assignment, p1 will point to str[0].
 }
