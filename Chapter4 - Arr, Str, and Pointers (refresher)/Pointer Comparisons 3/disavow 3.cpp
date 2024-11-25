@@ -24,9 +24,9 @@ int main() {
 
 	// p5 = &str[3];
 
-	if (p4 > p5)
+	if (p3 > p2)
 		printf("Pointer comparison succeeded. \n");
 	else {
-		printf("p4 is holding a character of %c while p5 is holding a character of %c. \n", *p4, *p5);
+		printf("p3 is holding a character of %c while p2 is holding a character of %c. \n", *p3, *p2);
 	}
 }
