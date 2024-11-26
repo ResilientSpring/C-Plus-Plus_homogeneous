@@ -7,7 +7,7 @@ int main() {
 	char str2[80] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
 
 	printf("(str1 + 1) is %p.\n", (str1 + 1));
-	printf("(")
+	printf("(&str1[0] + 1) is %p. \n", ())
 
 
 }
