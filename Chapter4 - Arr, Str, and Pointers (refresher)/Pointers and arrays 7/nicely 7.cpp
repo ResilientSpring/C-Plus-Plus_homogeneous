@@ -39,7 +39,6 @@ int main() {
 
 	printf("&str is %p \n", &str);
 
-
 	printf("*(str + 7) is %c \n", *(str + 7));
 
 	printf("str[7] is %c \n", str[7]);
