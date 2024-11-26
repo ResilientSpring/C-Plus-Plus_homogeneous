@@ -23,26 +23,27 @@ int main() {
 
 	printf("*(&str[0]) is %c \n", *(&str[0]));
 
-	printf("*(str) is %c \n", *(str));
+	printf("*(str)     is %c \n", *(str));
 
 	if (*(p1 + 8) == str[8]) {
 
-		printf("*(p1 + 8) is %c \n*(&str[0 + 8]) is %c  \n", *(p1 + 8), *(&str[0 + 8]));
+		printf("*(p1 + 8)      is %c \n*(&str[0 + 8]) is %c  \n", *(p1 + 8), *(&str[0 + 8]));
 	}
 	else
 		printf("*(p1 + 8) != str[8]");
 
-	printf("str[7] is %c \n", str[7]);
 
-	printf("*(&str + 7) is %c \n", *(&str + 7));
-
-	printf("*(&str[0] + 7) is %c \n", *(&str[0] + 7));
-
-	printf("&str is %p \n", &str);
+	printf("str     is %p  \n", str);
 
 	printf("&str[0] is %p \n", &str[0]);
 
-	printf("str is %p  \n", str);
+	printf("&str    is %p \n", &str);
 
-	printf("*(str + 7) is %c \n", *(str + 7));
+	printf("*(str + 7)     is %c \n", *(str + 7));
+
+	printf("str[7]         is %c \n", str[7]);
+
+	printf("*(&str[0] + 7) is %c \n", *(&str[0] + 7));
+
+	printf("*(&str + 7)    is %c \n", *(&str + 7));
 }
