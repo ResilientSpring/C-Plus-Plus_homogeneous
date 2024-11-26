@@ -43,7 +43,7 @@ int main() {
 
 	printf("str[7]         is %c \n", str[7]);
 
-	printf("*(&str + 7)    is %c \n", *(&str + 7));
-
 	printf("*(&str[0] + 7) is %c \n", *(&str[0] + 7));
+
+	printf("*(&str + 7)    is %c \n", *(&str + 7));
 }
