@@ -20,4 +20,7 @@ int main() {
 	printf("&str2     is %p. \n",  &str2);
 	printf("&str2[0]  is %p. \n",  &str2[0]);
 	printf("str2      is %p. \n",   str2);
+
+	printf("str == &str[0], so (str1 + 1) == (&str1[0] + 1); \n");
+	printf("")
 }
