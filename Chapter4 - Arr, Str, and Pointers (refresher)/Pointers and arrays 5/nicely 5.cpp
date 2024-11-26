@@ -34,13 +34,13 @@ int main() {
 
 	printf("*(&str + 7) is %c \n", *(&str + 7));
 
-	printf("*(&str[0] + 7) %c \n", *(&str[0] + 7));
+	printf("*(&str[0] + 7) is %c \n", *(&str[0] + 7));
 
-	printf("&str = %p \n", &str);
+	printf("&str is %p \n", &str);
 
-	printf("&str[0] = %p \n", &str[0]);
+	printf("&str[0] is %p \n", &str[0]);
 
-	printf("str = %p  \n", str);
+	printf("str is %p  \n", str);
 
-	printf("%c \n", *(str + 7));
+	printf("*(str + 7) is %c \n", *(str + 7));
 }
