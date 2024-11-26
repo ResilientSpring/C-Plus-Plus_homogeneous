@@ -33,17 +33,17 @@ int main() {
 		printf("*(p1 + 8) != str[8]");
 
 
-	printf("str is %p  \n", str);
+	printf("str     is %p  \n", str);
 
 	printf("&str[0] is %p \n", &str[0]);
 
-	printf("&str is %p \n", &str);
+	printf("&str    is %p \n", &str);
 
-	printf("*(str + 7) is %c \n", *(str + 7));
+	printf("*(str + 7)     is %c \n", *(str + 7));
 
-	printf("str[7] is %c \n", str[7]);
+	printf("str[7]         is %c \n", str[7]);
 
-	printf("*(&str + 7) is %c \n", *(&str + 7));
+	printf("*(&str + 7)    is %c \n", *(&str + 7));
 
 	printf("*(&str[0] + 7) is %c \n", *(&str[0] + 7));
 }
