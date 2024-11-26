@@ -14,6 +14,7 @@ int main() {
 	printf("(&str1[0] + 1) is %p. \n", (&str1[0] + 1));
 
 	printf("&str1[1]       is %p. \n", &str1[1]);
+	printf("&str1[79]      is %p. \n", &str1[79]);
 
 	printf("&str1 + 1 is %p. \n", (&str1 + 1));
 	printf("&str2     is %p. \n",  &str2);
