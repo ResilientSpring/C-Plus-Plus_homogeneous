@@ -27,7 +27,7 @@ int main() {
 
 	if (*(p1 + 8) == str[8]) {
 
-		printf("%c , %c  \n", *(p1 + 8), *(&str[0 + 8]));
+		printf("*(p1 + 8) is %c \n*(&str[0 + 8]) is %c  \n", *(p1 + 8), *(&str[0 + 8]));
 	}
 
 	printf("str[7] is %c \n", str[7]);
