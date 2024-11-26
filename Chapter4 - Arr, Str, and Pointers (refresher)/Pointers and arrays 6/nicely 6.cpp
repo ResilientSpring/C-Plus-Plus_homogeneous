@@ -21,9 +21,9 @@ int main() {
 
 	// Since p1 points to the beginning of str, you can use p1 to access elements in the array.
 
-	printf("%c \n", *(&str[0]));
+	printf("*(&str[0]) is %c \n", *(&str[0]));
 
-	printf("%c \n", *(str));
+	printf("*(str) is %c \n", *(str));
 
 	if (*(p1 + 8) == str[8]) {
 
