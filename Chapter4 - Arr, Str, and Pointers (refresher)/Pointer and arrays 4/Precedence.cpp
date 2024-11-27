@@ -9,6 +9,6 @@ int main() {
 
 	p1 = str;  // p1 = &str[0]
 
-	printf(" *(p1 + 2) is %c.  \n", *(p1 + 2));
+	printf(" *(p1 + 4) is %c.  \n", *(p1 + 4));
 
 }
