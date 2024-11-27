@@ -5,9 +5,9 @@ using namespace std;
 
 int main() {
 
-	char* p;
+	const char* p;
 	int i;
-	char str[] = "This Is A Test";
+	const char* str = "This Is A Test";
 
 	printf("Original string: %s \n", str);
 
