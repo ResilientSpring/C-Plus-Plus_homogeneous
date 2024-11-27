@@ -13,6 +13,8 @@ int main() {
 
 	p = &str[5]; 
 
+	printf("p is %s \n", p);
+
 	// now, index p.
 	for (int i = 0; p[i]; i++) { // Access p as if it were an array.
 
