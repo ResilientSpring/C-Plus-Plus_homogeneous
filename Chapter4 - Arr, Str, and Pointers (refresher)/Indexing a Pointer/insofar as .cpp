@@ -14,7 +14,7 @@ int main() {
 	p = str;  // assign p the address of the start of the array, i.e &str[0]
 
 	// now, index p.
-	for (int i = 0; p[i]; i++) {
+	for (int i = 0; p[i]; i++) { // Access p as if it were an array.
 
 		if (isupper(p[i]))
 			p[i] = tolower(p[i]);
