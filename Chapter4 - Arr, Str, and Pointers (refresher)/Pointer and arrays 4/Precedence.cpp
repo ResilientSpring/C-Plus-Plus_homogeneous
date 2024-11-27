@@ -11,8 +11,8 @@ int main() {
 
 	printf(" *(p1 + 4) is %c.  \n", *(p1 + 4));
 
-	// The parentheses surrounding p1 + 4 are necessary 
-	// because the * operation has a higher priority than the + operation.
+	// The parentheses surrounding p1 + 4 are required 
+	// as the * operation has a higher priority than that of + .
 	// Without them, the expression would first find the value pointed to by p1 
 	// (the first location in the array) and then add 4 to it.
 	printf(" *p1 + 4  is %c.  \n", *p1 + 4);
