@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 
-	char str[80] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char str[80] = "the inexorable progress of science";
 
 	char* p1;
 
