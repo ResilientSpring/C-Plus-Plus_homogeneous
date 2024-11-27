@@ -13,7 +13,7 @@ int main() {
 
 	p = &str[0];  // assign p the address of the start of the array, i.e &str[0]
 
-	printf("%s \n", p);
+	printf("p is %s \n", p);
 
 	p = &str[2];
 
