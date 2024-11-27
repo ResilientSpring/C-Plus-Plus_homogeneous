@@ -25,4 +25,5 @@ int main() {
 	}
 
 	printf("Inversed-case string: %s \n", str);
+	printf("Inversed-case string: %s \n", p);
 }
