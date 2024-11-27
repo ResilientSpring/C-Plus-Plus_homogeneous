@@ -17,7 +17,7 @@ int main() {
 
 	p = &str[2];
 
-	printf("%s \n", p);
+	printf("p is %s \n", p);
 
 	// now, index p.
 	for (int i = 0; p[i]; i++) { // Access p as if it were an array.
