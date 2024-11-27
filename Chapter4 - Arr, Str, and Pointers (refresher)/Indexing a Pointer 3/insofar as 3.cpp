@@ -11,7 +11,7 @@ int main() {
 
 	printf("Original string: %s \n", str);
 
-	p = &str[5];  // assign p the address of the start of the array, i.e &str[0]
+	p = &str[5]; 
 
 	// now, index p.
 	for (int i = 0; p[i]; i++) { // Access p as if it were an array.
