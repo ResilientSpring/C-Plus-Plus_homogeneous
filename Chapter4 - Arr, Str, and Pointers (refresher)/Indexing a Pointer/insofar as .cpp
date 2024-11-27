@@ -20,6 +20,7 @@ int main() {
 			p[i] = tolower(p[i]);
 		else if (islower(p[i]))
 			p[i] = toupper(p[i]);
-
 	}
+
+	printf("Inversed-case string: %s \n", str);
 }
