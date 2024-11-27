@@ -5,9 +5,7 @@ using namespace std;
 
 int main() {
 
-	const char* p;
-	int i;
-	const char* str = "This Is A Test";
+	const char** p = { "What is this?", "Hi"};
 
 	printf("Original string: %s \n", str);
 
