@@ -12,4 +12,14 @@ int main() {
 	printf("Original string: %s \n", str);
 
 	p = str;  // assign p the address of the start of the array, i.e &str[0]
+
+	// now, index p.
+	for (int i = 0; p[i]; i++) {
+
+		if (isupper(p[i]))
+			p[i] = tolower(p[i]);
+		else if (islower(p[i]))
+			p[i] = toupper(p[i]);
+
+	}
 }
