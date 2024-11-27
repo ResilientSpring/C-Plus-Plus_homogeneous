@@ -15,6 +15,6 @@ int main() {
 	// because the * operation has a higher priority than the + operation.
 	// Without them, the expression would first find the value pointed to by p1 
 	// (the first location in the array) and then add 4 to it.
-	printf(" *p1 + 4 is %c.  \n", *p1 + 4);
+	printf(" *p1 + 4  is %c.  \n", *p1 + 4);
 
 }
