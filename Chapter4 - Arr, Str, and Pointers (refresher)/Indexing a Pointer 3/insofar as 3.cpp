@@ -11,7 +11,7 @@ int main() {
 
 	printf("Original string: %s \n", str);
 
-	p = &str[5]; 
+	p = &str[8]; 
 
 	printf("p is %s \n", p);
 
