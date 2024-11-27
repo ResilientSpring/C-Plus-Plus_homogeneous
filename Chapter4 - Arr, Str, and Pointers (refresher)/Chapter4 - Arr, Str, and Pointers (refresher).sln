@@ -201,6 +201,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Indexing a Pointer 3", "Ind
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Indexing a Pointer 2_1", "Indexing a Pointer 2_1\Indexing a Pointer 2_1.vcxproj", "{2C259044-04C8-401D-AEC3-4B8D086CD9F9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Indexing a Pointer 4", "Indexing a Pointer 4\Indexing a Pointer 4.vcxproj", "{F2529C60-E9E7-4CB5-A022-15E55BE8DE95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1001,6 +1003,14 @@ Global
 		{2C259044-04C8-401D-AEC3-4B8D086CD9F9}.Release|x64.Build.0 = Release|x64
 		{2C259044-04C8-401D-AEC3-4B8D086CD9F9}.Release|x86.ActiveCfg = Release|Win32
 		{2C259044-04C8-401D-AEC3-4B8D086CD9F9}.Release|x86.Build.0 = Release|Win32
+		{F2529C60-E9E7-4CB5-A022-15E55BE8DE95}.Debug|x64.ActiveCfg = Debug|x64
+		{F2529C60-E9E7-4CB5-A022-15E55BE8DE95}.Debug|x64.Build.0 = Debug|x64
+		{F2529C60-E9E7-4CB5-A022-15E55BE8DE95}.Debug|x86.ActiveCfg = Debug|Win32
+		{F2529C60-E9E7-4CB5-A022-15E55BE8DE95}.Debug|x86.Build.0 = Debug|Win32
+		{F2529C60-E9E7-4CB5-A022-15E55BE8DE95}.Release|x64.ActiveCfg = Release|x64
+		{F2529C60-E9E7-4CB5-A022-15E55BE8DE95}.Release|x64.Build.0 = Release|x64
+		{F2529C60-E9E7-4CB5-A022-15E55BE8DE95}.Release|x86.ActiveCfg = Release|Win32
+		{F2529C60-E9E7-4CB5-A022-15E55BE8DE95}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
