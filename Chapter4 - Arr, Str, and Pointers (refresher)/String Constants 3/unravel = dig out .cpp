@@ -10,6 +10,6 @@ int main() {
 	cout << ptr << endl;
 
 	printf("%c \n", *(ptr + 2));
-	printf("%s \n", *(ptr + 2));
+	// printf("%s \n", *(ptr + 2));
 
 }
