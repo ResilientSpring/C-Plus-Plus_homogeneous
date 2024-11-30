@@ -8,9 +8,9 @@ int main(int argc, char** argv) { // argv is a pointer to an array of character 
 
 	char* an_array_of_char_pointers2[] = { "" };
 
-	char** a_pointer_to_an_array_of_pointer;
+	char** a_pointer_to_an_array_of_character_pointers;
 
-	a_pointer_to_an_array_of_pointer = an_array_of_char_pointers2;
+	a_pointer_to_an_array_of_character_pointers = an_array_of_char_pointers2;
 
 	char an_array_of_characters[] = "an array of characters.";
 
