@@ -15,6 +15,8 @@ int main(int argc, char** argv) { // argv is a pointer to an array of character 
 
 	a_pointer_to_an_array_of_character_pointers = an_array_of_char_pointers2;
 
+	a_pointer_to_an_array_of_character_pointers = &an_array_of_char_pointers2[0];
+
 }
 
 char* an_array_of_char_pointers3[];
