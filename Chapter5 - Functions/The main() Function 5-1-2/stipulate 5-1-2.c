@@ -9,7 +9,7 @@ int main(int argc, char** argv) { // argv is a pointer to an array of character 
 
 	char* an_array_of_char_pointers2[] = { "rudiment", " means ", "basic. \n"};
 
-	
+	// Now, declare a pointer to an array of character 
 
 }
 
