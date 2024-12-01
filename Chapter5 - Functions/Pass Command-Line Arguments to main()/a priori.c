@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 // Display command-line arguments.
 int main(int argc, char* argv[]) {
 
