@@ -22,6 +22,7 @@ int main(int argc, char** argv) { // argv is a pointer to an array of character 
 
 	printf("%s \n", a_pointer_to_an_array_of_character_pointers[0]);
 
+	printf("%c \n", *a_pointer_to_an_array_of_character_pointers[0]);
 
 	printf("%c \n", a_pointer_to_an_array_of_character_pointers[0][0]);
 
