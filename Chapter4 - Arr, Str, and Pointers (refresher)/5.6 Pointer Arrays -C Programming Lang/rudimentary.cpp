@@ -9,4 +9,6 @@ int main() {
 
 	printf("%s \n", lineptr[0]);
 
+	printf("%c \n", *lineptr[0]);
+
 }
