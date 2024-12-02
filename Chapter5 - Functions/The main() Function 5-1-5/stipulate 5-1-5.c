@@ -6,8 +6,6 @@ int main(int argc, char** argv) { // argv is a pointer to an array of character 
 								  // argv is a pointer to an array of character strings.[2]
 
 
-//	char* an_array_of_char_pointers[] = "";
-
 	char* an_array_of_char_pointers2[] = { "rudiment", " means ", "basic. \n" };
 
 	// Now, declare a pointer to an array of character pointers.
