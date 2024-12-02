@@ -11,4 +11,6 @@ int main() {
 
 	printf("%c \n", *lineptr[0]);
 
+	printf("%s \n", &lineptr[0]);
+
 }
