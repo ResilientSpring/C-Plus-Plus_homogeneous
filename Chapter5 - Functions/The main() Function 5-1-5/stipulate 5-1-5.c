@@ -18,6 +18,8 @@ int main(int argc, char** argv) { // argv is a pointer to an array of character 
 
 	printf("%c \n", a_pointer_to_an_array_of_character_pointers[0][0]);
 
+	printf("%c \n", *a_pointer_to_an_array_of_character_pointers[0]);
+
 }
 
 char* an_array_of_char_pointers3[];
