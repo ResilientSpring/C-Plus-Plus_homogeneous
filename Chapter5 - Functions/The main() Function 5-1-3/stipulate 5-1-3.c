@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 
 int main(int argc, char** argv) { // argv is a pointer to an array of character pointers.[1]
 								  // argv is an  array of an array of character. 
