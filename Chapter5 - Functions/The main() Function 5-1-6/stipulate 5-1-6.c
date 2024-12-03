@@ -12,7 +12,7 @@ int main(int argc, char** argv) { // argv is a pointer to an array of character 
 	int* e = &b;
 	int* f = &c;
 
-	char* an_array_of_int_pointers[] = { "rudiment", " means ", "basic. \n" };
+	int* an_array_of_int_pointers[] = { "rudiment", " means ", "basic. \n" };
 
 	// Now, declare a pointer to an array of character pointers.
 	char** a_pointer_to_an_array_of_character_pointers;
