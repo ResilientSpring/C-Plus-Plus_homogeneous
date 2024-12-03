@@ -19,11 +19,13 @@ int main(int argc, char** argv) { // argv is a pointer to an array of character 
 
 	a_pointer_to_an_array_of_int_pointers = an_array_of_int_pointers;
 
-	printf("%s \n", a_pointer_to_an_array_of_int_pointers[0]);   // print rudiment
+	printf("%d \n", a_pointer_to_an_array_of_int_pointers[0]);   // print rudiment
 
 	printf("%c \n", a_pointer_to_an_array_of_int_pointers[0][0]);  // print r
 
 	printf("%c \n", *a_pointer_to_an_array_of_int_pointers[0]);  // print r
+
+	printf("%d \n", *an_array_of_int_pointers[0]);
 
 }
 
