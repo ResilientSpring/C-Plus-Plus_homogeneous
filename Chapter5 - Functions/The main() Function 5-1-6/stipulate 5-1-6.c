@@ -5,6 +5,12 @@ int main(int argc, char** argv) { // argv is a pointer to an array of character 
 								  // argv is a pointer to pointers to string.
 								  // argv is a pointer to an array of character strings.[2]
 
+	
+	int a, b, c;
+
+	int* d = &a;
+	int* e = &b;
+	int* f = &c;
 
 	char* an_array_of_int_pointers[] = { "rudiment", " means ", "basic. \n" };
 
