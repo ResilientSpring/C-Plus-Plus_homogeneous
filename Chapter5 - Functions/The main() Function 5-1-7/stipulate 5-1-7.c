@@ -6,7 +6,7 @@ int main(int argc, char** argv) { // argv is a pointer to an array of character 
 	// argv is a pointer to an array of character strings.[2]
 
 
-	int a, b, c;
+	int a = 11, b = 12, c = 13;
 
 	int* d = &a;
 	int* e = &b;
