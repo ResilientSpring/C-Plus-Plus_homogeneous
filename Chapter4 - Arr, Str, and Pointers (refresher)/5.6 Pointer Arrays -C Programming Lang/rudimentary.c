@@ -14,4 +14,8 @@ int main() {
 
 	if (FileName == FileName2)
 		printf("char* FileName == char FileName2[] \n");
+	else
+		printf("char* FileName != char FileName2[] \n");
+
+
 }
