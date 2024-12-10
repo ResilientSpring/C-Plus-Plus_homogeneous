@@ -18,5 +18,6 @@ int main() {
 		printf("char* FileName != char FileName2[] \n");
 
 
-	
+	printf("FileName is %s \n", FileName);
+	printf("FileName2 is %s \n", FileName2);
 }
