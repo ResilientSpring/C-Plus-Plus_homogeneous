@@ -32,4 +32,6 @@ int main() {
 	// may be subsequently modified to point to elsewhere, but the result is undefined 
 	// if you try to modify the string content.
 	printf("%c \n", pmessage[1]);
+	pmessage[1] = 'e';
+	printf("%c \n", pmessage[1]);
 }
