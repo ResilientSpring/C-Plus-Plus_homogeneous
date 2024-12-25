@@ -4,9 +4,17 @@ struct structure {
 
 };
 
+typedef struct {
+	
+	char* name;
+
+} glob;
+
 int main() {
 
 	// structure clutter;
 	struct structure clutter;
+
+	glob clump;
 
 }
