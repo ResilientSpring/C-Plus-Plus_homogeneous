@@ -10,6 +10,12 @@ typedef struct {
 
 } glob;
 
+typedef struct lump {
+
+	long longer;
+
+} tumor;
+
 int main() {
 
 	// structure clutter;
