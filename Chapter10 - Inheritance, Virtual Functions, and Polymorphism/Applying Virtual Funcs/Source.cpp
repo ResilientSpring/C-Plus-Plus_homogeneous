@@ -3,8 +3,10 @@
 #include <cstring>
 using namespace std;
 
+// A class for two-dimensional objects. 
 class TwoDShape {
 
+	// these are private. 
 	double width;
 	double height;
 
