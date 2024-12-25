@@ -10,6 +10,7 @@ class TwoDShape {
 	double width;
 	double height;
 
+	// add a name field.
 	char name[20];
 
 public:
