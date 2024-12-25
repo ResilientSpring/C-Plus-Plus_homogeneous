@@ -23,4 +23,7 @@ int main() {
 
 	glob clump;
 
+//	lump cancer;
+	tumor cancer;
+
 }
