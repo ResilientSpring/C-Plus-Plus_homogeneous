@@ -12,7 +12,8 @@ int main() {
 	};
 
 	printf("To get the character 'a' in Mary, ");
-	printf(" access numbers[2][1], which is %c.\n", numbers[2][1]);
+	printf("access numbers[2][1], which is %c.\n", numbers[2][1]);
 
-	printf("To access an individual string, simply specify only the left index. %s.\n", numbers[2]);
+	printf("To access an individual string, ");
+	printf("simply specify only the left index. %s.\n", numbers[2]);
 }
