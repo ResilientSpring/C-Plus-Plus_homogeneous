@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33920.266
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Read a String from the Keyboard", "Read a String from the Keyboard\Read a String from the Keyboard.vcxproj", "{4E91DC1A-0BFC-4D2B-B98C-26DBF9097BFC}"
 EndProject
@@ -212,6 +212,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "String Constants 3", "String Constants 3\String Constants 3.vcxproj", "{D0D03E54-AF58-4BDA-8E33-C318B2FF96F5}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5.6 Pointer Arrays -C Programming Lang", "5.6 Pointer Arrays -C Programming Lang\5.6 Pointer Arrays -C Programming Lang.vcxproj", "{4B34C37B-02DA-4CB5-87C6-A1F2001E9E0D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays of Strings 1", "Arrays of Strings 1\Arrays of Strings 1.vcxproj", "{A1DF40DC-29A3-48E0-BBC8-83893CFB102D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1061,6 +1063,14 @@ Global
 		{4B34C37B-02DA-4CB5-87C6-A1F2001E9E0D}.Release|x64.Build.0 = Release|x64
 		{4B34C37B-02DA-4CB5-87C6-A1F2001E9E0D}.Release|x86.ActiveCfg = Release|Win32
 		{4B34C37B-02DA-4CB5-87C6-A1F2001E9E0D}.Release|x86.Build.0 = Release|Win32
+		{A1DF40DC-29A3-48E0-BBC8-83893CFB102D}.Debug|x64.ActiveCfg = Debug|x64
+		{A1DF40DC-29A3-48E0-BBC8-83893CFB102D}.Debug|x64.Build.0 = Debug|x64
+		{A1DF40DC-29A3-48E0-BBC8-83893CFB102D}.Debug|x86.ActiveCfg = Debug|Win32
+		{A1DF40DC-29A3-48E0-BBC8-83893CFB102D}.Debug|x86.Build.0 = Debug|Win32
+		{A1DF40DC-29A3-48E0-BBC8-83893CFB102D}.Release|x64.ActiveCfg = Release|x64
+		{A1DF40DC-29A3-48E0-BBC8-83893CFB102D}.Release|x64.Build.0 = Release|x64
+		{A1DF40DC-29A3-48E0-BBC8-83893CFB102D}.Release|x86.ActiveCfg = Release|Win32
+		{A1DF40DC-29A3-48E0-BBC8-83893CFB102D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
