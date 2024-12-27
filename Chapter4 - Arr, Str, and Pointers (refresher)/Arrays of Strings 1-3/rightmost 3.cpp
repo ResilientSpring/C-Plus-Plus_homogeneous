@@ -2,7 +2,6 @@
 
 int main() {
 
-	int i;
 	char numbers[10][80] = {
 
 		{'T', 'o', 'm'},
