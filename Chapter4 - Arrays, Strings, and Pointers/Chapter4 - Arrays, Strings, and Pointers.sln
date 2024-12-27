@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32228.343
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Read_a_string_from_the_keyboard", "Read_a_string_from_the_keyboard\Read_a_string_from_the_keyboard.vcxproj", "{642F6214-B333-4E5D-9117-72E959444AD4}"
 EndProject
@@ -168,6 +168,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Multidimensional Arrays 2", "Multidimensional Arrays 2\Multidimensional Arrays 2.vcxproj", "{67F8A326-6155-4A5C-84B3-293EAF05BFD0}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Multidimensional Arrays 3", "Multidimensional Arrays 3\Multidimensional Arrays 3.vcxproj", "{596192E6-452F-43D5-9E0E-88E1BFCCB989}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Two-Dimensional Arrays", "Two-Dimensional Arrays\Two-Dimensional Arrays.vcxproj", "{82EA480F-1443-4724-8D6D-89B918F4355E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -841,6 +843,14 @@ Global
 		{596192E6-452F-43D5-9E0E-88E1BFCCB989}.Release|x64.Build.0 = Release|x64
 		{596192E6-452F-43D5-9E0E-88E1BFCCB989}.Release|x86.ActiveCfg = Release|Win32
 		{596192E6-452F-43D5-9E0E-88E1BFCCB989}.Release|x86.Build.0 = Release|Win32
+		{82EA480F-1443-4724-8D6D-89B918F4355E}.Debug|x64.ActiveCfg = Debug|x64
+		{82EA480F-1443-4724-8D6D-89B918F4355E}.Debug|x64.Build.0 = Debug|x64
+		{82EA480F-1443-4724-8D6D-89B918F4355E}.Debug|x86.ActiveCfg = Debug|Win32
+		{82EA480F-1443-4724-8D6D-89B918F4355E}.Debug|x86.Build.0 = Debug|Win32
+		{82EA480F-1443-4724-8D6D-89B918F4355E}.Release|x64.ActiveCfg = Release|x64
+		{82EA480F-1443-4724-8D6D-89B918F4355E}.Release|x64.Build.0 = Release|x64
+		{82EA480F-1443-4724-8D6D-89B918F4355E}.Release|x86.ActiveCfg = Release|Win32
+		{82EA480F-1443-4724-8D6D-89B918F4355E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
