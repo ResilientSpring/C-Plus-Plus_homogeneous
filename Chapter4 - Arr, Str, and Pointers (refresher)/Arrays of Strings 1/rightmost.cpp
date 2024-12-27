@@ -34,5 +34,5 @@ int main() {
 			// and program control resumes at the next statement following the loop.
 		}
 
-	if (i == 10) cout << "Not foound." << endl;
+	if (i == 10) cout << "Not found." << endl;
 }
