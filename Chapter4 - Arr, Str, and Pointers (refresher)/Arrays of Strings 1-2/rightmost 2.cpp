@@ -3,7 +3,7 @@
 int main() {
 
 	int i;
-	char str[80];
+	char str[80];  // for cin.
 	char numbers[10][80] = {
 
 		{'T', 'o', 'm'},
@@ -13,5 +13,6 @@ int main() {
 
 	};
 
-
+	printf("To get the character 'a' in Mary, ");
+	printf(" access numbers[2][1], which is %c.\n", numbers[2][1]);
 }
