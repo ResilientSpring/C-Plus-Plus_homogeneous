@@ -8,5 +8,5 @@ int main() {
 
 	int* ip;
 
-
+	printf("ip %p .\n", &ip);
 }
