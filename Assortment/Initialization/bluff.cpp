@@ -6,4 +6,7 @@ int main() {
 
 	printf("i is %d.\n", i);
 
+	int* ip;
+
+
 }
