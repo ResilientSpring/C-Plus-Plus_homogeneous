@@ -26,7 +26,7 @@ int main() {
 	printf(" be the memory address immediately after str1; immediately after str1[79] in this case.\n");
 
 
-	int h = 0x00;
-	h = (&str1 + 1) - &str1[79];
-	printf("%p", (&str1 + 1) - &str1[79]);
+	// int h = 0x00;
+	// h = (&str1 + 1) - &str1[79];
+	// printf("%p", (&str1 + 1) - &str1[79]);
 }
