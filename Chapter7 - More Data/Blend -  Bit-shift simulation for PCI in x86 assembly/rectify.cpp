@@ -99,6 +99,8 @@ int show_binary3(long long number) {
 
 	}
 
+	printf("\n");
+
 	if (most_significant_bit && ordinal && least_significant_bit) {
 		decimal = 7;
 	}
