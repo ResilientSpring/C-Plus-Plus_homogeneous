@@ -144,7 +144,12 @@ int show_binary4(long long number) {
 
 		if (i & number) {
 
+			printf("1 ");
 
+		}
+		else {
+
+			printf("0 ");
 
 		}
 
