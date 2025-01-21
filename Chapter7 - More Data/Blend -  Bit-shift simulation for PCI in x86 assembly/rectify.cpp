@@ -140,5 +140,9 @@ int show_binary4(long long number) {
 	int second_highest_order = 0;
 	int most_significant_bit = 0;
 
+	for (int i = 32768; i >= 2048; i = i / 2) {
 
+
+
+	}
 }
