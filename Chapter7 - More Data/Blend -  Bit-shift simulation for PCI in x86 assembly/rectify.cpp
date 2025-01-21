@@ -59,6 +59,8 @@ void show_binary2(long long number) {
 void show_binary3(long long number) {
 
 	int ordinal = 0;
+	int least_significant_bit = 0;
+	int most_significant_bit = 0;
 
 	for (int i = 1024; i >= 256; i = i / 2) {
 
