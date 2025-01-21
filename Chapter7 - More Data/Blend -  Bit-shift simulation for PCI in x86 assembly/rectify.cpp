@@ -116,5 +116,8 @@ void show_binary3(long long number) {
 	else if (most_significant_bit == 0 && ordinal == 0 && least_significant_bit == 1) {
 		decimal = 1;
 	}
+	else {
+		decimal = 0;
+	}
 
 }
