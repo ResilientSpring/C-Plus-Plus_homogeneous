@@ -19,7 +19,12 @@ void show_binary(long long number) {
 
 		if (t & number) {
 
+			printf("1 ");
 
+		}
+		else {
+
+			printf("0 ");
 
 		}
 
