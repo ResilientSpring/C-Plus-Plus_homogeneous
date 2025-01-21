@@ -129,3 +129,16 @@ int show_binary3(long long number) {
 	return decimal;
 
 }
+
+
+// Determine the device number.
+int show_binary4(long long number) {
+
+	int decimal;
+	int least_significant_bit = 0;
+	int third_highest_order = 0;
+	int second_highest_order = 0;
+	int most_significant_bit = 0;
+
+
+}
