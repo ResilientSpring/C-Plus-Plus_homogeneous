@@ -2,6 +2,7 @@
 
 void show_binary(long long number);
 void show_binary2(long long number);
+int show_binary3(long long number);
 
 int main() {
 
@@ -14,6 +15,10 @@ int main() {
 	printf("\n");
 
 	show_binary(PCI_configuration_address);
+
+	printf("\n");
+
+	printf("%d\n", show_binary3(PCI_configuration_address));
 }
 
 void show_binary(long long number) {
@@ -53,4 +58,112 @@ void show_binary2(long long number) {
 
 	}
 
+}
+
+int show_binary3(long long number) {
+	
+	int decimal;
+	int ordinal = 0;
+	int least_significant_bit = 0;
+	int most_significant_bit = 0;
+
+	for (int i = 1024; i >= 256; i = i / 2) {
+
+		if (i & number) {
+
+			printf("1 ");
+
+			if (i == 1024) {
+
+				most_significant_bit = 1;
+
+			}
+			else if (i == 512) {
+
+				ordinal = 1;
+
+			}
+			else if (i == 256) {
+
+				least_significant_bit = 1;
+
+			}
+
+
+		}
+		else {
+
+			printf("0 ");
+
+		}
+
+	}
+
+	printf("\n");
+
+	if (most_significant_bit && ordinal && least_significant_bit) {
+		decimal = 7;
+	}
+	else if (most_significant_bit == 1 && ordinal == 1 && least_significant_bit == 0) {
+		decimal = 6;
+	}
+	else if (most_significant_bit == 1 && ordinal == 0 && least_significant_bit == 1) {
+		decimal = 5;
+	}
+	else if (most_significant_bit == 1 && ordinal == 0 && least_significant_bit == 0) {
+		decimal = 4;
+	}
+	else if (most_significant_bit == 0 && ordinal == 1 && least_significant_bit == 1) {
+		decimal = 3;
+	}
+	else if (most_significant_bit == 0 && ordinal == 1 && least_significant_bit == 0) {
+		decimal = 2;
+	}
+	else if (most_significant_bit == 0 && ordinal == 0 && least_significant_bit == 1) {
+		decimal = 1;
+	}
+	else {
+		decimal = 0;
+	}
+
+	return decimal;
+
+}
+
+
+// Determine the device number.
+int show_binary4(long long number) {
+
+	int decimal;
+	int least_significant_bit = 0;
+	int fourth_highest_order = 0;
+	int third_highest_order = 0;
+	int second_highest_order = 0;
+	int most_significant_bit = 0;
+
+	for (int i = 32768; i >= 2048; i = i / 2) {
+
+		if (i & number) {
+
+			printf("1 ");
+
+			if (i == 32768)
+				most_significant_bit = 1;
+			else if (i == 16384)
+				second_highest_order = 1;
+			else if (i == 8192)
+				third_highest_order = 1;
+			else if (i == 4096)
+				fourth_highest_order = 1;
+			else if (i == 2048)
+				least_significant_bit = 1;
+
+		}
+		else {
+
+			printf("0 ");
+
+		}
+
+	}
 }
