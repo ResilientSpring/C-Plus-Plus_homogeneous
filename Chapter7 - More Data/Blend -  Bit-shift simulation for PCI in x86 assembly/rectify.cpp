@@ -30,7 +30,16 @@ void show_binary2(long long number) {
 
 	for (int i = 1024; i >= 256; i = i / 2) {
 
+		if (i & number) {
 
+			printf("1 ");
+
+		}
+		else {
+
+			printf("0 ");
+
+		}
 
 	}
 
