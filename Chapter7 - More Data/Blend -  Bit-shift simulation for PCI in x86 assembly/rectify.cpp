@@ -57,7 +57,8 @@ void show_binary2(long long number) {
 }
 
 void show_binary3(long long number) {
-
+	
+	int decimal;
 	int ordinal = 0;
 	int least_significant_bit = 0;
 	int most_significant_bit = 0;
@@ -92,6 +93,22 @@ void show_binary3(long long number) {
 
 		}
 
+	}
+
+	if (most_significant_bit && ordinal && least_significant_bit) {
+		decimal = 7;
+	}
+	else if (most_significant_bit == 1 && ordinal == 1 && least_significant_bit == 0) {
+		decimal = 6;
+	}
+	else if (most_significant_bit == 1 && ordinal == 0 && least_significant_bit == 1) {
+		decimal = 5;
+	}
+	else if (most_significant_bit == 1 && ordinal == 0 && least_significant_bit == 0) {
+		decimal = 4;
+	}
+	else if (most_significant_bit == 0 && ordinal == 1 && least_significant_bit == 1) {
+		decimal = 3;
 	}
 
 }
