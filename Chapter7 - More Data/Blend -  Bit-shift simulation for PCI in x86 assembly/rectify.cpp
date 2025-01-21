@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 void show_binary(int number);
+void show_binary2(long long number);
 
 int main() {
 
@@ -21,6 +22,12 @@ void show_binary(long long number) {
 		}
 
 	}
+
+
+}
+
+void show_binary2(long long number) {
+
 
 
 }
