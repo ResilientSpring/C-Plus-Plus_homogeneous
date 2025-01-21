@@ -18,7 +18,7 @@ int main() {
 
 void show_binary(long long number) {
 
-	for (long long t = 2417483648; t > 0; t /= 2) {
+	for (long long t = 2147483648; t > 0; t /= 2) {
 
 		if (t & number) {
 
