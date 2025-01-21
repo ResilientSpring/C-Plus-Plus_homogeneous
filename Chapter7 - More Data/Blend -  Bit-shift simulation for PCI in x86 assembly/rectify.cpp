@@ -11,6 +11,7 @@ int main() {
 
 	show_binary2(PCI_configuration_address);
 
+	show_binary(PCI_configuration_address);
 }
 
 void show_binary(long long number) {
