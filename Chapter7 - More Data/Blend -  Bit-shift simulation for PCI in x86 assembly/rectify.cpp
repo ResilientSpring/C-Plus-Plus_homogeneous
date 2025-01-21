@@ -2,7 +2,7 @@
 
 void show_binary(long long number);
 void show_binary2(long long number);
-void show_binary3(long long number);
+int show_binary3(long long number);
 
 int main() {
 
