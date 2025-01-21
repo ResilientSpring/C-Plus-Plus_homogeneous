@@ -68,6 +68,23 @@ void show_binary3(long long number) {
 
 			printf("1 ");
 
+			if (i == 1024) {
+
+				most_significant_bit = 1;
+
+			}
+			else if (i == 512) {
+
+				ordinal = 1;
+
+			}
+			else if (i == 256) {
+
+				least_significant_bit = 1;
+
+			}
+
+
 		}
 		else {
 
