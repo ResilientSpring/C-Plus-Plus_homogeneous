@@ -15,6 +15,10 @@ int main() {
 	printf("\n");
 
 	show_binary(PCI_configuration_address);
+
+	printf("\n");
+
+	printf("%d\n", show_binary3(PCI_configuration_address));
 }
 
 void show_binary(long long number) {
