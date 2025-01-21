@@ -142,7 +142,11 @@ int show_binary4(long long number) {
 
 	for (int i = 32768; i >= 2048; i = i / 2) {
 
+		if (i & number) {
 
+
+
+		}
 
 	}
 }
