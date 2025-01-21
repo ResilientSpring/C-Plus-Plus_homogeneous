@@ -11,6 +11,8 @@ int main() {
 
 	show_binary2(PCI_configuration_address);
 
+	printf("\n");
+
 	show_binary(PCI_configuration_address);
 }
 
