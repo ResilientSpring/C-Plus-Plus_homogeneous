@@ -136,6 +136,7 @@ int show_binary4(long long number) {
 
 	int decimal;
 	int least_significant_bit = 0;
+	int fourth_highest_order = 0;
 	int third_highest_order = 0;
 	int second_highest_order = 0;
 	int most_significant_bit = 0;
@@ -145,6 +146,17 @@ int show_binary4(long long number) {
 		if (i & number) {
 
 			printf("1 ");
+
+			if (i == 32768)
+				most_significant_bit = 1;
+			else if (i == 16384)
+				second_highest_order = 1;
+			else if (i == 8192)
+				third_highest_order = 1;
+			else if (i == 4096)
+				fourth_highest_order = 1;
+			else if (i == 2048)
+				least_significant_bit = 1;
 
 		}
 		else {
