@@ -56,7 +56,7 @@ void show_binary2(long long number) {
 
 }
 
-void show_binary3(long long number) {
+int show_binary3(long long number) {
 	
 	int decimal;
 	int ordinal = 0;
@@ -119,5 +119,7 @@ void show_binary3(long long number) {
 	else {
 		decimal = 0;
 	}
+
+	return decimal;
 
 }
