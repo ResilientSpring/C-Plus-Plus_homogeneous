@@ -9,6 +9,8 @@ int main() {
 
 	long long PCI_config_addr_right_shifted = PCI_configuration_address >> 8;
 
+	show_binary2(PCI_configuration_address);
+
 }
 
 void show_binary(long long number) {
