@@ -7,7 +7,7 @@ int main() {
 
 	long long PCI_configuration_address = 0x8002080c;
 
-	PCI_configuration_address = PCI_configuration_address >> 8;
+	long long PCI_configuration_address_right_shifted = PCI_configuration_address >> 8;
 
 }
 
