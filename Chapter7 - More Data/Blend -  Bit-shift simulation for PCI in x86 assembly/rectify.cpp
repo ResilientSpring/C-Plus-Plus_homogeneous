@@ -12,7 +12,7 @@ int main() {
 
 void show_binary(int number) {
 
-	for (int t = 4294967295; t > 0; t /= 2) {
+	for (long long t = 4294967295; t > 0; t /= 2) {
 
 
 
