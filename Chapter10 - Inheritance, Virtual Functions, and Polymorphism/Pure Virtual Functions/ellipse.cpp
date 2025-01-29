@@ -68,6 +68,17 @@ public:
 
 };
 
+// Triangle is derived from TwoDShape.
+class Triangle : public TwoDShape {
+
+	char style[20];   // now private.
+
+public:
+
+
+
+};
+
 int main() {
 
 
