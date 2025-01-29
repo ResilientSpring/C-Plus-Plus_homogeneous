@@ -75,7 +75,7 @@ class Triangle : public TwoDShape {
 
 public:
 
-
+	// A default constructor. This automatically invokes the default constructor of TwoDShape.
 
 };
 
