@@ -29,6 +29,11 @@ public:
 		strcpy(name, n);
 	}
 
+	// Construct object with eual width and height.
+	TwoDShape(double x, char* n) {
+		width = height = x;
+		strcpy(name, n);
+	}
 };
 
 int main() {
