@@ -34,6 +34,12 @@ public:
 		width = height = x;
 		strcpy(name, n);
 	}
+
+	void showDim() {
+		
+		printf("width and height are %f and %f.\n", width, height);
+
+	}
 };
 
 int main() {
