@@ -40,6 +40,32 @@ public:
 		printf("width and height are %f and %f.\n", width, height);
 
 	}
+
+	// accessor functions
+	double getWidth() {
+		return width;
+	}
+
+	double getHeight() {
+
+		return height;
+	}
+
+	void setWidth(double w) {
+		width = w;
+	}
+
+	void setHeight(double h) {
+		height = h;
+	}
+
+	char* getName() {
+		return name;
+	}
+
+	// area() is now a pure virtual function.
+	virtual double area() = 0;
+
 };
 
 int main() {
