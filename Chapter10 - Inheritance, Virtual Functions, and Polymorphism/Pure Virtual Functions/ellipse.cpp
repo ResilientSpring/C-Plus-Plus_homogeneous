@@ -24,8 +24,9 @@ public:
 	// Constructor for TwoDShape.
 	TwoDShape(double w, double h, char* n) {
 
-
-
+		width = w;
+		height = h;
+		strcpy(name, n);
 	}
 
 };
