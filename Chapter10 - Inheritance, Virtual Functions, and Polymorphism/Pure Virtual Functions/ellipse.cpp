@@ -21,6 +21,13 @@ public:
 		strcpy(name, "unknown");
 	}
 
+	// Constructor for TwoDShape.
+	TwoDShape(double w, double h, char* n) {
+
+
+
+	}
+
 };
 
 int main() {
