@@ -15,6 +15,11 @@ class TwoDShape {
 
 public:
 
+	// Default constructor. 
+	TwoDShape() {
+		width = height = 0.0;
+		strcpy(name, "unknown");
+	}
 
 };
 
