@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ellipse.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="oval.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
