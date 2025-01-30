@@ -98,11 +98,11 @@ public:
 	}
 
 	// This now overrides area() declared in TwoDShape.
-	double area() {
+	//double area() {
 
-		return getWidth() * getHeight() / 2;
+	//	return getWidth() * getHeight() / 2;
 
-	}
+	//}
 
 	void showStyle() {
 
