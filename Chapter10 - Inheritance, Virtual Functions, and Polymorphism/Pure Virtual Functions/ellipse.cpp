@@ -112,6 +112,21 @@ public:
 };
 
 // A derived class of TwoDShape for rectangles.
+class Rectangle : public TwoDShape {
+
+public:
+
+	// Construct a rectangle. 
+	Rectangle(double w, double h) : TwoDShape(w, h, "rectangle") {
+
+	}
+
+	// Construct a square.
+	Rectangle(double x) :TwoDShape(x, "rectangle") {
+
+	}
+
+};
 
 int main() {
 
