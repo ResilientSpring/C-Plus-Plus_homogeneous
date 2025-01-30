@@ -84,7 +84,7 @@ public:
 	}
 
 	// Constructor with three parameeters.
-	Triangle(char* str, double w, double h) : TwoDShape(w, h, "triangle") {
+	Triangle(const char* str, double w, double h) : TwoDShape(w, h, "triangle") {
 		
 		strcpy(style, str);
 
@@ -149,5 +149,6 @@ int main() {
 	TwoDShape* shapes[4];
 
 	shapes[0] = &Triangle("right", 8.0, 12.0);
-
+	shapes[1] = &Rectangle(10);
+	shapes[2] = &Rectangle(10, 4);
 }
