@@ -97,7 +97,7 @@ public:
 
 	}
 
-	// This now overloads area() declared in TwoDShape.
+	// This now overrides area() declared in TwoDShape.
 	double area() {
 
 		return getWidth() * getHeight() / 2;
