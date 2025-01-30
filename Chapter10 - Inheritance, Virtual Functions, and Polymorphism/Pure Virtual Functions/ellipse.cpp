@@ -103,7 +103,15 @@ public:
 		return getWidth() * getHeight() / 2;
 
 	}
+
+	void showStyle() {
+
+		printf("Triangle is %s.\n", style);
+
+	}
 };
+
+
 
 int main() {
 
