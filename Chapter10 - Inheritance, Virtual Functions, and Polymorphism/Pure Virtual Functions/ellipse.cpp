@@ -84,11 +84,19 @@ public:
 	}
 
 	// Constructor with three parameeters.
-	Triangle(char* str, double w, double h) :TwoDShape(w, h, "triangle") {
+	Triangle(char* str, double w, double h) : TwoDShape(w, h, "triangle") {
 		
 		strcpy(style, str);
 
 	}
+
+	// Construct an isosceles triangle.
+	Triangle(double X) : TwoDShape(X, "triangle") {
+
+		strcpy(style, "isosceles");
+
+	}
+
 };
 
 int main() {
