@@ -151,4 +151,10 @@ int main() {
 	shapes[0] = &Triangle("right", 8.0, 12.0);
 	shapes[1] = &Rectangle(10);
 	shapes[2] = &Rectangle(10, 4);
+	shapes[3] = &Triangle(7.0);
+
+	for (int i = 0; i < 4; i++)
+	{
+		printf("object is %s.\n", shapes[i]->getName());
+	}
 }
