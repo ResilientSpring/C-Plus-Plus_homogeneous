@@ -65,7 +65,7 @@ public:
 	}
 
 	// area() is now a pure virtual function.
-	//virtual double area() = 0;
+	virtual double area() = 0;
 
 };
 
