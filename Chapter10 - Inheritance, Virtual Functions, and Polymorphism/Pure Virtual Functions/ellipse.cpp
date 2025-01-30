@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NOWARNINGS
+#define _CRT_SECURE_NO_WARNINGS
 // Use a pure virtual function.
 #include <iostream>
 #include <cstring>
