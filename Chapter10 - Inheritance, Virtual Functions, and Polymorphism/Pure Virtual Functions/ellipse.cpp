@@ -134,6 +134,13 @@ public:
 		return false;
 	}
 
+	// This is another override of area().
+	double area() {
+
+		return getWidth() * getHeight();
+
+	}
+
 };
 
 int main() {
