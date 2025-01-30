@@ -23,7 +23,7 @@ public:
 	}
 
 	// Constructor for TwoDShape.
-	TwoDShape(double w, double h, char* n) {
+	TwoDShape(double w, double h, const char* n) {
 
 		width = w;
 		height = h;
@@ -31,7 +31,7 @@ public:
 	}
 
 	// Construct object with eual width and height.
-	TwoDShape(double x, char* n) {
+	TwoDShape(double x, const char* n) {
 		width = height = x;
 		strcpy(name, n);
 	}
