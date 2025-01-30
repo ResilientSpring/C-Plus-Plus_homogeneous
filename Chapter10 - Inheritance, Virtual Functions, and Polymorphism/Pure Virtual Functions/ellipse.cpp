@@ -111,7 +111,7 @@ public:
 	}
 };
 
-
+// A derived class of TwoDShape for rectangles.
 
 int main() {
 
