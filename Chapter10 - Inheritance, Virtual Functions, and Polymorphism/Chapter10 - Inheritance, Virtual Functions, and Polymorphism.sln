@@ -97,6 +97,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pure Virtual Function 2", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointer to DerivedType3", "Pointer to DerivedType3\Pointer to DerivedType3.vcxproj", "{AF22A0C7-EE70-4E0B-AE85-052E2C5DCC9B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointer to DerivedType1", "Pointer to DerivedType1\Pointer to DerivedType1.vcxproj", "{910E8D2E-6E0F-4B65-AACD-E9E7B3D6F614}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -481,6 +483,14 @@ Global
 		{AF22A0C7-EE70-4E0B-AE85-052E2C5DCC9B}.Release|x64.Build.0 = Release|x64
 		{AF22A0C7-EE70-4E0B-AE85-052E2C5DCC9B}.Release|x86.ActiveCfg = Release|Win32
 		{AF22A0C7-EE70-4E0B-AE85-052E2C5DCC9B}.Release|x86.Build.0 = Release|Win32
+		{910E8D2E-6E0F-4B65-AACD-E9E7B3D6F614}.Debug|x64.ActiveCfg = Debug|x64
+		{910E8D2E-6E0F-4B65-AACD-E9E7B3D6F614}.Debug|x64.Build.0 = Debug|x64
+		{910E8D2E-6E0F-4B65-AACD-E9E7B3D6F614}.Debug|x86.ActiveCfg = Debug|Win32
+		{910E8D2E-6E0F-4B65-AACD-E9E7B3D6F614}.Debug|x86.Build.0 = Debug|Win32
+		{910E8D2E-6E0F-4B65-AACD-E9E7B3D6F614}.Release|x64.ActiveCfg = Release|x64
+		{910E8D2E-6E0F-4B65-AACD-E9E7B3D6F614}.Release|x64.Build.0 = Release|x64
+		{910E8D2E-6E0F-4B65-AACD-E9E7B3D6F614}.Release|x86.ActiveCfg = Release|Win32
+		{910E8D2E-6E0F-4B65-AACD-E9E7B3D6F614}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
