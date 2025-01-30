@@ -30,7 +30,7 @@ public:
 		strcpy(name, n);
 	}
 
-	// Construct object with eual width and height.
+	// Construct object with equal width and height.
 	TwoDShape(double x, const char* n) {
 		width = height = x;
 		strcpy(name, n);
