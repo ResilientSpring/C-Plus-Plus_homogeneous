@@ -37,7 +37,7 @@ public:
 	}
 
 	void showDim() {
-		
+
 		printf("width and height are %f and %f.\n", width, height);
 
 	}
@@ -85,7 +85,7 @@ public:
 
 	// Constructor with three parameeters.
 	Triangle(const char* str, double w, double h) : TwoDShape(w, h, "triangle") {
-		
+
 		strcpy(style, str);
 
 	}
@@ -98,11 +98,11 @@ public:
 	}
 
 	// This now overrides area() declared in TwoDShape.
-	double area() {
+	//double area() {
 
-		return getWidth() * getHeight() / 2;
+	//	return getWidth() * getHeight() / 2;
 
-	}
+	//}
 
 	void showStyle() {
 
@@ -162,16 +162,3 @@ int main() {
 		printf("\n");
 	}
 }
-
-/*
-
-Question: Error C2102: '&' requires l-value, VS2019. How to fix?
-
-Answer:
-You can work around this issue for now by disabling /permissive- by changing "Conformance Mode" to
-"No" in the C/C++ -> Language project settings.[1]
-
-References:
-1. https://stackoverflow.com/a/65547916
-
-*/
