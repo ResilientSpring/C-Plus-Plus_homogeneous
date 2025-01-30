@@ -158,5 +158,7 @@ int main() {
 		printf("object is %s.\n", shapes[i]->getName());
 
 		printf("Area is %f.\n", shapes[i]->area());
+
+		printf("\n");
 	}
 }
