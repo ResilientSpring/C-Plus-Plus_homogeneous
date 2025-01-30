@@ -156,5 +156,7 @@ int main() {
 	for (int i = 0; i < 4; i++)
 	{
 		printf("object is %s.\n", shapes[i]->getName());
+
+		printf("Area is %f.\n", shapes[i]->area());
 	}
 }
