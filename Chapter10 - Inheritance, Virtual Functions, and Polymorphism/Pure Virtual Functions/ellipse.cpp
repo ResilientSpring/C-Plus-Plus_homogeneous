@@ -82,6 +82,13 @@ public:
 		strcpy(style, "unknown");
 
 	}
+
+	// Constructor with three parameeters.
+	Triangle(char* str, double w, double h) :TwoDShape(w, h, "triangle") {
+		
+		strcpy(style, str);
+
+	}
 };
 
 int main() {
