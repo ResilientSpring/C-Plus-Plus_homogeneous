@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 // Use a pure virtual function.
 #include <iostream>
 #include <cstring>
@@ -22,7 +23,7 @@ public:
 	}
 
 	// Constructor for TwoDShape.
-	TwoDShape(double w, double h, char* n) {
+	TwoDShape(double w, double h, const char* n) {
 
 		width = w;
 		height = h;
@@ -30,7 +31,7 @@ public:
 	}
 
 	// Construct object with eual width and height.
-	TwoDShape(double x, char* n) {
+	TwoDShape(double x, const char* n) {
 		width = height = x;
 		strcpy(name, n);
 	}
@@ -76,11 +77,78 @@ class Triangle : public TwoDShape {
 public:
 
 	// A default constructor. This automatically invokes the default constructor of TwoDShape.
+	Triangle() {
+
+		strcpy(style, "unknown");
+
+	}
+
+	// Constructor with three parameeters.
+	Triangle(const char* str, double w, double h) : TwoDShape(w, h, "triangle") {
+		
+		strcpy(style, str);
+
+	}
+
+	// Construct an isosceles triangle.
+	Triangle(double X) : TwoDShape(X, "triangle") {
+
+		strcpy(style, "isosceles");
+
+	}
+
+	// This now overloads area() declared in TwoDShape.
+	double area() {
+
+		return getWidth() * getHeight() / 2;
+
+	}
+
+	void showStyle() {
+
+		printf("Triangle is %s.\n", style);
+
+	}
+};
+
+// A derived class of TwoDShape for rectangles.
+class Rectangle : public TwoDShape {
+
+public:
+
+	// Construct a rectangle. 
+	Rectangle(double w, double h) : TwoDShape(w, h, "rectangle") {
+
+	}
+
+	// Construct a square.
+	Rectangle(double x) :TwoDShape(x, "rectangle") {
+
+	}
+
+	bool isSquare() {
+
+		if (getWidth() == getHeight())
+			return true;
+
+		return false;
+	}
+
+	// This is another override of area().
+	double area() {
+
+		return getWidth() * getHeight();
+
+	}
 
 };
 
 int main() {
 
+	// declare an array of pointers to TwoDShape objects.
+	TwoDShape* shapes[4];
 
-
+	shapes[0] = &Triangle("right", 8.0, 12.0);
+	shapes[1] = &Rectangle(10);
+	shapes[2] = &Rectangle(10, 4);
 }
