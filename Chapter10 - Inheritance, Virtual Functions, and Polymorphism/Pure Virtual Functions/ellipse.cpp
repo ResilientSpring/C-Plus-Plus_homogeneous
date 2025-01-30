@@ -97,6 +97,12 @@ public:
 
 	}
 
+	// This now overloads area() declared in TwoDShape.
+	double area() {
+
+		return getWidth() * getHeight() / 2;
+
+	}
 };
 
 int main() {
