@@ -20,7 +20,7 @@ public:
 
 		time(&rawtime);
 		timeinfo = localtime(&rawtime);
-		printf("Current local time and date: %s", asctime(timeinfo));
+		printf("Current local time and date: %s\n", asctime(timeinfo));
 
 	}
 
