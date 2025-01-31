@@ -1,5 +1,5 @@
 // A short example that uses a virtual function.
-
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <time.h>    // [1]
 using namespace std;
