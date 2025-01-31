@@ -56,4 +56,9 @@ int main() {
 	tray(base, child);
 
 	printf("child's a is %d and b is %d.\n", child.a, child.b);
+
+	// A base class reference parameter can receive objects of the base class as well as any other 
+	// type derived from that base.
+	tray(child, child);
+
 }
