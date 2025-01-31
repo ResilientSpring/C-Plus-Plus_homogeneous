@@ -100,9 +100,9 @@ int main() {
 	// that were inherited from base class.
 	// 
 	// However, with virtual, a base class pointer can also access parts of a derived class' object 
-	// that were virtual. 
+	// that were declared as virtual in a base class and refined in the derived class. 
 
-	//
+	// 
 }
 
 // Reference: 
