@@ -18,7 +18,7 @@ class D1 : public B {
 
 public:
 
-	// redefine who() for B1
+	// redefine who() for D1
 	void who() {
 
 		cout << "First derivation\n";
