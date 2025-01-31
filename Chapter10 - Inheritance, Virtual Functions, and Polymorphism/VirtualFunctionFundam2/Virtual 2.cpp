@@ -107,6 +107,8 @@ int main() {
 	//
 	// However, with virtual, a base class pointer can also access a derived class' object's portions
 	// that were declared as virtual in the base class and refined in this derived class.
+	//
+	// Here, "access" and "see" are interchangeable. 
 }
 
 // Reference: 
