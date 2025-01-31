@@ -95,6 +95,9 @@ int main() {
 	p = &D2_obj;
 	p->who();
 	p->when();
+
+	// In other words, normally, a base class pointer can only access parts of a derived class' object
+	// that were inherited from base class.
 }
 
 // Reference: 
