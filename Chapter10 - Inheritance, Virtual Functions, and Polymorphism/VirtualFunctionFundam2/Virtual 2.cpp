@@ -82,11 +82,15 @@ int main() {
 	p = &base_obj;
 
 	p->who();
-	p->when();
+	p->when(); 
 
 	p = &D1_obj;
 	p->who();
 	p->when();
+
+	// Since when() is not declared as a virtual function in the base class, a base class pointer can
+	// be used to access only those parts of a derived class' object that were inherited from the 
+	// base class.
 
 	p = &D2_obj;
 	p->who();
