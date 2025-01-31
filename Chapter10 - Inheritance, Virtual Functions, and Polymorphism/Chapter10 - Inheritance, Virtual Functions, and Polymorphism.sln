@@ -99,6 +99,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointer to DerivedType3", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointer to DerivedType1", "Pointer to DerivedType1\Pointer to DerivedType1.vcxproj", "{910E8D2E-6E0F-4B65-AACD-E9E7B3D6F614}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reference toDerivedType", "Reference toDerivedType\Reference toDerivedType.vcxproj", "{837FB0DB-42F8-4B23-B334-7EF2AB70BEC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -491,6 +493,14 @@ Global
 		{910E8D2E-6E0F-4B65-AACD-E9E7B3D6F614}.Release|x64.Build.0 = Release|x64
 		{910E8D2E-6E0F-4B65-AACD-E9E7B3D6F614}.Release|x86.ActiveCfg = Release|Win32
 		{910E8D2E-6E0F-4B65-AACD-E9E7B3D6F614}.Release|x86.Build.0 = Release|Win32
+		{837FB0DB-42F8-4B23-B334-7EF2AB70BEC2}.Debug|x64.ActiveCfg = Debug|x64
+		{837FB0DB-42F8-4B23-B334-7EF2AB70BEC2}.Debug|x64.Build.0 = Debug|x64
+		{837FB0DB-42F8-4B23-B334-7EF2AB70BEC2}.Debug|x86.ActiveCfg = Debug|Win32
+		{837FB0DB-42F8-4B23-B334-7EF2AB70BEC2}.Debug|x86.Build.0 = Debug|Win32
+		{837FB0DB-42F8-4B23-B334-7EF2AB70BEC2}.Release|x64.ActiveCfg = Release|x64
+		{837FB0DB-42F8-4B23-B334-7EF2AB70BEC2}.Release|x64.Build.0 = Release|x64
+		{837FB0DB-42F8-4B23-B334-7EF2AB70BEC2}.Release|x86.ActiveCfg = Release|Win32
+		{837FB0DB-42F8-4B23-B334-7EF2AB70BEC2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
