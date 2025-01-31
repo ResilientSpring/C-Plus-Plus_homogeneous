@@ -82,12 +82,15 @@ int main() {
 	p = &base_obj;
 
 	p->who();
+	p->when();
 
 	p = &D1_obj;
 	p->who();
+	p->when();
 
 	p = &D2_obj;
 	p->who();
+	p->when();
 }
 
 // Reference: 
