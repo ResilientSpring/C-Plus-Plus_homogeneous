@@ -98,6 +98,11 @@ int main() {
 
 	// In other words, normally, a base class pointer can only access parts of a derived class' object
 	// that were inherited from base class.
+	// 
+	// However, with virtual, a base class pointer can also access parts of a derived class' object 
+	// that were virtual. 
+
+	//
 }
 
 // Reference: 
