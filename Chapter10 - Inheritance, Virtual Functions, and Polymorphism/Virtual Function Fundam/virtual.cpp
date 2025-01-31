@@ -31,7 +31,7 @@ class D2 : public B {
 
 public:
 
-	// redefine who() for B2
+	// redefine who() for D2
 	void who() {
 
 		cout << "Second derivation\n";
