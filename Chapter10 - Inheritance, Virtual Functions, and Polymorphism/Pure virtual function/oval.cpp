@@ -154,8 +154,10 @@ int main() {
 	shapes[0] = &Triangle("right", 8.0, 12.0);  // Triangle's object's memory address does not exist. 
 	shapes[1] = &Rectangle(10);
 	shapes[2] = &Rectangle(10, 4);
-	shapes[3] = &Triangle(7.0);
-
+	shapes[3] = &Triangle(7.0);   // Triangle does not override the virtual function in its base class.
+	                              // So, Triangle has a virtual function inherited from its base class.
+	                              // So, Triangle is per se an abstract class.
+	                              // An abstract class cannot have its object.
 	for (int i = 0; i < 4; i++)
 	{
 		printf("object is %s.\n", shapes[i]->getName());
