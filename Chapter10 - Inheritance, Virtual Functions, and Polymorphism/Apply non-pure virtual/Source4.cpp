@@ -1,5 +1,7 @@
 // A class that has a non-pure virtual function can still have its object created.
 
+// For example: shapes[4] = &TwoDShape(10, 20, "generic");  in line 143.
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <cstring>
