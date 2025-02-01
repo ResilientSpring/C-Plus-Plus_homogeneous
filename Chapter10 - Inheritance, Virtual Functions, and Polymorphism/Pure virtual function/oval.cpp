@@ -157,7 +157,7 @@ int main() {
 	shapes[3] = &Triangle(7.0);   // Triangle does not override the virtual function in its base class.
 	                              // So, Triangle has a virtual function inherited from its base class.
 	                              // So, Triangle is per se an abstract class.
-	                              // An abstract class cannot have its object.
+	                              // An abstract class cannot have its own object.
 	for (int i = 0; i < 4; i++)
 	{
 		printf("object is %s.\n", shapes[i]->getName());
