@@ -1,3 +1,5 @@
+// A class that has a non-pure virtual function can still 
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <cstring>
