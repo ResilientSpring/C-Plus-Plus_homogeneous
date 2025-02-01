@@ -1,4 +1,4 @@
-// A class that has a non-pure virtual function can still 
+// A class that has a non-pure virtual function can still have its object created.
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
