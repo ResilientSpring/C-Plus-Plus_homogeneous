@@ -129,7 +129,7 @@ public:
 
 int main() {
 
-	// declare an array of pointers to TwoDShape objects.
+	// 
 	TwoDShape shapes[5];
 
 	shapes[0] = &Triangle("right", 8.0, 12.0);
