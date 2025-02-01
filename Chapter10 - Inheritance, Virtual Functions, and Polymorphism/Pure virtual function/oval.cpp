@@ -1,4 +1,7 @@
+// Removing the override of area() from the Triangle class.
+
 #define _CRT_SECURE_NO_WARNINGS
+
 // Use a pure virtual function.
 #include <iostream>
 #include <cstring>
@@ -148,7 +151,7 @@ int main() {
 	// declare an array of pointers to TwoDShape objects.
 	TwoDShape* shapes[4];
 
-	shapes[0] = &Triangle("right", 8.0, 12.0);
+	shapes[0] = &Triangle("right", 8.0, 12.0);  // Triangle's object's memory address does not exist. 
 	shapes[1] = &Rectangle(10);
 	shapes[2] = &Rectangle(10, 4);
 	shapes[3] = &Triangle(7.0);
