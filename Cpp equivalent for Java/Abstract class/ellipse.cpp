@@ -55,6 +55,8 @@ public:
 	void showDim() {
 		printf("Width and height are %.2f and %.2f.\n", width, height);
 	}
+
+	virtual double area();
 };
 
 int main() {
