@@ -145,7 +145,7 @@ public:
 
 int main() {
 
-	// declare an array of pointers to TwoDShape objects.
+	// There can be no objects of an abstract class.
 	TwoDShape shapes[4];
 
 	shapes[0] = Triangle("right", 8.0, 12.0);
