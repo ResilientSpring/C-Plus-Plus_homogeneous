@@ -92,3 +92,16 @@ public:
 	}
 
 };
+
+
+int main() {
+
+	TwoDShape* base_class_pointer;
+
+	Circle circle(18.75);
+
+	base_class_pointer = &circle;
+
+	base_class_pointer->area();
+
+}
