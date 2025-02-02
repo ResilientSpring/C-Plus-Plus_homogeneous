@@ -110,4 +110,10 @@ int main() {
 
 	Circle* circle_p = (Circle*)malloc(sizeof(Circle));
 
+	circle_p->set_diameter(2.01);
+
+	base_class_pointer = circle_p;
+
+	base_class_pointer->area();
+
 }
