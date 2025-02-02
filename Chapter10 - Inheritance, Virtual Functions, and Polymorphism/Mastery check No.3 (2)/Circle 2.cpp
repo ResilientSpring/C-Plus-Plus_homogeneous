@@ -109,7 +109,7 @@ int main() {
 
 	base_class_pointer->area();
 
-	Circle* circle_p = (Circle*)malloc(sizeof(Circle));
+	Circle* circle_p = (Circle*)malloc(sizeof(Circle) + sizeof(TwoDShape));
 
 	circle_p->set_diameter(2.01);
 
