@@ -104,4 +104,10 @@ int main() {
 
 	base_class_pointer->area();
 
+	circle = Circle(4.2);
+
+	base_class_pointer->area();
+
+	Circle* circle_p = (Circle*)malloc(sizeof(Circle));
+
 }
