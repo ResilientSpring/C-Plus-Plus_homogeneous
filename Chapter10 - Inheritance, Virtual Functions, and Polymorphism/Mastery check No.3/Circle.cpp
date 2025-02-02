@@ -86,7 +86,7 @@ public:
 
 	double area() {
 
-		printf("The area of this circle is %.3f.\n", radius * radius * 3.1415926);
+		printf("The area of this circle is %3f.\n", radius * radius * 3.1415926);
 
 		return radius * radius * 3.1415926;
 	}
