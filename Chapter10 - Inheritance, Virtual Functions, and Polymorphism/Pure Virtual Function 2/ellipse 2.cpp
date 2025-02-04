@@ -37,7 +37,7 @@ public:
 	}
 
 	void showDim() {
-		
+
 		printf("width and height are %f and %f.\n", width, height);
 
 	}
@@ -85,7 +85,7 @@ public:
 
 	// Constructor with three parameeters.
 	Triangle(const char* str, double w, double h) : TwoDShape(w, h, "triangle") {
-		
+
 		strcpy(style, str);
 
 	}
@@ -145,13 +145,13 @@ public:
 
 int main() {
 
-	// declare an array of pointers to TwoDShape objects.
-	TwoDShape* shapes[4];
+	// There can be no objects of an abstract class.
+	TwoDShape shapes[4];
 
-	shapes[0] = &Triangle("right", 8.0, 12.0);
-	shapes[1] = &Rectangle(10);
-	shapes[2] = &Rectangle(10, 4);
-	shapes[3] = &Triangle(7.0);
+	shapes[0] = Triangle("right", 8.0, 12.0);
+	shapes[1] = Rectangle(10);
+	shapes[2] = Rectangle(10, 4);
+	shapes[3] = Triangle(7.0);
 
 	for (int i = 0; i < 4; i++)
 	{
@@ -162,16 +162,3 @@ int main() {
 		printf("\n");
 	}
 }
-
-/*
-
-Question: Error C2102: '&' requires l-value, VS2019. How to fix?
-
-Answer:
-You can work around this issue for now by disabling /permissive- by changing "Conformance Mode" to
-"No" in the C/C++ -> Language project settings.[1]
-
-References:
-1. https://stackoverflow.com/a/65547916
-
-*/

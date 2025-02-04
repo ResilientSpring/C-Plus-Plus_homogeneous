@@ -24,7 +24,7 @@ public:
 
 };
 
-// Derive from D1, not B.
+// D2 does not override who().
 class D2 : public B {
 
 	// who() not defined.

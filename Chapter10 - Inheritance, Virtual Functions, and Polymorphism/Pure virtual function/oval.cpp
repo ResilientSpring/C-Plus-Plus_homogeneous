@@ -1,4 +1,7 @@
+// Removing the override of area() from the Triangle class.
+
 #define _CRT_SECURE_NO_WARNINGS
+
 // Use a pure virtual function.
 #include <iostream>
 #include <cstring>
@@ -37,7 +40,7 @@ public:
 	}
 
 	void showDim() {
-		
+
 		printf("width and height are %f and %f.\n", width, height);
 
 	}
@@ -85,7 +88,7 @@ public:
 
 	// Constructor with three parameeters.
 	Triangle(const char* str, double w, double h) : TwoDShape(w, h, "triangle") {
-		
+
 		strcpy(style, str);
 
 	}
@@ -98,11 +101,11 @@ public:
 	}
 
 	// This now overrides area() declared in TwoDShape.
-	double area() {
+	//double area() {
 
-		return getWidth() * getHeight() / 2;
+	//	return getWidth() * getHeight() / 2;
 
-	}
+	//}
 
 	void showStyle() {
 
@@ -148,11 +151,13 @@ int main() {
 	// declare an array of pointers to TwoDShape objects.
 	TwoDShape* shapes[4];
 
-	shapes[0] = &Triangle("right", 8.0, 12.0);
+	shapes[0] = &Triangle("right", 8.0, 12.0);  // Triangle's object's memory address does not exist. 
 	shapes[1] = &Rectangle(10);
 	shapes[2] = &Rectangle(10, 4);
-	shapes[3] = &Triangle(7.0);
-
+	shapes[3] = &Triangle(7.0);   // Triangle does not override the virtual function in its base class.
+	                              // So, Triangle has a virtual function inherited from its base class.
+	                              // So, Triangle is per se an abstract class.
+	                              // An abstract class cannot have its own object.
 	for (int i = 0; i < 4; i++)
 	{
 		printf("object is %s.\n", shapes[i]->getName());
@@ -162,16 +167,3 @@ int main() {
 		printf("\n");
 	}
 }
-
-/*
-
-Question: Error C2102: '&' requires l-value, VS2019. How to fix?
-
-Answer:
-You can work around this issue for now by disabling /permissive- by changing "Conformance Mode" to
-"No" in the C/C++ -> Language project settings.[1]
-
-References:
-1. https://stackoverflow.com/a/65547916
-
-*/

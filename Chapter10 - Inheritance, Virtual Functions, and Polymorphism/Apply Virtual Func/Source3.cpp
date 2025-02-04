@@ -1,13 +1,12 @@
 #define _CRT_SECURE_NO_WARNINGS
-// Use a pure virtual function.
 #include <iostream>
 #include <cstring>
 using namespace std;
 
-// A class for two-dimensional objects.
+// A class for two-dimensional objects. 
 class TwoDShape {
 
-	// these are private
+	// these are private. 
 	double width;
 	double height;
 
@@ -16,15 +15,15 @@ class TwoDShape {
 
 public:
 
-	// Default constructor. 
+	// Default constructor.
 	TwoDShape() {
+
 		width = height = 0.0;
 		strcpy(name, "unknown");
 	}
 
-	// Constructor for TwoDShape.
+	// Constructor for TwoDShape
 	TwoDShape(double w, double h, const char* n) {
-
 		width = w;
 		height = h;
 		strcpy(name, n);
@@ -37,9 +36,7 @@ public:
 	}
 
 	void showDim() {
-		
-		printf("width and height are %f and %f.\n", width, height);
-
+		cout << "Width and height are " << width << " and " << height << endl;
 	}
 
 	// accessor functions
@@ -48,7 +45,6 @@ public:
 	}
 
 	double getHeight() {
-
 		return height;
 	}
 
@@ -64,50 +60,41 @@ public:
 		return name;
 	}
 
-	// area() is now a pure virtual function.
-	virtual double area() = 0;
-
+	// Add area() to TwoDShape and make it virtual.
+	virtual double area() {
+		cout << "Error: area() must be overridden.\n";
+		return 0.0;
+	}
 };
 
-// Triangle is derived from TwoDShape.
 class Triangle : public TwoDShape {
 
-	char style[20];   // now private.
+	char style[20];
 
 public:
 
-	// A default constructor. This automatically invokes the default constructor of TwoDShape.
+	/*A default constructor. This automatically invokes the default constructor of TwoDShape*/
 	Triangle() {
-
 		strcpy(style, "unknown");
-
 	}
 
-	// Constructor with three parameeters.
+	// Constructor with three parameters.
 	Triangle(const char* str, double w, double h) : TwoDShape(w, h, "triangle") {
-		
 		strcpy(style, str);
-
 	}
 
-	// Construct an isosceles triangle.
-	Triangle(double X) : TwoDShape(X, "triangle") {
-
+	// Construct an isosce as triangle.
+	Triangle(double x) : TwoDShape(x, "triangle") {
 		strcpy(style, "isosceles");
-
 	}
 
 	// This now overrides area() declared in TwoDShape.
 	double area() {
-
 		return getWidth() * getHeight() / 2;
-
 	}
 
 	void showStyle() {
-
-		printf("Triangle is %s.\n", style);
-
+		cout << "Triangle is " << style << endl;
 	}
 };
 
@@ -116,21 +103,19 @@ class Rectangle : public TwoDShape {
 
 public:
 
-	// Construct a rectangle. 
-	Rectangle(double w, double h) : TwoDShape(w, h, "rectangle") {
+	// Construct a rectangle.
+	Rectangle(double width, double height) :TwoDShape(width, height, "rectangle") {
 
 	}
 
-	// Construct a square.
+	// Construct a square
 	Rectangle(double x) :TwoDShape(x, "rectangle") {
 
 	}
 
 	bool isSquare() {
-
 		if (getWidth() == getHeight())
 			return true;
-
 		return false;
 	}
 
@@ -140,38 +125,26 @@ public:
 		return getWidth() * getHeight();
 
 	}
-
 };
 
 int main() {
 
-	// declare an array of pointers to TwoDShape objects.
-	TwoDShape* shapes[4];
+	// 
+	TwoDShape shapes[5];
 
-	shapes[0] = &Triangle("right", 8.0, 12.0);
-	shapes[1] = &Rectangle(10);
-	shapes[2] = &Rectangle(10, 4);
-	shapes[3] = &Triangle(7.0);
+	shapes[0] = Triangle("right", 8.0, 12.0);
+	shapes[1] = Rectangle(10);
+	shapes[2] = Rectangle(10, 4);
+	shapes[3] = Triangle(7.0);
+	shapes[4] = TwoDShape(10, 20, "generic");
 
-	for (int i = 0; i < 4; i++)
+	for (int i = 0; i < 5; i++)
 	{
-		printf("object is %s.\n", shapes[i]->getName());
+		cout << "object is " << shapes[i].getName() << endl;
 
-		printf("Area is %f.\n", shapes[i]->area());
+		cout << "Area is " << shapes[i].area() << endl;
 
-		printf("\n");
+		cout << "\n";
 	}
+
 }
-
-/*
-
-Question: Error C2102: '&' requires l-value, VS2019. How to fix?
-
-Answer:
-You can work around this issue for now by disabling /permissive- by changing "Conformance Mode" to
-"No" in the C/C++ -> Language project settings.[1]
-
-References:
-1. https://stackoverflow.com/a/65547916
-
-*/
