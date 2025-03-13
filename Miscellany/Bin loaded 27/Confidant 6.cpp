@@ -340,7 +340,7 @@ void dismantle_forest_to_trees(stack<int> &Stack) {
 
 		//  Visual Studio disapproves of static declaration of variable-length array.
 		// 
-		//	vector<int> tree_inv[total_number_of_nodes];
+		vector<int> tree_inv[total_number_of_nodes];
 
 		vector<int> *tree_inv;
 		tree_inv = new vector<int>[2 * total_number_of_nodes + 1];
