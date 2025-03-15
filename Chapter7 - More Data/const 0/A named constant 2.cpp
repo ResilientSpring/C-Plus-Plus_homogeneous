@@ -6,6 +6,7 @@ using namespace std;
 
 
 int main() {
+
 	// This creates a named constant called num_employees that has the value 100.
 	const int num_employees = 100;
 
