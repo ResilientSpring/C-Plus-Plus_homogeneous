@@ -6,7 +6,7 @@ int main() {
 
 	int i;
 
-	printf("This is a test%n", &i);
+	printf("This is a test%n \n", &i);
 
 	printf("%d", i);
 
