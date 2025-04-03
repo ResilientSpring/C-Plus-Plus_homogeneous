@@ -107,7 +107,7 @@ int main(int argc, char* argv[]) {
 		exit(1);
 	}
 
-
+	 
 	string input_aag = argv[1];
 	read(input_aag);
 
