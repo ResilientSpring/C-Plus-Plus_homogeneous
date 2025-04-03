@@ -102,7 +102,7 @@ int main(int argc, char* argv[]) {
 
 	if (argc != 5) {
 
-		cout << "Usage:  \n";
+		cout << "Usage:  \n"; 
 		cout << "./mapper.exe <path_to_the_input_aag_converted_from_blif> <LUT_size_(K)> <output_file_name> <CLB size> \n";
 		exit(1);
 	}
