@@ -205,6 +205,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bin loaded 27", "Bin loaded
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bin loaded 28", "Bin loaded 28\Bin loaded 28.vcxproj", "{0D6B7ED7-01A0-42D8-A098-07EEB13C1ECD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bin 28", "Bin 28\Bin 28.vcxproj", "{BE541893-A606-4BB7-8E77-1E9C904C6626}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -1429,6 +1431,18 @@ Global
 		{0D6B7ED7-01A0-42D8-A098-07EEB13C1ECD}.Release|x64.Build.0 = Release|x64
 		{0D6B7ED7-01A0-42D8-A098-07EEB13C1ECD}.Release|x86.ActiveCfg = Release|Win32
 		{0D6B7ED7-01A0-42D8-A098-07EEB13C1ECD}.Release|x86.Build.0 = Release|Win32
+		{BE541893-A606-4BB7-8E77-1E9C904C6626}.Debug|ARM.ActiveCfg = Debug|Win32
+		{BE541893-A606-4BB7-8E77-1E9C904C6626}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{BE541893-A606-4BB7-8E77-1E9C904C6626}.Debug|x64.ActiveCfg = Debug|x64
+		{BE541893-A606-4BB7-8E77-1E9C904C6626}.Debug|x64.Build.0 = Debug|x64
+		{BE541893-A606-4BB7-8E77-1E9C904C6626}.Debug|x86.ActiveCfg = Debug|Win32
+		{BE541893-A606-4BB7-8E77-1E9C904C6626}.Debug|x86.Build.0 = Debug|Win32
+		{BE541893-A606-4BB7-8E77-1E9C904C6626}.Release|ARM.ActiveCfg = Release|Win32
+		{BE541893-A606-4BB7-8E77-1E9C904C6626}.Release|ARM64.ActiveCfg = Release|Win32
+		{BE541893-A606-4BB7-8E77-1E9C904C6626}.Release|x64.ActiveCfg = Release|x64
+		{BE541893-A606-4BB7-8E77-1E9C904C6626}.Release|x64.Build.0 = Release|x64
+		{BE541893-A606-4BB7-8E77-1E9C904C6626}.Release|x86.ActiveCfg = Release|Win32
+		{BE541893-A606-4BB7-8E77-1E9C904C6626}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
