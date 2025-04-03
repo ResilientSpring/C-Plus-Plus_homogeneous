@@ -4,12 +4,13 @@
 #include <iomanip>
 using namespace std;
 
+
 int main() {
 
-	int num_employees = 100;
+	// This creates a named constant called num_employees that has the value 100.
+	const int num_employees = 100;
 
 	int empNums[num_employees];
 	double salary[num_employees];
 	char* names[num_employees];
-
 }
