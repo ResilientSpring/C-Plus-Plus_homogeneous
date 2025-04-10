@@ -30,10 +30,10 @@ int main() {
 
 		if (num != -1)
 		{
-			cout << "Running average is: " << running_average(num);
-		}
 
-		cout << '\n';
+			printf("Running average is: %d.\n", running_average(num));
+
+		}
 
 	} while (num != -1);
 
