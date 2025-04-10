@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 extern int running_average(int i);
@@ -9,7 +10,19 @@ int main() {
 	do
 	{
 		printf("%s", "Enter numbers (-1 to quit, -2 to reset): ");
-		scanf("%d", &num);
+
+		if (scanf("%d", &num) == 1) {
+
+			printf("Operation succeeded.\n");
+
+		}
+		else if (scanf("%d", &num) == 0) {
+
+			printf("Operation failed. \n");
+
+		}
+
+		
 
 		if (num == -2)
 		{
