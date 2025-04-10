@@ -21,6 +21,8 @@ int main() {
 
 			printf("Operation failed. \n");
 
+			break;
+
 		}
 
 		if (num == -2)
