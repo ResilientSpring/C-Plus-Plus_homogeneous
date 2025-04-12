@@ -8,5 +8,7 @@ int main() {
 
 		arr[i] = 0;
 
+	printf("%d\n", arr[0]++);
 
+	printf("%d\n", (arr[0])++);
 }
