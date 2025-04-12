@@ -10,4 +10,5 @@ int main() {
 
 	printf("%d\n", ++arr[0]);
 
+	printf("%d\n", ++(arr[0]));
 }
