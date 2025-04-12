@@ -15,7 +15,7 @@ int main() {
 
 
 
-
+	printf("\n\n\n\n\n\n\n");
 
 	printf("%d\n", arr[9]);
 
