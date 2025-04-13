@@ -225,6 +225,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays of Strings 1-5", "Ar
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointers and arrays 9-2", "Pointers and arrays 9-2\Pointers and arrays 9-2.vcxproj", "{8DECED0B-52FE-458D-B9E1-89FDCB1992F9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointers and arrays 9-3", "Pointers and arrays 9-3\Pointers and arrays 9-3.vcxproj", "{9DF3CD5A-5464-458C-BAE3-859CE0253821}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1121,6 +1123,14 @@ Global
 		{8DECED0B-52FE-458D-B9E1-89FDCB1992F9}.Release|x64.Build.0 = Release|x64
 		{8DECED0B-52FE-458D-B9E1-89FDCB1992F9}.Release|x86.ActiveCfg = Release|Win32
 		{8DECED0B-52FE-458D-B9E1-89FDCB1992F9}.Release|x86.Build.0 = Release|Win32
+		{9DF3CD5A-5464-458C-BAE3-859CE0253821}.Debug|x64.ActiveCfg = Debug|x64
+		{9DF3CD5A-5464-458C-BAE3-859CE0253821}.Debug|x64.Build.0 = Debug|x64
+		{9DF3CD5A-5464-458C-BAE3-859CE0253821}.Debug|x86.ActiveCfg = Debug|Win32
+		{9DF3CD5A-5464-458C-BAE3-859CE0253821}.Debug|x86.Build.0 = Debug|Win32
+		{9DF3CD5A-5464-458C-BAE3-859CE0253821}.Release|x64.ActiveCfg = Release|x64
+		{9DF3CD5A-5464-458C-BAE3-859CE0253821}.Release|x64.Build.0 = Release|x64
+		{9DF3CD5A-5464-458C-BAE3-859CE0253821}.Release|x86.ActiveCfg = Release|Win32
+		{9DF3CD5A-5464-458C-BAE3-859CE0253821}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
