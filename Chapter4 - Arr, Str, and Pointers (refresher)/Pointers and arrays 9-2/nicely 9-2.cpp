@@ -8,7 +8,7 @@ int main() {
 
 	printf("str1     is %22p. \n", str1);
 	printf("&str1[0] is %p. \n", &str1[0]);
-	printf("&str1    is %p. \n", &str1);
+	printf("&str1    is %22p. \n", &str1);
 
 	printf("(str1 + 1)     is %p. \n", (str1 + 1));
 	printf("(&str1[0] + 1) is %p. \n", (&str1[0] + 1));
