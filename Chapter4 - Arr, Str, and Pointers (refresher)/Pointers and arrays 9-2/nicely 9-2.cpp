@@ -16,7 +16,7 @@ int main() {
 	printf("&str1[1]       is %p. \n", &str1[1]);
 	printf("&str1[79]      is %p. \n", &str1[79]);
 
-	printf("&str1 + 1 is %p. \n", (&str1 + 1));
+	printf("&str1 + 1 is %22p. \n", (&str1 + 1));
 	printf("&str2     is %p. \n", &str2);
 	printf("&str2[0]  is %p. \n", &str2[0]);
 	printf("str2      is %p. \n", str2);
