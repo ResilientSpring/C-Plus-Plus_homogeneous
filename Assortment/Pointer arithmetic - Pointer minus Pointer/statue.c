@@ -16,7 +16,9 @@ int main() {
 
 	for (int i = 0; i < sizeof(statute) / sizeof(char) ; i++)
 	{
-		printf("&statue[%d] = %p.\n", i, &statute[i]);
+		cp1 = statute;
+
+		printf("&statue[%d] = %p.\n", i, (cp + i));
 	}
 
 }
