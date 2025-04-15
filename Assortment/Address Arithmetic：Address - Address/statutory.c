@@ -12,7 +12,7 @@ int main() {
 
 	printf("&statute[5] - &statute[2] = %p.\n", &statute[5] - &statute[2]);
 
-	for (int i = 0; i < sizeof(statute) / sizeof(char); i++)
+	for (int i = 0; i < sizeof(statute) / sizeof(int); i++)
 	{
 		printf("&statue[%d] = %p.\n", i, &statute[i]);
 	}
