@@ -6,7 +6,7 @@ int main() {
 
 	printf("%d.\n", sizeof(int));
 
-	char statute[10];
+	int statute[10];
 
 	printf("&statute[5] - &statute[2] = %d.\n", &statute[5] - &statute[2]);
 
