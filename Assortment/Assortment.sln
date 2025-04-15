@@ -157,6 +157,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Address Arithmetic - Addres
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Address Arithmetic：Address plus Address", "Address Arithmetic：Address plus Address\Address Arithmetic：Address plus Address.vcxproj", "{68253B7F-C5AB-4964-9B2B-55DCA8095FF9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Address Arithmetic：Address - Address", "Address Arithmetic：Address - Address\Address Arithmetic：Address - Address.vcxproj", "{6FB4FEB0-8A58-487A-97F5-9E6066BB7CBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -773,6 +775,14 @@ Global
 		{68253B7F-C5AB-4964-9B2B-55DCA8095FF9}.Release|x64.Build.0 = Release|x64
 		{68253B7F-C5AB-4964-9B2B-55DCA8095FF9}.Release|x86.ActiveCfg = Release|Win32
 		{68253B7F-C5AB-4964-9B2B-55DCA8095FF9}.Release|x86.Build.0 = Release|Win32
+		{6FB4FEB0-8A58-487A-97F5-9E6066BB7CBB}.Debug|x64.ActiveCfg = Debug|x64
+		{6FB4FEB0-8A58-487A-97F5-9E6066BB7CBB}.Debug|x64.Build.0 = Debug|x64
+		{6FB4FEB0-8A58-487A-97F5-9E6066BB7CBB}.Debug|x86.ActiveCfg = Debug|Win32
+		{6FB4FEB0-8A58-487A-97F5-9E6066BB7CBB}.Debug|x86.Build.0 = Debug|Win32
+		{6FB4FEB0-8A58-487A-97F5-9E6066BB7CBB}.Release|x64.ActiveCfg = Release|x64
+		{6FB4FEB0-8A58-487A-97F5-9E6066BB7CBB}.Release|x64.Build.0 = Release|x64
+		{6FB4FEB0-8A58-487A-97F5-9E6066BB7CBB}.Release|x86.ActiveCfg = Release|Win32
+		{6FB4FEB0-8A58-487A-97F5-9E6066BB7CBB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
