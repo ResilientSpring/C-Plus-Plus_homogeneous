@@ -18,7 +18,7 @@ int main() {
 	{
 		cp1 = statute;
 
-		printf("&statue[%d] = %p.\n", i, (cp + i));
+		printf("&statue[%d] = %p.\n", i, (cp1 + i));
 	}
 
 }
