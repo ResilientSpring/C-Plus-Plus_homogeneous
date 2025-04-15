@@ -12,5 +12,5 @@ int main() {
 	{
 		printf("&statue[%d] = %p.\n", i, &statute[i]);
 	}
-
+	
 }
