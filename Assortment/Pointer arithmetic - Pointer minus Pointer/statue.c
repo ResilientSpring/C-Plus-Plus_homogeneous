@@ -6,5 +6,6 @@ int main() {
 
 	printf("&statute[5] - &statute[2] = %d.\n", &statute[5] - &statute[2]);
 
+	printf("&statute[5] - &statute[2] = %p.\n", &statute[5] - &statute[2]);
 
 }
