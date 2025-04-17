@@ -2,7 +2,7 @@
 
 char* create_array() {
 
-    char arr[100];  // allocated on the heap
+    char arr[100];
 
     if (arr != NULL) {
         arr[0] = 'A';
