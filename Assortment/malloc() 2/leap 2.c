@@ -20,4 +20,4 @@ int main() {
     return 0;
 }
 
-// Source: https://chatgpt.com/c/6800a607-d350-8008-bfa5-2fa4deeb3bfb
+// The rationale behind this work: https://chatgpt.com/c/6800a607-d350-8008-bfa5-2fa4deeb3bfb
