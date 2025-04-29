@@ -13,5 +13,7 @@ int main() {
 	printf("%5.7s\n", str);
 
 	printf("%5s\n", str);
+
+	printf("%3s\n", str);
 	
 }
