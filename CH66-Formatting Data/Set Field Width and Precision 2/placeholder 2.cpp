@@ -11,5 +11,7 @@ int main() {
 	str = "abc";
 
 	printf("%5.7s\n", str);
+
+	printf("%5s\n", str);
 	
 }
