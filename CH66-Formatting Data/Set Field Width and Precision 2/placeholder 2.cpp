@@ -15,5 +15,7 @@ int main() {
 	printf("%5s\n", str);
 
 	printf("%3s\n", str);
+
+	printf("%4s\n", str);
 	
 }
