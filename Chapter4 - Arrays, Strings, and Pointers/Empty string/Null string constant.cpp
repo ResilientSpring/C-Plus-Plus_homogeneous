@@ -6,7 +6,7 @@ int main() {
 
 	printf("How many elements are there in a null string literal?\n");
 
-	printf("There is %d element in a string literal.\n", sizeof(string_constant) / sizeof(char));
+	printf("There is %zd element in a string literal.\n", sizeof(string_constant) / sizeof(char));
 }
 
 // Code review:
