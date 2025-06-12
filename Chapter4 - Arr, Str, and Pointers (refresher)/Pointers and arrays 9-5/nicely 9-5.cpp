@@ -6,7 +6,7 @@ int main() {
 	char str2[80] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
 
 	printf("str1     is %22p. \n", str1);
-	printf("&str1[0] is %p. \n", &str1[0]);
+	printf("&str1[0] is %22p. \n", &str1[0]);
 	printf("&str1    is %22p. \n", &str1);
 
 	printf("(str1 + 1)     is %p. \n", (str1 + 1));
@@ -18,7 +18,7 @@ int main() {
 	printf("&str1 + 1 is %21p. \n", (&str1 + 1));
 	printf("&str2     is %p. \n", &str2);
 	printf("&str2[0]  is %-30p. \n", &str2[0]);
-	printf("str2      is %22p. \n", str2);
+	printf("str2      is %21p. \n", str2);
 
 	printf("\nstr1 == &str1[0], so (str1 + 1) == (&str1[0] + 1); \n\n");
 	printf("Although &str1 is identical to str1, &str1 refers to the whole str1; so (&str1 + 1) will\n");
