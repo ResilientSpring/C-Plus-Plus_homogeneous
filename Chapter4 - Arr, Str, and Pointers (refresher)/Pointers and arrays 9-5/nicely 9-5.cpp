@@ -26,7 +26,7 @@ int main() {
 
 	printf("&str1[80]      is %p. \n", &str1[80]);  //  the address of the first element past the end of an array can be used in pointer arithmetic.[1]:117
 
-	printf("&str1[81]      is %p. \n", &str1[81]);
+	printf("&str1[81]      is %p. \n", &str1[81]);  // See [2] for analysis.
 
 	// int h = 0x00;
 	// h = (&str1 + 1) - &str1[79];
@@ -35,3 +35,4 @@ int main() {
 
 // References:
 // 1. C Programming Language
+// 2. https://chatgpt.com/c/684af2e3-e85c-8008-98bd-6b2ac75832d5
