@@ -26,6 +26,8 @@ int main() {
 
 	printf("&str1[80]      is %p. \n", &str1[80]);
 
+	printf("&str1[81]      is %p. \n", &str1[81]);
+
 	// int h = 0x00;
 	// h = (&str1 + 1) - &str1[79];
 	// printf("%p", (&str1 + 1) - &str1[79]);
