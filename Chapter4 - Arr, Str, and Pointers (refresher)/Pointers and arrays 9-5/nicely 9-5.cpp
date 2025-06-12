@@ -16,8 +16,8 @@ int main() {
 	printf("&str1[79]      is %p. \n", &str1[79]);
 
 	printf("&str1 + 1 is %21p. \n", (&str1 + 1));
-	printf("&str2     is %p. \n", &str2);
-	printf("&str2[0]  is %-30p. \n", &str2[0]);
+	printf("&str2     is %21p. \n", &str2);
+	printf("&str2[0]  is %21p. \n", &str2[0]);
 	printf("str2      is %21p. \n", str2);
 
 	printf("\nstr1 == &str1[0], so (str1 + 1) == (&str1[0] + 1); \n\n");
