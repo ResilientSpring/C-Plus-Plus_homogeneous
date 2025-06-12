@@ -22,7 +22,7 @@ int main() {
 
 	printf("\nstr1 == &str1[0], so (str1 + 1) == (&str1[0] + 1); \n\n");
 	printf("Although &str1 is identical to str1, &str1 refers to the whole str1; so (&str1 + 1) will\n");
-	printf(" be the memory address immediately after str1; immediately after str1[79] in this case.\n");
+	printf(" be the memory address immediately after str1; immediately after str1[79] in this case.\n\n");
 
 	printf("&str1[80]      is %p. \n", &str1[80]);
 
