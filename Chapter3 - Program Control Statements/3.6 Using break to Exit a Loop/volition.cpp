@@ -9,6 +9,8 @@ int main() {
 
 		if (t == 0) break;  // Break out of the for when t equals 10.
 
+		printf("%d ", t);
+
 	}
 
 }
