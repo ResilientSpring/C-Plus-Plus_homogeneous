@@ -34,3 +34,5 @@ B. 2004 because a pointer takes up 4 bytes in C on a byte-addressed system.
 C. Other.
 
 */
+
+// Reference: https://chatgpt.com/c/695e890f-e938-8321-9aef-5dcff68fc90d
