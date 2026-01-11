@@ -16,4 +16,5 @@ int main() {
 
 	p1 = amessage;
 
+	printf("%p\n", p1 = p1 + 1);
 }
