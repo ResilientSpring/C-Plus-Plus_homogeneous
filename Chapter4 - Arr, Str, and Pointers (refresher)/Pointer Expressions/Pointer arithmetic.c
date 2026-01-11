@@ -12,4 +12,6 @@ int main() {
 
 	printf("%p\n", p1++);
 
+	printf("%p\n", p1++);
+
 }
