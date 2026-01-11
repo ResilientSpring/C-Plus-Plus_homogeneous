@@ -14,4 +14,6 @@ int main() {
 
 	printf("%p\n", p1++);
 
+	p1 = amessage;
+
 }
