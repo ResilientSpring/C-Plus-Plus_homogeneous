@@ -8,5 +8,7 @@ int main() {
 
 	p1 = &amessage[0];
 
-	printf("%p\n", p1);
+	printf("%p\n", p1++);
+
+	printf("%p\n", p1++);
 }
