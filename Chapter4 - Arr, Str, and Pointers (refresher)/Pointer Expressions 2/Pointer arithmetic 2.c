@@ -6,5 +6,7 @@ int main() {
 
 	char ** p1;
 
+	p1 = &amessage[0];
 
+	printf("%p\n", p1);
 }
