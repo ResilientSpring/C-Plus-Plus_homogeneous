@@ -33,12 +33,12 @@ int main() {
 	// printf("%p", (&str1 + 1) - &str1[79]);
 
 	char * p = "Even though &arr and &arr[0] may have the same numeric address value, "
-		"their types are different, so dereferencing them gives different results";
+		"their types are different, so dereferencing them gives different results"; // [3]
 
-	// [3]
 	printf("%s\n", p);
 }
 
 // References:
 // 1. C Programming Language
 // 2. https://chatgpt.com/c/684af2e3-e85c-8008-98bd-6b2ac75832d5
+// 3. https://chatgpt.com/c/69bfadf9-2974-8324-bed9-79b1b2f88527
