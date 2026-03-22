@@ -31,6 +31,12 @@ int main() {
 	// int h = 0x00;
 	// h = (&str1 + 1) - &str1[79];
 	// printf("%p", (&str1 + 1) - &str1[79]);
+
+	char * p = "Even though &arr and &arr[0] may have the same numeric address value, "
+		"their types are different, so dereferencing them gives different results";
+
+	// [3]
+	printf("%s\n", p);
 }
 
 // References:
