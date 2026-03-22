@@ -35,7 +35,7 @@ int main() {
 	char * p = "Even though &arr and &arr[0] may have the same numeric address value, "
 		"their types are different, so dereferencing them gives different results"; // [3]
 
-	printf("%s\n", p);
+	printf("\n%s\n", p);
 }
 
 // References:
