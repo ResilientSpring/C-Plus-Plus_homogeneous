@@ -6,3 +6,9 @@ void func22() {
 	x = y / 10;
 
 }
+
+void func23() {
+
+	y = 10;
+
+}
