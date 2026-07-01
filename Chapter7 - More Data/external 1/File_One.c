@@ -5,6 +5,8 @@ void func1();
 
 int main() {
 
+	printf("%d\n", x);
+
 }
 
 void func1() {
