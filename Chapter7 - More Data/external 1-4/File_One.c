@@ -5,8 +5,8 @@ char ch;
 
 void func1();
 
-extern func22();
-extern func23();
+extern void func22();
+extern void func23();
 
 int main() {
 
