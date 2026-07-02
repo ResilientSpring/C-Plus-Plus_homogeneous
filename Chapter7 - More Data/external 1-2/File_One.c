@@ -7,6 +7,8 @@ void func1();
 
 int main() {
 
+	func1();
+
 	printf("%d\n", x);
 
 }
