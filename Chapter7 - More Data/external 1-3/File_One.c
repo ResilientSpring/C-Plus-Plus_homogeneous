@@ -9,6 +9,10 @@ int main() {
 
 	func1();
 
+	func23();
+
+	func22();
+
 	printf("%d\n", x);
 
 }
