@@ -17,5 +17,4 @@ int main() {
 
 	show_binary(23456);
 
-
 }
