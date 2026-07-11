@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdio.h>
 
 #define EVEN(a)  (a%2 == 0 ? 1 : 0)
 
