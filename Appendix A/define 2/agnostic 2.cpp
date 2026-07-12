@@ -1,4 +1,4 @@
-#define GETFILE "Enter Fiile Name"
+#define GETFILE "Enter File Name"
 
 #include <iostream>
 using namespace std;
