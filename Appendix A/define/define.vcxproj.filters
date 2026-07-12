@@ -18,5 +18,8 @@
     <ClCompile Include="agnostic.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="agnostic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
