@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
 
-	
+	cout << "GETFILE is a macro name\n";
 
 
 }
