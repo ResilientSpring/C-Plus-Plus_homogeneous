@@ -1,9 +1,0 @@
-#define UP 1
-#define DOWN 0
-
-int main() {
-
-	cout << UP << ' ' << DOWN << ' ' << UP + UP;
-
-
-}
